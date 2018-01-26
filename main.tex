@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% SUTD Masters/Doctoral Thesis 
+% SUTD Masters/Doctoral Thesis
 % LaTeX Template
 % Version 1.0 (29/08/16)
 %
@@ -14,7 +14,7 @@
 % which in turn was based on a template by:
 % Steve Gunn (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
 % Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
-% 
+%
 %
 % Template license:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
@@ -101,7 +101,7 @@ headsepline, % Uncomment to get a line under the header
 \end{figure}
 
  \hfill\break\\[2.3cm]
- 
+
 {\huge \bfseries \ttitle}\\[3cm] % Thesis title
 
 
@@ -111,18 +111,18 @@ Submitted by\\[1cm]
 \vspace{4em}
 
 Thesis Advisor\\[1cm]
-\supname % Supervisor name - remove the \href bracket to remove the link  
- 
-\vspace{4em} 
+\supname % Supervisor name - remove the \href bracket to remove the link
+
+\vspace{4em}
 
 \pillarname\\[1.5cm] % Research group name and department name
- 
-\large{A thesis submitted to the Singapore University of Technology and Design in fulfillment of the requirement for the degree of \degreename, \pillarname}\\[1cm] % University requirement text
 
- 
+\large{A thesis submitted to the Singapore University of Technology and Design in fulfillment of the requirement for the degree of \degreename}\\[1cm] % University requirement text
+
+
 {\large \today}\\[4cm] % Date
 %\includegraphics{Logo} % University/department logo - uncomment to place it
- 
+
 \vfill
 \end{center}
 \end{titlepage}
@@ -131,23 +131,50 @@ Thesis Advisor\\[1cm]
 %	DECLARATION PAGE
 %----------------------------------------------------------------------------------------
 
+\begin{tec}
+\addchaptertocentry{\tecname}
+\begin{tabular}{ll}
+	TEC Chair: & Prof. XXXX \\
+	Main Advisor: & Prof. XXXX \\
+	Co-advisor(s): & Prof. XXXX (if any) \\
+	Internal TEC member 1: & Prof. XXXX \\
+	Internal TEC member 2: & Prof. XXXX \\
+	External TEC member 1: & Prof. XXXX (optional) \\
+	External TEC member 2: & Prof. XXXX (optional) \\
+\end{tabular}
+\end{tec}
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%----------------------------------------------------------------------------------------
+
 \begin{declaration}
 \addchaptertocentry{\authorshipname}
 
-\noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
+% \noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
+%
+% \begin{itemize}
+% \item This work was done wholly or mainly while in candidature for a research degree at this University.
+% \item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
+% \item Where I have consulted the published work of others, this is always clearly attributed.
+% \item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
+% \item I have acknowledged all main sources of help.
+% \item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
+% \end{itemize}
 
-\begin{itemize} 
-\item This work was done wholly or mainly while in candidature for a research degree at this University.
-\item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
-\item Where I have consulted the published work of others, this is always clearly attributed.
-\item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
-\item I have acknowledged all main sources of help.
-\item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
+I hereby confirm the following:
+\begin{itemize}
+\item I hereby confirm that the thesis work is original and has not been submitted to any other University or Institution for higher degree purposes.
+\item I hereby grant SUTD the permission to reproduce and distribute publicly paper and electronic copies of this thesis document in whole or in part in any medium now known or hereafter created in accordance with Policy on Intellectual Property, clause 4.2.2.
+\item I have fulfilled all requirements as prescribed by the University and provided 1 copy of my thesis in PDF.
+\item I have attached all publications and award list related to the thesis (e.g. journal, conference report and patent).
+\item The thesis does / does not (delete accordingly) contain patentable or confidential information.
+\item I certify that the thesis has been checked for plagiarism via turnitin/ithenticate. The score is 100\%.
 \end{itemize}
- 
-\noindent Signed:\\
+
+\noindent Name and signature:\\
 \rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
- 
+
 \noindent Date:\\
 \rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
 \end{declaration}
@@ -158,11 +185,12 @@ Thesis Advisor\\[1cm]
 %	QUOTATION PAGE
 %----------------------------------------------------------------------------------------
 
-\vspace*{0.2\textheight}
-
-\noindent\enquote{\itshape Thanks to my solid academic training, today I can write hundreds of words on virtually any topic without possessing a shred of information, which is how I got a good job in journalism.}\bigbreak
-
-\hfill Dave Barry
+% Uncomment for quotation page
+% \vspace*{0.2\textheight}
+%
+% \noindent\enquote{\itshape Thanks to my solid academic training, today I can write hundreds of words on virtually any topic without possessing a shred of information, which is how I got a good job in journalism.}\bigbreak
+%
+% \hfill Dave Barry
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
@@ -174,6 +202,17 @@ Thesis Advisor\\[1cm]
 The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
 
 \end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+
+\begin{publications}
+\addchaptertocentry{\publicationsname} % Add the abstract to the table of contents
+
+Journal Papers, Conference Presentations, etc...
+
+\end{publications}
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS
@@ -200,47 +239,50 @@ The acknowledgments and the people to thank go here, don't forget to include you
 %	ABBREVIATIONS
 %----------------------------------------------------------------------------------------
 
-\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
-
-\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere\\
-\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
-
-\end{abbreviations}
+% Uncomment for abbreviations page
+% \begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+%
+% \textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere\\
+% \textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
+%
+% \end{abbreviations}
 
 %----------------------------------------------------------------------------------------
 %	PHYSICAL CONSTANTS/OTHER DEFINITIONS
 %----------------------------------------------------------------------------------------
 
-\begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
-
-% The \SI{}{} command is provided by the siunitx package, see its documentation for instructions on how to use it
-
-	Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
-%Constant Name & $Symbol$ & $Constant Value$ with units\\
-
-\end{constants}
+% Uncomment for physical constants etc
+% \begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
+%
+% % The \SI{}{} command is provided by the siunitx package, see its documentation for instructions on how to use it
+%
+% 	Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
+% %Constant Name & $Symbol$ & $Constant Value$ with units\\
+%
+% \end{constants}
 
 %----------------------------------------------------------------------------------------
 %	SYMBOLS
 %----------------------------------------------------------------------------------------
 
-\begin{symbols}{lll} % Include a list of Symbols (a three column table)
-
-$a$ & distance & \si{\meter} \\
-$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
-%Symbol & Name & Unit \\
-
-\addlinespace % Gap to separate the Roman symbols from the Greek
-
-$\omega$ & angular frequency & \si{\radian} \\
-
-\end{symbols}
+% Uncomment for symbols
+% \begin{symbols}{lll} % Include a list of Symbols (a three column table)
+%
+% $a$ & distance & \si{\meter} \\
+% $P$ & power & \si{\watt} (\si{\joule\per\second}) \\
+% %Symbol & Name & Unit \\
+%
+% \addlinespace % Gap to separate the Roman symbols from the Greek
+%
+% $\omega$ & angular frequency & \si{\radian} \\
+%
+% \end{symbols}
 
 %----------------------------------------------------------------------------------------
 %	DEDICATION
 %----------------------------------------------------------------------------------------
 
-\dedicatory{For/Dedicated to/To my\ldots} 
+\dedicatory{For/Dedicated to/To my\ldots}
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS
@@ -254,10 +296,10 @@ $\omega$ & angular frequency & \si{\radian} \\
 % Uncomment the lines as you write the chapters
 
 \include{Chapters/Chapter1}
-%\include{Chapters/Chapter2} 
+%\include{Chapters/Chapter2}
 %\include{Chapters/Chapter3}
-%\include{Chapters/Chapter4} 
-%\include{Chapters/Chapter5} 
+%\include{Chapters/Chapter4}
+%\include{Chapters/Chapter5}
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
@@ -280,4 +322,4 @@ $\omega$ & angular frequency & \si{\radian} \\
 
 %----------------------------------------------------------------------------------------
 
-\end{document}  
+\end{document}
