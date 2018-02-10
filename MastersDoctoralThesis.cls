@@ -312,8 +312,8 @@ KOMA-script documentation for details.}]{fancyhdr}
 	\null\vfil
 	\thispagestyle{plain}
 	\begin{center}
-	{\normalsize \MakeUppercase{\univname} \par} % University name in capitals
-	\bigskip
+	% {\normalsize \MakeUppercase{\univname} \par} % University name in capitals
+	% \bigskip
 	{\huge\textit{\abstractname} \par}
 	\bigskip
 	{\normalsize \pillarname\par} % Pillar name
@@ -407,10 +407,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 \checktoopen
 \tttypeout{\acknowledgementname}
 \thispagestyle{plain}
-\begin{center}{\huge\textit{\acknowledgementname}\par}\end{center}
-}
-{
-\vfil\vfil\null
+{\noindent\huge\bfseries\acknowledgementname\par\vspace{10pt}}
 }
 
 %----------------------------------------------------------------------------------------
