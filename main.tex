@@ -68,19 +68,46 @@ headsepline, % Uncomment to get a line under the header
 %	THESIS INFORMATION
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Thesis Title} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
-\supervisor{Dr. James \textsc{Smith}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+\thesistitle{Can I trust my machine? Modern and future challenges of trusting
+computing} % Your thesis title, this is used in the title and 
+%abstract, print it elsewhere with \ttitle
+\supervisor{Prof. Zhou \textsc{Jianying}} % Your supervisor's name, this is 
+%used in the title page, print it elsewhere with \supname
 \examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
 \degree{Doctor of Philosophy} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
-\author{John \textsc{Smith}} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+\author{Flavio \textsc{Toffalini}} % Your name, this is used in the title page 
+%and abstract, print it elsewhere with \authorname
 \addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
 \university	{SUTD}
 \keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
-\pillar{Pillar} % Pillar
+\pillar{ISTD} % Pillar
 
 \hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
 \hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
 \hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
+
+% Define some commands to keep the formatting separated from the content 
+\newcommand{\keyword}[1]{\textbf{#1}}
+\newcommand{\tabhead}[1]{\textbf{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{\bfseries#1}}
+\newcommand{\option}[1]{\texttt{\itshape#1}}
+
+\newcommand{\ie}{\textit{i.e.,} }
+\newcommand{\eg}{\textit{e.g.,} }
+\newcommand{\wrt}{\textit{w.r.t.\ }}
+
+\newcommand{\todobox}[3]{%
+	\colorbox{#1}{\textcolor{white}{\sffamily\bfseries\scriptsize #2}}%
+	~\textcolor{blue}{#3} %
+	\textcolor{#1}{$\triangleleft$}%
+}
+\newcommand{\todo}[1]{\todobox{red}{TODO}{#1}}
+\newcommand{\feedback}[1]{\todobox{orange}{OK?}{#1}}
+\newcommand{\done}[1]{\todobox{blue}{DONE}{#1}}
+\newcommand{\rationale}[1]{\todobox{ForestGreen}{RATIONALE}{#1}}
+
+
 
 \begin{document}
 
@@ -134,13 +161,14 @@ Thesis Advisor\\[1cm]
 \begin{tec}
 \addchaptertocentry{\tecname}
 \begin{tabular}{ll}
-	TEC Chair: & Prof. XXXX \\
-	Main Advisor: & Prof. XXXX \\
-	Co-advisor(s): & Prof. XXXX (if any) \\
-	Internal TEC member 1: & Prof. XXXX \\
-	Internal TEC member 2: & Prof. XXXX \\
-	External TEC member 1: & Prof. XXXX (optional) \\
-	External TEC member 2: & Prof. XXXX (optional) \\
+	TEC Chair: & Prof. Lu Wei \\
+	Main Advisor: & Prof. Zhou Jianying \\
+	Co-advisor(s): & Prof. Mauro Conti (University of Padua) \\
+	Co-advisor(s): & Prof. Lorenzo Cavallaro (King's College London) \\
+	Internal TEC member 1: & Prof. Sudipta Chattopadhyay \\
+	Internal TEC member 2: & Prof. Dinh Tien Tuan Anh \\
+%	External TEC member 1: & Prof. XXXX (optional) \\
+%	External TEC member 2: & Prof. XXXX (optional) \\
 \end{tabular}
 \end{tec}
 \vfill\eject
@@ -296,11 +324,12 @@ The acknowledgments and the people to thank go here, don't forget to include you
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
 
-\include{Chapters/Chapter1}
-%\include{Chapters/Chapter2}
-%\include{Chapters/Chapter3}
-%\include{Chapters/Chapter4}
-%\include{Chapters/Chapter5}
+\include{chapters/introduction}
+\include{chapters/background-trusting-computing}
+\include{chapters/static-protection}
+\include{chapters/new-threats}
+\include{chapters/runtime-protection}
+\include{chapters/conclusion}
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
@@ -311,9 +340,9 @@ The acknowledgments and the people to thank go here, don't forget to include you
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-\include{Appendices/AppendixA}
-%\include{Appendices/AppendixB}
-%\include{Appendices/AppendixC}
+\include{appendices/appendixA}
+%\include{appendices/appendixB}
+%\include{appendicesaAppendixC}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
