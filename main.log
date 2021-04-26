@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  21 APR 2021 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  26 APR 2021 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1485,8 +1485,8 @@ Package csquotes Info: ... found 'babel' package.
  (./main.aux
 (./chapters/introduction.aux) (./chapters/background-trusting-computing.aux)
 (./chapters/static-protection.aux) (./chapters/new-threats.aux)
-(./chapters/runtime-protection.aux) (./chapters/conclusion.aux)
-(./appendices/appendixA.aux))
+(./chapters/runtime-protection.aux) (./chapters/forensic-analysis.aux)
+(./chapters/conclusion.aux) (./appendices/appendixA.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
@@ -1722,7 +1722,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \c__siunitx_mathtt_int=\count421
 
 1: section
-<Figures/SUTD.pdf, id=52, 352.31625pt x 137.51375pt>
+<Figures/SUTD.pdf, id=56, 352.31625pt x 137.51375pt>
 File: Figures/SUTD.pdf Graphic file (type pdf)
 <use Figures/SUTD.pdf>
 Package pdftex.def Info: Figures/SUTD.pdf  used on input line 127.
@@ -1861,13 +1861,24 @@ Chapter 5.
 
 
 ]
-\openout2 = `chapters/conclusion.aux'.
+\openout2 = `chapters/forensic-analysis.aux'.
 
- (./chapters/conclusion.tex
+ (./chapters/forensic-analysis.tex
 Chapter 6.
 )
 1: section
 [6
+
+
+
+]
+\openout2 = `chapters/conclusion.aux'.
+
+ (./chapters/conclusion.tex
+Chapter 7.
+)
+1: section
+[7
 
 
 
@@ -1878,45 +1889,45 @@ Chapter 6.
 Appendix A.
 )
 1: section
-[7
+[8
 
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 351.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 352.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (1.97653pt too wide) in paragraph at lines 351--351
+Overfull \hbox (1.97653pt too wide) in paragraph at lines 352--352
 [][]\T1/ppl/m/n/10.95 Wieman, Carl E. and Leo Holl-berg (Jan. 1991). ^^P  Us-in
 g Diode Lasers for Atomic Physics^^Q.
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 355.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 356.
 1: section
-[8
+[9
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 355.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 356.
  (./main.aux (./chapters/introduction.aux)
 (./chapters/background-trusting-computing.aux)
 (./chapters/static-protection.aux) (./chapters/new-threats.aux)
-(./chapters/runtime-protection.aux) (./chapters/conclusion.aux)
-(./appendices/appendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 355.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 355.
+(./chapters/runtime-protection.aux) (./chapters/forensic-analysis.aux)
+(./chapters/conclusion.aux) (./appendices/appendixA.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 356.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 356.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E42088FCF59E7938E92505731EFE08E0;2121.
+(rerunfilecheck)             Checksum: 6E7223FB9AD447A5B5E8955ACDCBD494;2396.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33425 strings out of 492982
- 682014 string characters out of 6134896
+ 33440 strings out of 492982
+ 682401 string characters out of 6134896
  892840 words of memory out of 5000000
- 36610 multiletter control sequences out of 15000+600000
+ 36616 multiletter control sequences out of 15000+600000
  554159 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,19n,69p,10377b,1638s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1926,10 +1937,10 @@ f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pa
 latino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (18 pages, 101851 bytes).
+Output written on main.pdf (19 pages, 102703 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 102 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
