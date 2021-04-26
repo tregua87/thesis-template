@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  26 APR 2021 16:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  26 APR 2021 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1489,23 +1489,23 @@ Package csquotes Info: ... found 'babel' package.
 (./chapters/conclusion.aux) (./appendices/appendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 112.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 113.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -1662,14 +1662,14 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 112.
-Package scrbase Info: activating english \authorshipname on input line 112.
-Package scrbase Info: activating english \authorshipname on input line 112.
-Package scrbase Info: activating english \byname on input line 112.
-Package scrbase Info: activating english \abbrevname on input line 112.
-Package scrbase Info: activating english \constantsname on input line 112.
-Package scrbase Info: activating english \symbolsname on input line 112.
-Package scrbase Info: activating english \acknowledgementname on input line 112
+(scrlayer)             \begin{document} on input line 113.
+Package scrbase Info: activating english \authorshipname on input line 113.
+Package scrbase Info: activating english \authorshipname on input line 113.
+Package scrbase Info: activating english \byname on input line 113.
+Package scrbase Info: activating english \abbrevname on input line 113.
+Package scrbase Info: activating english \constantsname on input line 113.
+Package scrbase Info: activating english \symbolsname on input line 113.
+Package scrbase Info: activating english \acknowledgementname on input line 113
 .
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1682,8 +1682,8 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 112.
-Package biblatex Info: Reference segment=0 on input line 112.
+Package biblatex Info: Reference section=0 on input line 113.
+Package biblatex Info: Reference segment=0 on input line 113.
 \AtBeginShipoutBox=\box54
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -1694,7 +1694,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 112.
+Package hyperref Info: Link coloring ON on input line 113.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1704,9 +1704,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count419
 )
-LaTeX Info: Redefining \ref on input line 112.
-LaTeX Info: Redefining \pageref on input line 112.
-LaTeX Info: Redefining \nameref on input line 112.
+LaTeX Info: Redefining \ref on input line 113.
+LaTeX Info: Redefining \pageref on input line 113.
+LaTeX Info: Redefining \nameref on input line 113.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
@@ -1714,21 +1714,21 @@ LaTeX Info: Redefining \nameref on input line 112.
 
 \c__siunitx_mathsf_int=\count420
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 112.
+(Font)              <10.95> on input line 113.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 112.
+(Font)              <8> on input line 113.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 112.
+(Font)              <6> on input line 113.
 \c__siunitx_mathtt_int=\count421
 
 1: section
 <Figures/SUTD.pdf, id=56, 352.31625pt x 137.51375pt>
 File: Figures/SUTD.pdf Graphic file (type pdf)
 <use Figures/SUTD.pdf>
-Package pdftex.def Info: Figures/SUTD.pdf  used on input line 127.
+Package pdftex.def Info: Figures/SUTD.pdf  used on input line 128.
 (pdftex.def)             Requested size: 208.55876pt x 81.40308pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 132.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 133.
 [1
 
 
@@ -1746,7 +1746,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 228.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 229.
 1: section
 [2
 
@@ -1766,7 +1766,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 261.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 262.
  (./main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -1894,29 +1894,29 @@ Appendix A.
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 352.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 353.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (1.97653pt too wide) in paragraph at lines 352--352
+Overfull \hbox (1.97653pt too wide) in paragraph at lines 353--353
 [][]\T1/ppl/m/n/10.95 Wieman, Carl E. and Leo Holl-berg (Jan. 1991). ^^P  Us-in
 g Diode Lasers for Atomic Physics^^Q.
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 356.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 357.
 1: section
 [9
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 356.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
  (./main.aux (./chapters/introduction.aux)
 (./chapters/background-trusting-computing.aux)
 (./chapters/static-protection.aux) (./chapters/new-threats.aux)
 (./chapters/runtime-protection.aux) (./chapters/forensic-analysis.aux)
 (./chapters/conclusion.aux) (./appendices/appendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 356.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 356.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 357.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6E7223FB9AD447A5B5E8955ACDCBD494;2396.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1926,7 +1926,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  33440 strings out of 492982
  682401 string characters out of 6134896
- 892840 words of memory out of 5000000
+ 892923 words of memory out of 5000000
  36616 multiletter control sequences out of 15000+600000
  554159 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1937,7 +1937,7 @@ f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pa
 latino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (19 pages, 102703 bytes).
+Output written on main.pdf (19 pages, 102791 bytes).
 PDF statistics:
  216 PDF objects out of 1000 (max. 8388607)
  185 compressed objects within 2 object streams
