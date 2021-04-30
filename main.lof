@@ -3,6 +3,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces An overview of our schema for single-thread applications, the memory is split in trusted and untrusted zones. The trusted zone contains all methods required for our technique, while in the untrusted zone we show the interaction of those methods with the CSs.\relax }}{8}{figure.caption.32}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Packing mechanism of our schema.\relax }}{11}{figure.caption.48}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Careful-Packing architecture.\relax }}{13}{figure.caption.65}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Secure installation protocol between client and server.\relax }}{15}{figure.caption.77}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Careful-Packing Evaluation.\relax }}{17}{figure.caption.84}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

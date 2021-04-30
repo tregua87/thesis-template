@@ -5,11 +5,46 @@
 \contentsline {chapter}{Publications}{iii}{section*.4}
 \contentsline {chapter}{Acknowledgements}{iv}{section*.5}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.9}
-\contentsline {chapter}{\numberline {2}Trusting Computing Technologies}{2}{chapter.10}
-\contentsline {chapter}{\numberline {3}Static Code Protection in Untrusted Environments}{3}{chapter.11}
-\contentsline {chapter}{\numberline {4}Advanced Threats for Trusting Computing}{4}{chapter.12}
-\contentsline {chapter}{\numberline {5}At the Edge of New Defenses for Trusting Computing}{5}{chapter.13}
-\contentsline {chapter}{\numberline {6}New Forensic Challenges in the Trusting Computing Domain}{6}{chapter.14}
-\contentsline {chapter}{\numberline {7}Conclusion}{7}{chapter.15}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{8}{appendix.16}
-\contentsline {chapter}{Bibliography}{9}{appendix*.17}
+\contentsline {chapter}{\numberline {2}Security Properties of TEE}{3}{chapter.10}
+\contentsline {chapter}{\numberline {3}A Practical and Scalable Software Protection enforced by TEE}{4}{chapter.11}
+\contentsline {section}{\numberline {3.1}Introduction}{4}{section.12}
+\contentsline {paragraph}{\textbf {Problem Statement:}}{5}{section*.16}
+\contentsline {paragraph}{\textbf {Contributions:}}{5}{section*.17}
+\contentsline {section}{\numberline {3.2}Threat Model}{5}{section.21}
+\contentsline {section}{\numberline {3.3}Design}{6}{section.26}
+\contentsline {subsection}{\numberline {3.3.1}Challenges}{6}{subsection.27}
+\contentsline {subsection}{\numberline {3.3.2}Anti-Tampering based on Trusted Computing}{8}{subsection.31}
+\contentsline {paragraph}{\textbf {Critical Section Definition}}{9}{section*.33}
+\contentsline {paragraph}{\textbf {Overcoming Denial of Service Issues}}{10}{section*.41}
+\contentsline {paragraph}{\textbf {Function Calls and Recursions}}{10}{section*.49}
+\contentsline {paragraph}{\textbf {Exceptions within Critical Section}}{11}{section*.57}
+\contentsline {paragraph}{\textbf {Multi-threading programs}}{12}{section*.62}
+\contentsline {paragraph}{\textbf {Ensuring a Secure Booting Phase}}{12}{section*.63}
+\contentsline {section}{\numberline {3.4}Implementation}{12}{section.64}
+\contentsline {subsection}{\numberline {3.4.1}Client}{12}{subsection.66}
+\contentsline {paragraph}{\textbf {Software Architecture}}{12}{section*.67}
+\contentsline {paragraph}{\textbf {Critical Section Definition}}{13}{section*.68}
+\contentsline {paragraph}{\textbf {Packaging Algorithm}}{13}{section*.73}
+\contentsline {paragraph}{\textbf {Heartbeat}}{13}{section*.74}
+\contentsline {paragraph}{\textbf {Block Table}}{14}{section*.75}
+\contentsline {subsection}{\numberline {3.4.2}Installation Phase}{14}{subsection.76}
+\contentsline {section}{\numberline {3.5}Evaluation}{15}{section.78}
+\contentsline {subsection}{\numberline {3.5.1}Lines-of-Code Overhead}{15}{subsection.79}
+\contentsline {subsection}{\numberline {3.5.2}Microbenchmark Measurements}{16}{subsection.81}
+\contentsline {paragraph}{\textbf {User-Simulator Bot}}{16}{section*.82}
+\contentsline {paragraph}{\textbf {Single Instance Microbenchmark}}{16}{section*.83}
+\contentsline {paragraph}{\textbf {Multiple Instances}}{17}{section*.85}
+\contentsline {subsection}{\numberline {3.5.3}Enclave Size Considerations}{17}{subsection.86}
+\contentsline {subsection}{\numberline {3.5.4}Threat Mitigation}{17}{subsection.87}
+\contentsline {paragraph}{\textbf {Protection of checkers and responses.}}{17}{section*.88}
+\contentsline {paragraph}{\textbf {Protection against disarm.}}{18}{section*.89}
+\contentsline {paragraph}{\textbf {Just-in-time Patch \& Repair Mitigation}}{18}{section*.90}
+\contentsline {paragraph}{\textbf {Reverse Engineering}}{18}{section*.94}
+\contentsline {subsection}{\numberline {3.5.5}Study of Just-in-Time Patch \& Repair Attack}{19}{subsection.95}
+\contentsline {subsection}{\numberline {3.5.6}Discussion}{19}{subsection.96}
+\contentsline {chapter}{\numberline {4}Advanced Threats for TEE}{20}{chapter.97}
+\contentsline {chapter}{\numberline {5}At the Edge of New Defenses for TEE}{21}{chapter.98}
+\contentsline {chapter}{\numberline {6}New Forensic Challenges in TEE Domain}{22}{chapter.99}
+\contentsline {chapter}{\numberline {7}Conclusion}{23}{chapter.100}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{24}{appendix.101}
+\contentsline {chapter}{Bibliography}{25}{appendix*.102}
