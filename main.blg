@@ -5,8 +5,9 @@ The style file: biblatex.bst
 A level-1 auxiliary file: chapters/introduction.aux
 A level-1 auxiliary file: chapters/background-trusting-computing.aux
 A level-1 auxiliary file: chapters/static-protection.aux
+A level-1 auxiliary file: chapters/runtime-protection-untrusted.aux
 A level-1 auxiliary file: chapters/new-threats.aux
-A level-1 auxiliary file: chapters/runtime-protection.aux
+A level-1 auxiliary file: chapters/runtime-protection-trusted.aux
 A level-1 auxiliary file: chapters/forensic-analysis.aux
 A level-1 auxiliary file: chapters/conclusion.aux
 A level-1 auxiliary file: appendices/appendixA.aux
@@ -24,50 +25,59 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 12228 items from 5000.
+Reallocated field_info (elt_size=4) to 16120 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: biblio.bib
+Repeated entry---line 919 of file biblio.bib
+ : @article{costan2016intel
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1224 of file biblio.bib
+ : @article{8269390
+ :                 ,
+I'm skipping whatever remains of this entry
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 52 entries,
+You've used 80 entries,
             6268 wiz_defined-function locations,
-            1478 strings with 19787 characters,
-and the built_in function-call counts, 329950 in all, are:
-= -- 23002
-> -- 5837
-< -- 1529
-+ -- 8761
-- -- 2257
-* -- 25608
-:= -- 34688
+            1647 strings with 27084 characters,
+and the built_in function-call counts, 508784 in all, are:
+= -- 35700
+> -- 8738
+< -- 2517
++ -- 13576
+- -- 3354
+* -- 39133
+:= -- 52567
 add.period$ -- 0
-call.type$ -- 52
-change.case$ -- 755
-chr.to.int$ -- 41
-cite$ -- 102
-duplicate$ -- 37112
-empty$ -- 30264
-format.name$ -- 4017
-if$ -- 66376
+call.type$ -- 80
+change.case$ -- 1361
+chr.to.int$ -- 42
+cite$ -- 158
+duplicate$ -- 57463
+empty$ -- 46808
+format.name$ -- 5933
+if$ -- 102732
 int.to.chr$ -- 0
-int.to.str$ -- 139
+int.to.str$ -- 222
 missing$ -- 0
-newline$ -- 2075
-num.names$ -- 2407
-pop$ -- 18260
+newline$ -- 3211
+num.names$ -- 3689
+pop$ -- 28210
 preamble$ -- 1
-purify$ -- 1130
+purify$ -- 1921
 quote$ -- 0
-skip$ -- 8969
+skip$ -- 13954
 stack$ -- 0
-substring$ -- 37937
-swap$ -- 8930
-text.length$ -- 1455
-text.prefix$ -- 53
+substring$ -- 58588
+swap$ -- 14041
+text.length$ -- 2182
+text.prefix$ -- 82
 top$ -- 1
-type$ -- 1756
+type$ -- 2707
 warning$ -- 0
-while$ -- 4412
+while$ -- 6681
 width$ -- 0
-write$ -- 2024
+write$ -- 3132
+(There were 2 error messages)

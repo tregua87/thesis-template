@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  30 APR 2021 17:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  2 MAY 2021 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1547,9 +1547,13 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (./main.aux
 (./chapters/introduction.aux) (./chapters/background-trusting-computing.aux)
-(./chapters/static-protection.aux) (./chapters/new-threats.aux)
-(./chapters/runtime-protection.aux) (./chapters/forensic-analysis.aux)
-(./chapters/conclusion.aux) (./appendices/appendixA.aux))
+(./chapters/static-protection.aux) (./chapters/runtime-protection-untrusted.aux
+
+LaTeX Warning: Label `sec:implementation' multiply defined.
+
+) (./chapters/new-threats.aux) (./chapters/runtime-protection-trusted.aux)
+(./chapters/forensic-analysis.aux) (./chapters/conclusion.aux)
+(./appendices/appendixA.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
@@ -1752,17 +1756,42 @@ Package biblatex Warning: BibTeX reported the following issues
 
 
 Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Dessouky:2018:LLH:3240765.3240821':
+(biblatex)                - Can't use 'location' + 'address'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Ge:2017:GGC:3037697.3037716':
+(biblatex)                - Can't use 'location' + 'address'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with '5958048':
 (biblatex)                - Invalid format of field 'month'.
 
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'helbig1998trusted':
-(biblatex)                - Invalid format of field 'month'.
+(biblatex)                with 'Hu:2018:EUC:3243734.3243797':
+(biblatex)                - Can't use 'location' + 'address'.
 
 
 Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with '8269390':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Liu:2018:RED:3243734.3243826':
+(biblatex)                - Can't use 'location' + 'address'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with '7778160':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'stravers2013translation':
 (biblatex)                - Invalid format of field 'month'.
 
 )
@@ -1800,7 +1829,7 @@ LaTeX Info: Redefining \nameref on input line 119.
 \c__siunitx_mathtt_int=\count436
 
 1: section
-<Figures/SUTD.pdf, id=116, 352.31625pt x 137.51375pt>
+<Figures/SUTD.pdf, id=184, 352.31625pt x 137.51375pt>
 File: Figures/SUTD.pdf Graphic file (type pdf)
 <use Figures/SUTD.pdf>
 Package pdftex.def Info: Figures/SUTD.pdf  used on input line 134.
@@ -1845,21 +1874,21 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 268.
- (./main.toc)
-\tf@toc=\write6
-\openout6 = `main.toc'.
-
-
+ (./main.toc
 1: section
 [5
 
-] (./main.lof)
+])
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ [6] (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
 
 1: section
-[6
+[7
 
 ] (./main.lot)
 \tf@lot=\write8
@@ -1867,14 +1896,14 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 
 
 1: section
-[7
+[8
 
 ]
 --------------------
  Dedicatory
 --------------------
 1: section
-[8
+[9
 
 ]
 1: section
@@ -1882,35 +1911,35 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 
 (./chapters/introduction.tex
 Chapter 1.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 4.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 52.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 4.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 4.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 47.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
-
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
+)
 1: section
 [1
 
 
 
-]) [2]
+]
 \openout2 = `chapters/background-trusting-computing.aux'.
 
  (./chapters/background-trusting-computing.tex
 Chapter 2.
 )
 1: section
-[3
+[2
 
 
 
@@ -1919,17 +1948,18 @@ Chapter 2.
 
  (./chapters/static-protection.tex
 Chapter 3.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 16.
 1: section
-[4
+[3
 
 
 
-] [5]
+]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 206.
+ [4]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 304.
- [6]
+ [5]
 Overfull \hbox (1.2168pt too wide) in paragraph at lines 358--361
 []\T1/ppl/m/n/10.95 Property (\T1/ppl/b/n/10.95 iii\T1/ppl/m/n/10.95 ) can be i
 m-ple-mented by mov-ing all code in-side trusted mod-ules, which
@@ -1944,134 +1974,233 @@ Overfull \hbox (2.37675pt too wide) in paragraph at lines 412--437
 -ciency of the anti-tampering
  []
 
-[7]
-<fig_c3/core-all.pdf, id=326, 843.15pt x 421.575pt>
+[6]
+<fig_c3/core-all.pdf, id=422, 843.15pt x 421.575pt>
 File: fig_c3/core-all.pdf Graphic file (type pdf)
 <use fig_c3/core-all.pdf>
 Package pdftex.def Info: fig_c3/core-all.pdf  used on input line 454.
 (pdftex.def)             Requested size: 291.98099pt x 145.99031pt.
- [8 <./fig_c3/core-all.pdf>]
-Overfull \hbox (5.07614pt too wide) in paragraph at lines 493--496
+ [7 <./fig_c3/core-all.pdf>]
+Overfull \hbox (5.07614pt too wide) in paragraph at lines 494--497
  []\T1/ppl/b/n/10.95 Critical Sec-tion Def-i-ni-tion[] \T1/ppl/m/n/10.95 A CS i
 s any con-tin-u-ous re-gion of code which is sur-rounded
  []
 
 
-Overfull \hbox (1.39796pt too wide) in paragraph at lines 502--504
+Overfull \hbox (1.39796pt too wide) in paragraph at lines 503--505
 []\T1/ppl/m/n/10.95 Every ex-e-cu-tion path from a \T1/ppl/m/it/10.95 CS_Begin 
 \T1/ppl/m/n/10.95 must reach only the cor-re-spond-ing \T1/ppl/m/it/10.95 CS_En
 d\T1/ppl/m/n/10.95 . 
  []
 
 
-Overfull \hbox (23.46205pt too wide) in paragraph at lines 513--524
+Overfull \hbox (23.46205pt too wide) in paragraph at lines 514--525
 \T1/ppl/m/n/10.95 Points ([][]2[][]) and ([][]3[][]) can be im-ple-mented by us
 -ing a for-ward anal-y-sis []Møller and Schwartzbach,
  []
 
-[9]
-<fig_c3/dec1.pdf, id=384, 689.57625pt x 226.8475pt>
+[8]
+<fig_c3/dec1.pdf, id=481, 689.57625pt x 226.8475pt>
 File: fig_c3/dec1.pdf Graphic file (type pdf)
 <use fig_c3/dec1.pdf>
-Package pdftex.def Info: fig_c3/dec1.pdf  used on input line 646.
+Package pdftex.def Info: fig_c3/dec1.pdf  used on input line 647.
 (pdftex.def)             Requested size: 291.98099pt x 96.05064pt.
- [10]
+ [9]
 
-LaTeX Warning: Reference `ssect:back-sgx' on page 11 undefined on input line 79
+LaTeX Warning: Reference `ssect:back-sgx' on page 10 undefined on input line 79
+4.
+
+[10 <./fig_c3/dec1.pdf>]
+
+LaTeX Warning: Reference `ssect:back-sgx' on page 11 undefined on input line 85
 3.
 
-[11 <./fig_c3/dec1.pdf>]
-
-LaTeX Warning: Reference `ssect:back-sgx' on page 12 undefined on input line 85
-2.
-
-<fig_c3/architecture.pdf, id=438, 562.1pt x 314.17375pt>
+<fig_c3/architecture.pdf, id=534, 562.1pt x 314.17375pt>
 File: fig_c3/architecture.pdf Graphic file (type pdf)
 <use fig_c3/architecture.pdf>
-Package pdftex.def Info: fig_c3/architecture.pdf  used on input line 1006.
+Package pdftex.def Info: fig_c3/architecture.pdf  used on input line 1007.
 (pdftex.def)             Requested size: 187.7016pt x 104.90968pt.
-<fig_c3/clientarchitecture.pdf, id=439, 550.055pt x 236.885pt>
+<fig_c3/clientarchitecture.pdf, id=535, 550.055pt x 236.885pt>
 File: fig_c3/clientarchitecture.pdf Graphic file (type pdf)
 <use fig_c3/clientarchitecture.pdf>
-Package pdftex.def Info: fig_c3/clientarchitecture.pdf  used on input line 1015
+Package pdftex.def Info: fig_c3/clientarchitecture.pdf  used on input line 1016
 .
 (pdftex.def)             Requested size: 187.7016pt x 80.83261pt.
-[12] [13 <./fig_c3/architecture.pdf> <./fig_c3/clientarchitecture.pdf
+[11] [12 <./fig_c3/architecture.pdf> <./fig_c3/clientarchitecture.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c3/clientarchitecture.pdf): PDF i
 nclusion: multiple pdfs with page group included in a single page
 >]
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 1181.
- [14]
-<fig_c3/installation.pdf, id=524, 916.42375pt x 184.69pt>
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 1182.
+ [13]
+<fig_c3/installation.pdf, id=621, 916.42375pt x 184.69pt>
 File: fig_c3/installation.pdf Graphic file (type pdf)
 <use fig_c3/installation.pdf>
-Package pdftex.def Info: fig_c3/installation.pdf  used on input line 1243.
+Package pdftex.def Info: fig_c3/installation.pdf  used on input line 1244.
 (pdftex.def)             Requested size: 375.40321pt x 75.65575pt.
- [15 <./fig_c3/installation.pdf>]
-Overfull \hbox (6.12762pt too wide) in paragraph at lines 1401--1414
+ [14 <./fig_c3/installation.pdf>]
+Overfull \hbox (6.12762pt too wide) in paragraph at lines 1402--1415
  []\T1/ppl/b/n/10.95 User-Simulator Bot[] \T1/ppl/m/n/10.95 For per-form-ing th
 e fol-low-ing tests, we de-vel-oped a user-simulator
  []
 
 
-Overfull \hbox (0.83961pt too wide) in paragraph at lines 1417--1445
+Overfull \hbox (0.83961pt too wide) in paragraph at lines 1418--1446
  []\T1/ppl/b/n/10.95 Single In-stance Mi-crobench-mark[] \T1/ppl/m/n/10.95 We m
 ea-sure the im-pact of our anti-tampering tech-
  []
 
-<fig_c3/performanceEvaluation.png, id=577, 524.6802pt x 351.2322pt>
+<fig_c3/performanceEvaluation.png, id=673, 524.6802pt x 351.2322pt>
 File: fig_c3/performanceEvaluation.png Graphic file (type png)
 <use fig_c3/performanceEvaluation.png>
 Package pdftex.def Info: fig_c3/performanceEvaluation.png  used on input line 1
-449.
+450.
 (pdftex.def)             Requested size: 187.7016pt x 125.6503pt.
-<fig_c3/multiple.png, id=579, 462.528pt x 346.896pt>
+<fig_c3/multiple.png, id=675, 462.528pt x 346.896pt>
 File: fig_c3/multiple.png Graphic file (type png)
 <use fig_c3/multiple.png>
-Package pdftex.def Info: fig_c3/multiple.png  used on input line 1456.
+Package pdftex.def Info: fig_c3/multiple.png  used on input line 1457.
 (pdftex.def)             Requested size: 187.7016pt x 140.77794pt.
 
-Overfull \hbox (3.05109pt too wide) in paragraph at lines 1465--1470
+Overfull \hbox (3.05109pt too wide) in paragraph at lines 1466--1471
  []\T1/ppl/b/n/10.95 Multiple In-stances[] \T1/ppl/m/n/10.95 We em-pir-i-cally 
 in-ves-ti-gate whether our ap-proach can be de-ployed
  []
 
-[16]
-Overfull \hbox (12.53384pt too wide) in paragraph at lines 1507--1511
+[15]
+Overfull \hbox (12.53384pt too wide) in paragraph at lines 1508--1512
  []\T1/ppl/b/n/10.95 Protection of check-ers and re-sponses.[] \T1/ppl/m/n/10.9
 5 In our ap-proach, the func-tions for anti-tampering
  []
 
-[17 <./fig_c3/performanceEvaluation.png> <./fig_c3/multiple.png>]
+[16 <./fig_c3/performanceEvaluation.png> <./fig_c3/multiple.png>]
 
-LaTeX Warning: Reference `ssect:back-sgx' on page 18 undefined on input line 15
-15.
+LaTeX Warning: Reference `ssect:back-sgx' on page 17 undefined on input line 15
+16.
 
-[18]
+[17]
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1650.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1651.
 
-) [19]
+) [18]
+\openout2 = `chapters/runtime-protection-untrusted.aux'.
+
+ (./chapters/runtime-protection-untrusted.tex
+Chapter 4.
+1: section
+[19
+
+
+
+] [20]
+
+LaTeX Warning: Reference `sec:background' on page 21 undefined on input line 20
+0.
+
+<fig_c4/challenge-III.pdf, id=785, 263.98625pt x 219.82124pt>
+File: fig_c4/challenge-III.pdf Graphic file (type pdf)
+<use fig_c4/challenge-III.pdf>
+Package pdftex.def Info: fig_c4/challenge-III.pdf  used on input line 233.
+(pdftex.def)             Requested size: 133.47606pt x 111.14468pt.
+
+Underfull \hbox (badness 5637) in paragraph at lines 234--234
+ []\T1/ppl/m/sc/10 (a) |\T1/ppl/m/n/10 Loop ex-am-ple in the ScaRR 
+ []
+
+<fig_c4/challenge-IV.pdf, id=786, 455.7025pt x 199.74625pt>
+File: fig_c4/challenge-IV.pdf Graphic file (type pdf)
+<use fig_c4/challenge-IV.pdf>
+Package pdftex.def Info: fig_c4/challenge-IV.pdf  used on input line 240.
+(pdftex.def)             Requested size: 208.55876pt x 91.41806pt.
+[21] [22 <./fig_c4/challenge-III.pdf> <./fig_c4/challenge-IV.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig_c4/challenge-IV.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>]
+<fig_c4/overview.pdf, id=827, 828.09375pt x 451.6875pt>
+File: fig_c4/overview.pdf Graphic file (type pdf)
+<use fig_c4/overview.pdf>
+Package pdftex.def Info: fig_c4/overview.pdf  used on input line 359.
+(pdftex.def)             Requested size: 333.69528pt x 182.01576pt.
+ [23 <./fig_c4/overview.pdf>]
+Overfull \hbox (26.04762pt too wide) in paragraph at lines 443--450
+\T1/ppl/m/n/10.95 same no-ta-tion used for the keys in the \T1/ppl/m/it/10.95 o
+f-fline mea-sure-ments\T1/ppl/m/n/10.95 , \T1/ppl/m/it/10.95 i.e., \T1/ppl/m/n/
+10.95 the triplet $\OT1/cmr/m/n/10.95 ([][]\OML/cmm/m/it/10.95 ; [][]; H\OT1/cm
+r/m/n/10.95 ([]))$\T1/ppl/m/n/10.95 . 
+ []
+
+[24] [25]
+<fig_c4/trace-paths-example.pdf, id=879, 401.5pt x 215.80624pt>
+File: fig_c4/trace-paths-example.pdf Graphic file (type pdf)
+<use fig_c4/trace-paths-example.pdf>
+Package pdftex.def Info: fig_c4/trace-paths-example.pdf  used on input line 575
+.
+(pdftex.def)             Requested size: 250.27306pt x 134.52621pt.
+ [26 <./fig_c4/trace-paths-example.pdf>]
+<fig_c4/shadow-stack-no.pdf, id=900, 383.4325pt x 206.7725pt>
+File: fig_c4/shadow-stack-no.pdf Graphic file (type pdf)
+<use fig_c4/shadow-stack-no.pdf>
+Package pdftex.def Info: fig_c4/shadow-stack-no.pdf  used on input line 622.
+(pdftex.def)             Requested size: 250.27306pt x 134.96529pt.
+ [27 <./fig_c4/shadow-stack-no.pdf>]
+Overfull \hbox (19.3878pt too wide) in paragraph at lines 677--680
+[]\T1/ppl/m/it/10.95 Application Pro-cess \T1/ppl/m/n/10.95 - the pro-cess run-
+ning the mon-i-tored ap-pli-ca-tion, which is equipped
+ []
+
+
+Overfull \hbox (13.659pt too wide) in paragraph at lines 691--712
+\T1/ppl/m/n/10.95 ap-pli-ca-tion crosses a control-flow event, the \T1/ppl/m/it
+/10.95 ScaRR Li-braries \T1/ppl/m/n/10.95 in-voke the \T1/ppl/m/it/10.95 ScaRR 
+sys_addaction
+ []
+
+<fig_c4/architecture.pdf, id=930, 645.41125pt x 349.305pt>
+File: fig_c4/architecture.pdf Graphic file (type pdf)
+<use fig_c4/architecture.pdf>
+Package pdftex.def Info: fig_c4/architecture.pdf  used on input line 724.
+(pdftex.def)             Requested size: 291.98099pt x 158.0226pt.
+[28] [29 <./fig_c4/architecture.pdf>]
+<fig_c4/attesetation_speed.png, id=967, 462.528pt x 346.896pt>
+File: fig_c4/attesetation_speed.png Graphic file (type png)
+<use fig_c4/attesetation_speed.png>
+Package pdftex.def Info: fig_c4/attesetation_speed.png  used on input line 806.
+
+(pdftex.def)             Requested size: 187.7016pt x 140.77794pt.
+<fig_c4/functioncall.png, id=968, 462.528pt x 346.896pt>
+File: fig_c4/functioncall.png Graphic file (type png)
+<use fig_c4/functioncall.png>
+Package pdftex.def Info: fig_c4/functioncall.png  used on input line 814.
+(pdftex.def)             Requested size: 187.7016pt x 140.77794pt.
+ [30 <./fig_c4/attesetation_speed.png> <./fig_c4/functioncall.png>]
+<fig_c4/network_performance.png, id=987, 474.8139pt x 295.5843pt>
+File: fig_c4/network_performance.png Graphic file (type png)
+<use fig_c4/network_performance.png>
+Package pdftex.def Info: fig_c4/network_performance.png  used on input line 882
+.
+(pdftex.def)             Requested size: 208.55876pt x 129.83197pt.
+ [31 <./fig_c4/network_performance.png>] [32])
+[33]
 \openout2 = `chapters/new-threats.aux'.
 
  (./chapters/new-threats.tex
-Chapter 4.
+Chapter 5.
 )
 1: section
-[20
+[34
 
 
 
 ]
-\openout2 = `chapters/runtime-protection.aux'.
+\openout2 = `chapters/runtime-protection-trusted.aux'.
 
- (./chapters/runtime-protection.tex
-Chapter 5.
+ (./chapters/runtime-protection-trusted.tex
+Chapter 6.
 )
 1: section
-[21
+[35
 
 
 
@@ -2079,10 +2208,10 @@ Chapter 5.
 \openout2 = `chapters/forensic-analysis.aux'.
 
  (./chapters/forensic-analysis.tex
-Chapter 6.
+Chapter 7.
 )
 1: section
-[22
+[36
 
 
 
@@ -2090,10 +2219,10 @@ Chapter 6.
 \openout2 = `chapters/conclusion.aux'.
 
  (./chapters/conclusion.tex
-Chapter 7.
+Chapter 8.
 )
 1: section
-[23
+[37
 
 
 
@@ -2104,90 +2233,119 @@ Chapter 7.
 Appendix A.
 )
 1: section
-[24
+[38
 
 
 
 ]
-Overfull \hbox (12.91156pt too wide) in paragraph at lines 360--360
+1: section
+[39
+
+
+]
+Overfull \hbox (12.91156pt too wide) in paragraph at lines 361--361
 \T1/ppl/m/n/10.95 Grained Control-Flow In-tegrity Pro-tec-tion.^^Q In: \T1/ppl/
 m/it/10.95 USENIX Se-cu-rity Sym-po-sium\T1/ppl/m/n/10.95 . Vol. 2014. 
  []
 
 
-Overfull \hbox (36.31192pt too wide) in paragraph at lines 360--360
-[][]\T1/ppl/m/n/10.95 Evenbalance (2017). \T1/ppl/m/it/10.95 Punk-Buster\T1/ppl
-/m/n/10.95 . Last visit on 13 Nov 2017. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95
- : [][]$\T1/pcr/m/n/10.95 http : / / www . evenbalance .
+Overfull \hbox (4.08163pt too wide) in paragraph at lines 361--361
+\T1/ppl/m/it/10.95 na-tional Con-fer-ence on Ver-i-fi-ca-tion, Model Check-ing,
+ and Ab-stract In-ter-pre-ta-tion\T1/ppl/m/n/10.95 . Springer,
  []
 
-1: section
-[25
 
+Overfull \hbox (0.51347pt too wide) in paragraph at lines 361--361
+[][]\T1/ppl/m/n/10.95 Ge, Xinyang, Wei-dong Cui, and Trent Jaeger (2017). ^^P  
+GRIF-FIN: Guard-ing Con-trol Flows
+ []
 
-]
-Overfull \hbox (3.2272pt too wide) in paragraph at lines 360--360
+[40] [41]
+Overfull \hbox (3.2272pt too wide) in paragraph at lines 361--361
 [][][]\T1/ppl/m/n/10.95 (2017). \T1/ppl/m/it/10.95 Driver Sign-ing\T1/ppl/m/n/1
 0.95 . Last visit on 02 Mar 2018. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][
 ]$\T1/pcr/m/n/10.95 https : / / docs . microsoft .
  []
 
 
-Overfull \hbox (2.39346pt too wide) in paragraph at lines 360--360
+Overfull \hbox (2.39346pt too wide) in paragraph at lines 361--361
 [][]\T1/ppl/m/n/10.95 Onarlioglu, Kaan et al. (2010). ^^P  G-Free: de-feat-ing 
 return-oriented pro-gram-ming through
  []
 
-[26]
-Overfull \hbox (1.7256pt too wide) in paragraph at lines 360--360
+
+Overfull \hbox (1.7256pt too wide) in paragraph at lines 361--361
 [][]\T1/ppl/m/n/10.95 Snow, Kevin Z et al. (2013). ^^P  Just-in-time code reuse
 : On the ef-fec-tive-ness of fine-grained
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 364.
-[27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
+[42]
+Overfull \hbox (4.18591pt too wide) in paragraph at lines 361--361
+[][]\T1/ppl/m/n/10.95 Watson, Robert NM et al. (2018). \T1/ppl/m/it/10.95 Ca-pa
+-bil-ity Hard-ware En-hanced RISC In-struc-tions (CHERI):
+ []
+
+
+Overfull \hbox (2.13712pt too wide) in paragraph at lines 361--361
+[][]\T1/ppl/m/n/10.95 Winter, Jo-hannes (2008). ^^P  Trusted com-put-ing build-
+ing blocks for em-bed-ded linux-based
+ []
+
+
+Overfull \hbox (7.59778pt too wide) in paragraph at lines 361--361
+[][]\T1/ppl/m/n/10.95 Yao, Fan, Jie Chen, and Guru Venkatara-mani (2013). ^^P  
+Jop-alarm: De-tect-ing jump-oriented
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 365.
+[43]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 365.
  (./main.aux (./chapters/introduction.aux)
 (./chapters/background-trusting-computing.aux)
-(./chapters/static-protection.aux) (./chapters/new-threats.aux)
-(./chapters/runtime-protection.aux) (./chapters/forensic-analysis.aux)
-(./chapters/conclusion.aux) (./appendices/appendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 364.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 364.
+(./chapters/static-protection.aux) (./chapters/runtime-protection-untrusted.aux
+) (./chapters/new-threats.aux) (./chapters/runtime-protection-trusted.aux)
+(./chapters/forensic-analysis.aux) (./chapters/conclusion.aux)
+(./appendices/appendixA.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 365.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 365.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 779AC2F5F2B9C063E2F999486E495CF4;4473.
+(rerunfilecheck)             Checksum: E043E613A89585FD66BE9D0B75810E2E;7208.
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34886 strings out of 492982
- 706701 string characters out of 6134896
- 945497 words of memory out of 5000000
- 37862 multiletter control sequences out of 15000+600000
- 576443 words of font info for 94 fonts, out of 8000000 for 9000
+ 35242 strings out of 492982
+ 715510 string characters out of 6134896
+ 971339 words of memory out of 5000000
+ 38108 multiletter control sequences out of 15000+600000
+ 578640 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,20n,82p,10377b,2895s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,20n,82p,10377b,2910s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cour
-ier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/palatino/uplri8a.pfb>
-Output written on main.pdf (37 pages, 689849 bytes).
+ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palat
+ino/uplri8a.pfb>
+Output written on main.pdf (54 pages, 997849 bytes).
 PDF statistics:
- 790 PDF objects out of 1000 (max. 8388607)
- 689 compressed objects within 7 object streams
- 191 named destinations out of 1000 (max. 500000)
- 265 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1243 PDF objects out of 1440 (max. 8388607)
+ 1094 compressed objects within 11 object streams
+ 284 named destinations out of 1000 (max. 500000)
+ 446 words of extra memory for PDF output out of 10000 (max. 10000000)
 
