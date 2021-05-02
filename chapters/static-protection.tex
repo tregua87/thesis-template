@@ -260,7 +260,7 @@ such client in the corporate environment in order to
 allow illicit activities. In this case, the attack has to happen such that the 
 central server does not recognize the anomaly.
 %We designed our solution to cope with such scenarios, that will be recalled in 
-%Section~\ref{sec:approach} and Section~\ref{sec:implementation}.
+%Section~\ref{sec:approach} and Section~\ref{sec:implementation_packing}.
 
 The attacker model we consider works at user-space level; therefore, we assume 
 the kernel is healthy.
@@ -444,10 +444,11 @@ approach in a real system.
 To achieve this, we require a trusted module to harden anti-tampering 
 techniques.
 For the sake of coherence with our proof-of-concept implementation (see 
-Section~\ref{sec:implementation}), we use the Intel Software Guard eXtension 
+Section~\ref{sec:implementation_packing}), we use the Intel Software Guard 
+eXtension 
 (SGX)~\cite{rozas2013intel} terminology.
 However, it is possible to use other trusted modules (see 
-Section~\ref{ssec:discussion}).
+Section~\ref{sec:discussion_packing}).
 
 \begin{figure}[t]
 	\centering
@@ -910,7 +911,7 @@ Section~\ref{ssect:back-sgx}\todo{add background}.
 %while, in case of function calls, each basic block is encrypted before the 
 %control flow leaves the function itself.
 %%However, in our proof-of-concept application described in 
-%%Section~\ref{sec:implementation}, we do not support
+%%Section~\ref{sec:implementation_packing}, we do not support
 %%packaging at single basic block, even if it is possible to extend our work to 
 %%support that like in~\cite{shih2017t,seo2017sgx}.
 %
@@ -980,7 +981,7 @@ Section~\ref{ssect:back-sgx}\todo{add background}.
 %CS secure again.
 
 \section{Implementation}
-\label{sec:implementation}
+\label{sec:implementation_packing}
 In this section, we describe a proof-of-concept implementation of our 
 anti-tampering
 technique, whose architecture is depicted in Figure~\ref{fig:architecture}.
@@ -1391,7 +1392,7 @@ number of CSs by using always the same amount of code in the enclave.
 In these experiments, we perform a set of microbenchmark to measure the 
 overhead in time introduced by our technique.
 As a use case, we measure the execution time of the CSs in our proof-of-concept 
-monitoring agent (see Section~\ref{sec:implementation}).
+monitoring agent (see Section~\ref{sec:implementation_packing}).
 At first, we briefly introduce the experiment setup.
 Then, we measure the execution time of the CSs with and without our 
 anti-tampering technique.
@@ -1582,7 +1583,7 @@ Section~\ref{ssec:back-attacker}) because the new application cannot work into
 the original infrastructure (\ie the heartbeat cannot work properly) and 
 therefore it is useless.
 For instance, in the implementation presented in 
-Section~\ref{sec:implementation}, 
+Section~\ref{sec:implementation_packing}, 
 the monitoring agent can work properly only if the software contains all the 
 functions employed by our technique along with the original CSs.
 If this is not respected  (\ie by removing checkers) the application cannot 
@@ -1665,8 +1666,8 @@ managed to detect all attacks.
 Therefore, we consider that this kind of attack is not practical
 in case of a trusted task scheduler.
 
-\subsection{Discussion}
-\label{ssec:discussion}
+\section{Discussion}
+\label{sec:discussion_packing}
 
 %In this work, we have proposed a set of software protection mechanisms
 %that combine anti-tampering techniques and trusted computing 
@@ -1676,7 +1677,7 @@ in case of a trusted task scheduler.
 %We also propose solutions to overcome side issues such as secure installation 
 %and boot phase.
 %In the end, we have deployed our technique in a monitoring agent 
-%(Section~\ref{sec:implementation}) and we have empirically shown the 
+%(Section~\ref{sec:implementation_packing}) and we have empirically shown the 
 %scalability of our approach (Section~\ref{sec:experiment}).
 We have shown how to implement our technique by means of a case study involving 
 a monitor agent, however there are few aspects to note about the validity of 

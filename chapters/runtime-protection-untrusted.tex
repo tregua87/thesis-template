@@ -155,7 +155,8 @@ In our implementation, we use the kernel as a trusted anchor, which is a
 reasonable assumption if the machines have trusted modules such as a 
 TPM~\cite{tomlinson2017introduction}. 
 However, we can also use a dedicated hardware, as discussed in 
-Section~\ref{sec:discussion}. The \emph{Prover} maintains sensitive information 
+Section~\ref{sec:discussion_scarr}. The \emph{Prover} maintains sensitive 
+information 
 (\ie shared keys and cryptographic functions) in the trusted anchor and uses it 
 to generate fresh reports, that cannot be tampered by the attacker. 
 
@@ -625,7 +626,7 @@ the  \emph{Verifier} detects the attack and triggers an alarm.
 \end{figure}
 
 \section{Implementation}
-\label{sec:implementation}
+\label{sec:implementation_scarr}
 
 Here, we provide the technical details of the ScaRR schema and, in particular, 
 of the \emph{Measurements Generator} 
@@ -713,7 +714,8 @@ input of the \emph{Verifier}.
 The whole architecture of the \emph{Prover} relies on the kernel as a trusted 
 anchor, since we find it more efficient in comparison to other commercial 
 trusted platforms, such as SGX and TrustZone, but other approaches can be also 
-considered (Section~\ref{sec:discussion}). To develop the kernel side of the 
+considered (Section~\ref{sec:discussion_scarr}). To develop the kernel side of 
+the 
 architecture, we add around $200$ lines of code to a Kernel version 
 v$4.17$-rc$3$.
 We also include the Blake2 source~\cite{Aumasson2014,blake2}, which is faster 
@@ -727,7 +729,7 @@ the \emph{LoAs}.
 \end{figure}
 
 \section{Evaluation}
-\label{sec:evaluation}
+\label{sec:evaluation_scarr_scarr}
 We evaluate ScaRR from two perspectives.
 First, we measure its performance focusing on: attestation speed 
 (Section~\ref{ssec:attestation-speed}), verification speed 
@@ -957,7 +959,7 @@ of functions by overwriting a \emph{vtable} and invoking functions from
 different calling addresses generates unexpected \emph{LoAs}.
 
 \section{Discussion}
-\label{sec:discussion}
+\label{sec:discussion_scarr}
 In this section we discuss limitations and possible solutions for ScaRR.
 
 \textbf{Control-flow graph.}

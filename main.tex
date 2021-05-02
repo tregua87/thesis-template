@@ -51,10 +51,51 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent 
 %quotes in the bibliography
 
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) 
+-- cycle;} 
 \usepackage{subcaption}
+\usepackage{listings}
 
 \usepackage[inline]{enumitem}
 \usepackage{amsmath}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.99,0.99,0.99}
+
+\usepackage{ifthen}
+\newcommand{\fix}[1]{
+	\ifthenelse%
+	{\boolean{showcomments}}%
+	{\textcolor{red}{#1}}%
+	{}%
+}
+
+\lstdefinestyle{CStyle}{
+	backgroundcolor=\color{backgroundColour},   
+	commentstyle=\color{mGreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{mGray},
+	stringstyle=\color{mPurple},
+	%	basicstyle=\footnotesize,
+	basicstyle=\small, %or \tiny \small or \footnotesize etc.
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2,
+	xleftmargin=2em,
+	framexleftmargin=1.5em,
+	language=C
+}
+\usepackage[titletoc, toc, page]{appendix}
 
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
@@ -349,9 +390,10 @@ The acknowledgments and the people to thank go here, don't forget to include you
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-\include{appendices/appendixA}
-%\include{appendices/appendixB}
-%\include{appendicesaAppendixC}
+%\include{appendices/appendixA.tex}
+\include{appendices/appendix_snakegx0.tex}
+\include{appendices/appendix_snakegx1.tex}
+\include{appendices/appendix_snakegx2.tex}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY

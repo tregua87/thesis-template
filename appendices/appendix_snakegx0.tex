@@ -1,0 +1,74 @@
+\chapter{Preliminary Analysis of Assumptions}
+\label{app:preliminary-analysis-assumptions}
+
+Table~\ref{tbl:sgx-open-source-prj} contains a list of $27$ stand-alone SGX
+projects extracted from~\cite{asop}.
+For each project, we indicate their category, 
+if it used the Intel SGX SDK,
+%if it has been developed on top of the Intel SGX SDK, 
+the number of trusted threads for each 
+enclave of the project, and a note.
+We also list details for each enclave, if the project contains many.
+We counted $24$ out of $27$ projects developed on top of Intel SGX SDK, two 
+projects use alternative SDKs (\ie Open Enclave SDK~\cite{openenclave} and
+Graphene~\cite{203255}), while one contains a simulated enclave.
+Among the projects based on the Intel SGX SDK, we counted a total of $31$ 
+enclaves, and $24$ out of $31$ are multi-threading ($77\%$).
+
+%#nProjects: 27
+%#nHasSDK: 24
+%#nEnclaves: 31
+%#multi-thread enclaves: 24 0.7741935483870968
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{lcc}
+		\toprule
+		\textbf{Category/Project} & \multicolumn{1}{l}{\textbf{Intel SGX SDK}} 
+		& 
+		\multicolumn{1}{l}{\textbf{\# of threads}} \\ \midrule \midrule
+		\multicolumn{3}{l}{\textbf{Blockchain}} \\ \midrule
+		teechain & \checkmark & 10 \\
+		private-data-objects & \checkmark & 10 \\
+		& \checkmark & 1 \\
+		& \checkmark & 2 \\
+		fabric-secure-chaincode & \checkmark & 10 \\
+		& \checkmark & 8 \\
+		eevm & \multicolumn{2}{l}{Open Enclave SDK~\cite{openenclave}} \\
+		lucky & \multicolumn{2}{l}{Based on a mock SGX implementation} \\
+		node-secureworker & \checkmark & 1 \\
+		town-crier & \checkmark & 10 \\
+		& \checkmark & 10 \\
+		& \checkmark & 1 \\
+		& \checkmark & 6 \\
+		bolos-enclave & \checkmark & 1 \\ \midrule
+		\multicolumn{3}{l}{\textbf{Machine Learning Framework}} \\ \midrule
+		gbdt-rs & \checkmark & 1 \\
+		bi-sgx & \checkmark & 1 \\
+		slalom & \checkmark & 4 \\ \midrule
+		\multicolumn{3}{l}{\textbf{Applications}} \\ \midrule
+		sgxwallet & \checkmark & 16 \\
+		sgx-tor & \checkmark & 10 \\
+		& \checkmark & 10 \\
+		obscuro & \checkmark & 50 \\
+		channel-id-enclave & \checkmark & 10 \\
+		sfaas & \checkmark & 3 \\
+		phoenix & \multicolumn{2}{l}{Graphene~\cite{203255}} \\
+		posup & \checkmark & 4 \\
+		tresorsgx & \checkmark & 10 \\ \midrule
+		\multicolumn{3}{l}{\textbf{Private Key/Passphrase Management}} \\ 
+		\midrule
+		sgx-kms & \checkmark & 8 \\
+		keystore & \checkmark & 1 \\
+		safekeeper-server & \checkmark & 10 \\ \midrule
+		\multicolumn{3}{l}{\textbf{Database}} \\ \midrule
+		talos & \checkmark & 50 \\
+		opaque & \checkmark & 10 \\
+		stealthdb & \checkmark & 10 \\
+		sgx\_sqlite & \checkmark & 10 \\
+		shieldstore & \checkmark & 8 \\
+		\bottomrule		
+	\end{tabular}
+	\caption{SGX open-source projects extracted from~\cite{asop}.}
+	\label{tbl:sgx-open-source-prj}
+\end{table}

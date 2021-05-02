@@ -17,7 +17,10 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces ScaRR evaluation.}}{30}{figure.caption.140}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces ScaRR network traffic evaluation.}}{31}{figure.caption.142}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Example of interaction between host process and enclave by using the Intel SGX SDK. The host process invokes the secure function S1 from the main function (\texttt {ECALL}). S1 function invokes O1 (\texttt {OCALL}), and this latter returns to S1 (\texttt {ORET}). Finally, S1 returns back to the main function (\texttt {ERET}).\relax }}{38}{figure.caption.159}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Example of \texttt {ocall\_context} disposition in an enclave stack, the fields point to structures within the stack itself in a precise order.\relax }}{39}{figure.caption.161}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Simplified \texttt {do\_oret()} pseudo-code.\relax }}{40}{figure.caption.168}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Trusted thread stack after SnakeGX installation. The memory is split in four areas: FakeFrame, buffer, workspace, and backup. Moreover, the stack contains copies of B$_{c}$, P$_{c}$, and R$_{c}$.\relax }}{44}{figure.caption.224}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

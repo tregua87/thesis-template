@@ -10,7 +10,8 @@ A level-1 auxiliary file: chapters/new-threats.aux
 A level-1 auxiliary file: chapters/runtime-protection-trusted.aux
 A level-1 auxiliary file: chapters/forensic-analysis.aux
 A level-1 auxiliary file: chapters/conclusion.aux
-A level-1 auxiliary file: appendices/appendixA.aux
+A level-1 auxiliary file: appendices/appendix_snakegx1.tex.aux
+A level-1 auxiliary file: appendices/appendix_snakegx2.tex.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -25,9 +26,13 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 16120 items from 5000.
+Reallocated field_info (elt_size=4) to 19595 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: biblio.bib
+Repeated entry---line 850 of file biblio.bib
+ : @inproceedings{seo2017sgx
+ :                          ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 919 of file biblio.bib
  : @article{costan2016intel
  :                         ,
@@ -36,48 +41,82 @@ Repeated entry---line 1224 of file biblio.bib
  : @article{8269390
  :                 ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 1797 of file biblio.bib
+ : @article{costan2016intel
+ :                         ,
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 1851 of file biblio.bib
+ :  pages: 
+ :         "370 - 388",
+I'm skipping whatever remains of this entry
+Repeated entry---line 1863 of file biblio.bib
+ : @article{rozas2013intel
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1871 of file biblio.bib
+ : @inproceedings{vogl2014persistent
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1910 of file biblio.bib
+ : @inproceedings{lee2017hacking
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2023 of file biblio.bib
+ : @article{baumann2015shielding
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2063 of file biblio.bib
+ : @inproceedings{seo2017sgx
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2572 of file biblio.bib
+ : @misc{azure
+ :            ,
+I'm skipping whatever remains of this entry
+Warning--I'm ignoring Murdock2019plundervolt's extra "booktitle" field
+--line 2722 of file biblio.bib
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 80 entries,
+You've used 105 entries,
             6268 wiz_defined-function locations,
-            1647 strings with 27084 characters,
-and the built_in function-call counts, 508784 in all, are:
-= -- 35700
-> -- 8738
-< -- 2517
-+ -- 13576
-- -- 3354
-* -- 39133
-:= -- 52567
+            1784 strings with 32979 characters,
+and the built_in function-call counts, 662715 in all, are:
+= -- 46593
+> -- 11135
+< -- 3327
++ -- 17645
+- -- 4239
+* -- 50663
+:= -- 67922
 add.period$ -- 0
-call.type$ -- 80
-change.case$ -- 1361
-chr.to.int$ -- 42
-cite$ -- 158
-duplicate$ -- 57463
-empty$ -- 46808
-format.name$ -- 5933
-if$ -- 102732
+call.type$ -- 105
+change.case$ -- 1854
+chr.to.int$ -- 54
+cite$ -- 208
+duplicate$ -- 74968
+empty$ -- 61289
+format.name$ -- 7555
+if$ -- 134021
 int.to.chr$ -- 0
-int.to.str$ -- 222
+int.to.str$ -- 293
 missing$ -- 0
-newline$ -- 3211
-num.names$ -- 3689
-pop$ -- 28210
+newline$ -- 4174
+num.names$ -- 4753
+pop$ -- 37102
 preamble$ -- 1
-purify$ -- 1921
+purify$ -- 2573
 quote$ -- 0
-skip$ -- 13954
+skip$ -- 18167
 stack$ -- 0
-substring$ -- 58588
-swap$ -- 14041
-text.length$ -- 2182
-text.prefix$ -- 82
+substring$ -- 76528
+swap$ -- 18404
+text.length$ -- 2801
+text.prefix$ -- 107
 top$ -- 1
-type$ -- 2707
+type$ -- 3557
 warning$ -- 0
-while$ -- 6681
+while$ -- 8606
 width$ -- 0
-write$ -- 3132
-(There were 2 error messages)
+write$ -- 4070
+(There were 11 error messages)
