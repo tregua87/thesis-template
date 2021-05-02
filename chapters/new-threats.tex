@@ -402,7 +402,7 @@ and finally, invoke an \texttt{ERET} to terminate
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.7\textwidth]{fig_c5/synch-exit.pdf}
-	\caption{Example of interaction between host 
+	\caption[SGX-Host interaction.]{Example of interaction between host 
 		process and enclave by using the Intel SGX SDK. The host process 
 		invokes 
 		the secure function S1 from the main function (\texttt{ECALL}). S1 
@@ -461,10 +461,9 @@ and what threats can lead to.
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.75\textwidth]{fig_c5/sgx-ocall-context.pdf}
-	\caption{Example of \texttt{ocall\_context} disposition in an enclave 
-		stack, the fields point to structures within the stack itself in a 
-		precise 
-		order.}
+	\caption[\texttt{ocall\_context} memory layout.]{Example of 
+	\texttt{ocall\_context} disposition in an enclave stack, the fields point 
+	to structures within the stack itself in a precise order.}
 	\label{fig:sgx-ocall-context}
 \end{figure}
 
@@ -931,10 +930,10 @@ used by the adversaries to design their customized payload for SnakeGX.
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.6\textwidth]{fig_c5/t-thread-stack-installed.pdf}
-	\caption{Trusted thread stack after SnakeGX installation. The memory is 
-		split in four areas: FakeFrame, buffer, workspace, and backup. 
-		Moreover, 
-		the stack contains copies of B$_{c}$, P$_{c}$, and R$_{c}$.}
+	\caption[SnakeGX installation layour.]{Trusted thread stack after SnakeGX 
+	installation. The memory is split in four areas: FakeFrame, buffer, 
+	workspace, and backup. Moreover, the stack contains copies of B$_{c}$, 
+	P$_{c}$, and R$_{c}$.}
 	\label{fig:t-thread-stack-installed}
 \end{figure}
 
