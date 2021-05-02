@@ -1,78 +1,78 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}A Practical and Scalable Software Protection enforced by TEE}{4}{chapter.11}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}A Practical and Scalable Software Protection enforced by TEE}{3}{chapter.11}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chp:static-protection}{{3}{4}{A Practical and Scalable Software Protection enforced by TEE}{chapter.11}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Introduction}{4}{section.12}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Problem Statement:}}{5}{section*.16}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Contributions:}}{5}{section*.17}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Threat Model}{5}{section.21}}
-\newlabel{ssec:back-attacker}{{3.2}{5}{Threat Model}{section.21}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Design}{6}{section.26}}
-\newlabel{sec:approach}{{3.3}{6}{Design}{section.26}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Challenges}{6}{subsection.27}}
-\newlabel{ssect:design-theory}{{3.3.1}{6}{Challenges}{subsection.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces An overview of our schema for single-thread applications, the memory is split in trusted and untrusted zones. The trusted zone contains all methods required for our technique, while in the untrusted zone we show the interaction of those methods with the CSs.\relax }}{8}{figure.caption.32}}
+\newlabel{chp:static-protection}{{3}{3}{A Practical and Scalable Software Protection enforced by TEE}{chapter.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Introduction}{3}{section.12}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Problem Statement:}}{4}{section*.16}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Contributions:}}{4}{section*.17}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Threat Model}{4}{section.21}}
+\newlabel{ssec:back-attacker}{{3.2}{4}{Threat Model}{section.21}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Design}{5}{section.26}}
+\newlabel{sec:approach}{{3.3}{5}{Design}{section.26}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Challenges}{5}{subsection.27}}
+\newlabel{ssect:design-theory}{{3.3.1}{5}{Challenges}{subsection.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces An overview of our schema for single-thread applications, the memory is split in trusted and untrusted zones. The trusted zone contains all methods required for our technique, while in the untrusted zone we show the interaction of those methods with the CSs.\relax }}{7}{figure.caption.32}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:core-all}{{3.1}{8}{An overview of our schema for single-thread applications, the memory is split in trusted and untrusted zones. The trusted zone contains all methods required for our technique, while in the untrusted zone we show the interaction of those methods with the CSs.\relax }{figure.caption.32}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Anti-Tampering based on Trusted Computing}{8}{subsection.31}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Critical Section Definition}}{9}{section*.33}}
-\newlabel{vcs:function}{{1}{9}{\textbf {Critical Section Definition}}{Item.34}{}}
-\newlabel{vcs:sequence}{{2}{9}{\textbf {Critical Section Definition}}{Item.35}{}}
-\newlabel{vcs:noexit}{{3}{9}{\textbf {Critical Section Definition}}{Item.36}{}}
-\newlabel{vcs:nooverlap}{{4}{9}{\textbf {Critical Section Definition}}{Item.37}{}}
-\newlabel{vcs:loops}{{7}{9}{\textbf {Critical Section Definition}}{Item.40}{}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Overcoming Denial of Service Issues}}{10}{section*.41}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Function Calls and Recursions}}{10}{section*.49}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Exceptions within Critical Section}}{11}{section*.57}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Packing mechanism of our schema.\relax }}{11}{figure.caption.48}}
-\newlabel{fig:dec1}{{3.2}{11}{Packing mechanism of our schema.\relax }{figure.caption.48}{}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Multi-threading programs}}{12}{section*.62}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Ensuring a Secure Booting Phase}}{12}{section*.63}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Implementation}{12}{section.64}}
-\newlabel{sec:implementation}{{3.4}{12}{Implementation}{section.64}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Client}{12}{subsection.66}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Software Architecture}}{12}{section*.67}}
-\newlabel{fig:architecture}{{3.3a}{13}{The architecture of proof-of-concept program. The client is a monitoring agent which collects user's activities, the server handles clients, and the database stores collect data and license keys.\relax }{figure.caption.65}{}}
-\newlabel{sub@fig:architecture}{{a}{13}{The architecture of proof-of-concept program. The client is a monitoring agent which collects user's activities, the server handles clients, and the database stores collect data and license keys.\relax }{figure.caption.65}{}}
-\newlabel{fig:clientarchitecture}{{3.3b}{13}{The software organization of the client.\relax }{figure.caption.65}{}}
-\newlabel{sub@fig:clientarchitecture}{{b}{13}{The software organization of the client.\relax }{figure.caption.65}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Careful-Packing architecture.\relax }}{13}{figure.caption.65}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Critical Section Definition}}{13}{section*.68}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Packaging Algorithm}}{13}{section*.73}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Heartbeat}}{13}{section*.74}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Block Table}}{14}{section*.75}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Installation Phase}{14}{subsection.76}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Secure installation protocol between client and server.\relax }}{15}{figure.caption.77}}
-\newlabel{fig:installation}{{3.4}{15}{Secure installation protocol between client and server.\relax }{figure.caption.77}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Evaluation}{15}{section.78}}
-\newlabel{sec:experiment}{{3.5}{15}{Evaluation}{section.78}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Lines-of-Code Overhead}{15}{subsection.79}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Number of LoC for each module\relax }}{16}{table.caption.80}}
-\newlabel{tbl:loc-stats}{{3.1}{16}{Number of LoC for each module\relax }{table.caption.80}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Microbenchmark Measurements}{16}{subsection.81}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {User-Simulator Bot}}{16}{section*.82}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Single Instance Microbenchmark}}{16}{section*.83}}
-\newlabel{fig:performanceEvaluation}{{3.5a}{17}{Average response time with and without anti-tampering technique\relax }{figure.caption.84}{}}
-\newlabel{sub@fig:performanceEvaluation}{{a}{17}{Average response time with and without anti-tampering technique\relax }{figure.caption.84}{}}
-\newlabel{fig:multiple}{{3.5b}{17}{Average response time with multiple instances\relax }{figure.caption.84}{}}
-\newlabel{sub@fig:multiple}{{b}{17}{Average response time with multiple instances\relax }{figure.caption.84}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Careful-Packing Evaluation.\relax }}{17}{figure.caption.84}}
-\newlabel{fig:performance2}{{3.5}{17}{Careful-Packing Evaluation.\relax }{figure.caption.84}{}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Multiple Instances}}{17}{section*.85}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Enclave Size Considerations}{17}{subsection.86}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.4}Threat Mitigation}{17}{subsection.87}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Protection of checkers and responses.}}{17}{section*.88}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Protection against disarm.}}{18}{section*.89}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Just-in-time Patch \& Repair Mitigation}}{18}{section*.90}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Reverse Engineering}}{18}{section*.94}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.5}Study of Just-in-Time Patch \& Repair Attack}{19}{subsection.95}}
-\newlabel{sec:just-in-time}{{3.5.5}{19}{Study of Just-in-Time Patch \& Repair Attack}{subsection.95}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.6}Discussion}{19}{subsection.96}}
-\newlabel{ssec:discussion}{{3.5.6}{19}{Discussion}{subsection.96}{}}
+\newlabel{fig:core-all}{{3.1}{7}{An overview of our schema for single-thread applications, the memory is split in trusted and untrusted zones. The trusted zone contains all methods required for our technique, while in the untrusted zone we show the interaction of those methods with the CSs.\relax }{figure.caption.32}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Anti-Tampering based on Trusted Computing}{7}{subsection.31}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Critical Section Definition}}{8}{section*.33}}
+\newlabel{vcs:function}{{1}{8}{\textbf {Critical Section Definition}}{Item.34}{}}
+\newlabel{vcs:sequence}{{2}{8}{\textbf {Critical Section Definition}}{Item.35}{}}
+\newlabel{vcs:noexit}{{3}{8}{\textbf {Critical Section Definition}}{Item.36}{}}
+\newlabel{vcs:nooverlap}{{4}{8}{\textbf {Critical Section Definition}}{Item.37}{}}
+\newlabel{vcs:loops}{{7}{8}{\textbf {Critical Section Definition}}{Item.40}{}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Overcoming Denial of Service Issues}}{9}{section*.41}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Function Calls and Recursions}}{9}{section*.49}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Exceptions within Critical Section}}{10}{section*.57}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Packing mechanism of our schema.\relax }}{10}{figure.caption.48}}
+\newlabel{fig:dec1}{{3.2}{10}{Packing mechanism of our schema.\relax }{figure.caption.48}{}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Multi-threading programs}}{11}{section*.62}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Ensuring a Secure Booting Phase}}{11}{section*.63}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Implementation}{11}{section.64}}
+\newlabel{sec:implementation}{{3.4}{11}{Implementation}{section.64}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Client}{11}{subsection.66}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Software Architecture}}{11}{section*.67}}
+\newlabel{fig:architecture}{{3.3a}{12}{The architecture of proof-of-concept program. The client is a monitoring agent which collects user's activities, the server handles clients, and the database stores collect data and license keys.\relax }{figure.caption.65}{}}
+\newlabel{sub@fig:architecture}{{a}{12}{The architecture of proof-of-concept program. The client is a monitoring agent which collects user's activities, the server handles clients, and the database stores collect data and license keys.\relax }{figure.caption.65}{}}
+\newlabel{fig:clientarchitecture}{{3.3b}{12}{The software organization of the client.\relax }{figure.caption.65}{}}
+\newlabel{sub@fig:clientarchitecture}{{b}{12}{The software organization of the client.\relax }{figure.caption.65}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Careful-Packing architecture.\relax }}{12}{figure.caption.65}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Critical Section Definition}}{12}{section*.68}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Packaging Algorithm}}{12}{section*.73}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Heartbeat}}{12}{section*.74}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Block Table}}{13}{section*.75}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Installation Phase}{13}{subsection.76}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Secure installation protocol between client and server.\relax }}{14}{figure.caption.77}}
+\newlabel{fig:installation}{{3.4}{14}{Secure installation protocol between client and server.\relax }{figure.caption.77}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Evaluation}{14}{section.78}}
+\newlabel{sec:experiment}{{3.5}{14}{Evaluation}{section.78}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Lines-of-Code Overhead}{14}{subsection.79}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Number of LoC for each module\relax }}{15}{table.caption.80}}
+\newlabel{tbl:loc-stats}{{3.1}{15}{Number of LoC for each module\relax }{table.caption.80}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Microbenchmark Measurements}{15}{subsection.81}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {User-Simulator Bot}}{15}{section*.82}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Single Instance Microbenchmark}}{15}{section*.83}}
+\newlabel{fig:performanceEvaluation}{{3.5a}{16}{Average response time with and without anti-tampering technique\relax }{figure.caption.84}{}}
+\newlabel{sub@fig:performanceEvaluation}{{a}{16}{Average response time with and without anti-tampering technique\relax }{figure.caption.84}{}}
+\newlabel{fig:multiple}{{3.5b}{16}{Average response time with multiple instances\relax }{figure.caption.84}{}}
+\newlabel{sub@fig:multiple}{{b}{16}{Average response time with multiple instances\relax }{figure.caption.84}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Careful-Packing Evaluation.\relax }}{16}{figure.caption.84}}
+\newlabel{fig:performance2}{{3.5}{16}{Careful-Packing Evaluation.\relax }{figure.caption.84}{}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Multiple Instances}}{16}{section*.85}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Enclave Size Considerations}{16}{subsection.86}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.4}Threat Mitigation}{16}{subsection.87}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Protection of checkers and responses.}}{16}{section*.88}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Protection against disarm.}}{17}{section*.89}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Just-in-time Patch \& Repair Mitigation}}{17}{section*.90}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Reverse Engineering}}{17}{section*.94}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.5}Study of Just-in-Time Patch \& Repair Attack}{18}{subsection.95}}
+\newlabel{sec:just-in-time}{{3.5.5}{18}{Study of Just-in-Time Patch \& Repair Attack}{subsection.95}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.6}Discussion}{18}{subsection.96}}
+\newlabel{ssec:discussion}{{3.5.6}{18}{Discussion}{subsection.96}{}}
 \@setckpt{chapters/static-protection}{
-\setcounter{page}{20}
+\setcounter{page}{19}
 \setcounter{equation}{0}
 \setcounter{enumi}{3}
 \setcounter{enumii}{0}
