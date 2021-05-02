@@ -169,7 +169,7 @@ works is in the threat model.
 Advanced code-reuse techniques require an unprivileged 
 attacker~\cite{biondo2018guard}.
 However, a non-compromised host can identify the presence of an adversary
-in the system memory (Section~\ref{ssec:code-reuse-sgx}).
+in the system memory (Section~\ref{ssec:code-reuse-sgx}\todo{ in background}).
 Therefore, we have to consider three players in our scenarios: the attacker, 
 the victim enclave, and the host.
 %Since we focus on code-reuse attacks, we rule out other techniques such as 
@@ -213,7 +213,7 @@ assumptions:
 	footprint, thus evading standard memory forensic 	
 	techniques~\cite{stancill2013check,polychronakis2011rop,kittel2015counteracting,Graziano:2016:RFA:2897845.2897894},
 	whose effectiveness relies on the amount of traces left in memory 
-	(see Section~\ref{ssec:code-reuse-sgx}).
+	(see Section~\ref{ssec:code-reuse-sgx}\todo{background}).
 	%	\item \textbf{(Temporary) Host process control.}
 	%	The attacker needs a partial control of the victim process for a short 
 	%	period of time.
@@ -345,7 +345,7 @@ Specifically, \texttt{uRts} handles operations like multi-threading, while
 \texttt{tRts} manages secure functions dispatching and context-switch. 
 
 The Intel SGX SDK exposes a set of APIs that are built on top of the leaf 
-functions described in Section~\ref{sec:background}.
+functions described in Section~\ref{sec:background}\todo{background}.
 \texttt{ECALL}, \texttt{ERET}, \texttt{OCALL}, and \texttt{ORET} are the most 
 important APIs for SnakeGX.
 Figure~\ref{fig:synch-exit} shows the interaction between the host process and 

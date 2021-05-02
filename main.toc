@@ -90,4 +90,8 @@
 \contentsline {chapter}{\numberline {6}A Novel Runtime Remote Attestation Schema for SGX Enclaves}{50}{chapter.247}
 \contentsline {chapter}{\numberline {7}Memory forensics in SGX environment}{51}{chapter.248}
 \contentsline {chapter}{\numberline {8}Conclusion}{52}{chapter.249}
-\contentsline {chapter}{Bibliography}{53}{appendix*.250}
+\contentsline {chapter}{\numberline {A}Preliminary Analysis of Assumptions}{53}{appendix.250}
+\contentsline {chapter}{\numberline {B}Code-Reuse Technique}{55}{appendix.252}
+\contentsline {chapter}{\numberline {C}Conditional Chain}{57}{appendix.257}
+\contentsline {section}{\numberline {C.1}Context-Switch Chain}{57}{section.285}
+\contentsline {chapter}{Bibliography}{59}{appendix*.332}
