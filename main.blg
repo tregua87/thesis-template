@@ -10,8 +10,9 @@ A level-1 auxiliary file: chapters/new-threats.aux
 A level-1 auxiliary file: chapters/runtime-protection-trusted.aux
 A level-1 auxiliary file: chapters/forensic-analysis.aux
 A level-1 auxiliary file: chapters/conclusion.aux
-A level-1 auxiliary file: appendices/appendix_snakegx1.tex.aux
-A level-1 auxiliary file: appendices/appendix_snakegx2.tex.aux
+A level-1 auxiliary file: appendices/appendix_snakegx0.aux
+A level-1 auxiliary file: appendices/appendix_snakegx1.aux
+A level-1 auxiliary file: appendices/appendix_snakegx2.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -26,7 +27,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 19595 items from 5000.
+Reallocated field_info (elt_size=4) to 19873 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: biblio.bib
 Repeated entry---line 850 of file biblio.bib
@@ -78,45 +79,45 @@ Warning--I'm ignoring Murdock2019plundervolt's extra "booktitle" field
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 105 entries,
+You've used 107 entries,
             6268 wiz_defined-function locations,
-            1784 strings with 32979 characters,
-and the built_in function-call counts, 662715 in all, are:
-= -- 46593
-> -- 11135
-< -- 3327
-+ -- 17645
-- -- 4239
-* -- 50663
-:= -- 67922
+            1793 strings with 33273 characters,
+and the built_in function-call counts, 676031 in all, are:
+= -- 47480
+> -- 11434
+< -- 3409
++ -- 18009
+- -- 4377
+* -- 51757
+:= -- 69284
 add.period$ -- 0
-call.type$ -- 105
-change.case$ -- 1854
+call.type$ -- 107
+change.case$ -- 1892
 chr.to.int$ -- 54
-cite$ -- 208
-duplicate$ -- 74968
-empty$ -- 61289
-format.name$ -- 7555
-if$ -- 134021
+cite$ -- 212
+duplicate$ -- 76431
+empty$ -- 62448
+format.name$ -- 7732
+if$ -- 136754
 int.to.chr$ -- 0
-int.to.str$ -- 293
+int.to.str$ -- 299
 missing$ -- 0
-newline$ -- 4174
-num.names$ -- 4753
-pop$ -- 37102
+newline$ -- 4253
+num.names$ -- 4857
+pop$ -- 37816
 preamble$ -- 1
-purify$ -- 2573
+purify$ -- 2627
 quote$ -- 0
-skip$ -- 18167
+skip$ -- 18557
 stack$ -- 0
-substring$ -- 76528
-swap$ -- 18404
-text.length$ -- 2801
-text.prefix$ -- 107
+substring$ -- 77939
+swap$ -- 18775
+text.length$ -- 2871
+text.prefix$ -- 109
 top$ -- 1
-type$ -- 3557
+type$ -- 3625
 warning$ -- 0
-while$ -- 8606
+while$ -- 8774
 width$ -- 0
-write$ -- 4070
+write$ -- 4147
 (There were 11 error messages)

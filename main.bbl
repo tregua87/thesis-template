@@ -3763,6 +3763,48 @@
     \field{year}{2005}
   \endentry
 
+  \entry{van2012memory}{inproceedings}{}
+    \true{moreauthor}
+    \name{author}{3}{}{%
+      {{hash=VdVV}{%
+         prefix={Van\bibnamedelima der},
+         prefixi={V\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Veen},
+         familyi={V\bibinitperiod},
+         given={Victor},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Cavallaro},
+         familyi={C\bibinitperiod},
+         given={Lorenzo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Bos},
+         familyi={B\bibinitperiod},
+         given={Herbert},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{VVVdCLBH+1}
+    \strng{fullhash}{VVVdCLBH+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{booktitle}{International Workshop on Recent Advances in Intrusion
+  Detection}
+    \field{pages}{86\bibrangedash 106}
+    \field{title}{Memory errors: The past, the present, and the future}
+    \field{year}{2012}
+  \endentry
+
   \entry{stealthdb}{article}{}
     \name{author}{3}{}{%
       {{hash=VD}{%
@@ -4124,6 +4166,45 @@
     \field{howpublished}{\url{https://github.com/yerzhan7/SGX_SQLite}}
     \field{note}{Last access January 2019}
     \field{title}{SGX\_SQLite}
+  \endentry
+
+  \entry{yuan2015hardware}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=YP}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Pinghai},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=ZQ}{%
+         family={Zeng},
+         familyi={Z\bibinitperiod},
+         given={Qingkai},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=DX}{%
+         family={Ding},
+         familyi={D\bibinitperiod},
+         given={Xuhua},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{YPZQDX1}
+    \strng{fullhash}{YPZQDX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{booktitle}{International Workshop on Recent Advances in Intrusion
+  Detection}
+    \field{pages}{66\bibrangedash 85}
+    \field{title}{Hardware-assisted fine-grained code-reuse attack detection}
+    \field{year}{2015}
   \endentry
 
   \entry{zeitouni2017atrium}{inproceedings}{}
