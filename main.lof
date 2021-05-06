@@ -2,30 +2,30 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of control-flow attack.}}{3}{figure.caption.14}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of control-flow attack.}}{5}{figure.caption.20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of single-thread schema.}}{10}{figure.caption.43}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Packing mechanism of our schema.\relax }}{13}{figure.caption.59}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Careful-Packing architecture.\relax }}{15}{figure.caption.76}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Secure installation protocol between client and server.\relax }}{17}{figure.caption.88}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Careful-Packing evaluation.\relax }}{19}{figure.caption.95}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of single-thread schema.}}{12}{figure.caption.49}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Packing mechanism of our schema.\relax }}{15}{figure.caption.65}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Careful-Packing architecture.\relax }}{17}{figure.caption.82}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Secure installation protocol between client and server.\relax }}{19}{figure.caption.94}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Careful-Packing evaluation.\relax }}{21}{figure.caption.101}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces ScaRR model challenges.\relax }}{25}{figure.caption.123}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces ScaRR system overview.\relax }}{26}{figure.caption.128}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces ScaRR shadow stack example.}}{29}{figure.caption.140}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Implementation of the shadow stack on the ScaRR \emph {Verifier}.\relax }}{30}{figure.caption.141}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Internal architecture of the \emph {Prover}.\relax }}{32}{figure.caption.147}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces ScaRR evaluation.}}{33}{figure.caption.152}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces ScaRR network traffic evaluation.}}{34}{figure.caption.154}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces ScaRR model challenges.\relax }}{27}{figure.caption.129}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces ScaRR system overview.\relax }}{28}{figure.caption.134}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces ScaRR shadow stack example.}}{31}{figure.caption.146}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Implementation of the shadow stack on the ScaRR \emph {Verifier}.\relax }}{32}{figure.caption.147}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Internal architecture of the \emph {Prover}.\relax }}{34}{figure.caption.153}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces ScaRR evaluation.}}{35}{figure.caption.158}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces ScaRR network traffic evaluation.}}{36}{figure.caption.160}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces SGX-Host interaction.}}{41}{figure.caption.171}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces \texttt {ocall\_context} memory layout.}}{42}{figure.caption.173}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Simplified \texttt {do\_oret()} pseudo-code.\relax }}{43}{figure.caption.180}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces SnakeGX installation layour.}}{47}{figure.caption.236}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces SGX-Host interaction.}}{43}{figure.caption.177}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \texttt {ocall\_context} memory layout.}}{44}{figure.caption.179}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Simplified \texttt {do\_oret()} pseudo-code.\relax }}{45}{figure.caption.186}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces SnakeGX installation layour.}}{49}{figure.caption.242}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Chain used in the proof-of-concept of SnakeGX.\relax }}{59}{figure.caption.268}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Chain used in the proof-of-concept of SnakeGX.\relax }}{61}{figure.caption.274}
 \addvspace {10\p@ }

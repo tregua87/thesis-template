@@ -27,97 +27,111 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 19873 items from 5000.
+Reallocated field_info (elt_size=4) to 22097 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: biblio.bib
-Repeated entry---line 850 of file biblio.bib
+I was expecting a `,' or a `}'---line 354 of file biblio.bib
+ :   
+ :   month  = may,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 948 of file biblio.bib
  : @inproceedings{seo2017sgx
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 919 of file biblio.bib
+Repeated entry---line 991 of file biblio.bib
+ : @inproceedings{anati2013innovative
+ :                                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1017 of file biblio.bib
  : @article{costan2016intel
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1224 of file biblio.bib
+Repeated entry---line 1333 of file biblio.bib
  : @article{8269390
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1797 of file biblio.bib
+Repeated entry---line 1933 of file biblio.bib
  : @article{costan2016intel
  :                         ,
 I'm skipping whatever remains of this entry
-I was expecting an "="---line 1851 of file biblio.bib
+I was expecting an "="---line 1987 of file biblio.bib
  :  pages: 
  :         "370 - 388",
 I'm skipping whatever remains of this entry
-Repeated entry---line 1863 of file biblio.bib
+Repeated entry---line 1999 of file biblio.bib
  : @article{rozas2013intel
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1871 of file biblio.bib
+Repeated entry---line 2007 of file biblio.bib
  : @inproceedings{vogl2014persistent
  :                                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1910 of file biblio.bib
+Repeated entry---line 2046 of file biblio.bib
  : @inproceedings{lee2017hacking
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2023 of file biblio.bib
+Repeated entry---line 2159 of file biblio.bib
  : @article{baumann2015shielding
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2063 of file biblio.bib
+Repeated entry---line 2199 of file biblio.bib
  : @inproceedings{seo2017sgx
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2572 of file biblio.bib
+Repeated entry---line 2243 of file biblio.bib
+ : @inproceedings{schuster2015vc3
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2708 of file biblio.bib
  : @misc{azure
  :            ,
 I'm skipping whatever remains of this entry
 Warning--I'm ignoring Murdock2019plundervolt's extra "booktitle" field
---line 2722 of file biblio.bib
+--line 2858 of file biblio.bib
+Warning--I didn't find a database entry for "vill2017sgx"
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 107 entries,
+You've used 122 entries,
             6268 wiz_defined-function locations,
-            1793 strings with 33273 characters,
-and the built_in function-call counts, 676031 in all, are:
-= -- 47480
-> -- 11434
-< -- 3409
-+ -- 18009
-- -- 4377
-* -- 51757
-:= -- 69284
+            1876 strings with 36692 characters,
+and the built_in function-call counts, 772860 in all, are:
+= -- 54240
+> -- 13195
+< -- 3873
++ -- 20461
+- -- 5062
+* -- 59459
+:= -- 79259
 add.period$ -- 0
-call.type$ -- 107
-change.case$ -- 1892
-chr.to.int$ -- 54
-cite$ -- 212
-duplicate$ -- 76431
-empty$ -- 62448
-format.name$ -- 7732
-if$ -- 136754
+call.type$ -- 122
+change.case$ -- 2118
+chr.to.int$ -- 62
+cite$ -- 242
+duplicate$ -- 86905
+empty$ -- 71400
+format.name$ -- 8889
+if$ -- 156492
 int.to.chr$ -- 0
-int.to.str$ -- 299
+int.to.str$ -- 335
 missing$ -- 0
-newline$ -- 4253
-num.names$ -- 4857
-pop$ -- 37816
+newline$ -- 4826
+num.names$ -- 5557
+pop$ -- 43153
 preamble$ -- 1
-purify$ -- 2627
+purify$ -- 2958
 quote$ -- 0
-skip$ -- 18557
+skip$ -- 21190
 stack$ -- 0
-substring$ -- 77939
-swap$ -- 18775
-text.length$ -- 2871
-text.prefix$ -- 109
+substring$ -- 89467
+swap$ -- 21338
+text.length$ -- 3298
+text.prefix$ -- 124
 top$ -- 1
-type$ -- 3625
+type$ -- 4135
 warning$ -- 0
-while$ -- 8774
+while$ -- 9993
 width$ -- 0
-write$ -- 4147
-(There were 11 error messages)
+write$ -- 4705
+(There were 14 error messages)
