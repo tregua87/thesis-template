@@ -5,108 +5,158 @@
 \contentsline {chapter}{Publications}{iii}{section*.4}
 \contentsline {chapter}{Acknowledgements}{iv}{section*.5}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.9}
-\contentsline {chapter}{\numberline {2}Background}{2}{chapter.10}
-\contentsline {section}{\numberline {2.1}Trusted Execution Environments}{2}{section.11}
-\contentsline {subsection}{\numberline {2.1.1}Memory Isolation}{2}{subsection.12}
-\contentsline {subsection}{\numberline {2.1.2}Remote Attestation}{2}{subsection.13}
-\contentsline {paragraph}{Static RA.}{3}{section*.14}
-\contentsline {paragraph}{Runtime RA.}{3}{section*.15}
-\contentsline {subsection}{\numberline {2.1.3}Attacker Model}{3}{subsection.16}
-\contentsline {paragraph}{Software Attacks.}{3}{section*.17}
-\contentsline {paragraph}{Physical Attacks.}{4}{section*.18}
-\contentsline {section}{\numberline {2.2}Control-Flow Attacks}{4}{section.19}
-\contentsline {section}{\numberline {2.3}Anti-Tampering Techniques}{6}{section.21}
-\contentsline {section}{\numberline {2.4}Software Guard eXtension}{6}{section.22}
-\contentsline {subsection}{\numberline {2.4.1}SGX Remote Attestation}{6}{subsection.23}
-\contentsline {subsection}{\numberline {2.4.2}SGX Control-Flow Attacks}{6}{subsection.26}
-\contentsline {paragraph}{Dark-ROP.}{6}{section*.27}
-\contentsline {paragraph}{Guard's Dilemma.}{7}{section*.28}
-\contentsline {chapter}{\numberline {3}A Practical and Scalable Software Protection enforced by TEE}{8}{chapter.29}
-\contentsline {paragraph}{\textbf {Problem Statement:}}{9}{section*.33}
-\contentsline {paragraph}{\textbf {Contributions:}}{9}{section*.34}
-\contentsline {section}{\numberline {3.1}Threat Model}{9}{section.38}
-\contentsline {section}{\numberline {3.2}Design}{10}{section.43}
-\contentsline {subsection}{\numberline {3.2.1}Challenges}{10}{subsection.44}
-\contentsline {subsection}{\numberline {3.2.2}Anti-Tampering based on Trusted Computing}{12}{subsection.48}
-\contentsline {paragraph}{\textbf {Critical Section Definition}}{13}{section*.50}
-\contentsline {paragraph}{\textbf {Overcoming Denial of Service Issues}}{14}{section*.58}
-\contentsline {paragraph}{\textbf {Function Calls and Recursions}}{14}{section*.66}
-\contentsline {paragraph}{\textbf {Exceptions within Critical Section}}{15}{section*.74}
-\contentsline {paragraph}{\textbf {Multi-threading programs}}{16}{section*.79}
-\contentsline {paragraph}{\textbf {Ensuring a Secure Booting Phase}}{16}{section*.80}
-\contentsline {section}{\numberline {3.3}Implementation}{16}{section.81}
-\contentsline {subsection}{\numberline {3.3.1}Client}{16}{subsection.83}
-\contentsline {paragraph}{\textbf {Software Architecture}}{16}{section*.84}
-\contentsline {paragraph}{\textbf {Critical Section Definition}}{17}{section*.85}
-\contentsline {paragraph}{\textbf {Packaging Algorithm}}{17}{section*.90}
-\contentsline {paragraph}{\textbf {Heartbeat}}{17}{section*.91}
-\contentsline {paragraph}{\textbf {Block Table}}{18}{section*.92}
-\contentsline {subsection}{\numberline {3.3.2}Installation Phase}{18}{subsection.93}
-\contentsline {section}{\numberline {3.4}Evaluation}{19}{section.95}
-\contentsline {subsection}{\numberline {3.4.1}Lines-of-Code Overhead}{19}{subsection.96}
-\contentsline {subsection}{\numberline {3.4.2}Microbenchmark Measurements}{20}{subsection.98}
-\contentsline {paragraph}{\textbf {User-Simulator Bot}}{20}{section*.99}
-\contentsline {paragraph}{\textbf {Single Instance Microbenchmark}}{20}{section*.100}
-\contentsline {paragraph}{\textbf {Multiple Instances}}{21}{section*.102}
-\contentsline {subsection}{\numberline {3.4.3}Enclave Size Considerations}{21}{subsection.103}
-\contentsline {subsection}{\numberline {3.4.4}Threat Mitigation}{21}{subsection.104}
-\contentsline {paragraph}{\textbf {Protection of checkers and responses.}}{21}{section*.105}
-\contentsline {paragraph}{\textbf {Protection against disarm.}}{22}{section*.106}
-\contentsline {paragraph}{\textbf {Just-in-time Patch \& Repair Mitigation}}{22}{section*.107}
-\contentsline {paragraph}{\textbf {Reverse Engineering}}{22}{section*.111}
-\contentsline {subsection}{\numberline {3.4.5}Study of Just-in-Time Patch \& Repair Attack}{23}{subsection.112}
-\contentsline {section}{\numberline {3.5}Discussion}{23}{section.113}
-\contentsline {chapter}{\numberline {4}Scalable Runtime Remote Attestation for Complex Systems}{24}{chapter.114}
-\contentsline {section}{\numberline {4.1}Threat Model and Requirements}{25}{section.121}
-\contentsline {paragraph}{Attacker.}{25}{section*.122}
-\contentsline {paragraph}{Prover.}{25}{section*.123}
-\contentsline {section}{\numberline {4.2}ScaRR Control-Flow Model}{25}{section.126}
-\contentsline {subsection}{\numberline {4.2.1}Basic Concepts}{25}{subsection.127}
-\contentsline {subsection}{\numberline {4.2.2}Challenges}{26}{subsection.128}
-\contentsline {section}{\numberline {4.3}System Design}{28}{section.130}
-\contentsline {subsection}{\numberline {4.3.1}Overview}{28}{subsection.133}
-\contentsline {subsection}{\numberline {4.3.2}Details}{29}{subsection.135}
-\contentsline {subsection}{\numberline {4.3.3}Shadow Stack}{30}{subsection.142}
-\contentsline {section}{\numberline {4.4}Implementation}{32}{section.148}
-\contentsline {subsection}{\numberline {4.4.1}Measurements Generator}{32}{subsection.149}
-\contentsline {subsection}{\numberline {4.4.2}Prover}{32}{subsection.152}
-\contentsline {section}{\numberline {4.5}Evaluation}{33}{section.154}
-\contentsline {subsection}{\numberline {4.5.1}Attestation Speed}{34}{subsection.156}
-\contentsline {subsection}{\numberline {4.5.2}Verification Speed}{34}{subsection.157}
-\contentsline {subsection}{\numberline {4.5.3}Network Impact and Mitigation}{35}{subsection.159}
-\contentsline {subsection}{\numberline {4.5.4}Attack Detection}{36}{subsection.161}
-\contentsline {section}{\numberline {4.6}Discussion}{37}{section.162}
-\contentsline {chapter}{\numberline {5}Advanced attacks against SGX Enclaves}{39}{chapter.163}
-\contentsline {section}{\numberline {5.1}Threat Model and Assumptions}{40}{section.169}
-\contentsline {paragraph}{\textbf {Threat Model.}}{40}{section*.170}
-\contentsline {paragraph}{\textbf {Preliminary Analysis of Assumptions.}}{41}{section*.172}
-\contentsline {section}{\numberline {5.2}Intel SGX SDK Design Limitation}{42}{section.173}
-\contentsline {subsection}{\numberline {5.2.1}SDK Overview}{42}{subsection.174}
-\contentsline {subsection}{\numberline {5.2.2}OCALL Context Setting}{43}{subsection.178}
-\contentsline {subsection}{\numberline {5.2.3}Exploiting an ORET as a Trigger}{44}{subsection.180}
-\contentsline {subsection}{\numberline {5.2.4}Mitigations}{45}{subsection.209}
-\contentsline {section}{\numberline {5.3}S\lowercase {nake}GX}{46}{section.212}
-\contentsline {subsection}{\numberline {5.3.1}Overview}{46}{subsection.215}
-\contentsline {subsection}{\numberline {5.3.2}Getting a Secure Memory Location}{47}{subsection.227}
-\contentsline {paragraph}{\textbf {Un-releasing a Trusted Thread.}}{47}{section*.228}
-\contentsline {paragraph}{\textbf {Making a New Thread.}}{47}{section*.231}
-\contentsline {subsection}{\numberline {5.3.3}Set a Payload Trigger}{47}{subsection.232}
-\contentsline {subsection}{\numberline {5.3.4}Backdoor Architecture}{48}{subsection.236}
-\contentsline {subsection}{\numberline {5.3.5}Context-Switch}{49}{subsection.243}
-\contentsline {section}{\numberline {5.4}Evaluation}{50}{section.247}
-\contentsline {subsection}{\numberline {5.4.1}StealthDB}{50}{subsection.251}
-\contentsline {subsection}{\numberline {5.4.2}Use-Case Discussion}{50}{subsection.252}
-\contentsline {subsection}{\numberline {5.4.3}Trace Measurements}{52}{subsection.257}
-\contentsline {subsection}{\numberline {5.4.4}Countermeasures}{52}{subsection.258}
-\contentsline {section}{\numberline {5.5}Discussion}{53}{section.259}
-\contentsline {subsection}{\numberline {5.5.1}SnakeGX Portability}{53}{subsection.260}
-\contentsline {subsection}{\numberline {5.5.2}Persistence Offline}{54}{subsection.263}
-\contentsline {subsection}{\numberline {5.5.3}SnakeGX 32bit}{54}{subsection.264}
-\contentsline {chapter}{\numberline {6}A Novel Runtime Remote Attestation Schema for SGX Enclaves}{55}{chapter.265}
-\contentsline {chapter}{\numberline {7}Memory forensics in SGX environment}{56}{chapter.266}
-\contentsline {chapter}{\numberline {8}Conclusion}{57}{chapter.267}
-\contentsline {chapter}{\numberline {A}Preliminary Analysis of Assumptions}{58}{appendix.268}
-\contentsline {chapter}{\numberline {B}Code-Reuse Technique}{60}{appendix.270}
-\contentsline {chapter}{\numberline {C}Conditional Chain}{62}{appendix.275}
-\contentsline {section}{\numberline {C.1}Context-Switch Chain}{62}{section.303}
-\contentsline {chapter}{Bibliography}{64}{appendix*.350}
+\contentsline {chapter}{\numberline {2}Background}{4}{chapter.13}
+\contentsline {section}{\numberline {2.1}Trusted Execution Environments}{4}{section.14}
+\contentsline {subsection}{\numberline {2.1.1}Memory Isolation}{4}{subsection.15}
+\contentsline {subsection}{\numberline {2.1.2}Remote Attestation}{4}{subsection.16}
+\contentsline {paragraph}{Static RA.}{5}{section*.17}
+\contentsline {paragraph}{Runtime RA.}{5}{section*.18}
+\contentsline {subsection}{\numberline {2.1.3}Attacker Model}{5}{subsection.19}
+\contentsline {paragraph}{Software Attacks.}{5}{section*.20}
+\contentsline {paragraph}{Physical Attacks.}{6}{section*.21}
+\contentsline {section}{\numberline {2.2}Control-Flow Attacks}{6}{section.22}
+\contentsline {section}{\numberline {2.3}Anti-Tampering Techniques}{8}{section.24}
+\contentsline {section}{\numberline {2.4}Software Guard eXtension}{8}{section.25}
+\contentsline {subsection}{\numberline {2.4.1}SGX Remote Attestation}{8}{subsection.26}
+\contentsline {subsection}{\numberline {2.4.2}SGX Control-Flow Attacks}{8}{subsection.29}
+\contentsline {paragraph}{Dark-ROP.}{8}{section*.30}
+\contentsline {paragraph}{Guard's Dilemma.}{9}{section*.31}
+\contentsline {chapter}{\numberline {3}A Practical and Scalable Software Protection enforced by TEE}{10}{chapter.32}
+\contentsline {paragraph}{\textbf {Problem Statement:}}{11}{section*.36}
+\contentsline {paragraph}{\textbf {Contributions:}}{11}{section*.37}
+\contentsline {section}{\numberline {3.1}Threat Model}{11}{section.41}
+\contentsline {section}{\numberline {3.2}Design}{12}{section.46}
+\contentsline {subsection}{\numberline {3.2.1}Challenges}{12}{subsection.47}
+\contentsline {subsection}{\numberline {3.2.2}Anti-Tampering based on Trusted Computing}{14}{subsection.51}
+\contentsline {paragraph}{\textbf {Critical Section Definition}}{15}{section*.53}
+\contentsline {paragraph}{\textbf {Overcoming Denial of Service Issues}}{16}{section*.61}
+\contentsline {paragraph}{\textbf {Function Calls and Recursions}}{16}{section*.69}
+\contentsline {paragraph}{\textbf {Exceptions within Critical Section}}{17}{section*.77}
+\contentsline {paragraph}{\textbf {Multi-threading programs}}{18}{section*.82}
+\contentsline {paragraph}{\textbf {Ensuring a Secure Booting Phase}}{18}{section*.83}
+\contentsline {section}{\numberline {3.3}Implementation}{18}{section.84}
+\contentsline {subsection}{\numberline {3.3.1}Client}{18}{subsection.86}
+\contentsline {paragraph}{\textbf {Software Architecture}}{18}{section*.87}
+\contentsline {paragraph}{\textbf {Critical Section Definition}}{19}{section*.88}
+\contentsline {paragraph}{\textbf {Packaging Algorithm}}{19}{section*.93}
+\contentsline {paragraph}{\textbf {Heartbeat}}{19}{section*.94}
+\contentsline {paragraph}{\textbf {Block Table}}{20}{section*.95}
+\contentsline {subsection}{\numberline {3.3.2}Installation Phase}{20}{subsection.96}
+\contentsline {section}{\numberline {3.4}Evaluation}{21}{section.98}
+\contentsline {subsection}{\numberline {3.4.1}Lines-of-Code Overhead}{21}{subsection.99}
+\contentsline {subsection}{\numberline {3.4.2}Microbenchmark Measurements}{22}{subsection.101}
+\contentsline {paragraph}{\textbf {User-Simulator Bot}}{22}{section*.102}
+\contentsline {paragraph}{\textbf {Single Instance Microbenchmark}}{22}{section*.103}
+\contentsline {paragraph}{\textbf {Multiple Instances}}{23}{section*.105}
+\contentsline {subsection}{\numberline {3.4.3}Enclave Size Considerations}{23}{subsection.106}
+\contentsline {subsection}{\numberline {3.4.4}Threat Mitigation}{23}{subsection.107}
+\contentsline {paragraph}{\textbf {Protection of checkers and responses.}}{23}{section*.108}
+\contentsline {paragraph}{\textbf {Protection against disarm.}}{24}{section*.109}
+\contentsline {paragraph}{\textbf {Just-in-time Patch \& Repair Mitigation}}{24}{section*.110}
+\contentsline {paragraph}{\textbf {Reverse Engineering}}{24}{section*.114}
+\contentsline {subsection}{\numberline {3.4.5}Study of Just-in-Time Patch \& Repair Attack}{25}{subsection.115}
+\contentsline {section}{\numberline {3.5}Discussion}{25}{section.116}
+\contentsline {chapter}{\numberline {4}Advanced attacks against SGX Enclaves}{26}{chapter.117}
+\contentsline {section}{\numberline {4.1}Threat Model and Assumptions}{27}{section.123}
+\contentsline {paragraph}{\textbf {Threat Model.}}{27}{section*.124}
+\contentsline {paragraph}{\textbf {Preliminary Analysis of Assumptions.}}{28}{section*.126}
+\contentsline {section}{\numberline {4.2}Intel SGX SDK Design Limitation}{29}{section.127}
+\contentsline {subsection}{\numberline {4.2.1}SDK Overview}{29}{subsection.128}
+\contentsline {subsection}{\numberline {4.2.2}OCALL Context Setting}{30}{subsection.132}
+\contentsline {subsection}{\numberline {4.2.3}Exploiting an ORET as a Trigger}{31}{subsection.134}
+\contentsline {subsection}{\numberline {4.2.4}Mitigations}{32}{subsection.163}
+\contentsline {section}{\numberline {4.3}Design}{33}{section.166}
+\contentsline {subsection}{\numberline {4.3.1}Overview}{33}{subsection.169}
+\contentsline {subsection}{\numberline {4.3.2}Getting a Secure Memory Location}{34}{subsection.181}
+\contentsline {paragraph}{\textbf {Un-releasing a Trusted Thread.}}{34}{section*.182}
+\contentsline {paragraph}{\textbf {Making a New Thread.}}{34}{section*.185}
+\contentsline {subsection}{\numberline {4.3.3}Set a Payload Trigger}{34}{subsection.186}
+\contentsline {subsection}{\numberline {4.3.4}Backdoor Architecture}{35}{subsection.190}
+\contentsline {subsection}{\numberline {4.3.5}Context-Switch}{36}{subsection.197}
+\contentsline {section}{\numberline {4.4}Evaluation}{37}{section.201}
+\contentsline {subsection}{\numberline {4.4.1}StealthDB}{37}{subsection.205}
+\contentsline {subsection}{\numberline {4.4.2}Use-Case Discussion}{37}{subsection.206}
+\contentsline {subsection}{\numberline {4.4.3}Trace Measurements}{39}{subsection.211}
+\contentsline {subsection}{\numberline {4.4.4}Countermeasures}{39}{subsection.212}
+\contentsline {section}{\numberline {4.5}Discussion}{40}{section.213}
+\contentsline {subsection}{\numberline {4.5.1}SnakeGX Portability}{40}{subsection.214}
+\contentsline {subsection}{\numberline {4.5.2}Persistence Offline}{41}{subsection.217}
+\contentsline {subsection}{\numberline {4.5.3}SnakeGX 32bit}{41}{subsection.218}
+\contentsline {chapter}{\numberline {5}Scalable Runtime Remote Attestation for Complex Systems}{42}{chapter.219}
+\contentsline {section}{\numberline {5.1}Threat Model and Requirements}{43}{section.226}
+\contentsline {paragraph}{Attacker.}{43}{section*.227}
+\contentsline {paragraph}{Prover.}{43}{section*.228}
+\contentsline {section}{\numberline {5.2}Model}{43}{section.231}
+\contentsline {subsection}{\numberline {5.2.1}Basic Concepts}{43}{subsection.232}
+\contentsline {subsection}{\numberline {5.2.2}Challenges}{44}{subsection.233}
+\contentsline {section}{\numberline {5.3}Design}{46}{section.235}
+\contentsline {subsection}{\numberline {5.3.1}Overview}{46}{subsection.238}
+\contentsline {subsection}{\numberline {5.3.2}Details}{47}{subsection.240}
+\contentsline {subsection}{\numberline {5.3.3}Shadow Stack}{48}{subsection.247}
+\contentsline {section}{\numberline {5.4}Implementation}{50}{section.253}
+\contentsline {subsection}{\numberline {5.4.1}Measurements Generator}{50}{subsection.254}
+\contentsline {subsection}{\numberline {5.4.2}Prover}{50}{subsection.257}
+\contentsline {section}{\numberline {5.5}Evaluation}{51}{section.259}
+\contentsline {subsection}{\numberline {5.5.1}Attestation Speed}{52}{subsection.261}
+\contentsline {subsection}{\numberline {5.5.2}Verification Speed}{52}{subsection.262}
+\contentsline {subsection}{\numberline {5.5.3}Network Impact and Mitigation}{53}{subsection.264}
+\contentsline {subsection}{\numberline {5.5.4}Attack Detection}{54}{subsection.266}
+\contentsline {section}{\numberline {5.6}Discussion}{55}{section.267}
+\contentsline {chapter}{\numberline {6}A Novel Runtime Remote Attestation Schema for SGX Enclaves}{57}{chapter.268}
+\contentsline {section}{\numberline {6.1}Threat Model}{58}{section.280}
+\contentsline {paragraph}{Adversary Assumptions.}{58}{section*.281}
+\contentsline {paragraph}{Enclave Assumptions.}{58}{section*.282}
+\contentsline {paragraph}{Out-of-Scope Attacks.}{58}{section*.283}
+\contentsline {section}{\numberline {6.2}Model}{58}{section.284}
+\contentsline {subsection}{\numberline {6.2.1}State Definition}{59}{subsection.287}
+\contentsline {subsection}{\numberline {6.2.2}Action Definition}{60}{subsection.290}
+\contentsline {paragraph}{Generic actions.}{60}{section*.291}
+\contentsline {paragraph}{Stop actions.}{60}{section*.295}
+\contentsline {subsection}{\numberline {6.2.3}Graphs of Actions Definition}{61}{subsection.297}
+\contentsline {subsection}{\numberline {6.2.4}Transaction Definition}{61}{subsection.298}
+\contentsline {subsection}{\numberline {6.2.5}Model Example}{62}{subsection.299}
+\contentsline {section}{\numberline {6.3}Design}{63}{section.324}
+\contentsline {subsection}{\numberline {6.3.1}Overview}{64}{subsection.326}
+\contentsline {subsection}{\numberline {6.3.2}Model Extractor}{65}{subsection.327}
+\contentsline {paragraph}{Symbolic Global Variables (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-glb}).}{66}{section*.344}
+\contentsline {paragraph}{Loop Analysis (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-loop}).}{66}{section*.345}
+\contentsline {paragraph}{Free Arguments Inferring (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-free}).}{66}{section*.346}
+\contentsline {paragraph}{Symbolic Exploration (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-symex}).}{66}{section*.347}
+\contentsline {paragraph}{Insensitive Static Analysis (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-ins}).}{66}{section*.348}
+\contentsline {paragraph}{Building a Model (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-mod}).}{66}{section*.349}
+\contentsline {subsection}{\numberline {6.3.3}Secure Communication Protocol}{67}{subsection.350}
+\contentsline {paragraph}{Protocol properties.}{67}{section*.351}
+\contentsline {paragraph}{Attacks before protocol establishing.}{67}{section*.354}
+\contentsline {paragraph}{Workflow.}{67}{section*.355}
+\contentsline {paragraph}{Defense against a tampered enclave T}{68}{section*.360}
+\contentsline {subsection}{\numberline {6.3.4}Model Verifier}{68}{subsection.384}
+\contentsline {section}{\numberline {6.4}Implementation}{70}{section.387}
+\contentsline {subsection}{\numberline {6.4.1}Compilation Unit}{70}{subsection.388}
+\contentsline {subsection}{\numberline {6.4.2}Model Extractor}{70}{subsection.389}
+\contentsline {subsection}{\numberline {6.4.3}Secure Communication Channel}{70}{subsection.390}
+\contentsline {section}{\numberline {6.5}Evaluation}{71}{section.391}
+\contentsline {subsection}{\numberline {6.5.1}RQ1 - Usage Evaluation}{71}{subsection.394}
+\contentsline {paragraph}{Use Cases.}{71}{section*.395}
+\contentsline {paragraph}{Experiment Setup.}{71}{section*.401}
+\contentsline {subsubsection}{Micro-benchmark}{71}{section*.403}
+\contentsline {subsubsection}{Attestation Speed}{72}{section*.404}
+\contentsline {subsubsection}{Macro-benchmark}{72}{section*.407}
+\contentsline {paragraph}{StealthDB.}{73}{section*.411}
+\contentsline {paragraph}{libdvdcss.}{73}{section*.412}
+\contentsline {paragraph}{SGX-Biniax2.}{73}{section*.413}
+\contentsline {subsubsection}{Coverage and Precision}{74}{section*.415}
+\contentsline {subsection}{\numberline {6.5.2}RQ2 - Security Evaluation}{75}{subsection.419}
+\contentsline {subsubsection}{Execution-flow attacks}{75}{section*.420}
+\contentsline {subsubsection}{Non-control data attacks}{76}{section*.423}
+\contentsline {subsubsection}{Side-channels attacks.}{76}{section*.424}
+\contentsline {chapter}{\numberline {7}Memory forensics in SGX environment}{78}{chapter.425}
+\contentsline {chapter}{\numberline {8}Conclusion}{79}{chapter.426}
+\contentsline {chapter}{\numberline {A}Preliminary Analysis of Assumptions}{80}{appendix.427}
+\contentsline {chapter}{\numberline {B}Code-Reuse Technique}{82}{appendix.429}
+\contentsline {chapter}{\numberline {C}Conditional Chain}{84}{appendix.434}
+\contentsline {section}{\numberline {C.1}Context-Switch Chain}{84}{section.462}
+\contentsline {section}{\numberline {C.2}SgxMonitor: Model Examples}{86}{section.509}
+\contentsline {paragraph}{Transaction syntax.}{86}{section*.510}
+\contentsline {subsection}{\numberline {C.2.1}Outside Function Modeling}{86}{subsection.511}
+\contentsline {subsection}{\numberline {C.2.2}Exception Handling Modeling}{87}{subsection.520}
+\contentsline {chapter}{Bibliography}{88}{appendix*.521}

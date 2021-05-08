@@ -5,14 +5,15 @@ The style file: biblatex.bst
 A level-1 auxiliary file: chapters/introduction.aux
 A level-1 auxiliary file: chapters/background-trusting-computing.aux
 A level-1 auxiliary file: chapters/static-protection.aux
-A level-1 auxiliary file: chapters/runtime-protection-untrusted.aux
 A level-1 auxiliary file: chapters/new-threats.aux
+A level-1 auxiliary file: chapters/runtime-protection-untrusted.aux
 A level-1 auxiliary file: chapters/runtime-protection-trusted.aux
 A level-1 auxiliary file: chapters/forensic-analysis.aux
 A level-1 auxiliary file: chapters/conclusion.aux
 A level-1 auxiliary file: appendices/appendix_snakegx0.aux
 A level-1 auxiliary file: appendices/appendix_snakegx1.aux
 A level-1 auxiliary file: appendices/appendix_snakegx2.aux
+A level-1 auxiliary file: appendices/appendix_sgxmonitor.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -27,7 +28,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 22097 items from 5000.
+Reallocated field_info (elt_size=4) to 29186 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: biblio.bib
 I was expecting a `,' or a `}'---line 354 of file biblio.bib
@@ -83,55 +84,146 @@ Repeated entry---line 2243 of file biblio.bib
  : @inproceedings{schuster2015vc3
  :                               ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 2629 of file biblio.bib
+ : @inproceedings{moghimi2017cachezoom
+ :                                    ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 2708 of file biblio.bib
  : @misc{azure
  :            ,
 I'm skipping whatever remains of this entry
 Warning--I'm ignoring Murdock2019plundervolt's extra "booktitle" field
 --line 2858 of file biblio.bib
-Warning--I didn't find a database entry for "vill2017sgx"
+Repeated entry---line 3064 of file biblio.bib
+ : @article{costan2016intel
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3171 of file biblio.bib
+ : @article{stealthdb
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3211 of file biblio.bib
+ : @manual{intel-developer-guide
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3276 of file biblio.bib
+ : @article{king1976symbolic
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3388 of file biblio.bib
+ : @inproceedings{carlini2014rop
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3470 of file biblio.bib
+ : @inproceedings{yao2013jop
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3493 of file biblio.bib
+ : @inproceedings{bletsch2011jump
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3505 of file biblio.bib
+ : @inproceedings{abera2016c
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3529 of file biblio.bib
+ : @article{aberadiat
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3610 of file biblio.bib
+ : @inproceedings{dessouky2017fat
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3702 of file biblio.bib
+ : @inproceedings{zeitouni2017atrium
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3751 of file biblio.bib
+ : @inproceedings{tale-two-worlds
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3910 of file biblio.bib
+ : @inproceedings{anati2013innovative
+ :                                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3943 of file biblio.bib
+ : @inproceedings{biondo2018guard
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3951 of file biblio.bib
+ : @inproceedings{lee2017hacking
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3973 of file biblio.bib
+ : @inproceedings {206170
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4000 of file biblio.bib
+ : @inproceedings{moghimi2017cachezoom
+ :                                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4119 of file biblio.bib
+ : @inproceedings{schuster2015vc3
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4192 of file biblio.bib
+ : @inproceedings {203183
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4208 of file biblio.bib
+ : @inproceedings{van2017telling
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4256 of file biblio.bib
+ : @article{rozas2013intel
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4328 of file biblio.bib
+ : @manual{signal
+ :               ,
+I'm skipping whatever remains of this entry
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 122 entries,
+You've used 174 entries,
             6268 wiz_defined-function locations,
-            1876 strings with 36692 characters,
-and the built_in function-call counts, 772860 in all, are:
-= -- 54240
-> -- 13195
-< -- 3873
-+ -- 20461
-- -- 5062
-* -- 59459
-:= -- 79259
+            2161 strings with 52330 characters,
+and the built_in function-call counts, 1145652 in all, are:
+= -- 81471
+> -- 19691
+< -- 5819
++ -- 30888
+- -- 7404
+* -- 87449
+:= -- 118115
 add.period$ -- 0
-call.type$ -- 122
-change.case$ -- 2118
-chr.to.int$ -- 62
-cite$ -- 242
-duplicate$ -- 86905
-empty$ -- 71400
-format.name$ -- 8889
-if$ -- 156492
+call.type$ -- 174
+change.case$ -- 3350
+chr.to.int$ -- 92
+cite$ -- 346
+duplicate$ -- 129121
+empty$ -- 104605
+format.name$ -- 13205
+if$ -- 231605
 int.to.chr$ -- 0
-int.to.str$ -- 335
+int.to.str$ -- 501
 missing$ -- 0
-newline$ -- 4826
-num.names$ -- 5557
-pop$ -- 43153
+newline$ -- 7134
+num.names$ -- 8505
+pop$ -- 62040
 preamble$ -- 1
-purify$ -- 2958
+purify$ -- 4608
 quote$ -- 0
-skip$ -- 21190
+skip$ -- 31560
 stack$ -- 0
-substring$ -- 89467
-swap$ -- 21338
-text.length$ -- 3298
-text.prefix$ -- 124
+substring$ -- 133842
+swap$ -- 31379
+text.length$ -- 4733
+text.prefix$ -- 177
 top$ -- 1
-type$ -- 4135
+type$ -- 5903
 warning$ -- 0
-while$ -- 9993
+while$ -- 14972
 width$ -- 0
-write$ -- 4705
-(There were 14 error messages)
+write$ -- 6961
+(There were 37 error messages)

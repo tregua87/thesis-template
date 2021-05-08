@@ -51,6 +51,13 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent 
 %quotes in the bibliography
 
+
+\newcommand{\circled[1]}{\tikz[baseline=(char.base)]{\node[font=\sffamily, 
+		shape=circle,draw,inner sep=0.5pt,color=white,fill=black] (char) {#1};}}
+
+
+\usepackage{subcaption}
+
 \usepackage{tikz}
 \def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) 
 -- cycle;} 
@@ -59,6 +66,17 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage[inline]{enumitem}
 \usepackage{amsmath}
+
+\usepackage{rotating}
+
+\usepackage{graphics}
+
+\usepackage{multirow}
+
+\usepackage{adjustbox}
+\usepackage{blindtext}
+
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 
 \definecolor{mGreen}{rgb}{0,0.6,0}
 \definecolor{mGray}{rgb}{0.5,0.5,0.5}
@@ -375,8 +393,8 @@ The acknowledgments and the people to thank go here, don't forget to include you
 \include{chapters/introduction}
 \include{chapters/background-trusting-computing}
 \include{chapters/static-protection}
-\include{chapters/runtime-protection-untrusted}
 \include{chapters/new-threats}
+\include{chapters/runtime-protection-untrusted}
 \include{chapters/runtime-protection-trusted}
 \include{chapters/forensic-analysis}
 \include{chapters/conclusion}
@@ -394,6 +412,7 @@ The acknowledgments and the people to thank go here, don't forget to include you
 \include{appendices/appendix_snakegx0}
 \include{appendices/appendix_snakegx1}
 \include{appendices/appendix_snakegx2}
+\include{appendices/appendix_sgxmonitor}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY

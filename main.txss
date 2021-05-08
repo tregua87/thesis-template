@@ -1,19 +1,19 @@
 [InternalPDFViewer]
 Embedded=true
-File=../sgx-monitor-overleaf/paper.pdf
+File=main.pdf
 
 [Session]
 Bookmarks=@Invalid()
-CurrentFile=chapters/background-trusting-computing.tex
-File0\Col=0
+CurrentFile=chapters/runtime-protection-trusted.tex
+File0\Col=25
 File0\FileName=main.tex
 File0\FirstLine=0
 File0\FoldedLines=
-File0\Line=0
-File1\Col=0
-File1\FileName=chapters/background-trusting-computing.tex
+File0\Line=379
+File1\Col=2
+File1\FileName=chapters/runtime-protection-trusted.tex
 File1\FirstLine=0
 File1\FoldedLines=
-File1\Line=0
+File1\Line=4
 FileVersion=1
 MasterFile=main.tex
