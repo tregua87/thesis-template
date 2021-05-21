@@ -673,7 +673,7 @@
     \field{sortinit}{A}
     \field{sortinithash}{A}
   \field{howpublished}{\url{https://github.com/Maxul/Awesome-SGX-Open-Source}}
-    \field{note}{Last access June 2020}
+    \field{note}{Last access Feb 2021}
     \field{title}{Awesome SGX Open Source Projects}
     \field{year}{2019}
   \endentry
@@ -1567,6 +1567,51 @@
     \endverb
     \field{month}{08}
     \field{year}{2020}
+  \endentry
+
+  \entry{coke1998implementing}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=CJS}{%
+         family={Coke},
+         familyi={C\bibinitperiod},
+         given={James\bibnamedelima S},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=BAV}{%
+         family={Bhatt},
+         familyi={B\bibinitperiod},
+         given={Ajay\bibnamedelima V},
+         giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Graham},
+         familyi={G\bibinitperiod},
+         given={Stan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Lent},
+         familyi={L\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Google Patents}%
+    }
+    \strng{namehash}{CJS+1}
+    \strng{fullhash}{CJSBAVGSLD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{US Patent 5,708,849}
+    \field{title}{Implementing scatter/gather operations in a direct memory
+  access device on a personal computer}
+    \field{year}{1998}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{collberg2002watermarking}{article}{}
@@ -4203,13 +4248,13 @@
     \field{labeldatesource}{year}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{howpublished}{\url{https://openenclave.io/sdk/}}
-    \field{note}{Last access March 2020}
+    \field{howpublished}{\url{https://github.com/openenclave/openenclave}}
+    \field{note}{Last access February 2021}
     \field{title}{Open Enclave SDK}
     \field{year}{2019}
   \endentry
 
-  \entry{azure}{misc}{}
+  \entry{azure_1}{misc}{}
     \field{labeltitlesource}{title}
     \field{labelyear}{2010}
     \field{labeldatesource}{year}
@@ -4386,6 +4431,26 @@
       {Berlin, Heidelberg}%
     }
     \field{year}{2013}
+  \endentry
+
+  \entry{signal}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Moxie0},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017 (accessed September 14, 2020)}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{note}{\url{https://signal.org/blog/private-contact-discovery/}}
+    \field{title}{Technology preview: Private contact discovery for Signal}
+    \field{year}{2017 (accessed September 14, 2020)}
   \endentry
 
   \entry{Murdock2019plundervolt}{inproceedings}{}
@@ -4673,9 +4738,14 @@
     \strng{fullhash}{POMT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{year}
     \field{sortinit}{P}
     \field{sortinithash}{P}
+  \field{note}{https://www.gsma.com/newsroom/wp-content/uploads/2012/03/omtpadvancedtrustedenvironmentomtptr1v11.pdf}
     \field{title}{Advanced Trusted Environment: OMTP TR 1}
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{polychronakis2011rop}{inproceedings}{}
@@ -5747,18 +5817,6 @@
     \field{year}{2000}
   \endentry
 
-  \entry{signal}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{labeldatesource}{year}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-  \field{howpublished}{\url{https://signal.org/blog/private-contact-discovery/}}
-    \field{note}{Last access November 2018}
-    \field{title}{Technology preview: Private contact discovery for Signal}
-    \field{year}{2017}
-  \endentry
-
   \entry{tian2018switchless}{inproceedings}{}
     \name{author}{7}{}{%
       {{hash=TH}{%
@@ -6527,8 +6585,13 @@
     \field{sortinit}{V}
     \field{sortinithash}{V}
     \field{number}{3}
+    \field{pages}{370 \bibrangedash  388}
     \field{title}{StealthDB: a Scalable Encrypted Database with Full SQL Query
   Support}
+    \verb{url}
+    \verb https://content.sciendo.com/view/journals/popets/2019/3/article-p370.
+    \verb xml
+    \endverb
     \field{volume}{2019}
     \list{location}{1}{%
       {Berlin}%
@@ -7117,6 +7180,44 @@
     \field{title}{Jop-alarm: Detecting jump-oriented programming-based
   anomalies in applications}
     \field{year}{2013}
+  \endentry
+
+  \entry{yao2009system}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=YJ}{%
+         family={Yao},
+         familyi={Y\bibinitperiod},
+         given={Jiewen},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZVJ}{%
+         family={Zimmer},
+         familyi={Z\bibinitperiod},
+         given={Vincent\bibnamedelima J},
+         giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=LQ}{%
+         family={Long},
+         familyi={L\bibinitperiod},
+         given={Qin},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Google Patents}%
+    }
+    \strng{namehash}{YJZVJLQ1}
+    \strng{fullhash}{YJZVJLQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{note}{US Patent App. 12/317,446}
+    \field{title}{System management mode isolation in firmware}
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{sqlite-sgx}{misc}{}

@@ -28,202 +28,53 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 29186 items from 5000.
+Reallocated field_info (elt_size=4) to 29464 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: biblio.bib
-I was expecting a `,' or a `}'---line 354 of file biblio.bib
- :   
- :   month  = may,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 948 of file biblio.bib
- : @inproceedings{seo2017sgx
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 991 of file biblio.bib
- : @inproceedings{anati2013innovative
- :                                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1017 of file biblio.bib
- : @article{costan2016intel
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1333 of file biblio.bib
- : @article{8269390
- :                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1933 of file biblio.bib
- : @article{costan2016intel
- :                         ,
-I'm skipping whatever remains of this entry
-I was expecting an "="---line 1987 of file biblio.bib
- :  pages: 
- :         "370 - 388",
-I'm skipping whatever remains of this entry
-Repeated entry---line 1999 of file biblio.bib
- : @article{rozas2013intel
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2007 of file biblio.bib
- : @inproceedings{vogl2014persistent
- :                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2046 of file biblio.bib
- : @inproceedings{lee2017hacking
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2159 of file biblio.bib
- : @article{baumann2015shielding
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2199 of file biblio.bib
- : @inproceedings{seo2017sgx
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2243 of file biblio.bib
- : @inproceedings{schuster2015vc3
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2629 of file biblio.bib
- : @inproceedings{moghimi2017cachezoom
- :                                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2708 of file biblio.bib
- : @misc{azure
- :            ,
-I'm skipping whatever remains of this entry
 Warning--I'm ignoring Murdock2019plundervolt's extra "booktitle" field
---line 2858 of file biblio.bib
-Repeated entry---line 3064 of file biblio.bib
- : @article{costan2016intel
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3171 of file biblio.bib
- : @article{stealthdb
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3211 of file biblio.bib
- : @manual{intel-developer-guide
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3276 of file biblio.bib
- : @article{king1976symbolic
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3388 of file biblio.bib
- : @inproceedings{carlini2014rop
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3470 of file biblio.bib
- : @inproceedings{yao2013jop
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3493 of file biblio.bib
- : @inproceedings{bletsch2011jump
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3505 of file biblio.bib
- : @inproceedings{abera2016c
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3529 of file biblio.bib
- : @article{aberadiat
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3610 of file biblio.bib
- : @inproceedings{dessouky2017fat
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3702 of file biblio.bib
- : @inproceedings{zeitouni2017atrium
- :                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3751 of file biblio.bib
- : @inproceedings{tale-two-worlds
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3910 of file biblio.bib
- : @inproceedings{anati2013innovative
- :                                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3943 of file biblio.bib
- : @inproceedings{biondo2018guard
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3951 of file biblio.bib
- : @inproceedings{lee2017hacking
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3973 of file biblio.bib
- : @inproceedings {206170
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4000 of file biblio.bib
- : @inproceedings{moghimi2017cachezoom
- :                                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4119 of file biblio.bib
- : @inproceedings{schuster2015vc3
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4192 of file biblio.bib
- : @inproceedings {203183
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4208 of file biblio.bib
- : @inproceedings{van2017telling
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4256 of file biblio.bib
- : @article{rozas2013intel
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4328 of file biblio.bib
- : @manual{signal
- :               ,
-I'm skipping whatever remains of this entry
+--line 2736 of file biblio.bib
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 174 entries,
+You've used 176 entries,
             6268 wiz_defined-function locations,
-            2161 strings with 52330 characters,
-and the built_in function-call counts, 1145652 in all, are:
-= -- 81471
-> -- 19691
-< -- 5819
-+ -- 30888
-- -- 7404
-* -- 87449
-:= -- 118115
+            2178 strings with 52919 characters,
+and the built_in function-call counts, 1161791 in all, are:
+= -- 82610
+> -- 20069
+< -- 5920
++ -- 31313
+- -- 7535
+* -- 88728
+:= -- 119780
 add.period$ -- 0
-call.type$ -- 174
-change.case$ -- 3350
-chr.to.int$ -- 92
-cite$ -- 346
-duplicate$ -- 129121
-empty$ -- 104605
-format.name$ -- 13205
-if$ -- 231605
+call.type$ -- 176
+change.case$ -- 3405
+chr.to.int$ -- 99
+cite$ -- 350
+duplicate$ -- 130849
+empty$ -- 105988
+format.name$ -- 13426
+if$ -- 234898
 int.to.chr$ -- 0
-int.to.str$ -- 501
+int.to.str$ -- 510
 missing$ -- 0
-newline$ -- 7134
-num.names$ -- 8505
-pop$ -- 62040
+newline$ -- 7234
+num.names$ -- 8668
+pop$ -- 62768
 preamble$ -- 1
-purify$ -- 4608
+purify$ -- 4682
 quote$ -- 0
-skip$ -- 31560
+skip$ -- 32066
 stack$ -- 0
-substring$ -- 133842
-swap$ -- 31379
-text.length$ -- 4733
-text.prefix$ -- 177
+substring$ -- 135696
+swap$ -- 31827
+text.length$ -- 4805
+text.prefix$ -- 179
 top$ -- 1
-type$ -- 5903
+type$ -- 5971
 warning$ -- 0
-while$ -- 14972
+while$ -- 15178
 width$ -- 0
-write$ -- 6961
-(There were 37 error messages)
+write$ -- 7059
+(There was 1 warning)

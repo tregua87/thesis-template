@@ -13,34 +13,35 @@ These concepts will stem at the base of the following chapters.
 \label{sec:trusted-execution-enviroments}
 
 A Trusted Execution Environment (TEE) is a secure area that is contained in the 
-main memory (RAM) and handled by the main CPU~(\cite{Sabt2015TrustedEE}).
-A TEE ensures isolation of the code and data contained against external 
-threats, such as the operating system (OS).
+main memory (RAM) and is handled by the main CPU~(\cite{Sabt2015TrustedEE}).
+A TEE ensures isolation of the code and data against external threats, such as 
+the operating system (OS).
 
 The first TEE standard has been defined by OMTP, a forum of mobile 
 manufactures, and the specifications were mainly designed for mobile 
 platforms~(\cite{omtp}).
 Nowadays, TEEs have evolved and they are deployed in varied scenarios that 
 range from mobile platforms to cloud servers~(\cite{schuster2015vc3,sgxtor}).
-In the following, we first discuss the two main concepts useful for this 
+In the following, we first discuss the two main concepts at the base for this 
 thesis: memory isolation (Section~\ref{ssec:memory-isolation}) and remote 
 attestation (Section~\ref{ssec:remote-attestation}).
-In the end, we discuss the attacker model (Section~\ref{ssec:attacker-model}).
+Then, we describe the common threat model assumptions 
+(Section~\ref{ssec:attacker-model}).
 
 \subsection{Memory Isolation}
 \label{ssec:memory-isolation}
 
 One of the main property of a TEE is the capability of isolating a portion of 
-memory, that is considered secure, from the rest of the system, that  is 
-considered insecure.
+memory, that is considered trusted, from the rest of the system, that  is 
+considered untrusted.
 This property allows a TEE to define a parallel environment that can run 
 independently by the operation system.
 In jargon, the protected portion of memory is called \emph{trusted 
-region}, while all the outside one is called \emph{untrusted region}.
+region}, while the outside one is called \emph{untrusted region}.
 
-The implementation of the memory isolation differs by the actual TEE vendor.
-However, modern TEE technologies achieve isolation by extending the Memory 
-Management Unit (MMU) and the CPU 
+The implementation of the memory isolation differs by the actual TEE product.
+Modern TEE technologies achieve isolation by extending the Memory Management 
+Unit (MMU) and the CPU 
 cache~(\cite{winter2008trusted,gilmont1999enhancing,rozas2013intel}).
 In Section~\ref{sec:software-guard-extension}, we discuss the memory isolation 
 of Intel Software Guard eXtension, which is the main technology 
@@ -65,19 +66,17 @@ is a standard assumption that the \emph{Verifier} is trusted, while the
 might be compromised. However, the \emph{Prover} is able to generate a correct 
 and fresh report due to its trusted anchor (\eg a dedicated hardware module or 
 a TEE).
-
-In the following sections, we describe the two main RA schemes topology: 
+In the following, we describe the two main RA schemes topology: 
 \emph{static} RA and \emph{runtime} RA.
 
 \paragraph{Static RA.}
 Historically, static Remote Attestation (\emph{static RA}) is the first type of 
 RA proposed~(\cite{bajikar2002trusted}).
-As the name suggest, RA measures static properties of a system. 
-Usually, it measure the correct loading of a piece of code in memory by 
-employing standard hash functions.
+As the name suggests, \emph{static RA} measures static properties of a system, 
+such as the correct loading of a piece of code in memory through hash functions.
 Other technologies, instead, extend their protection and report hardware 
 information, for instance, they provide a CPU 
-identification~(\cite{anati2013innovative}), measure particular hardware 
+identification~(\cite{anati2013innovative}) or report specific hardware 
 configuration~(\cite{sailer2004design}).
 
 \paragraph{Runtime RA.}
@@ -88,7 +87,7 @@ configuration~(\cite{sailer2004design}).
 %have mainly investigated runtime RA for embedded 
 %devices~(\cite{abera2016c,zeitouni2017atrium,aberadiat,dessouky2017fat,Dessouky:2018:LLH:3240765.3240821}).
 
-Runtime Remote Attestation (\emph{runtime RA}) schemes are new protocols that 
+Runtime Remote Attestation (\emph{runtime RA}) schemes are protocols that 
 measure dynamic properties of a system.
 For instance, they ensure a piece of code have been executed correctly (\ie 
 execution-flow measurement), or they report which modules have been traversed 
@@ -104,7 +103,7 @@ to verify the control-flow information continuously sent by the \emph{Prover}.
 Runtime RA for data-flow, instead, simply traces the module traversed by 
 tainted variables~(\cite{apex,aberadiat}).
 
-All the aforementioned works rely on a trusted anchor (\ie a TEE) to store 
+All the aforementioned works rely on a trusted anchor (\eg a TEE) to store 
 partial results of their protocol (\eg execution-flow information) and for 
 protecting crypto materials (\ie algorithms and keys).
 Furthermore, they assume the adversary cannot tamper with the trusted anchor.
@@ -115,8 +114,8 @@ software tampering.
 \label{ssec:attacker-model}
 
 In TEE scenarios, the goal of an adversary is to bypass the TEE protections 
-(\ie memory isolation and remote attestation) and tamper with the \emph{secure}
-software or alter its behavior.
+(\ie memory isolation and remote attestation) and tamper with the \emph{trusted 
+region} or alter its behavior.
 To achieve this goal, TEE assumes two types of adversaries: \emph{software} and 
 \emph{physical}.
 
@@ -144,24 +143,23 @@ In this case, the adversary has the same goal of the \emph{software
 one} and share the same properties. In addition, the physical adversary have 
 access to the machine hardware and can control the hardware components.
 Modern TEE technologies alone struggle at defending such attacks, however, it 
-is a common to assume the adversary requires a non-negligible amount of time to 
-carry a physical attck (\eg 10
-min - 
+is common to assume the adversary requires a non-negligible amount of time to 
+carry a physical attck (\eg 10 min - 
 \cite{conti2010smallville,conti2008emergent,darpa,ibrahim2017seed,pasta,us-aid}).
 Recently, researchers proposed advanced RA schemes to mitigate these 
 attacks~(\cite{darpa,visintin2019safe,pasta}).
 
 Commonly, denial of service DoS attacks are not considered in TEE scenario, and 
-the untrusted software can avoid invoking the secure module.
+the \emph{untrusted software} can avoid invoking the secure module.
 
 \section{Control-Flow Attacks}
 \label{sec:control-flow-attacks}
 
 Solely TEE memory isolation and static RA cannot avoid classic exploitation 
 techniques.
-For instance, if the \emph{secure software} suffers of a memory corruption 
+For instance, if the \emph{trusted region} suffers of a memory corruption 
 error, an adversary may corrupt a control structure (\ie a return address in 
-the stack) and hijack the execution path.
+the stack) and hijack the its execution.
 
 To introduce control-flow attacks, we first discuss the concepts of 
 control-flow graph (CFG), execution path, and basic-block~(BBL) by using the 
@@ -279,14 +277,98 @@ disabled/tampered, other checkers become aware of the attack).
 \section{Software Guard eXtension}
 \label{sec:software-guard-extension}
 
-\todo{This comes from the memory forensic paper.}
+In this section, we introduces the technical details of Software Guard 
+eXtension (SGX). We will discuss the memory isolation mechanism 
+(Section~\ref{ssec:sgx-core-design}), the attestation details 
+(Section~\ref{ssec:sgx-remote-attestation}), the development frameworks 
+(Section~\ref{ssec:development-frameworks}), and the main control-flow attacks 
+for this technology (Section~\ref{ssec:sgx-control-flow-attacks}).
 
-\subsection{SGX Remote Attestation}
+\subsection{SGX Memory Isolation}
+\label{ssec:sgx-core-design}
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.8\linewidth]{fig_c7/sgxbackground}
+	\caption{Enclave pages architecture in DRAM.}
+	\label{fig:sgxbackground}
+\end{figure}
+
+The core concept of SGX are \emph{Enclaves}: restricted memory regions 
+allocated in DRAM \citep{costan2016intel}.
+Figure~\ref{fig:sgxbackground} shows the SGX memory architecture where a subset 
+of DRAM, called Processor Reserved Memory
+(PRM), is dedicated to the CPU itself (\ie the microcode) and is shielded from
+the other system components, such as the operating system, the SMM
+code \citep{yao2009system}, and DMA transfers \citep{coke1998implementing}.
+The PRM includes an Enclave Page Cache (EPC), which physically contains
+the \emph{enclave} pages.
+Moreover, since SGX assumes the OS is untrusted, the PRM also contains a 
+specific structure, called Enclave Page Cache Map (EPCM), that keeps trace of 
+the \emph{enclave} page status.
+The EPCM assists the microcode in performing further security controls to block
+cross-\emph{enclave} memory access or multiple \emph{enclave} page allocations.
+
+The SGX specifications define four types of EPC pages:
+\begin{enumerate}
+	\item SGX Enclave Control Structure (SECS) contains the \emph{enclave} 
+	metadata.
+	The SECS is used by the CPU as a unique \emph{enclave} identifier and is 
+	the only page not mapped in user-space, as only the CPU microcode is 
+	allowed to read and write it.
+	\item The Thread Control Structure (TCS) contains information about a 
+	trusted thread running on the \emph{enclave}, pointers to its stack, and 
+	other internal status structures \citep{intel-developer-guide}.
+	\item State Save Area (SSA) handles exceptions generated from within an 
+	\emph{enclave}.
+	\item Regular pages (REG) contain code and data.
+\end{enumerate}
+
+An \emph{enclave} is bootstrapped by using code running in kernel mode
+(\ie a kernel driver) and a set of SGX specific opcodes, that are organizes
+as leaf functions under two real instructions: \texttt{ENCLS} (at kernel-space)
+and \texttt{ENCLU} (at user-space).
+In particular, \texttt{ENCLU} requires a TCS address to identify the thread to
+execute.
+The kernel handles page allocation and eviction. Any evicted page is encrypted
+and versioned by the microcode before being stored in non-volatile storage.
+In addition, the microcode performs a double-check to validate the correctness 
+of the pages against a cryptographic hash stored in SECS 
+to prevent replay attacks from the (untrusted) kernel \citep{rozas2013intel}.
+
+An \emph{enclave} can be bootstrapped in debug mode or in release mode.
+The debug mode is used during the development of the \emph{enclave} and permits
+external software (\eg debuggers) to access the \emph{enclave} memory
+pages through dedicated opcodes (\ie \texttt{EDBGRD} and \texttt{EDBGWR}).
+Release mode, instead, enforces all the SGX security features and
+does not permit to read the content of an \emph{enclave} from the system.
+However, to run an \emph{enclave} in release mode, the \emph{enclave} binary
+must be signed with a key issued by Intel to the author.
+
+The process that contains an \emph{enclave} is called \emph{host process}, and
+interacts with the \emph{enclave} through dedicated opcodes (\ie
+\texttt{ENCLU}).
+The reserved part of the virtual address space of the \emph{host process}
+designated to its \emph{enclave} is called ELRANGE. The ELRANGE contains
+all the \emph{enclave} pages and is defined by a base address and its length.
+An \emph{enclave} assumes all the code located inside its ELRANGE to be
+trusted, while everything outside is untrusted and possibly under control of an
+attacker.
+
+\subsection{SGX Attestation}
 \label{ssec:sgx-remote-attestation}
 
-In the SGX Remote Attestation (SGX RA)~(\cite{vill2017sgx}), the 
-\emph{Prover} is an \emph{enclave}, while the \emph{Verifier} can be either 
-another \emph{enclave} or a generic software.
+SGX introduces an attestation mechanism \citep{anati2013innovative} that can
+establish a secure communication channel between an \emph{enclave} or either 
+another \emph{enclave} or a generic software (\eg a process in the 
+\emph{untrusted region}).
+The attestation can be local (on the same machine) or remote (involving remote 
+machines).
+In case of remote attestation, the \emph{Prover} is an \emph{enclave}, while 
+the \emph{Verifier} can be either another \emph{enclave} or a generic software 
+\citep{vill2017sgx}.
+The SGX remote attestation guarantees a remote third-party to identify the 
+integrity of a local \emph{enclave} and the SGX platform running it.
 The SGX RA relies on the isolation offered by the CPU to protect the 
 cryptographic keys. 
 In particular, the SGX RA guarantees two properties:
@@ -299,10 +381,71 @@ However, the SGX RA does not guarantee \emph{runtime} integrity, for instance,
 an adversary can exploit a memory corruption error while the 
 \emph{Verifer} cannot detect the attack.
 
-\todo{I could integrate this part with the memory forensic background for the 
-CPU structures}
+In SGX machines, this process is based on special privileged enclaves,
+called \emph{quoting} and \emph{provisioning} enclaves, that are issued by
+Intel.
+These enclaves produce a cryptographic proof that validates the microcode
+version, the CPU unique keys, and the content of the enclave to
+be attested. The result of this cryptographic process is sent to an Intel
+attestation server which replies with an asymmetric signature. The signature
+can be then sent over the network to the remote third-party to prove the
+identity and integrity of the enclave and the platform 
+\citep{anati2013innovative}.
+
+\subsection{Development Frameworks}
+\label{ssec:development-frameworks}
+
+\begin{figure}[t]
+	\centering
+	\begin{subfigure}[b]{0.9\linewidth}
+		\centering
+		\includegraphics[width=\textwidth]{fig_c7/sgxprogrammingpattern_library.pdf}
+		\\[1em]
+		\caption{Architecture of an application whose \emph{edge}
+			uses \texttt{libsgx\_urts.so} to communicate with the enclave.}
+		\label{fig:sgxprogrammingpattern_library}
+	\end{subfigure}
+%	\\[5mm]
+	\hfill
+	\begin{subfigure}[b]{0.9\linewidth}
+		\centering
+		\includegraphics[width=\textwidth]{fig_c7/sgxprogrammingpattern_static.pdf}
+		\\[1em]
+		\caption{Architecture of an application whose \emph{edge}
+			embeds the whole enclave communication logic.}
+		\label{fig:sgxprogrammingpattern_static}
+	\end{subfigure}
+	\caption{The two main architectures used by an application to communicate
+		with an \emph{enclave}. In both images, the arrow represents the
+		information flow from application to enclave and back.}
+	\label{fig:sgxprogrammingpattern}
+\end{figure}
+
+A host process that desires to interact with an \emph{enclave} needs to
+include specific portions of code that handles the communication with the OS.
+In particular, the enclaves mainly relies on two type of functions: 
+\emph{secure} (\emph{ecall}) and \emph{outside	functions} (\emph{ocall}). 
+The host process uses the former to invoke a piece of code inside an enclave, 
+while the enclave triggers the latter to communicate with the operating system 
+(\eg to invoke system calls). 
+Moreover, both functions invoke an \texttt{ENCLU} opcode directly or indirectly
+(\ie through an utility function).
+Due to the complexity of this programming pattern, a number
+of development frameworks has been developed to abstract the technical
+details and automatically include components in- and outside the
+\emph{enclave}.
+
+All the development frameworks share some architecture details.
+In particular, part of \emph{secure} and \emph{outside functions} is contained 
+in a specific portion of code called \emph{edge}, that is automatically 
+generated and statically linked by the development framework.
+In our study, we found the \emph{edge} can rely either on external libraries 
+(\eg \texttt{libsgx\_urts.so}) to communicate with the enclave, or it embeds
+all the communication logic including the \texttt{ENCLU} opcode, as depicted in 
+Figure~\ref{fig:sgxprogrammingpattern}.
 
 \subsection{SGX Control-Flow Attacks}
+\label{ssec:sgx-control-flow-attacks}
 
 In the following, we described the two main works that describe code-reuse 
 attacks against SGX: Guard's Dilemma~(\cite{biondo2018guard}) and 
