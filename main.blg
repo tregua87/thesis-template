@@ -28,53 +28,62 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 29464 items from 5000.
+Reallocated field_info (elt_size=4) to 32661 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: biblio.bib
+I was expecting a `,' or a `}'---line 2724 of file biblio.bib
+ :  
+ :  year  = {2018},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2753 of file biblio.bib
+ :  {https://www.ibm.com/blogs/bluemix/2018/05/data-use-protection-ibm-cloud-using-intel-sgx/}
+ :                                                                                            ",
+I'm skipping whatever remains of this entry
 Warning--I'm ignoring Murdock2019plundervolt's extra "booktitle" field
---line 2736 of file biblio.bib
+--line 2884 of file biblio.bib
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 176 entries,
+You've used 199 entries,
             6268 wiz_defined-function locations,
-            2178 strings with 52919 characters,
-and the built_in function-call counts, 1161791 in all, are:
-= -- 82610
-> -- 20069
-< -- 5920
-+ -- 31313
-- -- 7535
-* -- 88728
-:= -- 119780
+            2292 strings with 56992 characters,
+and the built_in function-call counts, 1280877 in all, are:
+= -- 90190
+> -- 22658
+< -- 6737
++ -- 33951
+- -- 8407
+* -- 97292
+:= -- 130453
 add.period$ -- 0
-call.type$ -- 176
-change.case$ -- 3405
-chr.to.int$ -- 99
-cite$ -- 350
-duplicate$ -- 130849
-empty$ -- 105988
-format.name$ -- 13426
-if$ -- 234898
+call.type$ -- 199
+change.case$ -- 3908
+chr.to.int$ -- 105
+cite$ -- 396
+duplicate$ -- 144326
+empty$ -- 117421
+format.name$ -- 14946
+if$ -- 260054
 int.to.chr$ -- 0
-int.to.str$ -- 510
+int.to.str$ -- 587
 missing$ -- 0
-newline$ -- 7234
-num.names$ -- 8668
-pop$ -- 62768
+newline$ -- 8008
+num.names$ -- 9990
+pop$ -- 70577
 preamble$ -- 1
-purify$ -- 4682
+purify$ -- 5292
 quote$ -- 0
-skip$ -- 32066
+skip$ -- 36541
 stack$ -- 0
-substring$ -- 135696
-swap$ -- 31827
-text.length$ -- 4805
-text.prefix$ -- 179
+substring$ -- 146571
+swap$ -- 35582
+text.length$ -- 5394
+text.prefix$ -- 203
 top$ -- 1
-type$ -- 5971
+type$ -- 6753
 warning$ -- 0
-while$ -- 15178
+while$ -- 16524
 width$ -- 0
-write$ -- 7059
-(There was 1 warning)
+write$ -- 7810
+(There were 2 error messages)

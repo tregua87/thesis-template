@@ -1,44 +1,44 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces SGX architecture.}}{2}{figure.caption.10}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Thesis contribution.}}{2}{figure.caption.11}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Mind-map.}}{3}{figure.caption.12}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces SGX architecture.}}{3}{figure.caption.11}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Thesis contribution.}}{4}{figure.caption.13}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Mind-map.}}{5}{figure.caption.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of control-flow attack.}}{7}{figure.caption.23}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Enclave pages architecture in DRAM.\relax }}{8}{figure.caption.27}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces The two main architectures used by an application to communicate with an \emph {enclave}. In both images, the arrow represents the information flow from application to enclave and back.\relax }}{10}{figure.caption.36}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of control-flow attack.}}{9}{figure.caption.29}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Enclave pages architecture in DRAM.\relax }}{10}{figure.caption.33}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Development frameworks' architecture.}}{12}{figure.caption.42}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of single-thread schema.}}{16}{figure.caption.60}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Packing mechanism of our schema.\relax }}{19}{figure.caption.76}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Careful-Packing architecture.\relax }}{21}{figure.caption.93}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Secure installation protocol between client and server.\relax }}{23}{figure.caption.105}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Careful-Packing evaluation.\relax }}{25}{figure.caption.112}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of single-thread schema.}}{18}{figure.caption.66}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Packing mechanism of our schema.\relax }}{21}{figure.caption.82}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Careful-Packing architecture.\relax }}{23}{figure.caption.99}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Secure installation protocol between client and server.\relax }}{25}{figure.caption.111}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Careful-Packing evaluation.\relax }}{27}{figure.caption.118}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces SGX-Host interaction.}}{32}{figure.caption.139}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces \texttt {ocall\_context} memory layout.}}{33}{figure.caption.141}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Simplified \texttt {do\_oret()} pseudo-code.\relax }}{34}{figure.caption.148}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces SnakeGX installation layour.}}{38}{figure.caption.204}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces SGX-Host interaction.}}{34}{figure.caption.145}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \texttt {ocall\_context} memory layout.}}{35}{figure.caption.147}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Simplified \texttt {do\_oret()} pseudo-code.\relax }}{36}{figure.caption.154}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces SnakeGX installation layour.}}{40}{figure.caption.210}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces ScaRR model challenges.\relax }}{47}{figure.caption.242}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces ScaRR system overview.\relax }}{48}{figure.caption.247}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces ScaRR shadow stack example.}}{51}{figure.caption.259}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Implementation of the shadow stack on the ScaRR \emph {Verifier}.\relax }}{52}{figure.caption.260}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Internal architecture of the \emph {Prover}.\relax }}{54}{figure.caption.266}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces ScaRR evaluation.}}{55}{figure.caption.271}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces ScaRR network traffic evaluation.}}{56}{figure.caption.273}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces ScaRR model challenges.\relax }}{49}{figure.caption.248}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces ScaRR system overview.\relax }}{50}{figure.caption.253}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces ScaRR shadow stack example.}}{53}{figure.caption.265}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Implementation of the shadow stack on the ScaRR \emph {Verifier}.\relax }}{54}{figure.caption.266}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Internal architecture of the \emph {Prover}.\relax }}{56}{figure.caption.272}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces ScaRR evaluation.}}{57}{figure.caption.277}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces ScaRR network traffic evaluation.}}{58}{figure.caption.279}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Standard SGX FSM.}}{61}{figure.caption.293}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces SgxMonitor running example.}}{64}{figure.caption.308}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces SgxMonitor design.}}{65}{figure.caption.333}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces SgxMonitor micro-benchmark and \emph {action} speed measurement evaluation.\relax }}{74}{figure.caption.410}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces SgxMonitor \textsf {StealthDB} macro-benchmark.}}{75}{figure.caption.413}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces SgxMonitor \textsf {libdvdcss} and \textsf {SGX-Biniax2} macro-benchmark.}}{76}{figure.caption.414}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Standard SGX FSM.}}{63}{figure.caption.299}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces SgxMonitor running example.}}{66}{figure.caption.314}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces SgxMonitor design.}}{67}{figure.caption.339}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces SgxMonitor micro-benchmark and \emph {action} speed measurement evaluation.\relax }}{76}{figure.caption.416}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces SgxMonitor \textsf {StealthDB} macro-benchmark.}}{77}{figure.caption.419}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces SgxMonitor \textsf {libdvdcss} and \textsf {SGX-Biniax2} macro-benchmark.}}{78}{figure.caption.420}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Chain used in the proof-of-concept of SnakeGX.\relax }}{85}{figure.caption.441}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces SGX \emph {outside functions} interaction modeling.}}{88}{figure.caption.526}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces SGX \emph {exception handling} modeling.}}{89}{figure.caption.527}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Chain used in the proof-of-concept of SnakeGX.\relax }}{87}{figure.caption.447}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces SGX \emph {outside functions} interaction modeling.}}{90}{figure.caption.532}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces SGX \emph {exception handling} modeling.}}{91}{figure.caption.533}

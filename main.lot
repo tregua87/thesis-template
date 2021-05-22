@@ -3,16 +3,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Number of LoC for each module\relax }}{24}{table.caption.108}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Number of LoC for each module\relax }}{26}{table.caption.114}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Statistics of the gadgets used for the payload.\relax }}{41}{table.caption.218}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces \emph {Actions} used to define valid transactions grouped by \emph {generic} and \emph {stop}, respectively.\relax }}{63}{table.caption.304}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Coverage analysis over our five use cases: \textsf {Contact}~\citep {signalrepo}, \textsf {libdvdcss}~\citep {libdvdcss}, \textsf {StealthDB}~\citep {stealthdb}, \textsf {SGX-Biniax2}~\citep {bauman2016case}, and a unit-test. The results show that the analysis covers from $91.6\%$ to $96.6\%$ of the \emph {actions} in around $2$ hours and $20$ minutes in total ($8561.10$s). Furthermore, we did not observe any false positive during our experiments, meaning we covered a significant portion of code.\relax }}{77}{table.caption.422}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Statistics of the gadgets used for the payload.\relax }}{43}{table.caption.224}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces \emph {Actions} used to define valid transactions grouped by \emph {generic} and \emph {stop}, respectively.\relax }}{65}{table.caption.310}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Coverage analysis of SgxMonitor.}}{79}{table.caption.428}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces SGX open-source projects extracted from~\cite {asop}.\relax }}{83}{table.caption.436}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces List of SGX open-source projects.}}{85}{table.caption.442}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

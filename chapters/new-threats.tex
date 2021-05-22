@@ -169,7 +169,7 @@ works is in the threat model.
 Advanced code-reuse techniques require an unprivileged 
 attacker~\cite{biondo2018guard}.
 However, a non-compromised host can identify the presence of an adversary
-in the system memory (Section~\ref{ssec:code-reuse-sgx}\todo{ in background}).
+in the system memory (Section~\ref{ssec:sgx-control-flow-attacks}).
 Therefore, we have to consider three players in our scenarios: the attacker, 
 the victim enclave, and the host.
 %Since we focus on code-reuse attacks, we rule out other techniques such as 
@@ -213,7 +213,7 @@ assumptions:
 	footprint, thus evading standard memory forensic 	
 	techniques~\cite{stancill2013check,polychronakis2011rop,kittel2015counteracting,Graziano:2016:RFA:2897845.2897894},
 	whose effectiveness relies on the amount of traces left in memory 
-	(see Section~\ref{ssec:code-reuse-sgx}\todo{background}).
+	(see Section~\ref{ssec:sgx-control-flow-attacks}).
 	%	\item \textbf{(Temporary) Host process control.}
 	%	The attacker needs a partial control of the victim process for a short 
 	%	period of time.
@@ -312,7 +312,7 @@ one in Section~\ref{sec:discussion_snakegx}.
 \section{Intel SGX SDK Design Limitation}
 %\section{SGX Enclaves Custom Trigger}
 \label{sec:sgx-internal}
-\todo{I am wondering if I can move this in introduction.}
+%\todo{I am wondering if I can move this in introduction.}
 
 %\todo{highlight the importance of this part. This is crucial because the 
 %consequence of thsi trick is havin a reliable hook that also reduces to zero 
@@ -347,7 +347,7 @@ Specifically, \texttt{uRts} handles operations like multi-threading, while
 \texttt{tRts} manages secure functions dispatching and context-switch. 
 
 The Intel SGX SDK exposes a set of APIs that are built on top of the leaf 
-functions described in Section~\ref{sec:background}\todo{background}.
+functions described in Section~\ref{ssec:sgx-core-design}.
 \texttt{ECALL}, \texttt{ERET}, \texttt{OCALL}, and \texttt{ORET} are the most 
 important APIs for SnakeGX.
 Figure~\ref{fig:synch-exit} shows the interaction between the host process and 
@@ -961,7 +961,7 @@ The first two operations are relatively simple: the Intel SGX SDK already
 provides standard routines (\eg \texttt{memcpy})
 to move data outside the enclave.
 Moreover, it is possible to pivoting outside the enclave by abusing the 
-\texttt{EEXIT} opcode (Section~\ref{sec:background}). 
+\texttt{EEXIT} opcode (Section~\ref{ssec:sgx-control-flow-attacks}). 
 On the contrary, resuming the enclave execution requires SnakeGX to invoke
 an \texttt{EENTER} opcode.
 However, it is not possible to arbitrarily jump inside an enclave (\ie the 
@@ -1193,7 +1193,8 @@ We hope this research paves the way for new works in the malware analysis field.
 SnakeGX is an infector of legitimate enclaves and is by definition 
 stealthier.
 This means that any form of memory forensics is no more possible. The memory of 
-the enclave cannot be inspected. As explained in Section~\ref{sec:background},
+the enclave cannot be inspected. As explained in 
+Section~\ref{ssec:sgx-core-design},
 SGX makes impossible to read memory pages that belong to an enclave.
 Any attempts at reading such pages will result in a fake value $0$xFF.
 Another possible approach is to use new attacks based on 

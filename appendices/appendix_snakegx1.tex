@@ -15,7 +15,7 @@ control its behavior.
 Moreover, we adapted their approach to work on the Intel SGX SDK newer versions.
 
 In the original approach, the authors exploited \texttt{asm\_oret()} and 
-\texttt{continue\_execution()} functions.
+\texttt{continue\_exec\\ution()} functions.
 %, both described in~\cite{biondo2018guard}. %Section~\ref{ssec:cont}.
 More precisely, they crafted a set of fake frame in order to create a loop between these functions.
 In the x$64$ architecture, the first four function parameters are passed by registers.

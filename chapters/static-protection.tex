@@ -791,8 +791,7 @@ as SEH, since they do not belong to anti-tampering problems.}.
 %\todo{FT: maybe move it into extended version}
 We can extend the previous techniques in order to handle parallel computation, 
 this is possible because some trusted computing technologies allow 
-multi-threading programming, like SGX (see 
-Section~\ref{ssect:back-sgx}\todo{reference}).
+multi-threading programming, like SGX (see Section~\ref{ssec:sgx-core-design}).
 To achieve multi-threading, we maintain a \emph{plain\_cs} and a 
 \texttt{stack\_cs[f]} for each thread.
 %This allow us to maintain an independent status for each thread.
@@ -850,8 +849,7 @@ attestation mechanisms.
 Those mechanisms ensure to store information on a disk or to establish a secure 
 channel with other enclaves within the same machine (\ie local) or with a 
 remote one (\ie remote) in a trusted way.
-Details on sealing and attestation are discussed in 
-Section~\ref{ssect:back-sgx}\todo{add background}.
+We detail sealing and attestation in Section~\ref{ssec:sgx-remote-attestation}.
 
 %\subsection{New Enclave Interface}
 %\todo{FT: I propose to remove it}
@@ -1204,7 +1202,7 @@ and the server is awarded for the certificates shared with clients.
 %stage 0: making a trusted channel through remote attestation + client measure
 In the beginning, the client and the server follow the remote attestation 
 mechanism described by
-Intel in~\cite{sgxremoteatt} (Figure~\ref{fig:installation}-0).
+Intel in~\citep{sgxremoteatt} (Figure~\ref{fig:installation}-0).
 After this, both entities can rely on a secure end-to-end channel.
 Also, this allows the server to obtain the client measurement, which is a 
 cryptographic hash
@@ -1514,7 +1512,7 @@ guarantees hardware isolation, those functions are protected by design.
 \paragraph{\textbf{Protection against disarm.}}
 An attacker can always disarm a function by removing its invocation.
 Moreover, SGX is prone to \emph{denial-of-service attacks} due to its nature 
-(see Section~\ref{ssect:back-sgx}\todo{reference}).
+(see Section~\ref{ssec:sgx-core-design}).
 We protect trusted invocations by adopting the packaging tactic discussed in 
 Section~\ref{sec:approach}.
 The software contains parts of code which are encrypted and they need checkers 

@@ -1,139 +1,139 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}A Novel Runtime Remote Attestation Schema for SGX Enclaves}{59}{chapter.276}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}A Novel Runtime Remote Attestation Schema for SGX Enclaves}{61}{chapter.282}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{chp:runtime-protection-trusted}{{6}{59}{A Novel Runtime Remote Attestation Schema for SGX Enclaves}{chapter.276}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Threat Model}{60}{section.288}}
-\newlabel{sec:threat-model_sgxmonitor}{{6.1}{60}{Threat Model}{section.288}{}}
-\@writefile{toc}{\contentsline {paragraph}{Adversary Assumptions.}{60}{section*.289}}
-\@writefile{toc}{\contentsline {paragraph}{Enclave Assumptions.}{60}{section*.290}}
-\@writefile{toc}{\contentsline {paragraph}{Out-of-Scope Attacks.}{60}{section*.291}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Model}{60}{section.292}}
-\newlabel{sec:model_sgxmonitor}{{6.2}{60}{Model}{section.292}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Standard SGX FSM.}}{61}{figure.caption.293}}
-\newlabel{fig:fmi-standard}{{6.1}{61}{Standard SGX FSM}{figure.caption.293}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}State Definition}{61}{subsection.295}}
-\newlabel{ssec:state}{{6.2.1}{61}{State Definition}{subsection.295}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Action Definition}{62}{subsection.298}}
-\newlabel{ssec:actions-definition}{{6.2.2}{62}{Action Definition}{subsection.298}{}}
-\@writefile{toc}{\contentsline {paragraph}{Generic actions.}{62}{section*.299}}
-\@writefile{toc}{\contentsline {paragraph}{Stop actions.}{62}{section*.303}}
-\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces \emph  {Actions} used to define valid transactions grouped by \emph  {generic} and \emph  {stop}, respectively.\relax }}{63}{table.caption.304}}
-\newlabel{tbl:actionss}{{6.1}{63}{\emph {Actions} used to define valid transactions grouped by \emph {generic} and \emph {stop}, respectively.\relax }{table.caption.304}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Graphs of Actions Definition}{63}{subsection.305}}
-\newlabel{ssec:graph-of-action}{{6.2.3}{63}{Graphs of Actions Definition}{subsection.305}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.4}Transaction Definition}{63}{subsection.306}}
-\newlabel{ssec:transaption-model}{{6.2.4}{63}{Transaction Definition}{subsection.306}{}}
-\newlabel{fig:running-example-code}{{6.2a}{64}{The snipped of code used in our example.\relax }{figure.caption.308}{}}
-\newlabel{sub@fig:running-example-code}{{a}{64}{The snipped of code used in our example.\relax }{figure.caption.308}{}}
-\newlabel{fig:running-example-graph}{{6.2b}{64}{The graphs of \emph {actions} used in our example.\relax }{figure.caption.308}{}}
-\newlabel{sub@fig:running-example-graph}{{b}{64}{The graphs of \emph {actions} used in our example.\relax }{figure.caption.308}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces SgxMonitor running example.}}{64}{figure.caption.308}}
-\newlabel{fig:running-example}{{6.2}{64}{SgxMonitor running example}{figure.caption.308}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.5}Model Example}{64}{subsection.307}}
-\newlabel{ssec:running-example}{{6.2.5}{64}{Model Example}{subsection.307}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces SgxMonitor design.}}{65}{figure.caption.333}}
-\newlabel{fig:design_sgxmonitor}{{6.3}{65}{SgxMonitor design}{figure.caption.333}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Design}{65}{section.332}}
-\newlabel{sec:system-design_sgxmonitor}{{6.3}{65}{Design}{section.332}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Overview}{66}{subsection.334}}
-\newlabel{ssec:overview}{{6.3.1}{66}{Overview}{subsection.334}{}}
-\newlabel{alg:model-extractor-for}{{3}{67}{Model Extractor}{AlgoLine.340}{}}
-\newlabel{alg:model-extractor-glb}{{4}{67}{Model Extractor}{AlgoLine.341}{}}
-\newlabel{alg:model-extractor-loop}{{5}{67}{Model Extractor}{AlgoLine.342}{}}
-\newlabel{alg:model-extractor-free}{{6}{67}{Model Extractor}{AlgoLine.343}{}}
-\newlabel{alg:model-extractor-symex}{{7}{67}{Model Extractor}{AlgoLine.344}{}}
-\newlabel{alg:model-extractor-ins}{{9}{67}{Model Extractor}{AlgoLine.346}{}}
-\newlabel{alg:model-extractor-mod}{{11}{67}{Model Extractor}{AlgoLine.348}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Extracting model algorithm, it takes as input the target enclave and returns the relative model.\relax }}{67}{algocf.351}}
-\newlabel{alg:model-extractor}{{1}{67}{Model Extractor}{algocf.351}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}Model Extractor}{67}{subsection.335}}
-\newlabel{sec:model-exctraction}{{6.3.2}{67}{Model Extractor}{subsection.335}{}}
-\@writefile{toc}{\contentsline {paragraph}{Symbolic Global Variables (Alg.~\ref  {alg:model-extractor} line~\ref  {alg:model-extractor-glb}).}{68}{section*.352}}
-\@writefile{toc}{\contentsline {paragraph}{Loop Analysis (Alg.~\ref  {alg:model-extractor} line~\ref  {alg:model-extractor-loop}).}{68}{section*.353}}
-\@writefile{toc}{\contentsline {paragraph}{Free Arguments Inferring (Alg.~\ref  {alg:model-extractor} line~\ref  {alg:model-extractor-free}).}{68}{section*.354}}
-\@writefile{toc}{\contentsline {paragraph}{Symbolic Exploration (Alg.~\ref  {alg:model-extractor} line~\ref  {alg:model-extractor-symex}).}{68}{section*.355}}
-\@writefile{toc}{\contentsline {paragraph}{Insensitive Static Analysis (Alg.~\ref  {alg:model-extractor} line~\ref  {alg:model-extractor-ins}).}{68}{section*.356}}
-\@writefile{toc}{\contentsline {paragraph}{Building a Model (Alg.~\ref  {alg:model-extractor} line~\ref  {alg:model-extractor-mod}).}{68}{section*.357}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.3}Secure Communication Protocol}{69}{subsection.358}}
-\newlabel{ssec:secure-communication-protocol}{{6.3.3}{69}{Secure Communication Protocol}{subsection.358}{}}
-\@writefile{toc}{\contentsline {paragraph}{Protocol properties.}{69}{section*.359}}
-\@writefile{toc}{\contentsline {paragraph}{Attacks before protocol establishing.}{69}{section*.362}}
-\@writefile{toc}{\contentsline {paragraph}{Workflow.}{69}{section*.363}}
-\newlabel{alg:emit-log:1}{{2}{70}{Defense against a tampered enclave T}{AlgoLine.375}{}}
-\newlabel{alg:emit-log:2}{{3}{70}{Defense against a tampered enclave T}{AlgoLine.376}{}}
-\newlabel{alg:emit-log:3}{{4}{70}{Defense against a tampered enclave T}{AlgoLine.377}{}}
-\newlabel{alg:emit-log:4}{{5}{70}{Defense against a tampered enclave T}{AlgoLine.378}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Procedure used by the \emph  {target} enclave to emit logs in a secure fashion.\relax }}{70}{algocf.379}}
-\newlabel{alg:emit-log}{{2}{70}{Defense against a tampered enclave T}{algocf.379}{}}
-\newlabel{alg:verify-log:1}{{2}{70}{Defense against a tampered enclave T}{AlgoLine.383}{}}
-\newlabel{alg:verify-log:2}{{3}{70}{Defense against a tampered enclave T}{AlgoLine.384}{}}
-\newlabel{alg:verify-log:3}{{4}{70}{Defense against a tampered enclave T}{AlgoLine.385}{}}
-\newlabel{alg:verify-log:4}{{5}{70}{Defense against a tampered enclave T}{AlgoLine.386}{}}
-\newlabel{alg:verify-log:5}{{7}{70}{Defense against a tampered enclave T}{AlgoLine.388}{}}
-\newlabel{alg:verify-log:6}{{9}{70}{Defense against a tampered enclave T}{AlgoLine.390}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Algorithm used by the \emph  {monitor} enclave to verify the logs emitted through \emph  {emitLog()} described in Algorithm~\ref  {alg:emit-log}.\relax }}{70}{algocf.391}}
-\newlabel{alg:verify-log}{{3}{70}{Defense against a tampered enclave T}{algocf.391}{}}
-\@writefile{toc}{\contentsline {paragraph}{Defense against a tampered enclave T}{70}{section*.368}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.4}Model Verifier}{70}{subsection.392}}
-\newlabel{sec:model-validation}{{6.3.4}{70}{Model Verifier}{subsection.392}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}Implementation}{72}{section.395}}
-\newlabel{sec:implementation}{{6.4}{72}{Implementation}{section.395}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.1}Compilation Unit}{72}{subsection.396}}
-\newlabel{ssec:compilation-unit}{{6.4.1}{72}{Compilation Unit}{subsection.396}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.2}Model Extractor}{72}{subsection.397}}
-\newlabel{ssec:model-generation}{{6.4.2}{72}{Model Extractor}{subsection.397}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.3}Secure Communication Channel}{72}{subsection.398}}
-\newlabel{ssec:monitor-target-channel}{{6.4.3}{72}{Secure Communication Channel}{subsection.398}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.5}Evaluation}{73}{section.399}}
-\newlabel{sec:evaluation}{{6.5}{73}{Evaluation}{section.399}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.5.1}RQ1 - Usage Evaluation}{73}{subsection.402}}
-\newlabel{ssec:usage-evaluation}{{6.5.1}{73}{RQ1 - Usage Evaluation}{subsection.402}{}}
-\@writefile{toc}{\contentsline {paragraph}{Use Cases.}{73}{section*.403}}
-\@writefile{toc}{\contentsline {paragraph}{Experiment Setup.}{73}{section*.409}}
-\@writefile{toc}{\contentsline {subsubsection}{Micro-benchmark}{73}{section*.411}}
-\newlabel{ssec:microbenchmark}{{6.5.1}{73}{Micro-benchmark}{section*.411}{}}
-\newlabel{fig:multiply}{{6.4a}{74}{Overhead of vanilla secure functions versus SgxMonitor secure functions of \textsf {Contact} (ct\emph {x}), \textsf {SGX-Biniax2} (bx\emph {x}), \textsf {StealthDB} (sd\emph {x}) and \textsf {unit-test} enclave (ut\emph {x}) expressed in logarithmic scale. Median overhead is around $3.9$x and is depicted as a dashed line.\relax }{figure.caption.410}{}}
-\newlabel{sub@fig:multiply}{{a}{74}{Overhead of vanilla secure functions versus SgxMonitor secure functions of \textsf {Contact} (ct\emph {x}), \textsf {SGX-Biniax2} (bx\emph {x}), \textsf {StealthDB} (sd\emph {x}) and \textsf {unit-test} enclave (ut\emph {x}) expressed in logarithmic scale. Median overhead is around $3.9$x and is depicted as a dashed line.\relax }{figure.caption.410}{}}
-\newlabel{fig:action-second}{{6.4b}{74}{Number of \emph {actions} processed per second of \textsf {Contact} (ct\emph {x}), \textsf {SGX-Biniax2} (bx\emph {x}), \textsf {StealthDB} (sd\emph {x}) and \textsf {unit-test} enclave (ut\emph {x}). Median value is $260$K \emph {action} per second and is depicted as a dashed line.\relax }{figure.caption.410}{}}
-\newlabel{sub@fig:action-second}{{b}{74}{Number of \emph {actions} processed per second of \textsf {Contact} (ct\emph {x}), \textsf {SGX-Biniax2} (bx\emph {x}), \textsf {StealthDB} (sd\emph {x}) and \textsf {unit-test} enclave (ut\emph {x}). Median value is $260$K \emph {action} per second and is depicted as a dashed line.\relax }{figure.caption.410}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces SgxMonitor micro-benchmark and \emph  {action} speed measurement evaluation.\relax }}{74}{figure.caption.410}}
-\newlabel{fig:fig}{{6.4}{74}{SgxMonitor micro-benchmark and \emph {action} speed measurement evaluation.\relax }{figure.caption.410}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Attestation Speed}{74}{section*.412}}
-\newlabel{ssec:attesation-speed}{{6.5.1}{74}{Attestation Speed}{section*.412}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Macro-benchmark}{74}{section*.415}}
-\newlabel{sssec:macro-benchmar}{{6.5.1}{74}{Macro-benchmark}{section*.415}{}}
-\newlabel{fig:request_per_second}{{6.5a}{75}{Overhead of \textsf {StealthDB} vanilla and with SgxMonitor measured as requests per second. Overall, SgxMonitor introduces an average slowdown of $1.68$x with a standard deviation of $0.02$x.\relax }{figure.caption.413}{}}
-\newlabel{sub@fig:request_per_second}{{a}{75}{Overhead of \textsf {StealthDB} vanilla and with SgxMonitor measured as requests per second. Overall, SgxMonitor introduces an average slowdown of $1.68$x with a standard deviation of $0.02$x.\relax }{figure.caption.413}{}}
-\newlabel{fig:latency_2}{{6.5b}{75}{Overhead of \textsf {StealthDB} vanilla and with SgxMonitor measured as latency (ms). Overall, SgxMonitor introduces an average overhead of $1.24$\% with a standard deviation of $0.06$\%.\relax }{figure.caption.413}{}}
-\newlabel{sub@fig:latency_2}{{b}{75}{Overhead of \textsf {StealthDB} vanilla and with SgxMonitor measured as latency (ms). Overall, SgxMonitor introduces an average overhead of $1.24$\% with a standard deviation of $0.06$\%.\relax }{figure.caption.413}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces SgxMonitor \textsf  {StealthDB} macro-benchmark.}}{75}{figure.caption.413}}
-\newlabel{fig:request_per_second_latency}{{6.5}{75}{SgxMonitor \textsf {StealthDB} macro-benchmark}{figure.caption.413}{}}
-\@writefile{toc}{\contentsline {paragraph}{StealthDB.}{75}{section*.419}}
-\@writefile{toc}{\contentsline {paragraph}{libdvdcss.}{75}{section*.420}}
-\@writefile{toc}{\contentsline {paragraph}{SGX-Biniax2.}{75}{section*.421}}
-\newlabel{fig:vlc_performance}{{6.6a}{76}{Overhead of VLC with \textsf {libdvdcss} vanilla, plus SGX, and plus SgxMonitor, respectively. We measure the percentage of CPU usage while playing the same DVD with the three settings. After an initial adjusting phase, the overhead drops and reaches a plateau lower then $10$\%.\relax }{figure.caption.414}{}}
-\newlabel{sub@fig:vlc_performance}{{a}{76}{Overhead of VLC with \textsf {libdvdcss} vanilla, plus SGX, and plus SgxMonitor, respectively. We measure the percentage of CPU usage while playing the same DVD with the three settings. After an initial adjusting phase, the overhead drops and reaches a plateau lower then $10$\%.\relax }{figure.caption.414}{}}
-\newlabel{fig:biniax2_performance}{{6.6b}{76}{Overhead of \textsf {SGX-Biniax2} vanilla and with SgxMonitor, respectively. We measure the percentage of CPU usage while playing the game for the same amount of time (around $20$m). After an initial adjusting phase, the overhead drops and reaches a plateau at around $5$\%.\relax }{figure.caption.414}{}}
-\newlabel{sub@fig:biniax2_performance}{{b}{76}{Overhead of \textsf {SGX-Biniax2} vanilla and with SgxMonitor, respectively. We measure the percentage of CPU usage while playing the game for the same amount of time (around $20$m). After an initial adjusting phase, the overhead drops and reaches a plateau at around $5$\%.\relax }{figure.caption.414}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces SgxMonitor \textsf  {libdvdcss} and \textsf  {SGX-Biniax2} macro-benchmark.}}{76}{figure.caption.414}}
-\newlabel{fig:vlc_biniax2_performance}{{6.6}{76}{SgxMonitor \textsf {libdvdcss} and \textsf {SGX-Biniax2} macro-benchmark}{figure.caption.414}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Coverage and Precision}{76}{section*.423}}
-\newlabel{sssec:coverage}{{6.5.1}{76}{Coverage and Precision}{section*.423}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6.2}{\ignorespaces Coverage analysis over our five use cases: \textsf  {Contact}~\citep {signalrepo}, \textsf  {libdvdcss}~\citep {libdvdcss}, \textsf  {StealthDB}~\citep {stealthdb}, \textsf  {SGX-Biniax2}~\citep {bauman2016case}, and a unit-test. The results show that the analysis covers from $91.6\%$ to $96.6\%$ of the \emph  {actions} in around $2$ hours and $20$ minutes in total ($8561.10$s). Furthermore, we did not observe any false positive during our experiments, meaning we covered a significant portion of code.\relax }}{77}{table.caption.422}}
-\newlabel{tbl:coverage}{{6.2}{77}{Coverage analysis over our five use cases: \textsf {Contact}~\citep {signalrepo}, \textsf {libdvdcss}~\citep {libdvdcss}, \textsf {StealthDB}~\citep {stealthdb}, \textsf {SGX-Biniax2}~\citep {bauman2016case}, and a unit-test. The results show that the analysis covers from $91.6\%$ to $96.6\%$ of the \emph {actions} in around $2$ hours and $20$ minutes in total ($8561.10$s). Furthermore, we did not observe any false positive during our experiments, meaning we covered a significant portion of code.\relax }{table.caption.422}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.5.2}RQ2 - Security Evaluation}{77}{subsection.427}}
-\newlabel{ssec:security-properties}{{6.5.2}{77}{RQ2 - Security Evaluation}{subsection.427}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Execution-flow attacks}{77}{section*.428}}
-\newlabel{sssec:execution-flow-attacks}{{6.5.2}{77}{Execution-flow attacks}{section*.428}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Non-control data attacks}{78}{section*.431}}
-\newlabel{sssec:non-control-data}{{6.5.2}{78}{Non-control data attacks}{section*.431}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Side-channels attacks.}{78}{section*.432}}
-\newlabel{sssec:info-leakage}{{6.5.2}{78}{Side-channels attacks}{section*.432}{}}
+\newlabel{chp:runtime-protection-trusted}{{6}{61}{A Novel Runtime Remote Attestation Schema for SGX Enclaves}{chapter.282}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Threat Model}{62}{section.294}}
+\newlabel{sec:threat-model_sgxmonitor}{{6.1}{62}{Threat Model}{section.294}{}}
+\@writefile{toc}{\contentsline {paragraph}{Adversary Assumptions.}{62}{section*.295}}
+\@writefile{toc}{\contentsline {paragraph}{Enclave Assumptions.}{62}{section*.296}}
+\@writefile{toc}{\contentsline {paragraph}{Out-of-Scope Attacks.}{62}{section*.297}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Model}{62}{section.298}}
+\newlabel{sec:model_sgxmonitor}{{6.2}{62}{Model}{section.298}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Standard SGX FSM.}}{63}{figure.caption.299}}
+\newlabel{fig:fmi-standard}{{6.1}{63}{Standard SGX FSM}{figure.caption.299}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}State Definition}{63}{subsection.301}}
+\newlabel{ssec:state}{{6.2.1}{63}{State Definition}{subsection.301}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Action Definition}{64}{subsection.304}}
+\newlabel{ssec:actions-definition}{{6.2.2}{64}{Action Definition}{subsection.304}{}}
+\@writefile{toc}{\contentsline {paragraph}{Generic actions.}{64}{section*.305}}
+\@writefile{toc}{\contentsline {paragraph}{Stop actions.}{64}{section*.309}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces \emph  {Actions} used to define valid transactions grouped by \emph  {generic} and \emph  {stop}, respectively.\relax }}{65}{table.caption.310}}
+\newlabel{tbl:actionss}{{6.1}{65}{\emph {Actions} used to define valid transactions grouped by \emph {generic} and \emph {stop}, respectively.\relax }{table.caption.310}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Graphs of Actions Definition}{65}{subsection.311}}
+\newlabel{ssec:graph-of-action}{{6.2.3}{65}{Graphs of Actions Definition}{subsection.311}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.4}Transaction Definition}{65}{subsection.312}}
+\newlabel{ssec:transaption-model}{{6.2.4}{65}{Transaction Definition}{subsection.312}{}}
+\newlabel{fig:running-example-code}{{6.2a}{66}{The snipped of code used in our example.\relax }{figure.caption.314}{}}
+\newlabel{sub@fig:running-example-code}{{a}{66}{The snipped of code used in our example.\relax }{figure.caption.314}{}}
+\newlabel{fig:running-example-graph}{{6.2b}{66}{The graphs of \emph {actions} used in our example.\relax }{figure.caption.314}{}}
+\newlabel{sub@fig:running-example-graph}{{b}{66}{The graphs of \emph {actions} used in our example.\relax }{figure.caption.314}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces SgxMonitor running example.}}{66}{figure.caption.314}}
+\newlabel{fig:running-example}{{6.2}{66}{SgxMonitor running example}{figure.caption.314}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.5}Model Example}{66}{subsection.313}}
+\newlabel{ssec:running-example}{{6.2.5}{66}{Model Example}{subsection.313}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces SgxMonitor design.}}{67}{figure.caption.339}}
+\newlabel{fig:design_sgxmonitor}{{6.3}{67}{SgxMonitor design}{figure.caption.339}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Design}{68}{section.338}}
+\newlabel{sec:system-design_sgxmonitor}{{6.3}{68}{Design}{section.338}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Overview}{68}{subsection.340}}
+\newlabel{ssec:overview}{{6.3.1}{68}{Overview}{subsection.340}{}}
+\newlabel{alg:model-extractor-for}{{3}{69}{Model Extractor}{AlgoLine.346}{}}
+\newlabel{alg:model-extractor-glb}{{4}{69}{Model Extractor}{AlgoLine.347}{}}
+\newlabel{alg:model-extractor-loop}{{5}{69}{Model Extractor}{AlgoLine.348}{}}
+\newlabel{alg:model-extractor-free}{{6}{69}{Model Extractor}{AlgoLine.349}{}}
+\newlabel{alg:model-extractor-symex}{{7}{69}{Model Extractor}{AlgoLine.350}{}}
+\newlabel{alg:model-extractor-ins}{{9}{69}{Model Extractor}{AlgoLine.352}{}}
+\newlabel{alg:model-extractor-mod}{{11}{69}{Model Extractor}{AlgoLine.354}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Extracting model algorithm, it takes as input the target enclave and returns the relative model.\relax }}{69}{algocf.357}}
+\newlabel{alg:model-extractor}{{1}{69}{Model Extractor}{algocf.357}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}Model Extractor}{69}{subsection.341}}
+\newlabel{sec:model-exctraction}{{6.3.2}{69}{Model Extractor}{subsection.341}{}}
+\@writefile{toc}{\contentsline {paragraph}{Symbolic Global Variables (Alg.~\ref  {alg:model-extractor} line~\ref  {alg:model-extractor-glb}).}{70}{section*.358}}
+\@writefile{toc}{\contentsline {paragraph}{Loop Analysis (Alg.~\ref  {alg:model-extractor} line~\ref  {alg:model-extractor-loop}).}{70}{section*.359}}
+\@writefile{toc}{\contentsline {paragraph}{Free Arguments Inferring (Alg.~\ref  {alg:model-extractor} line~\ref  {alg:model-extractor-free}).}{70}{section*.360}}
+\@writefile{toc}{\contentsline {paragraph}{Symbolic Exploration (Alg.~\ref  {alg:model-extractor} line~\ref  {alg:model-extractor-symex}).}{70}{section*.361}}
+\@writefile{toc}{\contentsline {paragraph}{Insensitive Static Analysis (Alg.~\ref  {alg:model-extractor} line~\ref  {alg:model-extractor-ins}).}{70}{section*.362}}
+\@writefile{toc}{\contentsline {paragraph}{Building a Model (Alg.~\ref  {alg:model-extractor} line~\ref  {alg:model-extractor-mod}).}{71}{section*.363}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.3}Secure Communication Protocol}{71}{subsection.364}}
+\newlabel{ssec:secure-communication-protocol}{{6.3.3}{71}{Secure Communication Protocol}{subsection.364}{}}
+\@writefile{toc}{\contentsline {paragraph}{Protocol properties.}{71}{section*.365}}
+\@writefile{toc}{\contentsline {paragraph}{Attacks before protocol establishing.}{71}{section*.368}}
+\@writefile{toc}{\contentsline {paragraph}{Workflow.}{71}{section*.369}}
+\newlabel{alg:emit-log:1}{{2}{72}{Defense against a tampered enclave T}{AlgoLine.381}{}}
+\newlabel{alg:emit-log:2}{{3}{72}{Defense against a tampered enclave T}{AlgoLine.382}{}}
+\newlabel{alg:emit-log:3}{{4}{72}{Defense against a tampered enclave T}{AlgoLine.383}{}}
+\newlabel{alg:emit-log:4}{{5}{72}{Defense against a tampered enclave T}{AlgoLine.384}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Procedure used by the \emph  {target} enclave to emit logs in a secure fashion.\relax }}{72}{algocf.385}}
+\newlabel{alg:emit-log}{{2}{72}{Defense against a tampered enclave T}{algocf.385}{}}
+\@writefile{toc}{\contentsline {paragraph}{Defense against a tampered enclave T}{72}{section*.374}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.4}Model Verifier}{72}{subsection.398}}
+\newlabel{sec:model-validation}{{6.3.4}{72}{Model Verifier}{subsection.398}{}}
+\newlabel{alg:verify-log:1}{{2}{73}{Defense against a tampered enclave T}{AlgoLine.389}{}}
+\newlabel{alg:verify-log:2}{{3}{73}{Defense against a tampered enclave T}{AlgoLine.390}{}}
+\newlabel{alg:verify-log:3}{{4}{73}{Defense against a tampered enclave T}{AlgoLine.391}{}}
+\newlabel{alg:verify-log:4}{{5}{73}{Defense against a tampered enclave T}{AlgoLine.392}{}}
+\newlabel{alg:verify-log:5}{{7}{73}{Defense against a tampered enclave T}{AlgoLine.394}{}}
+\newlabel{alg:verify-log:6}{{9}{73}{Defense against a tampered enclave T}{AlgoLine.396}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Algorithm used by the \emph  {monitor} enclave to verify the logs emitted through \emph  {emitLog()} described in Algorithm~\ref  {alg:emit-log}.\relax }}{73}{algocf.397}}
+\newlabel{alg:verify-log}{{3}{73}{Defense against a tampered enclave T}{algocf.397}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Implementation}{74}{section.401}}
+\newlabel{sec:implementation}{{6.4}{74}{Implementation}{section.401}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.1}Compilation Unit}{74}{subsection.402}}
+\newlabel{ssec:compilation-unit}{{6.4.1}{74}{Compilation Unit}{subsection.402}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.2}Model Extractor}{74}{subsection.403}}
+\newlabel{ssec:model-generation}{{6.4.2}{74}{Model Extractor}{subsection.403}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.3}Secure Communication Channel}{75}{subsection.404}}
+\newlabel{ssec:monitor-target-channel}{{6.4.3}{75}{Secure Communication Channel}{subsection.404}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Evaluation}{75}{section.405}}
+\newlabel{sec:evaluation}{{6.5}{75}{Evaluation}{section.405}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5.1}RQ1 - Usage Evaluation}{75}{subsection.408}}
+\newlabel{ssec:usage-evaluation}{{6.5.1}{75}{RQ1 - Usage Evaluation}{subsection.408}{}}
+\@writefile{toc}{\contentsline {paragraph}{Use Cases.}{75}{section*.409}}
+\newlabel{fig:multiply}{{6.4a}{76}{Overhead of vanilla secure functions versus SgxMonitor secure functions of \textsf {Contact} (ct\emph {x}), \textsf {SGX-Biniax2} (bx\emph {x}), \textsf {StealthDB} (sd\emph {x}) and \textsf {unit-test} enclave (ut\emph {x}) expressed in logarithmic scale. Median overhead is around $3.9$x and is depicted as a dashed line.\relax }{figure.caption.416}{}}
+\newlabel{sub@fig:multiply}{{a}{76}{Overhead of vanilla secure functions versus SgxMonitor secure functions of \textsf {Contact} (ct\emph {x}), \textsf {SGX-Biniax2} (bx\emph {x}), \textsf {StealthDB} (sd\emph {x}) and \textsf {unit-test} enclave (ut\emph {x}) expressed in logarithmic scale. Median overhead is around $3.9$x and is depicted as a dashed line.\relax }{figure.caption.416}{}}
+\newlabel{fig:action-second}{{6.4b}{76}{Number of \emph {actions} processed per second of \textsf {Contact} (ct\emph {x}), \textsf {SGX-Biniax2} (bx\emph {x}), \textsf {StealthDB} (sd\emph {x}) and \textsf {unit-test} enclave (ut\emph {x}). Median value is $260$K \emph {action} per second and is depicted as a dashed line.\relax }{figure.caption.416}{}}
+\newlabel{sub@fig:action-second}{{b}{76}{Number of \emph {actions} processed per second of \textsf {Contact} (ct\emph {x}), \textsf {SGX-Biniax2} (bx\emph {x}), \textsf {StealthDB} (sd\emph {x}) and \textsf {unit-test} enclave (ut\emph {x}). Median value is $260$K \emph {action} per second and is depicted as a dashed line.\relax }{figure.caption.416}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces SgxMonitor micro-benchmark and \emph  {action} speed measurement evaluation.\relax }}{76}{figure.caption.416}}
+\newlabel{fig:fig}{{6.4}{76}{SgxMonitor micro-benchmark and \emph {action} speed measurement evaluation.\relax }{figure.caption.416}{}}
+\@writefile{toc}{\contentsline {paragraph}{Experiment Setup.}{76}{section*.415}}
+\@writefile{toc}{\contentsline {subsubsection}{Micro-benchmark}{76}{section*.417}}
+\newlabel{ssec:microbenchmark}{{6.5.1}{76}{Micro-benchmark}{section*.417}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Attestation Speed}{76}{section*.418}}
+\newlabel{ssec:attesation-speed}{{6.5.1}{76}{Attestation Speed}{section*.418}{}}
+\newlabel{fig:request_per_second}{{6.5a}{77}{Overhead of \textsf {StealthDB} vanilla and with SgxMonitor measured as requests per second. Overall, SgxMonitor introduces an average slowdown of $1.68$x with a standard deviation of $0.02$x.\relax }{figure.caption.419}{}}
+\newlabel{sub@fig:request_per_second}{{a}{77}{Overhead of \textsf {StealthDB} vanilla and with SgxMonitor measured as requests per second. Overall, SgxMonitor introduces an average slowdown of $1.68$x with a standard deviation of $0.02$x.\relax }{figure.caption.419}{}}
+\newlabel{fig:latency_2}{{6.5b}{77}{Overhead of \textsf {StealthDB} vanilla and with SgxMonitor measured as latency (ms). Overall, SgxMonitor introduces an average overhead of $1.24$\% with a standard deviation of $0.06$\%.\relax }{figure.caption.419}{}}
+\newlabel{sub@fig:latency_2}{{b}{77}{Overhead of \textsf {StealthDB} vanilla and with SgxMonitor measured as latency (ms). Overall, SgxMonitor introduces an average overhead of $1.24$\% with a standard deviation of $0.06$\%.\relax }{figure.caption.419}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces SgxMonitor \textsf  {StealthDB} macro-benchmark.}}{77}{figure.caption.419}}
+\newlabel{fig:request_per_second_latency}{{6.5}{77}{SgxMonitor \textsf {StealthDB} macro-benchmark}{figure.caption.419}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Macro-benchmark}{77}{section*.421}}
+\newlabel{sssec:macro-benchmar}{{6.5.1}{77}{Macro-benchmark}{section*.421}{}}
+\@writefile{toc}{\contentsline {paragraph}{StealthDB.}{77}{section*.425}}
+\@writefile{toc}{\contentsline {paragraph}{libdvdcss.}{77}{section*.426}}
+\newlabel{fig:vlc_performance}{{6.6a}{78}{Overhead of VLC with \textsf {libdvdcss} vanilla, plus SGX, and plus SgxMonitor, respectively. We measure the percentage of CPU usage while playing the same DVD with the three settings. After an initial adjusting phase, the overhead drops and reaches a plateau lower then $10$\%.\relax }{figure.caption.420}{}}
+\newlabel{sub@fig:vlc_performance}{{a}{78}{Overhead of VLC with \textsf {libdvdcss} vanilla, plus SGX, and plus SgxMonitor, respectively. We measure the percentage of CPU usage while playing the same DVD with the three settings. After an initial adjusting phase, the overhead drops and reaches a plateau lower then $10$\%.\relax }{figure.caption.420}{}}
+\newlabel{fig:biniax2_performance}{{6.6b}{78}{Overhead of \textsf {SGX-Biniax2} vanilla and with SgxMonitor, respectively. We measure the percentage of CPU usage while playing the game for the same amount of time (around $20$m). After an initial adjusting phase, the overhead drops and reaches a plateau at around $5$\%.\relax }{figure.caption.420}{}}
+\newlabel{sub@fig:biniax2_performance}{{b}{78}{Overhead of \textsf {SGX-Biniax2} vanilla and with SgxMonitor, respectively. We measure the percentage of CPU usage while playing the game for the same amount of time (around $20$m). After an initial adjusting phase, the overhead drops and reaches a plateau at around $5$\%.\relax }{figure.caption.420}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces SgxMonitor \textsf  {libdvdcss} and \textsf  {SGX-Biniax2} macro-benchmark.}}{78}{figure.caption.420}}
+\newlabel{fig:vlc_biniax2_performance}{{6.6}{78}{SgxMonitor \textsf {libdvdcss} and \textsf {SGX-Biniax2} macro-benchmark}{figure.caption.420}{}}
+\@writefile{toc}{\contentsline {paragraph}{SGX-Biniax2.}{78}{section*.427}}
+\@writefile{toc}{\contentsline {subsubsection}{Coverage and Precision}{78}{section*.429}}
+\newlabel{sssec:coverage}{{6.5.1}{78}{Coverage and Precision}{section*.429}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.2}{\ignorespaces Coverage analysis of SgxMonitor.}}{79}{table.caption.428}}
+\newlabel{tbl:coverage}{{6.2}{79}{Coverage analysis of SgxMonitor}{table.caption.428}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5.2}RQ2 - Security Evaluation}{79}{subsection.433}}
+\newlabel{ssec:security-properties}{{6.5.2}{79}{RQ2 - Security Evaluation}{subsection.433}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Execution-flow attacks}{79}{section*.434}}
+\newlabel{sssec:execution-flow-attacks}{{6.5.2}{79}{Execution-flow attacks}{section*.434}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Non-control data attacks}{80}{section*.437}}
+\newlabel{sssec:non-control-data}{{6.5.2}{80}{Non-control data attacks}{section*.437}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Side-channels attacks.}{81}{section*.438}}
+\newlabel{sssec:info-leakage}{{6.5.2}{81}{Side-channels attacks}{section*.438}{}}
 \@setckpt{chapters/runtime-protection-trusted}{
-\setcounter{page}{80}
+\setcounter{page}{82}
 \setcounter{equation}{0}
 \setcounter{enumi}{2}
 \setcounter{enumii}{0}
@@ -162,7 +162,7 @@
 \setcounter{citetotal}{0}
 \setcounter{multicitecount}{0}
 \setcounter{multicitetotal}{0}
-\setcounter{instcount}{347}
+\setcounter{instcount}{374}
 \setcounter{maxnames}{3}
 \setcounter{minnames}{1}
 \setcounter{maxitems}{3}
@@ -264,7 +264,7 @@
 \setcounter{bbx:relatedtotal}{0}
 \setcounter{Item}{157}
 \setcounter{Hfootnote}{7}
-\setcounter{bookmark@seq@number}{99}
+\setcounter{bookmark@seq@number}{105}
 \setcounter{subfigure}{2}
 \setcounter{subtable}{0}
 \setcounter{lstnumber}{23}

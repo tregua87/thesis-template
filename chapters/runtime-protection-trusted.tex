@@ -120,9 +120,8 @@ To understand the underlying reason of this limit, we analyze the SGX
 enclave life-cycle, which is depicted as a Finite-State-Machine in 
 Figure~\ref{fig:fmi-standard}.\footnote{This model is a simplified version 
 of~\cite{costan2016intel}.}
-We assume the enclave has been loaded correctly and the host 
-interacts with it by means of the opcodes described in 
-Section~\ref{sec:background}.
+We assume the enclave has been loaded correctly and the host interacts with it 
+by means of the opcodes described in Section~\ref{ssec:sgx-core-design}.
 The model allows the enclave state to assume only two values: 
 \emph{non-in-use} and \emph{in-use}.
 In particular, an enclave transits to \emph{in-use} state when an 
@@ -190,7 +189,7 @@ We define a state able to identify attacks that alter important global
 structures introduced by the Intel SGX SDK.
 These structures handle operations such as \emph{outside function} 
 invocation and \emph{exception handling} 
-(Section~\ref{sec:background}\todo{fix it}), and are targeted by the 
+(Section~\ref{sec:software-guard-extension}), and are targeted by the 
 adversaries~\citep{biondo2018guard,lee2017hacking}.
 For instance, we can observe if an enclave is consuming a structure not 
 previously generated, thus limiting the attack surface of 
@@ -690,7 +689,7 @@ T is compiled without debug information, we solely rely on global symbols to
 identify the functions entry point and the global variables.
 The global symbols do not contribute to the enclave measurement, thus we strip 
 them out after extracting the model~\citep{intel2} 
-(Section~\ref{sec:background}). 
+(Section~\ref{ssec:sgx-remote-attestation}). 
 
 Overall, the extraction algorithm is described in 
 Algorithm~\ref{alg:model-extractor}. Given an instrumented \emph{target 
@@ -1498,7 +1497,8 @@ enclave interactions (like DRM protection) or are more computational intense
 		\bottomrule
 	\end{tabular}%
 	}
-	\caption{Coverage analysis over our five use cases: 
+	\caption[Coverage analysis of SgxMonitor.]
+		{Coverage analysis over our five use cases: 
 		\textsf{Contact}~\citep{signalrepo}, 	
 		\textsf{libdvdcss}~\citep{libdvdcss}, 
 		\textsf{StealthDB}~\citep{stealthdb}, 
@@ -1617,7 +1617,7 @@ The \emph{backdoor activation}, instead, restores a corrupted
 SgxMonitor observed the restoring of an anomalous state.
 In both cases, SgxMonitor flagged the \emph{target enclave} as 
 malicious, thus blocking any attempt to establish a secure channel 
-(Figure~\ref{fig:design}).
+(Figure~\ref{fig:design_sgxmonitor}).
 
 %To sum up, \text{SnakeGX} is a modern benchmark that stressed the capability 
 %of 
