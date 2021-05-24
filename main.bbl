@@ -816,18 +816,6 @@
     \field{year}{2014}
   \endentry
 
-  \entry{asop}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2019}
-    \field{labeldatesource}{year}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-  \field{howpublished}{\url{https://github.com/Maxul/Awesome-SGX-Open-Source}}
-    \field{note}{Last access Feb 2021}
-    \field{title}{Awesome SGX Open Source Projects}
-    \field{year}{2019}
-  \endentry
-
   \entry{aws_dedicated_host}{misc}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -904,57 +892,6 @@
     \field{sortinithash}{B}
     \field{title}{A tutorial on software obfuscation}
     \field{journaltitle}{Advances in Computers}
-    \field{year}{2017}
-  \endentry
-
-  \entry{banescu2017detecting}{inproceedings}{}
-    \name{author}{5}{}{%
-      {{hash=BS}{%
-         family={Banescu},
-         familyi={B\bibinitperiod},
-         given={Sebastian},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=AM}{%
-         family={Ahmadvand},
-         familyi={A\bibinitperiod},
-         given={Mohsen},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=PA}{%
-         family={Pretschner},
-         familyi={P\bibinitperiod},
-         given={Alexander},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=SR}{%
-         family={Shield},
-         familyi={S\bibinitperiod},
-         given={Robert},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=HC}{%
-         family={Hamilton},
-         familyi={H\bibinitperiod},
-         given={Chris},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {ACM}%
-    }
-    \strng{namehash}{BS+1}
-    \strng{fullhash}{BSAMPASRHC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{labeldatesource}{year}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{booktitle}{Proceedings of the Seventh ACM on Conference on Data and
-  Application Security and Privacy}
-    \field{pages}{185\bibrangedash 196}
-    \field{title}{Detecting Patching of Executables without System Calls}
     \field{year}{2017}
   \endentry
 
@@ -1763,6 +1700,53 @@
     \field{year}{2020}
   \endentry
 
+  \entry{iagoattack}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CS}{%
+         family={Checkoway},
+         familyi={C\bibinitperiod},
+         given={Stephen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Shacham},
+         familyi={S\bibinitperiod},
+         given={Hovav},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{iago attacks, overshadow, system call}
+    \strng{namehash}{CSSH1}
+    \strng{fullhash}{CSSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1145/2490301.2451145
+    \endverb
+    \field{issn}{0163-5964}
+    \field{number}{1}
+    \field{pages}{253\bibrangedash 264}
+    \field{title}{Iago Attacks: Why the System Call API is a Bad Untrusted RPC
+  Interface}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/2490301.2451145
+    \endverb
+    \field{volume}{41}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{SIGARCH Comput. Archit. News}
+    \field{month}{03}
+    \field{year}{2013}
+  \endentry
+
   \entry{chen2016advanced}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=CP}{%
@@ -1854,6 +1838,53 @@
     \field{year}{2005}
   \endentry
 
+  \entry{teerex}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=CT}{%
+         family={Cloosters},
+         familyi={C\bibinitperiod},
+         given={Tobias},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Rodler},
+         familyi={R\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DL}{%
+         family={Davi},
+         familyi={D\bibinitperiod},
+         given={Lucas},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{USENIX} Association}%
+    }
+    \strng{namehash}{CTRMDL1}
+    \strng{fullhash}{CTRMDL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{extradate}{1}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{29th {USENIX} Security Symposium ({USENIX} Security 20)}
+    \field{title}{TeeRex: Discovery and Exploitation of Memory Corruption
+  Vulnerabilities in {SGX} Enclaves}
+    \verb{url}
+    \verb https://www.usenix.org/conference/usenixsecurity20/presentation/cloos
+    \verb ters
+    \endverb
+    \list{location}{1}{%
+      {Boston, MA}%
+    }
+    \field{month}{08}
+    \field{year}{2020}
+  \endentry
+
   \entry{251582}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=CT}{%
@@ -1883,6 +1914,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
+    \field{extradate}{2}
     \field{labeldatesource}{year}
     \field{sortinit}{C}
     \field{sortinithash}{C}
@@ -2637,29 +2669,6 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
-  \entry{evenbalance}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=E}{%
-         family={Evenbalance},
-         familyi={E\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{E1}
-    \strng{fullhash}{E1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{labeldatesource}{year}
-    \field{sortinit}{E}
-    \field{sortinithash}{E}
-    \field{note}{Last visit on 13 Nov 2017}
-    \field{title}{PunkBuster}
-    \verb{url}
-    \verb http://www.evenbalance.com/pbsetup.php
-    \endverb
-    \field{year}{2017}
-  \endentry
-
   \entry{snakegx}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=FT}{%
@@ -2933,7 +2942,7 @@
     \field{year}{1999}
   \endentry
 
-  \entry{gasylo}{misc}{}
+  \entry{asylo}{misc}{}
     \name{author}{1}{}{%
       {{hash=G}{%
          family={Google},
@@ -2948,9 +2957,11 @@
     \field{labeldatesource}{year}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \field{howpublished}{\url{https://github.com/google/asylo}}
-    \field{note}{Last access March 2020}
+    \field{note}{Last access February 2021}
     \field{title}{Asylo}
+    \verb{url}
+    \verb https://github.com/google/asylo
+    \endverb
     \field{year}{2018}
   \endentry
 
@@ -3251,55 +3262,6 @@
       {Santa Clara, CA}%
     }
     \field{year}{2017}
-  \endentry
-
-  \entry{helbig1998trusted}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=HSWA}{%
-         family={Helbig\bibnamedelima Sr},
-         familyi={H\bibinitperiod\bibinitdelim S\bibinitperiod},
-         given={Walter\bibnamedelima Allen},
-         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Google Patents}%
-    }
-    \strng{namehash}{HSWA1}
-    \strng{fullhash}{HSWA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1998}
-    \field{labeldatesource}{year}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{note}{US Patent 5,841,868}
-    \field{title}{Trusted computer system}
-    \field{year}{1998}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{hoglund2006hacking}{article}{}
-    \name{author}{1}{}{%
-      {{hash=HG}{%
-         family={Hoglund},
-         familyi={H\bibinitperiod},
-         given={G},
-         giveni={G},
-      }}%
-    }
-    \strng{namehash}{HG1}
-    \strng{fullhash}{HG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2006}
-    \field{labeldatesource}{year}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{title}{Hacking world of warcraft: An exercise in advanced rootkit
-  design}
-    \field{journaltitle}{Black Hat}
-    \field{year}{2006}
   \endentry
 
   \entry{insider_threat}{article}{}
@@ -3872,7 +3834,7 @@
     \field{year}{2016}
   \endentry
 
-  \entry{intel-xsave}{misc}{}
+  \entry{intel-developer-guide}{misc}{}
     \name{author}{1}{}{%
       {{hash=I}{%
          family={Intel},
@@ -3883,10 +3845,45 @@
     \strng{fullhash}{I2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{extradate}{1}
+    \field{labeldatesource}{year}
     \field{sortinit}{I}
     \field{sortinithash}{I}
-    \field{title}{Intel Architecture Instruction Set Extensions Programming
+    \field{note}{Last access June 2020}
+    \field{title}{Intel\textregistered~Software Guard Extensions
+  (Intel\textregistered SGX) - Developer Guide}
+    \verb{url}
+    \verb https://download.01.org/intel-sgx/linux-2.1.3/docs/Intel\_SGX\_Develo
+    \verb per\_Guide.pdf
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{intel-sgx2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={Intel},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I2}
+    \strng{fullhash}{I2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{extradate}{2}
+    \field{labeldatesource}{year}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{note}{Last access June 2020}
+    \field{title}{Intel\textregistered~Software Guard Extensions Programming
   Reference}
+    \verb{url}
+    \verb https://software.intel.com/sites/default/files/managed/48/88/329298-0
+    \verb 02.pdf
+    \endverb
+    \field{year}{2013}
   \endentry
 
   \entry{intel2}{manual}{}
@@ -3960,6 +3957,32 @@
     \field{year}{2016}
   \endentry
 
+  \entry{intel-xsave}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={Intel},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I2}
+    \strng{fullhash}{I2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{extradate}{1}
+    \field{labeldatesource}{year}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{note}{Last access November 2018}
+    \field{title}{Intel Architecture Instruction Set Extensions Programming
+  Reference}
+    \verb{url}
+    \verb https://software.intel.com/sites/default/files/managed/b4/3a/319433-0
+    \verb 24.pdf?_ga=1.118002441.1853754838.1418826886
+    \endverb
+    \field{year}{2018}
+  \endentry
+
   \entry{rijndael128GCM}{misc}{}
     \name{author}{1}{}{%
       {{hash=I}{%
@@ -3972,6 +3995,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
+    \field{extradate}{2}
     \field{labeldatesource}{year}
     \field{sortinit}{I}
     \field{sortinithash}{I}
@@ -3981,32 +4005,6 @@
     \verb https://software.intel.com/en-us/node/709139
     \endverb
     \field{year}{2018}
-  \endentry
-
-  \entry{intel-developer-guide}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2013}
-    \field{labeldatesource}{year}
-    \field{sortinit}{I}
-    \field{sortinithash}{I}
-  \field{howpublished}{\url{https://download.01.org/intel-sgx/linux-2.1.3/docs/Intel\_SGX\_Developer\_Guide.pdf}}
-    \field{note}{Last access June 2020}
-    \field{title}{Intel\textregistered~Software Guard Extensions
-  (Intel\textregistered SGX) - Developer Guide}
-    \field{year}{2013}
-  \endentry
-
-  \entry{intel-sgx2}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2013}
-    \field{labeldatesource}{year}
-    \field{sortinit}{I}
-    \field{sortinithash}{I}
-  \field{howpublished}{\url{https://software.intel.com/sites/default/files/managed/48/88/329298-002.pdf}}
-    \field{note}{Last access June 2020}
-    \field{title}{Intel\textregistered~Software Guard Extensions Programming
-  Reference}
-    \field{year}{2013}
   \endentry
 
   \entry{tpm-isoosi}{misc}{}
@@ -4106,6 +4104,53 @@
     \field{title}{Address space layout permutation (ASLP): Towards fine-grained
   randomization of commodity software}
     \field{year}{2006}
+  \endentry
+
+  \entry{sgxtor}{misc}{}
+    \name{author}{5}{}{%
+      {{hash=KS}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Seongmin},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Juhyeng},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Ha},
+         familyi={H\bibinitperiod},
+         given={Jaehyeong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Taesoo},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Dongsu},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KS+1}
+    \strng{fullhash}{KSHJHJKTHD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{howpublished}{\url{https://github.com/kaist-ina/SGX-Tor}}
+    \field{note}{Last access November 2018}
+    \field{title}{SGX-Tor}
+    \field{year}{2018}
   \endentry
 
   \entry{king1976symbolic}{article}{}
@@ -4785,32 +4830,6 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
-  \entry{doubleanget}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=LCT}{%
-         family={LTD},
-         familyi={L\bibinitperiod},
-         given={Cybellum\bibnamedelima Technologies},
-         giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LCT1}
-    \strng{fullhash}{LCT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{labeldatesource}{year}
-    \field{sortinit}{L}
-    \field{sortinithash}{L}
-    \field{note}{Last visit 15 Nov 2017}
-    \field{title}{Double Agent}
-    \verb{url}
-    \verb https://github.com/Cybellum/DoubleAgent
-    \endverb
-    \field{month}{03}
-    \field{year}{2017}
-  \endentry
-
   \entry{maurice2017hello}{inproceedings}{}
     \name{author}{8}{}{%
       {{hash=MC}{%
@@ -4878,6 +4897,29 @@
     \field{year}{2017}
   \endentry
 
+  \entry{asop}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Maxul},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{note}{Last access Feb 2021}
+    \field{title}{Awesome SGX Open Source Projects}
+    \verb{url}
+    \verb https://github.com/Maxul/Awesome-SGX-Open-Source
+    \endverb
+    \field{year}{2019}
+  \endentry
+
   \entry{mcaffee_cloud}{misc}{}
     \name{author}{1}{}{%
       {{hash=M}{%
@@ -4885,8 +4927,8 @@
          familyi={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{M1}
-    \strng{fullhash}{M1}
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
@@ -4923,8 +4965,8 @@
          familyi={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{M2}
-    \strng{fullhash}{M2}
+    \strng{namehash}{M3}
+    \strng{fullhash}{M3}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
@@ -4947,8 +4989,8 @@
          familyi={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{M2}
-    \strng{fullhash}{M2}
+    \strng{namehash}{M3}
+    \strng{fullhash}{M3}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
@@ -4972,8 +5014,8 @@
          familyi={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{M2}
-    \strng{fullhash}{M2}
+    \strng{namehash}{M3}
+    \strng{fullhash}{M3}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
@@ -4997,8 +5039,8 @@
          familyi={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{M2}
-    \strng{fullhash}{M2}
+    \strng{namehash}{M3}
+    \strng{fullhash}{M3}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
@@ -5296,8 +5338,8 @@
          familyi={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{M3}
-    \strng{fullhash}{M3}
+    \strng{namehash}{M4}
+    \strng{fullhash}{M4}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
@@ -5612,29 +5654,6 @@
     \field{year}{2010}
   \endentry
 
-  \entry{hacklicense}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=o}{%
-         family={onhax.me},
-         familyi={o\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{o1}
-    \strng{fullhash}{o1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{labeldatesource}{year}
-    \field{sortinit}{O}
-    \field{sortinithash}{O}
-    \field{note}{Last visit on 15 Nov 2017}
-    \field{title}{Bypass license in Android}
-    \verb{url}
-    \verb https://onhax.me/bypass-license-verification-failed
-    \endverb
-    \field{year}{2017}
-  \endentry
-
   \entry{omtp}{misc}{}
     \name{author}{1}{}{%
       {{hash=O}{%
@@ -5815,18 +5834,6 @@
     }
     \field{year}{1959}
     \warn{\item Can't use 'location' + 'address'}
-  \endentry
-
-  \entry{ropgadget}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2011}
-    \field{labeldatesource}{year}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \field{howpublished}{\url{https://github.com/JonathanSalwan/ROPgadget}}
-    \field{note}{Last access March 2020}
-    \field{title}{ROPgadget - Gadgets finder and auto-roper}
-    \field{year}{2011}
   \endentry
 
   \entry{rozas2013intel}{article}{}
@@ -6017,6 +6024,31 @@
   Measurement Architecture.}
     \field{volume}{13}
     \field{year}{2004}
+  \endentry
+
+  \entry{ropgadget}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SJ}{%
+         family={Salwan},
+         familyi={S\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJ1}
+    \strng{fullhash}{SJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{Last access Mar 2020}
+    \field{title}{ROPgadget - Gadgets finder and auto-roper}
+    \verb{url}
+    \verb https://github.com/JonathanSalwan/ROPgadget
+    \endverb
+    \field{year}{2011}
   \endentry
 
   \entry{sarkar2007flow}{inproceedings}{}
@@ -6269,18 +6301,6 @@
     \field{title}{SGX-Shield: Enabling address space layout randomization for
   SGX programs}
     \field{year}{2017}
-  \endentry
-
-  \entry{sgxtor}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2018}
-    \field{labeldatesource}{year}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{howpublished}{\url{https://github.com/kaist-ina/SGX-Tor}}
-    \field{note}{Last access November 2018}
-    \field{title}{SGX-Tor}
-    \field{year}{2018}
   \endentry
 
   \entry{geometry2007}{inproceedings}{}
@@ -7347,29 +7367,6 @@
     \field{year}{2005}
   \endentry
 
-  \entry{vac}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=V}{%
-         family={Valve},
-         familyi={V\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{V1}
-    \strng{fullhash}{V1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{labeldatesource}{year}
-    \field{sortinit}{V}
-    \field{sortinithash}{V}
-    \field{note}{Last visit 13 Nov 2017}
-    \field{title}{Valve Anti-Cheat System (VAC)}
-    \verb{url}
-    \verb https://support.steampowered.com/kb\_article.php?p\_faqid=370
-    \endverb
-    \field{year}{2017}
-  \endentry
-
   \entry{van2017telling}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=VBJ}{%
@@ -7607,8 +7604,8 @@
          familyi={V\bibinitperiod},
       }}%
     }
-    \strng{namehash}{V2}
-    \strng{fullhash}{V2}
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017 (accessed September 14, 2020)}
@@ -7627,8 +7624,8 @@
          familyi={V\bibinitperiod},
       }}%
     }
-    \strng{namehash}{V3}
-    \strng{fullhash}{V3}
+    \strng{namehash}{V2}
+    \strng{fullhash}{V2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2009 (accessed September 24, 2020)}
@@ -8187,29 +8184,6 @@
     \field{year}{2019}
   \endentry
 
-  \entry{janusdrm}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=W}{%
-         family={Windows},
-         familyi={W\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{W1}
-    \strng{fullhash}{W1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2012}
-    \field{labeldatesource}{year}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
-    \field{note}{Last visit on 15 Nov 2017}
-    \field{title}{Windows Media DRM 10 (Janus)}
-    \verb{url}
-    \verb http://www.samsung.com/ca/support/skp/faq/20189
-    \endverb
-    \field{year}{2012}
-  \endentry
-
   \entry{winter2008trusted}{inproceedings}{}
     \name{author}{1}{}{%
       {{hash=WJ}{%
@@ -8363,11 +8337,16 @@
     \strng{fullhash}{y1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
     \field{sortinit}{Y}
     \field{sortinithash}{Y}
-    \field{howpublished}{\url{https://github.com/yerzhan7/SGX_SQLite}}
-    \field{note}{Last access January 2019}
+    \field{note}{Last access Jan 2019}
     \field{title}{SGX\_SQLite}
+    \verb{url}
+    \verb https://github.com/yerzhan7/SGX_SQLite
+    \endverb
+    \field{year}{2017}
   \endentry
 
   \entry{yuan2015hardware}{inproceedings}{}

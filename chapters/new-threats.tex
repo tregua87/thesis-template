@@ -1,43 +1,11 @@
 \chapter{Advanced attacks against SGX Enclaves}
 \label{chp:advanced-threats} 
 
-%The solutions in~\ref{chp:static-protection} 
-%and~\ref{chp:runtime-protection-untrusted} enhance static and runtime 
-%protection of untrusted code in memory, respectively.
-%What happens when the attacker focuses on the TEE itself?
-%
 %The answer to this question is addressed in the paper:
 %\begin{itemize}
 %	\item SnakeGX: a sneaky attack against SGX Enclaves (ACNS 2021).
 %\end{itemize}
 %
-%The strong isolation introduced by  stimulated researchers and practitioners 
-%to develop new attacks 
-%vectors~\cite{foreshadow,Murdock2019plundervolt,203183,lee2017hacking}.
-%Among them, an interesting research line is to exploit memory-corruption 
-%errors 
-%inside the enclave code and run one-shot code-reuse 
-%attacks to steal enclave secrets (\eg cryptographic 
-%keys)~\cite{geometry2007}.
-%Recently, we observed many solutions that identify such flaws in 
-%enclaves~\cite{teerex,tale-two-worlds} and new code-reuse techniques 
-%tailored for SGX~\cite{lee2017hacking,biondo2018guard}.
-%First, Lee et al. discussed Dark-ROP~\cite{lee2017hacking}
-%that combines a colluded OS and oracles to identify gadgets for 
-%return-oriented programming (ROP)~\cite{geometry2007}.
-%An advanced technique was proposed by Biondo et al. with Guard's 
-%Dilemma~\cite{biondo2018guard} that does not require the assistance of the OS 
-%to perform the attack.
-%%The main limitation of this attack is the need of crashing the victim
-%%enclave many times in order to craft the actual payload.
-%%To cope with this issue, Biondo et at. proposed Guard's 
-%%Dilemma~\cite{biondo2018guard} that uses particular gadgets already present 
-%%in 
-%%the Intel Software 
-%%Development Kit (SDK) to build the payload without any enclave crashes.
-%%Moreover, Dilemma requires only an unprivileged attacker to carry out a 
-%%single 
-%%one-shot attack and steal secrets from an enclave.
 
 In this chapter, we explore a new attack scenario a in which an adversary 
 attempts at taking control of a TEE \emph{enclave} while hiding its presence 
@@ -81,13 +49,13 @@ traces left.
 %
 We implement our intuition in SnakeGX, a framework to implant
 data-only backdoors in legitimate enclaves. 
-We build on the concept of data-only
-malware~\cite{vogl2014persistent} but extend it with a novel
-architecture to adhere to the strict requirements of SGX environments.
+We build on the concept of data-only malware but extend it with a novel 
+architecture to adhere to the strict requirements of SGX 
+environments~\citep{vogl2014persistent}.
 
 %Cosa proponi?
 %Un attacco che è persistent, stateful e interactive
-Contrary to prior one-shot attacks~\cite{biondo2018guard,lee2017hacking}, our 
+Contrary to prior one-shot attacks~\citep{biondo2018guard,lee2017hacking}, our 
 backdoor acts as an additional secure function (Section~\ref{sec:enclavekit}), 
 which is: 
 \begin{enumerate*}[label=(\roman*)]
@@ -117,7 +85,7 @@ Our aim is to raise awareness of TEEs---and SGX in particular---and how
 attackers may abuse that, which requires the community to reason more on the 
 need of monitoring systems and advanced forensic techniques for SGX.
 
-We evaluate the properties of SnakeGX against StealthDB~\cite{stealthdb}, an
+We evaluate the properties of SnakeGX against StealthDB~\citep{stealthdb}, an
 open-source project that implements an encrypted database on top of SGX 
 enclaves.
 In particular, StealthDB uses dynamically generated AES keys to protect the
@@ -163,11 +131,11 @@ In this section, we first describe our threat model.
 Then, we perform a preliminary analysis to measure the widespread of our 
 assumptions over real SGX open-source projects.
 
-\paragraph{\textbf{Threat Model.}}
+\paragraph{Threat Model.}
 One of the differences between SnakeGX and the previous one-shot code-reuse 
 works is in the threat model.
 Advanced code-reuse techniques require an unprivileged 
-attacker~\cite{biondo2018guard}.
+attacker~\citep{biondo2018guard}.
 However, a non-compromised host can identify the presence of an adversary
 in the system memory (Section~\ref{ssec:sgx-control-flow-attacks}).
 Therefore, we have to consider three players in our scenarios: the attacker, 
@@ -182,6 +150,7 @@ Below, we list their requirements, respectively.
 %functions (\eg tampering with crypto keys in an enclave).
 %Its activation, instead, leaves a minimal and less intrusive footprint.
 
+\vspace{0.5cm}
 \textbf{Attacker Capabilities.}
 In our scenario, the attacker is highly motivated and has the following 
 assumptions:
@@ -192,9 +161,9 @@ assumptions:
 	in the target enclave.
 	This error can be exploited to take control of the enclave itself.
 	Having a memory-corruption is an assumption already taken by similar 
-	works~\cite{biondo2018guard,lee2017hacking}.
+	works~\citep{biondo2018guard,lee2017hacking}.
 	This is even more likely in projects that use SGX as a sub-system 
-	container~\cite{baumann2015shielding,203255,seo2017sgx,199364}.
+	container~\citep{baumann2015shielding,203255,seo2017sgx,199364}.
 	Such projects host out-of-the-box software and, therefore, enclaves inherit 
 	their vulnerabilities.
 	\item \textbf{A code-reuse technique.} 
@@ -207,28 +176,13 @@ assumptions:
 	The attacker can infer the memory layout by inspecting the victim 
 	address-space.
 	It is also possible to leak memory information from within the enclave, as
-	also assumed in~\cite{biondo2018guard}.
+	also assumed by \cite{biondo2018guard}.
 	\item \textbf{Adversary Location.} In our scenario, the adversary 
 	resides in user-space. SnakeGX will reduce the adversary
 	footprint, thus evading standard memory forensic 	
-	techniques~\cite{stancill2013check,polychronakis2011rop,kittel2015counteracting,Graziano:2016:RFA:2897845.2897894},
+	techniques~\citep{stancill2013check,polychronakis2011rop,kittel2015counteracting,Graziano:2016:RFA:2897845.2897894},
 	whose effectiveness relies on the amount of traces left in memory 
 	(see Section~\ref{ssec:sgx-control-flow-attacks}).
-	%	\item \textbf{(Temporary) Host process control.}
-	%	The attacker needs a partial control of the victim process for a short 
-	%	period of time.
-	%	More precisely, the attacker may need to inspect \texttt{uRts} to find 
-	%and 
-	%disable a trusted thread at installation phase.
-	%	Since SGX allows reading the untrusted memory, this operation can be 
-	%	performed from within the enclave.
-	%	Moreover, the payload may interact with the host OS to exfiltrate data 
-	%(\ie 
-	%through a socket).
-	%	Therefore, SnakeGX can potentially leave the enclave for a short amount 
-	%of time.
-	%	Modern malware-enclave works describe reliable techniques to achieve 
-	%host-process control from within an enclave~\cite{sgx-rop}.
 \end{itemize}
 
 \textbf{Enclaves Capabilities.}
@@ -246,26 +200,18 @@ These are the assumptions for the enclave:
 	This is a reasonable assumption since the Intel SGX SDK provides a 
 	framework for developing applications on different OSs: Linux and Windows.
 	\item \textbf{Multi-threading.}
-	%	This is not strictly required, but for a more general approach would be 
-	%ideal that the victim enclave has at least two threads.
 	This is not strictly required, but the victim enclave should have
 	at least two threads for a more general approach.
 	The rationale behind this requirement is that the proposed implementation 
-	may disable a trusted thread~\cite{intel-developer-guide} and in case of a 
-	single-thread application this is a problem.  
-	An enclave without free threads cannot 
-	process secure functions, thus attracting the analysts attention.
+	may disable a trusted thread and in case of a single-thread application 
+	this is a problem~\citep{intel-developer-guide}.  
+	An enclave without free threads cannot process secure functions, thus 
+	attracting the analysts attention.
 	We might partially ease this requirement with the introduction of SGX 
 	$2.0$. 
-	% that allows the generation of new enclave pages at run-time.
-	%	Another viable approach is to exploit some enclave misconfigurations, 
-	%as 
-	%explained in Section~\ref{ssec:memory-location}, 
-	%	but this is a less generic solution.
 	However, multi-thread enclaves are a reasonable assumption since different 
-	open-source projects 
-	use already this feature~\cite{sqlite-sgx,sgxtor,signal,203255,stealthdb} 
-	and SGX-based applications are growing in complexity.
+	open-source projects use already this feature and SGX-based applications 
+	are growing in complexity~\citep{sqlite-sgx,sgxtor,signal,203255,stealthdb}.
 \end{itemize}
 
 \textbf{Host Capabilities.}
@@ -275,15 +221,15 @@ This is the assumption for the host:
 	\item \textbf{Memory Inspection.}  The host can inspect the 
 	processes memory and use standard approaches to detect traces of previous
 	or ongoing 
-	attacks~\cite{stancill2013check,polychronakis2011rop,kittel2015counteracting,Graziano:2016:RFA:2897845.2897894}.
+	attacks~\citep{stancill2013check,polychronakis2011rop,kittel2015counteracting,Graziano:2016:RFA:2897845.2897894}.
 \end{itemize}
 
-We extend the threat model of previous works~\cite{biondo2018guard} 
+We extend the threat model of previous works, such as \cite{biondo2018guard},
 by assuming the host can perform memory forensic analysis.
 Therefore, an adversary has the need of hiding her presence in the machine 
 and minimizing the interactions with the victim enclave.
 
-\paragraph{\textbf{Preliminary Analysis of Assumptions.}}
+\paragraph{Preliminary Analysis of Assumptions.}
 %We collected a set of $27$ stand-alone SGX open-source projects from an online 
 %hub~\cite{asop} to investigate the correctness of our assumptions and shown 
 %in  
@@ -296,12 +242,12 @@ and minimizing the interactions with the victim enclave.
 %This preliminary analysis indicates that our threat model fulfills 
 %real scenarios.
 % OLD
-We collected a set of $27$ stand-alone SGX open-source projects from an online 
-hub~\cite{asop} to investigate the correctness of our assumptions (see full 
+We collected a set of $27$ stand-alone SGX open-source projects from 
+\cite{asop} to investigate the correctness of our assumptions (see full 
 list in Appendix~\ref{app:preliminary-analysis-assumptions}).
 The results show that among the $27$ projects, $24$ of them were based on the 
-Intel SGX SDK, while others were developed with Graphene~\cite{203255}, Open 
-Enclave SDK~\cite{openenclave}, or contained mocked enclaves.
+Intel SGX SDK, while others were developed with Graphene~\citep{203255}, Open 
+Enclave SDK~\citep{openenclave}, or contained mocked enclaves.
 From the Intel SGX SDK based projects, we counted $31$ enclaves in total, 
 among which $24$ were multi-threading ($77\%$).
 This preliminary analysis indicates that our threat model fulfills 
@@ -441,14 +387,14 @@ In particular, three \texttt{ocall\_context} fields should be tuned:
 	This needs to handle a chain of nested \texttt{ECALL}s, which are basically 
 	\texttt{ECALL}s performed by an outside function.
 	\item \texttt{ocall\_ret} is used from SDK $2.0$ to save extended process 
-	state~\cite{intel-xsave}. 
+	state~\citep{intel-xsave}. 
 	More precisely, the system allocates a \texttt{xsave\_buff} pointed by 
 	\texttt{ocall\_ret}. This buffer must be located after the new 
 	\texttt{ocall\_context}.
 	\item \texttt{rbp} must point to a memory location that contains the new 
 	frame pointer and the return address, consecutively. This is because 
 	the \texttt{asm\_oret()} function will use this structure as 
-	epilogue~\cite{biondo2018guard}.
+	epilogue~\citep{biondo2018guard}.
 \end{itemize}
 %It is important to underline that SGX does not use any security mechanism to 
 %validate \texttt{ocall\_context} integrity.
@@ -526,7 +472,7 @@ mechanisms to verify the integrity of an \texttt{ocall\_context}.
 In other words, any \texttt{ocall\_context} that fulfills
 the previous conditions can be used to restore any context in an enclave.
 First steps in this direction were explored by previous 
-works~\cite{biondo2018guard}, which exploited \texttt{asm\_oret()} simply to 
+works~\citep{biondo2018guard}, which exploited \texttt{asm\_oret()} simply to 
 control the processor registers in a one-shot code-reuse attack.
 However, we want to push further the limitation of the Intel SGX SDK and show 
 which consequences these issues can lead to.
@@ -623,8 +569,8 @@ stateful, and interactive backdoors inside SGX enclaves.
 %the victim enclave functionality.
 The framework design is challenging because we want to preserve the original
 enclave functionality and configuration.
-Even though SGX $2.0$ encompasses run-time page permissions 
-setting~\cite{intel-sgx2}, an unexpected configuration may attract analysts 
+Even though SGX $2.0$ encompasses runtime page permissions 
+setting~\citep{intel-sgx2}, an unexpected configuration may attract analysts 
 attention (\ie the host can read the enclave page permissions).
 On the contrary, our solutions purely rely on code-reuse techniques that do not
 affect the enclave functionality and configuration.
@@ -677,7 +623,7 @@ can easily inspect the victim process memory by only using user-space
 privileges (\eg the enclave pages are assigned to a virtual device called 
 \emph{isgx} in Linux environments).
 Moreover, we target enclaves made with the Intel SGX SDK that follow the 
-Enclave Linear Address Range (ELRANGE)~\cite{costan2016intel}.
+Enclave Linear Address Range (ELRANGE)~\citep{costan2016intel}.
 As a result, an adversary with solely user-space privileges can obtain:
 \begin{enumerate*}[label=(\roman*)]
 	\item the enclave base address,
@@ -708,7 +654,7 @@ realize the attack.
 Finally, we have to remove the payload in the untrusted memory, or else it 
 could be detected.
 This phase can be implemented by using any current code-reuse attacks for SGX
-enclaves~\cite{lee2017hacking,biondo2018guard}.
+enclaves~\citep{lee2017hacking,biondo2018guard}.
 
 \textbf{Payload Triggering.}
 After the installation phase, the adversary only needs to trigger an
@@ -864,7 +810,7 @@ design SnakeGX to fit this size.
 For the sake of simplicity, we describe the switching mechanism in 
 Section~\ref{ssec:switch-context}.
 
-As underlined in~\cite{vogl2014persistent}, classic code-reuse attacks (\eg 
+As underlined by \cite{vogl2014persistent}, classic code-reuse attacks (\eg 
 ROP) are designed to be one-shot.
 After executing a \emph{chain}, it may be destroyed due to gadgets side effects.
 Therefore, we need a location to keep a backup of the structures used.
@@ -932,7 +878,7 @@ used by the adversaries to design their customized payload for SnakeGX.
 
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.6\textwidth]{fig_c5/t-thread-stack-installed.pdf}
+	\includegraphics[width=0.7\textwidth]{fig_c5/t-thread-stack-installed.pdf}
 	\caption[SnakeGX installation layour.]{Trusted thread stack after SnakeGX 
 	installation. The memory is split in four areas: FakeFrame, buffer, 
 	workspace, and backup. Moreover, the stack contains copies of B$_{c}$, 
@@ -991,8 +937,8 @@ It is possible to perform many context-switch by tuning the payload accordingly.
 \section{Evaluation}
 \label{sec:evaluation_snakegx}
 
-We evaluate the real impact of our framework against StealthDB~\cite{stealthdb},
-an open-source project that leverages on the SGX technology.
+We evaluate the real impact of our framework against StealthDB,
+an open-source project that leverages on the SGX technology~\citep{stealthdb}.
 We opted for StealthDB because it is a generic representation of our scenario, 
 as we describe in Section~\ref{ssec:stealthdb}.
 We split our evaluation in three parts:
@@ -1005,7 +951,7 @@ We split our evaluation in three parts:
 
 \subsection{StealthDB}
 \label{ssec:stealthdb}
-StealthDB~\cite{stealthdb} is a plugin for PostgreSQL~\cite{postgresql} that
+StealthDB~\citep{stealthdb} is a plugin for PostgreSQL~\citep{postgresql} that
 uses Intel SGX enclaves to implement an encrypted database.
 This project is the ideal use-case for SnakeGX: StealthDB lifetime is bounded 
 to PostgreSQL, thus we can rely on its enclaves as a secure save point for 
@@ -1039,12 +985,11 @@ our PoC payload and some implementation details. For more technical
 details about our payload see Appendix~\ref{ssec:my-rop-chain}.
 Our setup is composed by an application that loads StealthDB enclave 
 and performs the attacks.
-We extracted the gadgets for the \emph{chains} by running
-ROPGadget~\cite{ropgadget} on the compiled enclave.
-As our threat model details in 
-Section~\ref{sec:threat-model_snakegx}, we introduced a memory corruption 
-vulnerability 
-in StealthDB to simplify the payload delivery.
+We extracted the gadgets for the \emph{chains} by running ROPGadget on the 
+compiled enclave~\citep{ropgadget}.
+As our threat model details in Section~\ref{sec:threat-model_snakegx}, we 
+introduced a memory corruption vulnerability in StealthDB to simplify the 
+payload delivery.
 We developed our data-only malware for SGX in a host OS running Linux with 
 kernel $4.15.0$ and Intel SGX SDK version $2.9$.
 
@@ -1110,7 +1055,7 @@ Our payload maintains an internal state and interacts with the
 host.
 To handle the state, the payload is able to perform a conditional pivoting
 by comparing the current key and a copy of the last key 
-exfiltrated~\cite{geometry2007}.
+exfiltrated~\citep{geometry2007}.
 The conditional chain is implemented in P$_1$.
 Once the key changes, P$_1$ will pivot to a \emph{chain} that performs the 
 exfiltration. Otherwise, the payload will pivot to 
@@ -1158,10 +1103,10 @@ We analyze our PoC and measure the advantages SnakeGX introduces.
 We recall that our threat model assumes a weak adversary which has no control 
 of the host, and therefore, she has to improve her stealthiness.
 To perform the same goal of our PoC by using state-of-the-art one-shot 
-attacks~\cite{biondo2018guard}, an attacker has to leave in the untrusted 
+attacks~\citep{biondo2018guard}, an attacker has to leave in the untrusted 
 memory around $4$KB of structures (\ie P$_1$, P$_2$ and O).
 These traces can be found by using previous results already shown in the 
-literature~\cite{stancill2013check,polychronakis2011rop,kittel2015counteracting,Graziano:2016:RFA:2897845.2897894}.
+literature~\citep{stancill2013check,polychronakis2011rop,kittel2015counteracting,Graziano:2016:RFA:2897845.2897894}.
 Moreover, their identification results even simpler since
 they use peculiar structures such as 
 \texttt{sgx\_exception\_info\_t} (see Appendix~\ref{ssec:my-rop-chain}).
@@ -1198,10 +1143,10 @@ Section~\ref{ssec:sgx-core-design},
 SGX makes impossible to read memory pages that belong to an enclave.
 Any attempts at reading such pages will result in a fake value $0$xFF.
 Another possible approach is to use new attacks based on 
-microcode flaws~\cite{foreshadow} or fault 
-injections~\cite{Murdock2019plundervolt} to dump an enclave content.
+microcode flaws~\citep{foreshadow} or fault 
+injections~\citep{Murdock2019plundervolt} to dump an enclave content.
 Alternatively, it is possible to use side-channel attacks to 
-infer specific enclave manipulations, as discussed in~\cite{216033}.
+infer specific enclave manipulations, as discussed in~\citep{216033}.
 It should also be pointed out that it is still possible to retrieve 
 \texttt{uRts} information.
 For instance, we could compare the number of trusted threads in \texttt{uRts} 
@@ -1211,7 +1156,7 @@ An inconsistency will bring to clues regarding the state of that enclave.
 
 \textbf{Sandboxes.}
 Recently, researchers proposed sandboxes to reduce the 
-interaction of a malware-enclave and the system~\cite{sgxjail}.
+interaction of a malware-enclave and the system~\citep{sgxjail}.
 These solutions are designed for systems that cannot assess the 
 origin of an enclave beforehand, thus they do not trust it.
 These defenses can, in principle, reduce the attack surface of SnakeGX.
@@ -1239,13 +1184,11 @@ Such mechanisms rely on different strategies to force a program to execute only
 valid paths at run-time.
 In the current enclave implementation, the system relies on
 classic stack canary to avoid buffer overflow.
-However, Lee et al.~\cite{lee2017hacking} discussed a technique to bypass such 
-protection.
-Other non-standard systems, such as SGX
-Shield~\cite{seo2017sgx}, implement a custom CFI to mitigate these
+However, \cite{lee2017hacking} discussed a technique to bypass such protection.
+Other non-standard systems, such as \cite{seo2017sgx}, implement a custom CFI 
+to mitigate these
 issues.
-However, Biondo et al.~\cite{biondo2018guard} managed to bypass
-their protection too.
+However, \cite{biondo2018guard} managed to bypass their protection too.
 So far, there are not effective defenses against code-reuse attacks in the 
 context of enclaves.
 This approach might raise the bar for attackers who would attempt to deploy 
@@ -1272,8 +1215,8 @@ is generic and can be easily adapted to other SDKs and OSs.
 Recently, new SGX frameworks were released on the market, or research 
 prototypes, to provide an abstraction layer that simplifies the enclave 
 development.
-In particular, projects such as Open Enclave~\cite{openenclave}, Google 
-Asylo~\cite{gasylo}, and SGX Shield~\cite{baumann2015shielding} 
+In particular, projects such as Open Enclave~\citep{openenclave}, Google 
+Asylo~\citep{asylo}, and SGX Shield~\citep{baumann2015shielding} 
 use the standard Intel SGX SDK to perform host 
 interaction (\ie \texttt{OCALL}/\texttt{ORET}), thus inheriting the same 
 limitations described in Section~\ref{sec:sgx-internal}.
@@ -1302,8 +1245,7 @@ on the Intel one.
 %Similar to Vogl work~\cite{vogl2014persistent}, SnakeGX keeps persistence in 
 %memory as long as the host enclave is loaded. 
 SnakeGX maintains persistence in memory as long as the host enclave is loaded.
-This is similar to what Vogl et al.~\cite{vogl2014persistent} have shown with 
-``Chuck''.
+This is similar to what \cite{vogl2014persistent} have shown with ``Chuck''.
 In their proof of concept they achieved persistence on the running system. 
 Their ROP rootkit did not survive after reboot.
 %In our scenario, to achieve a full persistence once the enclave is restarted, 

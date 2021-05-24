@@ -308,7 +308,53 @@ We detail our contribution in Chapter~\ref{chp:static-protection}.
 \subsection{New Threats Led by Memory Isolation}
 \label{ssec:contribution2}
 
-Then addressed in (Chapter~\ref{chp:advanced-threats}).
+The SGX design, coupled with a full encryption of an enclave's content, provides
+advanced protection mechanisms and a trusted communication channel between the
+enclave and the host process (\ie the main application the enclave belongs to).
+The success of SGX stems from its strict threat model, that considers the OS
+malicious: one can thus tamper with applications, modify their
+behavior, exfiltrate sensitive information, and so on~\citep{iagoattack}.
+In this context, SGX disallows kernel- and user-space code to
+manipulate enclave memory pages, thus guaranteeing integrity and
+confidentiality in the presence of any Iago attacker.
+
+The strong isolation introduced by SGX stimulated researchers and practitioners 
+to develop new attacks 
+vectors~\citep{foreshadow,Murdock2019plundervolt,203183,lee2017hacking}.
+Among them, an interesting research line is to exploit memory-corruption 
+errors inside the enclave code and run one-shot code-reuse attacks to steal 
+enclave secrets (\eg cryptographic keys)~\citep{geometry2007}.
+Recently, we observed many solutions that identify such flaws in 
+enclaves~\citep{teerex,tale-two-worlds} and new code-reuse techniques 
+tailored for SGX~\citep{lee2017hacking,biondo2018guard}.
+First, \cite{lee2017hacking} discussed Dark-ROP that combines a colluded OS and 
+oracles to identify gadgets for return-oriented programming 
+(ROP)~\citep{geometry2007}.
+The main limitation of this attack is the need of crashing the victim
+enclave many times in order to craft the actual payload.
+%An advanced technique was proposed by \cite{biondo2018guard} with Guard's 
+%Dilemma that does not require the assistance of the OS 
+%to perform the attack.
+To cope with this issue, \cite{biondo2018guard} proposed Guard's 
+Dilemma that uses particular gadgets already present in the Intel Software 
+Development Kit (SDK) to build the payload without any enclave crashes.
+Moreover, Dilemma requires only an unprivileged attacker to carry out a 
+single one-shot attack and steal secrets from an enclave.
+
+
+In this scenario, however, the previous authors did not consider an OS that may 
+employ existing memory forensic techniques to identify the 
+intrusions~\citep{stancill2013check,polychronakis2011rop,kittel2015counteracting,Graziano:2016:RFA:2897845.2897894}.
+For instance, in case of external intrusion into a remote server running SGX 
+enclaves, the adversary is also interested in reducing the amount of traces 
+left; otherwise, analysts may detect the intrusion and act consequently.
+This is even more critical in case the enclave secret changes and the adversary 
+has to repeat the attack many times.
+
+Considering all these challenges and the current state-of-the-art, we 
+investigate if TEEs (and SGX in particular) can help adversaries carry more 
+advanced threats by exploiting the TEE \emph{memory isolation}.
+We detail our study in Chapter~\ref{chp:advanced-threats}.
 
 \subsection{Remote Attestation Limitations}
 \label{ssec:contribution3}
