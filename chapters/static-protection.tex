@@ -185,14 +185,14 @@ same time.
 %software life-cycle.
 
 \vspace{-0.25cm}
-\paragraph{\textbf{Problem Statement:}} 
+\paragraph{Problem Statement:}
 The research question we are addressing in this chapter is thus: Is it possible 
 to extend trusted computing security guarantees to untrusted memory regions 
 without moving the code entirely within a trusted module?
 
 \vspace{-0.25cm}
-\paragraph{\textbf{Contributions:}}In summary, the contributions of this paper 
-are:
+\paragraph{Contributions:}
+In summary, the contributions of this paper are:
 
 \begin{enumerate*}[label=(\textbf{\alph*})]
 	\item We propose a new technique to extend trusted computing over untrusted 
@@ -207,7 +207,7 @@ are:
 \label{ssec:back-attacker}
 
 In a tampering attack, the goal of an attacker is to edit the code of a victim 
-program~\cite{collberg2002watermarking}.
+program~\citep{collberg2002watermarking}.
 This goal can be achieved in different ways.
 One way is to change the bytecode of a program before its execution, this is 
 called \emph{off-line} tampering.
@@ -221,7 +221,7 @@ To cope with \emph{off-line} attacks, it is possible to adopt anti-tampering
 mechanisms based on digital fingerprint mechanisms.
 They employ a cryptographic fingerprint of software (\eg signature, hash, 
 checksum) to validate software status before the 
-execution~\cite{diversig,abera2016c}.
+execution~\citep{diversig,abera2016c}.
 Besides \emph{off-line} attacks, there are the so-called \emph{on-line} attacks.
 In this category, the attacker aims to edit the code during the execution of 
 the victim program.
@@ -275,7 +275,7 @@ in order to raise the bar for attackers that have compromised the kernel, as we
 will discuss in the following sections.
 %This makes the attack more cumbersome.
 We also assume the machines are not virtualized, this avoids the attacker to 
-use VMX features~\cite{uhlig2005intel}.
+use VMX features~\citep{uhlig2005intel}.
 Moreover, we assume the task scheduler is trusted, this is crucial to avoid a 
 perfect synchronization of two processes (see Section~\ref{sec:just-in-time}).
 
@@ -333,18 +333,18 @@ that input and output operations happen through writing/reading operation in
 the memory.
 
 Property (\textbf{i}) is related to the control flow integrity 
-problem~\cite{8269390}, which is guaranteed neither by anti-tampering 
-techniques~\cite{nagra2009surreptitious} nor by trusted 
-computing~\cite{lee2017hacking}.
-But it is tackled by tools such as~\cite{microsoftcfg,tice2014enforcing} and 
+problem~\citep{8269390}, which is guaranteed neither by anti-tampering 
+techniques~\citep{nagra2009surreptitious} nor by trusted 
+computing~\citep{lee2017hacking}.
+But it is tackled by tools such as~\citep{microsoftcfg,tice2014enforcing} and 
 discussed in previous 
-works~\cite{onarlioglu2010g,wang2010hypersafe,abadi2005control,zhang2013control,davi2014stitching}.
+works~\citep{onarlioglu2010g,wang2010hypersafe,abadi2005control,zhang2013control,davi2014stitching}.
 
 Property (\textbf{ii}) can be guaranteed by moving only sensitive data inside a 
 trusted module and using \emph{get()}\textbackslash{}\emph{set()} functions for 
 interacting with them.
-This was already implemented by Joshua et al.~\cite{lind2017glamdring} in their 
-Glamdring tool.
+This was already implemented by Joshua et al.~\citep{lind2017glamdring} in 
+their Glamdring tool.
 %However, the latter can be even improved by keeping all values inside untrusted
 %memory regions along with a signature, and access to them by using 
 %\emph{get()}\textbackslash{}\emph{set()} functions as we already outlined.
@@ -357,7 +357,7 @@ trusted module (\ie an enclave).
 
 Property (\textbf{iii}) can be implemented by moving all code inside trusted 
 modules, which was the first approach 
-employed~\cite{baumann2015shielding,arnautov2016scone,tsai2017graphene}.
+employed~\citep{baumann2015shielding,arnautov2016scone,tsai2017graphene}.
 
 However, simply moving all code into the trusted module has two problems.
 First, a trusted module has a limited amount of memory available, and therefore 
@@ -378,8 +378,8 @@ each step. Furthermore, we must protect the \emph{checker} function throughout
 the program.
 
 In order to address space and efficiency constraints, as suggested 
-in~\cite{brumley2004privtrans,singaravelu2006reducing,smith2006refactoring}, we 
-may consider only certain parts of the program to be sensitive, which are 
+in~\citep{brumley2004privtrans,singaravelu2006reducing,smith2006refactoring}, 
+we may consider only certain parts of the program to be sensitive, which are 
 referred to as \emph{critical sections} (CS) hereafter.
 CSs include delicate parts of the software such as license checking in 
 commercial products. We could thus focus on protecting only the critical part 
@@ -426,10 +426,10 @@ Defenses against these attacks already exist.
 For instance, one may employ code obfuscation on \emph{checkers} and 
 \emph{responses} so that the attacker would not identify them; or design the 
 \emph{checkers} and \emph{responses} such that they are strongly interconnected 
-with the application code~\cite{biondi2006silver} so it is challenging to 
+with the application code~\citep{biondi2006silver} so it is challenging to 
 compromise the anti-tampering mechanisms without compromising the application 
 logic; or move part of the code (\eg checkers and responses) to the 
-server~\cite{viticchie2016reactive}.
+server~\citep{viticchie2016reactive}.
 These approaches are however prone to a similar threat, \ie all of them 
 allocate their detection system in untrusted zones, 
 and therefore, with enough time any attacker can understand and disarm these 
@@ -445,14 +445,13 @@ To achieve this, we require a trusted module to harden anti-tampering
 techniques.
 For the sake of coherence with our proof-of-concept implementation (see 
 Section~\ref{sec:implementation_packing}), we use the Intel Software Guard 
-eXtension 
-(SGX)~\cite{rozas2013intel} terminology.
+eXtension (SGX) terminology~\citep{rozas2013intel}.
 However, it is possible to use other trusted modules (see 
 Section~\ref{sec:discussion_packing}).
 
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.7\textwidth]{fig_c3/core-all.pdf}
+	\includegraphics[width=0.9\textwidth]{fig_c3/core-all.pdf}
 	\caption[Overview of single-thread schema.]{An overview of our schema for 
 	single-thread applications, the memory is split in trusted and untrusted 
 	zones. The trusted zone contains all methods required for our technique, 
@@ -463,10 +462,9 @@ Section~\ref{sec:discussion_packing}).
 
 Unlike previous solutions that simple ``hide'' checking functions by adopting
 obfuscation or anti-reversing 
-techniques~\cite{banescu2017tutorial,chang2001protecting,chen2016advanced,viticchie2016reactive},
- we store
-code relevant to the anti-tampering mechanism in a trusted module (\ie an 
-enclave),
+techniques~\citep{banescu2017tutorial,chang2001protecting,chen2016advanced,viticchie2016reactive},
+ we store code relevant to the anti-tampering mechanism in a trusted module 
+ (\ie an enclave),
 through which we monitor and react to attacks conducted on
 the untrusted memory region.
 Saving anti-tampering mechanisms within trusted containers is significantly 
@@ -491,7 +489,7 @@ inside the trusted zone.
 %FLAVIO: that's not true anymore :D
 %Note that we keep the same color convention for describing next figures.
 
-\paragraph{\textbf{Critical Section Definition}}
+\paragraph{Critical Section Definition.}
 A CS is any continuous region of code which is surrounded by two instructions, 
 respectively labeled as \emph{CS\_Begin} and \emph{CS\_End}, and that satisfies 
 the following rules:
@@ -513,9 +511,9 @@ the following rules:
 	known constant.
 \end{enumerate}
 Points~(\ref{vcs:sequence}) and~(\ref{vcs:noexit}) can be implemented by using 
-a forward analysis~\cite{moller2012static} of all possible branches from 
-\emph{CS\_Begin} to \emph{CS\_End}, and considering all function calls as 
-atomic operations.
+a forward analysis of all possible branches from \emph{CS\_Begin} to 
+\emph{CS\_End}, and considering all function calls as atomic 
+operations~\citep{moller2012static}.
 We also desire that a CS contains only unwinding loops to minimize the time in 
 which a CS is plain.
 The other points are simply static patterns.
@@ -570,13 +568,14 @@ section.
 %\label{fig:core-response}
 %\end{subfigure}
 
-\paragraph{\textbf{Overcoming Denial of Service Issues}}
+\paragraph{Overcoming Denial of Service Issues.}
 Even if a trusted function is protected from being tampered with, usually 
 trusted computing components do not provide availability guarantees, in the 
 sense that the code in the trusted zone must be invoked externally.
-We overcome this limitation by employing \emph{packing}~\cite{ugarte2016rambo}, 
+We overcome this limitation by employing 
+\emph{packing}~\citep{ugarte2016rambo}, 
 a technique which is often used by malware to hide its functionality, combined 
-with a heartbeat~\cite{ghosh2010secure}. %, which is depicted in 
+with a heartbeat~\citep{ghosh2010secure}. %, which is depicted in 
 %Figure~\ref{fig:sc-1p}.
 Our intuition is to force the untrusted zone to call trusted functions in order 
 to execute application logic.
@@ -643,9 +642,9 @@ can set a dedicated thread which is risen according to a time series, or else
 we can merge the heartbeat with a communication channel between the client and 
 the server (as we opted in our proof-of-concept application).
 
-\begin{figure}[b]
+\begin{figure}[t]
 	\centering
-	\includegraphics[width=0.7\textwidth]{fig_c3/dec1.pdf}
+	\includegraphics[width=0.8\textwidth]{fig_c3/dec1.pdf}
 	\caption{Packing mechanism of our schema.}
 	\label{fig:dec1}
 \end{figure}
@@ -663,7 +662,7 @@ the server (as we opted in our proof-of-concept application).
 %define which CS are considered valid.
 %From this consideration, we state our third challenge:
 
-\paragraph{\textbf{Function Calls and Recursions}}
+\paragraph{Function Calls and Recursions.}
 Since we allow a CS to host function calls, a CS might remain plain after a 
 call. This potentially increases the attacker surface.
 To mitigate this issue, we desire that a CS is encrypted once the control 
@@ -744,7 +743,7 @@ repetitively called, we trace all previous CSs.
 %\begin{description}
 %	\item [(C5)] How do we handle exception?
 %\end{description}
-\paragraph{\textbf{Exceptions within Critical Section}}
+\paragraph{Exceptions within Critical Section.}
 %Modern program languages, like C++, allow a user to raise exceptions in order 
 %to handle unpredictable program behaviors.
 %These mechanism might bring our anti-tampering system to an unstable 
@@ -787,7 +786,7 @@ as SEH, since they do not belong to anti-tampering problems.}.
 %secure 
 %fashion.
 
-\paragraph{\textbf{Multi-threading programs}}
+\paragraph{Multi-threading programs.}
 %\todo{FT: maybe move it into extended version}
 We can extend the previous techniques in order to handle parallel computation, 
 this is possible because some trusted computing technologies allow 
@@ -837,7 +836,7 @@ Then, they are increased and decreased by \texttt{decrypt()} and
 %and server, or as signature into the normal communication.
 %\todo{fig}
 
-\paragraph{\textbf{Ensuring a Secure Booting Phase}}
+\paragraph{Ensuring a Secure Booting Phase.}
 Our approach requires that the program has a secure booting phase, which means 
 having the following assumptions for the
 \emph{encrypt}, \emph{decrypt} and \emph{response}: the key for crypto 
@@ -991,8 +990,8 @@ Each client is a monitoring application that traces user's activities (\ie
 keystrokes and mouse traces) and sends the
 data to the central server.
 As a trusted module, we opted for the Intel Software Guard eXtension 
-(SGX)~\cite{rozas2013intel}, however, it is possible to use other solutions 
-that involves the kernel (\eg TPM~\cite{tpm-isoosi}).
+(SGX)~\citep{rozas2013intel}, however, it is possible to use other solutions 
+that involves the kernel (\eg TPM \cite{tpm-isoosi}).
 We deployed the architecture in a Windows environment.
 Through this application we describe the specific technical solutions we 
 adopted for the client, and how we implemented installation phase, boot phase, 
@@ -1024,10 +1023,10 @@ We describe the internal structure of the client in order to clarify some
 practical implementation strategies.
 We developed this application in C++ and we deployed it on Windows machines.
 For sake of simplicity, we did not implement Address Space Layout Randomization 
-(ASLR)~\cite{snow2013just}, however, it is possible to deduct the right address 
-offset by employing a Drawbridge system~\cite{porter2011rethinking}.
+(ASLR)~\citep{snow2013just}, however, it is possible to deduct the right 
+address offset by employing a Drawbridge system~\citep{porter2011rethinking}.
 
-\paragraph{\textbf{Software Architecture}}
+\paragraph{Software Architecture.}
 The client is formed by three modules: the main program, and two dynamic linked 
 libraries (DLL) namely untrusted DLL and trusted DLL. % which are used to 
 %integrate our technology into the main program.
@@ -1055,7 +1054,7 @@ Each component of the architecture is described as follows:
 	boot).
 \end{itemize}
 
-\paragraph{\textbf{Critical Section Definition}}
+\paragraph{Critical Section Definition.}
 %As we introduced before, one of the purposes of anti-tampering techniques is 
 %to protect critical software sections which are crucial for the software logic.
 Since this client is a monitoring agent, we identify as CSs those
@@ -1076,13 +1075,13 @@ The main duties of these functions are:
 Since in our implementation we required only integrity, we implemented a 
 digital fingerprint.
 
-\paragraph{\textbf{Packaging Algorithm}}
+\paragraph{Packaging Algorithm.}
 The packaging algorithm adopted is an AES-GCM encryption 
-schema~\cite{zhou2007efficient} between the assembly code and
-the license key.
-SGX natively provides an implementation of this algorithm~\cite{rijndael128GCM}.
+schema between the assembly code and the license key~\citep{zhou2007efficient}.
+SGX natively provides an implementation of this 
+algorithm~\citep{rijndael128GCM}.
 
-\paragraph{\textbf{Heartbeat}}
+\paragraph{Heartbeat.}
 The heartbeat is implemented as a digital fingerprint which is used on all 
 packets exchanged between
 client and server, our strategy allows the server to validate client status by 
@@ -1178,7 +1177,7 @@ the encrypted CSs already replaced, and its enclave,
 which contains \emph{checkers}, \emph{responses}, and \emph{installation} 
 routines.
 
-\emph{\textbf{Licensing System}}
+\textbf{Licensing System.}
 The goal of the installation phase is to deliver the correct \emph{license key} 
 to the respective client in a secure fashion.
 To achieve this, each client instance uses a different \emph{private key} to 
@@ -1189,7 +1188,7 @@ properly.
 In the following paragraph, we exploit this fact to authenticate a client to 
 the server.
 
-\emph{\textbf{Installation Procedure}}
+\textbf{Installation Procedure.}
 In this phase, the aim of the client is to perform a remote attestation with 
 the server, this latter
 then verifies client's identity and releases the relative license key and the 
@@ -1245,105 +1244,6 @@ on the client machine.
 	\label{fig:installation}
 \end{figure}
 
-
-%\subsection{Boot phase}
-%After the installation phase is concluded, we need a secure license key 
-%loading process for a correct client execution.
-%%In this implementation, we used the license key also for the encryption and 
-%%decryption algorithms, but in other implementations, they might be separated.
-%This is guaranteed by SGX sealing feature, after the installation is done, the 
-%license key is sealed on the client machine.
-%This means that only the client can access that information.
-%That is, once the key is loaded inside the enclave it is protected by design.
-%In this sense, SGX guarantees confidentiality and integrity to the license key.
-%In this context an attacker has mainly three ways to exfiltrate the license 
-%key:
-%\begin{enumerate*}[label=(\roman*)]
-%	\item tampering the enclave,
-%	\item using a cover channel,
-%	\item exploit the enclave itself.
-%\end{enumerate*}
-%While the first one is avoided by design, cover channel 
-%attacks~\cite{mangard2017malware} 
-%and purely exploitations~\cite{swami2017intel,lee2017hacking} are active 
-%threats which deserve attention.
-%Anyway there are techniques to mitigate cover 
-%channels~\cite{zheng2017opaque,shih2017t} and
-%the limiting amount of code within the enclave allows developers to avoid bugs 
-%like memory corruptions.
-%Also, this is only a proof of concept based on SGX.
-%The anti-tampering technique described so far and this protocol can be easily 
-%re-adapted to other trusted computer technologies that overcome these 
-%limitations.
-
-%\subsection{Development Framework}
-%\label{ssec:integration}
-%\todo{FT: remove it}
-%
-%In Figure~\ref{fig:lifecycleintegration}, we suggest a development framework 
-%which allows a developer to deploy our technique. 
-%Ideally, almost all steps we describe should be aggregated in a single 
-%compilation phase in a similar fashion then other works 
-%like~\cite{shih2017t,seo2017sgx}.
-%%However, we opted for this solution because enclave compilation relies on a 
-%%proprietary Intel compiler.
-%%So, to the best of our knowledge, it is not possible to generate enclave 
-%%assembly code by using other open-source compilers like LLVM or G++.
-%%\todo{FT: this is not true! I have recently found some works where they 
-%%developed LLMV backend for generating SGX bytecode...how do we deal with it?}.
-%
-%%As suggested in the previous sections, the main idea is to provide a system 
-%%which allows one to include our anti-tampering even after a project is 
-%%finished.
-%In the first step (Figure~\ref{fig:lifecycleintegration}-I), the developer 
-%declares which 
-%are the critical sections in the source code by using two markers: one for the 
-%beginning of the critical section, and another one for its end.
-%This is the only manual operation needed.
-%After the annotation phase, there is a code-to-code transformation 
-%(Figure~\ref{fig:lifecycleintegration}~II) 
-%which purpose is two folds:
-%\begin{enumerate*}[label=(\roman*)]
-%	\item parse the annotated program and check that all critical sections are 
-%neither nested nor overlapped,
-%	\item include the call functions to the Untrusted DLL.
-%\end{enumerate*}
-%In this phase, a parser analyzes all critical sections and enumerates them, 
-%this will be necessary later for addressing the binary code of the encrypted 
-%critical sections.
-%At the third phase (Figure~\ref{fig:lifecycleintegration}~III), we employ SGX 
-%Intel compiler for emitting the binary code and sign the Trusted DLL (enclave).
-%While in the fourth phase (Figure~\ref{fig:lifecycleintegration}-IV), we 
-%generate the final
-%clients which will be deployed.
-%To achieve it, at first we emit as many license keys as many machines we will 
-%install the client,
-%then, we extract from the program at step (III) the binary code for each 
-%critical sections, 
-%and, finally, we craft a set of encrypted critical sections by using all 
-%license keys.
-%In parallel, we save for each license key the respect block table and the 
-%encrypted critical sections.
-%At the end, for each client, we substitute the critical sections with the 
-%encrypted ones.
-%At the point, each client and the server have all information for the 
-%installation phase previously described.
-%The client has the signed enclave and the encrypted critical sections, while 
-%the server has
-%all licenses keys, block table, and the encrypted critical sections as well.
-%For this phase, we used a Python script based on Radare~\cite{radare} to 
-%analyzes the code
-%and look for the encrypt/decrypt functions defined at step (I).
-%%\todo{SJ: shall we briefly summarize why a list of attackers are not feasible 
-%%with our design?}
-%
-%\begin{figure}[t!]
-%	\centering
-%	\includegraphics[width=\linewidth]{fig_c3/lifecycleintegration}
-%	\caption{Software life-cycle integration}
-%	\label{fig:lifecycleintegration}
-%\end{figure}
-
 \section{Evaluation}
 \label{sec:experiment}
 
@@ -1397,7 +1297,7 @@ anti-tampering technique.
 Finally, we measure the execution time of the CSs in case of multiple instances.
 All execution times are measured in milliseconds.
 
-\paragraph{\textbf{User-Simulator Bot}}
+\paragraph{User-Simulator Bot.}
 For performing the following tests, we developed a user-simulator bot which 
 mimics the standard user activity by stroking keys and moving the cursor.
 The bot is a Python script which is based on the \emph{PyWin32} library. %for 
@@ -1413,7 +1313,7 @@ around $500$ pixel per second.
 This bot allows us to easily repeat the experiments.
 
 %\paragraph{\textbf{Single Instance Anti-Tampering Overhead}}
-\paragraph{\textbf{Single Instance Microbenchmark}}
+\paragraph{Single Instance Microbenchmark.}
 We measure the impact of our anti-tampering technique to the performances of 
 the CSs in our proof-of-concept monitoring agent.
 In this experiment, we performed $5$ exercises, each of one is composed by two 
@@ -1461,7 +1361,7 @@ negligible after the introduction of our anti-tampering system.
 	\label{fig:performance2}
 \end{figure}
 
-\paragraph{\textbf{Multiple Instances}}
+\paragraph{Multiple Instances.}
 We empirically investigate whether our approach can be deployed over multiple 
 processes at the same time.
 We performed this test by running a different number of instances of our 
@@ -1504,12 +1404,12 @@ the same number of processes.
 We explain how our approach mitigates threats according to the attacker model 
 described in Section~\ref{ssec:back-attacker}.
 
-\paragraph{\textbf{Protection of checkers and responses.}} In our approach, the 
+\paragraph{Protection of checkers and responses.} In our approach, the 
 functions for anti-tampering mechanisms (\eg \emph{checker} and 
 \emph{response}) reside in a trusted module. Since we assume trusted computing 
 guarantees hardware isolation, those functions are protected by design.
 
-\paragraph{\textbf{Protection against disarm.}}
+\paragraph{Protection against disarm.}
 An attacker can always disarm a function by removing its invocation.
 Moreover, SGX is prone to \emph{denial-of-service attacks} due to its nature 
 (see Section~\ref{ssec:sgx-core-design}).
@@ -1518,7 +1418,7 @@ Section~\ref{sec:approach}.
 The software contains parts of code which are encrypted and they need checkers 
 action for being executed properly.
 
-\paragraph{\textbf{Just-in-time Patch \& Repair Mitigation}}
+\paragraph{Just-in-time Patch \& Repair Mitigation}
 %\todo{fact 1: Attackers should sync victim and adversary process  at 100\%. An 
 %error implies to be detected.}
 %\todo{fact 2: There exists several attempts to tamper a task scheduler (KDON, 
@@ -1537,7 +1437,7 @@ This is called just-in-time patch \& repair attack.
 
 Assuming the attacker cannot directly tamper with the task scheduler (as 
 described in Section~\ref{ssec:back-attacker}), it is still possible to perform 
-attacks from the user-space~\cite{5958048}.
+attacks from the user-space~\citep{5958048}.
 However, those attacks are not strong enough to bypass our defense for mainly 
 three reasons:
 \begin{enumerate*}[label=(\roman*)]
@@ -1545,7 +1445,7 @@ three reasons:
 	\item they aim at slowing down a process and not to achieve a perfect 
 	synchronization between adversary and victim,
 	\item modern OSs mount task schedulers which are designed to resist (or at 
-	least mitigate) such attacks~\cite{cfslinux}.
+	least mitigate) such attacks~\citep{cfslinux}.
 \end{enumerate*}
 To achieve an \emph{on-line} tampering, as introduced in 
 Section~\ref{ssec:back-attacker}, an attacker must replace a CS code such that 
@@ -1560,7 +1460,7 @@ We, however, try to estimate the likelihood that this attack might happen by
 performing an empirical experiment which will be described in 
 Section~\ref{sec:just-in-time}.
 
-\paragraph{\textbf{Reverse Engineering}}
+\paragraph{Reverse Engineering.}
 An attacker may attempt to reverse the application code in order to extract the 
 plain code hidden in the encrypted blocks, and then build a new executable 
 which does not contain any checker.
@@ -1570,7 +1470,7 @@ Even though the literature contains several anti-debugging techniques and most
 of them can be enforced by using our anti-tampering technique, we assume that 
 an attacker can bypass all of them.
 However, an attacker cannot debug the software inside the trusted zone, which 
-is true for SGX enclaves compiled in release mode~\cite{sgxnodebug}.
+is true for SGX enclaves compiled in release mode~\citep{sgxnodebug}.
 The best an attacker can do is debugging the code within the untrusted memory 
 region and considering the enclave as a black box.
 After applying these considerations, we can state an attacker can manage to 
