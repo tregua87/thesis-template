@@ -362,20 +362,6 @@
     \field{year}{2020}
   \endentry
 
-  \entry{aws}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2006}
-    \field{labeldatesource}{year}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{note}{Last access March 2019}
-    \field{title}{Amazon Web Services (AWS)}
-    \verb{url}
-    \verb https://aws.amazon.com/
-    \endverb
-    \field{year}{2006}
-  \endentry
-
   \entry{anati2013innovative}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=AI}{%
@@ -708,6 +694,50 @@
     \field{year}{2016}
   \endentry
 
+  \entry{blake2}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=AJP}{%
+         family={Aumasson},
+         familyi={A\bibinitperiod},
+         given={Jean-Philippe},
+         giveni={J\bibinitperiod-P\bibinitperiod},
+      }}%
+      {{hash=NS}{%
+         family={Neves},
+         familyi={N\bibinitperiod},
+         given={Samuel},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WOZ}{%
+         family={Wilcox-O’Hearn},
+         familyi={W\bibinitperiod-O\bibinitperiod},
+         given={Zooko},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Winnerlein},
+         familyi={W\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AJP+1}
+    \strng{fullhash}{AJPNSWOZWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{extradate}{1}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{note}{Last access March 2019}
+    \field{title}{BLAKE2}
+    \verb{url}
+    \verb https://github.com/BLAKE2/BLAKE2
+    \endverb
+    \field{year}{2013}
+  \endentry
+
   \entry{aumasson2013blake2}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=AJP}{%
@@ -743,6 +773,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
+    \field{extradate}{2}
     \field{labeldatesource}{year}
     \field{sortinit}{A}
     \field{sortinithash}{A}
@@ -814,6 +845,29 @@
       {Berlin, Heidelberg}%
     }
     \field{year}{2014}
+  \endentry
+
+  \entry{aws}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={AWS},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A4}
+    \strng{fullhash}{A4}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{note}{Last access March 2019}
+    \field{title}{Amazon Web Services (AWS)}
+    \verb{url}
+    \verb https://aws.amazon.com/
+    \endverb
+    \field{year}{2006}
   \endentry
 
   \entry{aws_dedicated_host}{misc}{}
@@ -1272,20 +1326,6 @@
     \field{year}{2018}
   \endentry
 
-  \entry{blake2}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2013}
-    \field{labeldatesource}{year}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{note}{Last access March 2019}
-    \field{title}{BLAKE2}
-    \verb{url}
-    \verb https://github.com/BLAKE2/BLAKE2
-    \endverb
-    \field{year}{2013}
-  \endentry
-
   \entry{bletsch2011jump}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=BT}{%
@@ -1514,6 +1554,15 @@
   \endentry
 
   \entry{bz2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={Bzip2},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2002}
     \field{labeldatesource}{year}
@@ -2669,6 +2718,29 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
+  \entry{zstandard}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={Facebook},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{note}{Last access March 2019}
+    \field{title}{Zstandard}
+    \verb{url}
+    \verb https://facebook.github.io/zstd/
+    \endverb
+    \field{year}{2016}
+  \endentry
+
   \entry{snakegx}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=FT}{%
@@ -2717,8 +2789,8 @@
          familyi={F\bibinitperiod},
       }}%
     }
-    \strng{namehash}{F1}
-    \strng{fullhash}{F1}
+    \strng{namehash}{F2}
+    \strng{fullhash}{F2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
@@ -4944,18 +5016,27 @@
     \field{year}{2018}
   \endentry
 
-  \entry{mcsema}{misc}{}
+  \entry{azure_1}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M3}
+    \strng{fullhash}{M3}
+    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2014}
+    \field{labelyear}{2010}
     \field{labeldatesource}{year}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{note}{Last access Feb 2019}
-    \field{title}{McSema}
+    \field{note}{Last access March 2019}
+    \field{title}{Microsoft Azure}
     \verb{url}
-    \verb https://github.com/trailofbits/mcsema
+    \verb https://azure.microsoft.com/en-us/
     \endverb
-    \field{year}{2014}
+    \field{year}{2010}
   \endentry
 
   \entry{microsoftcfg}{misc}{}
@@ -5051,20 +5132,6 @@
     \field{note}{Last access February 2021}
     \field{title}{Open Enclave SDK}
     \field{year}{2019}
-  \endentry
-
-  \entry{azure_1}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2010}
-    \field{labeldatesource}{year}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{note}{Last access March 2019}
-    \field{title}{Microsoft Azure}
-    \verb{url}
-    \verb https://azure.microsoft.com/en-us/
-    \endverb
-    \field{year}{2010}
   \endentry
 
   \entry{amdsev}{inproceedings}{}
@@ -7129,6 +7196,29 @@
     \field{year}{2020}
   \endentry
 
+  \entry{mcsema}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{Trail of Bits}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{note}{Last access Feb 2019}
+    \field{title}{McSema}
+    \verb{url}
+    \verb https://github.com/trailofbits/mcsema
+    \endverb
+    \field{year}{2014}
+  \endentry
+
   \entry{203255}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=cTC}{%
@@ -8557,6 +8647,15 @@
   \endentry
 
   \entry{zip}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=Z}{%
+         family={Zlib},
+         familyi={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{Z1}
+    \strng{fullhash}{Z1}
+    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
     \field{labeldatesource}{year}
@@ -8568,20 +8667,6 @@
     \verb http://www.zlib.net/
     \endverb
     \field{year}{2017}
-  \endentry
-
-  \entry{zstandard}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
-    \field{labeldatesource}{year}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
-    \field{note}{Last access March 2019}
-    \field{title}{Zstandard}
-    \verb{url}
-    \verb https://facebook.github.io/zstd/
-    \endverb
-    \field{year}{2016}
   \endentry
 \enddatalist
 \endinput

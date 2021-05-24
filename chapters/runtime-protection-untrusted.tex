@@ -2,69 +2,10 @@
 %Main chapter title
 \label{chp:runtime-protection-untrusted} 
 
-%After protecting the untrusted code in~\ref{chp:static-protection}, I will 
-%focus on runtime attacks (code-reuse attacks) against the untrusted code.
-%
-%The answer to this question is addressed in this paper:
-%\begin{itemize}
-%	\item ScaRR: Scalable Runtime Remote Attestation for Complex Systems (RAID 
-%	2019).
-%\end{itemize}
-
-%\section{Introduction}
-%\label{sec:introduction}
-
-%\todo{define what we mean for complex systems!!!}
-
-%RA is a procedure that allows an entity (\ie the \emph{Verifier}) 
-%to verify the status of a device (\ie the \emph{Prover}) from a remote 
-%location. This is achieved by having first the \emph{Verifier} sending a 
-%challenge to the \emph{Prover}, which replies with a report. 
-%Then, the \emph{Verifier} analyzes the report to identify whether the 
-%\emph{Prover} has been compromised~\cite{anati2013innovative}. 
-%In standard RA, usually defined as static, the \emph{Prover} verification 
-%involves the integrity of specific hardware and software properties (\eg the 
-%\emph{Prover} has loaded the correct software).
-%On the market, there are already several available products implementing 
-%static 
-%RA, such as Software Guard Extensions (SGX)~\cite{costan2016intel} or Trusted 
-%Platform Module (TPM)~\cite{tomlinson2017introduction}.
-%However, these do not provide a defence against runtime attacks (\eg the 
-%control-flow ones)
-%that aim to modify the program runtime behaviour. 
-%Therefore, to identify \emph{Prover} runtime modifications, researchers 
-%proposed runtime RA. Among the different solutions belonging to this category, 
-%there are also the control-flow attestation approaches, which
-%encode the information about the executed control-flow of a 
-%process~\cite{abera2016c,aberadiat}.
-%
-%In comparison to static RA, the runtime one is relatively new, and today there 
-%are no reliable products available on the market since researchers have mainly 
-%investigated runtime RA for embedded 
-%devices~\cite{abera2016c,zeitouni2017atrium,aberadiat,dessouky2017fat,Dessouky:2018:LLH:3240765.3240821}:
-%most of them encode the complete execution path of a \emph{Prover} in a single 
-%hash~\cite{abera2016c,zeitouni2017atrium,dessouky2017fat}; 
-%some~\cite{aberadiat} compress it in a simpler representation and rely on a 
-%policy-based verification schema; 
-%other ones~\cite{Dessouky:2018:LLH:3240765.3240821} adopt symbolic execution 
-%to 
-%verify the control-flow information continuously sent by the \emph{Prover}. 
-%Even if they have different performances, none of the previous solutions can 
-%be 
-%applied to a complex system (\eg virtual machines in a cloud) due to the 
-%following reasons: 
-%\begin{enumerate*}[label=(\roman*)]
-%	\item representing all the valid execution paths through hash values is 
-%	unfeasible (\eg the number of execution paths tends to grow exponentially 
-%	with the size of the program),
-%	\item the policy-based approaches might not cover all the possible attacks,
-%	\item symbolic execution slows down the verification phase.
-%\end{enumerate*}
-
 In this chapter, we propose ScaRR, the first runtime RA schema for complex 
 systems.
-In particular, we focus on environments such as Amazon Web Services (\cite{aws})
-or Microsoft Azure (\cite{azure_1}). 
+In particular, we focus on environments such as Amazon Web Services \citep{aws}
+or Microsoft Azure \citep{azure_1}. 
 Since we target such systems, we require support for features such as 
 multi-threading.
 Thus, ScaRR provides the following achievements with respect to the current 
@@ -83,18 +24,19 @@ intermediate partial reports, which are immediately validated by the
 \emph{Verifier} thanks to the lightweight verification procedures performed.  
 
 ScaRR is designed to defend a \emph{Prover}, equipped with a trusted anchor and 
-with a set of the standard solutions (\eg 
-W$\oplus$X/DEP~\cite{pinzari2003introduction},
-Address Space Layout Randomization - ASLR~\cite{kil2006address}, and Stack 
-Canaries~\cite{baratloo2000transparent}), from attacks performed in the 
+with a set of the standard solutions; \eg 
+W$\oplus$X/DEP~\citep{pinzari2003introduction}, Address Space Layout 
+Randomization~\citep{kil2006address}, and Stack 
+Canaries~\citep{baratloo2000transparent}; from attacks performed in the 
 user-space and aimed at modifying the \emph{Prover} runtime behaviour. The 
 current implementation of ScaRR requires the program source code to be properly 
-instrumented through a compiler based on LLVM~\cite{lattner2004llvm}. However, 
-it is possible to use lifting techniques~\cite{mcsema}, as well. 
+instrumented through a compiler based on LLVM~\citep{lattner2004llvm}. However, 
+it is possible to use lifting techniques~\citep{mcsema}, as well. 
 Once deployed, ScaRR allows to verify on average $2M$ control-flow events per 
 second, which is significantly more than the few hundred 
-per second~\cite{Dessouky:2018:LLH:3240765.3240821} or the thousands per 
-second~\cite{aberadiat} verifiable through the existing solutions.
+per second declared by \cite{Dessouky:2018:LLH:3240765.3240821} or the 
+thousands per second of \cite{aberadiat} that were verifiable through the 
+existing solutions.
 
 \textbf{Contribution.} The contributions of this work are the following ones: 
 \begin{itemize}
@@ -123,7 +65,7 @@ second~\cite{aberadiat} verifiable through the existing solutions.
 In this section, we describe the features of the \emph{Attacker} and the 
 \emph{Prover} involved in our threat model. Our assumptions are in line with 
 other RA 
-schemes~\cite{costan2016intel,winter2008trusted,abera2016c,aberadiat,Dessouky:2018:LLH:3240765.3240821}.
+schemes~\citep{costan2016intel,winter2008trusted,abera2016c,aberadiat,Dessouky:2018:LLH:3240765.3240821}.
 
 \paragraph{Attacker.}
 We assume to have an attacker that aims to control a remote service, such as a 
@@ -131,18 +73,17 @@ Web Server or a Database Management System (DBMS), and that has already
 bypassed the default protections, such as Control Flow Integrity (CFI). To 
 achieve his aim, the attacker can adopt different techniques, among which: 
 Return-Oriented Programming (ROP)/ Jump-Oriented Programming (JOP) 
-attacks~\cite{carlini2014rop,bletsch2011jump}, function hooks~\cite{7778160}, 
+attacks~\citep{carlini2014rop,bletsch2011jump}, function hooks~\citep{7778160}, 
 injection of a malware into the victim process, installation of a data-only 
-malware in user-space~\cite{vogl2014persistent}, or manipulation of other 
+malware in user-space~\citep{vogl2014persistent}, or manipulation of other 
 user-space processes, such as security monitors. 
 In our threat model, we do not consider physical attacks (our complex systems
 are supposed to be virtual machines), pure data-oriented attacks (\eg attacks
 that do not alter the original program CFG), self-modifying code, and dynamic 
-loading of code at runtime (\eg just-in-time 
-compilers~\cite{suganuma2000overview}).
+loading of code at runtime, \eg just-in-time 
+compilers~\citep{suganuma2000overview}.
 We refer to Section~\ref{ssec:security+privacy+consideration} for a 
-comprehensive
-attacker analysis.
+comprehensive attacker analysis.
 
 \paragraph{Prover.}
 The \emph{Prover} is assumed to be equipped with:
@@ -153,7 +94,7 @@ The \emph{Prover} is assumed to be equipped with:
 \end{enumerate*}
 In our implementation, we use the kernel as a trusted anchor, which is a 
 reasonable assumption if the machines have trusted modules such as a 
-TPM~\cite{tomlinson2017introduction}. 
+TPM~\citep{tomlinson2017introduction}. 
 However, we can also use a dedicated hardware, as discussed in 
 Section~\ref{sec:discussion_scarr}. The \emph{Prover} maintains sensitive 
 information 
@@ -319,17 +260,16 @@ requirements:
 	\item having a fast verification process.
 \end{enumerate*}
 Previous works have tried to achieve the first requirement through different 
-approaches. A first 
-solution~\cite{abera2016c,zeitouni2017atrium,dessouky2017fat} is based on the 
-association of all the valid execution paths of the \emph{Prover} with a single 
-hash value. 
+approaches. A first solution is based on the association of all the valid 
+execution paths of the \emph{Prover} with a single hash 
+value~\citep{abera2016c,zeitouni2017atrium,dessouky2017fat}. 
 Intuitively, this is not a scalable approach because it does not allow to 
 handle complex CFG/execution paths. 
-On the contrary, a second approach~\cite{Dessouky:2018:LLH:3240765.3240821} 
-relies on the transmission of all the control-flow events to the 
-\emph{Verifier}, 
-which then applies a symbolic execution to validate their correctness. While 
-addressing the first requirement, this solution suffers from a slow 
+On the contrary, a second approach relies on the transmission of all the 
+control-flow events to the \emph{Verifier}, which then applies a symbolic 
+execution to validate their 
+correctness~\citep{Dessouky:2018:LLH:3240765.3240821}. 
+While addressing the first requirement, this solution suffers from a slow 
 verification phase, which leads toward a failure in satisfying the second 
 requirement. 
 
@@ -462,8 +402,8 @@ R &= (T, M).
 \end{split}
 \end{equation*}
 In the current notation, $P_i$ is the i-th partial report, $R$ the payload and 
-$F_K(R||N||i)$ the digital fingerprint (\eg a message authentication 
-code~\cite{bellare2000security}).
+$F_K(R||N||i)$ the digital fingerprint, \eg a message authentication 
+code~\citep{bellare2000security}.
 This is generated by using:
 \begin{enumerate*}[label=(\roman*)]
 	\item the secret key $K$, shared between \emph{Prover} and \emph{Verifier},
@@ -513,11 +453,12 @@ edge on which the attack has been performed.
 \textbf{(5) Report Verification.}  
 In runtime RA, the \emph{Verifier} has two different purposes: verifying 
 whether the running application is still the original one and whether the 
-execution paths traversed by it are the expected ones. The first purpose, which 
-we assume to be already implemented in the 
-system~\cite{costan2016intel,winter2008trusted}, can be achieved through a 
-static RA applied on the \emph{Prover} software stack. On the contrary, the 
-second purpose is the main focus in our design of the ScaRR schema. 
+execution paths traversed by it are the expected ones.
+The first purpose, which we assume to be already implemented in the 
+system, can be achieved through a static RA applied on the \emph{Prover} 
+software stack~\citep{costan2016intel,winter2008trusted}. 
+On the contrary, the second purpose is the main focus in our design of the 
+ScaRR schema. 
 
 As soon as the \emph{Verifier} receives a partial report $P_i$, it first 
 performs a formal integrity check by considering its fingerprint 
@@ -637,9 +578,10 @@ of the \emph{Measurements Generator}
 \subsection{Measurements Generator}
 \label{ssec:measurements_generator}
 The \emph{Measurements Generator} is implemented as a compiler, based on 
-LLVM~\cite{lattner2004llvm} and on the CRAB framework~\cite{gange2016abstract}. 
+LLVM~\citep{lattner2004llvm} and on the CRAB 
+framework~\citep{gange2016abstract}. 
 Despite this approach, it is also possible to use frameworks to lift the binary 
-code to LLVM intermediate-representation (IR)~\cite{mcsema}.
+code to LLVM intermediate-representation (IR) such as in \citep{mcsema}.
 
 The \emph{Measurements Generator} requires the program source code to perform 
 the following operations:
@@ -659,7 +601,7 @@ include dummy code,
 which is removed after the compilation through a binary-rewriting tool.
 %The updates on the LLVM, that enable the analysis and instrumentation, require 
 To provide the above-mentioned functionalities, we add around $3.5$K lines of 
-code on top of CRAB and LLVM $5.0$.
+code on top of CRAB and LLVM. % $5.0$.
 
 \subsection{Prover}
 \label{ssec:prover}
@@ -718,7 +660,7 @@ considered (Section~\ref{sec:discussion_scarr}). To develop the kernel side of
 the 
 architecture, we add around $200$ lines of code to a Kernel version 
 v$4.17$-rc$3$.
-We also include the Blake2 source~\cite{Aumasson2014,blake2}, which is faster 
+We also include the Blake2 source~\citep{Aumasson2014,blake2}, which is faster 
 and provides high cryptographic security guarantees for calculating the hash of 
 the \emph{LoAs}.
 \begin{figure}[t]
@@ -761,7 +703,7 @@ $250$K (510.parest) to over $400$K (505.mcf) of \emph{online measurements} per
 second. This variability in performance depends on the complexity of the single 
 experiment and on other issues, such as the file loading. Previous works prove 
 to have an attestation speed around $20K$/ $30K$ of control-flow events per 
-second~\cite{aberadiat,abera2016c}. Since each \emph{online measurement} 
+second~\citep{aberadiat,abera2016c}. Since each \emph{online measurement} 
 contains at least a control-flow event, we can claim that ScaRR has an 
 attestation speed at least $10$ times faster than the one offered by the 
 existing solutions.
@@ -780,8 +722,8 @@ measurements} of a SPEC tool;
 then, the \emph{Verifier} verifies all of them without involving any element 
 that might introduce delay (\eg network). 
 In addition, we also introduce a digital fingerprint based on 
-AES~\cite{Stallings:2002:AES:763194.763196} to simulate an ideal scenario in 
-which the \emph{Prover} is fast. 
+AES to simulate an ideal scenario in which the \emph{Prover} is 
+fast~\citep{Stallings:2002:AES:763194.763196}. 
 We perform the verification by loading the \emph{offline measurements} in an 
 in-memory hash map and performing the shadow stack.
 Finally, we compute the average verification speed of all tools.
@@ -790,7 +732,7 @@ According to our experiments, the average verification speed is 2M of
 \emph{online measurements} per second, with a range that goes from $1.4$M to 
 $2.7$M of \emph{online measurements} per second. This result outperforms 
 previous works in which the authors reported a verification speed that goes 
-from $110$~\cite{Dessouky:2018:LLH:3240765.3240821} to $30$K~\cite{aberadiat} 
+from $110$~\citep{Dessouky:2018:LLH:3240765.3240821} to $30$K~\citep{aberadiat} 
 of control-flow events per second. As for the attestation speed, we recall that 
 each \emph{online measurement} contains at least one control-flow event.
 
@@ -826,7 +768,7 @@ For some experiments (\ie 505.mcf and 544.nab), the average number is almost
 one since they include some recursive algorithms that correspond to small 
 \emph{LoAs}. If the average length of the \emph{LoA}s tends to one, ScaRR 
 behaves similarly to other remote RA solutions that are based on cumulative 
-hashes~\cite{abera2016c,aberadiat}. Overall, Figure~\ref{fig:functioncall} 
+hashes~\citep{abera2016c,aberadiat}. Overall, Figure~\ref{fig:functioncall} 
 shows that a median of push/pop operations is less than $4$, which implies a 
 fast update.
 Combining an in-memory hash map and a shadow stack allows ScaRR to perform a 
@@ -849,8 +791,8 @@ At first, we record $1$M of \emph{online measurements} for each SPEC CPU 2017
 tool.
 Then, we send the partial reports to the \emph{Verifier} over a TCP connection,
 each time adopting a different approach among the following ones:
-\emph{Single}, \emph{Batch}, \emph{Zip}~\cite{zip}, \emph{Lzma}~\cite{lzma}, 
-\emph{Bz2}~\cite{bz2} and \emph{ZStandard}~\cite{zstandard}. 
+\emph{Single}, \emph{Batch}, \emph{Zip}~\citep{zip}, \emph{Lzma}~\citep{lzma}, 
+\emph{Bz2}~\citep{bz2} and \emph{ZStandard}~\citep{zstandard}. 
 The results of this experiment are shown in 
 Figure~\ref{fig:network_performance}. 
 In the first two modes (\ie \emph{Single} and  \emph{Batch}),
@@ -881,7 +823,7 @@ network congestion and keep a high verification speed.
 
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.5\textwidth]{fig_c4/network_performance.png}
+	\includegraphics[width=0.6\textwidth]{fig_c4/network_performance.png}
 	\caption[ScaRR network traffic evaluation.]{Comparison of different 
 	approaches for generating partial repors in terms of network traffic and 
 	verification speed.}
@@ -895,7 +837,7 @@ Here, we describe the security guarantees introduced by ScaRR.
 \textbf{Code Injection.}
 In this scenario, an attacker loads malicious code, \eg \emph{Shellcode}, into 
 memory and executes it by exploiting a memory corruption 
-error~\cite{smith1997stack}.
+error~\citep{smith1997stack}.
 A typical approach is to inject code into a buffer which is under the attacker 
 control.
 The adversary can, then, exploit vulnerabilities (\eg buffer overflows) to 
@@ -920,12 +862,12 @@ RA of ScaRR can spot the attack.
 \textbf{Return-oriented Programming.}
 Compared to previous attacks, the code-reuse ones are more challenging since 
 they do not inject new nodes, but they simply reorder legitimate BBLs. Among 
-those, the most popular attack~\cite{shacham2007geometry} is 
-ROP~\cite{carlini2014rop}, which
+those, the most popular attack~\citep{shacham2007geometry} is 
+ROP~\citep{carlini2014rop}, which
 exploits small sequences of code (gadgets) that end with a \texttt{ret} 
 instruction. Those gadgets already exist in the programs or libraries code, 
 therefore, no code is injected. The ROP attacks are Turing-complete in 
-nontrivial programs~\cite{carlini2014rop}, and common defence mechanisms are 
+nontrivial programs~\citep{carlini2014rop}, and common defence mechanisms are 
 still not strong enough to definitely stop this threat.
 
 To perform a ROP attack, an adversary has to link together a set of gadgets 
@@ -934,7 +876,7 @@ chain is typically injected through a stack overflow vulnerability, by writing
 the chain so that the first gadget address overlaps a function return address. 
 Once the function returns, the ROP chain will be triggered and will execute the 
 gadget in sequence. Through more advanced techniques such as stack 
-pivoting~\cite{PracticalROP}, ROP can also be applied to other classes of 
+pivoting~\citep{PracticalROP}, ROP can also be applied to other classes of 
 vulnerabilities, \eg heap corruption.
 Intuitively, a ROP attack produces a lot of new edges to concatenate all the 
 gadgets, which means invalid \emph{online measurements} that will be detected 
@@ -942,7 +884,7 @@ by ScaRR at the first \emph{checkpoint}.
 
 \textbf{Jump-oriented Programming.}
 An alternative to ROP attacks are the JOP 
-ones~\cite{yao2013jop,bletsch2011jump}, which exploit special gadgets based on 
+ones~\citep{yao2013jop,bletsch2011jump}, which exploit special gadgets based on 
 indirect \texttt{jump} and \texttt{call} instructions.
 ScaRR can detect those attacks since they deviate from the original 
 control-flow.
@@ -954,8 +896,8 @@ detect these attacks, since the ScaRR control-flow model considers both the
 calling and the target addresses for each procedure call. Thus, an unexpected 
 invocation will result in a wrong \emph{LoA}.
 For instance, in Counterfeit Object-Oriented Programming (COOP) 
-attacks~\cite{schuster2015counterfeit}, an attacker uses a loop to invoke a set 
-of functions by overwriting a \emph{vtable} and invoking functions from 
+attacks~\citep{schuster2015counterfeit}, an attacker uses a loop to invoke a 
+set of functions by overwriting a \emph{vtable} and invoking functions from 
 different calling addresses generates unexpected \emph{LoAs}.
 
 \section{Discussion}
@@ -973,21 +915,21 @@ we will investigate new techniques to mitigate this limitation.
 ScaRR relies on a continuous context-switch between user-space and kernel-space.
 As a first attempt, we evaluated SGX as a trusted platform, but we found out 
 that the overhead was even higher due to SGX clearing the Translation-Lookaside 
-Buffer (TLB)~\cite{stravers2013translation} at each enclave exit.
+Buffer (TLB) at each enclave exit~\citep{stravers2013translation}.
 This caused frequent page walks after each enclave call.
 A similar problem was related to the Page-Table Isolation 
-(PTI)~\cite{watson2018capability} mechanism in the Linux kernel, which protects 
-against the Meltdown vulnerability. 
+(PTI) mechanism in the Linux kernel, which protects against the Meltdown 
+vulnerability~\citep{watson2018capability}.
 With PTI enabled, TLB is partially flushed at every context switch, 
 significantly increasing the overhead of syscalls.
 New trusted platforms have been designed to overcome this problem, but, since 
 they mainly address embedded software, they are not suitable for our purpose.
 We also investigated technologies such as Intel 
-PT~\cite{Ge:2017:GGC:3037697.3037716} to trace 
+PT~\citep{Ge:2017:GGC:3037697.3037716} to trace 
 control-flow events at hardware level, but this would have bound ScaRR to a 
 specific proprietary technology and we also found that previous 
-works~\cite{Ge:2017:GGC:3037697.3037716,Hu:2018:EUC:3243734.3243797} 
-experienced information loss.
+works experienced information 
+loss~\citep{Ge:2017:GGC:3037697.3037716,Hu:2018:EUC:3243734.3243797}.
 
 \textbf{Physical attacks.}
 Physical attacks are aimed at diverting normal control-flow such that the 
@@ -1004,9 +946,9 @@ ScaRR is designed to perform runtime RA over a program CFG. Pure data-oriented
 attacks might force the program to execute valid, but undesired paths without 
 injecting new edges. To improve our solution, we will investigate possible 
 strategies to mitigate this type of attacks, considering the availability of 
-recent tools able to automatically run this kind of exploit~\cite{hu2016data}. 
+recent tools able to automatically run this kind of exploit~\citep{hu2016data}. 
 
 \textbf{Toward a full semantic RA.}
 We will investigate new approaches to validate series of \emph{online 
 measurements} by using runtime abstract 
-interpretation~\cite{Ge:2017:GGC:3037697.3037716,Hu:2018:EUC:3243734.3243797,Liu:2018:RED:3243734.3243826}.
+interpretation~\citep{Ge:2017:GGC:3037697.3037716,Hu:2018:EUC:3243734.3243797,Liu:2018:RED:3243734.3243826}.

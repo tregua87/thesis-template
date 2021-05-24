@@ -359,7 +359,81 @@ We detail our study in Chapter~\ref{chp:advanced-threats}.
 \subsection{Remote Attestation Limitations}
 \label{ssec:contribution3}
 
-Then addressed in Chapter~\ref{chp:runtime-protection-untrusted} and
+In standard Remote Attestation (RA) schemes, usually defined as static, the 
+\emph{Prover} verification involves the integrity of specific hardware and 
+software properties (\eg the \emph{Prover} has loaded the correct software).
+On the market, there are already several available products implementing 
+static RA, such as Software Guard Extensions (SGX)~\citep{costan2016intel} or 
+Trusted Platform Module (TPM)~\citep{tomlinson2017introduction}.
+However, these do not provide a defence against runtime attacks (\eg the 
+control-flow ones) that aim to modify the program runtime behaviour. 
+Therefore, to identify \emph{Prover} runtime modifications, researchers 
+proposed runtime RA. Among the different solutions belonging to this category, 
+there are also the control-flow attestation approaches, which
+encode the information about the executed control-flow of a 
+process~\citep{abera2016c,aberadiat}.
+
+Studying the runtime RAs available in the literature, we identify two main 
+limitations worthy of attention. 
+First, we observed that current RAs are not suitable for complex systems, such 
+as software running in cloud infrastructures.
+Second, the current solutions cannot be employed in TEE technologies, in 
+particular, we choose SGX as case-study.
+In the following, we explore these two limitations.
+
+\paragraph{Runtime RA for Complex Systems.} 
+
+In comparison to static RA, the runtime one is relatively new, and today there 
+are no reliable products available on the market since researchers have mainly 
+investigated runtime RA for embedded 
+devices~\citep{abera2016c,zeitouni2017atrium,aberadiat,dessouky2017fat,Dessouky:2018:LLH:3240765.3240821}:
+most of them encode the complete execution path of a \emph{Prover} in a single 
+hash~\citep{abera2016c,zeitouni2017atrium,dessouky2017fat}; 
+some~\citep{aberadiat} compress it in a simpler representation and rely on a 
+policy-based verification schema; 
+other ones~\citep{Dessouky:2018:LLH:3240765.3240821} adopt symbolic execution 
+to verify the control-flow information continuously sent by the \emph{Prover}.
+
+Even though the previous solutions result suitable for embedded devices, none 
+of them can be applied to a complex system due to the following reasons: 
+\begin{enumerate*}[label=(\roman*)]
+	\item representing all the valid execution paths through hash values is 
+	unfeasible (\eg the number of execution paths tends to grow exponentially 
+	with the size of the program),
+	\item the policy-based approaches might not cover all the possible attacks,
+	\item symbolic execution slows down the verification phase.
+\end{enumerate*}
+Therefore, we study a new model that tackle these challenges and can represent 
+complex software in limited space, thus can be adopted in cloud 
+infrastructures. 
+We describe our study in Chapter~\ref{chp:runtime-protection-untrusted}.
+
+
+\paragraph{Runtime RA for SGX.}
+
+SGX guarantees a \emph{trusted region} is properly loaded in memory, while 
+static RA allows a remote entity to verify the correct enclave initialization.
+As such, the SGX alone has no mechanisms to guarantee the correct runtime 
+execution of enclaves, which remain vulnerable against
+attacks aimed at causing deviations from enclaves' expected legitimate
+behaviors~\citep{tale-two-worlds,251582,biondo2018guard,lee2017hacking,snakegx}.
+
+The SGX \emph{memory isolation} exacerbates runtime attacks that target 
+software loaded in enclaves, since there is no mechanism to 
+monitor their executions and set legitimate and anomalous ones apart.
+Although one can equip the enclaves with mechanisms tailored at counteracting 
+specific threats, research has shown such solutions are brittle and cover a 
+limited threat model, mostly focusing on code-reuse attacks, while neglecting 
+vectors that induce deviation from normal
+behaviors~\citep{tale-two-worlds,251582,biondo2018guard,lee2017hacking}.
+Moreover, current runtime remote attestations focus on
+stateless properties, \ie they only model independent executions.  On
+the contrary, TEEs are stateful objects modeled as finite states
+machines (FSM), as described by \cite{costan2016intel}.
+Therefore, they require more complex representations.
+
+After observing all these limitations, we study a runtime RA that can be
+employed in SGX enclaves. We describe our study in 
 Chapter~\ref{chp:runtime-protection-trusted}.
 
 \subsection{Incident Response Limitations}
