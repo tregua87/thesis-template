@@ -3,7 +3,7 @@
 \label{chp:runtime-protection-trusted} 
 
 
-In this chapter, we propose SgxMonitor, a novel runtime remote attestation for 
+In this chapter, we discuss SgxMonitor, a novel runtime remote attestation for 
 SGX enclaves.
 We evaluate the properties of SgxMonitor in terms of usability and security 
 guarantees.
@@ -15,10 +15,10 @@ cases (Section~\ref{sec:evaluation}):
 	(\textsf{Contact}), a privacy-preserving service that finds new contacts in 
 	the Signal app~\citep{signalapp};
 	\item \textsf{libdvdcss}~\citep{libdvdcss}, a portable DRM library used by 
-	the VLC media player~\citep{videolan};
-	\item \textsf{StealthDB}~\citep{stealthdb}, a plugin for 
-	PostgreSQL~\citep{momjian2001postgresql} that relies on SGX;
-	\item \textsf{SGX-Biniax2}~\citep{bauman2016case}, a video game 
+	the VLC media player \citep{videolan};
+	\item \textsf{StealthDB} \citep{stealthdb}, a plugin for 
+	PostgreSQL \citep{momjian2001postgresql} that relies on SGX;
+	\item \textsf{SGX-Biniax2} \citep{bauman2016case}, a video game 
 	ported to SGX; and
 	\item a \textsf{unit test} specifically designed to stress specific 
 	enclave behaviors not covered by the other use cases (\ie exception 
@@ -114,11 +114,11 @@ Such problems are considered orthogonal to SgxMonitor.
 Due to SGX isolation properties, legitimate users cannot validate the runtime 
 integrity of an 
 enclave, which challenges their ability of identifying attack instances
-effectively~\citep{snakegx,biondo2018guard,lee2017hacking}.
+effectively \citep{snakegx,biondo2018guard,lee2017hacking}.
 To understand the underlying reason of this limit, we analyze the SGX 
 enclave life-cycle, which is depicted as a Finite-State-Machine in 
 Figure~\ref{fig:fmi-standard}.\footnote{This model is a simplified version 
-of~\cite{costan2016intel}.}
+of \cite{costan2016intel}.}
 We assume the enclave has been loaded correctly and the host interacts with it 
 by means of the opcodes described in Section~\ref{ssec:sgx-core-design}.
 The model allows the enclave state to assume only two values: 
@@ -406,7 +406,7 @@ adversarial host
 
 \begin{figure}[t]
 	\centering
-	\begin{subfigure}[b]{0.48\textwidth}
+	\begin{subfigure}[b]{0.45\textwidth}
 		\centering
 		\begin{lstlisting}[style=CStyle,escapechar=|,basicstyle=\ttfamily\tiny]
 		struct state L;
@@ -436,7 +436,7 @@ adversarial host
 	\end{subfigure}
 	\hfill
 %	\\
-	\begin{subfigure}[b]{0.5\textwidth}
+	\begin{subfigure}[b]{0.45\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{fig_c6/running-example-graph.pdf}
 		\caption{The graphs of \emph{actions} used in our example.}
@@ -500,33 +500,61 @@ model for the \emph{outside function} invocation
 
 \begin{figure}[t]
 	\centering
-	
-	\begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption[SgxMonitor 
-	design.]{%
-		The SgxMonitor design is composed by two distinct phases: 
-		Offline 
-		Enclave Analysis and Online Enclave Verification.
-		During the Offline Enclave Analysis, the \emph{Module Extractor} 
-		analyses
-		the \emph{target enclave} T (\circled[1]) to obtain a \emph{Model} D 
-		that 
-		represents the correct behavior of T (\circled[2]).
-		During the Online Enclave Verification, an \emph{Application} interacts 
-		with T by following standard SGX mechanisms (\eg ECALL, OCALL), 
-		meanwhile, 
-		T sends a stream of \emph{Actions} A to the \emph{monitor enclave} M 
-		through a \emph{secure communication protocol} (\circled[3]). 
-		M, then, uses a \emph{Model Verifier} to validate A against D 
-		(\circled[4]).
-		Finally, a \emph{remote entity} R can verify both the static software 
-		integrity of T through the standard SGX RA 	
-		protocol~\citep{anati2013innovative} (\circled[5]) and the runtime 
-		integrity of T by inquiring M about T runtime status (\circled[6]).}
-	\label{fig:design_sgxmonitor}\end{minipage}},rotate=90,center}
-	
-	\includegraphics[width=\linewidth]{fig_c6/design.pdf}
-	\end{adjustbox}
+		
+    \includegraphics[width=\linewidth]{fig_c6/design.pdf}
+    \caption[SgxMonitor design.]{The SgxMonitor design is composed by two 
+    	distinct phases: Offline Enclave Analysis and Online Enclave 
+    	Verification.
+    	During the Offline Enclave Analysis, the \emph{Module Extractor} 
+    	analyses 
+    	the \emph{target enclave} T (\circled[1]) to obtain a \emph{Model} D 
+    	that 
+    	represents the correct behavior of T (\circled[2]).
+    	During the Online Enclave Verification, an \emph{Application} 
+    	interacts 	
+    	with T by following standard SGX mechanisms (\eg ECALL, OCALL), 
+    	meanwhile, 
+    	T sends a stream of \emph{Actions} A to the \emph{monitor enclave} M 
+    	through a \emph{secure communication protocol} (\circled[3]). 
+    	M, then, uses a \emph{Model Verifier} to validate A against D 
+    	(\circled[4]).
+    	Finally, a \emph{remote entity} R can verify both the static software 
+    	integrity of T through the standard SGX RA 							
+    	protocol~\citep{anati2013innovative} (\circled[5]) and the runtime 
+    	integrity of T by inquiring M about T runtime status (\circled[6]).}
+    \label{fig:design_sgxmonitor}
 \end{figure}
+
+
+%\begin{figure}[t]
+%	\centering
+%	
+%	\begin{adjustbox}{addcode={\begin{minipage}{\width}}{\caption[SgxMonitor 
+%	design.]{%
+%		The SgxMonitor design is composed by two distinct phases: 
+%		Offline 
+%		Enclave Analysis and Online Enclave Verification.
+%		During the Offline Enclave Analysis, the \emph{Module Extractor} 
+%		analyses
+%		the \emph{target enclave} T (\circled[1]) to obtain a \emph{Model} D 
+%		that 
+%		represents the correct behavior of T (\circled[2]).
+%		During the Online Enclave Verification, an \emph{Application} interacts 
+%		with T by following standard SGX mechanisms (\eg ECALL, OCALL), 
+%		meanwhile, 
+%		T sends a stream of \emph{Actions} A to the \emph{monitor enclave} M 
+%		through a \emph{secure communication protocol} (\circled[3]). 
+%		M, then, uses a \emph{Model Verifier} to validate A against D 
+%		(\circled[4]).
+%		Finally, a \emph{remote entity} R can verify both the static software 
+%		integrity of T through the standard SGX RA 	
+%		protocol~\citep{anati2013innovative} (\circled[5]) and the runtime 
+%		integrity of T by inquiring M about T runtime status (\circled[6]).}
+%	\label{fig:design_sgxmonitor}\end{minipage}},rotate=90,center}
+%	
+%	\includegraphics[width=\linewidth]{fig_c6/design.pdf}
+%	\end{adjustbox}
+%\end{figure}
 
 Designing a runtime RA scheme that fits the SGX realm requires a re-thinking of 
 standard approaches.
@@ -843,7 +871,7 @@ Finally, the function writes $C$ into an insecure channel
 On the other side, M relies on \texttt{verifyLog()} to decrypt and validate the 
 encrypted packets $C$.
 We also assume that M receives the packets in 
-order.\footnote{We assume a reliable channel like TCP as in~\citep{scarr}.}
+order.\footnote{We assume a reliable channel like TCP as in \cite{scarr}.}
 First, M decrypts the pair $(A|\text{mac})$ by \emph{xor}-ing the packet $C$ 
 and the key K (Line~\ref{alg:verify-log:1} Alg.~\ref{alg:verify-log}).
 Then, M verifies the correctness of the packet received by independently 
@@ -1272,10 +1300,10 @@ that ranges from $167$K \emph{action}/sec (bx$2$) to $496$K
 
 \vspace{0.5cm}
 \noindent \textbf{Attestation Speed---Take Away.}
-These figures are in line with the previous RA works~\citep{scarr}.
+These figures are in line with the previous RA works \citep{scarr}.
 ct$1$, instead, emits a fewer number of  \emph{actions} and biases the 
 attestation speed.
-Finally, bx$7$ and ct$5$ perform sealing operations~\citep{anati2013innovative} 
+Finally, bx$7$ and ct$5$ perform sealing operations \citep{anati2013innovative} 
 and thus introduce an extra delay per \emph{action}.
 
 %ut1 :    357827.7105449074
@@ -1370,12 +1398,12 @@ and thus introduce an extra delay per \emph{action}.
 
 We investigate the impact of SgxMonitor in three real applications.
 \begin{enumerate*}[label=(A\arabic*)]
-	\item \textsf{StealthDB}~\citep{stealthdb}, which is a plugin for 
-	PostgreSQL~\citep{momjian2001postgresql} based on SGX.
-	\item \textsf{libdvdcss}~\citep{libdvdcss}, which is a DRM library used in 
-	VLC media player~\citep{videolan}.
-	\item \textsf{SGX-Biniax2}~\citep{bauman2016case}, which is an SGX porting 
-	of the open-source game Biniax2~\citep{biniax2}.
+	\item \textsf{StealthDB} \citep{stealthdb}, which is a plugin for 
+	PostgreSQL \citep{momjian2001postgresql} based on SGX.
+	\item \textsf{libdvdcss} \citep{libdvdcss}, which is a DRM library used in 
+	VLC media player \citep{videolan}.
+	\item \textsf{SGX-Biniax2} \citep{bauman2016case}, which is an SGX porting 
+	of the open-source game Biniax2 \citep{biniax2}.
 \end{enumerate*}
 
 \paragraph{StealthDB.}
@@ -1623,7 +1651,7 @@ malicious, thus blocking any attempt to establish a secure channel
 %SgxMonitor to recognize classic ROP-chains (\ie the \emph{installation 
 %phase}) and modern code-reuse attacks (\ie the \emph{backdoor activation}).
 
-\textbf{Shadow stack protection.}
+\paragraph{Shadow stack protection.}
 We evaluate the shadow stack protection implemented in SgxMonitor. In 
 particular, we want to identify an adversary able to overwrite the 
 \emph{return address} of a function with a valid location that 
@@ -1684,7 +1712,7 @@ timing-based attacks~\citep{10.1007/978-3-642-25385-0_26}.)
 %the attack, thus we falling in the cases discussed in 
 %Section~\ref{sssec:execution-flow-attacks}. % and~\ref{sssec:non-control-data}.
 
-\subsubsection{Side-channels attacks.}
+\subsubsection{Side-channels attacks}
 \label{sssec:info-leakage}
 
 %7.2.3 - side channel attacks: metti crypto analysis e discorso su leak 

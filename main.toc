@@ -117,7 +117,7 @@
 \contentsline {paragraph}{Adversary Assumptions.}{64}{section*.299}
 \contentsline {paragraph}{Enclave Assumptions.}{64}{section*.300}
 \contentsline {paragraph}{Out-of-Scope Attacks.}{64}{section*.301}
-\contentsline {section}{\numberline {6.2}Model}{64}{section.302}
+\contentsline {section}{\numberline {6.2}Model}{65}{section.302}
 \contentsline {subsection}{\numberline {6.2.1}State Definition}{65}{subsection.305}
 \contentsline {subsection}{\numberline {6.2.2}Action Definition}{66}{subsection.308}
 \contentsline {paragraph}{Generic actions.}{66}{section*.309}
@@ -125,48 +125,49 @@
 \contentsline {subsection}{\numberline {6.2.3}Graphs of Actions Definition}{67}{subsection.315}
 \contentsline {subsection}{\numberline {6.2.4}Transaction Definition}{67}{subsection.316}
 \contentsline {subsection}{\numberline {6.2.5}Model Example}{68}{subsection.317}
-\contentsline {section}{\numberline {6.3}Design}{70}{section.342}
+\contentsline {section}{\numberline {6.3}Design}{69}{section.342}
 \contentsline {subsection}{\numberline {6.3.1}Overview}{70}{subsection.344}
 \contentsline {subsection}{\numberline {6.3.2}Model Extractor}{71}{subsection.345}
-\contentsline {paragraph}{Symbolic Global Variables (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-glb}).}{72}{section*.362}
+\contentsline {paragraph}{Symbolic Global Variables (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-glb}).}{71}{section*.362}
 \contentsline {paragraph}{Loop Analysis (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-loop}).}{72}{section*.363}
 \contentsline {paragraph}{Free Arguments Inferring (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-free}).}{72}{section*.364}
 \contentsline {paragraph}{Symbolic Exploration (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-symex}).}{72}{section*.365}
 \contentsline {paragraph}{Insensitive Static Analysis (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-ins}).}{72}{section*.366}
-\contentsline {paragraph}{Building a Model (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-mod}).}{73}{section*.367}
-\contentsline {subsection}{\numberline {6.3.3}Secure Communication Protocol}{73}{subsection.368}
+\contentsline {paragraph}{Building a Model (Alg.~\ref {alg:model-extractor} line~\ref {alg:model-extractor-mod}).}{72}{section*.367}
+\contentsline {subsection}{\numberline {6.3.3}Secure Communication Protocol}{72}{subsection.368}
 \contentsline {paragraph}{Protocol properties.}{73}{section*.369}
 \contentsline {paragraph}{Attacks before protocol establishing.}{73}{section*.372}
 \contentsline {paragraph}{Workflow.}{73}{section*.373}
-\contentsline {paragraph}{Defense against a tampered enclave T}{74}{section*.378}
+\contentsline {paragraph}{Defense against a tampered enclave T}{73}{section*.378}
 \contentsline {subsection}{\numberline {6.3.4}Model Verifier}{74}{subsection.402}
 \contentsline {section}{\numberline {6.4}Implementation}{76}{section.405}
 \contentsline {subsection}{\numberline {6.4.1}Compilation Unit}{76}{subsection.406}
 \contentsline {subsection}{\numberline {6.4.2}Model Extractor}{76}{subsection.407}
-\contentsline {subsection}{\numberline {6.4.3}Secure Communication Channel}{77}{subsection.408}
+\contentsline {subsection}{\numberline {6.4.3}Secure Communication Channel}{76}{subsection.408}
 \contentsline {section}{\numberline {6.5}Evaluation}{77}{section.409}
 \contentsline {subsection}{\numberline {6.5.1}RQ1 - Usage Evaluation}{77}{subsection.412}
 \contentsline {paragraph}{Use Cases.}{77}{section*.413}
-\contentsline {paragraph}{Experiment Setup.}{78}{section*.419}
-\contentsline {subsubsection}{Micro-benchmark}{78}{section*.421}
+\contentsline {paragraph}{Experiment Setup.}{77}{section*.419}
+\contentsline {subsubsection}{Micro-benchmark}{77}{section*.421}
 \contentsline {subsubsection}{Attestation Speed}{78}{section*.422}
-\contentsline {subsubsection}{Macro-benchmark}{79}{section*.425}
+\contentsline {subsubsection}{Macro-benchmark}{78}{section*.425}
 \contentsline {paragraph}{StealthDB.}{79}{section*.429}
 \contentsline {paragraph}{libdvdcss.}{79}{section*.430}
-\contentsline {paragraph}{SGX-Biniax2.}{80}{section*.431}
+\contentsline {paragraph}{SGX-Biniax2.}{79}{section*.431}
 \contentsline {subsubsection}{Coverage and Precision}{80}{section*.433}
 \contentsline {subsection}{\numberline {6.5.2}RQ2 - Security Evaluation}{81}{subsection.437}
 \contentsline {subsubsection}{Execution-flow attacks}{81}{section*.438}
-\contentsline {subsubsection}{Non-control data attacks}{82}{section*.441}
-\contentsline {subsubsection}{Side-channels attacks.}{83}{section*.442}
-\contentsline {chapter}{\numberline {7}Memory forensics in SGX environment}{84}{chapter.443}
-\contentsline {chapter}{\numberline {8}Conclusion}{85}{chapter.444}
-\contentsline {chapter}{\numberline {A}Preliminary Analysis of Assumptions}{86}{appendix.445}
-\contentsline {chapter}{\numberline {B}Code-Reuse Technique}{88}{appendix.447}
-\contentsline {chapter}{\numberline {C}Conditional Chain}{90}{appendix.452}
-\contentsline {section}{\numberline {C.1}Context-Switch Chain}{90}{section.480}
-\contentsline {section}{\numberline {C.2}SgxMonitor: Model Examples}{92}{section.527}
-\contentsline {paragraph}{Transaction syntax.}{92}{section*.528}
-\contentsline {subsection}{\numberline {C.2.1}Outside Function Modeling}{92}{subsection.529}
-\contentsline {subsection}{\numberline {C.2.2}Exception Handling Modeling}{93}{subsection.538}
-\contentsline {chapter}{Bibliography}{94}{appendix*.539}
+\contentsline {paragraph}{Shadow stack protection.}{82}{section*.441}
+\contentsline {subsubsection}{Non-control data attacks}{82}{section*.442}
+\contentsline {subsubsection}{Side-channels attacks}{82}{section*.443}
+\contentsline {chapter}{\numberline {7}Memory forensics in SGX environment}{83}{chapter.444}
+\contentsline {chapter}{\numberline {8}Conclusion}{84}{chapter.445}
+\contentsline {chapter}{\numberline {A}Preliminary Analysis of Assumptions}{85}{appendix.446}
+\contentsline {chapter}{\numberline {B}Code-Reuse Technique}{87}{appendix.448}
+\contentsline {chapter}{\numberline {C}Conditional Chain}{89}{appendix.453}
+\contentsline {section}{\numberline {C.1}Context-Switch Chain}{89}{section.481}
+\contentsline {section}{\numberline {C.2}SgxMonitor: Model Examples}{91}{section.528}
+\contentsline {paragraph}{Transaction syntax.}{91}{section*.529}
+\contentsline {subsection}{\numberline {C.2.1}Outside Function Modeling}{91}{subsection.530}
+\contentsline {subsection}{\numberline {C.2.2}Exception Handling Modeling}{92}{subsection.539}
+\contentsline {chapter}{Bibliography}{93}{appendix*.540}
