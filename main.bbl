@@ -257,6 +257,88 @@
     \field{year}{2019}
   \endentry
 
+  \entry{AKHUNZADA201544}{article}{}
+    \name{author}{9}{}{%
+      {{hash=AA}{%
+         family={Akhunzada},
+         familyi={A\bibinitperiod},
+         given={Adnan},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sookhak},
+         familyi={S\bibinitperiod},
+         given={Mehdi},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ANB}{%
+         family={Anuar},
+         familyi={A\bibinitperiod},
+         given={Nor\bibnamedelima Badrul},
+         giveni={N\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gani},
+         familyi={G\bibinitperiod},
+         given={Abdullah},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AE}{%
+         family={Ahmed},
+         familyi={A\bibinitperiod},
+         given={Ejaz},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Shiraz},
+         familyi={S\bibinitperiod},
+         given={Muhammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Furnell},
+         familyi={F\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hayat},
+         familyi={H\bibinitperiod},
+         given={Amir},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KMK}{%
+         family={Khan},
+         familyi={K\bibinitperiod},
+         given={Muhammad\bibnamedelima Khurram},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \keyw{Man-At-The-End, Software protection, Information security, Digital
+  rights management, Digital assets, Distributed software systems}
+    \strng{namehash}{AA+1}
+    \strng{fullhash}{AASMANBGAAESMFSHAKMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.jnca.2014.10.009
+    \endverb
+    \field{issn}{1084-8045}
+    \field{pages}{44 \bibrangedash  57}
+    \field{title}{Man-At-The-End attacks: Analysis, taxonomy, human aspects,
+  motivation and future directions}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S1084804514002379
+    \endverb
+    \field{volume}{48}
+    \field{journaltitle}{Journal of Network and Computer Applications}
+    \field{year}{2015}
+  \endentry
+
   \entry{alibabasgx}{misc}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -822,6 +904,57 @@
     \field{sortinithash}{B}
     \field{title}{A tutorial on software obfuscation}
     \field{journaltitle}{Advances in Computers}
+    \field{year}{2017}
+  \endentry
+
+  \entry{banescu2017detecting}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=BS}{%
+         family={Banescu},
+         familyi={B\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Ahmadvand},
+         familyi={A\bibinitperiod},
+         given={Mohsen},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pretschner},
+         familyi={P\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Shield},
+         familyi={S\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hamilton},
+         familyi={H\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{BS+1}
+    \strng{fullhash}{BSAMPASRHC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Proceedings of the Seventh ACM on Conference on Data and
+  Application Security and Privacy}
+    \field{pages}{185\bibrangedash 196}
+    \field{title}{Detecting Patching of Executables without System Calls}
     \field{year}{2017}
   \endentry
 
@@ -2504,6 +2637,29 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
+  \entry{evenbalance}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={Evenbalance},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{note}{Last visit on 13 Nov 2017}
+    \field{title}{PunkBuster}
+    \verb{url}
+    \verb http://www.evenbalance.com/pbsetup.php
+    \endverb
+    \field{year}{2017}
+  \endentry
+
   \entry{snakegx}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=FT}{%
@@ -3097,6 +3253,55 @@
     \field{year}{2017}
   \endentry
 
+  \entry{helbig1998trusted}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=HSWA}{%
+         family={Helbig\bibnamedelima Sr},
+         familyi={H\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={Walter\bibnamedelima Allen},
+         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Google Patents}%
+    }
+    \strng{namehash}{HSWA1}
+    \strng{fullhash}{HSWA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{note}{US Patent 5,841,868}
+    \field{title}{Trusted computer system}
+    \field{year}{1998}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{hoglund2006hacking}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HG}{%
+         family={Hoglund},
+         familyi={H\bibinitperiod},
+         given={G},
+         giveni={G},
+      }}%
+    }
+    \strng{namehash}{HG1}
+    \strng{fullhash}{HG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Hacking world of warcraft: An exercise in advanced rootkit
+  design}
+    \field{journaltitle}{Black Hat}
+    \field{year}{2006}
+  \endentry
+
   \entry{insider_threat}{article}{}
     \name{author}{5}{}{%
       {{hash=HI}{%
@@ -3161,6 +3366,51 @@
     \field{journaltitle}{ACM Comput. Surv.}
     \field{month}{04}
     \field{year}{2019}
+  \endentry
+
+  \entry{horne2001dynamic}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=HB}{%
+         family={Horne},
+         familyi={H\bibinitperiod},
+         given={Bill},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Matheson},
+         familyi={M\bibinitperiod},
+         given={Lesley},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Sheehan},
+         familyi={S\bibinitperiod},
+         given={Casey},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=TRE}{%
+         family={Tarjan},
+         familyi={T\bibinitperiod},
+         given={Robert\bibnamedelima E},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{HB+1}
+    \strng{fullhash}{HBMLSCTRE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{ACM Workshop on Digital Rights Management}
+    \field{pages}{141\bibrangedash 159}
+    \field{title}{Dynamic self-checking techniques for improved tamper
+  resistance}
+    \field{year}{2001}
   \endentry
 
   \entry{horstmeyer2013physical}{article}{}
@@ -4535,6 +4785,32 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
+  \entry{doubleanget}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LCT}{%
+         family={LTD},
+         familyi={L\bibinitperiod},
+         given={Cybellum\bibnamedelima Technologies},
+         giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LCT1}
+    \strng{fullhash}{LCT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{note}{Last visit 15 Nov 2017}
+    \field{title}{Double Agent}
+    \verb{url}
+    \verb https://github.com/Cybellum/DoubleAgent
+    \endverb
+    \field{month}{03}
+    \field{year}{2017}
+  \endentry
+
   \entry{maurice2017hello}{inproceedings}{}
     \name{author}{8}{}{%
       {{hash=MC}{%
@@ -5336,6 +5612,53 @@
     \field{year}{2010}
   \endentry
 
+  \entry{hacklicense}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=o}{%
+         family={onhax.me},
+         familyi={o\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{o1}
+    \strng{fullhash}{o1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{note}{Last visit on 15 Nov 2017}
+    \field{title}{Bypass license in Android}
+    \verb{url}
+    \verb https://onhax.me/bypass-license-verification-failed
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{omtp}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={{Open Mobile Terminal Platform}},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{year}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{Advanced Trusted Environment: OMTP TR 1}
+    \verb{url}
+    \verb https://www.gsma.com/newsroom/wp-content/uploads/2012/03/omtpadvanced
+    \verb trustedenvironmentomtptr1v11.pdf
+    \endverb
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{pinzari2003introduction}{misc}{}
     \name{author}{1}{}{%
       {{hash=PGF}{%
@@ -5358,30 +5681,6 @@
     \field{sortinithash}{P}
     \field{title}{Introduction to NX technology}
     \field{year}{2003}
-  \endentry
-
-  \entry{omtp}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=POMT}{%
-         family={Platform},
-         familyi={P\bibinitperiod},
-         given={Open Mobile\bibnamedelima Terminal},
-         giveni={O\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
-  T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{POMT1}
-    \strng{fullhash}{POMT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2009}
-    \field{labeldatesource}{year}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-  \field{note}{https://www.gsma.com/newsroom/wp-content/uploads/2012/03/omtpadvancedtrustedenvironmentomtptr1v11.pdf}
-    \field{title}{Advanced Trusted Environment: OMTP TR 1}
-    \field{year}{2009}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{polychronakis2011rop}{inproceedings}{}
@@ -7048,6 +7347,29 @@
     \field{year}{2005}
   \endentry
 
+  \entry{vac}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={Valve},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{note}{Last visit 13 Nov 2017}
+    \field{title}{Valve Anti-Cheat System (VAC)}
+    \verb{url}
+    \verb https://support.steampowered.com/kb\_article.php?p\_faqid=370
+    \endverb
+    \field{year}{2017}
+  \endentry
+
   \entry{van2017telling}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=VBJ}{%
@@ -7285,8 +7607,8 @@
          familyi={V\bibinitperiod},
       }}%
     }
-    \strng{namehash}{V1}
-    \strng{fullhash}{V1}
+    \strng{namehash}{V2}
+    \strng{fullhash}{V2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017 (accessed September 14, 2020)}
@@ -7305,8 +7627,8 @@
          familyi={V\bibinitperiod},
       }}%
     }
-    \strng{namehash}{V2}
-    \strng{fullhash}{V2}
+    \strng{namehash}{V3}
+    \strng{fullhash}{V3}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2009 (accessed September 24, 2020)}
@@ -7863,6 +8185,29 @@
     }
     \field{month}{09}
     \field{year}{2019}
+  \endentry
+
+  \entry{janusdrm}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Windows},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{note}{Last visit on 15 Nov 2017}
+    \field{title}{Windows Media DRM 10 (Janus)}
+    \verb{url}
+    \verb http://www.samsung.com/ca/support/skp/faq/20189
+    \endverb
+    \field{year}{2012}
   \endentry
 
   \entry{winter2008trusted}{inproceedings}{}
