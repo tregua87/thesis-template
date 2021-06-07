@@ -5,11 +5,11 @@
 
 Modern online companies make broadly use of cloud computing infrastructures for 
 carrying their business.
-Among the public cloud providers, the most popular and technologically advanced 
+Among the cloud providers, the most popular and technologically advanced 
 are Amazon Web Services (AWS), Microsoft Azure (Azure), and Google Cloud 
 Platform (GCP)~\citep{flexera_report}.
-To have a glance about the turnover, the second quarter of 2020 showed a growth 
-of $62$\% of Azure respect the same period in the 
+To have a glance about the magnitude of their business, the second quarter of 
+2020 showed a growth of $62$\% of Azure respect the same period in the 
 previous year, with investments of $79.9$M USD, $78$M 
 USD, and $76.7$M USD from Verizon, MSI Computer, and LG Electronics, 
 respectively~\citep{azure_business}.
@@ -31,12 +31,12 @@ In this scenario, leaving part of the control to the could provider means
 trusting that a list of issues are already addressed at vendor side (\eg Azure 
 or AWS).
 The source of risk are various, for instance, the cloud provider might suffer 
-of insider threats, \eg a GCP employ, with access to physical machines, could 
-record the network traffic, access to the user's data, or tamper with the 
+of insider threats, \eg a GCP's system admin could record the network traffic, 
+access to the user's data, or tamper with the 
 virtual machines (VM) themselves~\citep{insider_threat}.
-Even if we assume having a trusted provider, recent works showed that two VMs, 
+In addition to these issues, recent works showed that two VMs, 
 sharing the same host, can exchange information solely relying on the CPU 
-cache~\citep{maurice2017hello}. This means that that a VM can carry attacks 
+cache~\citep{maurice2017hello}. This means that a VM can carry attacks 
 toward other VMs on the same host.
 
 Having a cloud infrastructure introduces security risks also for the final 
@@ -51,32 +51,40 @@ control of the cloud provider as well, thus inevitably leading to integrity and
 confidentiality issues.
 In this scenario, classic cryptography solutions fail since the whole system 
 might be compromised, \ie the cloud provider may control the cryptographic keys.
-Even though one could adopt mitigation to obtain reasonable guarantees, such 
-as the intended software is properly loaded (\ie using TPM to protect 
-the boot phase -- \cite{tpm-isoosi}), the underline system is secure (\ie 
-through strict contracts or dedicated hosts -- \cite{aws_dedicated_host}), and
-the data are sealed properly (\ie using modern crptographic 
-schemes -- \cite{gentry2009fully}).
-These solutions are rarely used in practice because either expensive or non 
-scalalbe. The former requires dedicated hosts that are far more expensive than 
-standard solutions, moreover TPMs are not usually provided by cloud vendors. 
-The latter involves heavy cryptographic schemes that are too slow for 
-being vastly used in daily business~\citep{10.1145/2046660.2046682}.
 %
-In addition to all the aforementioned problems, one should also consider 
-classic exploitation techniques that may alter the logic of a piece of software 
-by targeting the perimeter of a system.
+One could reduce the risk by adopting mitigation techniques, such as 
+Trusted Platform Modules (TPM) to ensure software integrity at the boot phase 
+\citep{tpm-isoosi}, sign strict contracts with the cloud providers to secure 
+the underline system \citep{aws_dedicated_host}, or employing modern 
+crptographic schemes to protect private data \citep{gentry2009fully}.
+%
+%such 
+%as loading the intended software in a VM (\ie ), securing the underline system 
+%(\ie 
+%through strict contracts or dedicated hosts -- \cite{aws_dedicated_host}), and
+%encrypting the private data (\ie using modern crptographic 
+%schemes -- \cite{gentry2009fully}).
+However, these solutions are rarely used in practice because either expensive 
+or non scalalbe. The former requires dedicated hosts that are far more 
+expensive than standard solutions, moreover TPMs are not common in the cloud 
+offer. 
+The latter, instead, involves heavy cryptographic schemes that slow down the 
+computation, thus incompatible with fast response 
+applications~\citep{10.1145/2046660.2046682}.
+%
+An addition source of threat is represented by classic exploitation techniques 
+that may penetrate the system perimeter.
 In this scenario, an adversary may target error-prone services exposed over the 
-Internet, and take control of 
-machine~\citep{van2012memory,10.1145/2810103.2813646}.
+Internet, and take control of the
+machines~\citep{van2012memory,10.1145/2810103.2813646}.
 Finally infecting the system.
 
 %\todo{possible solution: TEE. Give intuitive definition.}
 For tackling the aforementioned challenges, a promises direction is 
 represented by Trusted Execution Environments (TEE).
 Intuitively, TEEs are sub-systems, whose functioning remembers virtual 
-machines, that use hardware features to isolate their content against untrusted 
-environments.
+machines, that use string hardware checks to isolate their content against 
+untrusted environments.
 %\todo{Definition of TEE and usage. Properties, memory isolation, and remote 
 %attestation.}
 %\todo{History of TEEs, first definition, standard used, etc. During the 
@@ -90,8 +98,7 @@ whose design was mainly focused on mobile platforms~\citep{omtp}.
 OMTP defines a list of properties that a TEE should fulfill, among them, this 
 thesis will trait the \emph{memory isolation} and the \emph{remote attestation}.
 The main purpose of the \emph{memory isolation} is to shield code and data such 
-that even a compromised machine cannot alter its integrity (and 
-confidentiality).
+that even a compromised machine cannot alter its integrity and confidentiality.
 In particular, the \emph{memory isolation} must prevent tampering from any 
 sources at any privilege level, \eg it must avoid writing and reading 
 operations from the operating system, the SMM code~\citep{yao2009system}, and 
@@ -104,7 +111,7 @@ and machine (usually represented by the CPU).
 The combination of \emph{memory isolation} and \emph{remote attestation} leads 
 to a new range of properties in the cloud environments, \ie a company 
 can use the \emph{memory isolation} to protect critical piece of 
-software and date from insiders, a compromised host, or even other VMs sharing 
+software and data from insiders, a compromised host, or even other VMs sharing 
 the same resources.
 In addition, the \emph{remote attestation} allows the establishment of 
 end-to-end secure channels without the support of the OS, thus avoiding the 
@@ -117,6 +124,7 @@ ones. Specifically, TMPs require an external hardware (\ie the TPM module),
 while TEEs are embedded in the main CPU.
 Moreover, TPMs do not provide memory isolation, can only store limited 
 cryptographic material (\eg keys), and expose a limited number functionalities 
+already wired in the module by the vendor
 (\eg random number generation or cryptographic primitives).
 On the contrary, TEEs are meant to contain general purpose software that might 
 interact with the peripherals.
@@ -141,8 +149,8 @@ by many cloud providers, such as Azure~\citep{azure},
 GCP~\citep{challita2018precise}, IBM~\citep{IBM}, and 
 Alibaba~\citep{alibabasgx}.
 This technology provides either a strong \emph{memory isolation} and a reliable 
-\emph{remote attestation} that stand at the base of many businesses, such as 
-Signal~\citep{signal}.
+\emph{remote attestation} that stand at the backbone of many businesses, such 
+as Signal~\citep{signal}.
 Due to the important growth of SGX in the recent years, and considering its 
 adoption in the cloud computing market, this thesis will consider SGX as main 
 TEE technology.
@@ -159,7 +167,7 @@ SGX considers the content of the \emph{enclaves} as trusted, and refers to them
 as \emph{trusted regions}, while the rest of the system is considered 
 potentially malicious and is called \emph{untrusted region}.
 The booting of an enclave is handled at kernel-space (\ie through a driver) in 
-combination with CPU extra checks that ensure the correct \emph{enclave} 
+combination with extra CPU checks that ensure the correct \emph{enclave} 
 loading.
 Once an \emph{enclave} is bootstrapped, a remote entity can perform a 
 \emph{remote attestation} (SGX RA) to verify the \emph{enclave} integrity.
@@ -186,12 +194,12 @@ Section~\ref{sec:software-guard-extension}.
 %\textbf{MY THESIS OBJECTIVE:}
 Regardless the security guarantees achieved by SGX, this technology still 
 suffers of important limitations.
-In this thesis, we argue we can further address the SGX limitations (and in 
-general the TEE ones) through a shrewd software design without the need of 
+In this thesis, we argue we can improve the SGX security level (and in 
+general of the TEE ones) through a shrewd software design without the need of 
 changing the hardware specification.
 Specifically, we identify four important areas to investigate, and for each of 
 them we propose up to two contributions.
-To sum up, the thesis will describe five contributions in total that will 
+The thesis will describe five contributions in total that will 
 address four aspect of SGX. The whole thesis contribution is summarized on 
 Figure~\ref{fig:contribution}.
 
@@ -199,33 +207,39 @@ In the following, we summarize the four areas covered and the relative
 contributions. Finally, we elaborate each point in a dedicated section.
 
 \begin{itemize}
-	\item \textbf{Enclaves Scalability Limitations.} SGX machines can allocate 
-	only few mega bytes for \emph{enclaves} purposes, thus affecting the amount 
-	of critical content that can be protected.
-	We thus study new software designs that stretch the SGX properties over 
-	vaster memory areas (Section~\ref{ssec:contribution1}).
+	\item \textbf{Enclaves Scalability Limitations.} The whole memory dedicated 
+	to SGX \emph{enclaves} is bounded to few mega bytes for machine. This 
+	affects the amount of critical content that can be protected 
+	contemporaneously.
+	We study new software designs that stretch the SGX \emph{memory isolation} 
+	over vaster memory areas while keeping a limited overhead 
+	(Section~\ref{ssec:contribution1}).
 	This is depicted by the symbol \circledr[1] in 
 	Figure~\ref{fig:contribution}.
 	
 	\item \textbf{New Threats Led by Memory Isolation.} The \emph{memory 
-	isolation} could be used as a nest for a new category of malware. We study 
-	to which extent an adversary can exploit SGX to introduce new treats in a 
-	system (Section~\ref{ssec:contribution2}).
-	This is depicted by the symbol \circledr[2] in 
+	isolation} avoids an external observer to understand if an \emph{enclave} 
+	contains benign or malicious software. Therefore, SGX could be used as a 
+	nest for a new category of malware.
+	We study to which extent an adversary can exploit SGX to introduce new 
+	treats 	in a system (Section~\ref{ssec:contribution2}).
+	This is depicted by the symbol \circledr[2] in 	
 	Figure~\ref{fig:contribution}.
 	
 	\item \textbf{Remote Attestation Limitations.} The standard RA can only 
 	guarantee that an \emph{enclave} has been loaded properly, but it does 
-	not consider runtime properties that might leave room for new threats.\
-	We thus study new RA schemes that cover these aspects 
+	not model runtime properties such as the execution-flow or the internal 
+	state.
+	We study how to extend RA schemes to fill this gap 	
 	(Section~\ref{ssec:contribution3}).
-	This is addressed with two contributions that are represented with the 
+	This is addressed with two contributions that are represented by the 
 	symbols \circledr[3] and \circledr[4] in Figure~\ref{fig:contribution}.
 	
 	\item \textbf{Incident Response Limitations.} The introduction of 
 	non-observable memory regions affects the incidents response in 
 	case of intrusion. We thus study the limitation of current investigation 
-	techniques in the context of SGX machines 
+	techniques in the context of SGX machines and propose new memory-forensic 
+	methodologies to investigate the root-of-cause
 	(Section~\ref{ssec:contribution4}).
 	This is depicted by the symbol \circledr[5] in 
 	Figure~\ref{fig:contribution}.
@@ -377,8 +391,8 @@ Studying the runtime RAs available in the literature, we identify two main
 limitations worthy of attention. 
 First, we observed that current RAs are not suitable for complex systems, such 
 as software running in cloud infrastructures.
-Second, the current solutions cannot be employed in TEE technologies, in 
-particular, we choose SGX as case-study.
+Second, the current solutions cannot be employed in TEE technologies, such as 
+SGX.
 In the following, we explore these two limitations.
 
 \paragraph{Runtime RA for Complex Systems.} 
