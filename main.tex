@@ -57,7 +57,9 @@ headsepline, % Uncomment to get a line under the header
 	
 \newcommand{\circledr[1]}{\tikz[baseline=(char.base)]{\node[font=\sffamily, 
 		shape=circle,draw,inner sep=0.5pt,color=white,fill=red] (char) {#1};}}
-
+	
+\newcommand{\circledrA}[1]{\tikz[baseline=(char.base)]{\node[font=\sffamily, 
+		shape=circle,draw,inner sep=0.5pt,color=white,fill=red] (char) {#1};}}
 
 \usepackage{subcaption}
 
@@ -397,9 +399,9 @@ The acknowledgments and the people to thank go here, don't forget to include you
 \include{chapters/background-trusting-computing}
 \include{chapters/static-protection}
 \include{chapters/new-threats}
+\include{chapters/forensic-analysis}
 \include{chapters/runtime-protection-untrusted}
 \include{chapters/runtime-protection-trusted}
-\include{chapters/forensic-analysis}
 \include{chapters/conclusion}
 
 %----------------------------------------------------------------------------------------

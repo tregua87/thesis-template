@@ -1,7 +1,7 @@
 \chapter{Background}
 \label{chp:background} 
 
-This chapter provides a background knowledge of Truest Execution Environments 
+This chapter provides a background knowledge of Trusted Execution Environments 
 (Section~\ref{sec:trusted-execution-enviroments}), Control-Flow Attacks 
 (Section~\ref{sec:control-flow-attacks}), and Anti-Tampering Techniques 
 (Section~\ref{sec:anti-tampering-techniques}).
@@ -149,17 +149,17 @@ carry a physical attck (\eg 10 min -
 Recently, researchers proposed advanced RA schemes to mitigate these 
 attacks~(\cite{darpa,visintin2019safe,pasta}).
 
-Commonly, denial of service DoS attacks are not considered in TEE scenario, and 
-the \emph{untrusted software} can avoid invoking the secure module.
+Commonly, denial of service (DoS) attacks are not considered in TEE scenario, 
+and the \emph{untrusted software} can avoid invoking the secure module.
 
 \section{Control-Flow Attacks}
 \label{sec:control-flow-attacks}
 
 Solely TEE memory isolation and static RA cannot avoid classic exploitation 
 techniques.
-For instance, if the \emph{trusted region} suffers of a memory corruption 
-error, an adversary may corrupt a control structure (\ie a return address in 
-the stack) and hijack the its execution.
+For instance, a \emph{trusted region} may suffer from a memory corruption 
+error that lead an adversary to corrupt a control structure (\ie a return 
+address in the stack) and hijack the execution.
 
 To introduce control-flow attacks, we first discuss the concepts of 
 control-flow graph (CFG), execution path, and basic-block~(BBL) by using the 
@@ -277,7 +277,7 @@ disabled/tampered, other checkers become aware of the attack).
 \section{Software Guard eXtension}
 \label{sec:software-guard-extension}
 
-In this section, we introduces the technical details of Software Guard 
+In this section, we introduce the technical details of Software Guard 
 eXtension (SGX). We will discuss the memory isolation mechanism 
 (Section~\ref{ssec:sgx-core-design}), the attestation details 
 (Section~\ref{ssec:sgx-remote-attestation}), the development frameworks 
@@ -432,14 +432,14 @@ while the enclave triggers the latter to communicate with the operating system
 Moreover, both functions invoke an \texttt{ENCLU} opcode directly or indirectly
 (\ie through an utility function).
 Due to the complexity of this programming pattern, a number
-of development frameworks has been developed to abstract the technical
-details and automatically include components in- and outside the
+of development frameworks has been proposed to abstract the technical
+details and automatically include components in- and outside an
 \emph{enclave}.
 
 All the development frameworks share some architecture details.
 In particular, part of \emph{secure} and \emph{outside functions} is contained 
 in a specific portion of code called \emph{edge}, that is automatically 
-generated and statically linked by the development framework.
+generated and statically linked at compilation time.
 In our study, we found the \emph{edge} can rely either on external libraries 
 (\eg \texttt{libsgx\_urts.so}) to communicate with the enclave, or it embeds
 all the communication logic including the \texttt{ENCLU} opcode, as depicted in 
@@ -448,7 +448,7 @@ Figure~\ref{fig:sgxprogrammingpattern}.
 \subsection{SGX Control-Flow Attacks}
 \label{ssec:sgx-control-flow-attacks}
 
-In the following, we described the two main works that describe code-reuse 
+In the following, we described the two main works based on code-reuse 
 attacks against SGX: Guard's Dilemma~(\cite{biondo2018guard}) and 
 Dark-ROP~(\cite{lee2017hacking}).
 
