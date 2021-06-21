@@ -39,7 +39,7 @@ sharing the same host, can exchange information solely relying on the CPU
 cache~\citep{maurice2017hello}. This means that a VM can carry attacks 
 toward other VMs on the same host.
 
-Having a cloud infrastructure introduces security risks also for the final 
+Cloud infrastructure' security risks also impact to the final 
 user. In fact, a remote client (\eg a smartphone) has no guarantees to 
 communicate with the the correct software in the remote 
 VM~\citep{beekman2016attestation}, \eg a malicious hypervisor may manipulate 
@@ -65,15 +65,15 @@ crptographic schemes to protect private data \citep{gentry2009fully}.
 %encrypting the private data (\ie using modern crptographic 
 %schemes -- \cite{gentry2009fully}).
 However, these solutions are rarely used in practice because either expensive 
-or non scalalbe. The former requires dedicated hosts that are far more 
+or non scalable. The former requires dedicated hosts that are far more 
 expensive than standard solutions, moreover TPMs are not common in the cloud 
 offer. 
 The latter, instead, involves heavy cryptographic schemes that slow down the 
 computation, thus incompatible with fast response 
 applications~\citep{10.1145/2046660.2046682}.
 %
-An addition source of threat is represented by classic exploitation techniques 
-that may penetrate the system perimeter.
+An additional source of threat is represented by classic exploitation 
+techniques that may penetrate the system perimeter.
 In this scenario, an adversary may target error-prone services exposed over the 
 Internet, take control of the
 machines~\citep{van2012memory,10.1145/2810103.2813646}, and finally infecting 
@@ -114,8 +114,8 @@ sources at any privilege level, \eg it must avoid writing and reading
 operations from the operating system, the SMM code~\citep{yao2009system}, and 
 DMA transfers~\citep{coke1998implementing}.
 The \emph{remote attestation}, instead, guarantees that a third party (\eg a 
-smartphone) can verify the integrity of a remote memory region (\eg on a 
-server).
+smartphone) can verify the integrity of a remote memory region (\eg a 
+Web service).
 This ensures that a client is communicating with the intended portion of code 
 and machine (usually represented by the CPU).
 The combination of \emph{memory isolation} and \emph{remote attestation} leads 
@@ -123,9 +123,9 @@ to a new range of properties in the cloud environments, \ie a company
 can use the \emph{memory isolation} to protect critical piece of 
 software and data from insiders, a compromised host, or even other VMs sharing 
 the same resources.
-In addition, the \emph{remote attestation} allows the establishment of 
+In addition, the \emph{remote attestation} allows one to establish 
 end-to-end secure channels without the support of the OS, thus avoiding the 
-leak of cryptographic materials.
+leak of cryptographic material.
 In addition, the TEEs can use attestation to seal data on non-volatile storage 
 (\ie encrypt and decrypt) such that nobody but the original \emph{trusted 
 region} can retrieve the content. 
@@ -171,6 +171,8 @@ as Signal~\citep{signal}.
 Due to the important growth of SGX in the recent years, and considering its 
 adoption in the cloud computing market, this thesis will consider SGX as main 
 TEE technology.
+Nevertheless, the contributions discussed in this thesis are generic and can be 
+adapted for others TEEs.
 SGX calls its \emph{memory regions} as \emph{enclaves}, that reside in 
 user-space, and provides a \emph{remote attestation} to validate the correct 
 \emph{enclave} initialization.
@@ -211,14 +213,15 @@ Section~\ref{sec:software-guard-extension}.
 %We provide further details of the SGX internals in 
 %Section~\ref{sec:software-guard-extension}.
 
-
+%% FLAVIO: I guess till here we are kinda ok.
+%% 		   I have to deeply polish from here below.
 
 \section{Problem Statement}
 
-TEE technologies achieved a high level of complexity.
-Unfortunately, such technologies also suffer or limitations in terms of 
-security and scalability.
-In the following, we discus the main issues that afflict \emph{memory 
+TEE technologies achieve a high level of complexity and security property.
+Even tough they are a mature enough for generic applications, they still suffer 
+from limitations that affect either their security and scalability.
+In particular, we focus on the main issues that afflict \emph{memory 
 isolation} and \emph{remote attestation}. 
 
 \subsection{Memory Isolation}
@@ -231,8 +234,8 @@ However, this feature also suffers from limitations.
 \noindent \textbf{Memory limit and scalability problems.}
 In TEE technologies, and in particular SGX \citep{costan2016intel}, the 
 software within a \emph{trusted region} cannot directly interact with the 
-hosting OS, moreover, the \emph{trusted region} often has size 
-limitations~\citep{baumann2015shielding}.
+hosting OS, moreover, the \emph{trusted region} often has a limited 
+size~\citep{baumann2015shielding}.
 Previous works studied solutions that move part of the OS functionality inside 
 a \emph{trusted 
 region}~\citep{baumann2015shielding,arnautov2016scone,tsai2017graphene},
@@ -297,9 +300,9 @@ existing memory forensic techniques and hide its presence in a legitimate
 %to identify the 
 %intrusions~\citep{stancill2013check,polychronakis2011rop,kittel2015counteracting,Graziano:2016:RFA:2897845.2897894}.
 For instance, in case of external intrusion into a remote server running SGX 
-enclaves, the adversary could infect an \emph{enclave} and use the latter to 
-perpetrate actions against the system itself while using the \emph{memory 
-isolation} to hide her presence.
+enclaves, the adversary could infect an \emph{enclave}, use it to 
+perpetrate actions against the system, and hide her presence behind the 
+\emph{memory isolation}.
 % is also interested in reducing the amount of traces 
 %left; otherwise, analysts may detect the intrusion and act consequently.
 %This is even more critical in case the enclave secret changes and the 
@@ -359,8 +362,9 @@ of them can be applied to a complex system due to the following reasons:
 
 \vspace{0.5cm}
 \noindent \textbf{Runtime Remote Attestation not Work on TEEs.}
-Usually, runtime RAs assume a TEE to trace the application execution, however, 
-the \emph{memory isolation} blocks any tracing of the \emph{trusted regions} 
+Runtime RAs assume a TEE to trace the application execution.
+Therefore, we cannot directly deploy a runtime RA in a TEE because the 
+\emph{memory isolation} would blocks any tracing of the \emph{trusted regions} 
 themselves.
 %TEE guarantees a \emph{trusted region} is properly loaded in memory, while 
 %static RA allows a remote entity to verify the correct enclave initialization.
