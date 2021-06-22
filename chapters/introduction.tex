@@ -218,17 +218,26 @@ Section~\ref{sec:software-guard-extension}.
 
 \section{Problem Statement}
 
-TEE technologies achieve a high level of complexity and security property.
-Even tough they are a mature enough for generic applications, they still suffer 
-from limitations that affect either their security and scalability.
-In particular, we focus on the main issues that afflict \emph{memory 
-isolation} and \emph{remote attestation}. 
+TEE technologies achieve a strong security level mainly thanks to sound
+\emph{memory isolation} and \emph{remote attestation}.
+Unfortunately, these properties also introduce new challenges that range from 
+scalability to new type of intrusion.
+Moreover, the current integrity mechanisms mainly focus on static properties 
+(\ie if a piece of code is intact) while advanced solutions only fit embedded 
+systems scenarios.
+In this section, we dig into the main issues that afflict \emph{memory 
+isolation} and \emph{remote attestation}.
 
 \subsection{Memory Isolation}
 
-The \emph{memory isolation} introduced by TEEs can effectively stop 
-intrusions from compromised OSes.
-However, this feature also suffers from limitations.
+The \emph{memory isolation} is enforced at hardware level with new CPU opcodes 
+and extra checks at microcode level, thus having an OS independent design.
+If this property effectively protects against compromised hosts, the isolation 
+also introduces new challenges.
+For instance, we have to handle the interaction between the trusted region and 
+the external word (\eg to write a file), or else, these un-observable portions 
+of memory may help an adversary to hide its presence in the machine.
+In the following, we elaborate these limitations of \emph{memory isolation}.
 
 \vspace{0.5cm}
 \noindent \textbf{Memory limit and scalability problems.}
@@ -241,7 +250,7 @@ a \emph{trusted
 region}~\citep{baumann2015shielding,arnautov2016scone,tsai2017graphene},
 but they introduce further complexity for employing a secure interaction with 
 the rest of the world (\eg networking, file system).
-Other authors suggested protecting only portions of the 
+Other authors suggested protecting only critical portions of the 
 code \citep{schuster2015vc3,lind2017glamdring}.
 However, these approaches do not address critical limitations such as the 
 interaction with the underlying OS, or the limited amount of memory.
@@ -293,7 +302,7 @@ techniques tailored for SGX~\citep{lee2017hacking,biondo2018guard}.
 %Development Kit (SDK) to build the payload without any enclave crashes.
 %Moreover, Dilemma requires only an unprivileged attacker to carry out a 
 %single one-shot attack and steal secrets from an enclave.
-In this scenario, an adversary may craft an attack that bypass existing 
+In this scenario, an adversary may craft an attack that bypass 
 existing memory forensic techniques and hide its presence in a legitimate 
 \emph{trusted region}.
 %
@@ -336,7 +345,7 @@ Unfortunately, the current runtime RAs show some limitations.
 %process~\citep{abera2016c,aberadiat}.
 
 \vspace{0.5cm}
-\noindent \textbf{Runtime Remote Attestation not Scale over Complex System.}
+\noindent \textbf{Runtime Remote Attestation do not Scale over Complex System.}
 The main runtime RAs from the literature mainly focus on embedded 
 devices~\citep{abera2016c,zeitouni2017atrium,aberadiat,dessouky2017fat,Dessouky:2018:LLH:3240765.3240821}:
 most of them encode the complete execution path of a \emph{Prover} in a single 
@@ -361,11 +370,10 @@ of them can be applied to a complex system due to the following reasons:
 %We describe our study in Chapter~\ref{chp:runtime-protection-untrusted}.
 
 \vspace{0.5cm}
-\noindent \textbf{Runtime Remote Attestation not Work on TEEs.}
+\noindent \textbf{Runtime Remote Attestation do not Work on TEEs.}
 Runtime RAs assume a TEE to trace the application execution.
 Therefore, we cannot directly deploy a runtime RA in a TEE because the 
-\emph{memory isolation} would blocks any tracing of the \emph{trusted regions} 
-themselves.
+\emph{memory isolation} would block any tracing of the \emph{trusted regions}.
 %TEE guarantees a \emph{trusted region} is properly loaded in memory, while 
 %static RA allows a remote entity to verify the correct enclave initialization.
 As such, the TEE alone has no mechanisms to guarantee the correct runtime 
@@ -412,7 +420,7 @@ them we propose specific contributions.
 %address four aspect of SGX. 
 The whole thesis contribution is depicted in 
 Figure~\ref{fig:contribution}, that we first summarize in the following part 
-and then further elaborate in dedicated sections.
+and then further elaborate in dedicated chapters.
 
 \begin{itemize}
 	\item[\circledrA{1}] \textbf{Extend Memory Isolation.}
