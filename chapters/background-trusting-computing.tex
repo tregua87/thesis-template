@@ -18,13 +18,13 @@ A TEE ensures isolation of the code and data against external threats, such as
 the operating system (OS).
 
 The first TEE standard has been defined by OMTP, a forum of mobile 
-manufactures, and the specifications were mainly designed for mobile 
+manufacturers, and the specifications were mainly designed for mobile 
 platforms~(\cite{omtp}).
-Nowadays, TEEs have evolved and they are deployed in varied scenarios that 
+Nowadays, TEEs have evolved into varied scenarios that 
 range from mobile platforms to cloud servers~(\cite{schuster2015vc3,sgxtor}).
 In the following, we first discuss the two main concepts at the base for this 
-thesis: memory isolation (Section~\ref{ssec:memory-isolation}) and remote 
-attestation (Section~\ref{ssec:remote-attestation}).
+thesis: \emph{memory isolation} (Section~\ref{ssec:memory-isolation}) and 
+\emph{remote attestation} (Section~\ref{ssec:remote-attestation}).
 Then, we describe the common threat model assumptions 
 (Section~\ref{ssec:attacker-model}).
 
@@ -72,7 +72,7 @@ In the following, we describe the two main RA schemes topology:
 \paragraph{Static RA.}
 Historically, static Remote Attestation (\emph{static RA}) is the first type of 
 RA proposed~(\cite{bajikar2002trusted}).
-As the name suggests, \emph{static RA} measures static properties of a system, 
+As the name suggests, \emph{static RAs} measure static properties of a system, 
 such as the correct loading of a piece of code in memory through hash functions.
 Other technologies, instead, extend their protection and report hardware 
 information, for instance, they provide a CPU 
@@ -96,10 +96,11 @@ In the literature, there are many approaches to implement a runtime RA.
 For what concerns runtime RA for execution-flow properties, most of them encode 
 the complete execution path of a \emph{Prover} in a single 
 hash~(\cite{abera2016c,zeitouni2017atrium,dessouky2017fat}); 
-some~(\cite{aberadiat}) compress it in a simpler representation and rely on a 
-policy-based verification schema; 
-other ones~(\cite{Dessouky:2018:LLH:3240765.3240821}) adopt symbolic execution 
-to verify the control-flow information continuously sent by the \emph{Prover}.
+some compress it in a simpler representation and rely on a 
+policy-based verification schema~(\cite{aberadiat}); 
+other ones adopt symbolic execution to verify the control-flow information 
+continuously sent by the 
+\emph{Prover}~(\cite{Dessouky:2018:LLH:3240765.3240821}).
 Runtime RA for data-flow, instead, simply traces the module traversed by 
 tainted variables~(\cite{apex,aberadiat}).
 
@@ -107,7 +108,7 @@ All the aforementioned works rely on a trusted anchor (\eg a TEE) to store
 partial results of their protocol (\eg execution-flow information) and for 
 protecting crypto materials (\ie algorithms and keys).
 Furthermore, they assume the adversary cannot tamper with the trusted anchor.
-Finally, \emph{runtime RA} also assume a \emph{static RA} in place to avoid 
+Finally, \emph{runtime RAs} also assume a \emph{static RA} in place to avoid 
 software tampering.
 
 \subsection{Attacker Model}
@@ -115,8 +116,8 @@ software tampering.
 
 In TEE scenarios, the goal of an adversary is to bypass the TEE protections 
 (\ie memory isolation and remote attestation) and tamper with the \emph{trusted 
-region} or alter its behavior.
-To achieve this goal, TEE assumes two types of adversaries: \emph{software} and 
+regions} or alter their behavior.
+To achieve this goal, TEsE assume two types of adversaries: \emph{software} and 
 \emph{physical}.
 
 \paragraph{Software Attacks.} 
@@ -125,17 +126,17 @@ In this case, the adversary works either from a remote location or in the
 In addition, the adversary may control the network medium as in the Dolev-Yao 
 model~(\cite{dolev}).
 The purpose of the adversary is multifold: she may load a infected software in 
-the TEE, alter a \emph{trusted component} already loaded, or use classing 
+the TEE, alter a \emph{trusted component} already loaded, or use classic 
 software exploitation techniques.
 
 The TEE memory isolation prevents an adversary to load compromised software or 
-directly modify existing protected memory regions 
-(Section~\ref{ssec:memory-isolation}).
-On the other hand, an adversary may exploit known exploitation techniques to 
-alter the execution of the TEE module trough execution-flow attacks.
+directly modify existing protected ones (Section~\ref{ssec:memory-isolation}).
+However, this protection alone does not avoid an adversary to exploit known 
+errors to alter the execution of the TEE module trough execution-flow 
+attacks.
 If the \emph{secure software} suffer of bugs (\eg a memory corruption error), 
 the TEE itself cannot prevent an adversary to alters \emph{secure software} 
-execution, and finally, the TEE cannot observe the attack.
+execution, and finally, the attack happens unobserved.
 We discuss execution-flow attacks in Section~\ref{sec:control-flow-attacks}.
 
 \paragraph{Physical Attacks.}
@@ -147,7 +148,7 @@ is common to assume the adversary requires a non-negligible amount of time to
 carry a physical attck (\eg 10 min - 
 \cite{conti2010smallville,conti2008emergent,darpa,ibrahim2017seed,pasta,us-aid}).
 Recently, researchers proposed advanced RA schemes to mitigate these 
-attacks~(\cite{darpa,visintin2019safe,pasta}).
+attacks~\citep{darpa,visintin2019safe,pasta}.
 
 Commonly, denial of service (DoS) attacks are not considered in TEE scenario, 
 and the \emph{untrusted software} can avoid invoking the secure module.

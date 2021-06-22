@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  22 JUN 2021 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  22 JUN 2021 15:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2464,12 +2464,12 @@ tly adopted by many cloud providers,
  []
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 234.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 231.
 [3] [4]
 <fig_c1/contribution.pdf, id=867, 902.37125pt x 312.16624pt>
 File: fig_c1/contribution.pdf Graphic file (type pdf)
 <use fig_c1/contribution.pdf>
-Package pdftex.def Info: fig_c1/contribution.pdf  used on input line 410.
+Package pdftex.def Info: fig_c1/contribution.pdf  used on input line 407.
 (pdftex.def)             Requested size: 417.11752pt x 144.29842pt.
  [5]) [6 <./fig_c1/contribution.pdf>]
 \openout2 = `chapters/background-trusting-computing.aux'.
@@ -2483,7 +2483,7 @@ Chapter 2.
 
 
 ] [8]
-Overfull \hbox (1.19507pt too wide) in paragraph at lines 164--174
+Overfull \hbox (1.19507pt too wide) in paragraph at lines 165--175
 []\T1/ppl/m/n/10.95 To in-tro-duce control-flow at-tacks, we first dis-cuss the
  con-cepts of control-flow graph
  []
@@ -2491,14 +2491,14 @@ Overfull \hbox (1.19507pt too wide) in paragraph at lines 164--174
 <fig_c4/problem-setting-code.pdf, id=974, 266.9975pt x 166.6225pt>
 File: fig_c4/problem-setting-code.pdf Graphic file (type pdf)
 <use fig_c4/problem-setting-code.pdf>
-Package pdftex.def Info: fig_c4/problem-setting-code.pdf  used on input line 17
-9.
+Package pdftex.def Info: fig_c4/problem-setting-code.pdf  used on input line 18
+0.
 (pdftex.def)             Requested size: 187.7016pt x 117.14088pt.
 <fig_c4/problem-setting-graph.pdf, id=975, 229.85875pt x 275.0275pt>
 File: fig_c4/problem-setting-graph.pdf Graphic file (type pdf)
 <use fig_c4/problem-setting-graph.pdf>
 Package pdftex.def Info: fig_c4/problem-setting-graph.pdf  used on input line 1
-86.
+87.
 (pdftex.def)             Requested size: 166.84445pt x 199.63953pt.
 [9] [10 <./fig_c4/problem-setting-code.pdf> <./fig_c4/problem-setting-graph.pdf
 
@@ -2509,20 +2509,20 @@ F inclusion: multiple pdfs with page group included in a single page
 <fig_c7/sgxbackground.pdf, id=1038, 479.7925pt x 162.6075pt>
 File: fig_c7/sgxbackground.pdf Graphic file (type pdf)
 <use fig_c7/sgxbackground.pdf>
-Package pdftex.def Info: fig_c7/sgxbackground.pdf  used on input line 292.
+Package pdftex.def Info: fig_c7/sgxbackground.pdf  used on input line 293.
 (pdftex.def)             Requested size: 333.69528pt x 113.095pt.
  [11 <./fig_c7/sgxbackground.pdf>] [12]
 <fig_c7/sgxprogrammingpattern_library.pdf, id=1074, 468.75125pt x 137.51375pt>
 File: fig_c7/sgxprogrammingpattern_library.pdf Graphic file (type pdf)
 <use fig_c7/sgxprogrammingpattern_library.pdf>
 Package pdftex.def Info: fig_c7/sgxprogrammingpattern_library.pdf  used on inpu
-t line 402.
+t line 403.
 (pdftex.def)             Requested size: 375.40321pt x 110.12865pt.
 <fig_c7/sgxprogrammingpattern_static.pdf, id=1075, 468.75125pt x 138.5175pt>
 File: fig_c7/sgxprogrammingpattern_static.pdf Graphic file (type pdf)
 <use fig_c7/sgxprogrammingpattern_static.pdf>
 Package pdftex.def Info: fig_c7/sgxprogrammingpattern_static.pdf  used on input
- line 412.
+ line 413.
 (pdftex.def)             Requested size: 375.40321pt x 110.9325pt.
  [13 <./fig_c7/sgxprogrammingpattern_library.pdf> <./fig_c7/sgxprogrammingpatte
 rn_static.pdf
@@ -2530,7 +2530,7 @@ rn_static.pdf
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c7/sgxprogrammingpattern_static.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
 >])
-Overfull \hbox (6.30376pt too wide) in paragraph at lines 471--454
+Overfull \hbox (6.30376pt too wide) in paragraph at lines 472--454
 \T1/pcr/m/n/10.95 asm_oret\T1/ppl/m/n/10.95 , that re-stores the CPU reg-is-ter
 s af-ter an OCALL. The sec-ond one is \T1/pcr/m/n/10.95 continue 
  []
@@ -3412,7 +3412,7 @@ pe1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (116 pages, 1912143 bytes).
+Output written on main.pdf (116 pages, 1912187 bytes).
 PDF statistics:
  3621 PDF objects out of 4296 (max. 8388607)
  3089 compressed objects within 31 object streams
