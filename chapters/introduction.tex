@@ -213,25 +213,26 @@ Section~\ref{sec:software-guard-extension}.
 %We provide further details of the SGX internals in 
 %Section~\ref{sec:software-guard-extension}.
 
-%% FLAVIO: I guess till here we are kinda ok.
-%% 		   I have to deeply polish from here below.
-
 \section{Problem Statement}
 
-TEE technologies achieve a strong security level mainly thanks to sound
+TEE technologies achieve a strong security level mainly thanks to
 \emph{memory isolation} and \emph{remote attestation}.
-Unfortunately, these properties also introduce new challenges that range from 
-scalability to new type of intrusion.
-Moreover, the current integrity mechanisms mainly focus on static properties 
-(\ie if a piece of code is intact) while advanced solutions only fit embedded 
-systems scenarios.
+Unfortunately, these properties also introduce new challenges. For instance, 
+the total amount of isolated memory is often limited, thus arising 
+scalability issues. Or else, an adversary might mount new type of intrusions 
+due the memory isolation.
+If this happens, detecting threats hidden in trusted regions becomes crucial.
+In addition, the current integrity mechanisms mainly focus on static properties 
+(\ie if a piece of code is intact) while overlooking runtime attacks, and the 
+few advanced solutions existing simply focus on embedded systems.
 In this section, we dig into the main issues that afflict \emph{memory 
 isolation} and \emph{remote attestation}.
 
 \subsection{Memory Isolation}
 
-The \emph{memory isolation} is enforced at hardware level with new CPU opcodes 
-and extra checks at microcode level, thus having an OS independent design.
+An ideal \emph{memory isolation} is enforced at hardware level with new CPU 
+opcodes and extra checks at microcode level, thus having an OS independent 
+design.
 If this property effectively protects against compromised hosts, the isolation 
 also introduces new challenges.
 For instance, we have to handle the interaction between the trusted region and 
@@ -264,6 +265,8 @@ Therefore, this approach does not scale for multiple parallel processes.
 The introduction of SGX $2.0$ allows modifying the size of a single trusted 
 container but it does not modify the maximum memory available for trusted 
 containers.
+Therefore, we require alternative solutions to overcome the scalability issues 
+affecting \emph{trusted regions}.
 
 \vspace{0.5cm}
 \noindent \textbf{TEEs as a nest for new threats.}
@@ -312,6 +315,8 @@ For instance, in case of external intrusion into a remote server running SGX
 enclaves, the adversary could infect an \emph{enclave}, use it to 
 perpetrate actions against the system, and hide her presence behind the 
 \emph{memory isolation}.
+We thus need to understand which conditions lead to these new threats and to 
+what extent they might spread in real scenarios.
 % is also interested in reducing the amount of traces 
 %left; otherwise, analysts may detect the intrusion and act consequently.
 %This is even more critical in case the enclave secret changes and the 
@@ -350,10 +355,9 @@ The main runtime RAs from the literature mainly focus on embedded
 devices~\citep{abera2016c,zeitouni2017atrium,aberadiat,dessouky2017fat,Dessouky:2018:LLH:3240765.3240821}:
 most of them encode the complete execution path of a \emph{Prover} in a single 
 hash~\citep{abera2016c,zeitouni2017atrium,dessouky2017fat}; 
-some~\citep{aberadiat} compress it in a simpler representation and rely on a 
-policy-based verification schema; 
-other ones~\citep{Dessouky:2018:LLH:3240765.3240821} adopt symbolic execution 
-to verify the control-flow information continuously sent by the \emph{Prover}.
+some relies on a policy-based verification schema~\citep{aberadiat}; 
+other ones adopt symbolic execution to verify the control-flow information 
+sent by the \emph{Prover}~\citep{Dessouky:2018:LLH:3240765.3240821}.
 
 Even though the previous solutions result suitable for embedded devices, none 
 of them can be applied to a complex system due to the following reasons: 
@@ -364,9 +368,9 @@ of them can be applied to a complex system due to the following reasons:
 	\item the policy-based approaches might not cover all the possible attacks,
 	\item symbolic execution slows down the verification phase.
 \end{enumerate*}
-%Therefore, we study a new model that tackle these challenges and can represent 
-%complex software in limited space, thus can be adopted in cloud 
-%infrastructures. 
+Therefore, we need a new model that tackles these challenges and can represent 
+complex software in limited space, thus being able to be adopted in cloud 
+infrastructures. 
 %We describe our study in Chapter~\ref{chp:runtime-protection-untrusted}.
 
 \vspace{0.5cm}
@@ -393,10 +397,8 @@ stateless properties, \ie they only model independent executions.  On
 the contrary, TEEs are stateful objects modeled as finite states
 machines (FSM), as described by \cite{costan2016intel}.
 Finally requiring more complex representations.
-%
-%After observing all these limitations, we study a runtime RA that can be
-%employed in SGX enclaves. We describe our study in 
-%Chapter~\ref{chp:runtime-protection-trusted}.
+Considering all these limitations, we need a runtime RA that can be employed in 
+\emph{trusted regions}.
 
 \section{Thesis Contributions}
 

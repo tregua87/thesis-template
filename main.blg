@@ -6,9 +6,9 @@ A level-1 auxiliary file: chapters/introduction.aux
 A level-1 auxiliary file: chapters/background-trusting-computing.aux
 A level-1 auxiliary file: chapters/static-protection.aux
 A level-1 auxiliary file: chapters/new-threats.aux
+A level-1 auxiliary file: chapters/forensic-analysis.aux
 A level-1 auxiliary file: chapters/runtime-protection-untrusted.aux
 A level-1 auxiliary file: chapters/runtime-protection-trusted.aux
-A level-1 auxiliary file: chapters/forensic-analysis.aux
 A level-1 auxiliary file: chapters/conclusion.aux
 A level-1 auxiliary file: appendices/appendix_snakegx0.aux
 A level-1 auxiliary file: appendices/appendix_snakegx1.aux
@@ -28,57 +28,55 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 33217 items from 5000.
+Reallocated field_info (elt_size=4) to 32244 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: biblio.bib
 I was expecting a `,' or a `}'---line 2765 of file biblio.bib
  :  {https://www.ibm.com/blogs/bluemix/2018/05/data-use-protection-ibm-cloud-using-intel-sgx/}
  :                                                                                            ",
 I'm skipping whatever remains of this entry
-Warning--I'm ignoring Murdock2019plundervolt's extra "booktitle" field
---line 2896 of file biblio.bib
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 203 entries,
+You've used 196 entries,
             6268 wiz_defined-function locations,
-            2324 strings with 58113 characters,
-and the built_in function-call counts, 1340214 in all, are:
-= -- 94541
-> -- 24389
-< -- 7023
-+ -- 35660
-- -- 9035
-* -- 102172
-:= -- 137458
+            2280 strings with 56456 characters,
+and the built_in function-call counts, 1298346 in all, are:
+= -- 91706
+> -- 23634
+< -- 6828
++ -- 34585
+- -- 8759
+* -- 98977
+:= -- 133194
 add.period$ -- 0
-call.type$ -- 203
-change.case$ -- 4062
-chr.to.int$ -- 117
-cite$ -- 404
-duplicate$ -- 150570
-empty$ -- 121852
-format.name$ -- 16037
-if$ -- 271715
+call.type$ -- 196
+change.case$ -- 3957
+chr.to.int$ -- 111
+cite$ -- 390
+duplicate$ -- 145754
+empty$ -- 117926
+format.name$ -- 15520
+if$ -- 263252
 int.to.chr$ -- 0
-int.to.str$ -- 635
+int.to.str$ -- 613
 missing$ -- 0
-newline$ -- 8436
-num.names$ -- 10795
-pop$ -- 72136
+newline$ -- 8155
+num.names$ -- 10455
+pop$ -- 69676
 preamble$ -- 1
-purify$ -- 5535
+purify$ -- 5385
 quote$ -- 0
-skip$ -- 38469
+skip$ -- 37264
 stack$ -- 0
-substring$ -- 153467
-swap$ -- 37069
-text.length$ -- 5658
-text.prefix$ -- 207
+substring$ -- 148968
+swap$ -- 35865
+text.length$ -- 5478
+text.prefix$ -- 199
 top$ -- 1
-type$ -- 6889
+type$ -- 6651
 warning$ -- 0
-while$ -- 17444
+while$ -- 16886
 width$ -- 0
-write$ -- 8234
+write$ -- 7960
 (There was 1 error message)

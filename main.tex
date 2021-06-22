@@ -44,7 +44,8 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{palatino} % Use the Palatino font by default
 
-\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % User the bibtex backend with the authoryear citation style (which resembles APA)
+\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % User the 
+%bibtex backend with the authoryear citation style (which resembles APA)
 
 \addbibresource{biblio.bib} % The filename of the bibliography
 
@@ -62,6 +63,11 @@ headsepline, % Uncomment to get a line under the header
 		shape=circle,draw,inner sep=0.5pt,color=white,fill=red] (char) {#1};}}
 
 \usepackage{subcaption}
+
+\hypersetup{%
+	colorlinks = true,
+	linkcolor  = black
+}
 
 \usepackage{tikz}
 \def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) 

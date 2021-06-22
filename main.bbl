@@ -241,88 +241,6 @@
     \field{year}{2019}
   \endentry
 
-  \entry{AKHUNZADA201544}{article}{}
-    \name{author}{9}{}{%
-      {{hash=AA}{%
-         family={Akhunzada},
-         familyi={A\bibinitperiod},
-         given={Adnan},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Sookhak},
-         familyi={S\bibinitperiod},
-         given={Mehdi},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=ANB}{%
-         family={Anuar},
-         familyi={A\bibinitperiod},
-         given={Nor\bibnamedelima Badrul},
-         giveni={N\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-      {{hash=GA}{%
-         family={Gani},
-         familyi={G\bibinitperiod},
-         given={Abdullah},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=AE}{%
-         family={Ahmed},
-         familyi={A\bibinitperiod},
-         given={Ejaz},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Shiraz},
-         familyi={S\bibinitperiod},
-         given={Muhammad},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=FS}{%
-         family={Furnell},
-         familyi={F\bibinitperiod},
-         given={Steven},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=HA}{%
-         family={Hayat},
-         familyi={H\bibinitperiod},
-         given={Amir},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=KMK}{%
-         family={Khan},
-         familyi={K\bibinitperiod},
-         given={Muhammad\bibnamedelima Khurram},
-         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
-      }}%
-    }
-    \keyw{Man-At-The-End, Software protection, Information security, Digital
-  rights management, Digital assets, Distributed software systems}
-    \strng{namehash}{AA+1}
-    \strng{fullhash}{AASMANBGAAESMFSHAKMK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2015}
-    \field{labeldatesource}{year}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \verb{doi}
-    \verb https://doi.org/10.1016/j.jnca.2014.10.009
-    \endverb
-    \field{issn}{1084-8045}
-    \field{pages}{44 \bibrangedash  57}
-    \field{title}{Man-At-The-End attacks: Analysis, taxonomy, human aspects,
-  motivation and future directions}
-    \verb{url}
-    \verb http://www.sciencedirect.com/science/article/pii/S1084804514002379
-    \endverb
-    \field{volume}{48}
-    \field{journaltitle}{Journal of Network and Computer Applications}
-    \field{year}{2015}
-  \endentry
-
   \entry{alibabasgx}{misc}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -386,51 +304,6 @@
     \field{title}{Innovative technology for CPU based attestation and sealing}
     \field{volume}{13}
     \field{year}{2013}
-  \endentry
-
-  \entry{apple-enclave}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=A}{%
-         family={Apple},
-         familyi={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{A2}
-    \strng{fullhash}{A2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2016}
-    \field{labeldatesource}{year}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{note}{Last visit may 2021}
-    \field{title}{Secure Enclave}
-    \verb{url}
-    \verb https://support.apple.com/en-sg/guide/security/sec59b0b31ff/web
-    \endverb
-    \field{year}{2016}
-  \endentry
-
-  \entry{arm-trustzone}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=A}{%
-         family={ARM},
-         familyi={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{A3}
-    \strng{fullhash}{A3}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{labeldatesource}{year}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{title}{ARM TrustZone}
-    \verb{url}
-    \verb https://www.arm.com/products/security-on-arm/trustzone
-    \endverb
-    \field{year}{2017}
   \endentry
 
   \entry{arnautov2016scone}{inproceedings}{}
@@ -792,8 +665,8 @@
          familyi={A\bibinitperiod},
       }}%
     }
-    \strng{namehash}{A4}
-    \strng{fullhash}{A4}
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2006}
@@ -815,8 +688,8 @@
          familyi={A\bibinitperiod},
       }}%
     }
-    \strng{namehash}{A4}
-    \strng{fullhash}{A4}
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
@@ -1685,53 +1558,6 @@
     \verb urity/top-cloud-security-issues-threats-and-concerns/
     \endverb
     \field{year}{2020}
-  \endentry
-
-  \entry{iagoattack}{article}{}
-    \name{author}{2}{}{%
-      {{hash=CS}{%
-         family={Checkoway},
-         familyi={C\bibinitperiod},
-         given={Stephen},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=SH}{%
-         family={Shacham},
-         familyi={S\bibinitperiod},
-         given={Hovav},
-         giveni={H\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {ACM}%
-    }
-    \keyw{iago attacks, overshadow, system call}
-    \strng{namehash}{CSSH1}
-    \strng{fullhash}{CSSH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2013}
-    \field{labeldatesource}{year}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \verb{doi}
-    \verb 10.1145/2490301.2451145
-    \endverb
-    \field{issn}{0163-5964}
-    \field{number}{1}
-    \field{pages}{253\bibrangedash 264}
-    \field{title}{Iago Attacks: Why the System Call API is a Bad Untrusted RPC
-  Interface}
-    \verb{url}
-    \verb http://doi.acm.org/10.1145/2490301.2451145
-    \endverb
-    \field{volume}{41}
-    \list{location}{1}{%
-      {New York, NY, USA}%
-    }
-    \field{journaltitle}{SIGARCH Comput. Archit. News}
-    \field{month}{03}
-    \field{year}{2013}
   \endentry
 
   \entry{chen2016advanced}{inproceedings}{}
@@ -3063,28 +2889,6 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
-  \entry{greene2012intel}{article}{}
-    \name{author}{1}{}{%
-      {{hash=GJ}{%
-         family={Greene},
-         familyi={G\bibinitperiod},
-         given={J},
-         giveni={J},
-      }}%
-    }
-    \strng{namehash}{GJ1}
-    \strng{fullhash}{GJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2012}
-    \field{labeldatesource}{year}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{title}{Intel Trusted Execution Technology (white paper)}
-    \field{journaltitle}{Online: http://www. intel. com/txt}
-    \field{year}{2012}
-  \endentry
-
   \entry{5958048}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=GD}{%
@@ -3297,51 +3101,6 @@
     \field{journaltitle}{ACM Comput. Surv.}
     \field{month}{04}
     \field{year}{2019}
-  \endentry
-
-  \entry{horne2001dynamic}{inproceedings}{}
-    \name{author}{4}{}{%
-      {{hash=HB}{%
-         family={Horne},
-         familyi={H\bibinitperiod},
-         given={Bill},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=ML}{%
-         family={Matheson},
-         familyi={M\bibinitperiod},
-         given={Lesley},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=SC}{%
-         family={Sheehan},
-         familyi={S\bibinitperiod},
-         given={Casey},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=TRE}{%
-         family={Tarjan},
-         familyi={T\bibinitperiod},
-         given={Robert\bibnamedelima E},
-         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{HB+1}
-    \strng{fullhash}{HBMLSCTRE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2001}
-    \field{labeldatesource}{year}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{booktitle}{ACM Workshop on Digital Rights Management}
-    \field{pages}{141\bibrangedash 159}
-    \field{title}{Dynamic self-checking techniques for improved tamper
-  resistance}
-    \field{year}{2001}
   \endentry
 
   \entry{horstmeyer2013physical}{article}{}
@@ -5057,52 +4816,6 @@
     \field{note}{Last access February 2021}
     \field{title}{Open Enclave SDK}
     \field{year}{2019}
-  \endentry
-
-  \entry{amdsev}{inproceedings}{}
-    \name{author}{4}{}{%
-      {{hash=MS}{%
-         family={Mofrad},
-         familyi={M\bibinitperiod},
-         given={Saeid},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=ZF}{%
-         family={Zhang},
-         familyi={Z\bibinitperiod},
-         given={Fengwei},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=LS}{%
-         family={Lu},
-         familyi={L\bibinitperiod},
-         given={Shiyong},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=SW}{%
-         family={Shi},
-         familyi={S\bibinitperiod},
-         given={Weidong},
-         giveni={W\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {ACM}%
-    }
-    \strng{namehash}{MS+1}
-    \strng{fullhash}{MSZFLSSW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2018}
-    \field{labeldatesource}{year}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{booktitle}{Proceedings of the 7th International Workshop on Hardware
-  and Architectural Support for Security and Privacy}
-    \field{pages}{9}
-    \field{title}{A comparison study of intel SGX and AMD memory encryption
-  technology}
-    \field{year}{2018}
   \endentry
 
   \entry{moghimi2017cachezoom}{inproceedings}{}
