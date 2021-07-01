@@ -981,7 +981,7 @@ It is possible to perform many context-switch by tuning the payload accordingly.
 
 In this section, we discuss the implementation details of our proof-of-concept.
 We first describe the code-reuse technique used 
-(Section~\ref{ssec:my-rop-chain}), then we focus on a the ROP chain used for 
+(Section~\ref{ssec:my-rop-chain}), then we focus on a the ROP chain for the
 conditional jumps (Section~\ref{app:condition-gadget}) and the context-switch 
 (Section~\ref{app:context-switch-chain}).
 
@@ -1195,8 +1195,8 @@ ctxPc[7].cpu_context.rip = &enclu;\end{lstlisting}
 %\label{fig:context-switch-trusted-chain}
 %\end{figure}
 
-Details of the outside ROP-chains used to resume 
-payload inside the enclave.
+\noindent 
+Details of the outside ROP-chains used to resume payload inside the enclave.
 %\begin{figure}[h]
 \begin{lstlisting}[style=CStyle,escapechar=@]
 /* ...previous gadgets for shipping the password remotely... */
