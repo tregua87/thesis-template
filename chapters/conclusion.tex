@@ -1,3 +1,116 @@
-\chapter{Conclusion}
+\chapter{Discussion and Conclusion}
+\label{chp:conclusion}
 
-These are the conclusions.
+In the last years, Trusted Execution Environments grown in importance due to 
+their application in cloud infrastructures.
+These technologies allow one to define \emph{trusted regions} that benefit of 
+either \emph{memory isolation} and \emph{remote attestation}.
+The former ensures the content of a \emph{trusted region} is shield even 
+against a fully compromised environment.
+The latter, instead, is a cryptographic protocol that enables a third party to 
+talk with a specific \emph{trusted region} correctly bootstrapped.
+Regardless the new security achievements of these technologies, TEEs still 
+suffer from scalability issues. 
+Moreover, they alone cover only a subset of the attack vectors that could 
+appear in a real scenario.
+		
+In this thesis, we investigated the limitations that affect \emph{memory 
+isolation} and \emph{remote attestation}, studied possible new threats, and 
+proposed novel solutions to improve their security guarantees.
+For what concerns \emph{memory isolation}, we discussed its 
+scalability issue. Then, we investigated new intrusion techniques that exploit 
+a \emph{trusted region}.
+Finally, we investigated memory forensic techniques to aid incident response 
+analysis in TEE machines.
+In terms of \emph{remote attestation}, instead, we studied new models that 
+capture runtime properties, overcome scalability issues, and propose new 
+protocols that can protect advanced TEE modules.
+
+\todo{something about the state of the art?}
+
+In Chapter~\ref{chp:static-protection}, we proposed a software design that 
+overcome memory isolation limitations. It combines novel anti-tampering 
+techniques that leverages trusted computing technologies.
+We achieved this by adopting a packing strategy that is similar to the one used 
+by malware to hide its functionality.
+Our approach forces a program to call trusted functions in order to be executed 
+properly (by unpacking a piece of software from a trusted container). 
+We implemented a proof-of-concept prototype of our technique by using Intel 
+Software Guard eXtension (SGX) technology.
+We illustrated our approach by protecting an agent that was designed to collect 
+user's event and ship them to a central server.
+Through this implementation, we showed how our architecture can guarantee 
+further security properties such as a secure installation and a continuous 
+client monitoring. Using our prototype, we measured the overhead in terms of 
+lines of code (less than $10$ lines), execution time (on average $5.7\%$ more), 
+and space required for the trusted container ($300KB$).
+To sum up, our approach results in a scalable and software protection solution 
+that overcomes TEE intrinsic limitations.
+
+In Chapter~\ref{chp:advanced-threats}, we explored new threats that take 
+advantage of the \emph{memory isolation} from modern TEEs.
+Specifically, we proposed a new stealthy code-reuse attack that minimizes 
+its presence against a healthy OS.
+Our intuition is to implant a backdoor inside the victim \emph{trusted region}.
+Consequently, an adversary just needs a minimal trigger without repeating the 
+attack from scratch.
+We implemented our idea in SnakeGX, which is a framework to install 
+backdoors in SGX enclaves that behave like additional secure functions.
+SnakeGX extends and adapts to the strict SGX environment the concepts of 
+data-only malware \citep{vogl2014persistent}.
+In particular, SnakeGX has a reliable context-switch mechanism based 
+on a newly discovered design error of the Intel Software Development Kit 
+for SGX, which we reported to Intel.
+We evaluated our findings against StealthDB, an open-source project that 
+implements an encrypted database.
+Our experiments show that we can reduce the memory footprint of the payload
+while preserving the enclave functionality.
+Finally, we released an open-source version of our proof-of-concept for the 
+community.
+
+In Chapter~\ref{chp:forensic}, \todo{\dots}
+
+In Chapter~\ref{chp:runtime-protection-untrusted}, we proposed ScaRR, the first 
+schema that enables runtime RA for complex systems to detect control-flow 
+attacks generated in user-space.
+ScaRR relies on a novel control-flow model that allows to:
+\begin{enumerate*}[label=(\roman*)]
+	\item apply runtime RA on any software regardless of its complexity,
+	\item have intermediate verification of the monitored program, and
+	\item obtain a more fine-grained report of an incoming attack.
+\end{enumerate*}
+We developed ScaRR and evaluated its performance against the set of tools of 
+the SPEC CPU 2017 suite.
+As a result, ScaRR outperforms existing solutions for runtime RA on complex 
+systems in terms of attestation and verification speed, while guaranteeing a 
+limited network traffic.
+Future works include: investigating techniques to extract more precise CFG, 
+facing compromised operating systems, and studying new verification methods for 
+partial reports.
+
+In Chapter~\ref{chp:runtime-protection-trusted}, we proposed SgxMonitor, a 
+novel remote attestation anomaly detection schema for SGX enclaves. As enclaves 
+are designed to secure code that performs specific security- and 
+privacy-sensitive tasks, SgxMonitor relies on a combination of symbolic 
+execution and static analysis to model the expected behavior of enclaves with 
+high code coverage and low false positives.  
+We assessed SgxMonitor across four real use cases (\ie \textsf{Contact}, 
+\textsf{StealthDB}, \textsf{libdvdcss}, \textsf{SGX-Biniax2}) and a 
+\textsf{unit test} to validate enclave's corner cases. SgxMonitor overhead is 
+comparable to the state-of-the-art of remote attestations (a median of $260$K
+\emph{action}/s), whereas its macro-benchmark overhead and high precision
+with $96$\% code coverage and zero false positives support SgxMonitor in 
+realistic deployments to detect anomalous runtime executions of SGX enclaves.
+
+\todo{mind pippe about research community and industry to collaborate and find 
+new threats and more efficient solutions. Give an idea of what these ideas 
+could be.}
+
+\todo{talk about extension of my works, for instance, careful-packing also for 
+confidentiality, snakegx entirely automatic or for other technologies 
+(TrustZone). New techniques for memory forensic (??). Also rRA at hardware 
+level, few concepts for embedding sys but not enough for real scenarios.}
+
+\todo{final sum up, what the works do and in what fields they fall.}
+
+

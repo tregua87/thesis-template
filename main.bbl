@@ -3786,6 +3786,56 @@
     \field{year}{2015}
   \endentry
 
+  \entry{thoughs-on-intel1}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=JR}{%
+         family={Joanna},
+         familyi={J\bibinitperiod},
+         given={Rutkowska},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JR1}
+    \strng{fullhash}{JR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{extradate}{1}
+    \field{labeldatesource}{year}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+  \field{howpublished}{\url{http://theinvisiblethings.blogspot.com/2013/08/thoughts-on-intels-upcoming-software.html}}
+    \field{note}{Last access November 2018}
+    \field{title}{Thoughts on Intel's upcoming Software Guard Extensions (Part
+  1)}
+    \field{year}{2013}
+  \endentry
+
+  \entry{thoughs-on-intel2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=JR}{%
+         family={Joanna},
+         familyi={J\bibinitperiod},
+         given={Rutkowska},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JR1}
+    \strng{fullhash}{JR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{extradate}{2}
+    \field{labeldatesource}{year}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+  \field{howpublished}{\url{http://theinvisiblethings.blogspot.com/2013/09/thoughts-on-intels-upcoming-software.html}}
+    \field{note}{Last access November 2018}
+    \field{title}{Thoughts on Intel's upcoming Software Guard Extensions (Part
+  2)}
+    \field{year}{2013}
+  \endentry
+
   \entry{cfslinux}{misc}{}
     \name{author}{1}{}{%
       {{hash=K}{%
@@ -4584,73 +4634,6 @@
     }
     \field{year}{2018}
     \warn{\item Can't use 'location' + 'address'}
-  \endentry
-
-  \entry{maurice2017hello}{inproceedings}{}
-    \name{author}{8}{}{%
-      {{hash=MC}{%
-         family={Maurice},
-         familyi={M\bibinitperiod},
-         given={Cl{\'e}mentine},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=WM}{%
-         family={Weber},
-         familyi={W\bibinitperiod},
-         given={Manuel},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Schwarz},
-         familyi={S\bibinitperiod},
-         given={Michael},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=GL}{%
-         family={Giner},
-         familyi={G\bibinitperiod},
-         given={Lukas},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=GD}{%
-         family={Gruss},
-         familyi={G\bibinitperiod},
-         given={Daniel},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=BCA}{%
-         family={Boano},
-         familyi={B\bibinitperiod},
-         given={Carlo\bibnamedelima Alberto},
-         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=MS}{%
-         family={Mangard},
-         familyi={M\bibinitperiod},
-         given={Stefan},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=RK}{%
-         family={R{\"o}mer},
-         familyi={R\bibinitperiod},
-         given={Kay},
-         giveni={K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MC+1}
-    \strng{fullhash}{MCWMSMGLGDBCAMSRK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{labeldatesource}{year}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{booktitle}{NDSS}
-    \field{pages}{8\bibrangedash 11}
-    \field{title}{Hello from the Other Side: SSH over Robust Cache Covert
-  Channels in the Cloud.}
-    \field{volume}{17}
-    \field{year}{2017}
   \endentry
 
   \entry{asop}{misc}{}
@@ -5946,6 +5929,124 @@
     \field{pages}{38\bibrangedash 54}
     \field{title}{VC3: Trustworthy data analytics in the cloud using SGX}
     \field{year}{2015}
+  \endentry
+
+  \entry{sgxrop}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SM}{%
+         family={Schwarz},
+         familyi={S\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Weiser},
+         familyi={W\bibinitperiod},
+         given={Samuel},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Gruss},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{SMWSGD1}
+    \strng{fullhash}{SMWSGD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{International Conference on Detection of Intrusions and
+  Malware, and Vulnerability Assessment}
+    \field{pages}{177\bibrangedash 196}
+    \field{title}{Practical enclave malware with Intel SGX}
+    \field{year}{2019}
+  \endentry
+
+  \entry{sgxsidechannel}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=SM}{%
+         family={Schwarz},
+         familyi={S\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Weiser},
+         familyi={W\bibinitperiod},
+         given={Samuel},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Gruss},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Maurice},
+         familyi={M\bibinitperiod},
+         given={Cl{\'e}mentine},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mangard},
+         familyi={M\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=PM}{%
+         family={Polychronakis},
+         familyi={P\bibinitperiod},
+         given={Michalis},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Meier},
+         familyi={M\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \strng{namehash}{SM+1}
+    \strng{fullhash}{SMWSGDMCMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    In modern computer systems, user processes are isolated from each other by
+  the operating system and the hardware. Additionally, in a cloud scenario it
+  is crucial that the hypervisor isolates tenants from other tenants that are
+  co-located on the same physical machine. However, the hypervisor does not
+  protect tenants against the cloud provider and thus the supplied operating
+  system and hardware. Intel SGX provides a mechanism that addresses this
+  scenario. It aims at protecting user-level software from attacks from other
+  processes, the operating system, and even physical attackers.%
+    }
+    \field{booktitle}{Detection of Intrusions and Malware, and Vulnerability
+  Assessment}
+    \field{isbn}{978-3-319-60876-1}
+    \field{pages}{3\bibrangedash 24}
+    \field{title}{Malware Guard Extension: Using SGX to Conceal Cache Attacks}
+    \list{location}{1}{%
+      {Cham}%
+    }
+    \field{year}{2017}
   \endentry
 
   \entry{seo2017sgx}{inproceedings}{}

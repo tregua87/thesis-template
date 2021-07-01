@@ -12,12 +12,12 @@ To have a glance about the magnitude of their business, the second quarter of
 2020 showed a growth of $62$\% of Azure respect the same period in the 
 previous year, with investments of $79.9$M USD, $78$M 
 USD, and $76.7$M USD from Verizon, MSI Computer, and LG Electronics, 
-respectively~\citep{azure_business}.
-We can observer similar figures in Amazon AWS services, that declared $1$M of 
-active users in 2020, with $18$M USD invested by Netflix in the same 
-year~\citep{aws_business}.
-Still in 2020, $786$ tech companies choose GCP for their 
-businesses~\citep{google_business}.
+respectively \citep{azure_business}.
+We can observer similar figures in Amazon AWS services, that observed a net 
+sales growth from $17.5$B USD in 2018 to $25.5$B USD in 2019, reaching $1$M of 
+active users in 2020 \citep{aws_business}.
+In 2019 fiscal-year, GCP showed a growth of $153$\%, while $786$ tech companies 
+choose this provider for their businesses in 2020 \citep{google_business}.
 
 The widespread of cloud computing technologies arose the attention of security
 experts concerning the protections of third part 
@@ -28,18 +28,16 @@ Such problems reveal to be even more critical when considering that a huge part
 of could infrastructures (\ie the host machines) are out of the companies 
 control.
 In this scenario, leaving part of the control to the could provider means 
-trusting that a list of issues are already addressed at vendor side (\eg Azure 
-or AWS).
+trusting the vendor (\eg Azure or AWS) can ensure a certain security standard.
 The risks are various, for instance, the cloud provider might suffer 
-of insider threats, \eg a GCP's system admin could record the network traffic, 
-access to the user's data, or tamper with the 
-virtual machines (VM) themselves~\citep{insider_threat}.
-Moreover, recent works showed that two VMs, 
-sharing the same host, can exchange information solely relying on the CPU 
-cache~\citep{maurice2017hello}. This means that a VM can carry attacks 
-toward other VMs on the same host.
+from insider threats, \eg a GCP's system admin could record the network 
+traffic, access to the user's data, or tamper with the virtual machines (VM) 
+themselves~\citep{insider_threat}.
+%Moreover, recent works showed that two VMs, sharing the same host, can 
+%exchange information solely relying on the CPU cache~\citep{maurice2017hello}. 
+%This means that a VM can carry out attacks toward other VMs on the same host.
 
-Cloud infrastructure' security risks also impact to the final 
+The security risks of cloud infrastructures also impact the final 
 user. In fact, a remote client (\eg a smartphone) has no guarantees to 
 communicate with the the correct software in the remote 
 VM~\citep{beekman2016attestation}, \eg a malicious hypervisor may manipulate 
@@ -73,11 +71,10 @@ computation, thus incompatible with fast response
 applications~\citep{10.1145/2046660.2046682}.
 %
 An additional source of threat is represented by classic exploitation 
-techniques that may penetrate the system perimeter.
+techniques that may allow a penetration through the system perimeter.
 In this scenario, an adversary may target error-prone services exposed over the 
-Internet, take control of the
-machines~\citep{van2012memory,10.1145/2810103.2813646}, and finally infecting 
-the system.
+Internet, take control of the machines, and finally infecting the system 
+\citep{van2012memory,10.1145/2810103.2813646}.
 
 %\section{Trusted Execution Environment}
 
@@ -92,39 +89,39 @@ the system.
 For tackling the aforementioned challenges, a promises direction is 
 represented by Trusted Execution Environments (TEE).
 Intuitively, TEEs are sub-systems, whose functioning remembers virtual 
-machines, that use strict hardware checks to isolate their content against 
+machines, that use hardware checks to isolate sensitive content against 
 untrusted environments.
 %\todo{Definition of TEE and usage. Properties, memory isolation, and remote 
 %attestation.}
 %\todo{History of TEEs, first definition, standard used, etc. During the 
 %	description, stay "high level" and recall properties and differences. This 
 %	should give a context.} 
-Figure~\ref{fig:sgx-architecture} shows a simplified design of a TEE, in which 
-the main CPU represents the primary source of 
-trust, and enable a user to define \emph{trusted memory regions} in the main 
-memory (RAM)~\citep{Sabt2015TrustedEE}.
-Historically, the first formal definition of TEE has been proposed by OMTP, 
-whose design was mainly focused on mobile platforms~\citep{omtp}.
+Figure~\ref{fig:sgx-architecture} shows a simplified design of a TEE.
+Here, the main CPU represents the primary source of trust and enables a user to 
+define \emph{trusted memory regions} in the main memory 
+(RAM)~\citep{Sabt2015TrustedEE}.
+Historically, the first formal definition of TEE has been proposed by 
+\cite{omtp}, that mainly focused on mobile platforms (\eg smartphones).
 OMTP defines a list of properties that a TEE should fulfill, among them, this 
 thesis will trait the \emph{memory isolation} and the \emph{remote attestation}.
 The main purpose of the \emph{memory isolation} is to shield code and data such 
 that even a compromised machine cannot alter its integrity and confidentiality.
 In particular, the \emph{memory isolation} must prevent tampering from any 
 sources at any privilege level, \eg it must avoid writing and reading 
-operations from the operating system, the SMM code~\citep{yao2009system}, and 
-DMA transfers~\citep{coke1998implementing}.
+operations from the operating system, system management mode 
+code~\citep{yao2009system}, and direct memory 
+access~\citep{coke1998implementing}.
 The \emph{remote attestation}, instead, guarantees that a third party (\eg a 
-smartphone) can verify the integrity of a remote memory region (\eg a 
-Web service).
+smartphone) can verify the integrity of a remote entity (\eg a Web service).
 This ensures that a client is communicating with the intended portion of code 
-and machine (usually represented by the CPU).
+and machine, this latter usually represented by a CPU ID.
 The combination of \emph{memory isolation} and \emph{remote attestation} leads 
 to a new range of properties in the cloud environments, \ie a company 
 can use the \emph{memory isolation} to protect critical piece of 
-software and data from insiders, a compromised host, or even other VMs sharing 
-the same resources.
+software and data from insiders or a compromised host.
+%, or even other VMs sharing the same resources.
 In addition, the \emph{remote attestation} allows one to establish 
-end-to-end secure channels without the support of the OS, thus avoiding the 
+end-to-end secure channels without the need of a trusted OS, thus avoiding the 
 leak of cryptographic material.
 In addition, the TEEs can use attestation to seal data on non-volatile storage 
 (\ie encrypt and decrypt) such that nobody but the original \emph{trusted 
@@ -136,9 +133,9 @@ Moreover, TPMs do not provide memory isolation, can only store limited
 cryptographic material (\eg keys), and expose a limited number functionalities 
 already wired in the module by the vendor
 (\eg random number generation or cryptographic primitives).
-On the contrary, TEEs are meant to contain general purpose software that might 
+On the contrary, TEEs contain general purpose software that might 
 interact with the peripherals.
-We detail the TEE background in Chapter~\ref{chp:background}.
+We provide a detailed TEE background in Chapter~\ref{chp:background}.
 %\todo{introduce SGX at least a little bit, because I am gonna cite it later 
 %on.}
 
@@ -176,7 +173,7 @@ adapted for others TEEs.
 SGX calls its \emph{memory regions} as \emph{enclaves}, that reside in 
 user-space, and provides a \emph{remote attestation} to validate the correct 
 \emph{enclave} initialization.
-We provide further details of the SGX internals in 
+We provide further details about SGX in 
 Section~\ref{sec:software-guard-extension}.
 
 
@@ -217,15 +214,24 @@ Section~\ref{sec:software-guard-extension}.
 
 TEE technologies achieve a strong security level mainly thanks to
 \emph{memory isolation} and \emph{remote attestation}.
-Unfortunately, these properties also introduce new challenges. For instance, 
-the total amount of isolated memory is often limited, thus arising 
-scalability issues. Or else, an adversary might mount new type of intrusions 
-due the memory isolation.
+At firs sight, these properties might appear as the final solution for 
+cloud provider security: the former entrusts confidentiality and integrity by 
+design, while the latter allows secure communication channels.
+Unfortunately, as common with new technology, their adoption stimulated 
+adversaries to develop new intrusion techniques.
+Moreover, these properties suffer from technical limitations that require 
+researchers to overcome new challenges.
+For instance, TEEs often provide a limited amount of isolated memory, thus 
+arising scalability issues.
+Or else, an adversary may take advantage of the memory isolation to develop new 
+intrusion techniques.
 If this happens, detecting threats hidden in trusted regions becomes crucial.
-In addition, the current integrity mechanisms mainly focus on static properties 
-(\ie if a piece of code is intact) while overlooking runtime attacks, and the 
-few advanced solutions existing simply focus on embedded systems.
-In this section, we dig into the main issues that afflict \emph{memory 
+In addition, the current integrity mechanisms are limited to static properties 
+(\ie if a piece of code is intact) while overlooking runtime attacks (\eg 
+code-reuse ones).
+Only few recent solutions investigated such threats, but their design is 
+limited to embedded systems.
+This section digs into the main issues that afflict \emph{memory 
 isolation} and \emph{remote attestation}.
 
 \subsection{Memory Isolation}
@@ -235,9 +241,10 @@ opcodes and extra checks at microcode level, thus having an OS independent
 design.
 If this property effectively protects against compromised hosts, the isolation 
 also introduces new challenges.
-For instance, we have to handle the interaction between the trusted region and 
-the external word (\eg to write a file), or else, these un-observable portions 
-of memory may help an adversary to hide its presence in the machine.
+For instance, handling the interaction between the trusted region and 
+the external word (\eg to write a file) assumes a new programming patter.
+From the security perspective, un-observable portions of memory may help an 
+adversary to hide its presence in the machine.
 In the following, we elaborate these limitations of \emph{memory isolation}.
 
 \vspace{0.5cm}
@@ -324,14 +331,28 @@ what extent they might spread in real scenarios.
 
 \vspace{0.5cm}
 \noindent \textbf{Incident investigation issues.}
-\todo{coming soon \dots}
-
+The strong isolation provided by TEE technologies is a double-edged
+sword --- protecting legitimate code from untrusted environments,
+but also preventing security tools from inspecting the memory and performing
+forensic investigations. 
+As a result, both researchers and malware developers have also investigated how 
+to exploit TEEs for malicious purposes 
+\citep{thoughs-on-intel1,thoughs-on-intel2,sgxrop,snakegx,sgxsidechannel}.
+Even though code running in a \emph{trusted region} cannot be retrieved and 
+analyzed, other artifacts may be present in unprotected memory, thus allowing 
+an investigator to infer certain properties of what is running inside the 
+protected space.
+In fact, a \emph{trusted region} cannot be completely self-contained, as it 
+always needs some external support code to interact with the rest of the 
+environment.
+However, to the best of our knowledge, no study has been performed to date on 
+the consequences of TEEs on memory forensics.
 
 \subsection{Remote Attestation}
 
 In standard Remote Attestation (RA) schemes, usually defined as static, the 
 \emph{Prover} verifies the integrity of specific hardware and 
-software properties (\eg the \emph{Prover} has loaded the correct software).
+software properties -- the \emph{Prover} has loaded the correct software.
 %On the market, there are already several available products implementing 
 %static RA, such as Software Guard Extensions (SGX)~\citep{costan2016intel} or 
 %Trusted Platform Module (TPM)~\citep{tomlinson2017introduction}.
@@ -339,10 +360,10 @@ Intuitively, these do not protect against runtime attacks (\eg the
 control-flow ones) that aim to modify the program runtime behaviour. 
 Therefore, to identify \emph{Prover} runtime modifications, researchers 
 proposed runtime RA.
-In the literature, it is common to assume that a runtime RA relies on a 
-\emph{trusted region} to track events from an application, that might also 
-reside in the \emph{untrusted region}, and consider the TEE as out of the 
-attacker range.
+In the literature, a common runtime RA assumption is to rely on a \emph{trusted 
+region} to track events from an application, this latter might also reside in 
+the \emph{untrusted region}, while the \emph{trusted region} is considered as 
+out of the attacker range.
 Unfortunately, the current runtime RAs show some limitations.
 %Among the different solutions belonging to this category, 
 %there are also the control-flow attestation approaches, which
@@ -355,7 +376,7 @@ The main runtime RAs from the literature mainly focus on embedded
 devices~\citep{abera2016c,zeitouni2017atrium,aberadiat,dessouky2017fat,Dessouky:2018:LLH:3240765.3240821}:
 most of them encode the complete execution path of a \emph{Prover} in a single 
 hash~\citep{abera2016c,zeitouni2017atrium,dessouky2017fat}; 
-some relies on a policy-based verification schema~\citep{aberadiat}; 
+some relies on a policy-based verification schema~\citep{aberadiat}; and0
 other ones adopt symbolic execution to verify the control-flow information 
 sent by the \emph{Prover}~\citep{Dessouky:2018:LLH:3240765.3240821}.
 
@@ -409,28 +430,28 @@ Considering all these limitations, we need a runtime RA that can be employed in
 	\label{fig:contribution}
 \end{figure}
 
-%\textbf{MY THESIS OBJECTIVE:}
 Regardless the security guarantees achieved by TEEs, their design still 
 suffers from important limitations.
+The object of this thesis is
+%% THESIS OBJECTIVE - FIRST VERSION
 In this thesis, we argue we can improve the TEE security level
-%(and in particular of the SGX ones)
-through a shrewd software design without the need 
-of changing the hardware specification.
+through a shrewd software design without the need of changing the hardware 
+specification.
 Specifically, we identify five main challenges to investigate and for each of 
 them we propose specific contributions.
 %The thesis will describe five contributions in total that will 
 %address four aspect of SGX. 
 The whole thesis contribution is depicted in 
-Figure~\ref{fig:contribution}, that we first summarize in the following part 
-and then further elaborate in dedicated chapters.
+Figure~\ref{fig:contribution}, that we summarize here and further elaborate in 
+dedicated chapters.
 
 \begin{itemize}
 	\item[\circledrA{1}] \textbf{Extend Memory Isolation.}
-	In a TEE machines, usually the space for trusted memory regions is bounded 
+	In TEE machines, usually the space for trusted memory regions is bounded 
 	to few mega bytes. 
 	This affects the amount of critical content that can be protected 	
 	contemporaneously.
-	In Chapter~\ref{chp:static-protection}, we study new a software design that 
+	In Chapter~\ref{chp:static-protection}, we study a new software design that 
 	stretches the TEE \emph{memory isolation} over vaster memory areas while 
 	keeping a limited overhead.
 %	This is depicted by the symbol \circledr[1] in 
@@ -482,6 +503,30 @@ and then further elaborate in dedicated chapters.
 	
 %	This is depicted by the symbol \circledr[5] in 	
 %	Figure~\ref{fig:contribution}.
+\end{itemize}
+
+\section{Outline}
+\label{sec:outline}
+
+In this section, we outline the thesis structure.
+
+\begin{itemize}
+	\item \todo{\textbf{Chapter~XX:} I would like to put a related work chapter 
+	here}.
+	\item \textbf{Chapter~\ref{chp:background}:} We provide background 
+	knowledge about TEEs and the main attack vectors discussed in the thesis.
+	\item \textbf{Chapter~\ref{chp:static-protection}:} We propose our solution 
+	to overcome memory-constraints in TEEs.
+	\item \textbf{Chapter~\ref{chp:advanced-threats}:} We describe our 
+	technique to infect legitimate \emph{trusted regions}.
+	\item \textbf{Chapter~\ref{chp:forensic}:} We investigate the capabilities 
+	of 	memory-forensic techniques in TEE machines.
+	\item \textbf{Chapter~\ref{chp:runtime-protection-untrusted}:} We 
+	illustrate our new model to improve scalability in runtime RAs.
+	\item \textbf{Chapter~\ref{chp:runtime-protection-trusted}:} We detail our 
+	new model to implement a runtime RA inside a TEE.
+	\item \textbf{Chapter~\ref{chp:conclusion}:} We discuss the contribution 
+	introduced in the thesis and conclude.
 \end{itemize}
 
 %\begin{figure}[t]
