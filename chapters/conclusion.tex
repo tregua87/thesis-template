@@ -12,16 +12,14 @@ talk with a specific \emph{trusted region} correctly bootstrapped.
 Regardless the new security achievements of these technologies, TEEs still 
 suffer from scalability issues. 
 Moreover, they alone cover only a subset of the attack vectors that could 
-appear in a real scenario.
+appear in the wild.
 		
 In this thesis, we investigated the limitations that affect \emph{memory 
 isolation} and \emph{remote attestation}, studied possible new threats, and 
 proposed novel solutions to improve their security guarantees.
 For what concerns \emph{memory isolation}, we discussed its 
 scalability issue. Then, we investigated new intrusion techniques that exploit 
-a \emph{trusted region}.
-Finally, we investigated memory forensic techniques to aid incident response 
-analysis in TEE machines.
+a \emph{trusted region} and their implication in case of incident response.
 In terms of \emph{remote attestation}, instead, we studied new models that 
 capture runtime properties, overcome scalability issues, and propose new 
 protocols that can protect advanced TEE modules.
@@ -102,15 +100,62 @@ comparable to the state-of-the-art of remote attestations (a median of $260$K
 with $96$\% code coverage and zero false positives support SgxMonitor in 
 realistic deployments to detect anomalous runtime executions of SGX enclaves.
 
-\todo{mind pippe about research community and industry to collaborate and find 
-new threats and more efficient solutions. Give an idea of what these ideas 
-could be.}
+\vspace{0.3cm}
+Following the thesis direction, community and industry should invest more 
+effort for deeply understanding the implications of TEE in real scenarios.
+For the market to really accept these technologies as a new standard, vendors 
+should study solutions that overcome the TEE intrinsic scalability issues. 
+In Chapter~\ref{chp:static-protection}, our new design is only a first step for 
+smarter software architecture for TEE.
+Much work is left to be done in other TEE technologies, such as ARM TrustZone 
+\citep{arm-trustzone} or Apple Platform Security \citep{apple-enclave}, more 
+common in smartphones.
+As a consequence, having more isolated \emph{trusted regions} will lead to new 
+threats, as highlighted in Chapter~\ref{chp:advanced-threats} by SnakeGX.
+However, SnakeGX only shows one perspectives, and new completely autonomous 
+data-only malware, which do not require any trigger, could appear in the near 
+future (similar to the work of \cite{vogl2014persistent}).
+When this happens, the security community will be unprepared to dissect such 
+threats, as discussed in Chapter~\ref{chp:forensic}.
+Thus arising the necessity of more advanced malware dissection techniques that
+can penetrate the TEE boundary. A promising direction is represented by 
+offensive forensic techniques that could use micro 
+architectures drawbacks as pinlocks for \emph{trusted regions} 
+\citep{offensiveforensic}.
 
-\todo{talk about extension of my works, for instance, careful-packing also for 
-confidentiality, snakegx entirely automatic or for other technologies 
-(TrustZone). New techniques for memory forensic (??). Also rRA at hardware 
-level, few concepts for embedding sys but not enough for real scenarios.}
+Having the capability to bypass the TEE \emph{memory isolation}, and 
+conseguentely take control of trusted  \emph{memory regions}, arises the need 
+of new defenses beyond the current \emph{remote attestations} schemes.
+In this scenario, the models in chapters~\ref{chp:runtime-protection-untrusted} 
+and~\ref{chp:runtime-protection-trusted} just scratch the surface of 
+possible solutions and they merely indicate directions and new challenges for 
+more complete approaches.
+Besides classic ROP techniques, data-only attacks can be used to bend the 
+enclave execution without violating the code integrity, and the community 
+should be ready to face these threats.
+For tackling these attacks, runtime RAs should include data-flow information.
+First examples have been explored, but they mainly fit embedding systems 
+\citep{sun2020oat,aberadiat}.
+More importantly, current runtime RA approaches introduce an important overhead 
+that makes them impractical in real scenarios.
+From here the need of tracing \emph{trusted regions} at hardware level.
+Besides few resarch prototypes for embedded systems 
+\citep{Dessouky:2018:LLH:3240765.3240821}, also major CPU vendors are proposing 
+hardware-level protections, such as Intel CET \citep{intelcet} or for ARM 
+\citep{armpa}.
+However, these solutions requires further development since the academic 
+community already managed to bypass these controls \citep{van2012memory}.
 
-\todo{final sum up, what the works do and in what fields they fall.}
+In conclusion, this thesis discusses five contributions in the field of TEEs to 
+overcome current limitations, explore new threats, and propose mitigation.
+The works in chapters~\ref{chp:static-protection}, \ref{chp:advanced-threats}, 
+and~\ref{chp:forensic} dig into the implications derived from \emph{memory 
+isolation}.
+While chapters~\ref{chp:runtime-protection-untrusted} 
+and~\ref{chp:runtime-protection-trusted} propose new models that extend 
+\emph{remote attestations} schemes.
+We hope the results achieved by these works will help TEE designers and 
+security experts to better understand the role of these new technologies in 
+an even more connected world.
 
 

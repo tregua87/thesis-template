@@ -306,6 +306,51 @@
     \field{year}{2013}
   \endentry
 
+  \entry{apple-enclave}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={Apple},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{note}{Last visit may 2021}
+    \field{title}{Secure Enclave}
+    \verb{url}
+    \verb https://support.apple.com/en-sg/guide/security/sec59b0b31ff/web
+    \endverb
+    \field{year}{2016}
+  \endentry
+
+  \entry{arm-trustzone}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={ARM},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A3}
+    \strng{fullhash}{A3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{ARM TrustZone}
+    \verb{url}
+    \verb https://www.arm.com/products/security-on-arm/trustzone
+    \endverb
+    \field{year}{2017}
+  \endentry
+
   \entry{arnautov2016scone}{inproceedings}{}
     \true{moreauthor}
     \name{author}{10}{}{%
@@ -665,8 +710,8 @@
          familyi={A\bibinitperiod},
       }}%
     }
-    \strng{namehash}{A2}
-    \strng{fullhash}{A2}
+    \strng{namehash}{A4}
+    \strng{fullhash}{A4}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2006}
@@ -688,8 +733,8 @@
          familyi={A\bibinitperiod},
       }}%
     }
-    \strng{namehash}{A2}
-    \strng{fullhash}{A2}
+    \strng{namehash}{A4}
+    \strng{fullhash}{A4}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
@@ -1456,6 +1501,32 @@
     \field{pages}{385\bibrangedash 399}
     \field{title}{ROP is Still Dangerous: Breaking Modern Defenses.}
     \field{year}{2014}
+  \endentry
+
+  \entry{offensiveforensic}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CB}{%
+         family={Caudill},
+         familyi={C\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CB1}
+    \strng{fullhash}{CB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{Last access June 2021}
+    \field{title}{Offensive Forenscs CSI for Badguys}
+    \verb{url}
+    \verb https://defcon.org/images/defcon-21/dc-21-presentations/Caudill/DEFCO
+    \verb N-21-Caudill-Offensive-Forenscs-CSI-For-Badguys-Updated.pdf
+    \endverb
+    \field{year}{2021}
   \endentry
 
   \entry{challita2018precise}{inproceedings}{}
@@ -3953,9 +4024,11 @@
     \field{labeldatesource}{year}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{howpublished}{\url{https://github.com/kaist-ina/SGX-Tor}}
     \field{note}{Last access November 2018}
     \field{title}{SGX-Tor}
+    \verb{url}
+    \verb https://github.com/kaist-ina/SGX-Tor
+    \endverb
     \field{year}{2018}
   \endentry
 
@@ -5366,6 +5439,33 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{intelcet}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PBV}{%
+         family={Patel},
+         familyi={P\bibinitperiod},
+         given={Baiju\bibnamedelima V},
+         giveni={B\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PBV1}
+    \strng{fullhash}{PBV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{note}{Last access June 2021}
+    \field{title}{A Technical Look at Intel’s Control-flow Enforcement
+  Technology}
+    \verb{url}
+    \verb https://software.intel.com/content/www/us/en/develop/articles/technic
+    \verb al-look-control-flow-enforcement-technology.html
+    \endverb
+    \field{year}{2017}
+  \endentry
+
   \entry{pinzari2003introduction}{misc}{}
     \name{author}{1}{}{%
       {{hash=PGF}{%
@@ -5522,6 +5622,30 @@
     }
     \field{year}{1959}
     \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{armpa}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=Q}{%
+         family={{Qualcomm Technologies, Inc}},
+         familyi={Q\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{Q1}
+    \strng{fullhash}{Q1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Q}
+    \field{sortinithash}{Q}
+    \field{note}{Last access June 2021}
+    \field{title}{Pointer Authentication on ARMv8.3}
+    \verb{url}
+    \verb https://www.qualcomm.com/media/documents/files/whitepaper-pointer-aut
+    \verb hentication-on-armv8-3.pdf
+    \endverb
+    \field{year}{2017}
   \endentry
 
   \entry{rozas2013intel}{article}{}
@@ -6723,6 +6847,50 @@
     \field{volume}{10}
     \field{journaltitle}{International Journal of Distributed Sensor Networks}
     \field{year}{2014}
+  \endentry
+
+  \entry{sun2020oat}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SZ}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Zhichuang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=FB}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Bo},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Long},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Jha},
+         familyi={J\bibinitperiod},
+         given={Somesh},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SZ+1}
+    \strng{fullhash}{SZFBLLJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{2020 IEEE Symposium on Security and Privacy (SP)}
+    \field{pages}{1433\bibrangedash 1449}
+    \field{title}{OAT: Attesting operation integrity of embedded devices}
+    \field{year}{2020}
   \endentry
 
   \entry{tian2018switchless}{inproceedings}{}
