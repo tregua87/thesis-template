@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  2 JUL 2021 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  4 JUL 2021 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2372,14 +2372,14 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
  Publications
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 319.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 322.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 372.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 375.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 322.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 375.
 
 1: section
 [3
@@ -2393,7 +2393,7 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 412.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 465.
  (./main.toc
 1: section
 [5
@@ -2447,7 +2447,7 @@ Chapter 1.
 
 
 ]
-<fig_c1/sgx-architecture.pdf, id=761, 665.48625pt x 363.3575pt>
+<fig_c1/sgx-architecture.pdf, id=767, 665.48625pt x 363.3575pt>
 File: fig_c1/sgx-architecture.pdf Graphic file (type pdf)
 <use fig_c1/sgx-architecture.pdf>
 Package pdftex.def Info: fig_c1/sgx-architecture.pdf  used on input line 83.
@@ -2461,7 +2461,7 @@ tly adopted by many cloud providers,
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 237.
 [3] [4] [5]
-<fig_c1/contribution.pdf, id=890, 902.37125pt x 312.16624pt>
+<fig_c1/contribution.pdf, id=896, 902.37125pt x 312.16624pt>
 File: fig_c1/contribution.pdf Graphic file (type pdf)
 <use fig_c1/contribution.pdf>
 Package pdftex.def Info: fig_c1/contribution.pdf  used on input line 428.
@@ -2488,13 +2488,13 @@ Overfull \hbox (1.19507pt too wide) in paragraph at lines 165--175
  con-cepts of control-flow graph
  []
 
-<fig_c4/problem-setting-code.pdf, id=995, 266.9975pt x 166.6225pt>
+<fig_c4/problem-setting-code.pdf, id=1001, 266.9975pt x 166.6225pt>
 File: fig_c4/problem-setting-code.pdf Graphic file (type pdf)
 <use fig_c4/problem-setting-code.pdf>
 Package pdftex.def Info: fig_c4/problem-setting-code.pdf  used on input line 18
 0.
 (pdftex.def)             Requested size: 187.7016pt x 117.14088pt.
-<fig_c4/problem-setting-graph.pdf, id=996, 229.85875pt x 275.0275pt>
+<fig_c4/problem-setting-graph.pdf, id=1002, 229.85875pt x 275.0275pt>
 File: fig_c4/problem-setting-graph.pdf Graphic file (type pdf)
 <use fig_c4/problem-setting-graph.pdf>
 Package pdftex.def Info: fig_c4/problem-setting-graph.pdf  used on input line 1
@@ -2506,19 +2506,19 @@ f
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c4/problem-setting-graph.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
 >]
-<fig_c7/sgxbackground.pdf, id=1059, 479.7925pt x 162.6075pt>
+<fig_c7/sgxbackground.pdf, id=1065, 479.7925pt x 162.6075pt>
 File: fig_c7/sgxbackground.pdf Graphic file (type pdf)
 <use fig_c7/sgxbackground.pdf>
 Package pdftex.def Info: fig_c7/sgxbackground.pdf  used on input line 293.
 (pdftex.def)             Requested size: 333.69528pt x 113.095pt.
  [12 <./fig_c7/sgxbackground.pdf>] [13]
-<fig_c7/sgxprogrammingpattern_library.pdf, id=1097, 468.75125pt x 137.51375pt>
+<fig_c7/sgxprogrammingpattern_library.pdf, id=1103, 468.75125pt x 137.51375pt>
 File: fig_c7/sgxprogrammingpattern_library.pdf Graphic file (type pdf)
 <use fig_c7/sgxprogrammingpattern_library.pdf>
 Package pdftex.def Info: fig_c7/sgxprogrammingpattern_library.pdf  used on inpu
 t line 403.
 (pdftex.def)             Requested size: 375.40321pt x 110.12865pt.
-<fig_c7/sgxprogrammingpattern_static.pdf, id=1098, 468.75125pt x 138.5175pt>
+<fig_c7/sgxprogrammingpattern_static.pdf, id=1104, 468.75125pt x 138.5175pt>
 File: fig_c7/sgxprogrammingpattern_static.pdf Graphic file (type pdf)
 <use fig_c7/sgxprogrammingpattern_static.pdf>
 Package pdftex.def Info: fig_c7/sgxprogrammingpattern_static.pdf  used on input
@@ -2530,7 +2530,7 @@ rn_static.pdf
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c7/sgxprogrammingpattern_static.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
 >])
-Overfull \hbox (6.30376pt too wide) in paragraph at lines 472--480
+Overfull \hbox (6.30376pt too wide) in paragraph at lines 472--533
 \T1/pcr/m/n/10.95 asm_oret\T1/ppl/m/n/10.95 , that re-stores the CPU reg-is-ter
 s af-ter an OCALL. The sec-ond one is \T1/pcr/m/n/10.95 continue 
  []
@@ -2564,7 +2564,7 @@ Overfull \hbox (2.37675pt too wide) in paragraph at lines 412--437
  []
 
 [19]
-<fig_c3/core-all.pdf, id=1230, 843.15pt x 421.575pt>
+<fig_c3/core-all.pdf, id=1236, 843.15pt x 421.575pt>
 File: fig_c3/core-all.pdf Graphic file (type pdf)
 <use fig_c3/core-all.pdf>
 Package pdftex.def Info: fig_c3/core-all.pdf  used on input line 454.
@@ -2577,18 +2577,18 @@ d\T1/ppl/m/n/10.95 .
  []
 
 [21]
-<fig_c3/dec1.pdf, id=1285, 689.57625pt x 226.8475pt>
+<fig_c3/dec1.pdf, id=1291, 689.57625pt x 226.8475pt>
 File: fig_c3/dec1.pdf Graphic file (type pdf)
 <use fig_c3/dec1.pdf>
 Package pdftex.def Info: fig_c3/dec1.pdf  used on input line 647.
 (pdftex.def)             Requested size: 333.69528pt x 109.77513pt.
  [22] [23 <./fig_c3/dec1.pdf>]
-<fig_c3/architecture.pdf, id=1339, 562.1pt x 314.17375pt>
+<fig_c3/architecture.pdf, id=1346, 562.1pt x 314.17375pt>
 File: fig_c3/architecture.pdf Graphic file (type pdf)
 <use fig_c3/architecture.pdf>
 Package pdftex.def Info: fig_c3/architecture.pdf  used on input line 1005.
 (pdftex.def)             Requested size: 187.7016pt x 104.90968pt.
-<fig_c3/clientarchitecture.pdf, id=1340, 550.055pt x 236.885pt>
+<fig_c3/clientarchitecture.pdf, id=1347, 550.055pt x 236.885pt>
 File: fig_c3/clientarchitecture.pdf Graphic file (type pdf)
 <use fig_c3/clientarchitecture.pdf>
 Package pdftex.def Info: fig_c3/clientarchitecture.pdf  used on input line 1014
@@ -2599,7 +2599,7 @@ Package pdftex.def Info: fig_c3/clientarchitecture.pdf  used on input line 1014
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c3/clientarchitecture.pdf): PDF i
 nclusion: multiple pdfs with page group included in a single page
 >] [26]
-<fig_c3/installation.pdf, id=1426, 916.42375pt x 184.69pt>
+<fig_c3/installation.pdf, id=1432, 916.42375pt x 184.69pt>
 File: fig_c3/installation.pdf Graphic file (type pdf)
 <use fig_c3/installation.pdf>
 Package pdftex.def Info: fig_c3/installation.pdf  used on input line 1242.
@@ -2617,13 +2617,13 @@ mea-sure the im-pact of our anti-tampering tech-
  []
 
 [28]
-<fig_c3/performanceEvaluation.png, id=1484, 524.6802pt x 351.2322pt>
+<fig_c3/performanceEvaluation.png, id=1490, 524.6802pt x 351.2322pt>
 File: fig_c3/performanceEvaluation.png Graphic file (type png)
 <use fig_c3/performanceEvaluation.png>
 Package pdftex.def Info: fig_c3/performanceEvaluation.png  used on input line 1
 349.
 (pdftex.def)             Requested size: 187.7016pt x 125.6503pt.
-<fig_c3/multiple.png, id=1486, 462.528pt x 346.896pt>
+<fig_c3/multiple.png, id=1492, 462.528pt x 346.896pt>
 File: fig_c3/multiple.png Graphic file (type png)
 <use fig_c3/multiple.png>
 Package pdftex.def Info: fig_c3/multiple.png  used on input line 1356.
@@ -2661,7 +2661,7 @@ he ad-ver-sary re-sides in user-space. SnakeGX
  []
 
 [33] [34] [35]
-<fig_c5/synch-exit.pdf, id=1618, 720.6925pt x 407.5225pt>
+<fig_c5/synch-exit.pdf, id=1624, 720.6925pt x 407.5225pt>
 File: fig_c5/synch-exit.pdf Graphic file (type pdf)
 <use fig_c5/synch-exit.pdf>
 Package pdftex.def Info: fig_c5/synch-exit.pdf  used on input line 395.
@@ -2678,7 +2678,7 @@ Overfull \hbox (3.27092pt too wide) in paragraph at lines 444--451
 ay craft a fake \T1/pcr/m/n/10.95 ocall_context\T1/ppl/m/n/10.95 .
  []
 
-<fig_c5/sgx-ocall-context.pdf, id=1628, 714.67pt x 546.04pt>
+<fig_c5/sgx-ocall-context.pdf, id=1634, 714.67pt x 546.04pt>
 File: fig_c5/sgx-ocall-context.pdf Graphic file (type pdf)
 <use fig_c5/sgx-ocall-context.pdf>
 Package pdftex.def Info: fig_c5/sgx-ocall-context.pdf  used on input line 454.
@@ -2703,14 +2703,14 @@ ed lo-ca-tion for in-stalling an \T1/pcr/m/n/10.95 ocall_context\T1/ppl/m/n/10.
  []
 
 [42]
-<fig_c5/t-thread-stack-installed.pdf, id=1755, 467.7475pt x 302.12875pt>
+<fig_c5/t-thread-stack-installed.pdf, id=1761, 467.7475pt x 302.12875pt>
 File: fig_c5/t-thread-stack-installed.pdf Graphic file (type pdf)
 <use fig_c5/t-thread-stack-installed.pdf>
 Package pdftex.def Info: fig_c5/t-thread-stack-installed.pdf  used on input lin
 e 924.
 (pdftex.def)             Requested size: 291.98099pt x 188.6041pt.
  [43 <./fig_c5/t-thread-stack-installed.pdf>]
-<fig_c5/flavio-enclave-chain.pdf, id=1788, 670.505pt x 467.7475pt>
+<fig_c5/flavio-enclave-chain.pdf, id=1794, 670.505pt x 467.7475pt>
 File: fig_c5/flavio-enclave-chain.pdf Graphic file (type pdf)
 <use fig_c5/flavio-enclave-chain.pdf>
 Package pdftex.def Info: fig_c5/flavio-enclave-chain.pdf  used on input line 10
@@ -2760,7 +2760,7 @@ Chapter 6.
 
 
 ] [54]
-<fig_c4/challenge-III.pdf, id=2025, 263.98625pt x 219.82124pt>
+<fig_c4/challenge-III.pdf, id=2031, 263.98625pt x 219.82124pt>
 File: fig_c4/challenge-III.pdf Graphic file (type pdf)
 <use fig_c4/challenge-III.pdf>
 Package pdftex.def Info: fig_c4/challenge-III.pdf  used on input line 175.
@@ -2770,7 +2770,7 @@ Underfull \hbox (badness 5637) in paragraph at lines 176--176
  []\T1/ppl/m/sc/10 (a) |\T1/ppl/m/n/10 Loop ex-am-ple in the ScaRR 
  []
 
-<fig_c4/challenge-IV.pdf, id=2026, 455.7025pt x 199.74625pt>
+<fig_c4/challenge-IV.pdf, id=2032, 455.7025pt x 199.74625pt>
 File: fig_c4/challenge-IV.pdf Graphic file (type pdf)
 <use fig_c4/challenge-IV.pdf>
 Package pdftex.def Info: fig_c4/challenge-IV.pdf  used on input line 182.
@@ -2780,7 +2780,7 @@ Package pdftex.def Info: fig_c4/challenge-IV.pdf  used on input line 182.
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c4/challenge-IV.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
-<fig_c4/overview.pdf, id=2067, 828.09375pt x 451.6875pt>
+<fig_c4/overview.pdf, id=2073, 828.09375pt x 451.6875pt>
 File: fig_c4/overview.pdf Graphic file (type pdf)
 <use fig_c4/overview.pdf>
 Package pdftex.def Info: fig_c4/overview.pdf  used on input line 300.
@@ -2794,14 +2794,14 @@ r/m/n/10.95 ([]))$\T1/ppl/m/n/10.95 .
  []
 
 [58] [59]
-<fig_c4/trace-paths-example.pdf, id=2116, 401.5pt x 215.80624pt>
+<fig_c4/trace-paths-example.pdf, id=2122, 401.5pt x 215.80624pt>
 File: fig_c4/trace-paths-example.pdf Graphic file (type pdf)
 <use fig_c4/trace-paths-example.pdf>
 Package pdftex.def Info: fig_c4/trace-paths-example.pdf  used on input line 517
 .
 (pdftex.def)             Requested size: 250.27306pt x 134.52621pt.
  [60 <./fig_c4/trace-paths-example.pdf>]
-<fig_c4/shadow-stack-no.pdf, id=2137, 383.4325pt x 206.7725pt>
+<fig_c4/shadow-stack-no.pdf, id=2143, 383.4325pt x 206.7725pt>
 File: fig_c4/shadow-stack-no.pdf Graphic file (type pdf)
 <use fig_c4/shadow-stack-no.pdf>
 Package pdftex.def Info: fig_c4/shadow-stack-no.pdf  used on input line 564.
@@ -2819,25 +2819,25 @@ Overfull \hbox (13.659pt too wide) in paragraph at lines 634--655
 sys_addaction
  []
 
-<fig_c4/architecture.pdf, id=2166, 645.41125pt x 349.305pt>
+<fig_c4/architecture.pdf, id=2172, 645.41125pt x 349.305pt>
 File: fig_c4/architecture.pdf Graphic file (type pdf)
 <use fig_c4/architecture.pdf>
 Package pdftex.def Info: fig_c4/architecture.pdf  used on input line 668.
 (pdftex.def)             Requested size: 291.98099pt x 158.0226pt.
 [62] [63 <./fig_c4/architecture.pdf>]
-<fig_c4/attesetation_speed.png, id=2202, 462.528pt x 346.896pt>
+<fig_c4/attesetation_speed.png, id=2208, 462.528pt x 346.896pt>
 File: fig_c4/attesetation_speed.png Graphic file (type png)
 <use fig_c4/attesetation_speed.png>
 Package pdftex.def Info: fig_c4/attesetation_speed.png  used on input line 750.
 
 (pdftex.def)             Requested size: 187.7016pt x 140.77794pt.
-<fig_c4/functioncall.png, id=2203, 462.528pt x 346.896pt>
+<fig_c4/functioncall.png, id=2209, 462.528pt x 346.896pt>
 File: fig_c4/functioncall.png Graphic file (type png)
 <use fig_c4/functioncall.png>
 Package pdftex.def Info: fig_c4/functioncall.png  used on input line 758.
 (pdftex.def)             Requested size: 187.7016pt x 140.77794pt.
  [64 <./fig_c4/attesetation_speed.png> <./fig_c4/functioncall.png>]
-<fig_c4/network_performance.png, id=2219, 474.8139pt x 295.5843pt>
+<fig_c4/network_performance.png, id=2225, 474.8139pt x 295.5843pt>
 File: fig_c4/network_performance.png Graphic file (type png)
 <use fig_c4/network_performance.png>
 Package pdftex.def Info: fig_c4/network_performance.png  used on input line 826
@@ -2861,7 +2861,7 @@ Overfull \hbox (16.07016pt too wide) in paragraph at lines 11--29
 
 
 ]
-<fig_c6/fmi-standard.pdf, id=2321, 451.6875pt x 222.8325pt>
+<fig_c6/fmi-standard.pdf, id=2327, 451.6875pt x 222.8325pt>
 File: fig_c6/fmi-standard.pdf Graphic file (type pdf)
 <use fig_c6/fmi-standard.pdf>
 Package pdftex.def Info: fig_c6/fmi-standard.pdf  used on input line 108.
@@ -2873,7 +2873,7 @@ n-sump-tion of [][](i)[]  \T1/pcr/m/n/10.95 ocall_context\T1/ppl/m/n/10.95 ,
  []
 
 [71] [72]
-<fig_c6/running-example-graph.pdf, id=2428, 459.7175pt x 289.08pt>
+<fig_c6/running-example-graph.pdf, id=2434, 459.7175pt x 289.08pt>
 File: fig_c6/running-example-graph.pdf Graphic file (type pdf)
 <use fig_c6/running-example-graph.pdf>
 Package pdftex.def Info: fig_c6/running-example-graph.pdf  used on input line 4
@@ -2887,7 +2887,7 @@ m/n/10.95 traceBranch()
  []
 
 [73 <./fig_c6/running-example-graph.pdf>]
-<fig_c6/design.pdf, id=2478, 1099.10625pt x 405.515pt>
+<fig_c6/design.pdf, id=2484, 1099.10625pt x 405.515pt>
 File: fig_c6/design.pdf Graphic file (type pdf)
 <use fig_c6/design.pdf>
 Package pdftex.def Info: fig_c6/design.pdf  used on input line 505.
@@ -2942,7 +2942,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/multiply-eps-converted-to.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig_c6/multiply-eps-converted-to.pdf, id=2724, 716.6775pt x 282.05376pt>
+<fig_c6/multiply-eps-converted-to.pdf, id=2731, 716.6775pt x 282.05376pt>
 File: fig_c6/multiply-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_c6/multiply-eps-converted-to.pdf>
 Package pdftex.def Info: fig_c6/multiply-eps-converted-to.pdf  used on input li
@@ -2971,7 +2971,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/action-second-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<fig_c6/action-second-eps-converted-to.pdf, id=2725, 722.7pt x 286.06876pt>
+<fig_c6/action-second-eps-converted-to.pdf, id=2732, 722.7pt x 286.06876pt>
 File: fig_c6/action-second-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_c6/action-second-eps-converted-to.pdf>
 Package pdftex.def Info: fig_c6/action-second-eps-converted-to.pdf  used on inp
@@ -3001,7 +3001,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/request_per_second-eps-convert
 ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
-<fig_c6/request_per_second-eps-converted-to.pdf, id=2755, 710.655pt x 270.00874
+<fig_c6/request_per_second-eps-converted-to.pdf, id=2761, 710.655pt x 270.00874
 pt>
 File: fig_c6/request_per_second-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_c6/request_per_second-eps-converted-to.pdf>
@@ -3027,13 +3027,13 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/latency_2-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig_c6/latency_2-eps-converted-to.pdf, id=2756, 710.655pt x 270.00874pt>
+<fig_c6/latency_2-eps-converted-to.pdf, id=2762, 710.655pt x 270.00874pt>
 File: fig_c6/latency_2-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_c6/latency_2-eps-converted-to.pdf>
 Package pdftex.def Info: fig_c6/latency_2-eps-converted-to.pdf  used on input l
 ine 1344.
 (pdftex.def)             Requested size: 204.38988pt x 77.6578pt.
-<fig_c6/vlc_performance.pdf, id=2761, 715.76999pt x 274.90138pt>
+<fig_c6/vlc_performance.pdf, id=2767, 715.76999pt x 274.90138pt>
 File: fig_c6/vlc_performance.pdf Graphic file (type pdf)
 <use fig_c6/vlc_performance.pdf>
 Package pdftex.def Info: fig_c6/vlc_performance.pdf  used on input line 1366.
@@ -3043,7 +3043,7 @@ Underfull \hbox (badness 1205) in paragraph at lines 1372--1372
  \T1/ppl/m/n/10 We mea-sure the per-cent-age of CPU us-age 
  []
 
-<fig_c6/biniax2_performance.pdf, id=2762, 715.58932pt x 274.90138pt>
+<fig_c6/biniax2_performance.pdf, id=2768, 715.58932pt x 274.90138pt>
 File: fig_c6/biniax2_performance.pdf Graphic file (type pdf)
 <use fig_c6/biniax2_performance.pdf>
 Package pdftex.def Info: fig_c6/biniax2_performance.pdf  used on input line 137
@@ -3094,7 +3094,7 @@ Overfull \hbox (7.65022pt too wide) in paragraph at lines 59--76
  [][] 
  []
 
-<fig_c6/my-model.pdf, id=3141, 598.235pt x 281.05pt>
+<fig_c6/my-model.pdf, id=3147, 598.235pt x 281.05pt>
 File: fig_c6/my-model.pdf Graphic file (type pdf)
 <use fig_c6/my-model.pdf>
 Package pdftex.def Info: fig_c6/my-model.pdf  used on input line 82.
@@ -3104,7 +3104,7 @@ Overfull \hbox (17.90208pt too wide) in paragraph at lines 97--113
  [][] 
  []
 
-<fig_c6/my-model-exception.pdf, id=3142, 600.2425pt x 278.03876pt>
+<fig_c6/my-model-exception.pdf, id=3148, 600.2425pt x 278.03876pt>
 File: fig_c6/my-model-exception.pdf Graphic file (type pdf)
 <use fig_c6/my-model-exception.pdf>
 Package pdftex.def Info: fig_c6/my-model-exception.pdf  used on input line 119.
@@ -3126,7 +3126,7 @@ ep-tion
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/my-model-exception.pdf): PDF i
 nclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \hbox (40.33086pt too wide) in paragraph at lines 508--508
+Overfull \hbox (40.33086pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Alibaba Cloud (2020). \T1/ppl/m/it/10.95 In-stall SGX\T1/
 ppl/m/n/10.95 . Last ac-cess May 2021. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 
 : [][]$\T1/pcr/m/n/10.95 https : / / www . alibabacloud .
@@ -3137,237 +3137,237 @@ ppl/m/n/10.95 . Last ac-cess May 2021. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95
 
 
 ]
-Overfull \hbox (1.41118pt too wide) in paragraph at lines 508--508
+Overfull \hbox (1.41118pt too wide) in paragraph at lines 561--561
 \T1/ppl/m/n/10.95 Related-Key At-tacks and Tam-per-ing^^Q. In: \T1/ppl/m/it/10.
 95 Ad-vances in Cryp-tol-ogy -- ASI-ACRYPT 2011\T1/ppl/m/n/10.95 .
  []
 
 
-Overfull \hbox (49.99942pt too wide) in paragraph at lines 508--508
+Overfull \hbox (49.99942pt too wide) in paragraph at lines 561--561
 \T1/ppl/m/n/10.95 978-1-939133-04-5. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : 
 [][]$\T1/pcr/m/n/10.95 https : / / www . usenix . org / conference / usenixsecu
 rity18 /
  []
 
 [94]
-Overfull \hbox (17.85172pt too wide) in paragraph at lines 508--508
+Overfull \hbox (17.85172pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Calcagno, Cris-tiano et al. (2009). ^^P  Com-po-si-tional
  shape anal-y-sis by means of bi-abduction^^Q.
  []
 
 
-Overfull \hbox (4.652pt too wide) in paragraph at lines 508--508
+Overfull \hbox (4.652pt too wide) in paragraph at lines 561--561
 \T1/pcr/m/n/10.95 Caudill / DEFCON -[] 21 -[] Caudill -[] Offensive -[] Forensc
 s -[] CSI -[] For -[] Badguys -[]
  []
 
 
-Overfull \hbox (5.59048pt too wide) in paragraph at lines 508--508
+Overfull \hbox (5.59048pt too wide) in paragraph at lines 561--561
 \T1/ppl/m/n/10.95 more, MD: USENIX As-so-ci-a-tion. \T1/ppl/m/sc/10.95 url\T1/p
 pl/m/n/10.95 : [][]$\T1/pcr/m/n/10.95 https : / / www . usenix . org / conferen
 ce /
  []
 
 [95]
-Overfull \hbox (1.48418pt too wide) in paragraph at lines 508--508
+Overfull \hbox (1.48418pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Coppa, Emilio, Daniele Cono D'Elia, and Camil Deme-trescu
  (2017). ^^P  Re-think-ing pointer
  []
 
 
-Overfull \hbox (12.91156pt too wide) in paragraph at lines 508--508
+Overfull \hbox (12.91156pt too wide) in paragraph at lines 561--561
 \T1/ppl/m/n/10.95 Grained Control-Flow In-tegrity Pro-tec-tion.^^Q In: \T1/ppl/
 m/it/10.95 USENIX Se-cu-rity Sym-po-sium\T1/ppl/m/n/10.95 . Vol. 2014. 
  []
 
 
-Overfull \hbox (1.79285pt too wide) in paragraph at lines 508--508
+Overfull \hbox (1.79285pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Doweck, J. et al. (2017). ^^P  In-side 6th-Generation In-
 tel Core: New Mi-croar-chi-tec-ture Code-
  []
 
 
-Overfull \hbox (12.21169pt too wide) in paragraph at lines 508--508
+Overfull \hbox (12.21169pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Facebook (2016). \T1/ppl/m/it/10.95 Zs-tan-dard\T1/ppl/m/
 n/10.95 . Last ac-cess March 2019. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : []
 []$\T1/pcr/m/n/10.95 https : / / facebook . github .
  []
 
 
-Overfull \hbox (4.08163pt too wide) in paragraph at lines 508--508
+Overfull \hbox (4.08163pt too wide) in paragraph at lines 561--561
 \T1/ppl/m/it/10.95 na-tional Con-fer-ence on Ver-i-fi-ca-tion, Model Check-ing,
  and Ab-stract In-ter-pre-ta-tion\T1/ppl/m/n/10.95 . Springer,
  []
 
 
-Overfull \hbox (0.51347pt too wide) in paragraph at lines 508--508
+Overfull \hbox (0.51347pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Ge, Xinyang, Wei-dong Cui, and Trent Jaeger (2017). ^^P  
 GRIF-FIN: Guard-ing Con-trol Flows
  []
 
 [96]
-Overfull \hbox (6.649pt too wide) in paragraph at lines 508--508
+Overfull \hbox (6.649pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Google (2018). \T1/ppl/m/it/10.95 Asylo\T1/ppl/m/n/10.95 
 . Last ac-cess Febru-ary 2021. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\
 T1/pcr/m/n/10.95 https : / / github . com / google /
  []
 
 
-Overfull \hbox (21.30817pt too wide) in paragraph at lines 508--508
+Overfull \hbox (21.30817pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Hu, Hong et al. (2015). ^^P  Au-to-matic gen-er-a-tion of
  data-oriented ex-ploits^^Q. In: \T1/ppl/m/it/10.95 24th $\OMS/cmsy/m/n/10.95 f
 $\T1/ppl/m/it/10.95 USENIX$\OMS/cmsy/m/n/10.95 g$
  []
 
 [97]
-Overfull \hbox (1.2038pt too wide) in paragraph at lines 508--508
+Overfull \hbox (1.2038pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Ibrahim, Ah-mad, Ahmad-Reza Sadeghi, and Gene Tsudik (201
 8). ^^P  US-AID: Unat-tended
  []
 
 LaTeX Font Info:    Font shape `OMS/ppl/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 508.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 561.
 
-Overfull \hbox (12.41927pt too wide) in paragraph at lines 508--508
+Overfull \hbox (12.41927pt too wide) in paragraph at lines 561--561
 \T1/ppl/m/n/10.95 2020. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\T1/pcr/
 m/n/10.95 https : / / software . intel . com / sites / default / files / manage
 d /
  []
 
 
-Overfull \hbox (7.72198pt too wide) in paragraph at lines 508--508
+Overfull \hbox (7.72198pt too wide) in paragraph at lines 561--561
 \T1/pcr/m/n/10.95 files / managed / b4 / 3a / 319433 -[] 024 . pdf ? _ga = 1 . 
 118002441 . 1853754838 .
  []
 
 
-Overfull \hbox (11.37286pt too wide) in paragraph at lines 508--508
+Overfull \hbox (11.37286pt too wide) in paragraph at lines 561--561
 [][][]\T1/ppl/m/n/10.95 (2020). \T1/ppl/m/it/10.95 Build SGX En-clave us-ing Cl
 ang/L-LVM\T1/ppl/m/n/10.95 . Last ac-cess Septem-ber 2020. \T1/ppl/m/sc/10.95 u
 rl\T1/ppl/m/n/10.95 : [][]$\T1/pcr/m/n/10.95 https :
  []
 
 [98]
-Overfull \hbox (3.24791pt too wide) in paragraph at lines 508--508
+Overfull \hbox (3.24791pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Lee, Jae-hyuk et al. (2017a). ^^P  Hack-ing in dark-ness:
  Return-oriented pro-gram-ming against
  []
 
 [99]
-Overfull \hbox (8.7022pt too wide) in paragraph at lines 508--508
+Overfull \hbox (8.7022pt too wide) in paragraph at lines 561--561
 [][][]\T1/ppl/m/n/10.95 (2017a). \T1/ppl/m/it/10.95 Driver Sign-ing\T1/ppl/m/n/
 10.95 . Last visit on 02 Mar 2018. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : []
 []$\T1/pcr/m/n/10.95 https : / / docs . microsoft .
  []
 
 
-Overfull \hbox (2.6845pt too wide) in paragraph at lines 508--508
+Overfull \hbox (2.6845pt too wide) in paragraph at lines 561--561
 [][][]\T1/ppl/m/n/10.95 (2019). \T1/ppl/m/it/10.95 Open En-clave SDK\T1/ppl/m/n
 /10.95 . [][]$\T1/pcr/m/n/10.95 https : / / github . com / openenclave / openen
 clave$[][]\T1/ppl/m/n/10.95 .
  []
 
 
-Overfull \hbox (1.01268pt too wide) in paragraph at lines 508--508
+Overfull \hbox (1.01268pt too wide) in paragraph at lines 561--561
 \T1/ppl/m/n/10.95 ber 2020. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\T1/
 pcr/m/n/10.95 https : / / signal . org / blog / private -[] contact -[] discove
 ry/$[][]\T1/ppl/m/n/10.95 . 
  []
 
 
-Overfull \hbox (4.81601pt too wide) in paragraph at lines 508--508
+Overfull \hbox (4.81601pt too wide) in paragraph at lines 561--561
 \T1/ppl/m/n/10.95 In-tel SGX^^Q. In: \T1/ppl/m/it/10.95 Pro-ceed-ings of the 41
 st IEEE Sym-po-sium on Se-cu-rity and Pri-vacy (S&P'20)\T1/ppl/m/n/10.95 . 
  []
 
 [100]
-Overfull \hbox (49.99942pt too wide) in paragraph at lines 508--508
+Overfull \hbox (49.99942pt too wide) in paragraph at lines 561--561
 \T1/ppl/m/n/10.95 978-1-939133-17-5. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : 
 [][]$\T1/pcr/m/n/10.95 https : / / www . usenix . org / conference / usenixsecu
 rity20 /
  []
 
 
-Overfull \hbox (8.76443pt too wide) in paragraph at lines 508--508
+Overfull \hbox (8.76443pt too wide) in paragraph at lines 561--561
 \T1/ppl/m/n/10.95 Boston, MA: USENIX As-so-ci-a-tion, pp. 227^^U240. \T1/ppl/m/
 sc/10.95 isbn\T1/ppl/m/n/10.95 : 978-1-931971-44-7. \T1/ppl/m/sc/10.95 url\T1/p
 pl/m/n/10.95 : [][]$\T1/pcr/m/n/10.95 https :
  []
 
 
-Overfull \hbox (2.39346pt too wide) in paragraph at lines 508--508
+Overfull \hbox (2.39346pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Onarlioglu, Kaan et al. (2010). ^^P  G-Free: de-feat-ing 
 return-oriented pro-gram-ming through
  []
 
 [101]
-Overfull \hbox (1.354pt too wide) in paragraph at lines 508--508
+Overfull \hbox (1.354pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Schwarz, Michael et al. (2017). ^^P  Mal-ware Guard Ex-te
 n-sion: Us-ing SGX to Con-ceal Cache
  []
 
 [102]
-Overfull \hbox (1.7256pt too wide) in paragraph at lines 508--508
+Overfull \hbox (1.7256pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Snow, Kevin Z et al. (2013). ^^P  Just-in-time code reuse
 : On the ef-fec-tive-ness of fine-grained
  []
 
 
-Overfull \hbox (26.6072pt too wide) in paragraph at lines 508--508
+Overfull \hbox (26.6072pt too wide) in paragraph at lines 561--561
 \T1/ppl/m/n/10.95 pp. 121^^U134. \T1/ppl/m/sc/10.95 isbn\T1/ppl/m/n/10.95 : 978
 -1-939133-07-6. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\T1/pcr/m/n/10.9
 5 https : / / www . usenix . org / conference /
  []
 
 [103]
-Overfull \hbox (21.37845pt too wide) in paragraph at lines 508--508
+Overfull \hbox (21.37845pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Tuzsuzov, Jor-dan (2005). \T1/ppl/m/it/10.95 Biniax-2\T1/
 ppl/m/n/10.95 . Last ac-cessed April 2021. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10
 .95 : [][]$\T1/pcr/m/n/10.95 http : / / www . tuzsuzov .
  []
 
 
-Overfull \hbox (20.82883pt too wide) in paragraph at lines 508--508
+Overfull \hbox (20.82883pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 VideoLAN (2017). \T1/ppl/m/it/10.95 lib-d-vd-css\T1/ppl/m
 /n/10.95 . Last ac-cess Septem-ber 2020. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.9
 5 : [][]$\T1/pcr/m/n/10.95 https : / / code . videolan .
  []
 
 
-Overfull \hbox (2.45892pt too wide) in paragraph at lines 508--508
+Overfull \hbox (2.45892pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Vinayagamurthy, Dhi-nakaran, Alexey Gri-bov, and Sergey G
 or-bunov (2019). ^^P  StealthDB:
  []
 
 [104]
-Overfull \hbox (4.18591pt too wide) in paragraph at lines 508--508
+Overfull \hbox (4.18591pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Watson, Robert NM et al. (2018). \T1/ppl/m/it/10.95 Ca-pa
 -bil-ity Hard-ware En-hanced RISC In-struc-tions (CHERI):
  []
 
 
-Overfull \hbox (2.13712pt too wide) in paragraph at lines 508--508
+Overfull \hbox (2.13712pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Winter, Jo-hannes (2008). ^^P  Trusted com-put-ing build-
 ing blocks for em-bed-ded linux-based
  []
 
 
-Overfull \hbox (7.59778pt too wide) in paragraph at lines 508--508
+Overfull \hbox (7.59778pt too wide) in paragraph at lines 561--561
 [][]\T1/ppl/m/n/10.95 Yao, Fan, Jie Chen, and Guru Venkatara-mani (2013). ^^P  
 Jop-alarm: De-tect-ing jump-oriented
  []
 
 [105] [106]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 512.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 512.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 565.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 565.
  (./main.aux (./chapters/introduction.aux)
 (./chapters/background-trusting-computing.aux)
 (./chapters/static-protection.aux) (./chapters/new-threats.aux)
 (./chapters/forensic-analysis.aux) (./chapters/runtime-protection-untrusted.aux
 ) (./chapters/runtime-protection-trusted.aux) (./chapters/conclusion.aux)
 (./appendices/appendix_sgxmonitor.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 512.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 512.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 565.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 565.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 08D97DD67D82A2AB37386AB2F608B65C;17775.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -3377,7 +3377,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  50950 strings out of 492982
  1024641 string characters out of 6134896
- 1511474 words of memory out of 5000000
+ 1511284 words of memory out of 5000000
  52917 multiletter control sequences out of 15000+600000
  588935 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3398,10 +3398,10 @@ pe1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (118 pages, 1928185 bytes).
+Output written on main.pdf (118 pages, 1930775 bytes).
 PDF statistics:
- 3702 PDF objects out of 4296 (max. 8388607)
- 3167 compressed objects within 32 object streams
+ 3708 PDF objects out of 4296 (max. 8388607)
+ 3173 compressed objects within 32 object streams
  866 named destinations out of 1000 (max. 500000)
  1120 words of extra memory for PDF output out of 10000 (max. 10000000)
 

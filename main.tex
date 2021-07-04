@@ -144,8 +144,8 @@ headsepline, % Uncomment to get a line under the header
 %	THESIS INFORMATION
 %----------------------------------------------------------------------------------------
 
-\thesistitle{How much can I trust my machine?\\Modern and future 
-challenges for\\ Trusted Execution Environments}
+\thesistitle{Faith in the Cloud!\\Modern and future challenges for Trusted 
+Execution Environments}
 % Your thesis title, this is used in the title and abstract, print it elsewhere 
 %with \ttitle
 \supervisor{Prof. Zhou \textsc{Jianying}} % Your supervisor's name, this is 
@@ -305,7 +305,60 @@ Thesis Advisor\\[1cm]
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
 
-The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
+Are you sure the last Virtual Machine brought from your Could Provider is 
+working properly?
+The widespread adoption of cloud infrastructures allowed online business 
+to benefit of larger market segments, parallelly, armies of adversaries enjoyed 
+a vaster set of possible victims.
+In addition, leaving part of the infrastructure on cloud providers de facto 
+reduced the companies control over their products, eventually increasing the 
+attack surface to either insider and external threats.
+Finally, leading companies and customers to the need of advanced protections 
+for their products and data.
+
+In this zero trust scenario, a common countermeasure is represented by Trusted 
+Execution Environments (TEE). These technologies use hardware mechanisms to 
+create \emph{trusted regions} shielded against fully compromised 
+systems, thus allowing the companies to protect their assets even if the whole 
+datacenter is compromised.
+\emph{Trusted regions} provide two main properties: \emph{memory isolation} and 
+\emph{remote attestation}. The former ensures physical isolation of 
+\emph{trusted regions}, thus avoiding direct writing to, and reading from, the 
+sensitive memory pages.
+The latter, instead, enables a remote entity to verify the integrity of a 
+\emph{trusted region}.
+
+The combination of \emph{memory isolation} and \emph{remote attestation} 
+is a solid base for building more secure applications over the Internet. 
+TEEs, however, are far from being the final weapons in the security war.
+In fact, they suffer from many limitations that range from scalability 
+issues to new security threats.
+The goal of this thesis is to investigate the current limitations of TEE, 
+grasping the future for possible new threats, and study suitable solutions that 
+could be deployed over current technology.
+
+The first part of the thesis revolves around \emph{memory isolation}.
+We address scalability issues affecting TEEs and propose more 
+flexible designs fitting the current hardware specifications 
+(Chapter~\ref{chp:static-protection}).
+Then, we investigate new threats that exploit the \emph{memory isolation} 
+and implant malicious software in a \emph{trusted region} 
+(Chapter~\ref{chp:advanced-threats}).
+Finally, we study the implication of \emph{trusted regions} when performing 
+incident response, propose new techniques, and show research directions to 
+fulfill the current gaps (Chapter~\ref{chp:forensic}).
+
+In the second part, we extend the \emph{remote attestation} schemes to 
+identify the runtime attacks described in Chapter~\ref{chp:advanced-threats}.
+First, we propose a novel model that can be used in software of any complexity, 
+thus overcoming the scalability issues of current approaches.
+(Chapter~\ref{chp:runtime-protection-untrusted}).
+Then, we propose another model that can be included inside a \emph{trusted 
+region}, thus stretching runtime protections over \emph{memory isolated} 
+objects (Chapter~\ref{chp:runtime-protection-trusted}).
+
+In conclusion, we summarize the results achieved and draw directions for 
+further research questions regarding TEE in cloud computing.
 
 \end{abstract}
 
@@ -385,8 +438,8 @@ Finally, Lorenzo, for his extraordinary teachings and the inspirational vision.
 I can only hope to grasp even just a bit of their wisdom.
 
 I also desire to spend few words for my (extended) research group, with whom I 
-shared my thoughts, fears, and hope. Thanks John, Eric, Juan, Athul, Andrei, 
-Mujeeb, Sridhar and all the inestimable people a came across. 
+shared my thoughts, fears, and hopes. Thanks John, Eric, Juan, Athul, Andrei, 
+Mujeeb, Sridhar and all the inestimable people I came across. 
 
 A special though to all the enthusiastic collaborators that I had the luck to 
 work with outside Singapore: Eleonora, Alessandro, Andrea B., Mariano, Davide, 
@@ -395,7 +448,7 @@ Each and every of them envisioned me with a peculiar and unique perspective,
 pushing my limits always a little further.
 
 Outside the academia, I feel to tank my friends: Yvonne, Cem, Sakshi, 
-Esra, Daniele, Daniel, Franesco, and a long list of people that otherwise
+Esra, Daniele, Daniel, Francesco, and a long list of people that otherwise
 require addition extra pages.
 
 In the end, I leave the deepest thank to my wife Anna: an inexplicable gem that 
@@ -462,7 +515,7 @@ them I could not be here now.
 %	DEDICATION
 %----------------------------------------------------------------------------------------
 
-\dedicatory{To the priceless love daily received by wife Anna, my mum 
+\dedicatory{To the priceless love daily received by my wife Anna, my mum 
 Lucia, and my father Lino \dots}
 
 %----------------------------------------------------------------------------------------
