@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  6 JUL 2021 09:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  6 JUL 2021 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2422,14 +2422,14 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
  Publications
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 374.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 377.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 373.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 376.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 377.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 376.
 
 1: section
 [3
@@ -2438,6 +2438,15 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
 --------------------
  Acknowledgements
 --------------------
+LaTeX Font Info:    Try loading font information for T1+phv on input line 430.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 430.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 430.
+
 1: section
 [4
 
@@ -2457,11 +2466,6 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Try loading font information for T1+phv on input line 36.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 ))
 \tf@lof=\write8
 \openout8 = `main.lof'.
@@ -2497,24 +2501,24 @@ Chapter 1.
 
 
 ]
-<fig_c1/sgx-architecture.pdf, id=836, 665.48625pt x 363.3575pt>
+<fig_c1/sgx-architecture.pdf, id=838, 665.48625pt x 363.3575pt>
 File: fig_c1/sgx-architecture.pdf Graphic file (type pdf)
 <use fig_c1/sgx-architecture.pdf>
 Package pdftex.def Info: fig_c1/sgx-architecture.pdf  used on input line 83.
 (pdftex.def)             Requested size: 291.98099pt x 159.42314pt.
  [2 <./fig_c1/sgx-architecture.pdf>]
-Overfull \hbox (3.30376pt too wide) in paragraph at lines 156--178
+Overfull \hbox (3.30376pt too wide) in paragraph at lines 153--175
 \T1/ppl/m/n/10.95 was an-nounced in 2013 ([]Rozas, [][]2013[][]) and is cur-ren
 tly adopted by many cloud providers,
  []
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 237.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 235.
 [3] [4] [5]
-<fig_c1/contribution.pdf, id=965, 902.37125pt x 312.16624pt>
+<fig_c1/contribution.pdf, id=966, 902.37125pt x 312.16624pt>
 File: fig_c1/contribution.pdf Graphic file (type pdf)
 <use fig_c1/contribution.pdf>
-Package pdftex.def Info: fig_c1/contribution.pdf  used on input line 428.
+Package pdftex.def Info: fig_c1/contribution.pdf  used on input line 427.
 (pdftex.def)             Requested size: 417.11752pt x 144.29842pt.
  [6 <./fig_c1/contribution.pdf>]) [7]
 \openout2 = `chapters/background-trusting-computing.aux'.
@@ -2533,13 +2537,13 @@ Overfull \hbox (1.19507pt too wide) in paragraph at lines 168--178
  con-cepts of control-flow graph
  []
 
-<fig_c4/problem-setting-code.pdf, id=1070, 266.9975pt x 166.6225pt>
+<fig_c4/problem-setting-code.pdf, id=1071, 266.9975pt x 166.6225pt>
 File: fig_c4/problem-setting-code.pdf Graphic file (type pdf)
 <use fig_c4/problem-setting-code.pdf>
 Package pdftex.def Info: fig_c4/problem-setting-code.pdf  used on input line 18
 3.
 (pdftex.def)             Requested size: 187.7016pt x 117.14088pt.
-<fig_c4/problem-setting-graph.pdf, id=1071, 229.85875pt x 275.0275pt>
+<fig_c4/problem-setting-graph.pdf, id=1072, 229.85875pt x 275.0275pt>
 File: fig_c4/problem-setting-graph.pdf Graphic file (type pdf)
 <use fig_c4/problem-setting-graph.pdf>
 Package pdftex.def Info: fig_c4/problem-setting-graph.pdf  used on input line 1
@@ -2551,19 +2555,19 @@ f
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c4/problem-setting-graph.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
 >]
-<fig_c7/sgxbackground.pdf, id=1135, 479.7925pt x 162.6075pt>
+<fig_c7/sgxbackground.pdf, id=1136, 479.7925pt x 162.6075pt>
 File: fig_c7/sgxbackground.pdf Graphic file (type pdf)
 <use fig_c7/sgxbackground.pdf>
 Package pdftex.def Info: fig_c7/sgxbackground.pdf  used on input line 296.
 (pdftex.def)             Requested size: 333.69528pt x 113.095pt.
  [12 <./fig_c7/sgxbackground.pdf>] [13]
-<fig_c7/sgxprogrammingpattern_library.pdf, id=1172, 468.75125pt x 137.51375pt>
+<fig_c7/sgxprogrammingpattern_library.pdf, id=1173, 468.75125pt x 137.51375pt>
 File: fig_c7/sgxprogrammingpattern_library.pdf Graphic file (type pdf)
 <use fig_c7/sgxprogrammingpattern_library.pdf>
 Package pdftex.def Info: fig_c7/sgxprogrammingpattern_library.pdf  used on inpu
 t line 406.
 (pdftex.def)             Requested size: 375.40321pt x 110.12865pt.
-<fig_c7/sgxprogrammingpattern_static.pdf, id=1173, 468.75125pt x 138.5175pt>
+<fig_c7/sgxprogrammingpattern_static.pdf, id=1174, 468.75125pt x 138.5175pt>
 File: fig_c7/sgxprogrammingpattern_static.pdf Graphic file (type pdf)
 <use fig_c7/sgxprogrammingpattern_static.pdf>
 Package pdftex.def Info: fig_c7/sgxprogrammingpattern_static.pdf  used on input
@@ -2609,7 +2613,7 @@ Overfull \hbox (2.37675pt too wide) in paragraph at lines 412--437
  []
 
 [19]
-<fig_c3/core-all.pdf, id=1305, 843.15pt x 421.575pt>
+<fig_c3/core-all.pdf, id=1306, 843.15pt x 421.575pt>
 File: fig_c3/core-all.pdf Graphic file (type pdf)
 <use fig_c3/core-all.pdf>
 Package pdftex.def Info: fig_c3/core-all.pdf  used on input line 454.
@@ -2622,18 +2626,18 @@ d\T1/ppl/m/n/10.95 .
  []
 
 [21]
-<fig_c3/dec1.pdf, id=1360, 689.57625pt x 226.8475pt>
+<fig_c3/dec1.pdf, id=1361, 689.57625pt x 226.8475pt>
 File: fig_c3/dec1.pdf Graphic file (type pdf)
 <use fig_c3/dec1.pdf>
 Package pdftex.def Info: fig_c3/dec1.pdf  used on input line 647.
 (pdftex.def)             Requested size: 333.69528pt x 109.77513pt.
  [22] [23 <./fig_c3/dec1.pdf>]
-<fig_c3/architecture.pdf, id=1415, 562.1pt x 314.17375pt>
+<fig_c3/architecture.pdf, id=1416, 562.1pt x 314.17375pt>
 File: fig_c3/architecture.pdf Graphic file (type pdf)
 <use fig_c3/architecture.pdf>
 Package pdftex.def Info: fig_c3/architecture.pdf  used on input line 1005.
 (pdftex.def)             Requested size: 187.7016pt x 104.90968pt.
-<fig_c3/clientarchitecture.pdf, id=1416, 550.055pt x 236.885pt>
+<fig_c3/clientarchitecture.pdf, id=1417, 550.055pt x 236.885pt>
 File: fig_c3/clientarchitecture.pdf Graphic file (type pdf)
 <use fig_c3/clientarchitecture.pdf>
 Package pdftex.def Info: fig_c3/clientarchitecture.pdf  used on input line 1014
@@ -2644,7 +2648,7 @@ Package pdftex.def Info: fig_c3/clientarchitecture.pdf  used on input line 1014
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c3/clientarchitecture.pdf): PDF i
 nclusion: multiple pdfs with page group included in a single page
 >] [26]
-<fig_c3/installation.pdf, id=1502, 916.42375pt x 184.69pt>
+<fig_c3/installation.pdf, id=1503, 916.42375pt x 184.69pt>
 File: fig_c3/installation.pdf Graphic file (type pdf)
 <use fig_c3/installation.pdf>
 Package pdftex.def Info: fig_c3/installation.pdf  used on input line 1242.
@@ -2662,13 +2666,13 @@ mea-sure the im-pact of our anti-tampering tech-
  []
 
 [28]
-<fig_c3/performanceEvaluation.png, id=1559, 524.6802pt x 351.2322pt>
+<fig_c3/performanceEvaluation.png, id=1560, 524.6802pt x 351.2322pt>
 File: fig_c3/performanceEvaluation.png Graphic file (type png)
 <use fig_c3/performanceEvaluation.png>
 Package pdftex.def Info: fig_c3/performanceEvaluation.png  used on input line 1
 349.
 (pdftex.def)             Requested size: 187.7016pt x 125.6503pt.
-<fig_c3/multiple.png, id=1561, 462.528pt x 346.896pt>
+<fig_c3/multiple.png, id=1562, 462.528pt x 346.896pt>
 File: fig_c3/multiple.png Graphic file (type png)
 <use fig_c3/multiple.png>
 Package pdftex.def Info: fig_c3/multiple.png  used on input line 1356.
@@ -2706,7 +2710,7 @@ he ad-ver-sary re-sides in user-space. SnakeGX
  []
 
 [33] [34] [35]
-<fig_c5/synch-exit.pdf, id=1693, 720.6925pt x 407.5225pt>
+<fig_c5/synch-exit.pdf, id=1694, 720.6925pt x 407.5225pt>
 File: fig_c5/synch-exit.pdf Graphic file (type pdf)
 <use fig_c5/synch-exit.pdf>
 Package pdftex.def Info: fig_c5/synch-exit.pdf  used on input line 395.
@@ -2723,7 +2727,7 @@ Overfull \hbox (3.27092pt too wide) in paragraph at lines 444--451
 ay craft a fake \T1/pcr/m/n/10.95 ocall_context\T1/ppl/m/n/10.95 .
  []
 
-<fig_c5/sgx-ocall-context.pdf, id=1704, 714.67pt x 546.04pt>
+<fig_c5/sgx-ocall-context.pdf, id=1705, 714.67pt x 546.04pt>
 File: fig_c5/sgx-ocall-context.pdf Graphic file (type pdf)
 <use fig_c5/sgx-ocall-context.pdf>
 Package pdftex.def Info: fig_c5/sgx-ocall-context.pdf  used on input line 454.
@@ -2748,14 +2752,14 @@ ed lo-ca-tion for in-stalling an \T1/pcr/m/n/10.95 ocall_context\T1/ppl/m/n/10.
  []
 
 [42]
-<fig_c5/t-thread-stack-installed.pdf, id=1832, 467.7475pt x 302.12875pt>
+<fig_c5/t-thread-stack-installed.pdf, id=1833, 467.7475pt x 302.12875pt>
 File: fig_c5/t-thread-stack-installed.pdf Graphic file (type pdf)
 <use fig_c5/t-thread-stack-installed.pdf>
 Package pdftex.def Info: fig_c5/t-thread-stack-installed.pdf  used on input lin
 e 924.
 (pdftex.def)             Requested size: 291.98099pt x 188.6041pt.
  [43 <./fig_c5/t-thread-stack-installed.pdf>]
-<fig_c5/flavio-enclave-chain.pdf, id=1864, 670.505pt x 467.7475pt>
+<fig_c5/flavio-enclave-chain.pdf, id=1865, 670.505pt x 467.7475pt>
 File: fig_c5/flavio-enclave-chain.pdf Graphic file (type pdf)
 <use fig_c5/flavio-enclave-chain.pdf>
 Package pdftex.def Info: fig_c5/flavio-enclave-chain.pdf  used on input line 10
@@ -2805,7 +2809,7 @@ Chapter 6.
 
 
 ] [54]
-<fig_c4/challenge-III.pdf, id=2101, 263.98625pt x 219.82124pt>
+<fig_c4/challenge-III.pdf, id=2102, 263.98625pt x 219.82124pt>
 File: fig_c4/challenge-III.pdf Graphic file (type pdf)
 <use fig_c4/challenge-III.pdf>
 Package pdftex.def Info: fig_c4/challenge-III.pdf  used on input line 175.
@@ -2815,7 +2819,7 @@ Underfull \hbox (badness 5637) in paragraph at lines 176--176
  []\T1/ppl/m/sc/10 (a) |\T1/ppl/m/n/10 Loop ex-am-ple in the ScaRR 
  []
 
-<fig_c4/challenge-IV.pdf, id=2102, 455.7025pt x 199.74625pt>
+<fig_c4/challenge-IV.pdf, id=2103, 455.7025pt x 199.74625pt>
 File: fig_c4/challenge-IV.pdf Graphic file (type pdf)
 <use fig_c4/challenge-IV.pdf>
 Package pdftex.def Info: fig_c4/challenge-IV.pdf  used on input line 182.
@@ -2825,7 +2829,7 @@ Package pdftex.def Info: fig_c4/challenge-IV.pdf  used on input line 182.
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c4/challenge-IV.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
-<fig_c4/overview.pdf, id=2142, 828.09375pt x 451.6875pt>
+<fig_c4/overview.pdf, id=2143, 828.09375pt x 451.6875pt>
 File: fig_c4/overview.pdf Graphic file (type pdf)
 <use fig_c4/overview.pdf>
 Package pdftex.def Info: fig_c4/overview.pdf  used on input line 300.
@@ -2839,14 +2843,14 @@ r/m/n/10.95 ([]))$\T1/ppl/m/n/10.95 .
  []
 
 [58] [59]
-<fig_c4/trace-paths-example.pdf, id=2192, 401.5pt x 215.80624pt>
+<fig_c4/trace-paths-example.pdf, id=2193, 401.5pt x 215.80624pt>
 File: fig_c4/trace-paths-example.pdf Graphic file (type pdf)
 <use fig_c4/trace-paths-example.pdf>
 Package pdftex.def Info: fig_c4/trace-paths-example.pdf  used on input line 517
 .
 (pdftex.def)             Requested size: 250.27306pt x 134.52621pt.
  [60 <./fig_c4/trace-paths-example.pdf>]
-<fig_c4/shadow-stack-no.pdf, id=2213, 383.4325pt x 206.7725pt>
+<fig_c4/shadow-stack-no.pdf, id=2214, 383.4325pt x 206.7725pt>
 File: fig_c4/shadow-stack-no.pdf Graphic file (type pdf)
 <use fig_c4/shadow-stack-no.pdf>
 Package pdftex.def Info: fig_c4/shadow-stack-no.pdf  used on input line 564.
@@ -2864,25 +2868,25 @@ Overfull \hbox (13.659pt too wide) in paragraph at lines 634--655
 sys_addaction
  []
 
-<fig_c4/architecture.pdf, id=2241, 645.41125pt x 349.305pt>
+<fig_c4/architecture.pdf, id=2242, 645.41125pt x 349.305pt>
 File: fig_c4/architecture.pdf Graphic file (type pdf)
 <use fig_c4/architecture.pdf>
 Package pdftex.def Info: fig_c4/architecture.pdf  used on input line 668.
 (pdftex.def)             Requested size: 291.98099pt x 158.0226pt.
 [62] [63 <./fig_c4/architecture.pdf>]
-<fig_c4/attesetation_speed.png, id=2278, 462.528pt x 346.896pt>
+<fig_c4/attesetation_speed.png, id=2279, 462.528pt x 346.896pt>
 File: fig_c4/attesetation_speed.png Graphic file (type png)
 <use fig_c4/attesetation_speed.png>
 Package pdftex.def Info: fig_c4/attesetation_speed.png  used on input line 750.
 
 (pdftex.def)             Requested size: 187.7016pt x 140.77794pt.
-<fig_c4/functioncall.png, id=2279, 462.528pt x 346.896pt>
+<fig_c4/functioncall.png, id=2280, 462.528pt x 346.896pt>
 File: fig_c4/functioncall.png Graphic file (type png)
 <use fig_c4/functioncall.png>
 Package pdftex.def Info: fig_c4/functioncall.png  used on input line 758.
 (pdftex.def)             Requested size: 187.7016pt x 140.77794pt.
  [64 <./fig_c4/attesetation_speed.png> <./fig_c4/functioncall.png>]
-<fig_c4/network_performance.png, id=2295, 474.8139pt x 295.5843pt>
+<fig_c4/network_performance.png, id=2296, 474.8139pt x 295.5843pt>
 File: fig_c4/network_performance.png Graphic file (type png)
 <use fig_c4/network_performance.png>
 Package pdftex.def Info: fig_c4/network_performance.png  used on input line 826
@@ -2906,7 +2910,7 @@ Overfull \hbox (16.07016pt too wide) in paragraph at lines 11--29
 
 
 ]
-<fig_c6/fmi-standard.pdf, id=2396, 451.6875pt x 222.8325pt>
+<fig_c6/fmi-standard.pdf, id=2397, 451.6875pt x 222.8325pt>
 File: fig_c6/fmi-standard.pdf Graphic file (type pdf)
 <use fig_c6/fmi-standard.pdf>
 Package pdftex.def Info: fig_c6/fmi-standard.pdf  used on input line 108.
@@ -2918,7 +2922,7 @@ n-sump-tion of [][](i)[]  \T1/pcr/m/n/10.95 ocall_context\T1/ppl/m/n/10.95 ,
  []
 
 [71] [72]
-<fig_c6/running-example-graph.pdf, id=2504, 459.7175pt x 289.08pt>
+<fig_c6/running-example-graph.pdf, id=2505, 459.7175pt x 289.08pt>
 File: fig_c6/running-example-graph.pdf Graphic file (type pdf)
 <use fig_c6/running-example-graph.pdf>
 Package pdftex.def Info: fig_c6/running-example-graph.pdf  used on input line 4
@@ -2932,7 +2936,7 @@ m/n/10.95 traceBranch()
  []
 
 [73 <./fig_c6/running-example-graph.pdf>]
-<fig_c6/design.pdf, id=2554, 1099.10625pt x 405.515pt>
+<fig_c6/design.pdf, id=2555, 1099.10625pt x 405.515pt>
 File: fig_c6/design.pdf Graphic file (type pdf)
 <use fig_c6/design.pdf>
 Package pdftex.def Info: fig_c6/design.pdf  used on input line 505.
@@ -2987,7 +2991,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/multiply-eps-converted-to.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig_c6/multiply-eps-converted-to.pdf, id=2800, 716.6775pt x 282.05376pt>
+<fig_c6/multiply-eps-converted-to.pdf, id=2801, 716.6775pt x 282.05376pt>
 File: fig_c6/multiply-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_c6/multiply-eps-converted-to.pdf>
 Package pdftex.def Info: fig_c6/multiply-eps-converted-to.pdf  used on input li
@@ -3016,7 +3020,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/action-second-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<fig_c6/action-second-eps-converted-to.pdf, id=2801, 722.7pt x 286.06876pt>
+<fig_c6/action-second-eps-converted-to.pdf, id=2802, 722.7pt x 286.06876pt>
 File: fig_c6/action-second-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_c6/action-second-eps-converted-to.pdf>
 Package pdftex.def Info: fig_c6/action-second-eps-converted-to.pdf  used on inp
@@ -3046,7 +3050,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/request_per_second-eps-convert
 ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
-<fig_c6/request_per_second-eps-converted-to.pdf, id=2830, 710.655pt x 270.00874
+<fig_c6/request_per_second-eps-converted-to.pdf, id=2831, 710.655pt x 270.00874
 pt>
 File: fig_c6/request_per_second-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_c6/request_per_second-eps-converted-to.pdf>
@@ -3072,13 +3076,13 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/latency_2-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig_c6/latency_2-eps-converted-to.pdf, id=2831, 710.655pt x 270.00874pt>
+<fig_c6/latency_2-eps-converted-to.pdf, id=2832, 710.655pt x 270.00874pt>
 File: fig_c6/latency_2-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_c6/latency_2-eps-converted-to.pdf>
 Package pdftex.def Info: fig_c6/latency_2-eps-converted-to.pdf  used on input l
 ine 1344.
 (pdftex.def)             Requested size: 204.38988pt x 77.6578pt.
-<fig_c6/vlc_performance.pdf, id=2836, 715.76999pt x 274.90138pt>
+<fig_c6/vlc_performance.pdf, id=2837, 715.76999pt x 274.90138pt>
 File: fig_c6/vlc_performance.pdf Graphic file (type pdf)
 <use fig_c6/vlc_performance.pdf>
 Package pdftex.def Info: fig_c6/vlc_performance.pdf  used on input line 1366.
@@ -3088,7 +3092,7 @@ Underfull \hbox (badness 1205) in paragraph at lines 1372--1372
  \T1/ppl/m/n/10 We mea-sure the per-cent-age of CPU us-age 
  []
 
-<fig_c6/biniax2_performance.pdf, id=2837, 715.58932pt x 274.90138pt>
+<fig_c6/biniax2_performance.pdf, id=2838, 715.58932pt x 274.90138pt>
 File: fig_c6/biniax2_performance.pdf Graphic file (type pdf)
 <use fig_c6/biniax2_performance.pdf>
 Package pdftex.def Info: fig_c6/biniax2_performance.pdf  used on input line 137
@@ -3135,12 +3139,7 @@ Chapter 9.
 
 
 
-]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 68.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 68.
- [96]) [97]
+] [96]) [97]
 \openout2 = `appendices/appendix_sgxmonitor.aux'.
 
  (./appendices/appendix_sgxmonitor.tex
@@ -3495,7 +3494,7 @@ pe1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (129 pages, 1971470 bytes).
+Output written on main.pdf (129 pages, 1970308 bytes).
 PDF statistics:
  4043 PDF objects out of 4296 (max. 8388607)
  3494 compressed objects within 35 object streams
