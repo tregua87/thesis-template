@@ -1,0 +1,430 @@
+\chapter{Related Works}
+\label{chp:related-works}
+
+In this chapter, we compare the contributions proposed in this thesis (from 
+chapter~\ref{chp:static-protection}~to~\ref{chp:runtime-protection-trusted}) 
+with the literature.
+We split the chapter in three sections. 
+In the first part, we discuss works related with \emph{memory isolation} 
+(Section~\ref{sec:memory-isolation}).
+The second part, instead, focuses on \emph{remote attestation} 
+(Section~\ref{sec:remote-attestation}).
+In the last part, we collect related works from areas not previously covered 
+(Section~\ref{sec:miscellansous}).
+
+Since many related works are compared with more than one contribution, we use 
+the chapter number as a reference to avoid misunderstanding.
+
+\section{Memory Isolation}
+\label{sec:memory-isolation}
+
+We illustrate works that deal with \emph{memory isolation} from many 
+perspectives.
+First, we discuss software protections based on SGX 
+(Section~\ref{ssec:software-protection-by-using-sgx}).
+Then, we focus on malware-enclaves (Section~\ref{ssec:enclave-as-malware}), and
+memory corruption errors in SGX (Section~\ref{ssec:memory-corrution}).
+Finally, we discuss memory-forensic in SGX environment 
+(Section~\ref{ssec:forensic-in-sgx}).
+
+\subsection{Software protection by using SGX}
+\label{ssec:software-protection-by-using-sgx}
+
+The first strategy for protecting applications by using SGX was
+moving the whole code inside an enclave.
+This was proposed by \cite{baumann2015shielding}, and by 
+\cite{tsai2017graphene} after.
+They respectively developed Haven (for Windows) and Graphene (for Linux), which 
+are tools that allow one to execute legacy applications inside an enclave.
+Respect to Chapter~\ref{chp:static-protection}, their attacker model is the 
+Iago attacker, which consider the host OS as malicious, while our attacker 
+model aims at modifying code at runtime from user-space.
+These tools contain a micro-kernel inside an enclave that communicates
+through a Drawbridge system with the host OS \citep{porter2011rethinking}.
+A spin in this direction was proposed by \cite{seo2017sgx}, who 
+extend the project Graphene by adding Address Space Layout Randomization (ASLR) 
+features.
+\cite{arnautov2016scone}, instead, deployed previous approaches 
+to Docker containers in their tool SCONE.
+All these systems have a common approach: they run the whole application in an 
+enclave. 
+However, they need to introduce some compromise: Haven and Graphene need 
+specific libraries for the OS.
+Moreover, they limit applications' features (\eg Haven does not allow graphical 
+interfaces, SCONE do not support \texttt{fork()} operations), also, they limit 
+application size because of the enclave limitation.
+The approach in Chapter~\ref{chp:static-protection}, instead, can protect a 
+vast code surface exploiting few code lines in the enclave without any 
+additional library or limitation in term of features.
+
+Another approach for SGX technology is to move into \emph{enclave} only those 
+parts of the application which are considered secure-sensitive.
+This approach was adopted by \cite{schuster2015vc3}, who combined MapReduce 
+framework and SGX enclaves to perform big data analysis.
+In this work, authors define ad-hoc enclave for their application.
+This approach was then automatized by \cite{lind2017glamdring}, who proposed a 
+tool (Glamdring) that moves critical sections (and variables) into 
+automatically generated enclaves.
+The approach in Chapter~\ref{chp:static-protection} is different because we 
+protect critical sections without moving them inside enclaves.
+
+\subsection{Enclaves as Malware}
+\label{ssec:enclave-as-malware}
+
+The work in Chapter~\ref{chp:advanced-threats} implants a malware (\ie a 
+backdoor) in a legit enclave.
+Researchers already investigated SGX isolation properties as malware container
+in previous
+works 
+\citep{thoughs-on-intel1,thoughs-on-intel2,davenport2014sgx,amsterdamsgxmalwer,schwarz2017malware,schwarz2018good,sgx-rop}.
+However, all these approaches require the introduction of a new enclave in the 
+system.
+The main issue of this approach is that an unexpected enclave can be detected
+and, consequently, attract analysts' attentions, as we discuss in 
+Chapter~\ref{chp:forensic}.
+On the contrary, Chapter~\ref{chp:advanced-threats} shows an attack that hides 
+its presence in a running and legitimate enclave thus proposing a new approach 
+for malware-enclave.
+
+\cite{7980210} proposed EnGarde, which is an enclave loader that checks whether 
+the enclave matches a set of predefined policies in order to avoid loading 
+potentially dangerous code.
+In this way, it is no more possible to introduce a new malicious enclave in the 
+system.
+However, once an enclave is loaded, it follows standard SGX specification, 
+therefore, Chapter~\ref{chp:advanced-threats} shows how to take control of it, 
+if our assumptions are satisfied.
+
+To mitigate malware-enclaves, \cite{sgxjail} introduced 
+SGXJail, which is the first sandbox for untrusted enclaves.
+In their scenario, the authors assume that a malicious enclave is developed on 
+purpose and then deployed in a machine without being inspected (\eg the enclave 
+is shipped as encrypted).
+Once installed, the malicious enclave can launch several attacks, \eg leak 
+information, compromise the host.
+SGXJail restricts the enclave interaction by mean of a sandboxed process with 
+a very narrowed number of syscalls enabled.
+In principle, the design of SGXJail reduces the attack surface of the attack in 
+Chapter~\ref{chp:advanced-threats}.
+However, since we attack only trusted enclaves (\ie enclaves that were 
+verified beforehand), we consider reasonable not to assume sandboxes in place.
+In addition, the attack in Chapter~\ref{chp:advanced-threats} can implement a 
+sandbox detection to avoid the infection, \ie we can probe the host process by 
+running specific syscalls during the installation phase and, in case, interrupt 
+the attack.
+In terms of memory-forensic, SGXJail is limited to containment and does not 
+inspect the enclave content, thus not providing any forensic information.
+On the contrary, the study in Chapter~\ref{chp:forensic} extracts evidence from 
+the memory, thus complementing the work of Weiser et al.
+
+As an alternative, \cite{zhang2021see} propose SGX-Bouncer, that can infer an 
+enclave behavior without breaking its isolation.
+SGX-Bouncer scans the cache access in the attempt to detect illegal memory
+access, such as side-channels or unauthorized enclave exits.
+This project works with runtime information, and its purpose is to detect
+running malware-enclave.
+On the contrary, the work in Chapter~\ref{chp:forensic} deals with a static 
+image of the system. 
+Anyway, SGX-Bouncer can be seen as a complementary tool for a comprehensive
+forensic analysis, as discussed in Chapter~\ref{chp:forensic}.
+
+
+\subsection{Memory Corruption in SGX enclaves}
+\label{ssec:memory-corrution}
+
+SGX applications are not immune to flaws that may lead to memory corruption 
+attacks.
+In this scenario, the attacker can use classic exploitation techniques.
+However, it is important to underline that the SGX isolation by default 
+complicates the exploitation phase.
+In this hostile environment, \cite{lee2017hacking} developed 
+Dark-ROP, a technique to gain information about the enclave to build a 
+successful attack.
+The work of \cite{lee2017hacking} forces a victim enclave to crash
+and restart many times to look up the gadgets and build the ROP-chains.
+Their strategy is reasonable since they assume the entire host as compromised,
+and therefore, the adversary has no need to hide its presence.
+An optimized strategy has been proposed by \cite{biondo2018guard}, in which 
+they assume a non-compromised host. 
+The goal of Biondo is to gain control of the enclave in a single 
+iteration.
+However, as we discussed in Section~\ref{ssec:comparison} and 
+Chapter~\ref{chp:forensic}, the strategy of Biondo leaves a certain amount of 
+traces that can be detected.
+The work in Chapter~\ref{chp:advanced-threats}, instead, improves its 
+stealthiness by permanently injecting a backdoor in the enclave.
+As a result, it just needs an \texttt{ORET} to activate payloads 
+arbitrary complex.
+This increases the stealthiness of our attack in case of a non-compromised 
+host.
+To achieve our goal, Chapter~\ref{chp:advanced-threats} overcomes new 
+challenges, such as persistence in an enclave by solely using code-reuse 
+attacks and expanding the data-only malware model by proposing new techniques.
+To the best of our knowledge, these novel challenges have not been 
+discussed and solved for SGX technology before.
+
+Other works in the literature investigated memory integrity mechanisms for SGX 
+enclaves. \cite{Kuvaiskii:2017:SMS:3064176.3064192} implemented SGXBounds.
+This tool instruments enclave code to mitigate memory corruption errors.
+Unfortunately, SGXBounds has been developed only for SCONE \citep{199364}, 
+which is a project that enforces Docker containers by using small enclaves.
+\cite{schuster2015vc3} describe VC3, which is a Map-Reduce framework based on 
+SGX.
+Since VC3 takes custom software as an input, the authors developed a set of 
+static-code checks to limit memory corruption issues.
+To reduce memory corruptions flaws, \cite{sgx-rust} described a Rust 
+environment for SGX. 
+However, as underlined by the authors, even with a framework written in a safe 
+programming language we cannot solve all the memory corruption issues.
+\cite{il3} proposed T-SGX, which reduces the amount of information gathered 
+from enclave crashes and limited the impact of attacks like Dark-ROP.
+The work in Chapter~\ref{chp:advanced-threats}, however, is a generic framework 
+that can rely on any code-reuse attack for SGX enclaves.
+For instance, \cite{tale-two-worlds} and \cite{sgxfloating} conducted a 
+systematic study of the memory errors in the SGX run-time libraries and they 
+found several flaws in different projects.
+\cite{teerex} proposed TeeRex, an automatic analyzer for memory corruption 
+errors in enclaves.
+All these defensive works show a limitation in the SGX design. This technology 
+shields all the threats from the outside but has almost no protections to 
+harden a flawed application running inside the enclave. 
+Unfortunately, all the proposed defensive solutions are not ready for a real 
+production deployment and do not entirely solve the problem.
+In many cases they can be bypassed and, at the moment,
+there are code-reuse attacks (\cite{biondo2018guard,lee2017hacking}; and the 
+one in Chapter~\ref{chp:advanced-threats}) able to 
+disarm standard and additional SGX memory-integrity mechanisms.
+
+\vspace{0.5cm}
+\noindent \textbf{Similarities with memory-forensic techniques} -- The works 
+described before share few similarities with the forensic techniques 
+in Chapter~\ref{chp:forensic}.
+For instance, code-reuse attacks require to infer the enclave base address for 
+their payload.
+Specifically, Biondo's work and the one discussed in 
+Chapter~\ref{chp:advanced-threats} achieved this goal by reading the ELRANGE 
+from user space and looking for pages belonging to the \texttt{isgx} device.
+The study in Chapter~\ref{chp:forensic} deeply expands this concept and 
+investigates many source of information available in a memory-forensic 
+exercise, without assuming the enclave content. 
+%Finally, we show the practicality of these techniques against the work in 
+%Chapter~\ref{chp:advanced-threats}.
+%
+Another example are the works of \cite{tale-two-worlds} and \cite{sgxfloating} 
+that analyze the enclave ABI.
+Even though they share few similarities with the interface detection described 
+in Chapter~\ref{chp:forensic}. Our approach is more generic and aimed to locate 
+the enclave interfaces for forensic purposes in the untrusted memory. 
+
+\subsection{Forensic in SGX environment}
+\label{ssec:forensic-in-sgx}
+\cite{zhang2018memory} in ``Memory forensic challenges under
+misused architectural features'' demonstrated how important and lacking are SGX
+forensics tools. In their work, they show how a malicious enclave can encrypt
+files, as a classical ransomware, without the possibility for a forensic analyst
+to recover the encryption key stored in the enclave also with complete access to
+the system.
+Furthermore, an analyst who wants to perform any type of analysis on SGX
+capable system has no valid dump tool to gain access to enclave
+memory space because even tools running at the highest system privilege
+modes are ineffective, as the one presented in \cite{reina2012hardware}.
+On the contrary, in Chapter~\ref{chp:forensic} we performed a deep study of the 
+traces left in the system memory by the enclaves, illustrate practical 
+approaches to infer information, and discuss applications in real use cases.
+
+\section{Remote Attestation}
+
+\label{sec:remote-attestation}
+
+We illustrate works that addressed \emph{static remote attestation} 
+(Section~\ref{ssec:static-ra}), and \emph{runtime remote attestation} 
+(Section~\ref{ssec:runtime-ra}).
+
+\subsection{Static Remote Attestation}
+\label{ssec:static-ra}
+
+Existing RA schemes are based on a cryptographic signature of a piece of 
+software (\eg software modules, BIOS, operating system). Commercial solutions 
+that implement such mechanisms are already available: 
+TPM \citep{tomlinson2017introduction}, SGX \citep{costan2016intel}, and AMD 
+TrustZone \citep{winter2008trusted}. 
+Academic approaches, which focus on cloud systems, are proposed by 
+\cite{wang2018trusted} and \cite{ba2017jmonatt}. 
+More specifically, their solutions involve a static attestation schema for 
+infrastructures as a service and JVM cloud computing, respectively. 
+Even though these technologies can provide high-security guarantees, they focus 
+on static properties (\ie signatures of components) and cannot offer any 
+defence against runtime attacks.
+On the contrary, in chapters~\ref{chp:runtime-protection-untrusted} 
+and~\ref{chp:runtime-protection-trusted}, we extend the properties of static 
+remote attestation by including runtime properties, as to detect code-reuse 
+attacks.
+
+\subsection{Runtime Remote Attestation}
+\label{ssec:runtime-ra}
+
+To overcome design limitations of static RA, researchers propose runtime RA. 
+\cite{kil2009remote} analyze base pointers of software components, such as 
+stack and heap, and compare them with the measurements acquired offline.
+\cite{bailey2010trusted} propose a coarse-grained level that attests the order 
+in which applications modules are executed. \cite{davi2009dynamic} propose a 
+runtime attestation based on policies, such as the number of instructions 
+executed between two consecutive returns. Previous works suggest first to 
+acquire a runtime measurement of software properties, but do not provide a 
+fine-grained control-flow analysis.
+
+A modern fine-grained control-flow RA is represented by C-FLAT, which is 
+proposed by \cite{abera2016c}. 
+This schema measures the valid execution paths undertaken by embedded systems 
+and generates a hash, which length depends on the number of control-flow events 
+encountered at runtime. 
+Then, the hash is compared with a list of offline measurements. 
+C-FLAT differs from the model in Chapter~\ref{chp:runtime-protection-untrusted}
+for the following reasons:
+\begin{enumerate*}[label=(\roman*)]
+	\item C-FLAT control-flow representation grows along with software 
+	complexity, while in Chapter~\ref{chp:runtime-protection-untrusted} we 
+	model complex control-flow paths by using partial reports, and
+	\item the work in Chapter~\ref{chp:runtime-protection-untrusted} is 
+	designed to use features of modern computer architectures (\eg 
+	multi-threading, bigger buffers).
+\end{enumerate*}
+\cite{dessouky2017fat} propose LO-FAT, which is a C-FLAT hardware 
+implementation aimed at improving runtime performances for embedded systems. 
+However, LO-FAT inherits all of C-FLAT design limitations in terms of 
+control-flow representation. \cite{zeitouni2017atrium} designed ATRIUM, that 
+strengthens runtime RA schemes against physical attacks for embedded devices. 
+Even though the authors address different use cases, this solution might be 
+combined with the work in Chapter~\ref{chp:runtime-protection-untrusted}.
+
+\cite{Dessouky:2018:LLH:3240765.3240821} propose LiteHax, that deals with 
+data-only attacks.
+Their approach shares some similarities with the model in 
+Chapter~\ref{chp:runtime-protection-untrusted}: they 
+send detailed control-flow events information to a \emph{Verifier}. 
+However, they target data-oriented attacks (instead of control-flow). Moreover, 
+LiteHax uses symbolic execution to validate the reports, which slows down the 
+verification phase.
+\cite{aberadiat} discuss DIAT, which is a scalable RA for collaborative 
+autonomous system. They model a runtime control-flow as a multi-set. This 
+allows DIAT to represent complex control-flow graphs by using a relatively 
+short hash. However, its model loses information about the execution order of 
+the branches. This makes their approach prone to attacks like 
+COOP \citep{schuster2015counterfeit}. 
+In Chapter~\ref{chp:runtime-protection-untrusted}, instead, we combine a strong 
+static analysis and a shadow execution at the \emph{Verifier} side that 
+provides a sound approach by design. Overall, our 
+experiments show that ScaRR can handle a higher number of branches per second 
+compared to all the state-of-the-art runtime RA schemes.
+
+\cite{haldar2004semantic} propose a semantic RA, which leverages 
+a virtual machine to validate semantic properties (\eg subclass inherited). 
+However, the authors focus on run-time languages, while the model in 
+Chapter~\ref{chp:runtime-protection-untrusted} worst at binary 
+level.
+
+All the previous works (including 
+Chapter~\ref{chp:runtime-protection-untrusted}) propose sound runtime RAs, 
+however, they suffer from two fundamental differences \wrt the work in 
+Chapter~\ref{chp:runtime-protection-trusted}.
+First, all the previous works assume having an isolated trusted anchor that can 
+inspect the \emph{Prover} runtime properties.
+However, the \emph{memory isolation} of a TEE does not provide this feature by 
+design.
+To this end, Chapter~\ref{chp:runtime-protection-trusted} proposes a new pure 
+software design for SGX that involves two separate enclaves (\ie \emph{target} 
+and \emph{monitor}) and a secure communication channel.
+In particular, the \emph{target} enclave transfers each \emph{action} to the 
+\emph{monitor} thus immediately spotting any attempt of attack.
+Second, previous works are designed to model stateless executions.
+In Chapter~\ref{chp:runtime-protection-trusted}, instead, we propose a stateful 
+model that captures the \emph{enclave} life-cycle.
+
+\section{Other works}
+\label{sec:miscellansous}
+
+This section collects the related works not directly cover by \emph{memory 
+isolation} and \emph{remote attestation}.
+In particular, we discuss anti-tampering techniques 
+(Section~\ref{ssec:anti-tampering-techniques}), control-flow integrity checks 
+(Section~\ref{ssec:control-flow-integrity-checks}), and data-only malware 
+(Section~\ref{ssec:data-only-malware}).
+
+\subsection{Anti-tampering techniques}
+\label{ssec:anti-tampering-techniques}
+
+\cite{7371862}, \cite{ghosh2010secure}, and 
+\cite{Dewan:2008:HSP:1400549.1400685}, base their anti-tampering techniques 
+on hyper-visor level. 
+In all works, authors rely trustiness on the hypervisor, while we propose a 
+\emph{self-checking} mechanism which is built on top of a trusted module.
+\cite{Feng:2008:SMC:1517494.1517497} propose an anti-cheating mechanism for 
+video-games. In their approach, they simulating client logic on a server to 
+identify inconsistencies.
+Unlike them, the work in Chapter~\ref{chp:static-protection} spots client 
+anomalies by using a \emph{self-checking} system.
+
+\cite{viticchie2016reactive} developed an anti-tampering mechanism which is 
+based on a remote attestation.
+Here, the client is moved to a trusted server.
+Their approach is substantially different than the one discussed in 
+Chapter~\ref{chp:static-protection} because they do not rely on a trusted 
+module.
+Also, their mechanism forces an application to be partially moved to a server, 
+while we do not alter client structure.
+
+Commercial anti-tampering solutions for video-games, such 
+as \citep{evenbalance,vac}, perform a software signature which communicates 
+with a trusted server; however, they do not consider trusted computing for 
+improving software protection.
+
+\subsection{Control-flow Integrity Checks}
+\label{ssec:control-flow-integrity-checks}
+
+In the last few years, some authors have proposed architectures that share some 
+similarities with RA 
+\citep{Ding:2017:EPP:3241189.3241201,Liu:2018:RED:3243734.3243826,Hu:2018:EUC:3243734.3243797}.These
+works are composed by two concurrent processes: a target process (that might 
+be under attack), and a monitor process (that validate some target property).
+However, in chapters~\ref{chp:runtime-protection-trusted} 
+and~\ref{chp:runtime-protection-untrusted} consider a different attacker model 
+since we consider a fully compromised user-space, \ie an attacker may tamper 
+with the target software code or attack the monitor process itself. 
+Moreover, unlike chapters~\ref{chp:runtime-protection-untrusted} 
+and~\ref{chp:runtime-protection-trusted}, these solutions are not designed to 
+provide any report about the execution path of the target process. 
+
+For what concerns the work in Chapter~\ref{chp:runtime-protection-trusted}, one 
+could include a CFI in the \emph{trusted regions} to increase the security 
+guarantees. However, as in the case of SGX, these type of defenses are more 
+challenging to be deployed and adversaries already managed to bypass the
+current protections (as discussed in Section~\ref{ssec:memory-corrution}).
+Moreover, once a CFI is bypassed, the defender has lost control and it is not 
+possible to emit a proof for correct execution.
+Therefore, only adopting such defenses will lead to a never ending arm race.
+On the contrary, the work in Chapter~\ref{chp:runtime-protection-trusted} is 
+orthogonal with the previous defenses, provides fresh proof of correct 
+execution, and finally reduces the attack surface.
+
+\subsection{Data-only Malware}
+\label{ssec:data-only-malware}
+
+Data-only malware is any malicious payload that does not introduce or change 
+any existing code into the system \citep{vogl2014persistent}.
+Data-only malware are based on code-reuse techniques such as ROP and JOP, and 
+can hijack the control flow of the target application. This is possible by 
+exploiting a vulnerability and crafting a specific payload.
+The payload implementing the malicious functionality is usually ``one-shot''. 
+The first data-only malware proposed by \cite{hund} and \cite{chen} managed to 
+bypass state-of-the-art 
+protections and they were based on ROP and JOP techniques, respectively.
+However, both works lack of persistence.
+This means that if the attacker wants to repeat the same action, she needs to 
+exploit again the same vulnerability.
+The concept of persistence for data-only malware and more in general for 
+code-reuse attacks has been discussed and solved by \cite{vogl2014persistent} 
+for the x86 architecture. They proposed ``Chuck'' the first persistent 
+data-only (ROP) rootkit. 
+However, the solutions used in Chuck cannot be transparently adapted to the SGX 
+realm, and therefore, in Chapter~\ref{chp:advanced-threats} we expanded their 
+work and introduced novel techniques to have a data-only malware for SGX.
