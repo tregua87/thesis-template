@@ -162,9 +162,22 @@
 \contentsline {paragraph}{Shadow stack protection.}{87}{section*.524}
 \contentsline {subsubsection}{Non-control data attacks}{87}{section*.525}
 \contentsline {subsubsection}{Side-channels attacks}{87}{section*.526}
-\contentsline {chapter}{\numberline {8}Discussion and Conclusion}{88}{chapter.527}
-\contentsline {chapter}{\numberline {A}SgxMonitor: Model Examples}{91}{appendix.531}
-\contentsline {paragraph}{Transaction syntax.}{91}{section*.532}
-\contentsline {subsection}{\numberline {A.0.1}Outside Function Modeling}{91}{subsection.533}
-\contentsline {subsection}{\numberline {A.0.2}Exception Handling Modeling}{91}{subsection.542}
-\contentsline {chapter}{Bibliography}{93}{appendix*.543}
+\contentsline {chapter}{\numberline {8}Related Works}{88}{chapter.527}
+\contentsline {section}{\numberline {8.1}Memory Isolation}{88}{section.528}
+\contentsline {subsection}{\numberline {8.1.1}Software protection by using SGX}{88}{subsection.529}
+\contentsline {subsection}{\numberline {8.1.2}Enclaves as Malware}{89}{subsection.530}
+\contentsline {subsection}{\numberline {8.1.3}Memory Corruption in SGX enclaves}{90}{subsection.531}
+\contentsline {subsection}{\numberline {8.1.4}Forensic in SGX environment}{91}{subsection.532}
+\contentsline {section}{\numberline {8.2}Remote Attestation}{91}{section.533}
+\contentsline {subsection}{\numberline {8.2.1}Static Remote Attestation}{91}{subsection.534}
+\contentsline {subsection}{\numberline {8.2.2}Runtime Remote Attestation}{92}{subsection.535}
+\contentsline {section}{\numberline {8.3}Other works}{93}{section.538}
+\contentsline {subsection}{\numberline {8.3.1}Anti-tampering techniques}{93}{subsection.539}
+\contentsline {subsection}{\numberline {8.3.2}Control-flow Integrity Checks}{93}{subsection.540}
+\contentsline {subsection}{\numberline {8.3.3}Data-only Malware}{94}{subsection.541}
+\contentsline {chapter}{\numberline {9}Discussion and Conclusion}{95}{chapter.542}
+\contentsline {chapter}{\numberline {A}SgxMonitor: Model Examples}{98}{appendix.546}
+\contentsline {paragraph}{Transaction syntax.}{98}{section*.547}
+\contentsline {subsection}{\numberline {A.0.1}Outside Function Modeling}{98}{subsection.548}
+\contentsline {subsection}{\numberline {A.0.2}Exception Handling Modeling}{98}{subsection.557}
+\contentsline {chapter}{Bibliography}{100}{appendix*.558}

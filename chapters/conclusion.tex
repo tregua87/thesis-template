@@ -8,7 +8,7 @@ either \emph{memory isolation} and \emph{remote attestation}.
 The former ensures the content of a \emph{trusted region} is shield even 
 against a fully compromised environment.
 The latter, instead, is a cryptographic protocol that enables a third party to 
-talk with a specific \emph{trusted region} correctly bootstrapped.
+communicate with a \emph{trusted region} correctly bootstrapped.
 Regardless the new security achievements of these technologies, TEEs still 
 suffer from scalability issues. 
 Moreover, they alone cover only a subset of the attack vectors that could 
@@ -17,14 +17,13 @@ appear in the wild.
 In this thesis, we investigated the limitations that affect \emph{memory 
 isolation} and \emph{remote attestation}, studied possible new threats, and 
 proposed novel solutions to improve their security guarantees.
-For what concerns \emph{memory isolation}, we discussed its 
-scalability issue. Then, we investigated new intrusion techniques that exploit 
-a \emph{trusted region} and their implication in case of incident response.
+For what concerns \emph{memory isolation}, we discussed its limitations 
+respect to the restricted size of the protected area.
+Then, we investigated new intrusion techniques that exploit 
+a \emph{trusted region}, and their implication in case of incident response.
 In terms of \emph{remote attestation}, instead, we studied new models that 
 capture runtime properties, overcome scalability issues, and propose new 
 protocols that can protect advanced TEE modules.
-
-\todo{something about the state of the art?}
 
 In Chapter~\ref{chp:static-protection}, we proposed a software design that 
 overcome memory isolation limitations. It combines novel anti-tampering 
@@ -101,7 +100,7 @@ with $96$\% code coverage and zero false positives support SgxMonitor in
 realistic deployments to detect anomalous runtime executions of SGX enclaves.
 
 \vspace{0.3cm}
-Following the thesis direction, community and industry should invest more 
+Following the thesis direction, academia and industry should invest more 
 effort for deeply understanding the implications of TEE in real scenarios.
 For the market to really accept these technologies as a new standard, vendors 
 should study solutions that overcome the TEE intrinsic scalability issues. 
@@ -112,9 +111,10 @@ Much work is left to be done in other TEE technologies, such as ARM TrustZone
 common in smartphones.
 As a consequence, having more isolated \emph{trusted regions} will lead to new 
 threats, as highlighted in Chapter~\ref{chp:advanced-threats} by SnakeGX.
-However, SnakeGX only shows one perspectives, and new completely autonomous 
-data-only malware, which do not require any trigger, could appear in the near 
-future (similar to the work of \cite{vogl2014persistent}).
+However, SnakeGX addresses only one part of the problem. 
+New completely autonomous data-only malware, which do not require an external 
+trigger, could appear in the near future (similar to the work of 
+\cite{vogl2014persistent}).
 When this happens, the security community will be unprepared to dissect such 
 threats, as discussed in Chapter~\ref{chp:forensic}.
 Thus arising the necessity of more advanced malware dissection techniques that
@@ -129,7 +129,7 @@ of new defenses beyond the current \emph{remote attestations} schemes.
 In this scenario, the models in chapters~\ref{chp:runtime-protection-untrusted} 
 and~\ref{chp:runtime-protection-trusted} just scratch the surface of 
 possible solutions and they merely indicate directions and new challenges for 
-more complete approaches.
+more comprehensive approaches.
 Besides classic ROP techniques, data-only attacks can be used to bend the 
 enclave execution without violating the code integrity, and the community 
 should be ready to face these threats.
