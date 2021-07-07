@@ -320,7 +320,7 @@ enclave from the untrusted memory.
 SnakeGX achieves this goal through a design error that affects all 
 the SGX Software Development Kit (SDK) versions released by Intel.
 In this section, we make a deep analysis of the Intel SGX SDK in order to 
-highlight these issues and propose possible mitigation.
+highlight these issues and propose possible mitigations.
 
 \subsection{SDK Overview}
 \label{ssec:sdk-overview}
@@ -922,7 +922,7 @@ used by the adversaries to design their customized payload for SnakeGX.
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.7\textwidth]{fig_c5/t-thread-stack-installed.pdf}
-	\caption[SnakeGX installation layout.]{Trusted thread stack after SnakeGX 
+	\caption[SnakeGX installation layour.]{Trusted thread stack after SnakeGX 
 	installation. The memory is split in four areas: FakeFrame, buffer, 
 	workspace, and backup. Moreover, the stack contains copies of B$_{c}$, 
 	P$_{c}$, and R$_{c}$.}

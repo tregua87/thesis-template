@@ -118,7 +118,7 @@ components: \emph{checkpoints} and \emph{List of Actions (LoA)}.
 
 
 A \emph{checkpoint} is a special BBL used as a delimiter for identifying the 
-start or the end of a sub-path within the CFG/execution path of a program. A 
+start or the end of a sub-path within the CGF/execution path of a program. A 
 \emph{checkpoint} can be: \emph{thread beginning/end}, if it identifies the 
 beginning/end of a thread; \emph{exit-point}, if it represents an exit-point 
 from an application module (\eg a system call or a library function 
@@ -210,7 +210,7 @@ itself, but the number of invocations is indefinite. Thus, we consider the node
 performing the recursion as a \emph{virtual-checkpoint} and model only the path 
 that could be chosen, without referring to the number of times it is really 
 undertaken. The resulting \emph{LoAs} for the example in 
-Figure~\ref{fig:challenge-IV} are the following ones: 
+Figuree~\ref{fig:challenge-IV} are the following ones: 
 \begin{equation*}
 \begin{split}
 P_B-N_2 &\Rightarrow [(P_B, N_1),(N_1,N_2)] \\    
@@ -392,7 +392,7 @@ $(\text{cp}_A,\text{cp}_B,H(\text{LoA}))$.
 %This way, by comparing the \emph{online measurements} with the offline ones 
 %stored in the \emph{Measurements DB}, it is possible to easily identify 
 %unforeseen edges introduced by an attacker. 
-When the number of \emph{online measurements} reaches a pre-configured limit, 
+When the number of \emph{online measurements} reaches a preconfigured limit, 
 the \emph{Prover} encloses all of them in a partial report and sends it to the 
 \emph{Verifier}. The partial report is defined as follows: 
 \begin{equation*}
@@ -825,7 +825,7 @@ network congestion and keep a high verification speed.
 	\centering
 	\includegraphics[width=0.6\textwidth]{fig_c4/network_performance.png}
 	\caption[ScaRR network traffic evaluation.]{Comparison of different 
-	approaches for generating partial reports in terms of network traffic and 
+	approaches for generating partial repors in terms of network traffic and 
 	verification speed.}
 	\label{fig:network_performance}
 \end{figure} 

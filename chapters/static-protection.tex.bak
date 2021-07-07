@@ -231,7 +231,7 @@ The key to such attacks is to synchronize the attacker and the victim process
 such that the victim code is edited in a way unnoticed by the anti-tampering 
 mechanism.
 
-In our scenario, an attacker can compromise the victim logic (\ie the byte code) 
+In our scenario, an attacker can compromise the victim logic (\ie the bytecode) 
 by using both \emph{off-line} and \emph{on-line} approaches.
 %The final goal is to run the (edited) victim software in the original 
 %environment.
@@ -1286,8 +1286,8 @@ number of CSs by using always the same amount of code in the enclave.
 	\end{tabular}
 \end{table}
 
-\subsection{Micro-benchmark Measurements}
-In these experiments, we perform a set of micro-benchmark to measure the 
+\subsection{Microbenchmark Measurements}
+In these experiments, we perform a set of microbenchmark to measure the 
 overhead in time introduced by our technique.
 As a use case, we measure the execution time of the CSs in our proof-of-concept 
 monitoring agent (see Section~\ref{sec:implementation_packing}).
@@ -1313,7 +1313,7 @@ around $500$ pixel per second.
 This bot allows us to easily repeat the experiments.
 
 %\paragraph{\textbf{Single Instance Anti-Tampering Overhead}}
-\paragraph{Single Instance Micro-benchmark.}
+\paragraph{Single Instance Microbenchmark.}
 We measure the impact of our anti-tampering technique to the performances of 
 the CSs in our proof-of-concept monitoring agent.
 In this experiment, we performed $5$ exercises, each of one is composed by two 
@@ -1537,7 +1537,7 @@ just-in-time patch \& repair attack in a real context.
 %This experiment is not aimed to investigate all possible attack scenarios, 
 %indeed, it is an empirical measurement about the synchronization of two 
 %concurrent processes.
-Here, the attacker's goal is to temporarily replace the byte-code within a CS 
+Here, the attacker's goal is to temporarily replace the bytecode within a CS 
 such that the injected code is executed but the system cannot realize the 
 attack.
 The setup is formed by a victim process (\ie our agent) and an attacker 
@@ -1593,7 +1593,7 @@ attack we discussed previously (by manipulating the scheduler). We believe
 that even with a compromised kernel mounting those attacks would require 
 significant effort, but we leave a more thorough investigation for future work. 
 Other aspects, such as an evaluation of applying our technique a different 
-granularity (such as basic-block level), or extending protection to 
+granularities (such as basic-block level), or extending protection to 
 \emph{PLT}, \emph{GOT}, and \emph{exception table} are also left for future 
 work.
 %Also, we want to explore new techniques for deploying our solution

@@ -345,7 +345,7 @@ In this zero trust scenario, a common countermeasure is represented by Trusted
 Execution Environments (TEE). These technologies use hardware mechanisms to 
 create \emph{trusted regions} shielded against fully compromised 
 systems, thus allowing the companies to protect their assets even if the whole 
-data center is compromised.
+datacenter is compromised.
 \emph{Trusted regions} benefit of two main properties: \emph{memory isolation} 
 and \emph{remote attestation}. The former ensures physical isolation of 
 \emph{trusted regions}, thus avoiding direct writing to, and reading from, the 

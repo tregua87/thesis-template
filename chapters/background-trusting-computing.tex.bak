@@ -117,7 +117,7 @@ software tampering.
 In TEE scenarios, the goal of an adversary is to bypass the TEE protections 
 (\ie memory isolation and remote attestation) and tamper with the \emph{trusted 
 regions} or alter their behavior.
-To achieve this goal, TEEs assume two types of adversaries: \emph{software} and 
+To achieve this goal, TEsE assume two types of adversaries: \emph{software} and 
 \emph{physical}.
 
 \paragraph{Software Attacks.} 
@@ -145,7 +145,7 @@ one} and share the same properties. In addition, the physical adversary have
 access to the machine hardware and can control the hardware components.
 Modern TEE technologies alone struggle at defending such attacks, however, it 
 is common to assume the adversary requires a non-negligible amount of time to 
-carry a physical attack (\eg 10 min - 
+carry a physical attck (\eg 10 min - 
 \cite{conti2010smallville,conti2008emergent,darpa,ibrahim2017seed,pasta,us-aid}).
 Recently, researchers proposed advanced RA schemes to mitigate these 
 attacks~\citep{darpa,visintin2019safe,pasta}.
@@ -256,15 +256,15 @@ attacker would have difficulties to modify $P$'s code.
 There are several strategies for achieving this 
 goal~(\cite{nagra2009surreptitious}).
 In this thesis, we mainly focus on \emph{self-checking}.
-These techniques work at byte code level, and they are structured such that the 
-software can read its own byte code in order to find anomalies and then reacts 
+These techniques work at bytecode level, and they are structured such that the 
+software can read its own bytecode in order to find anomalies and then reacts 
 accordingly.
 We call \emph{checkers} those sections of the software which check the software 
 status, and \emph{responses} those which react to the checkers' requests.
 
-A checker's duties include reading a portion of the software's byte code and 
+A checker's duties include reading a portion of the software's bytecode and 
 verifying whether that code matches specific expectations. That is, the checker 
-computes a hash code of the byte code using a hashing function and compares the 
+computes a hash code of the bytecode using a hashing function and compares the 
 hash value with a pre-computed value. 
 Once a mismatch is found, the software might adopt different reactions, \eg it 
 can emit an alarm or restore the un-tampered code. 

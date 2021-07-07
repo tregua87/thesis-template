@@ -53,7 +53,7 @@ One could reduce the risk by adopting mitigation techniques, such as
 Trusted Platform Modules (TPM) to ensure software integrity at the boot phase 
 \citep{tpm-isoosi}, sign strict contracts with the cloud providers to secure 
 the underline system \citep{aws_dedicated_host}, or employing modern 
-cryptographic schemes to protect private data \citep{gentry2009fully}.
+crptographic schemes to protect private data \citep{gentry2009fully}.
 %
 %such 
 %as loading the intended software in a VM (\ie ), securing the underline system 
@@ -124,7 +124,7 @@ In addition, the TEEs can use attestation to seal data on non-volatile storage
 (\ie encrypt and decrypt) such that nobody but the original \emph{trusted 
 region} can retrieve the content. 
 TEEs are peculiar technologies that differ from previous solutions, such as TPM 
-ones. Specifically, TPMs require an external hardware (\ie the TPM module), 
+ones. Specifically, TMPs require an external hardware (\ie the TPM module), 
 while TEEs are embedded in the main CPU.
 Moreover, TPMs do not provide memory isolation, can only store limited 
 cryptographic material (\eg keys), and expose a limited number functionalities 
