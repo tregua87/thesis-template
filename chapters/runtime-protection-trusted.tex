@@ -1604,7 +1604,7 @@ Finally, we analyze the impact of SgxMonitor in side-channels scenarios
 %Then, we analyze the impact of SgxMonitor in side-channels scenarios and 
 %discuss mitigation (Section~\ref{sssec:info-leakage}).
 
-\subsubsection{Execution-flow attacks}
+\subsubsection{Execution-flow Attacks}
 \label{sssec:execution-flow-attacks}
 
 Since SGX does not allow one to arbitrary change the page permission of a 
@@ -1652,7 +1652,7 @@ malicious, thus blocking any attempt to establish a secure channel
 %SgxMonitor to recognize classic ROP-chains (\ie the \emph{installation 
 %phase}) and modern code-reuse attacks (\ie the \emph{backdoor activation}).
 
-\paragraph{Shadow stack protection.}
+\paragraph{Shadow Stack Protection.}
 We evaluate the shadow stack protection implemented in SgxMonitor. In 
 particular, we want to identify an adversary able to overwrite the 
 \emph{return address} of a function with a valid location that 
@@ -1667,7 +1667,7 @@ as malicious.
 %backward jumps.
 
 
-\subsubsection{Non-control data attacks}
+\subsubsection{Non-control Data Attacks}
 \label{sssec:non-control-data}
 
 %We discuss if an adversary may gain information from the communication 
@@ -1713,7 +1713,7 @@ timing-based attacks~\citep{10.1007/978-3-642-25385-0_26}.)
 %the attack, thus we falling in the cases discussed in 
 %Section~\ref{sssec:execution-flow-attacks}. % and~\ref{sssec:non-control-data}.
 
-\subsubsection{Side-channels attacks}
+\subsubsection{Side-channels Attacks}
 \label{sssec:info-leakage}
 
 %7.2.3 - side channel attacks: metti crypto analysis e discorso su leak 

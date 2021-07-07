@@ -126,6 +126,29 @@ headsepline, % Uncomment to get a line under the header
 }
 \usepackage[titletoc, toc, page]{appendix}
 
+%\usepackage[symbol]{footmisc}
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+%\makeatletter
+%\def\@xfootnote[#1]{%
+%	\protected@xdef\@thefnmark{#1}%
+%	\@footnotemark\@footnotetext}
+%\makeatother
+
+%\long\def\symbolfootnote[#1]#2{\begingroup%
+%\def\thefootnote{\fnsymbol{footnote}}\footnotetext[#1]{#2}\footnotemark[#1]\endgroup}
+
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
+\makeatletter
+\def\@xfootnote[#1]{%
+	\protected@xdef\@thefnmark{#1}%
+	\@footnotemark\@footnotetext}
+\makeatother
+
+
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
 %----------------------------------------------------------------------------------------
@@ -307,7 +330,7 @@ Thesis Advisor\\[1cm]
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
 
-Are you sure the last Virtual Machine bought from your Could Provider is 
+Are you sure the last Virtual Machine bought from your Cloud Provider is 
 working properly?
 The growing popularity of cloud infrastructures allowed online businesses
 to benefit of larger market segments, parallelly, armies of adversaries enjoyed 
@@ -374,21 +397,24 @@ future researches regarding TEE in cloud computing.
 \begin{itemize}
 	
 	\item F. Toffalini, J. Zhou, and L. Cavallaro -- Revisiting Program 
-	Analysis and Intrusion Detection for SGX -- (under review at CCS 2021).
+	Analysis and Intrusion Detection for SGX -- (under review at CCS 
+	2021).\footnote[$\dagger$]{\label{inthesis}These publications are 
+	contributions of the thesis.}
 	
 	\item F. Toffalini, M. Graziano, M. Conti, and J. Zhou -- SnakeGX: a sneaky 
 	attack against SGX Enclaves -- In the 19th International Conference on 
-	Applied Cryptography and Network Security (ACNS 2021).
+	Applied Cryptography and Network Security (ACNS 
+	2021). \footnoteref{inthesis}
 	
 	\item F. Toffalini, E. Losiouk, Biondo A., J. Zhou, and M. Conti -- ScaRR: 
 	Scalable Runtime Remote Attestation for Complex Systems -- In the 22nd 
 	International Symposium on Research in Attacks, Intrusions and Defenses 
-	(RAID 2019).
+	(RAID 2019). \footnoteref{inthesis}
 	
 	\item F. Toffalini, M. Ochoa, J. Sun, and J. Zhou -- Careful-Packing: A 
 	Practical and Scalable Anti-Tampering Software Protection enforced by 
 	Trusted Computing -- In the 9th ACM Conference on Data and Application 
-	Security and Privacy (CODASPY 2019).
+	Security and Privacy (CODASPY 2019). \footnoteref{inthesis}
 	
 \end{itemize}
 
@@ -396,7 +422,8 @@ future researches regarding TEE in cloud computing.
 \begin{itemize}
 	\item F. Toffalini, A. Oliveri, M. Graziano, J. Zhou, and D. Balzarotti -- 
 	Following the evidence beyond the wall:	memory forensic in SGX 
-	environments -- (under review at FSI Digital Investigation).
+	environments -- (under review at FSI Digital 
+	Investigation). \footnoteref{inthesis}
 	
 	\item I. Homoliak, F. Toffalini, J. Guarnizo, Y. Elovici, and M. 
 	Ochoa -- Insight Into Insiders and IT: A Survey of Insider Threat 

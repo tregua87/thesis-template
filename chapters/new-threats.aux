@@ -1,80 +1,80 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Advanced attacks against SGX Enclaves}{32}{chapter.135}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Advanced attacks against SGX Enclaves}{32}{chapter.140}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{chp:advanced-threats}{{4}{32}{Advanced attacks against SGX Enclaves}{chapter.135}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Threat Model and Assumptions}{33}{section.141}}
-\newlabel{sec:threat-model_snakegx}{{4.1}{33}{Threat Model and Assumptions}{section.141}{}}
-\@writefile{toc}{\contentsline {paragraph}{Threat Model.}{33}{section*.142}}
-\@writefile{toc}{\contentsline {paragraph}{Preliminary Analysis of Assumptions.}{34}{section*.145}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces List of SGX open-source projects.}}{35}{table.caption.144}}
-\newlabel{tbl:sgx-open-source-prj}{{4.1}{35}{List of SGX open-source projects}{table.caption.144}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Intel SGX SDK Design Limitation}{36}{section.146}}
-\newlabel{sec:sgx-internal}{{4.2}{36}{Intel SGX SDK Design Limitation}{section.146}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}SDK Overview}{36}{subsection.147}}
-\newlabel{ssec:sdk-overview}{{4.2.1}{36}{SDK Overview}{subsection.147}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}OCALL Context Setting}{36}{subsection.151}}
-\newlabel{ssec:ocall-context}{{4.2.2}{36}{OCALL Context Setting}{subsection.151}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces SGX-Host interaction.}}{37}{figure.caption.150}}
-\newlabel{fig:synch-exit}{{4.1}{37}{SGX-Host interaction}{figure.caption.150}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Exploiting an ORET as a Trigger}{37}{subsection.153}}
-\newlabel{ssec:oret-trigger}{{4.2.3}{37}{Exploiting an ORET as a Trigger}{subsection.153}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces \texttt  {ocall\_context} memory layout.}}{38}{figure.caption.152}}
-\newlabel{fig:sgx-ocall-context}{{4.2}{38}{\texttt {ocall\_context} memory layout}{figure.caption.152}{}}
-\newlabel{fig:do_ocall-gettls}{{4}{39}{Exploiting an ORET as a Trigger}{lstnumber.164}{}}
-\newlabel{fig:do_ocall-getocont}{{6}{39}{Exploiting an ORET as a Trigger}{lstnumber.166}{}}
-\newlabel{fig:do_ocall-requirement}{{8}{39}{Exploiting an ORET as a Trigger}{lstnumber.168}{}}
-\newlabel{fig:do_ocall-restocont}{{12}{39}{Exploiting an ORET as a Trigger}{lstnumber.172}{}}
-\newlabel{fig:do_ocall-asmoret}{{15}{39}{Exploiting an ORET as a Trigger}{lstnumber.175}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Simplified \texttt  {do\_oret()} pseudo-code.\relax }}{39}{figure.caption.159}}
-\newlabel{fig:do_ocall}{{4.3}{39}{Simplified \texttt {do\_oret()} pseudo-code.\relax }{figure.caption.159}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Mitigations}{39}{subsection.182}}
-\newlabel{ssec:ocall-limitation}{{4.2.4}{39}{Mitigations}{subsection.182}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Design}{40}{section.185}}
-\newlabel{sec:enclavekit}{{4.3}{40}{Design}{section.185}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Overview}{40}{subsection.188}}
-\newlabel{ssec:overview-attack}{{4.3.1}{40}{Overview}{subsection.188}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Getting a Secure Memory Location}{41}{subsection.200}}
-\newlabel{ssec:memory-location}{{4.3.2}{41}{Getting a Secure Memory Location}{subsection.200}{}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Un-releasing a Trusted Thread.}}{41}{section*.201}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {Making a New Thread.}}{41}{section*.204}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Set a Payload Trigger}{41}{subsection.205}}
-\newlabel{ssec:set-a-payload-trigger}{{4.3.3}{41}{Set a Payload Trigger}{subsection.205}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Backdoor Architecture}{42}{subsection.209}}
-\newlabel{ssec:enclave-kit-architecture}{{4.3.4}{42}{Backdoor Architecture}{subsection.209}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces SnakeGX installation layour.}}{43}{figure.caption.215}}
-\newlabel{fig:t-thread-stack-installed}{{4.4}{43}{SnakeGX installation layour}{figure.caption.215}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.5}Context-Switch}{43}{subsection.216}}
-\newlabel{ssec:switch-context}{{4.3.5}{43}{Context-Switch}{subsection.216}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Proof-of-Concept Implementation}{44}{section.220}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Code-Reuse Technique}{44}{subsection.221}}
-\newlabel{ssec:my-rop-chain}{{4.4.1}{44}{Code-Reuse Technique}{subsection.221}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Chain used in the proof-of-concept of SnakeGX.\relax }}{45}{figure.caption.225}}
-\newlabel{fig:flavio-enclave-chain}{{4.5}{45}{Chain used in the proof-of-concept of SnakeGX.\relax }{figure.caption.225}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Conditional Chain}{45}{subsection.226}}
-\newlabel{app:condition-gadget}{{4.4.2}{45}{Conditional Chain}{subsection.226}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Context-Switch Chain}{46}{subsection.254}}
-\newlabel{app:context-switch-chain}{{4.4.3}{46}{Context-Switch Chain}{subsection.254}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Evaluation}{47}{section.301}}
-\newlabel{sec:evaluation_snakegx}{{4.5}{47}{Evaluation}{section.301}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}StealthDB}{47}{subsection.305}}
-\newlabel{ssec:stealthdb}{{4.5.1}{47}{StealthDB}{subsection.305}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Use-Case Discussion}{47}{subsection.306}}
-\newlabel{ssec:homemade-poc}{{4.5.2}{47}{Use-Case Discussion}{subsection.306}{}}
-\newlabel{ssec:chain-composition}{{4.5.2}{48}{Use-Case Discussion}{Item.309}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Statistics of the gadgets used for the payload.\relax }}{49}{table.caption.310}}
-\newlabel{tbl:gadgets}{{4.2}{49}{Statistics of the gadgets used for the payload.\relax }{table.caption.310}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Trace Measurements}{49}{subsection.311}}
-\newlabel{ssec:comparison}{{4.5.3}{49}{Trace Measurements}{subsection.311}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.4}Countermeasures}{49}{subsection.312}}
-\newlabel{ssec:detection}{{4.5.4}{49}{Countermeasures}{subsection.312}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Discussion}{50}{section.313}}
-\newlabel{sec:discussion_snakegx}{{4.6}{50}{Discussion}{section.313}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.1}SnakeGX Portability}{50}{subsection.314}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.2}Persistence Offline}{51}{subsection.317}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.3}SnakeGX 32bit}{51}{subsection.318}}
+\newlabel{chp:advanced-threats}{{4}{32}{Advanced attacks against SGX Enclaves}{chapter.140}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Threat Model and Assumptions}{33}{section.146}}
+\newlabel{sec:threat-model_snakegx}{{4.1}{33}{Threat Model and Assumptions}{section.146}{}}
+\@writefile{toc}{\contentsline {paragraph}{Threat Model.}{33}{section*.147}}
+\@writefile{toc}{\contentsline {paragraph}{Preliminary Analysis of Assumptions.}{34}{section*.150}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces List of SGX open-source projects.}}{35}{table.caption.149}}
+\newlabel{tbl:sgx-open-source-prj}{{4.1}{35}{List of SGX open-source projects}{table.caption.149}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Intel SGX SDK Design Limitation}{36}{section.151}}
+\newlabel{sec:sgx-internal}{{4.2}{36}{Intel SGX SDK Design Limitation}{section.151}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}SDK Overview}{36}{subsection.152}}
+\newlabel{ssec:sdk-overview}{{4.2.1}{36}{SDK Overview}{subsection.152}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}OCALL Context Setting}{36}{subsection.156}}
+\newlabel{ssec:ocall-context}{{4.2.2}{36}{OCALL Context Setting}{subsection.156}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces SGX-Host interaction.}}{37}{figure.caption.155}}
+\newlabel{fig:synch-exit}{{4.1}{37}{SGX-Host interaction}{figure.caption.155}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Exploiting an ORET as a Trigger}{37}{subsection.158}}
+\newlabel{ssec:oret-trigger}{{4.2.3}{37}{Exploiting an ORET as a Trigger}{subsection.158}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces \texttt  {ocall\_context} memory layout.}}{38}{figure.caption.157}}
+\newlabel{fig:sgx-ocall-context}{{4.2}{38}{\texttt {ocall\_context} memory layout}{figure.caption.157}{}}
+\newlabel{fig:do_ocall-gettls}{{4}{39}{Exploiting an ORET as a Trigger}{lstnumber.169}{}}
+\newlabel{fig:do_ocall-getocont}{{6}{39}{Exploiting an ORET as a Trigger}{lstnumber.171}{}}
+\newlabel{fig:do_ocall-requirement}{{8}{39}{Exploiting an ORET as a Trigger}{lstnumber.173}{}}
+\newlabel{fig:do_ocall-restocont}{{12}{39}{Exploiting an ORET as a Trigger}{lstnumber.177}{}}
+\newlabel{fig:do_ocall-asmoret}{{15}{39}{Exploiting an ORET as a Trigger}{lstnumber.180}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Simplified \texttt  {do\_oret()} pseudo-code.\relax }}{39}{figure.caption.164}}
+\newlabel{fig:do_ocall}{{4.3}{39}{Simplified \texttt {do\_oret()} pseudo-code.\relax }{figure.caption.164}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Mitigations}{39}{subsection.187}}
+\newlabel{ssec:ocall-limitation}{{4.2.4}{39}{Mitigations}{subsection.187}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Design}{40}{section.190}}
+\newlabel{sec:enclavekit}{{4.3}{40}{Design}{section.190}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Overview}{40}{subsection.193}}
+\newlabel{ssec:overview-attack}{{4.3.1}{40}{Overview}{subsection.193}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Getting a Secure Memory Location}{41}{subsection.205}}
+\newlabel{ssec:memory-location}{{4.3.2}{41}{Getting a Secure Memory Location}{subsection.205}{}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Un-releasing a Trusted Thread.}}{41}{section*.206}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Making a New Thread.}}{41}{section*.209}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Set a Payload Trigger}{41}{subsection.210}}
+\newlabel{ssec:set-a-payload-trigger}{{4.3.3}{41}{Set a Payload Trigger}{subsection.210}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Backdoor Architecture}{42}{subsection.214}}
+\newlabel{ssec:enclave-kit-architecture}{{4.3.4}{42}{Backdoor Architecture}{subsection.214}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces SnakeGX installation layour.}}{43}{figure.caption.220}}
+\newlabel{fig:t-thread-stack-installed}{{4.4}{43}{SnakeGX installation layour}{figure.caption.220}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.5}Context-Switch}{43}{subsection.221}}
+\newlabel{ssec:switch-context}{{4.3.5}{43}{Context-Switch}{subsection.221}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Proof-of-Concept Implementation}{44}{section.225}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Code-Reuse Technique}{44}{subsection.226}}
+\newlabel{ssec:my-rop-chain}{{4.4.1}{44}{Code-Reuse Technique}{subsection.226}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Chain used in the proof-of-concept of SnakeGX.\relax }}{45}{figure.caption.230}}
+\newlabel{fig:flavio-enclave-chain}{{4.5}{45}{Chain used in the proof-of-concept of SnakeGX.\relax }{figure.caption.230}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Conditional Chain}{45}{subsection.231}}
+\newlabel{app:condition-gadget}{{4.4.2}{45}{Conditional Chain}{subsection.231}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Context-Switch Chain}{46}{subsection.259}}
+\newlabel{app:context-switch-chain}{{4.4.3}{46}{Context-Switch Chain}{subsection.259}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Evaluation}{47}{section.306}}
+\newlabel{sec:evaluation_snakegx}{{4.5}{47}{Evaluation}{section.306}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}StealthDB}{47}{subsection.310}}
+\newlabel{ssec:stealthdb}{{4.5.1}{47}{StealthDB}{subsection.310}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Use-Case Discussion}{47}{subsection.311}}
+\newlabel{ssec:homemade-poc}{{4.5.2}{47}{Use-Case Discussion}{subsection.311}{}}
+\newlabel{ssec:chain-composition}{{4.5.2}{48}{Use-Case Discussion}{Item.314}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Statistics of the gadgets used for the payload.\relax }}{49}{table.caption.315}}
+\newlabel{tbl:gadgets}{{4.2}{49}{Statistics of the gadgets used for the payload.\relax }{table.caption.315}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Trace Measurements}{49}{subsection.316}}
+\newlabel{ssec:comparison}{{4.5.3}{49}{Trace Measurements}{subsection.316}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.4}Countermeasures}{49}{subsection.317}}
+\newlabel{ssec:detection}{{4.5.4}{49}{Countermeasures}{subsection.317}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Discussion}{50}{section.318}}
+\newlabel{sec:discussion_snakegx}{{4.6}{50}{Discussion}{section.318}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.1}SnakeGX Portability}{50}{subsection.319}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.2}Persistence Offline}{51}{subsection.322}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.3}SnakeGX 32bit}{51}{subsection.323}}
 \@setckpt{chapters/new-threats}{
 \setcounter{page}{52}
 \setcounter{equation}{0}
@@ -206,7 +206,7 @@
 \setcounter{bbx:relatedcount}{0}
 \setcounter{bbx:relatedtotal}{0}
 \setcounter{Item}{101}
-\setcounter{Hfootnote}{4}
+\setcounter{Hfootnote}{9}
 \setcounter{bookmark@seq@number}{63}
 \setcounter{subfigure}{0}
 \setcounter{subtable}{0}
