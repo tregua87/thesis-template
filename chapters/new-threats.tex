@@ -32,7 +32,7 @@ More precisely, we pose the following new research question:
 %Unfortunately, it comes as no surprise one can also abuse the security
 %and privacy guarantees SGX offers; a recent line of research sees
 %enclaves as secure containers to conceal malicious
-%code~\cite{amsterdamsgxmalwer,schwarz2017malware,sgx-rop}. Albeit
+%code~\cite{amsterdamsgxmalwer,schwarz2017malware,sgxrop}. Albeit
 %successful, such research require the attacker to obtain a legitimate
 %license from Intel~\cite{intel-license} to integrate the malicious
 %code in the enclave---a strong assumption that limits the realistic
@@ -163,7 +163,7 @@ assumptions:
 	Having a memory-corruption is an assumption already taken by similar 
 	works~\citep{biondo2018guard,lee2017hacking}.
 	This is even more likely in projects that use SGX as a sub-system 
-	container~\citep{baumann2015shielding,203255,seo2017sgx,199364}.
+	container~\citep{baumann2015shielding,tsai2017graphene,seo2017sgx,199364}.
 	Such projects host out-of-the-box software and, therefore, enclaves inherit 
 	their vulnerabilities.
 	\item \textbf{A code-reuse technique.} 
@@ -211,7 +211,8 @@ These are the assumptions for the enclave:
 	$2.0$. 
 	However, multi-thread enclaves are a reasonable assumption since different 
 	open-source projects use already this feature and SGX-based applications 
-	are growing in complexity~\citep{sqlite-sgx,sgxtor,signal,203255,stealthdb}.
+	are growing in 
+	complexity~\citep{sqlite-sgx,sgxtor,signal,tsai2017graphene,stealthdb}.
 \end{itemize}
 
 \textbf{Host Capabilities.}
@@ -263,7 +264,7 @@ and minimizing the interactions with the victim enclave.
 		obscuro & \checkmark & 50 \\
 		channel-id-enclave & \checkmark & 10 \\
 		sfaas & \checkmark & 3 \\
-		phoenix & \multicolumn{2}{l}{Graphene~\cite{203255}} \\
+		phoenix & \multicolumn{2}{l}{Graphene~\cite{tsai2017graphene}} \\
 		posup & \checkmark & 4 \\
 		tresorsgx & \checkmark & 10 \\ \midrule
 		\multicolumn{3}{l}{\textbf{Private Key/Passphrase Management}} \\ 
@@ -289,7 +290,8 @@ We collected a set of $27$ stand-alone SGX open-source projects from
 \cite{asop} to investigate the correctness of our assumptions, see full 
 list in Table~\ref{tbl:sgx-open-source-prj}.
 The results show that among the $27$ projects, $24$ of them were based on the 
-Intel SGX SDK, while others were developed with Graphene~\citep{203255}, Open 
+Intel SGX SDK, while others were developed with 
+Graphene~\citep{tsai2017graphene}, Open 
 Enclave SDK~\citep{openenclave}, or contained mocked enclaves.
 From the Intel SGX SDK based projects, we counted $31$ enclaves in total, 
 among which $24$ were multi-threading ($77\%$).
@@ -613,8 +615,8 @@ stateful, and interactive backdoors inside SGX enclaves.
 The framework design is challenging because we want to preserve the original
 enclave functionality and configuration.
 Even though SGX $2.0$ encompasses runtime page permissions 
-setting~\citep{intel-sgx2}, an unexpected configuration may attract analysts 
-attention (\ie the host can read the enclave page permissions).
+setting~\citep{rozas2013intel}, an unexpected configuration may attract 
+analysts attention (\ie the host can read the enclave page permissions).
 On the contrary, our solutions purely rely on code-reuse techniques that do not
 affect the enclave functionality and configuration.
 %We achieve our goal despite the strict SGX threat model.
@@ -1338,7 +1340,7 @@ Our payload maintains an internal state and interacts with the
 host.
 To handle the state, the payload is able to perform a conditional pivoting
 by comparing the current key and a copy of the last key 
-exfiltrated~\citep{geometry2007}.
+exfiltrated~\citep{shacham2007geometry}.
 The conditional chain is implemented in P$_1$.
 Once the key changes, P$_1$ will pivot to a \emph{chain} that performs the 
 exfiltration. Otherwise, the payload will pivot to 

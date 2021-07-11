@@ -404,7 +404,7 @@ month={Nov},}
 @inproceedings{lind2017glamdring,
   title={Glamdring: Automatic application partitioning for Intel SGX},
   author={Lind, Joshua and Priebe, Christian and Muthukumaran, Divya and 
-  O’Keeffe, Dan and Aublin, Pierre-Louis and Kelbert, Florian and Reiher, 
+  O'Keeffe, Dan and Aublin, Pierre-Louis and Kelbert, Florian and Reiher, 
   Tobias and Goltzsche, David and Eyers, David and Kapitza, R{\"u}diger and 
   others},
   booktitle={Proceedings of the USENIX Annual Technical Conference (ATC)},
@@ -432,15 +432,20 @@ month={Nov},}
   organization={Springer}
 }
 
-
-@inproceedings{tsai2017graphene,
-  title={Graphene-SGX: A practical library OS for unmodified applications on 
-  SGX},
-  author={Tsai, Chia-Che and Porter, Donald E and Vij, Mona},
-  booktitle={Proceedings of the 2017 USENIX Annual Technical Conference, Santa 
-  Clara, CA},
-  year={2017}
+@inproceedings {tsai2017graphene,
+	author = {Chia-che Tsai and Donald E. Porter and Mona Vij},
+	title = {Graphene-SGX: A Practical Library {OS} for Unmodified Applications 
+	on {SGX}},
+	booktitle = {2017 {USENIX} Annual Technical Conference ({USENIX} {ATC} 17)},
+	year = {2017},
+	isbn = {978-1-931971-38-6},
+	address = {Santa Clara, CA},
+	pages = {645--658},
+	url = 
+	{https://www.usenix.org/conference/atc17/technical-sessions/presentation/tsai},
+	publisher = {{USENIX} Association},
 }
+
 
 @inproceedings{schuster2015vc3,
   title={VC3: Trustworthy data analytics in the cloud using SGX},
@@ -582,14 +587,24 @@ month={Nov},}
 }
 
 @inproceedings{abadi2005control,
-  title={Control-flow integrity},
-  author={Abadi, Mart{\'\i}n and Budiu, Mihai and Erlingsson, Ulfar and 
-  Ligatti, Jay},
-  booktitle={Proceedings of the 12th ACM conference on Computer and 
-  communications security},
-  pages={340--353},
-  year={2005},
-  organization={ACM}
+	author = {Abadi, Mart\'{\i}n and Budiu, Mihai and Erlingsson, \'{U}lfar and 
+	Ligatti, Jay},
+	title = {Control-flow Integrity},
+	booktitle = {Proceedings of the 12th ACM Conference on Computer and 
+	Communications Security},
+	series = {CCS '05},
+	year = {2005},
+	isbn = {1-59593-226-7},
+	location = {Alexandria, VA, USA},
+	pages = {340--353},
+	numpages = {14},
+	url = {http://doi.acm.org/10.1145/1102120.1102165},
+	doi = {10.1145/1102120.1102165},
+	acmid = {1102165},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {binary rewriting, control-flow graph, inlined reference 
+	monitors, vulnerabilities},
 }
 
 @inproceedings{zhang2013control,
@@ -600,14 +615,19 @@ month={Nov},}
   year={2013}
 }
 
-@inproceedings{davi2014stitching,
-  title={Stitching the Gadgets: On the Ineffectiveness of Coarse-Grained 
-  Control-Flow Integrity Protection.},
-  author={Davi, Lucas and Sadeghi, Ahmad-Reza and Lehmann, Daniel and Monrose, 
-  Fabian},
-  booktitle={USENIX Security Symposium},
-  volume={2014},
-  year={2014}
+@inproceedings {davi2014stitching,
+	author = {Lucas Davi and Ahmad-Reza Sadeghi and Daniel Lehmann and Fabian 
+	Monrose},
+	title = {Stitching the Gadgets: On the Ineffectiveness of Coarse-Grained 
+	Control-Flow Integrity Protection},
+	booktitle = {23rd {USENIX} Security Symposium ({USENIX} Security 14)},
+	year = {2014},
+	isbn = {978-1-931971-15-7},
+	address = {San Diego, CA},
+	pages = {401--416},
+	url = 
+	{https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/davi},
+	publisher = {{USENIX} Association},
 }
 
 @inproceedings{lee2017hacking,
@@ -747,12 +767,14 @@ month={Nov},}
 	organization={IEEE}
 }
 
-@article{rozas2013intel,
-  title={Intel{\textregistered} Software Guard Extensions 
-  (Intel{\textregistered} SGX)},
-  author={Rozas, Carlos},
-  year={2013},
-  publisher={Citeseer}
+@manual{rozas2013intel,
+	title  = {Intel{\textregistered} Software Guard Extensions Programming 
+	Reference},
+	author = {Intel},
+	url = 
+	{https://software.intel.com/sites/default/files/managed/48/88/329298-002.pdf},
+	year   = {2014},
+	note = {Last access September 2020}
 }
 
 @incollection{ugarte2016rambo,
@@ -763,14 +785,6 @@ month={Nov},}
   pages={186--206},
   year={2016},
   publisher={Springer}
-}
-
-@Misc{radare,
-  author    = {Pancake},
-  title     = {Radare},
-  year      = {2006},
-  note      = {Last visit on 30 Nov 2017},
-  url       = {www.radare.org}
 }
 
 @inproceedings{zheng2017opaque,
@@ -1520,15 +1534,28 @@ rights management, Digital assets, Distributed software systems"
 }
 
 @inproceedings{shacham2007geometry,
-	title={The geometry of innocent flesh on the bone: Return-into-libc without 
-	function calls (on the x86)},
-	author={Shacham, Hovav},
-	booktitle={Proceedings of the 14th ACM conference on Computer and 
-	communications security},
-	pages={552--561},
-	year={2007},
-	organization={ACM}
-}
+	author = {Shacham, Hovav},
+	title = {The Geometry of Innocent Flesh on the Bone: Return-into-libc 
+	Without Function Calls (on the x86)},
+	booktitle = {Proceedings of the 14th ACM Conference on Computer and 
+	Communications Security},
+	series = {CCS '07},
+	year = {2007},
+	isbn = {978-1-59593-703-2},
+	location = {Alexandria, Virginia, USA},
+	pages = {552--561},
+	numpages = {10},
+	url = {http://doi.acm.org/10.1145/1315245.1315313},
+	doi = {10.1145/1315245.1315313},
+	acmid = {1315313},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {instruction set, return-into-libc, turing completeness},
+} 
+
+
+
+
 
 @inproceedings{yao2013jop,
 	title={Jop-alarm: Detecting jump-oriented programming-based anomalies in 
@@ -1719,41 +1746,6 @@ rights management, Digital assets, Distributed software systems"
 	organization={San Antonio, TX}
 }
 
-@inproceedings{Abadi:2005:CI:1102120.1102165,
-	author = {Abadi, Mart\'{\i}n and Budiu, Mihai and Erlingsson, \'{U}lfar and 
-	Ligatti, Jay},
-	title = {Control-flow Integrity},
-	booktitle = {Proceedings of the 12th ACM Conference on Computer and 
-	Communications Security},
-	series = {CCS '05},
-	year = {2005},
-	isbn = {1-59593-226-7},
-	location = {Alexandria, VA, USA},
-	pages = {340--353},
-	numpages = {14},
-	url = {http://doi.acm.org/10.1145/1102120.1102165},
-	doi = {10.1145/1102120.1102165},
-	acmid = {1102165},
-	publisher = {ACM},
-	address = {New York, NY, USA},
-	keywords = {binary rewriting, control-flow graph, inlined reference 
-	monitors, vulnerabilities},
-}
-
-@inproceedings {184481,
-	author = {Lucas Davi and Ahmad-Reza Sadeghi and Daniel Lehmann and Fabian 
-	Monrose},
-	title = {Stitching the Gadgets: On the Ineffectiveness of Coarse-Grained 
-	Control-Flow Integrity Protection},
-	booktitle = {23rd {USENIX} Security Symposium ({USENIX} Security 14)},
-	year = {2014},
-	isbn = {978-1-931971-15-7},
-	address = {San Diego, CA},
-	pages = {401--416},
-	url = 
-	{https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/davi},
-	publisher = {{USENIX} Association},
-}
 
 @inproceedings{Niu:2015:PCI:2810103.2813644,
 	author = {Niu, Ben and Tan, Gang},
@@ -1846,28 +1838,6 @@ rights management, Digital assets, Distributed software systems"
 	biburl    = {https://dblp.org/rec/conf/ndss/AberaBB0SS19.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org}
 }
-
-@inproceedings{Hu:2018:EUC:3243734.3243797,
-	author = {Hu, Hong and Qian, Chenxiong and Yagemann, Carter and Chung, 
-	Simon Pak Ho and Harris, William R. and Kim, Taesoo and Lee, Wenke},
-	title = {Enforcing Unique Code Target Property for Control-Flow Integrity},
-	booktitle = {Proceedings of the 2018 ACM SIGSAC Conference on Computer and 
-	Communications Security},
-	series = {CCS '18},
-	year = {2018},
-	isbn = {978-1-4503-5693-0},
-	location = {Toronto, Canada},
-	pages = {1470--1486},
-	numpages = {17},
-	url = {http://doi.acm.org/10.1145/3243734.3243797},
-	doi = {10.1145/3243734.3243797},
-	acmid = {3243797},
-	publisher = {ACM},
-	address = {New York, NY, USA},
-	keywords = {Intel PT, control-flow integrity, performance, unique code 
-	target},
-}
-
 
 @InProceedings{10.1007/978-3-319-93638-3_45,
 	author="Barbar, Mohamad
@@ -2255,34 +2225,6 @@ rights management, Digital assets, Distributed software systems"
 	keywords = {iago attacks, overshadow, system call},
 }
 
-@inproceedings {186173,
-	author = {Andrew Baumann and Marcus Peinado and Galen Hunt},
-	title = {Shielding Applications from an Untrusted Cloud with Haven},
-	booktitle = {11th {USENIX} Symposium on Operating Systems Design and 
-	Implementation ({OSDI} 14)},
-	year = {2014},
-	isbn = { 978-1-931971-16-4},
-	address = {Broomfield, CO},
-	pages = {267--283},
-	url = 
-	{https://www.usenix.org/conference/osdi14/technical-sessions/presentation/baumann},
-	publisher = {{USENIX} Association},
-}
-
-@inproceedings {203255,
-	author = {Chia-che Tsai and Donald E. Porter and Mona Vij},
-	title = {Graphene-SGX: A Practical Library {OS} for Unmodified Applications 
-	on {SGX}},
-	booktitle = {2017 {USENIX} Annual Technical Conference ({USENIX} {ATC} 17)},
-	year = {2017},
-	isbn = {978-1-931971-38-6},
-	address = {Santa Clara, CA},
-	pages = {645--658},
-	url = 
-	{https://www.usenix.org/conference/atc17/technical-sessions/presentation/tsai},
-	publisher = {{USENIX} Association},
-}
-
 
 @inproceedings {199364,
 	author = {Sergei Arnautov and Bohdan Trach and Franz Gregor and Thomas 
@@ -2299,22 +2241,6 @@ rights management, Digital assets, Distributed software systems"
 	pages = {689--703},
 	url = 
 	{https://www.usenix.org/conference/osdi16/technical-sessions/presentation/arnautov},
-	publisher = {{USENIX} Association},
-}
-
-@inproceedings {203211,
-	author = {Joshua Lind and Christian Priebe and Divya Muthukumaran and Dan 
-	O{\textquoteright}Keeffe and Pierre-Louis Aublin and Florian Kelbert and 
-	Tobias Reiher and David Goltzsche and David Eyers and R{\"u}diger Kapitza 
-	and Christof Fetzer and Peter Pietzuch},
-	title = {Glamdring: Automatic Application Partitioning for Intel {SGX}},
-	booktitle = {2017 {USENIX} Annual Technical Conference ({USENIX} {ATC} 17)},
-	year = {2017},
-	isbn = {978-1-931971-38-6},
-	address = {Santa Clara, CA},
-	pages = {285--298},
-	url = 
-	{https://www.usenix.org/conference/atc17/technical-sessions/presentation/lind},
 	publisher = {{USENIX} Association},
 }
 
@@ -2999,16 +2925,6 @@ BibTeX | EndNote | ACM Ref
 	{https://download.01.org/intel-sgx/linux-2.1.3/docs/Intel\_SGX\_Developer\_Guide.pdf},
 }
 
-@misc{intel-sgx2,
-	title = {Intel\textregistered~Software Guard Extensions Programming 
-	Reference},
-	year  = {2013},
-	author = {Intel},
-	note  = {Last access June 2020},
-	url = 
-	{https://software.intel.com/sites/default/files/managed/48/88/329298-002.pdf},
-}
-
 @inproceedings{amdsev,
 	title={A comparison study of intel SGX and AMD memory encryption 
 	technology},
@@ -3020,40 +2936,16 @@ BibTeX | EndNote | ACM Ref
 	organization={ACM}
 }
 
-@article{sgx-rop,
-	author    = {Michael Schwarz and Samuel Weiser and Daniel Gruss},
-	title     = {Practical Enclave Malware with Intel {SGX}},
-	journal   = {CoRR},
-	volume    = {abs/1902.03256},
-	year      = {2019},
-	url       = {http://arxiv.org/abs/1902.03256},
-	archivePrefix = {arXiv},
-	eprint    = {1902.03256},
-	timestamp = {Fri, 01 Mar 2019 17:14:15 +0100},
-	biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1902-03256},
-	bibsource = {dblp computer science bibliography, https://dblp.org}
+@inproceedings{sgxrop,
+	title        = {Practical enclave malware with Intel SGX},
+	author       = {Schwarz, Michael and Weiser, Samuel and Gruss, Daniel},
+	booktitle    = {International Conference on Detection of Intrusions and 
+	Malware,
+	and Vulnerability Assessment},
+	pages        = {177--196},
+	year         = {2019},
+	organization = {Springer}
 }
-
-
-@inproceedings{geometry2007,
-	author = {Shacham, Hovav},
-	title = {The Geometry of Innocent Flesh on the Bone: Return-into-libc 
-	Without Function Calls (on the x86)},
-	booktitle = {Proceedings of the 14th ACM Conference on Computer and 
-	Communications Security},
-	series = {CCS '07},
-	year = {2007},
-	isbn = {978-1-59593-703-2},
-	location = {Alexandria, Virginia, USA},
-	pages = {552--561},
-	numpages = {10},
-	url = {http://doi.acm.org/10.1145/1315245.1315313},
-	doi = {10.1145/1315245.1315313},
-	acmid = {1315313},
-	publisher = {ACM},
-	address = {New York, NY, USA},
-	keywords = {instruction set, return-into-libc, turing completeness},
-} 
 
 @inproceedings{kruegel2005automating,
 	title={Automating mimicry attacks using static binary analysis},
@@ -3246,20 +3138,6 @@ BibTeX | EndNote | ACM Ref
 	pages={119--135},
 	year={2013},
 	organization={Springer}
-}
-
-@inproceedings {251582,
-	author = {Tobias Cloosters and Michael Rodler and Lucas Davi},
-	title = {TeeRex: Discovery and Exploitation of Memory Corruption 
-	Vulnerabilities in {SGX} Enclaves},
-	booktitle = {29th {USENIX} Security Symposium ({USENIX} Security 20)},
-	year = {2020},
-	isbn = {978-1-939133-17-5},
-	pages = {841--858},
-	url = 
-	{https://www.usenix.org/conference/usenixsecurity20/presentation/cloosters},
-	publisher = {{USENIX} Association},
-	month = aug,
 }
 
 @article{slicing,
@@ -3477,17 +3355,6 @@ BibTeX | EndNote | ACM Ref
 	organization={IEEE}
 }
 
-@article{dolev1983security,
-	title={On the security of public key protocols},
-	author={Dolev, Danny and Yao, Andrew},
-	journal={IEEE Transactions on information theory},
-	volume={29},
-	number={2},
-	pages={198--208},
-	year={1983},
-	publisher={IEEE}
-}
-
 @article{ge2017griffin,
 	title={Griffin: Guarding control flows using intel processor trace},
 	author={Ge, Xinyang and Cui, Weidong and Jaeger, Trent},
@@ -3603,15 +3470,6 @@ BibTeX | EndNote | ACM Ref
 	year={2008}
 }
 
-@inproceedings{costan2016sanctum,
-	title={Sanctum: Minimal hardware extensions for strong software isolation},
-	author={Costan, Victor and Lebedev, Ilia and Devadas, Srinivas},
-	booktitle={25th $\{$USENIX$\}$ Security Symposium ($\{$USENIX$\}$ Security 
-	16)},
-	pages={857--874},
-	year={2016}
-}
-
 @inproceedings{cficc2019,
 	author = {Lu, Kangjie and Hu, Hong},
 	title = {Where Does It Go? Refining Indirect-Call Targets with Multi-Layer 
@@ -3633,24 +3491,26 @@ BibTeX | EndNote | ACM Ref
 }
 
 @inproceedings{hu2018enforcing,
-	title={Enforcing unique code target property for control-flow integrity},
-	author={Hu, Hong and Qian, Chenxiong and Yagemann, Carter and Chung, Simon 
-	Pak Ho and Harris, William R and Kim, Taesoo and Lee, Wenke},
-	booktitle={Proceedings of the 2018 ACM SIGSAC Conference on Computer and 
+	author = {Hu, Hong and Qian, Chenxiong and Yagemann, Carter and Chung, 
+	Simon Pak Ho and Harris, William R. and Kim, Taesoo and Lee, Wenke},
+	title = {Enforcing Unique Code Target Property for Control-Flow Integrity},
+	booktitle = {Proceedings of the 2018 ACM SIGSAC Conference on Computer and 
 	Communications Security},
-	pages={1470--1486},
-	year={2018}
+	series = {CCS '18},
+	year = {2018},
+	isbn = {978-1-4503-5693-0},
+	location = {Toronto, Canada},
+	pages = {1470--1486},
+	numpages = {17},
+	url = {http://doi.acm.org/10.1145/3243734.3243797},
+	doi = {10.1145/3243734.3243797},
+	acmid = {3243797},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {Intel PT, control-flow integrity, performance, unique code 
+	target},
 }
 
-
-@inproceedings{haldar2004semantic,
-	title={Semantic remote attestation: a virtual machine directed approach to 
-	trusted computing},
-	author={Haldar, Vivek and Chandra, Deepak and Franz, Michael},
-	booktitle={USENIX Virtual Machine Research and Technology Symposium},
-	volume={2004},
-	year={2004}
-}
 
 @inproceedings{koutroumpouchos2019secure,
 	title={Secure edge computing with lightweight control-flow property-based 
@@ -4141,15 +4001,6 @@ BibTeX | EndNote | ACM Ref
 	note   = {Last access September 2020}
 }
 
-@manual{intel2,
-	title  = {Intel{\textregistered} Software Guard Extensions Programming 
-	Reference},
-	author = {Intel},
-	url = 
-	{https://software.intel.com/sites/default/files/managed/48/88/329298-002.pdf},
-	year   = {2014},
-	note = {Last access September 2020}
-}
 
 @manual{signal,
 	title  = {Technology preview: Private contact discovery for Signal},
@@ -4222,23 +4073,6 @@ BibTeX | EndNote | ACM Ref
 	Security and Privacy},
 	pages={231--242},
 	year={2019}
-}
-
-@inproceedings {glamdring,
-	author = {Joshua Lind and Christian Priebe and Divya Muthukumaran and Dan 
-	O{\textquoteright}Keeffe and Pierre-Louis Aublin and Florian Kelbert and 
-	Tobias Reiher and David Goltzsche and David Eyers and R{\"u}diger Kapitza 
-	and Christof Fetzer and Peter Pietzuch},
-	title = {Glamdring: Automatic Application Partitioning for Intel {SGX}},
-	booktitle = {2017 {USENIX} Annual Technical Conference ({USENIX} {ATC} 17)},
-	year = {2017},
-	isbn = {978-1-931971-38-6},
-	address = {Santa Clara, CA},
-	pages = {285--298},
-	url = 
-	{https://www.usenix.org/conference/atc17/technical-sessions/presentation/lind},
-	publisher = {{USENIX} Association},
-	month = jul,
 }
 
 @inproceedings{shinde2017panoply,
@@ -4457,22 +4291,6 @@ BibTeX | EndNote | ACM Ref
 	others},
 	year      = {2017},
 	publisher = {Now Publishers}
-}
-
-@inproceedings{graphene,
-	author    = {Chia-che Tsai and Donald E. Porter and Mona Vij},
-	title     = {Graphene-SGX: A Practical Library {OS} for Unmodified 
-	Applications
-	on {SGX}},
-	booktitle = {2017 {USENIX} Annual Technical Conference ({USENIX} {ATC} 17)},
-	year      = {2017},
-	isbn      = {978-1-931971-38-6},
-	address   = {Santa Clara, CA},
-	pages     = {645--658},
-	url       = 
-	{https://www.usenix.org/conference/atc17/technical-sessions/presentation/tsai},
-	publisher = {{USENIX} Association},
-	month     = jul
 }
 
 @inproceedings{grazianohyper,
@@ -4764,17 +4582,6 @@ BibTeX | EndNote | ACM Ref
 	howpublished = {\url{https://github.com/lsds/sgx-lkl}}
 }
 
-@inproceedings{sgxrop,
-	title        = {Practical enclave malware with Intel SGX},
-	author       = {Schwarz, Michael and Weiser, Samuel and Gruss, Daniel},
-	booktitle    = {International Conference on Detection of Intrusions and 
-	Malware,
-	and Vulnerability Assessment},
-	pages        = {177--196},
-	year         = {2019},
-	organization = {Springer}
-}
-
 @misc{sgxsdk,
 	title        = {Intel SGX SDK},
 	author       = {Intel},
@@ -4918,8 +4725,3 @@ BibTeX | EndNote | ACM Ref
 	Yinqian and Liu, Songsong and Liu, Yukun and Li, Xiaoning},
 	year   = {2021}
 }
-
-
-
-
-

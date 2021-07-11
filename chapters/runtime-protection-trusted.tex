@@ -76,10 +76,10 @@ In line with the SGX assumptions~\citep{rozas2013intel}, we assume the
 adversary is a host, that can threat the enclave in two ways:
 \begin{itemize}
 	\item Exploiting classic memory-corruption 
-	errors~\citep{10.1145/2810103.2813646,tale-two-worlds,251582} that lead to 
+	errors~\citep{10.1145/2810103.2813646,tale-two-worlds,teerex} that lead to 
 	hijacking the enclave execution path~\citep{lee2017hacking,biondo2018guard}.
 	\item Altering the enclave communication by overhearing, intercepting, and 
-	forging packets such as the Dolev Yao attacker~\citep{dolev1983security}.
+	forging packets such as the Dolev Yao attacker~\citep{dolev}.
 \end{itemize}
 
 \paragraph{Enclave Assumptions.}
@@ -716,7 +716,7 @@ function in the enclave.
 T is compiled without debug information, we solely rely on global symbols to 
 identify the functions entry point and the global variables.
 The global symbols do not contribute to the enclave measurement, thus we strip 
-them out after extracting the model~\citep{intel2} 
+them out after extracting the model~\citep{rozas2013intel} 
 (Section~\ref{ssec:sgx-remote-attestation}). 
 
 Overall, the extraction algorithm is described in 

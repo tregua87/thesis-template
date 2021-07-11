@@ -292,7 +292,7 @@ practitioners to develop new attacks
 vectors~\citep{foreshadow,Murdock2019plundervolt,203183,lee2017hacking}.
 Among them, an interesting research line is to exploit memory-corruption 
 errors inside the \emph{trusted regions} and run one-shot code-reuse attacks to 
-steal enclave secrets (\eg cryptographic keys)~\citep{geometry2007}.
+steal enclave secrets (\eg cryptographic keys)~\citep{shacham2007geometry}.
 Recently, we observed many solutions that identify such flaws in \emph{trusted 
 regions}~\citep{teerex,tale-two-worlds} and specifically new code-reuse 
 techniques tailored for SGX~\citep{lee2017hacking,biondo2018guard}.
@@ -403,7 +403,7 @@ Therefore, we cannot directly deploy a runtime RA in a TEE because the
 As such, the TEE alone has no mechanisms to guarantee the correct runtime 
 execution of a \emph{trusted region}, which remain vulnerable against
 attacks aimed at causing deviations from enclaves' expected legitimate
-behaviors~\citep{tale-two-worlds,251582,biondo2018guard,lee2017hacking,snakegx}.
+behaviors~\citep{tale-two-worlds,teerex,biondo2018guard,lee2017hacking,snakegx}.
 The \emph{memory isolation} exacerbates runtime attacks that target 
 software loaded in \emph{trusted regions}, since there is no mechanism to 
 monitor their executions and set legitimate and anomalous ones apart.
@@ -411,7 +411,7 @@ Although one can adopt mechanisms tailored at counteracting
 specific threats, research has shown such solutions are brittle and cover a 
 limited threat model, mostly focusing on code-reuse attacks, while neglecting 
 vectors that induce deviation from normal
-behaviors~\citep{tale-two-worlds,251582,biondo2018guard,lee2017hacking}.
+behaviors~\citep{tale-two-worlds,teerex,biondo2018guard,lee2017hacking}.
 Moreover, current runtime remote attestations focus on
 stateless properties, \ie they only model independent executions.  On
 the contrary, TEEs are stateful objects modeled as finite states
@@ -713,7 +713,7 @@ Here, the thesis' outline.
 %As such, the SGX alone has no mechanisms to guarantee the correct runtime 
 %execution of enclaves, which remain vulnerable against
 %attacks aimed at causing deviations from enclaves' expected legitimate
-%behaviors~\citep{tale-two-worlds,251582,biondo2018guard,lee2017hacking,snakegx}.
+%behaviors~\citep{tale-two-worlds,teerex,biondo2018guard,lee2017hacking,snakegx}.
 %
 %The SGX \emph{memory isolation} exacerbates runtime attacks that target 
 %software loaded in enclaves, since there is no mechanism to 
@@ -722,7 +722,7 @@ Here, the thesis' outline.
 %specific threats, research has shown such solutions are brittle and cover a 
 %limited threat model, mostly focusing on code-reuse attacks, while neglecting 
 %vectors that induce deviation from normal
-%behaviors~\citep{tale-two-worlds,251582,biondo2018guard,lee2017hacking}.
+%behaviors~\citep{tale-two-worlds,teerex,biondo2018guard,lee2017hacking}.
 %Moreover, current runtime remote attestations focus on
 %stateless properties, \ie they only model independent executions.  On
 %the contrary, TEEs are stateful objects modeled as finite states
