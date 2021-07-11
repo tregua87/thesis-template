@@ -51,9 +51,9 @@
 \contentsline {subsection}{\numberline {3.3.2}Installation Phase}{26}{subsection.119}
 \contentsline {section}{\numberline {3.4}Evaluation}{27}{section.121}
 \contentsline {subsection}{\numberline {3.4.1}Lines-of-Code Overhead}{28}{subsection.122}
-\contentsline {subsection}{\numberline {3.4.2}Microbenchmark Measurements}{28}{subsection.124}
+\contentsline {subsection}{\numberline {3.4.2}Micro-benchmark Measurements}{28}{subsection.124}
 \contentsline {paragraph}{User-Simulator Bot.}{28}{section*.125}
-\contentsline {paragraph}{Single Instance Microbenchmark.}{28}{section*.126}
+\contentsline {paragraph}{Single Instance Micro-benchmark.}{28}{section*.126}
 \contentsline {paragraph}{Multiple Instances.}{29}{section*.128}
 \contentsline {subsection}{\numberline {3.4.3}Enclave Size Considerations}{29}{subsection.129}
 \contentsline {subsection}{\numberline {3.4.4}Threat Mitigation}{30}{subsection.130}

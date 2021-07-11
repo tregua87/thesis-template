@@ -65,7 +65,18 @@ while preserving the enclave functionality.
 Finally, we released an open-source version of our proof-of-concept for the 
 community.
 
-In Chapter~\ref{chp:forensic}, \todo{\dots}
+In Chapter~\ref{chp:forensic}, we presented a set of practical guidelines to 
+inspect the physical memory acquired from an SGX-enabled machine.
+Our work covers many aspects of memory forensic, such as retrieving EPC zones 
+and \emph{enclaves} information, rebuilding kernel structures, and analyzing 
+the \emph{enclave} interfaces and layout. This information can help 
+human analysts to identify the presence of enclaves, their corresponding
+user-space processes, and kick-start manual reverse engineering 
+by pointing out the functions responsible for the communication to, and from,
+the enclave code. 
+We implemented these techniques in an acquisition tool and in a set of
+Volatility plugins and show how they can be applied to the analysis of $45$
+samples and three real use-case scenarios.
 
 In Chapter~\ref{chp:runtime-protection-untrusted}, we proposed ScaRR, the first 
 schema that enables runtime RA for complex systems to detect control-flow 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  7 JUL 2021 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  11 JUL 2021 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2011,23 +2011,23 @@ Package csquotes Info: ... found 'babel' package.
 (./chapters/conclusion.aux) (./appendices/appendix_sgxmonitor.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 212.
-LaTeX Font Info:    ... okay on input line 212.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 212.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 223.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -2186,14 +2186,14 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 212.
-Package scrbase Info: activating english \authorshipname on input line 212.
-Package scrbase Info: activating english \authorshipname on input line 212.
-Package scrbase Info: activating english \byname on input line 212.
-Package scrbase Info: activating english \abbrevname on input line 212.
-Package scrbase Info: activating english \constantsname on input line 212.
-Package scrbase Info: activating english \symbolsname on input line 212.
-Package scrbase Info: activating english \acknowledgementname on input line 212
+(scrlayer)             \begin{document} on input line 223.
+Package scrbase Info: activating english \authorshipname on input line 223.
+Package scrbase Info: activating english \authorshipname on input line 223.
+Package scrbase Info: activating english \byname on input line 223.
+Package scrbase Info: activating english \abbrevname on input line 223.
+Package scrbase Info: activating english \constantsname on input line 223.
+Package scrbase Info: activating english \symbolsname on input line 223.
+Package scrbase Info: activating english \acknowledgementname on input line 223
 .
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -2362,10 +2362,10 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 212.
-Package biblatex Info: Reference segment=0 on input line 212.
+Package biblatex Info: Reference section=0 on input line 223.
+Package biblatex Info: Reference segment=0 on input line 223.
 \AtBeginShipoutBox=\box82
-Package hyperref Info: Link coloring ON on input line 212.
+Package hyperref Info: Link coloring ON on input line 223.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2374,9 +2374,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count491
 )
-LaTeX Info: Redefining \ref on input line 212.
-LaTeX Info: Redefining \pageref on input line 212.
-LaTeX Info: Redefining \nameref on input line 212.
+LaTeX Info: Redefining \ref on input line 223.
+LaTeX Info: Redefining \pageref on input line 223.
+LaTeX Info: Redefining \nameref on input line 223.
 
 (./main.out) (./main.out)
 \@outlinefile=\write6
@@ -2384,7 +2384,7 @@ LaTeX Info: Redefining \nameref on input line 212.
 
  ABD: EveryShipout initializing macros
 \c@lstlisting=\count492
-Package scrhack Info: undefining \float@addtolists on input line 212.
+Package scrhack Info: undefining \float@addtolists on input line 223.
 \c__siunitx_mathsf_int=\count493
 \c__siunitx_mathtt_int=\count494
 
@@ -2392,10 +2392,10 @@ Package scrhack Info: undefining \float@addtolists on input line 212.
 <Figures/SUTD.pdf, id=517, 352.31625pt x 137.51375pt>
 File: Figures/SUTD.pdf Graphic file (type pdf)
 <use Figures/SUTD.pdf>
-Package pdftex.def Info: Figures/SUTD.pdf  used on input line 227.
+Package pdftex.def Info: Figures/SUTD.pdf  used on input line 238.
 (pdftex.def)             Requested size: 208.55876pt x 81.40308pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 232.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 243.
 [1
 
 
@@ -2413,7 +2413,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 330.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 341.
 1: section
 [2
 
@@ -2422,14 +2422,14 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
  Publications
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 396.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 399.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 407.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 410.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 399.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 410.
 
 1: section
 [3
@@ -2438,21 +2438,21 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
 --------------------
  Acknowledgements
 --------------------
-LaTeX Font Info:    Try loading font information for T1+phv on input line 457.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 468.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 457.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 468.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 457.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 468.
 
 1: section
 [4
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 494.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 505.
  (./main.toc
 1: section
 [5
@@ -2579,7 +2579,7 @@ rn_static.pdf
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c7/sgxprogrammingpattern_static.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
 >])
-Overfull \hbox (6.30376pt too wide) in paragraph at lines 475--562
+Overfull \hbox (6.30376pt too wide) in paragraph at lines 475--573
 \T1/pcr/m/n/10.95 asm_oret\T1/ppl/m/n/10.95 , that re-stores the CPU reg-is-ter
 s af-ter an OCALL. The sec-ond one is \T1/pcr/m/n/10.95 continue 
  []
@@ -2657,12 +2657,6 @@ Package pdftex.def Info: fig_c3/installation.pdf  used on input line 1242.
 Overfull \hbox (8.86511pt too wide) in paragraph at lines 1301--1314
  []\T1/ppl/b/n/10.95 User-Simulator Bot.[] \T1/ppl/m/n/10.95 For per-form-ing t
 he fol-low-ing tests, we de-vel-oped a user-simulator
- []
-
-
-Overfull \hbox (3.5771pt too wide) in paragraph at lines 1317--1345
- []\T1/ppl/b/n/10.95 Single In-stance Mi-crobench-mark.[] \T1/ppl/m/n/10.95 We 
-mea-sure the im-pact of our anti-tampering tech-
  []
 
 [28]
@@ -3191,14 +3185,14 @@ ep-tion
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/my-model-exception.pdf): PDF i
 nclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \hbox (40.33086pt too wide) in paragraph at lines 591--591
+Overfull \hbox (40.33086pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Alibaba Cloud (2020). \T1/ppl/m/it/10.95 In-stall SGX\T1/
 ppl/m/n/10.95 . Last ac-cess May 2021. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 
 : [][]$\T1/pcr/m/n/10.95 https : / / www . alibabacloud .
  []
 
 
-Overfull \hbox (27.43196pt too wide) in paragraph at lines 591--591
+Overfull \hbox (27.43196pt too wide) in paragraph at lines 602--602
 \T1/pcr/m/n/10.95 www . usenix . org / conference / osdi16 / technical -[] sess
 ions / presentation /
  []
@@ -3208,264 +3202,269 @@ ions / presentation /
 
 
 ]
-Overfull \hbox (1.41118pt too wide) in paragraph at lines 591--591
+Overfull \hbox (1.41118pt too wide) in paragraph at lines 602--602
 \T1/ppl/m/n/10.95 Related-Key At-tacks and Tam-per-ing^^Q. In: \T1/ppl/m/it/10.
 95 Ad-vances in Cryp-tol-ogy -- ASI-ACRYPT 2011\T1/ppl/m/n/10.95 .
  []
 
 [101]
-Overfull \hbox (49.99942pt too wide) in paragraph at lines 591--591
+Overfull \hbox (49.99942pt too wide) in paragraph at lines 602--602
 \T1/ppl/m/n/10.95 978-1-939133-04-5. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : 
 [][]$\T1/pcr/m/n/10.95 https : / / www . usenix . org / conference / usenixsecu
 rity18 /
  []
 
 
-Overfull \hbox (17.85172pt too wide) in paragraph at lines 591--591
+Overfull \hbox (17.85172pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Calcagno, Cris-tiano et al. (2009). ^^P  Com-po-si-tional
  shape anal-y-sis by means of bi-abduction^^Q.
  []
 
 
-Overfull \hbox (1.152pt too wide) in paragraph at lines 591--591
+Overfull \hbox (1.152pt too wide) in paragraph at lines 602--602
 [][]$\T1/pcr/m/n/10.95 https : / / www . usenix . org / conference / usenixsecu
 rity15 / technical -[]
  []
 
 
-Overfull \hbox (4.652pt too wide) in paragraph at lines 591--591
+Overfull \hbox (4.652pt too wide) in paragraph at lines 602--602
 \T1/pcr/m/n/10.95 Caudill / DEFCON -[] 21 -[] Caudill -[] Offensive -[] Forensc
 s -[] CSI -[] For -[] Badguys -[]
  []
 
 
-Overfull \hbox (5.59048pt too wide) in paragraph at lines 591--591
+Overfull \hbox (5.59048pt too wide) in paragraph at lines 602--602
 \T1/ppl/m/n/10.95 more, MD: USENIX As-so-ci-a-tion. \T1/ppl/m/sc/10.95 url\T1/p
 pl/m/n/10.95 : [][]$\T1/pcr/m/n/10.95 https : / / www . usenix . org / conferen
 ce /
  []
 
 [102]
-Overfull \hbox (1.48418pt too wide) in paragraph at lines 591--591
+Overfull \hbox (1.48418pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Coppa, Emilio, Daniele Cono D'Elia, and Camil Deme-trescu
  (2017). ^^P  Re-think-ing pointer
  []
 
 
-Overfull \hbox (12.91156pt too wide) in paragraph at lines 591--591
+Overfull \hbox (12.91156pt too wide) in paragraph at lines 602--602
 \T1/ppl/m/n/10.95 Grained Control-Flow In-tegrity Pro-tec-tion.^^Q In: \T1/ppl/
 m/it/10.95 USENIX Se-cu-rity Sym-po-sium\T1/ppl/m/n/10.95 . Vol. 2014. 
  []
 
 [103]
-Overfull \hbox (1.79285pt too wide) in paragraph at lines 591--591
+Overfull \hbox (1.79285pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Doweck, J. et al. (2017). ^^P  In-side 6th-Generation In-
 tel Core: New Mi-croar-chi-tec-ture Code-
  []
 
 
-Overfull \hbox (36.31192pt too wide) in paragraph at lines 591--591
+Overfull \hbox (36.31192pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Evenbalance (2017). \T1/ppl/m/it/10.95 Punk-Buster\T1/ppl
 /m/n/10.95 . Last visit on 13 Nov 2017. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95
  : [][]$\T1/pcr/m/n/10.95 http : / / www . evenbalance .
  []
 
 
-Overfull \hbox (12.21169pt too wide) in paragraph at lines 591--591
+Overfull \hbox (12.21169pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Facebook (2016). \T1/ppl/m/it/10.95 Zs-tan-dard\T1/ppl/m/
 n/10.95 . Last ac-cess March 2019. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : []
 []$\T1/pcr/m/n/10.95 https : / / facebook . github .
  []
 
 
-Overfull \hbox (12.1221pt too wide) in paragraph at lines 591--591
+Overfull \hbox (12.1221pt too wide) in paragraph at lines 602--602
 \T1/ppl/m/it/10.95 shop on Net-work and Sys-tem Sup-port for Games\T1/ppl/m/n/1
 0.95 . NetGames '08. Worces-ter, Mas-sachusetts:
  []
 
 [104]
-Overfull \hbox (4.08163pt too wide) in paragraph at lines 591--591
+Overfull \hbox (4.08163pt too wide) in paragraph at lines 602--602
 \T1/ppl/m/it/10.95 na-tional Con-fer-ence on Ver-i-fi-ca-tion, Model Check-ing,
  and Ab-stract In-ter-pre-ta-tion\T1/ppl/m/n/10.95 . Springer,
  []
 
 
-Overfull \hbox (6.649pt too wide) in paragraph at lines 591--591
+Overfull \hbox (6.649pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Google (2018). \T1/ppl/m/it/10.95 Asylo\T1/ppl/m/n/10.95 
 . Last ac-cess Febru-ary 2021. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\
 T1/pcr/m/n/10.95 https : / / github . com / google /
  []
 
 [105]
-Overfull \hbox (21.30817pt too wide) in paragraph at lines 591--591
+Overfull \hbox (21.30817pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Hu, Hong et al. (2015). ^^P  Au-to-matic gen-er-a-tion of
  data-oriented ex-ploits^^Q. In: \T1/ppl/m/it/10.95 24th $\OMS/cmsy/m/n/10.95 f
 $\T1/ppl/m/it/10.95 USENIX$\OMS/cmsy/m/n/10.95 g$
  []
 
 
-Overfull \hbox (1.2038pt too wide) in paragraph at lines 591--591
+Overfull \hbox (1.2038pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Ibrahim, Ah-mad, Ahmad-Reza Sadeghi, and Gene Tsudik (201
 8). ^^P  US-AID: Unat-tended
  []
 
 LaTeX Font Info:    Font shape `OMS/ppl/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 591.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 602.
 
-Overfull \hbox (12.41927pt too wide) in paragraph at lines 591--591
+Overfull \hbox (12.41927pt too wide) in paragraph at lines 602--602
 \T1/ppl/m/n/10.95 2020. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\T1/pcr/
 m/n/10.95 https : / / software . intel . com / sites / default / files / manage
 d /
  []
 
 
-Overfull \hbox (1.71155pt too wide) in paragraph at lines 591--591
+Overfull \hbox (1.71155pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Intel (2014). \T1/ppl/m/it/10.95 Intel[] Soft-ware Guard 
 Ex-ten-sions Pro-gram-ming Ref-er-ence\T1/ppl/m/n/10.95 . Last ac-cess Septem-
  []
 
 [106]
-Overfull \hbox (7.72198pt too wide) in paragraph at lines 591--591
+Overfull \hbox (7.72198pt too wide) in paragraph at lines 602--602
 \T1/pcr/m/n/10.95 files / managed / b4 / 3a / 319433 -[] 024 . pdf ? _ga = 1 . 
 118002441 . 1853754838 .
  []
 
 
-Overfull \hbox (11.37286pt too wide) in paragraph at lines 591--591
+Overfull \hbox (11.37286pt too wide) in paragraph at lines 602--602
 [][][]\T1/ppl/m/n/10.95 (2020). \T1/ppl/m/it/10.95 Build SGX En-clave us-ing Cl
 ang/L-LVM\T1/ppl/m/n/10.95 . Last ac-cess Septem-ber 2020. \T1/ppl/m/sc/10.95 u
 rl\T1/ppl/m/n/10.95 : [][]$\T1/pcr/m/n/10.95 https :
  []
 
 [107]
-Overfull \hbox (8.53261pt too wide) in paragraph at lines 591--591
+Overfull \hbox (8.53261pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Koutroumpouchos, Nikos et al. (2019). ^^P  Se-cure edge c
 om-put-ing with lightweight control-
  []
 
 
-Overfull \hbox (3.24791pt too wide) in paragraph at lines 591--591
+Overfull \hbox (3.24791pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Lee, Jae-hyuk et al. (2017a). ^^P  Hack-ing in dark-ness:
  Return-oriented pro-gram-ming against
  []
 
 [108]
-Overfull \hbox (8.7022pt too wide) in paragraph at lines 591--591
+Overfull \hbox (8.7022pt too wide) in paragraph at lines 602--602
 [][][]\T1/ppl/m/n/10.95 (2017a). \T1/ppl/m/it/10.95 Driver Sign-ing\T1/ppl/m/n/
 10.95 . Last visit on 02 Mar 2018. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : []
 []$\T1/pcr/m/n/10.95 https : / / docs . microsoft .
  []
 
 
-Overfull \hbox (2.6845pt too wide) in paragraph at lines 591--591
+Overfull \hbox (2.6845pt too wide) in paragraph at lines 602--602
 [][][]\T1/ppl/m/n/10.95 (2019). \T1/ppl/m/it/10.95 Open En-clave SDK\T1/ppl/m/n
 /10.95 . [][]$\T1/pcr/m/n/10.95 https : / / github . com / openenclave / openen
 clave$[][]\T1/ppl/m/n/10.95 .
  []
 
 
-Overfull \hbox (1.01268pt too wide) in paragraph at lines 591--591
+Overfull \hbox (1.01268pt too wide) in paragraph at lines 602--602
 \T1/ppl/m/n/10.95 ber 2020. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\T1/
 pcr/m/n/10.95 https : / / signal . org / blog / private -[] contact -[] discove
 ry/$[][]\T1/ppl/m/n/10.95 . 
  []
 
 [109]
-Overfull \hbox (4.81601pt too wide) in paragraph at lines 591--591
+Overfull \hbox (4.81601pt too wide) in paragraph at lines 602--602
 \T1/ppl/m/n/10.95 In-tel SGX^^Q. In: \T1/ppl/m/it/10.95 Pro-ceed-ings of the 41
 st IEEE Sym-po-sium on Se-cu-rity and Pri-vacy (S&P'20)\T1/ppl/m/n/10.95 . 
  []
 
 
-Overfull \hbox (49.99942pt too wide) in paragraph at lines 591--591
+Overfull \hbox (49.99942pt too wide) in paragraph at lines 602--602
 \T1/ppl/m/n/10.95 978-1-939133-17-5. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : 
 [][]$\T1/pcr/m/n/10.95 https : / / www . usenix . org / conference / usenixsecu
 rity20 /
  []
 
 
-Overfull \hbox (8.76443pt too wide) in paragraph at lines 591--591
+Overfull \hbox (8.76443pt too wide) in paragraph at lines 602--602
 \T1/ppl/m/n/10.95 Boston, MA: USENIX As-so-ci-a-tion, pp. 227^^U240. \T1/ppl/m/
 sc/10.95 isbn\T1/ppl/m/n/10.95 : 978-1-931971-44-7. \T1/ppl/m/sc/10.95 url\T1/p
 pl/m/n/10.95 : [][]$\T1/pcr/m/n/10.95 https :
  []
 
 
-Overfull \hbox (2.39346pt too wide) in paragraph at lines 591--591
+Overfull \hbox (2.39346pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Onarlioglu, Kaan et al. (2010). ^^P  G-Free: de-feat-ing 
 return-oriented pro-gram-ming through
  []
 
 [110] [111]
-Overfull \hbox (1.7256pt too wide) in paragraph at lines 591--591
+Overfull \hbox (1.7256pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Snow, Kevin Z et al. (2013). ^^P  Just-in-time code reuse
 : On the ef-fec-tive-ness of fine-grained
  []
 
 [112]
-Overfull \hbox (26.6072pt too wide) in paragraph at lines 591--591
+Overfull \hbox (26.6072pt too wide) in paragraph at lines 602--602
 \T1/ppl/m/n/10.95 pp. 121^^U134. \T1/ppl/m/sc/10.95 isbn\T1/ppl/m/n/10.95 : 978
 -1-939133-07-6. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\T1/pcr/m/n/10.9
 5 https : / / www . usenix . org / conference /
  []
 
 
-Overfull \hbox (21.37845pt too wide) in paragraph at lines 591--591
+Overfull \hbox (21.37845pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Tuzsuzov, Jor-dan (2005). \T1/ppl/m/it/10.95 Biniax-2\T1/
 ppl/m/n/10.95 . Last ac-cessed April 2021. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10
 .95 : [][]$\T1/pcr/m/n/10.95 http : / / www . tuzsuzov .
  []
 
 [113]
-Overfull \hbox (20.82883pt too wide) in paragraph at lines 591--591
+Overfull \hbox (20.82883pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 VideoLAN (2017). \T1/ppl/m/it/10.95 lib-d-vd-css\T1/ppl/m
 /n/10.95 . Last ac-cess Septem-ber 2020. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.9
 5 : [][]$\T1/pcr/m/n/10.95 https : / / code . videolan .
  []
 
 
-Overfull \hbox (2.45892pt too wide) in paragraph at lines 591--591
+Overfull \hbox (2.45892pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Vinayagamurthy, Dhi-nakaran, Alexey Gri-bov, and Sergey G
 or-bunov (2019). ^^P  StealthDB:
  []
 
 
-Overfull \hbox (36.23944pt too wide) in paragraph at lines 591--591
+Overfull \hbox (36.23944pt too wide) in paragraph at lines 602--602
 [][]$\T1/pcr/m/n/10.95 http : / / www . sciencedirect . com / science / article
  / pii / S1084804520300084$[][]\T1/ppl/m/n/10.95 . 
  []
 
 [114]
-Overfull \hbox (4.18591pt too wide) in paragraph at lines 591--591
+Overfull \hbox (4.18591pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Watson, Robert NM et al. (2018). \T1/ppl/m/it/10.95 Ca-pa
 -bil-ity Hard-ware En-hanced RISC In-struc-tions (CHERI):
  []
 
 
-Overfull \hbox (2.13712pt too wide) in paragraph at lines 591--591
+Overfull \hbox (2.13712pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Winter, Jo-hannes (2008). ^^P  Trusted com-put-ing build-
 ing blocks for em-bed-ded linux-based
  []
 
 
-Overfull \hbox (7.59778pt too wide) in paragraph at lines 591--591
+Overfull \hbox (7.59778pt too wide) in paragraph at lines 602--602
 [][]\T1/ppl/m/n/10.95 Yao, Fan, Jie Chen, and Guru Venkatara-mani (2013). ^^P  
 Jop-alarm: De-tect-ing jump-oriented
  []
 
 [115] [116]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 595.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 595.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 606.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 606.
  (./main.aux (./chapters/introduction.aux)
 (./chapters/background-trusting-computing.aux)
 (./chapters/static-protection.aux) (./chapters/new-threats.aux)
 (./chapters/forensic-analysis.aux) (./chapters/runtime-protection-untrusted.aux
 ) (./chapters/runtime-protection-trusted.aux) (./chapters/related-works.aux)
 (./chapters/conclusion.aux) (./appendices/appendix_sgxmonitor.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 595.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 595.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 606.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 606.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 84409EA666AF5674F9B9F53C7C9CC0FA;20076.
+(rerunfilecheck)             Checksum: 01EDADFCF4E8C6017CD9678BA8D2DB9F;20081.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -3473,7 +3472,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  51284 strings out of 492982
  1033534 string characters out of 6134896
- 1561031 words of memory out of 5000000
+ 1560905 words of memory out of 5000000
  53170 multiletter control sequences out of 15000+600000
  588935 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3507,7 +3506,7 @@ alatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb
 i8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (129 pages, 1978694 bytes).
+Output written on main.pdf (129 pages, 1979035 bytes).
 PDF statistics:
  4064 PDF objects out of 4296 (max. 8388607)
  3513 compressed objects within 36 object streams

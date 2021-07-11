@@ -17,7 +17,7 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces SGX-Host interaction.}}{37}{figure.caption.155}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces \texttt {ocall\_context} memory layout.}}{38}{figure.caption.157}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Simplified \texttt {do\_oret()} pseudo-code.\relax }}{39}{figure.caption.164}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces SnakeGX installation layour.}}{43}{figure.caption.220}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces SnakeGX installation layout.}}{43}{figure.caption.220}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Chain used in the proof-of-concept of SnakeGX.\relax }}{45}{figure.caption.230}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
