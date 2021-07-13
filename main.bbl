@@ -2082,6 +2082,18 @@
     \field{year}{2002}
   \endentry
 
+  \entry{conclave}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{howpublished}{\url{https://docs.conclave.net/index.html}}
+    \field{note}{Last access March 2021}
+    \field{title}{Conclave}
+    \field{year}{2020}
+  \endentry
+
   \entry{conti2008emergent}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=CM}{%
@@ -3396,6 +3408,75 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
+  \entry{grazianohyper}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Graziano},
+         familyi={G\bibinitperiod},
+         given={Mariano},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lanzi},
+         familyi={L\bibinitperiod},
+         given={Andrea},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Balzarotti},
+         familyi={B\bibinitperiod},
+         given={Davide},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \name{editor}{3}{}{%
+      {{hash=SSJ}{%
+         family={Stolfo},
+         familyi={S\bibinitperiod},
+         given={Salvatore\bibnamedelima J.},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Stavrou},
+         familyi={S\bibinitperiod},
+         given={Angelos},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WCV}{%
+         family={Wright},
+         familyi={W\bibinitperiod},
+         given={Charles\bibnamedelima V.},
+         giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin Heidelberg}%
+    }
+    \strng{namehash}{GMLABD1}
+    \strng{fullhash}{GMLABD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Memory forensics is the branch of computer forensics that aims at
+  extracting artifacts from memory snapshots taken from a running system. Even
+  though it is a relatively recent field, it is rapidly growing and it is
+  attracting considerable attention from both industrial and academic
+  researchers.%
+    }
+    \field{booktitle}{Research in Attacks, Intrusions, and Defenses}
+    \field{isbn}{978-3-642-41284-4}
+    \field{pages}{21\bibrangedash 40}
+    \field{title}{Hypervisor Memory Forensics}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2013}
+  \endentry
+
   \entry{5958048}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=GD}{%
@@ -4077,6 +4158,34 @@
     \field{year}{2016}
   \endentry
 
+  \entry{ropfind}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=aIWC}{%
+         prefix={@and},
+         prefixi={a\bibinitperiod},
+         family={Inon\bibnamedelima Weber},
+         familyi={I\bibinitperiod\bibinitdelim W\bibinitperiod},
+         given={Chechik},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {GitHub}%
+    }
+    \strng{namehash}{IWCa1}
+    \strng{fullhash}{IWCa1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{howpublished}{\url{https://github.com/orchechik/ropfind}}
+    \field{title}{ropfind repository}
+    \field{journaltitle}{GitHub repository}
+    \field{year}{2019}
+  \endentry
+
   \entry{intel-developer-guide}{misc}{}
     \name{author}{1}{}{%
       {{hash=I}{%
@@ -4153,7 +4262,7 @@
     \field{year}{2016}
   \endentry
 
-  \entry{sgxremoteatt}{misc}{}
+  \entry{sgxdriver}{misc}{}
     \name{author}{1}{}{%
       {{hash=I}{%
          family={Intel},
@@ -4166,6 +4275,28 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
     \field{extradate}{2}
+    \field{labeldatesource}{year}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{howpublished}{\url{https://github.com/intel/linux-sgx-driver}}
+    \field{note}{Last access March 2021}
+    \field{title}{Linux-sgx-driver}
+    \field{year}{2016}
+  \endentry
+
+  \entry{sgxremoteatt}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={Intel},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I2}
+    \strng{fullhash}{I2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{extradate}{3}
     \field{labeldatesource}{year}
     \field{sortinit}{I}
     \field{sortinithash}{I}
@@ -4203,7 +4334,7 @@
     \field{year}{2018}
   \endentry
 
-  \entry{rijndael128GCM}{misc}{}
+  \entry{sgx-cypher}{misc}{}
     \name{author}{1}{}{%
       {{hash=I}{%
          family={Intel},
@@ -4216,6 +4347,29 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
     \field{extradate}{2}
+    \field{labeldatesource}{year}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+  \field{howpublished}{\url{https://github.com/intel/linux-sgx-pcl/blob/master/Intel(R)\_SGX\_Protected\_Code\_Loader\_for\_Linux\_User\_Guide.pdf}}
+    \field{note}{Last access June 2020}
+    \field{title}{Intel Software Guard Extensions (Intel SGX) Protected Code
+  Loader (PCL) for Linux}
+    \field{year}{2018}
+  \endentry
+
+  \entry{rijndael128GCM}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={Intel},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I2}
+    \strng{fullhash}{I2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{extradate}{3}
     \field{labeldatesource}{year}
     \field{sortinit}{I}
     \field{sortinithash}{I}
@@ -4239,6 +4393,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
+    \field{extradate}{1}
     \field{labeldatesource}{year}
     \field{sortinit}{I}
     \field{sortinithash}{I}
@@ -4248,6 +4403,28 @@
     \verb https://community.intel.com/t5/Intel-Software-Guard-Extensions/Build-
     \verb SGX-Enclave-using-Clang-LLVM/td-p/1161847
     \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{sgxdcap}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={Intel},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I2}
+    \strng{fullhash}{I2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{extradate}{2}
+    \field{labeldatesource}{year}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+  \field{howpublished}{\url{https://github.com/intel/SGXDataCenterAttestationPrimitives/tree/master/driver}}
+    \field{note}{Last access March 2021}
+    \field{title}{SGX Data Center Attestation Primitives (DCAP)}
     \field{year}{2020}
   \endentry
 
@@ -5898,6 +6075,44 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{nilsson2020survey}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=NA}{%
+         family={Nilsson},
+         familyi={N\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BPN}{%
+         family={Bideh},
+         familyi={B\bibinitperiod},
+         given={Pegah\bibnamedelima Nikbakht},
+         giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Brorsson},
+         familyi={B\bibinitperiod},
+         given={Joakim},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NABPNBJ1}
+    \strng{fullhash}{NABPNBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \verb{eprint}
+    \verb 2006.13598
+    \endverb
+    \field{title}{A Survey of Published Attacks on Intel SGX}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CR}
+    \field{year}{2020}
+  \endentry
+
   \entry{apex}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=NIDO}{%
@@ -6084,6 +6299,46 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{pagani2019introducing}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PF}{%
+         family={Pagani},
+         familyi={P\bibinitperiod},
+         given={Fabio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=FO}{%
+         family={Fedorov},
+         familyi={F\bibinitperiod},
+         given={Oleksii},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Balzarotti},
+         familyi={B\bibinitperiod},
+         given={Davide},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM New York, NY, USA}%
+    }
+    \strng{namehash}{PFFOBD1}
+    \strng{fullhash}{PFFOBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{2}
+    \field{pages}{1\bibrangedash 21}
+    \field{title}{Introducing the temporal dimension to memory forensics}
+    \field{volume}{22}
+    \field{journaltitle}{ACM Transactions on Privacy and Security (TOPS)}
+    \field{year}{2019}
+  \endentry
+
   \entry{intelcet}{misc}{}
     \name{author}{1}{}{%
       {{hash=PBV}{%
@@ -6109,6 +6364,53 @@
     \verb al-look-control-flow-enforcement-technology.html
     \endverb
     \field{year}{2017}
+  \endentry
+
+  \entry{pei2020trex}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PK}{%
+         family={Pei},
+         familyi={P\bibinitperiod},
+         given={Kexin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=XZ}{%
+         family={Xuan},
+         familyi={X\bibinitperiod},
+         given={Zhou},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Junfeng},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Jana},
+         familyi={J\bibinitperiod},
+         given={Suman},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RB}{%
+         family={Ray},
+         familyi={R\bibinitperiod},
+         given={Baishakhi},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PK+1}
+    \strng{fullhash}{PKXZYJJSRB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{TREX: Learning Execution Semantics from Micro-Traces for
+  Binary Similarity}
+    \field{journaltitle}{arXiv preprint arXiv:2012.08680}
+    \field{year}{2020}
   \endentry
 
   \entry{pinzari2003introduction}{misc}{}
@@ -6314,6 +6616,42 @@
     \verb https://www.qualcomm.com/media/documents/files/whitepaper-pointer-aut
     \verb hentication-on-armv8-3.pdf
     \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{r3}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{howpublished}{\url{https://www.r3.com/}}
+    \field{note}{Last access March 2021}
+    \field{title}{R3}
+    \field{year}{2014}
+  \endentry
+
+  \entry{radare2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Radare2 Team}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {GitHub}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{howpublished}{\url{https://github.com/radare/radare2}}
+    \field{title}{Radare2 GitHub repository}
+    \field{journaltitle}{GitHub repository}
     \field{year}{2017}
   \endentry
 
@@ -6624,6 +6962,48 @@
     \verb{url}
     \verb https://www.contino.io/insights/whos-using-aws
     \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{sgaxe}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=vSS}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Schaik},
+         familyi={S\bibinitperiod},
+         given={Stephan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kwong},
+         familyi={K\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Genkin},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yarom},
+         familyi={Y\bibinitperiod},
+         given={Yuval},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SSv+1}
+    \strng{fullhash}{SSvKAGDYY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{howpublished}{\url{https://sgaxeattack.com/}}
+    \field{title}{{SGAxe}: How {SGX} Fails in Practice}
     \field{year}{2020}
   \endentry
 
@@ -7290,6 +7670,31 @@
     \field{year}{2006}
   \endentry
 
+  \entry{smulders2013user}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=SE}{%
+         family={Smulders},
+         familyi={S\bibinitperiod},
+         given={Edwin},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SE1}
+    \strng{fullhash}{SE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{User space memory analysis}
+    \list{institution}{1}{%
+      {University of Twente}%
+    }
+    \field{type}{mathesis}
+    \field{year}{2013}
+  \endentry
+
   \entry{snow2013just}{inproceedings}{}
     \name{author}{6}{}{%
       {{hash=SKZ}{%
@@ -7678,6 +8083,29 @@
     \field{pages}{1433\bibrangedash 1449}
     \field{title}{OAT: Attesting operation integrity of embedded devices}
     \field{year}{2020}
+  \endentry
+
+  \entry{lime}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SJ}{%
+         family={Sylve},
+         familyi={S\bibinitperiod},
+         given={Joe},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJ1}
+    \strng{fullhash}{SJ2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{howpublished}{\url{https://github.com/504ensicsLabs/LiME}}
+    \field{note}{Last access February 2021}
+    \field{title}{LiME ~ Linux Memory Extractor}
+    \field{year}{2012}
   \endentry
 
   \entry{tian2018switchless}{inproceedings}{}
@@ -8277,6 +8705,89 @@
     \field{year}{2017}
   \endentry
 
+  \entry{vanbulck2018foreshadow}{inproceedings}{}
+    \name{author}{10}{}{%
+      {{hash=VBJ}{%
+         family={Van\bibnamedelima Bulck},
+         familyi={V\bibinitperiod\bibinitdelim B\bibinitperiod},
+         given={Jo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Minkin},
+         familyi={M\bibinitperiod},
+         given={Marina},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WO}{%
+         family={Weisse},
+         familyi={W\bibinitperiod},
+         given={Ofir},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Genkin},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kasikci},
+         familyi={K\bibinitperiod},
+         given={Baris},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=PF}{%
+         family={Piessens},
+         familyi={P\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Silberstein},
+         familyi={S\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WTF}{%
+         family={Wenisch},
+         familyi={W\bibinitperiod},
+         given={Thomas\bibnamedelima F.},
+         giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yarom},
+         familyi={Y\bibinitperiod},
+         given={Yuval},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Strackx},
+         familyi={S\bibinitperiod},
+         given={Raoul},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{USENIX} Association}%
+    }
+    \strng{namehash}{VBJ+1}
+    \strng{fullhash}{VBJMMWOGDKBPFSMWTFYYSR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{booktitle}{Proceedings of the 27th {USENIX} Security Symposium}
+    \field{note}{See also technical report
+  Foreshadow-NG~\cite{weisse2018foreshadowNG}}
+    \field{title}{Foreshadow: Extracting the Keys to the {Intel SGX} Kingdom
+  with Transient Out-of-Order Execution}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{tale-two-worlds}{inproceedings}{}
     \name{author}{6}{}{%
       {{hash=VBJ}{%
@@ -8710,6 +9221,28 @@
     \field{booktitle}{NDSS}
     \field{title}{Persistent Data-only Malware: Function Hooks without Code.}
     \field{year}{2014}
+  \endentry
+
+  \entry{volatility}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{Volatility Foundation}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{V4}
+    \strng{fullhash}{V4}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+  \field{howpublished}{\url{https://github.com/volatilityfoundation/volatility}}
+    \field{note}{Last access February 2021}
+    \field{title}{Volatility Framework - Volatile memory extraction utility
+  framework}
+    \field{year}{2017}
   \endentry
 
   \entry{sgx-rust}{inproceedings}{}
@@ -9165,6 +9698,84 @@
     }
     \field{month}{09}
     \field{year}{2019}
+  \endentry
+
+  \entry{weisse2018foreshadowNG}{article}{}
+    \name{author}{10}{}{%
+      {{hash=WO}{%
+         family={Weisse},
+         familyi={W\bibinitperiod},
+         given={Ofir},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=VBJ}{%
+         family={Van\bibnamedelima Bulck},
+         familyi={V\bibinitperiod\bibinitdelim B\bibinitperiod},
+         given={Jo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Minkin},
+         familyi={M\bibinitperiod},
+         given={Marina},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Genkin},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kasikci},
+         familyi={K\bibinitperiod},
+         given={Baris},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=PF}{%
+         family={Piessens},
+         familyi={P\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Silberstein},
+         familyi={S\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Strackx},
+         familyi={S\bibinitperiod},
+         given={Raoul},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WTF}{%
+         family={Wenisch},
+         familyi={W\bibinitperiod},
+         given={Thomas\bibnamedelima F.},
+         giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yarom},
+         familyi={Y\bibinitperiod},
+         given={Yuval},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WO+1}
+    \strng{fullhash}{WOVBJMMGDKBPFSMSRWTFYY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{{Foreshadow-NG}: Breaking the Virtual Memory Abstraction with
+  Transient Out-of-Order Execution}
+    \field{journaltitle}{Technical report}
+    \field{month}{08}
+    \field{year}{2018}
   \endentry
 
   \entry{winter2008trusted}{inproceedings}{}

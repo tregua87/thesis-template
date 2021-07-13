@@ -421,7 +421,7 @@ few clues by observing the page permissions.
 For instance, an analyst can locate and measure the size of executable pages, 
 which reveals 
 the amount of code loaded in the enclave.
-Moreover, it is possible to enumerate writable pages (\ie \texttt{rw*}), that 
+Moreover, it is possible to enumarate writable pages (\ie \texttt{rw*}), that 
 likely point to data
 location.
 
@@ -429,7 +429,7 @@ location.
 
 The \emph{enclave} interface reveals the type of interaction with the 
 underlying OS.
-However, the \emph{enclave} interface strictly depends from the adopted 
+However, the \emph{encalve} interface strictly depends from the adopted 
 development 
 framework.
 To this end, we compiled a list of framework fingerprints composed by 
@@ -862,7 +862,7 @@ and the \emph{\textbf{i}sgx} driver.
 			\end{threeparttable}
 		\end{minipage}
 	\end{tabular}
-	\caption{Analyzed samples.}
+	\caption{Analized samples.}
 	\label{tbl:all_samples}
 \end{table}
 
