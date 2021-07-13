@@ -8,38 +8,38 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Enclave pages architecture in DRAM.\relax }}{12}{figure.caption.42}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Development frameworks' architecture.}}{14}{figure.caption.51}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of single-thread schema.}}{20}{figure.caption.75}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Packing mechanism of our schema.\relax }}{23}{figure.caption.91}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Careful-Packing architecture.\relax }}{25}{figure.caption.108}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Secure installation protocol between client and server.\relax }}{27}{figure.caption.120}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Careful-Packing evaluation.\relax }}{29}{figure.caption.127}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of single-thread schema.}}{20}{figure.caption.72}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Packing mechanism of our schema.\relax }}{23}{figure.caption.88}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Careful-Packing architecture.\relax }}{25}{figure.caption.105}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Secure installation protocol between client and server.\relax }}{27}{figure.caption.117}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Careful-Packing evaluation.\relax }}{29}{figure.caption.124}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces SGX-Host interaction.}}{37}{figure.caption.155}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces \texttt {ocall\_context} memory layout.}}{38}{figure.caption.157}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Simplified \texttt {do\_oret()} pseudo-code.\relax }}{39}{figure.caption.164}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces SnakeGX installation layout.}}{43}{figure.caption.220}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Chain used in the proof-of-concept of SnakeGX.\relax }}{45}{figure.caption.230}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces SGX-Host interaction.}}{37}{figure.caption.152}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \texttt {ocall\_context} memory layout.}}{38}{figure.caption.154}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Simplified \texttt {do\_oret()} pseudo-code.\relax }}{39}{figure.caption.161}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces SnakeGX installation layout.}}{43}{figure.caption.217}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Chain used in the proof-of-concept of SnakeGX.\relax }}{45}{figure.caption.227}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The flowchart describes the workflow of an SGX-machine inspection and depicts the three main phases: memory acquisition, kernel space, and user space analysis. The diamonds represent different conditions that can be encountered (\textit {e.g.,} \emph {Is microcode vulnerable?}), each condition leads to different class of information (\textit {e.g.,} if the microcode is vulnerable, we can \emph {Dump using CPU speculative attacks}). Green-arrows with symbol ``Y'' indicate the available information if a condition is satisfied, while red-arrows with symbol ``N'' otherwise. In addition, every box contains detailed pieces of information that we mark with the symbol ``$+$'' if they are always retrievable, while we use the symbol ``$(+)$'' if their availability depends by the system state (\textit {e.g.,} a system log that might be wiped). The technical details of each phase is detailed in their relative section.\relax }}{54}{figure.caption.327}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Relation between the kernel and Intel drivers data-structures\relax }}{56}{figure.caption.330}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Memory layout example.}}{57}{figure.caption.337}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The flowchart describes the workflow of an SGX-machine inspection and depicts the three main phases: memory acquisition, kernel space, and user space analysis. The diamonds represent different conditions that can be encountered (\textit {e.g.,} \emph {Is microcode vulnerable?}), each condition leads to different class of information (\textit {e.g.,} if the microcode is vulnerable, we can \emph {Dump using CPU speculative attacks}). Green-arrows with symbol ``Y'' indicate the available information if a condition is satisfied, while red-arrows with symbol ``N'' otherwise. In addition, every box contains detailed pieces of information that we mark with the symbol ``$+$'' if they are always retrievable, while we use the symbol ``$(+)$'' if their availability depends by the system state (\textit {e.g.,} a system log that might be wiped). The technical details of each phase is detailed in their relative section.\relax }}{54}{figure.caption.324}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Relation between the kernel and Intel drivers data-structures\relax }}{56}{figure.caption.327}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Memory layout example.}}{57}{figure.caption.334}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces ScaRR model challenges.\relax }}{71}{figure.caption.419}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces ScaRR system overview.\relax }}{72}{figure.caption.424}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces ScaRR shadow stack example.}}{75}{figure.caption.436}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Implementation of the shadow stack on the ScaRR \emph {Verifier}.\relax }}{76}{figure.caption.437}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Internal architecture of the \emph {Prover}.\relax }}{78}{figure.caption.443}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces ScaRR evaluation.}}{79}{figure.caption.448}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces ScaRR network traffic evaluation.}}{80}{figure.caption.450}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces ScaRR model challenges.\relax }}{71}{figure.caption.416}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces ScaRR system overview.\relax }}{72}{figure.caption.421}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces ScaRR shadow stack example.}}{75}{figure.caption.433}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Implementation of the shadow stack on the ScaRR \emph {Verifier}.\relax }}{76}{figure.caption.434}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Internal architecture of the \emph {Prover}.\relax }}{78}{figure.caption.440}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces ScaRR evaluation.}}{79}{figure.caption.445}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces ScaRR network traffic evaluation.}}{80}{figure.caption.447}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Standard SGX FSM.}}{84}{figure.caption.470}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces SgxMonitor running example.}}{88}{figure.caption.485}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces SgxMonitor design.}}{89}{figure.caption.510}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces SgxMonitor micro-benchmark and \emph {action} speed measurement evaluation.\relax }}{98}{figure.caption.587}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces SgxMonitor \textsf {StealthDB} macro-benchmark.}}{99}{figure.caption.590}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces SgxMonitor \textsf {libdvdcss} and \textsf {SGX-Biniax2} macro-benchmark.}}{100}{figure.caption.591}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Standard SGX FSM.}}{84}{figure.caption.467}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces SgxMonitor running example.}}{88}{figure.caption.482}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces SgxMonitor design.}}{89}{figure.caption.507}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces SgxMonitor micro-benchmark and \emph {action} speed measurement evaluation.\relax }}{98}{figure.caption.584}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces SgxMonitor \textsf {StealthDB} macro-benchmark.}}{99}{figure.caption.587}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces SgxMonitor \textsf {libdvdcss} and \textsf {SGX-Biniax2} macro-benchmark.}}{100}{figure.caption.588}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces SGX \emph {outside functions} interaction modeling.}}{114}{figure.caption.639}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces SGX \emph {exception handling} modeling.}}{114}{figure.caption.640}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces SGX \emph {outside functions} interaction modeling.}}{114}{figure.caption.636}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces SGX \emph {exception handling} modeling.}}{114}{figure.caption.637}

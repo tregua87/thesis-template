@@ -1,86 +1,86 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Memory forensic in SGX environments}{52}{chapter.324}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Memory forensic in SGX environments}{52}{chapter.321}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{chp:forensic}{{5}{52}{Memory forensic in SGX environments}{chapter.324}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Threat Model}{52}{section.325}}
-\newlabel{sec:system-assumptions}{{5.1}{52}{Threat Model}{section.325}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Memory Forensic in SGX environment}{53}{section.326}}
-\newlabel{sec:memory-forensic-sgx}{{5.2}{53}{Memory Forensic in SGX environment}{section.326}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Memory Acquisition}{53}{subsection.328}}
-\newlabel{ssec:memory-dump}{{5.2.1}{53}{Memory Acquisition}{subsection.328}{}}
+\newlabel{chp:forensic}{{5}{52}{Memory forensic in SGX environments}{chapter.321}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Threat Model}{52}{section.322}}
+\newlabel{sec:system-assumptions}{{5.1}{52}{Threat Model}{section.322}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Memory Forensic in SGX environment}{53}{section.323}}
+\newlabel{sec:memory-forensic-sgx}{{5.2}{53}{Memory Forensic in SGX environment}{section.323}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Memory Acquisition}{53}{subsection.325}}
+\newlabel{ssec:memory-dump}{{5.2.1}{53}{Memory Acquisition}{subsection.325}{}}
 \newlabel{RF1}{54}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces The flowchart describes the workflow of an SGX-machine inspection and depicts the three main phases: memory acquisition, kernel space, and user space analysis. The diamonds represent different conditions that can be encountered (\textit  {e.g.,} \emph  {Is microcode vulnerable?}), each condition leads to different class of information (\textit  {e.g.,} if the microcode is vulnerable, we can \emph  {Dump using CPU speculative attacks}). Green-arrows with symbol ``Y'' indicate the available information if a condition is satisfied, while red-arrows with symbol ``N'' otherwise. In addition, every box contains detailed pieces of information that we mark with the symbol ``$+$'' if they are always retrievable, while we use the symbol ``$(+)$'' if their availability depends by the system state (\textit  {e.g.,} a system log that might be wiped). The technical details of each phase is detailed in their relative section.\relax }}{54}{figure.caption.327}}
-\newlabel{fig:analysis-map}{{5.1}{54}{The flowchart describes the workflow of an SGX-machine inspection and depicts the three main phases: memory acquisition, kernel space, and user space analysis. The diamonds represent different conditions that can be encountered (\eg \emph {Is microcode vulnerable?}), each condition leads to different class of information (\eg if the microcode is vulnerable, we can \emph {Dump using CPU speculative attacks}). Green-arrows with symbol ``Y'' indicate the available information if a condition is satisfied, while red-arrows with symbol ``N'' otherwise. In addition, every box contains detailed pieces of information that we mark with the symbol ``$+$'' if they are always retrievable, while we use the symbol ``$(+)$'' if their availability depends by the system state (\eg a system log that might be wiped). The technical details of each phase is detailed in their relative section.\relax }{figure.caption.327}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Kernel space analysis}{55}{subsection.329}}
-\newlabel{ssec:kernel-space-analysis}{{5.2.2}{55}{Kernel space analysis}{subsection.329}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Relation between the kernel and Intel drivers data-structures\relax }}{56}{figure.caption.330}}
-\newlabel{fig:struct_sgx}{{5.2}{56}{Relation between the kernel and Intel drivers data-structures\relax }{figure.caption.330}{}}
-\newlabel{fig:memory_layout_api}{{5.3a}{57}{Example of Memory layout of\\Intel SGX SDK.\relax }{figure.caption.337}{}}
-\newlabel{sub@fig:memory_layout_api}{{a}{57}{Example of Memory layout of\\Intel SGX SDK.\relax }{figure.caption.337}{}}
-\newlabel{fig:memory_layout_container}{{5.3b}{57}{Example of Memory layout of Graphene.\relax }{figure.caption.337}{}}
-\newlabel{sub@fig:memory_layout_container}{{b}{57}{Example of Memory layout of Graphene.\relax }{figure.caption.337}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Memory layout example.}}{57}{figure.caption.337}}
-\newlabel{fig:memory_layout}{{5.3}{57}{Memory layout example}{figure.caption.337}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}User Space Analysis}{57}{subsection.335}}
-\newlabel{ssec:user-space-analyses}{{5.2.3}{57}{User Space Analysis}{subsection.335}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Enclave Memory Layout Analysis}{57}{section*.336}}
-\@writefile{toc}{\contentsline {subsubsection}{Enclave Interface Analysis}{58}{section*.342}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Interface Analysis Algorithms}{59}{section.343}}
-\newlabel{apx:interface-analysis}{{5.3}{59}{Interface Analysis Algorithms}{section.343}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Intel SGX SDK and RUST-SGX}{59}{subsection.344}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Open Enclave SDK}{60}{subsection.345}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Graphene and SGX-LKL}{60}{subsection.346}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Evaluation}{60}{section.393}}
-\newlabel{sec:memfor_evaluation}{{5.4}{60}{Evaluation}{section.393}{}}
-\newlabel{alg:sgxsdk:2}{{2}{61}{Graphene and SGX-LKL}{AlgoLine.350}{}}
-\newlabel{alg:sgxsdk:3}{{3}{61}{Graphene and SGX-LKL}{AlgoLine.351}{}}
-\newlabel{alg:sgxsdk:4}{{4}{61}{Graphene and SGX-LKL}{AlgoLine.352}{}}
-\newlabel{alg:sgxsdk:5}{{5}{61}{Graphene and SGX-LKL}{AlgoLine.353}{}}
-\newlabel{alg:sgxsdk:7}{{7}{61}{Graphene and SGX-LKL}{AlgoLine.355}{}}
-\newlabel{alg:sgxsdk:8}{{8}{61}{Graphene and SGX-LKL}{AlgoLine.356}{}}
-\newlabel{alg:sgxsdk:9}{{9}{61}{Graphene and SGX-LKL}{AlgoLine.357}{}}
-\newlabel{alg:sgxsdk:11}{{11}{61}{Graphene and SGX-LKL}{AlgoLine.359}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Interface pseudo-code for Intel SGX SDK and RUST-SGX.\relax }}{61}{algocf.360}}
-\newlabel{alg:interface-sgxsdk-rustsgx}{{1}{61}{Graphene and SGX-LKL}{algocf.360}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Results}{61}{subsection.398}}
-\newlabel{ssec:correctness}{{5.4.1}{61}{Results}{subsection.398}{}}
-\newlabel{alg:open:2}{{2}{62}{Graphene and SGX-LKL}{AlgoLine.364}{}}
-\newlabel{alg:open:3}{{3}{62}{Graphene and SGX-LKL}{AlgoLine.365}{}}
-\newlabel{alg:open:4}{{4}{62}{Graphene and SGX-LKL}{AlgoLine.366}{}}
-\newlabel{alg:open:5}{{5}{62}{Graphene and SGX-LKL}{AlgoLine.367}{}}
-\newlabel{alg:open:6}{{6}{62}{Graphene and SGX-LKL}{AlgoLine.368}{}}
-\newlabel{alg:open:7}{{7}{62}{Graphene and SGX-LKL}{AlgoLine.369}{}}
-\newlabel{alg:open:9}{{8}{62}{Graphene and SGX-LKL}{AlgoLine.370}{}}
-\newlabel{alg:open:10}{{10}{62}{Graphene and SGX-LKL}{AlgoLine.372}{}}
-\newlabel{alg:open:11}{{11}{62}{Graphene and SGX-LKL}{AlgoLine.373}{}}
-\newlabel{alg:open:13}{{13}{62}{Graphene and SGX-LKL}{AlgoLine.375}{}}
-\newlabel{alg:open:15}{{15}{62}{Graphene and SGX-LKL}{AlgoLine.377}{}}
-\newlabel{alg:open:17}{{17}{62}{Graphene and SGX-LKL}{AlgoLine.379}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Interface pseudo-code for Open Enclave SDK.\relax }}{62}{algocf.380}}
-\newlabel{alg:interface-openenclave}{{2}{62}{Graphene and SGX-LKL}{algocf.380}{}}
-\newlabel{alg:cont:2}{{2}{62}{Graphene and SGX-LKL}{AlgoLine.384}{}}
-\newlabel{alg:cont:3}{{3}{62}{Graphene and SGX-LKL}{AlgoLine.385}{}}
-\newlabel{alg:cont:4}{{4}{62}{Graphene and SGX-LKL}{AlgoLine.386}{}}
-\newlabel{alg:cont:5}{{5}{62}{Graphene and SGX-LKL}{AlgoLine.387}{}}
-\newlabel{alg:cont:6}{{6}{62}{Graphene and SGX-LKL}{AlgoLine.388}{}}
-\newlabel{alg:cont:7}{{7}{62}{Graphene and SGX-LKL}{AlgoLine.389}{}}
-\newlabel{alg:cont:9}{{9}{62}{Graphene and SGX-LKL}{AlgoLine.391}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Interface pseudo-code for Graphene and SGX-LKL.\relax }}{62}{algocf.392}}
-\newlabel{alg:interface-graphene-sgxlkl}{{3}{62}{Graphene and SGX-LKL}{algocf.392}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Analyzed samples.\relax }}{63}{table.caption.395}}
-\newlabel{tbl:all_samples}{{5.1}{63}{Analyzed samples.\relax }{table.caption.395}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}Case Studies}{64}{section.399}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Commercial SGX application}{64}{subsection.400}}
-\newlabel{ssec:real-product-use-case}{{5.5.1}{64}{Commercial SGX application}{subsection.400}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}SGX-ROP malware}{65}{subsection.401}}
-\newlabel{ssec:sgx-rop}{{5.5.2}{65}{SGX-ROP malware}{subsection.401}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.3}SnakeGX malware}{66}{subsection.402}}
-\newlabel{ssec:snakegx}{{5.5.3}{66}{SnakeGX malware}{subsection.402}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.6}Discussion}{67}{section.403}}
-\newlabel{sec:discussion}{{5.6}{67}{Discussion}{section.403}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces The flowchart describes the workflow of an SGX-machine inspection and depicts the three main phases: memory acquisition, kernel space, and user space analysis. The diamonds represent different conditions that can be encountered (\textit  {e.g.,} \emph  {Is microcode vulnerable?}), each condition leads to different class of information (\textit  {e.g.,} if the microcode is vulnerable, we can \emph  {Dump using CPU speculative attacks}). Green-arrows with symbol ``Y'' indicate the available information if a condition is satisfied, while red-arrows with symbol ``N'' otherwise. In addition, every box contains detailed pieces of information that we mark with the symbol ``$+$'' if they are always retrievable, while we use the symbol ``$(+)$'' if their availability depends by the system state (\textit  {e.g.,} a system log that might be wiped). The technical details of each phase is detailed in their relative section.\relax }}{54}{figure.caption.324}}
+\newlabel{fig:analysis-map}{{5.1}{54}{The flowchart describes the workflow of an SGX-machine inspection and depicts the three main phases: memory acquisition, kernel space, and user space analysis. The diamonds represent different conditions that can be encountered (\eg \emph {Is microcode vulnerable?}), each condition leads to different class of information (\eg if the microcode is vulnerable, we can \emph {Dump using CPU speculative attacks}). Green-arrows with symbol ``Y'' indicate the available information if a condition is satisfied, while red-arrows with symbol ``N'' otherwise. In addition, every box contains detailed pieces of information that we mark with the symbol ``$+$'' if they are always retrievable, while we use the symbol ``$(+)$'' if their availability depends by the system state (\eg a system log that might be wiped). The technical details of each phase is detailed in their relative section.\relax }{figure.caption.324}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Kernel Space Analysis}{55}{subsection.326}}
+\newlabel{ssec:kernel-space-analysis}{{5.2.2}{55}{Kernel Space Analysis}{subsection.326}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Relation between the kernel and Intel drivers data-structures\relax }}{56}{figure.caption.327}}
+\newlabel{fig:struct_sgx}{{5.2}{56}{Relation between the kernel and Intel drivers data-structures\relax }{figure.caption.327}{}}
+\newlabel{fig:memory_layout_api}{{5.3a}{57}{Example of Memory layout of\\Intel SGX SDK.\relax }{figure.caption.334}{}}
+\newlabel{sub@fig:memory_layout_api}{{a}{57}{Example of Memory layout of\\Intel SGX SDK.\relax }{figure.caption.334}{}}
+\newlabel{fig:memory_layout_container}{{5.3b}{57}{Example of Memory layout of Graphene.\relax }{figure.caption.334}{}}
+\newlabel{sub@fig:memory_layout_container}{{b}{57}{Example of Memory layout of Graphene.\relax }{figure.caption.334}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Memory layout example.}}{57}{figure.caption.334}}
+\newlabel{fig:memory_layout}{{5.3}{57}{Memory layout example}{figure.caption.334}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}User Space Analysis}{57}{subsection.332}}
+\newlabel{ssec:user-space-analyses}{{5.2.3}{57}{User Space Analysis}{subsection.332}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Enclave Memory Layout Analysis}{57}{section*.333}}
+\@writefile{toc}{\contentsline {subsubsection}{Enclave Interface Analysis}{58}{section*.339}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Interface Analysis Algorithms}{59}{section.340}}
+\newlabel{apx:interface-analysis}{{5.3}{59}{Interface Analysis Algorithms}{section.340}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Intel SGX SDK and RUST-SGX}{59}{subsection.341}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Open Enclave SDK}{60}{subsection.342}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Graphene and SGX-LKL}{60}{subsection.343}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Evaluation}{60}{section.390}}
+\newlabel{sec:memfor_evaluation}{{5.4}{60}{Evaluation}{section.390}{}}
+\newlabel{alg:sgxsdk:2}{{2}{61}{Graphene and SGX-LKL}{AlgoLine.347}{}}
+\newlabel{alg:sgxsdk:3}{{3}{61}{Graphene and SGX-LKL}{AlgoLine.348}{}}
+\newlabel{alg:sgxsdk:4}{{4}{61}{Graphene and SGX-LKL}{AlgoLine.349}{}}
+\newlabel{alg:sgxsdk:5}{{5}{61}{Graphene and SGX-LKL}{AlgoLine.350}{}}
+\newlabel{alg:sgxsdk:7}{{7}{61}{Graphene and SGX-LKL}{AlgoLine.352}{}}
+\newlabel{alg:sgxsdk:8}{{8}{61}{Graphene and SGX-LKL}{AlgoLine.353}{}}
+\newlabel{alg:sgxsdk:9}{{9}{61}{Graphene and SGX-LKL}{AlgoLine.354}{}}
+\newlabel{alg:sgxsdk:11}{{11}{61}{Graphene and SGX-LKL}{AlgoLine.356}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Interface pseudo-code for Intel SGX SDK and RUST-SGX.\relax }}{61}{algocf.357}}
+\newlabel{alg:interface-sgxsdk-rustsgx}{{1}{61}{Graphene and SGX-LKL}{algocf.357}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Results}{61}{subsection.395}}
+\newlabel{ssec:correctness}{{5.4.1}{61}{Results}{subsection.395}{}}
+\newlabel{alg:open:2}{{2}{62}{Graphene and SGX-LKL}{AlgoLine.361}{}}
+\newlabel{alg:open:3}{{3}{62}{Graphene and SGX-LKL}{AlgoLine.362}{}}
+\newlabel{alg:open:4}{{4}{62}{Graphene and SGX-LKL}{AlgoLine.363}{}}
+\newlabel{alg:open:5}{{5}{62}{Graphene and SGX-LKL}{AlgoLine.364}{}}
+\newlabel{alg:open:6}{{6}{62}{Graphene and SGX-LKL}{AlgoLine.365}{}}
+\newlabel{alg:open:7}{{7}{62}{Graphene and SGX-LKL}{AlgoLine.366}{}}
+\newlabel{alg:open:9}{{8}{62}{Graphene and SGX-LKL}{AlgoLine.367}{}}
+\newlabel{alg:open:10}{{10}{62}{Graphene and SGX-LKL}{AlgoLine.369}{}}
+\newlabel{alg:open:11}{{11}{62}{Graphene and SGX-LKL}{AlgoLine.370}{}}
+\newlabel{alg:open:13}{{13}{62}{Graphene and SGX-LKL}{AlgoLine.372}{}}
+\newlabel{alg:open:15}{{15}{62}{Graphene and SGX-LKL}{AlgoLine.374}{}}
+\newlabel{alg:open:17}{{17}{62}{Graphene and SGX-LKL}{AlgoLine.376}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Interface pseudo-code for Open Enclave SDK.\relax }}{62}{algocf.377}}
+\newlabel{alg:interface-openenclave}{{2}{62}{Graphene and SGX-LKL}{algocf.377}{}}
+\newlabel{alg:cont:2}{{2}{62}{Graphene and SGX-LKL}{AlgoLine.381}{}}
+\newlabel{alg:cont:3}{{3}{62}{Graphene and SGX-LKL}{AlgoLine.382}{}}
+\newlabel{alg:cont:4}{{4}{62}{Graphene and SGX-LKL}{AlgoLine.383}{}}
+\newlabel{alg:cont:5}{{5}{62}{Graphene and SGX-LKL}{AlgoLine.384}{}}
+\newlabel{alg:cont:6}{{6}{62}{Graphene and SGX-LKL}{AlgoLine.385}{}}
+\newlabel{alg:cont:7}{{7}{62}{Graphene and SGX-LKL}{AlgoLine.386}{}}
+\newlabel{alg:cont:9}{{9}{62}{Graphene and SGX-LKL}{AlgoLine.388}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Interface pseudo-code for Graphene and SGX-LKL.\relax }}{62}{algocf.389}}
+\newlabel{alg:interface-graphene-sgxlkl}{{3}{62}{Graphene and SGX-LKL}{algocf.389}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Analyzed samples.\relax }}{63}{table.caption.392}}
+\newlabel{tbl:all_samples}{{5.1}{63}{Analyzed samples.\relax }{table.caption.392}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Case Studies}{64}{section.396}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Commercial SGX application}{64}{subsection.397}}
+\newlabel{ssec:real-product-use-case}{{5.5.1}{64}{Commercial SGX application}{subsection.397}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}SGX-ROP malware}{65}{subsection.398}}
+\newlabel{ssec:sgx-rop}{{5.5.2}{65}{SGX-ROP malware}{subsection.398}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.3}SnakeGX malware}{66}{subsection.399}}
+\newlabel{ssec:snakegx}{{5.5.3}{66}{SnakeGX malware}{subsection.399}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Discussion}{67}{section.400}}
+\newlabel{sec:discussion}{{5.6}{67}{Discussion}{section.400}{}}
 \@setckpt{chapters/forensic-analysis}{
 \setcounter{page}{68}
 \setcounter{equation}{0}
@@ -211,7 +211,7 @@
 \setcounter{smartand}{1}
 \setcounter{bbx:relatedcount}{0}
 \setcounter{bbx:relatedtotal}{0}
-\setcounter{Item}{109}
+\setcounter{Item}{106}
 \setcounter{Hfootnote}{10}
 \setcounter{bookmark@seq@number}{82}
 \setcounter{subfigure}{2}
