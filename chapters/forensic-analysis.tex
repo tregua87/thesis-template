@@ -67,26 +67,20 @@ and has no information about the adopted development framework.
 	\centering
 	%	\begin{minipage}{\linewidth}
 	\includegraphics[width=\linewidth]{fig_c8/final_schema_sgx.pdf}
-	\caption{The flowchart describes the workflow of an SGX-machine inspection 
+	\caption[Flowchart for memory forensic analysis in an SGX-machine.]
+		{The flowchart describes the workflow of an SGX-machine inspection 
 		and depicts the three main phases: memory acquisition, kernel space, 
-		and 
-		user space analysis.
-		The diamonds represent different conditions that can be 
-		encountered (\eg \emph{Is microcode vulnerable?}), each condition leads 
-		to 
+		and user space analysis.
+		The diamonds represent different conditions that can be encountered 
+		(\eg \emph{Is microcode vulnerable?}), each condition leads to 		
 		different class of information (\eg if the microcode is vulnerable, we 
-		can 
-		\emph{Dump using CPU speculative attacks}). Green-arrows with symbol 	
-		``Y'' indicate the available information if a condition is satisfied, 
-		while 
-		red-arrows with symbol ``N'' otherwise.
+		can \emph{Dump using CPU speculative attacks}). Green-arrows with 
+		symbol ``Y'' indicate the available information if a condition is 
+		satisfied, while red-arrows with symbol ``N'' otherwise.
 		In addition, every box contains detailed pieces of information that we 
-		mark 
-		with the symbol ``$+$'' if they are always retrievable, while we use 
-		the 
-		symbol ``$(+)$'' if their availability depends by the system state (\eg 
-		a 
-		system log that might be wiped). 
+		mark with the symbol ``$+$'' if they are always retrievable, while we 
+		use the symbol ``$(+)$'' if their availability depends by the system 
+		state (\eg a system log that might be wiped). 
 		The technical details of each phase is detailed in their relative 
 		section.}
 	\label{fig:analysis-map}

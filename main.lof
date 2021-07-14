@@ -20,7 +20,7 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces SnakeGX installation layout.}}{43}{figure.caption.217}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Chain used in the proof-of-concept of SnakeGX.\relax }}{45}{figure.caption.227}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The flowchart describes the workflow of an SGX-machine inspection and depicts the three main phases: memory acquisition, kernel space, and user space analysis. The diamonds represent different conditions that can be encountered (\textit {e.g.,} \emph {Is microcode vulnerable?}), each condition leads to different class of information (\textit {e.g.,} if the microcode is vulnerable, we can \emph {Dump using CPU speculative attacks}). Green-arrows with symbol ``Y'' indicate the available information if a condition is satisfied, while red-arrows with symbol ``N'' otherwise. In addition, every box contains detailed pieces of information that we mark with the symbol ``$+$'' if they are always retrievable, while we use the symbol ``$(+)$'' if their availability depends by the system state (\textit {e.g.,} a system log that might be wiped). The technical details of each phase is detailed in their relative section.\relax }}{54}{figure.caption.324}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart for memory forensic analysis in an SGX-machine.}}{54}{figure.caption.324}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Relation between the kernel and Intel drivers data-structures\relax }}{56}{figure.caption.327}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Memory layout example.}}{57}{figure.caption.334}
 \addvspace {10\p@ }
