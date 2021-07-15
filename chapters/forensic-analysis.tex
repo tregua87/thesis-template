@@ -1,4 +1,4 @@
-\chapter{Memory forensic in SGX environments}
+\chapter{Memory forensics in SGX environments}
 \label{chp:forensic}
 
 
@@ -49,11 +49,11 @@ In the first case we assume that the enclave is operated by using a known
 OS driver to handle the enclave pages and (for the user space analysis) the
 application was developed by using a known SGX framework. 
 
-In the second, more challenging, case, we remove these assumptions and consider
+In the second more challenging case, we remove these assumptions and consider
 the case in which the analyst does not know the SGX drivers 
 and has no information about the adopted development framework.
 
-\section{Memory Forensic in SGX environment}
+\section{Memory Forensics in SGX environment}
 \label{sec:memory-forensic-sgx}
 
 %\begin{figure}[t]
@@ -67,7 +67,7 @@ and has no information about the adopted development framework.
 	\centering
 	%	\begin{minipage}{\linewidth}
 	\includegraphics[width=\linewidth]{fig_c8/final_schema_sgx.pdf}
-	\caption[Flowchart for memory forensic analysis in an SGX-machine.]
+	\caption[Flowchart for memory forensics analysis in an SGX-machine.]
 		{The flowchart describes the workflow of an SGX-machine inspection 
 		and depicts the three main phases: memory acquisition, kernel space, 
 		and user space analysis.
@@ -441,7 +441,7 @@ location for the analyst to manually reverse engineer the enclave interface.
 
 In case of a known development framework, instead, we propose an 
 automatic interface extraction that is based on a combination of memory 
-forensic and reverse engineering techniques, with a similar approach of what 
+forensics and reverse engineering techniques, with a similar approach of what 
 \cite{grazianohyper} implemented for the analysis of hypervisors.
 Overall, our analysis is composed of two steps. First, we locate meaningful
 structures inside a memory dump (\eg \emph{outside functions} are organized as

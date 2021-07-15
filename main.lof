@@ -20,7 +20,7 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces SnakeGX installation layout.}}{43}{figure.caption.217}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Chain used in the proof-of-concept of SnakeGX.\relax }}{45}{figure.caption.227}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart for memory forensic analysis in an SGX-machine.}}{54}{figure.caption.324}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart for memory forensics analysis in an SGX-machine.}}{54}{figure.caption.324}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Relation between the kernel and Intel drivers data-structures\relax }}{56}{figure.caption.327}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Memory layout example.}}{57}{figure.caption.334}
 \addvspace {10\p@ }
