@@ -34,12 +34,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Standard SGX FSM.}}{84}{figure.caption.467}
 \contentsline {figure}{\numberline {7.2}{\ignorespaces SgxMonitor running example.}}{88}{figure.caption.482}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces SgxMonitor design.}}{89}{figure.caption.507}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces SgxMonitor micro-benchmark and \emph {action} speed measurement evaluation.\relax }}{98}{figure.caption.584}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces SgxMonitor \textsf {StealthDB} macro-benchmark.}}{99}{figure.caption.587}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces SgxMonitor \textsf {libdvdcss} and \textsf {SGX-Biniax2} macro-benchmark.}}{100}{figure.caption.588}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces SGX \emph {outside functions} interaction modeling.}}{90}{figure.caption.515}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces SGX \emph {exception handling} modeling.}}{90}{figure.caption.516}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces SgxMonitor design.}}{91}{figure.caption.519}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces SgxMonitor micro-benchmark and \emph {action} speed measurement evaluation.\relax }}{99}{figure.caption.596}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces SgxMonitor \textsf {StealthDB} macro-benchmark.}}{100}{figure.caption.599}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces SgxMonitor \textsf {libdvdcss} and \textsf {SGX-Biniax2} macro-benchmark.}}{101}{figure.caption.600}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces SGX \emph {outside functions} interaction modeling.}}{114}{figure.caption.636}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces SGX \emph {exception handling} modeling.}}{114}{figure.caption.637}

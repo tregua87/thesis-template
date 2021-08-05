@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  5 AUG 2021 10:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  5 AUG 2021 10:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2034,7 +2034,7 @@ Package csquotes Info: ... found 'babel' package.
 (./chapters/static-protection.aux) (./chapters/new-threats.aux)
 (./chapters/forensic-analysis.aux) (./chapters/runtime-protection-untrusted.aux
 ) (./chapters/runtime-protection-trusted.aux) (./chapters/related-works.aux)
-(./chapters/conclusion.aux) (./appendices/appendix_sgxmonitor.aux))
+(./chapters/conclusion.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 228.
@@ -2485,7 +2485,7 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 18.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-LaTeX Font Info:    Try loading font information for T1+phv on input line 39.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -3014,44 +3014,81 @@ m/n/10.95 traceBranch()
  []
 
 [88 <./fig_c6/running-example-graph.pdf>]
-<fig_c6/design.pdf, id=2974, 1099.10625pt x 405.515pt>
+Overfull \hbox (2.91852pt too wide) in paragraph at lines 546--554
+\T1/ppl/m/n/10.95 the \T1/ppl/m/it/10.95 se-cure func-tion \T1/ppl/m/n/10.95 ca
+n exit the en-clave through an ERET (E1) or per-form fur-ther OCALLs
+ []
+
+
+Overfull \hbox (7.65022pt too wide) in paragraph at lines 559--576
+ [][] 
+ []
+
+<fig_c6/my-model.pdf, id=2981, 598.235pt x 281.05pt>
+File: fig_c6/my-model.pdf Graphic file (type pdf)
+<use fig_c6/my-model.pdf>
+Package pdftex.def Info: fig_c6/my-model.pdf  used on input line 582.
+(pdftex.def)             Requested size: 233.5848pt x 109.7377pt.
+
+Overfull \hbox (17.90208pt too wide) in paragraph at lines 597--616
+ [][] 
+ []
+
+<fig_c6/my-model-exception.pdf, id=2982, 600.2425pt x 278.03876pt>
+File: fig_c6/my-model-exception.pdf Graphic file (type pdf)
+<use fig_c6/my-model-exception.pdf>
+Package pdftex.def Info: fig_c6/my-model-exception.pdf  used on input line 622.
+
+(pdftex.def)             Requested size: 208.55876pt x 96.6065pt.
+
+Underfull \hbox (badness 2744) in paragraph at lines 623--623
+ []\T1/ppl/m/sc/10 (b) |\T1/ppl/m/n/10 Sgx-Mon-i-tor rep-re-sen-ta-tion of ex-c
+ep-tion 
+ []
+
+[89]
+<fig_c6/design.pdf, id=2997, 1099.10625pt x 405.515pt>
 File: fig_c6/design.pdf Graphic file (type pdf)
 <use fig_c6/design.pdf>
-Package pdftex.def Info: fig_c6/design.pdf  used on input line 505.
+Package pdftex.def Info: fig_c6/design.pdf  used on input line 681.
 (pdftex.def)             Requested size: 417.11752pt x 153.8931pt.
- [89 <./fig_c6/design.pdf>] [90]
-Overfull \hbox (2.73297pt too wide) in paragraph at lines 722--728
+ [90 <./fig_c6/my-model.pdf> <./fig_c6/my-model-exception.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/my-model-exception.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>] [91 <./fig_c6/design.pdf>] [92]
+Overfull \hbox (2.73297pt too wide) in paragraph at lines 898--904
 \T1/ppl/m/n/10.95 mented \T1/ppl/m/it/10.95 tar-get en-clave \T1/ppl/m/n/10.95 
 T, we an-a-lyze each in-stru-mented func-tion sep-a-rately (Alg. [][]4[][] line
  [][]3[][]).
  []
 
-[91]
-Overfull \hbox (10.2455pt too wide) in paragraph at lines 782--788
+[93]
+Overfull \hbox (10.2455pt too wide) in paragraph at lines 958--964
  []\T1/ppl/b/n/10.95 Symbolic Ex-plo-ration (Alg. [][]4[][] line [][]7[][]).[] 
 \T1/ppl/m/n/10.95 We pri-mary em-ploy a sym-bolic ex-plo-ration ([]King,
  []
 
 
-Overfull \hbox (4.50603pt too wide) in paragraph at lines 812--814
+Overfull \hbox (4.50603pt too wide) in paragraph at lines 988--990
 \T1/ppl/m/n/10.95 T and M ex-change mes-sages re-ly-ing on a se-cure com-mu-ni-
 ca-tion chan-nel re-silient against
  []
 
-[92]
-Overfull \hbox (18.62263pt too wide) in paragraph at lines 850--857
+[94]
+Overfull \hbox (18.62263pt too wide) in paragraph at lines 1026--1033
 \T1/pcr/m/n/10.95 verifyLog()\T1/ppl/m/n/10.95 , that are il-lus-trated in the 
 al-go-rithms [][]5[][] and [][]6[][], re-spec-tively. Both \T1/pcr/m/n/10.95 em
 itLog()
  []
 
 
-Overfull \hbox (16.57434pt too wide) in paragraph at lines 858--871
+Overfull \hbox (16.57434pt too wide) in paragraph at lines 1034--1047
 \T1/pcr/m/n/10.95 emitLog() \T1/ppl/m/n/10.95 that en-crypts and trans-fers it 
 to M over an in-se-cure chan-nel. First, \T1/pcr/m/n/10.95 emitLog()
  []
 
-[93] [94] [95] [96]
+[95] [96] [97] [98]
 Package epstopdf Info: Source file: <fig_c6/multiply.eps>
 (epstopdf)                    date: 2021-05-08 11:43:44
 (epstopdf)                    size: 34472 bytes
@@ -3060,20 +3097,20 @@ Package epstopdf Info: Source file: <fig_c6/multiply.eps>
 (epstopdf)                    size: 15870 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig_c6/multiply-eps-convert
 ed-to.pdf fig_c6/multiply.eps>
-(epstopdf)             \includegraphics on input line 1216.
+(epstopdf)             \includegraphics on input line 1392.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/multiply-eps-converted-to.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig_c6/multiply-eps-converted-to.pdf, id=3220, 716.6775pt x 282.05376pt>
+<fig_c6/multiply-eps-converted-to.pdf, id=3293, 716.6775pt x 282.05376pt>
 File: fig_c6/multiply-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_c6/multiply-eps-converted-to.pdf>
 Package pdftex.def Info: fig_c6/multiply-eps-converted-to.pdf  used on input li
-ne 1216.
+ne 1392.
 (pdftex.def)             Requested size: 196.04573pt x 77.154pt.
 
-Underfull \hbox (badness 1112) in paragraph at lines 1223--1223
+Underfull \hbox (badness 1112) in paragraph at lines 1399--1399
  \T1/ppl/m/n/10 (ct\T1/ppl/m/it/10 x\T1/ppl/m/n/10 ), \T1/phv/m/n/10 SGX-Biniax
 2 \T1/ppl/m/n/10 (bx\T1/ppl/m/it/10 x\T1/ppl/m/n/10 ), \T1/phv/m/n/10 StealthDB
  \T1/ppl/m/n/10 (sd\T1/ppl/m/it/10 x\T1/ppl/m/n/10 ) 
@@ -3088,27 +3125,28 @@ Package epstopdf Info: Source file: <fig_c6/action-second.eps>
 (epstopdf)                    size: 17192 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig_c6/action-second-eps-co
 nverted-to.pdf fig_c6/action-second.eps>
-(epstopdf)             \includegraphics on input line 1229.
+(epstopdf)             \includegraphics on input line 1405.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/action-second-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<fig_c6/action-second-eps-converted-to.pdf, id=3221, 722.7pt x 286.06876pt>
+<fig_c6/action-second-eps-converted-to.pdf, id=3294, 722.7pt x 286.06876pt>
 File: fig_c6/action-second-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_c6/action-second-eps-converted-to.pdf>
 Package pdftex.def Info: fig_c6/action-second-eps-converted-to.pdf  used on inp
-ut line 1229.
+ut line 1405.
 (pdftex.def)             Requested size: 196.04573pt x 77.60188pt.
 
-Underfull \hbox (badness 1389) in paragraph at lines 1234--1234
+Underfull \hbox (badness 1389) in paragraph at lines 1410--1410
  \T1/ppl/m/n/10 ond of \T1/phv/m/n/10 Con-tact \T1/ppl/m/n/10 (ct\T1/ppl/m/it/1
 0 x\T1/ppl/m/n/10 ), \T1/phv/m/n/10 SGX-Biniax2 \T1/ppl/m/n/10 (bx\T1/ppl/m/it/
 10 x\T1/ppl/m/n/10 ), 
  []
 
-[97]
+[99 <./fig_c6/multiply-eps-converted-to.pdf> <./fig_c6/action-second-eps-conver
+ted-to.pdf>]
 Package epstopdf Info: Source file: <fig_c6/request_per_second.eps>
 (epstopdf)                    date: 2021-05-08 11:43:44
 (epstopdf)                    size: 28032 bytes
@@ -3118,22 +3156,22 @@ Package epstopdf Info: Source file: <fig_c6/request_per_second.eps>
 (epstopdf)                    size: 15674 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig_c6/request_per_second-e
 ps-converted-to.pdf fig_c6/request_per_second.eps>
-(epstopdf)             \includegraphics on input line 1333.
+(epstopdf)             \includegraphics on input line 1509.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/request_per_second-eps-convert
 ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
-<fig_c6/request_per_second-eps-converted-to.pdf, id=3251, 710.655pt x 270.00874
+<fig_c6/request_per_second-eps-converted-to.pdf, id=3400, 710.655pt x 270.00874
 pt>
 File: fig_c6/request_per_second-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_c6/request_per_second-eps-converted-to.pdf>
 Package pdftex.def Info: fig_c6/request_per_second-eps-converted-to.pdf  used o
-n input line 1333.
+n input line 1509.
 (pdftex.def)             Requested size: 204.38988pt x 77.6578pt.
 
-Underfull \hbox (badness 1087) in paragraph at lines 1338--1338
+Underfull \hbox (badness 1087) in paragraph at lines 1514--1514
  \T1/ppl/m/n/10 Over-all, Sgx-Mon-i-tor in-tro-duces an av-er-age 
  []
 
@@ -3145,48 +3183,47 @@ Package epstopdf Info: Source file: <fig_c6/latency_2.eps>
 (epstopdf)                    size: 16653 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig_c6/latency_2-eps-conver
 ted-to.pdf fig_c6/latency_2.eps>
-(epstopdf)             \includegraphics on input line 1344.
+(epstopdf)             \includegraphics on input line 1520.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/latency_2-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig_c6/latency_2-eps-converted-to.pdf, id=3252, 710.655pt x 270.00874pt>
+<fig_c6/latency_2-eps-converted-to.pdf, id=3401, 710.655pt x 270.00874pt>
 File: fig_c6/latency_2-eps-converted-to.pdf Graphic file (type pdf)
 <use fig_c6/latency_2-eps-converted-to.pdf>
 Package pdftex.def Info: fig_c6/latency_2-eps-converted-to.pdf  used on input l
-ine 1344.
+ine 1520.
 (pdftex.def)             Requested size: 204.38988pt x 77.6578pt.
-<fig_c6/vlc_performance.pdf, id=3257, 715.76999pt x 274.90138pt>
+<fig_c6/vlc_performance.pdf, id=3406, 715.76999pt x 274.90138pt>
 File: fig_c6/vlc_performance.pdf Graphic file (type pdf)
 <use fig_c6/vlc_performance.pdf>
-Package pdftex.def Info: fig_c6/vlc_performance.pdf  used on input line 1366.
+Package pdftex.def Info: fig_c6/vlc_performance.pdf  used on input line 1542.
 (pdftex.def)             Requested size: 204.38988pt x 78.4987pt.
 
-Underfull \hbox (badness 1205) in paragraph at lines 1372--1372
+Underfull \hbox (badness 1205) in paragraph at lines 1548--1548
  \T1/ppl/m/n/10 We mea-sure the per-cent-age of CPU us-age 
  []
 
-<fig_c6/biniax2_performance.pdf, id=3258, 715.58932pt x 274.90138pt>
+<fig_c6/biniax2_performance.pdf, id=3407, 715.58932pt x 274.90138pt>
 File: fig_c6/biniax2_performance.pdf Graphic file (type pdf)
 <use fig_c6/biniax2_performance.pdf>
-Package pdftex.def Info: fig_c6/biniax2_performance.pdf  used on input line 137
-8.
+Package pdftex.def Info: fig_c6/biniax2_performance.pdf  used on input line 155
+4.
 (pdftex.def)             Requested size: 204.38988pt x 78.51549pt.
 
-Overfull \hbox (22.82657pt too wide) in paragraph at lines 1411--1424
+Overfull \hbox (22.82657pt too wide) in paragraph at lines 1587--1600
  []\T1/ppl/b/n/10.95 StealthDB.[] \T1/ppl/m/n/10.95 We repli-cated the same ex-
 per-i-ments de-scribed in the orig-i-nal pa-per ([]Vinayaga-
  []
 
-[98 <./fig_c6/multiply-eps-converted-to.pdf> <./fig_c6/action-second-eps-conver
-ted-to.pdf>] [99 <./fig_c6/request_per_second-eps-converted-to.pdf> <./fig_c6/l
-atency_2-eps-converted-to.pdf>] [100 <./fig_c6/vlc_performance.pdf> <./fig_c6/b
-iniax2_performance.pdf
+[100 <./fig_c6/request_per_second-eps-converted-to.pdf> <./fig_c6/latency_2-eps
+-converted-to.pdf>] [101 <./fig_c6/vlc_performance.pdf> <./fig_c6/biniax2_perfo
+rmance.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/biniax2_performance.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
->] [101]) [102]
+>] [102] [103]) [104]
 \openout2 = `chapters/related-works.aux'.
 
  (./chapters/related-works.tex
@@ -3198,72 +3235,21 @@ in this the-sis (from chap-ter [][]3[][] to [][]7[][])
  []
 
 1: section
-[103
+[105
 
 
 
-] [104] [105] [106] [107] [108]) [109]
+] [106] [107] [108] [109] [110]) [111]
 \openout2 = `chapters/conclusion.aux'.
 
  (./chapters/conclusion.tex
 Chapter 9.
 1: section
-[110
+[112
 
 
 
-] [111]) [112]
-\openout2 = `appendices/appendix_sgxmonitor.aux'.
-
- (./appendices/appendix_sgxmonitor.tex
-Appendix A.
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 22.
-
-
-Overfull \hbox (2.91852pt too wide) in paragraph at lines 46--54
-\T1/ppl/m/n/10.95 the \T1/ppl/m/it/10.95 se-cure func-tion \T1/ppl/m/n/10.95 ca
-n exit the en-clave through an ERET (E1) or per-form fur-ther OCALLs
- []
-
-
-Overfull \hbox (7.65022pt too wide) in paragraph at lines 59--76
- [][] 
- []
-
-<fig_c6/my-model.pdf, id=3816, 598.235pt x 281.05pt>
-File: fig_c6/my-model.pdf Graphic file (type pdf)
-<use fig_c6/my-model.pdf>
-Package pdftex.def Info: fig_c6/my-model.pdf  used on input line 82.
-(pdftex.def)             Requested size: 233.5848pt x 109.7377pt.
-
-Overfull \hbox (17.90208pt too wide) in paragraph at lines 97--113
- [][] 
- []
-
-<fig_c6/my-model-exception.pdf, id=3817, 600.2425pt x 278.03876pt>
-File: fig_c6/my-model-exception.pdf Graphic file (type pdf)
-<use fig_c6/my-model-exception.pdf>
-Package pdftex.def Info: fig_c6/my-model-exception.pdf  used on input line 119.
-
-(pdftex.def)             Requested size: 208.55876pt x 96.6065pt.
-
-Underfull \hbox (badness 2744) in paragraph at lines 120--120
- []\T1/ppl/m/sc/10 (b) |\T1/ppl/m/n/10 Sgx-Mon-i-tor rep-re-sen-ta-tion of ex-c
-ep-tion 
- []
-
-1: section
-[113
-
-
-
-]) [114 <./fig_c6/my-model.pdf> <./fig_c6/my-model-exception.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./fig_c6/my-model-exception.pdf): PDF i
-nclusion: multiple pdfs with page group included in a single page
->]
+] [113]) [114]
 Overfull \hbox (40.33086pt too wide) in paragraph at lines 626--626
 [][]\T1/ppl/m/n/10.95 Alibaba Cloud (2020). \T1/ppl/m/it/10.95 In-stall SGX\T1/
 ppl/m/n/10.95 . Last ac-cess May 2021. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 
@@ -3536,20 +3522,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 630.
 (./chapters/static-protection.aux) (./chapters/new-threats.aux)
 (./chapters/forensic-analysis.aux) (./chapters/runtime-protection-untrusted.aux
 ) (./chapters/runtime-protection-trusted.aux) (./chapters/related-works.aux)
-(./chapters/conclusion.aux) (./appendices/appendix_sgxmonitor.aux))
+(./chapters/conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 630.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 630.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 991B5458E27E645E38D76332C7615977;22891.
+(rerunfilecheck)             Checksum: E4B60DD0F9B846BD3900C12BD74E59A7;22897.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51920 strings out of 492982
- 1041061 string characters out of 6134896
- 1561675 words of memory out of 5000000
- 53693 multiletter control sequences out of 15000+600000
+ 51908 strings out of 492982
+ 1040660 string characters out of 6134896
+ 1558573 words of memory out of 5000000
+ 53689 multiletter control sequences out of 15000+600000
  590600 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,24n,99p,10377b,3580s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3582,7 +3568,7 @@ alatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb
 i8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (143 pages, 2144592 bytes).
+Output written on main.pdf (143 pages, 2145090 bytes).
 PDF statistics:
  4455 PDF objects out of 5155 (max. 8388607)
  3865 compressed objects within 39 object streams
