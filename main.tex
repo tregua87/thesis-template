@@ -75,6 +75,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{subcaption}
 \usepackage{listings}
 
+%\usepackage[subtle]{savetrees}
 \usepackage[inline]{enumitem}
 \usepackage{amsmath}
 
@@ -224,8 +225,6 @@ Environments}
 \newcommand{\done}[1]{\todobox{blue}{DONE}{#1}}
 \newcommand{\rationale}[1]{\todobox{ForestGreen}{RATIONALE}{#1}}
 
-
-
 \begin{document}
 
 \frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
@@ -281,11 +280,9 @@ Thesis Advisor\\[1cm]
 	TEC Chair: & Prof. Lu Wei \\
 	Main Advisor: & Prof. Jianying Zhou \\
 	Co-advisor: & Prof. Mauro Conti (University of Padua) \\
-	Co-advisor: & Prof. Lorenzo Cavallaro (King's College London) \\
+	Co-advisor: & Prof. Lorenzo Cavallaro (University College London) \\
 	Internal TEC member 1: & Prof. Sudipta Chattopadhyay \\
 	Internal TEC member 2: & Prof. Dinh Tien Tuan Anh \\
-%	External TEC member 1: & Prof. XXXX (optional) \\
-%	External TEC member 2: & Prof. XXXX (optional) \\
 \end{tabular}
 \end{tec}
 \vfill\eject
@@ -347,15 +344,19 @@ Thesis Advisor\\[1cm]
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
 
-Are you sure the last Virtual Machine bought from your Cloud Provider is 
-working properly?
+{\setstretch{0.9}
+	
+\emph{Are you sure the last Virtual Machine bought from your Cloud Provider is 
+working properly?}
 The growing popularity of cloud infrastructures allowed online businesses
 to benefit of larger market segments, parallelly, armies of adversaries enjoyed 
 a vaster set of possible victims.
-Additionally, leaving part of the infrastructure on cloud providers de facto 
-reduced the companies control over their products, eventually increasing the 
-attack surface to either insider or external threats.
-This arises the need of advanced protections for the companies' products and 
+%Additionally, leaving part of the infrastructure on cloud providers de facto 
+%reduced the companies control over their products, eventually increasing the 
+%attack surface to either insider or external threats.
+%This arises the need of advanced protections for the companies' products and 
+%data.
+This urges companies to adopt advanced protections for their products and 
 data.
 
 In this zero trust scenario, a common countermeasure is represented by Trusted 
@@ -367,43 +368,53 @@ Specifically, \emph{trusted regions} achieve this goal through
 two properties: \emph{memory isolation} and \emph{remote attestation}.
 The former ensures physical isolation of \emph{trusted regions}, thus avoiding 
 direct writing to, and reading from, the protected memory pages.
-The latter, instead, enables a remote entity to verify the integrity of a 
-\emph{trusted region}.
+The latter, instead, enables a remote entity to verify the software loaded into 
+a \emph{trusted region}.
 
 The combination of \emph{memory isolation} and \emph{remote attestation} 
 is a solid base for building more secure applications over the Internet. 
-TEEs, however, are far from being the final weapons in the security war.
-In fact, they suffer from many limitations that range from scalability 
-issues to new security threats.
-%The goal of this thesis is to investigate the current limitations of TEE, 
-%grasping the future for possible new threats, and study suitable solutions 
-%that could be deployed over current technology.
-The goal of this thesis is to investigate the limitations of TEE, explore new 
-threats to TEE, and propose suitable mitigation for TEE.
+TEEs, however, are far from being the final weapons in the security war since 
+they suffer from critical limitations:
+%In fact, they suffer from many limitations that range from scalability issues 
+%to new security threats.
+%In fact, they suffer from many limitations: 
+the \emph{trusted regions}' size is capped at few megabytes, thus having 
+scalability issues; 
+a \emph{trusted region} may be misused to hide a malware, thus leading to new 
+security threats; 
+or else, an adversary may exploit memory corruption errors to hijack a 
+\emph{trusted region} execution (without altering its code), thus evading 
+either \emph{memory isolation} and \emph{remote attestation}.
+%The goal of this thesis is to investigate the limitations of TEE, explore new 
+%threats to TEE, and propose suitable mitigation for TEE.
+The goal of this thesis is to investigate these limitations, explore new 
+threats, and finally, propose suitable mitigation.
 In particular, we discuss five contributions: three regarding \emph{memory 
 isolation}, and two about \emph{remote attestation}.
 
 The first part of the thesis revolves around \emph{memory isolation}.
-We address limitations affecting TEEs and propose more flexible designs fitting 
-the current market products (Chapter~\ref{chp:static-protection}).
+We address scalability limitations affecting TEEs and propose more flexible 
+designs that combine anti-tampering techniques and fit the current market 
+products (Chapter~\ref{chp:static-protection}).
 Then, we investigate new threats that exploit the \emph{memory isolation} 
-and implant malicious software in a \emph{trusted region} 
-(Chapter~\ref{chp:advanced-threats}).
+and implant malicious software in a \emph{trusted region} by using advanced 
+runtime techniques (Chapter~\ref{chp:advanced-threats}).
 Finally, we study the implication of (compromised) \emph{trusted regions} when 
-performing incident response, and propose new techniques to fulfill the current 
+performing incident response, and propose new techniques to fill the current 
 gaps (Chapter~\ref{chp:forensic}).
 
 In the second part, we extend the \emph{remote attestation} schemes to 
 identify the runtime attacks described in Chapter~\ref{chp:advanced-threats}.
 First, we propose a novel model that can be used in software of any complexity, 
-thus overcoming the scalability issues of current approaches.
+thus overcoming the scalability issues of current approaches 
 (Chapter~\ref{chp:runtime-protection-untrusted}).
 Then, we propose an additional model that fits \emph{trusted regions}'
-specifications, thus stretching the runtime protection over memory 
-isolated objects (Chapter~\ref{chp:runtime-protection-trusted}).
+specifications, thus stretching the runtime protection over memory isolated 
+objects (Chapter~\ref{chp:runtime-protection-trusted}).
 
 In conclusion, we summarize the results achieved and draw directions for 
 future researches regarding TEE in cloud computing.
+}
 
 \end{abstract}
 
@@ -418,8 +429,8 @@ future researches regarding TEE in cloud computing.
 \begin{itemize}
 	
 	\item F. Toffalini, J. Zhou, and L. Cavallaro -- Revisiting Program 
-	Analysis and Intrusion Detection for SGX -- (under review at CCS 
-	2021).\footnote[$\dagger$]{\label{inthesis}These publications are 
+	Analysis and Intrusion Detection for SGX -- (to submit to S\&P 
+	2022).\footnote[$\dagger$]{\label{inthesis}These publications are 
 	contributions of the thesis.}
 	
 	\item F. Toffalini, M. Graziano, M. Conti, and J. Zhou -- SnakeGX: a sneaky 

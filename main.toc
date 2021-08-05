@@ -28,7 +28,7 @@
 \contentsline {subsection}{\numberline {2.4.4}SGX Control-Flow Attacks}{15}{subsection.52}
 \contentsline {paragraph}{Dark-ROP.}{15}{section*.53}
 \contentsline {paragraph}{Guard's Dilemma.}{15}{section*.54}
-\contentsline {chapter}{\numberline {3}A Practical and Scalable Software Protection enforced by TEE}{16}{chapter.55}
+\contentsline {chapter}{\numberline {3}A Practical and Scalable TEE-enforced Software Protection}{16}{chapter.55}
 \contentsline {paragraph}{Problem Statement.-}{17}{section*.59}
 \contentsline {paragraph}{Contributions.}{17}{section*.60}
 \contentsline {section}{\numberline {3.1}Threat Model}{17}{section.61}
@@ -193,7 +193,7 @@
 \contentsline {subsection}{\numberline {8.3.1}Anti-tampering Techniques}{108}{subsection.620}
 \contentsline {subsection}{\numberline {8.3.2}Control-flow Integrity Checks}{108}{subsection.621}
 \contentsline {subsection}{\numberline {8.3.3}Data-only Malware}{109}{subsection.622}
-\contentsline {chapter}{\numberline {9}Discussion and Conclusion}{110}{chapter.623}
+\contentsline {chapter}{\numberline {9}Conclusion}{110}{chapter.623}
 \contentsline {chapter}{\numberline {A}SgxMonitor: Model Examples}{113}{appendix.627}
 \contentsline {paragraph}{Transaction syntax.}{113}{section*.628}
 \contentsline {subsection}{\numberline {A.0.1}Outside Function Modeling}{113}{subsection.629}
