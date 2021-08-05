@@ -349,17 +349,15 @@ Thesis Advisor\\[1cm]
 \emph{Are you sure the last Virtual Machine bought from your Cloud Provider is 
 working properly?}
 The growing popularity of cloud infrastructures allowed online businesses
-to benefit of larger market segments, parallelly, armies of adversaries enjoyed 
-a vaster set of possible victims.
+to benefit from larger market segments, parallelly, armies of adversaries 
+enjoyed a vaster set of possible victims.
 Additionally, leaving part of the infrastructure on cloud providers de facto 
 reduced the companies control over their products, eventually increasing the 
 attack surface to either insider or external threats.
-%This arises the need of advanced protections for the companies' products and 
-%data.
 This urges companies to adopt advanced protections for their products and 
 data.
 
-In this zero trust scenario, a common countermeasure is represented by Trusted 
+In this zero-trust scenario, a common countermeasure is represented by Trusted 
 Execution Environments (TEE). These technologies use hardware mechanisms to 
 create \emph{trusted regions} shielded against fully compromised 
 systems, thus allowing the companies to protect their assets even if the whole 
@@ -375,18 +373,13 @@ The combination of \emph{memory isolation} and \emph{remote attestation}
 is a solid base for building more secure applications over the Internet. 
 TEEs, however, are far from being the final weapons in the security war since 
 they suffer from critical limitations:
-%In fact, they suffer from many limitations that range from scalability issues 
-%to new security threats.
-%In fact, they suffer from many limitations: 
 the \emph{trusted regions}' size is capped at few megabytes, thus having 
 scalability issues; 
-a \emph{trusted region} may be misused to hide a malware, thus leading to new 
+a \emph{trusted region} may be misused to hide malware, thus leading to new 
 security threats; 
 or else, an adversary may exploit memory corruption errors to hijack a 
 \emph{trusted region} execution (without altering its code), thus evading 
 either \emph{memory isolation} and \emph{remote attestation}.
-%The goal of this thesis is to investigate the limitations of TEE, explore new 
-%threats to TEE, and propose suitable mitigation for TEE.
 The goal of this thesis is to investigate these limitations, explore new 
 threats, and finally, propose suitable mitigation.
 In particular, we discuss five contributions: three regarding \emph{memory 
@@ -405,7 +398,7 @@ gaps (Chapter~\ref{chp:forensic}).
 
 In the second part, we extend the \emph{remote attestation} schemes to 
 identify the runtime attacks described in Chapter~\ref{chp:advanced-threats}.
-First, we propose a novel model that can be used in software of any complexity, 
+First, we propose a novel model suitable for software of any complexity, 
 thus overcoming the scalability issues of current approaches 
 (Chapter~\ref{chp:runtime-protection-untrusted}).
 Then, we propose an additional model that fits \emph{trusted regions}'
@@ -494,10 +487,6 @@ along my PhD journey in Singapore.
 In the first place, I want to thank all the supervisors I met in these years. 
 I have been gifted by Mart\'{\i}n, Mauro, Jianying, and Lorenzo with their 
 personal vision of the research.
-%Martin for accepting me in SUTD, thus making me start this adventure. 
-%Then, Mauro, who helped me once I really needed the most, and Jianying for 
-%adopting me in his group.
-%Finally, Lorenzo, for his extraordinary teaching and inspirational vision.
 I can only hope to grasp a bit of their wisdom.
 
 I also desire to spend few words for my (extended) research group, with whom I 
@@ -507,8 +496,8 @@ Mujeeb, Sridhar, and all the inestimable people I came across.
 A special thought to all the enthusiastic collaborators that I had the luck to 
 work with outside Singapore: Eleonora, Alessandro, Andrea B., Mariano, Davide, 
 Andrea O., Giulio, Jacopo, Fukutomo, Fabio, Feargus, and Zeliang.
-Each and every of them envisioned me with a peculiar and unique perspective, 
-pushing my limits always a little further.
+Each and every one of them envisioned me with a peculiar and unique 
+perspective, pushing my limits always a little further.
 
 Outside academia, I feel to thank my friends: Yvonne, Cem, Sakshi, 
 Esra, Daniele, Daniel, Francesco, and a long list of people that otherwise
@@ -518,7 +507,6 @@ In the end, I leave the deepest thank to my wife Anna: an inexplicable gem
 that 
 enlightened the darkest moments. Finally my parents, Lucia and Lino, without 
 them I could not be here now.
-
 
 \end{acknowledgements}
 
