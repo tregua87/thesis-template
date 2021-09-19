@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  17 SEP 2021 14:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.6)  19 SEP 2021 09:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3248,7 +3248,7 @@ Chapter 9.
 
 
 
-] [113]) [114]
+] [113] [114]) [115]
 Overfull \hbox (40.33086pt too wide) in paragraph at lines 615--615
 [][]\T1/ppl/m/n/10.95 Alibaba Cloud (2020). \T1/ppl/m/it/10.95 In-stall SGX\T1/
 ppl/m/n/10.95 . Last ac-cess May 2021. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 
@@ -3256,7 +3256,7 @@ ppl/m/n/10.95 . Last ac-cess May 2021. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95
  []
 
 1: section
-[115
+[116
 
 
 ]
@@ -3265,7 +3265,7 @@ Overfull \hbox (1.41118pt too wide) in paragraph at lines 615--615
 95 Ad-vances in Cryp-tol-ogy -- ASI-ACRYPT 2011\T1/ppl/m/n/10.95 .
  []
 
-[116]
+[117]
 Overfull \hbox (49.99942pt too wide) in paragraph at lines 615--615
 \T1/ppl/m/n/10.95 978-1-939133-04-5. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : 
 [][]$\T1/pcr/m/n/10.95 https : / / www . usenix . org / conference / usenixsecu
@@ -3291,7 +3291,7 @@ pl/m/n/10.95 : [][]$\T1/pcr/m/n/10.95 https : / / www . usenix . org / conferen
 ce /
  []
 
-[117]
+[118]
 Overfull \hbox (1.48418pt too wide) in paragraph at lines 615--615
 [][]\T1/ppl/m/n/10.95 Coppa, Emilio, Daniele Cono D'Elia, and Camil Deme-trescu
  (2017). ^^P  Re-think-ing pointer
@@ -3304,7 +3304,7 @@ $\T1/pcr/m/n/10.95 https : / / www . usenix . org / conference / usenixsecurity
 14 /
  []
 
-[118]
+[119]
 Overfull \hbox (1.79285pt too wide) in paragraph at lines 615--615
 [][]\T1/ppl/m/n/10.95 Doweck, J. et al. (2017). ^^P  In-side 6th-Generation In-
 tel Core: New Mi-croar-chi-tec-ture Code-
@@ -3349,14 +3349,14 @@ Overfull \hbox (6.649pt too wide) in paragraph at lines 615--615
 T1/pcr/m/n/10.95 https : / / github . com / google /
  []
 
-[119]
+[120]
 Overfull \hbox (21.30817pt too wide) in paragraph at lines 615--615
 [][]\T1/ppl/m/n/10.95 Hu, Hong et al. (2015). ^^P  Au-to-matic gen-er-a-tion of
  data-oriented ex-ploits^^Q. In: \T1/ppl/m/it/10.95 24th $\OMS/cmsy/m/n/10.95 f
 $\T1/ppl/m/it/10.95 USENIX$\OMS/cmsy/m/n/10.95 g$
  []
 
-[120]
+[121]
 Overfull \hbox (1.2038pt too wide) in paragraph at lines 615--615
 [][]\T1/ppl/m/n/10.95 Ibrahim, Ah-mad, Ahmad-Reza Sadeghi, and Gene Tsudik (201
 8). ^^P  US-AID: Unat-tended
@@ -3383,7 +3383,7 @@ Overfull \hbox (15.29198pt too wide) in paragraph at lines 615--615
 tware -[] Guard -[] Extensions /
  []
 
-[121] [122]
+[122] [123]
 Overfull \hbox (3.24791pt too wide) in paragraph at lines 615--615
 [][]\T1/ppl/m/n/10.95 Lee, Jae-hyuk et al. (2017a). ^^P  Hack-ing in dark-ness:
  Return-oriented pro-gram-ming against
@@ -3403,7 +3403,7 @@ Overfull \hbox (2.6845pt too wide) in paragraph at lines 615--615
 clave$[][]\T1/ppl/m/n/10.95 .
  []
 
-[123]
+[124]
 Overfull \hbox (1.01268pt too wide) in paragraph at lines 615--615
 \T1/ppl/m/n/10.95 ber 2020. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\T1/
 pcr/m/n/10.95 https : / / signal . org / blog / private -[] contact -[] discove
@@ -3436,14 +3436,14 @@ Overfull \hbox (2.39346pt too wide) in paragraph at lines 615--615
 return-oriented pro-gram-ming through
  []
 
-[124]
+[125] [126]
 Overfull \hbox (29.67508pt too wide) in paragraph at lines 615--615
 [][]\T1/ppl/m/n/10.95 Schaik, Stephan van et al. (2020). \T1/ppl/m/it/10.95 SGA
 xe: How SGX Fails in Prac-tice\T1/ppl/m/n/10.95 . [][]$\T1/pcr/m/n/10.95 https 
 : / / sgaxeattack .
  []
 
-[125]
+[127]
 Overfull \hbox (10.14978pt too wide) in paragraph at lines 615--615
 [][]\T1/ppl/m/n/10.95 Smulders, Ed-win (2013). ^^P  User space mem-ory anal-y-s
 is^^Q. MA the-sis. Uni-ver-sity of Twente. 
@@ -3455,7 +3455,7 @@ Overfull \hbox (1.7256pt too wide) in paragraph at lines 615--615
 : On the ef-fec-tive-ness of fine-grained
  []
 
-[126]
+
 Overfull \hbox (29.96712pt too wide) in paragraph at lines 615--615
 [][]\T1/ppl/m/n/10.95 Sylve, Joe (2012). \T1/ppl/m/it/10.95 LiME   Linux Mem-or
 y Ex-trac-tor\T1/ppl/m/n/10.95 . [][]$\T1/pcr/m/n/10.95 https : / / github . co
@@ -3469,7 +3469,7 @@ Overfull \hbox (26.6072pt too wide) in paragraph at lines 615--615
 5 https : / / www . usenix . org / conference /
  []
 
-[127]
+[128]
 Overfull \hbox (21.37845pt too wide) in paragraph at lines 615--615
 [][]\T1/ppl/m/n/10.95 Tuzsuzov, Jor-dan (2005). \T1/ppl/m/it/10.95 Biniax-2\T1/
 ppl/m/n/10.95 . Last ac-cessed April 2021. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10
@@ -3489,13 +3489,13 @@ Overfull \hbox (2.45892pt too wide) in paragraph at lines 615--615
 or-bunov (2019). ^^P  StealthDB:
  []
 
-
+[129]
 Overfull \hbox (2.26494pt too wide) in paragraph at lines 615--615
 [][]\T1/ppl/m/n/10.95 Volatility Foun-da-tion (2017). \T1/ppl/m/it/10.95 Volati
 l-ity Frame-work - Volatile mem-ory ex-trac-tion util-ity frame-
  []
 
-[128]
+
 Overfull \hbox (4.18591pt too wide) in paragraph at lines 615--615
 [][]\T1/ppl/m/n/10.95 Watson, Robert NM et al. (2018). \T1/ppl/m/it/10.95 Ca-pa
 -bil-ity Hard-ware En-hanced RISC In-struc-tions (CHERI):
@@ -3513,7 +3513,7 @@ Overfull \hbox (7.59778pt too wide) in paragraph at lines 615--615
 Jop-alarm: De-tect-ing jump-oriented
  []
 
-[129] [130]
+[130] [131]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 619.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 619.
  (./main.aux (./chapters/introduction.aux)
@@ -3531,10 +3531,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51907 strings out of 492982
- 1040652 string characters out of 6134896
- 1558573 words of memory out of 5000000
- 53689 multiletter control sequences out of 15000+600000
+ 51914 strings out of 492982
+ 1040843 string characters out of 6134896
+ 1561054 words of memory out of 5000000
+ 53694 multiletter control sequences out of 15000+600000
  590600 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,24n,99p,10377b,3580s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3567,10 +3567,10 @@ alatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb
 i8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (142 pages, 2144944 bytes).
+Output written on main.pdf (143 pages, 2147419 bytes).
 PDF statistics:
- 4451 PDF objects out of 5155 (max. 8388607)
- 3862 compressed objects within 39 object streams
- 1022 named destinations out of 1200 (max. 500000)
+ 4462 PDF objects out of 5155 (max. 8388607)
+ 3872 compressed objects within 39 object streams
+ 1024 named destinations out of 1200 (max. 500000)
  1388 words of extra memory for PDF output out of 10000 (max. 10000000)
 

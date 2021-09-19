@@ -1,0 +1,7 @@
+I have gone through both the presentation and the thesis. I believe Flavio's thesis is solid in terms of systems research and has involved 
+quite heavy engineering effort. Overall, both the thesis and the presentation are well structured. On the flip side, I feel that the design is 
+based on Intel SGX. This is still good, as Intel SGX is one of the most popular TEE. Nonetheless, 
+
+-> I was wondering how the proposed technique may adapt to low power trusted platforms e.g. ARM Trustzone etc. Thus, some comments on the generalization of the proposed solution will be great. 
+
+-> Additionally, I think a bit of outlook in the last chapter will be helpful for the readers of the thesis. For example, I was wondering how the proposed protection will be guided by program analysis based approaches that aim to partition an application into trusted and untrusted zones e.g. via taint tracking. Can there be a synergistic combination of program analysis-based approaches and the proposed scheme. 

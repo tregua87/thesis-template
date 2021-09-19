@@ -128,9 +128,22 @@ However, SnakeGX addresses only one part of the problem.
 New completely autonomous data-only malware, which does not require an external 
 trigger, could appear shortly (similar to the work of 
 \cite{vogl2014persistent}).
+Moreover, data-only malware could easily appear in other TEE technologies, such 
+as ARM TrustZone. In particular, this latter provides an enriched OS entirely 
+contained in the isolated memory 
+regions, namely \emph{Secure OS}~\citep{ngabonziza_trustzone_2016}.
+In a nutshell, the Secure OS works as a bridge between the \emph{trusted 
+applications} (inside the Secure OS) and the Normal OS (outside the secure 
+memory regions); resembling the interaction between an SGX enclave and the host 
+application (see Section~\ref{ssec:development-frameworks}).
+The internal management of the Secure OS requires additional complexity. 
+Ideally, this allows more complicated applications to run in ARM TrustZone. 
+However, this also implies a larger code-base and many unused memory regions 
+that may assist a malware developer to design more sophisticated code-reuse 
+based threats (like SnakeGX).
 When this happens, the security community will be unprepared to dissect such 
-threats, as discussed in Chapter~\ref{chp:forensic}.
-Thus arising the necessity of more advanced malware dissection techniques that
+threats, as discussed in Chapter~\ref{chp:forensic}, thus arising the necessity 
+of more advanced malware dissection techniques that
 can penetrate the TEE boundary. A promising direction is represented by 
 offensive forensic techniques that could use micro 
 architectures drawbacks as pinlocks for \emph{trusted regions} 
@@ -154,10 +167,23 @@ that makes them impractical in real scenarios.
 From here the need of tracing \emph{trusted regions} at hardware level.
 Besides few research prototypes for embedded systems 
 \citep{Dessouky:2018:LLH:3240765.3240821}, also major CPU vendors are proposing 
-hardware-level protections, such as Intel CET \citep{intelcet} or for ARM 
+hardware-level protections, such as Intel CET \citep{intelcet} and ARM 
 \citep{armpa}.
 However, these solutions require further development since the academic 
 community already managed to bypass these controls \citep{van2012memory}.
+Finally, an advanced research challenge could be combining 
+automatic software partition methods (\eg Glamdring -- 
+\cite{lind2017glamdring}) with runtime RA (\eg SgxMonitor).
+In short, Glamdring automatically splits an application into secure and 
+unsecure components by the means of taint analysis. In this way, a developer 
+indicates small critical pieces of code, and Glambdring understands the main 
+dependences and wraps them into protect \emph{memory regions}, also including 
+additional checks against trivial attacks. 
+We can combine works like Glamdring with SgxMonitor. The new runtime RA schema 
+could include an enriched model that takes into consideration the state of 
+multiple secure containers altogether. Adopting this protection will require an 
+adversary to mimicry a more complex model that is the combination of many 
+enclaves, thus forcing multiple parallel attacks.
 
 In conclusion, this thesis discusses five contributions in the field of TEEs to 
 overcome current limitations, explore new threats, and propose mitigation.

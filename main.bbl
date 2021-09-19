@@ -6032,6 +6032,96 @@
     \field{year}{2009}
   \endentry
 
+  \entry{ngabonziza_trustzone_2016}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=NB}{%
+         family={Ngabonziza},
+         familyi={N\bibinitperiod},
+         given={Bernard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bailey},
+         familyi={B\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CH}{%
+         family={Cho},
+         familyi={C\bibinitperiod},
+         given={Haehyun},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={Sarah},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{NB+1}
+    \strng{fullhash}{NBMDBACHMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    ARM TrustZone is a hardware security extension technology, which aims to
+  provide secure execution environment by splitting computer resources between
+  two execution worlds, namely normal world and secure world. TrustZone is
+  supported on different ﬂavors of ARM architectures, that include
+  architecture deployed on targets running regular applications, such as mobile
+  devices and architecture for micro-controllers. As ARM is widely deployed on
+  the majority of mobile and microcontroller devices, TrustZone’s goal is to
+  provide security for those platforms. In this paper, we will discuss details
+  of different ARM architectures that support TrustZone technology. Then, we
+  will review how TrustZone is implemented in the hardware and software of ARM
+  products. We will also compare TrustZone with other implementations of
+  trusted execution environments on the market.%
+    }
+    \field{booktitle}{2016 {IEEE} 2nd {International} {Conference} on
+  {Collaboration} and {Internet} {Computing} ({CIC})}
+    \verb{doi}
+    \verb 10.1109/CIC.2016.065
+    \endverb
+    \field{isbn}{978-1-5090-4607-2}
+    \field{pages}{445\bibrangedash 451}
+    \field{shorttitle}{{TrustZone} {Explained}}
+    \field{title}{{TrustZone} {Explained}: {Architectural} {Features} and {Use}
+  {Cases}}
+    \verb{url}
+    \verb http://ieeexplore.ieee.org/document/7809736/
+    \endverb
+    \list{location}{1}{%
+      {Pittsburgh, PA, USA}%
+    }
+    \verb{file}
+    \verb Ngabonziza et al. - 2016 - TrustZone Explained Architectural Features
+    \verb  and Us.pdf:/home/flavio/Zotero/storage/N2JQVGDQ/Ngabonziza et al. -
+    \verb 2016 - TrustZone Explained Architectural Features and Us.pdf:applicat
+    \verb ion/pdf
+    \endverb
+    \field{month}{11}
+    \field{year}{2016}
+    \field{urlday}{18}
+    \field{urlmonth}{09}
+    \field{urlyear}{2021}
+  \endentry
+
   \entry{7980210}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=NH}{%
