@@ -1,17 +1,16 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Number of LoC for each module\relax }}{28}{table.caption.120}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Number of LoC for each module}}{28}{table.caption.120}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces List of SGX open-source projects.}}{35}{table.caption.146}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Statistics of the gadgets used for the payload.\relax }}{49}{table.caption.312}
+\contentsline {table}{\numberline {4.1}{\ignorespaces List of SGX open-source projects.}}{36}{table.caption.146}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Statistics of the gadgets used for the payload.}}{50}{table.caption.312}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Analyzed samples.\relax }}{63}{table.caption.392}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Analyzed samples.}}{64}{table.caption.392}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Valid transations definition.}}{87}{table.caption.478}
-\contentsline {table}{\numberline {7.2}{\ignorespaces Coverage analysis of SgxMonitor.}}{102}{table.caption.608}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Valid transations definition.}}{88}{table.caption.478}%
+\contentsline {table}{\numberline {7.2}{\ignorespaces Coverage analysis of SgxMonitor.}}{104}{table.caption.608}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.9 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -47,18 +47,16 @@
     \list{publisher}{1}{%
       {ACM}%
     }
-    \keyw{binary rewriting, control-flow graph, inlined reference monitors,
-  vulnerabilities}
+    \keyw{binary rewriting, control-flow graph, inlined reference monitors, vulnerabilities}
     \strng{namehash}{AM+1}
     \strng{fullhash}{AMBMEULJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2005}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{booktitle}{Proceedings of the 12th ACM Conference on Computer and
-  Communications Security}
+    \field{booktitle}{Proceedings of the 12th ACM Conference on Computer and Communications Security}
     \verb{doi}
     \verb 10.1145/1102120.1102165
     \endverb
@@ -111,16 +109,14 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2009}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
     \field{number}{1}
     \field{pages}{1\bibrangedash 40}
-    \field{title}{Control-flow integrity principles, implementations, and
-  applications}
+    \field{title}{Control-flow integrity principles, implementations, and applications}
     \field{volume}{13}
-    \field{journaltitle}{ACM Transactions on Information and System Security
-  (TISSEC)}
+    \field{journaltitle}{ACM Transactions on Information and System Security (TISSEC)}
     \field{year}{2009}
   \endentry
 
@@ -148,7 +144,7 @@
          family={Ekberg},
          familyi={E\bibinitperiod},
          given={Jan-Erik},
-         giveni={J\bibinitperiod-E\bibinitperiod},
+         giveni={J\bibinithyphendelim E\bibinitperiod},
       }}%
       {{hash=NT}{%
          family={Nyman},
@@ -166,7 +162,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
       {{hash=TG}{%
          family={Tsudik},
@@ -183,14 +179,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{booktitle}{Proceedings of the 2016 ACM SIGSAC Conference on Computer
-  and Communications Security}
+    \field{booktitle}{Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security}
     \field{pages}{743\bibrangedash 754}
-    \field{title}{C-FLAT: control-flow attestation for embedded systems
-  software}
+    \field{title}{C-FLAT: control-flow attestation for embedded systems software}
     \field{year}{2016}
   \endentry
 
@@ -241,13 +235,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{booktitle}{26th Annual Network and Distributed System Security
-  Symposium, {NDSS} 2019, San Diego, California, USA, February 24-27, 2019}
-    \field{title}{{DIAT:} Data Integrity Attestation for Resilient
-  Collaboration of Autonomous Systems}
+    \field{booktitle}{26th Annual Network and Distributed System Security Symposium, {NDSS} 2019, San Diego, California, USA, February 24-27, 2019}
+    \field{title}{{DIAT:} Data Integrity Attestation for Resilient Collaboration of Autonomous Systems}
     \verb{url}
     \verb https://www.ndss-symposium.org/ndss-paper/diat-data-integrity-attesta
     \verb tion-for-resilient-collaboration-of-autonomous-systems/
@@ -291,35 +283,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
     \field{abstract}{%
-    This paper analyzes a previously overlooked attack surface that allows
-  unprivileged adversaries to impact supposedly secure floating-point
-  computations in Intel SGX enclaves through the Application Binary Interface
-  (ABI). In a comprehensive study across 7 widely used industry-standard and
-  research enclave shielding runtimes, we show that control and state registers
-  of the x87 Floating-Point Unit (FPU) and Intel Streaming SIMD Extensions
-  (SSE) are not always properly sanitized on enclave entry. First, we abuse the
-  adversary’s control over precision and rounding modes as a novel
-  “ABI-level fault injection” primitive to silently corrupt enclaved
-  floating-point operations, enabling a new class of stealthy, integrity-only
-  attacks that disturb the result of SGX enclave computations. Our analysis
-  reveals that this threat is especially relevant for applications that use the
-  older x87 FPU, which is still being used under certain conditions for
-  high-precision operations by modern compilers like gcc. We exemplify the
-  potential impact of ABI-level quality-degradation attacks in a case study of
-  an enclaved machine learning service and in a larger analysis on the SPEC
-  benchmark programs. Second, we explore the impact on enclave confidentiality
-  by showing that the adversary’s control over floating-point exception masks
-  can be abused as an innovative controlled channel to detect FPU usage and to
-  recover enclaved multiplication operands in certain scenarios. Our findings,
-  affecting 5 out of the 7 studied runtimes, demonstrate the fallacy and
-  challenges of implementing high-assurance trusted execution environments on
-  contemporary x86 hardware. We responsibly disclosed our findings to the
-  vendors and were assigned two CVEs, leading to patches in the Intel SGX-SDK,
-  Microsoft OpenEnclave, the Rust compiler’s SGX target, and Go-TEE.%
+    This paper analyzes a previously overlooked attack surface that allows unprivileged adversaries to impact supposedly secure floating-point computations in Intel SGX enclaves through the Application Binary Interface (ABI). In a comprehensive study across 7 widely used industry-standard and research enclave shielding runtimes, we show that control and state registers of the x87 Floating-Point Unit (FPU) and Intel Streaming SIMD Extensions (SSE) are not always properly sanitized on enclave entry. First, we abuse the adversary’s control over precision and rounding modes as a novel “ABI-level fault injection” primitive to silently corrupt enclaved floating-point operations, enabling a new class of stealthy, integrity-only attacks that disturb the result of SGX enclave computations. Our analysis reveals that this threat is especially relevant for applications that use the older x87 FPU, which is still being used under certain conditions for high-precision operations by modern compilers like gcc. We exemplify the potential impact of ABI-level quality-degradation attacks in a case study of an enclaved machine learning service and in a larger analysis on the SPEC benchmark programs. Second, we explore the impact on enclave confidentiality by showing that the adversary’s control over floating-point exception masks can be abused as an innovative controlled channel to detect FPU usage and to recover enclaved multiplication operands in certain scenarios. Our findings, affecting 5 out of the 7 studied runtimes, demonstrate the fallacy and challenges of implementing high-assurance trusted execution environments on contemporary x86 hardware. We responsibly disclosed our findings to the vendors and were assigned two CVEs, leading to patches in the Intel SGX-SDK, Microsoft OpenEnclave, the Rust compiler’s SGX target, and Go-TEE.%
     }
     \field{booktitle}{Annual Computer Security Applications Conference}
     \verb{doi}
@@ -351,7 +319,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
     \field{note}{Last access May 2021}
@@ -394,11 +362,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{booktitle}{Proceedings of the 2nd international workshop on hardware
-  and architectural support for security and privacy}
+    \field{booktitle}{Proceedings of the 2nd international workshop on hardware and architectural support for security and privacy}
     \field{title}{Innovative technology for CPU based attestation and sealing}
     \field{volume}{13}
     \field{year}{2013}
@@ -416,7 +383,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
     \field{note}{Last visit may 2021}
@@ -439,7 +406,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
     \field{title}{ARM TrustZone}
@@ -451,6 +418,7 @@
 
   \entry{arnautov2016scone}{inproceedings}{}
     \true{moreauthor}
+    \true{morelabelname}
     \name{author}{10}{}{%
       {{hash=AS}{%
          family={Arnautov},
@@ -519,7 +487,7 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
     \field{extradate}{1}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
     \field{booktitle}{OSDI}
@@ -630,11 +598,10 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
     \field{extradate}{2}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{booktitle}{12th {USENIX} Symposium on Operating Systems Design and
-  Implementation ({OSDI} 16)}
+    \field{booktitle}{12th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 16)}
     \field{isbn}{978-1-931971-33-1}
     \field{pages}{689\bibrangedash 703}
     \field{title}{{SCONE}: Secure Linux Containers with Intel {SGX}}
@@ -654,7 +621,7 @@
          family={Aumasson},
          familyi={A\bibinitperiod},
          given={Jean-Philippe},
-         giveni={J\bibinitperiod-P\bibinitperiod},
+         giveni={J\bibinithyphendelim P\bibinitperiod},
       }}%
       {{hash=NS}{%
          family={Neves},
@@ -664,7 +631,7 @@
       }}%
       {{hash=WOZ}{%
          family={Wilcox-O’Hearn},
-         familyi={W\bibinitperiod-O\bibinitperiod},
+         familyi={W\bibinithyphendelim O\bibinitperiod},
          given={Zooko},
          giveni={Z\bibinitperiod},
       }}%
@@ -681,7 +648,7 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
     \field{extradate}{1}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
     \field{note}{Last access March 2019}
@@ -698,7 +665,7 @@
          family={Aumasson},
          familyi={A\bibinitperiod},
          given={Jean-Philippe},
-         giveni={J\bibinitperiod-P\bibinitperiod},
+         giveni={J\bibinithyphendelim P\bibinitperiod},
       }}%
       {{hash=NS}{%
          family={Neves},
@@ -708,7 +675,7 @@
       }}%
       {{hash=WOZ}{%
          family={Wilcox-O’Hearn},
-         familyi={W\bibinitperiod-O\bibinitperiod},
+         familyi={W\bibinithyphendelim O\bibinitperiod},
          given={Zooko},
          giveni={Z\bibinitperiod},
       }}%
@@ -728,11 +695,10 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
     \field{extradate}{2}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{booktitle}{International Conference on Applied Cryptography and
-  Network Security}
+    \field{booktitle}{International Conference on Applied Cryptography and Network Security}
     \field{pages}{119\bibrangedash 135}
     \field{title}{BLAKE2: simpler, smaller, fast as MD5}
     \field{year}{2013}
@@ -744,7 +710,7 @@
          family={Aumasson},
          familyi={A\bibinitperiod},
          given={Jean-Philippe},
-         giveni={J\bibinitperiod-P\bibinitperiod},
+         giveni={J\bibinithyphendelim P\bibinitperiod},
       }}%
       {{hash=MW}{%
          family={Meier},
@@ -756,7 +722,7 @@
          family={Phan},
          familyi={P\bibinitperiod},
          given={Raphael C.-W.},
-         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod-W\bibinitperiod},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinithyphendelim W\bibinitperiod},
       }}%
       {{hash=HL}{%
          family={Henzen},
@@ -773,17 +739,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2014}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
     \field{abstract}{%
-    BLAKE2 is a successor of BLAKE, designed in fall 2012---after Keccak was
-  chosen as SHA3---by Jean-Philippe Aumasson, Samuel Neves, Zooko
-  Wilcox-O'Hearn, and ChristianWinnerlein. (The project partly stems from
-  Twitter discussions, where the authors are respectively @veorq, @sevenps,
-  @zooko, and @codesinchaos.) BLAKE2 was engineered to leverage BLAKE's high
-  efficiency and security, and to optimize it for modern applications, with
-  simplicity and usability as primary considerations.%
+    BLAKE2 is a successor of BLAKE, designed in fall 2012---after Keccak was chosen as SHA3---by Jean-Philippe Aumasson, Samuel Neves, Zooko Wilcox-O'Hearn, and ChristianWinnerlein. (The project partly stems from Twitter discussions, where the authors are respectively @veorq, @sevenps, @zooko, and @codesinchaos.) BLAKE2 was engineered to leverage BLAKE's high efficiency and security, and to optimize it for modern applications, with simplicity and usability as primary considerations.%
     }
     \field{booktitle}{The Hash Function BLAKE}
     \verb{doi}
@@ -813,7 +773,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2006}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
     \field{note}{Last access March 2019}
@@ -836,7 +796,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{A}
     \field{sortinithash}{A}
     \field{note}{Last access May 2021}
@@ -894,14 +854,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{booktitle}{Information Science and Control Engineering (ICISCE),
-  2017 4th International Conference on}
+    \field{booktitle}{Information Science and Control Engineering (ICISCE), 2017 4th International Conference on}
     \field{pages}{419\bibrangedash 423}
-    \field{title}{jMonAtt: Integrity Monitoring and Attestation of JVM-Based
-  Applications in Cloud Computing}
+    \field{title}{jMonAtt: Integrity Monitoring and Attestation of JVM-Based Applications in Cloud Computing}
     \field{year}{2017}
   \endentry
 
@@ -928,11 +886,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2010}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{booktitle}{Proceedings of the fifth ACM workshop on Scalable trusted
-  computing}
+    \field{booktitle}{Proceedings of the fifth ACM workshop on Scalable trusted computing}
     \field{pages}{63\bibrangedash 72}
     \field{title}{Trusted virtual containers on demand}
     \field{year}{2010}
@@ -952,12 +909,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2002}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{pages}{20}
-    \field{title}{Trusted platform module (tpm) based security on notebook
-  pcs-white paper}
+    \field{title}{Trusted platform module (tpm) based security on notebook pcs-white paper}
     \field{volume}{1}
     \field{journaltitle}{Mobile Platforms Group Intel Corporation}
     \field{year}{2002}
@@ -986,7 +942,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{title}{A tutorial on software obfuscation}
@@ -996,6 +952,7 @@
 
   \entry{baratloo2000transparent}{inproceedings}{}
     \true{moreauthor}
+    \true{morelabelname}
     \name{author}{3}{}{%
       {{hash=BA}{%
          family={Baratloo},
@@ -1021,7 +978,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2000}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{booktitle}{USENIX Annual Technical Conference, General Track}
@@ -1065,7 +1022,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2011}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{booktitle}{Cryptographers’ Track at the RSA Conference}
@@ -1094,11 +1051,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{booktitle}{Proceedings of the 1st Workshop on System Software for
-  Trusted Execution}
+    \field{booktitle}{Proceedings of the 1st Workshop on System Software for Trusted Execution}
     \field{pages}{1\bibrangedash 6}
     \field{title}{A case for protecting computer games with SGX}
     \field{year}{2016}
@@ -1133,7 +1089,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{number}{3}
@@ -1170,14 +1126,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{booktitle}{Proceedings of the 11th ACM on Asia Conference on
-  Computer and Communications Security}
+    \field{booktitle}{Proceedings of the 11th ACM on Asia Conference on Computer and Communications Security}
     \field{pages}{687\bibrangedash 698}
-    \field{title}{Attestation Transparency: Building secure Internet services
-  for legacy clients}
+    \field{title}{Attestation Transparency: Building secure Internet services for legacy clients}
     \field{year}{2016}
   \endentry
 
@@ -1224,29 +1178,16 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2011}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{abstract}{%
-    We show how to leverage the RKA (Related-Key Attack) security of
-  blockciphers to provide RKA security for a suite of high-level primitives.
-  This motivates a more general theoretical question, namely, when is it
-  possible to transfer RKA security from a primitive P1 to a primitive P2? We
-  provide both positive and negative answers. What emerges is a broad and high
-  level picture of the way achievability of RKA security varies across
-  primitives, showing, in particular, that some primitives resist ``more'' RKAs
-  than others. A technical challenge was to achieve RKA security even for the
-  practical classes of related-key deriving (RKD) functions underlying fault
-  injection attacks that fail to satisfy the ``claw-freeness'' assumption made
-  in previous works. We surmount this barrier for the first time based on the
-  construction of PRGs that are not only RKA secure but satisfy a new notion of
-  identity-collision-resistance.%
+    We show how to leverage the RKA (Related-Key Attack) security of blockciphers to provide RKA security for a suite of high-level primitives. This motivates a more general theoretical question, namely, when is it possible to transfer RKA security from a primitive P1 to a primitive P2? We provide both positive and negative answers. What emerges is a broad and high level picture of the way achievability of RKA security varies across primitives, showing, in particular, that some primitives resist ``more'' RKAs than others. A technical challenge was to achieve RKA security even for the practical classes of related-key deriving (RKD) functions underlying fault injection attacks that fail to satisfy the ``claw-freeness'' assumption made in previous works. We surmount this barrier for the first time based on the construction of PRGs that are not only RKA secure but satisfy a new notion of identity-collision-resistance.%
     }
     \field{booktitle}{Advances in Cryptology -- ASIACRYPT 2011}
     \field{isbn}{978-3-642-25385-0}
     \field{pages}{486\bibrangedash 503}
-    \field{title}{Cryptography Secure against Related-Key Attacks and
-  Tampering}
+    \field{title}{Cryptography Secure against Related-Key Attacks and Tampering}
     \list{location}{1}{%
       {Berlin, Heidelberg}%
     }
@@ -1282,13 +1223,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2000}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{number}{3}
     \field{pages}{362\bibrangedash 399}
-    \field{title}{The security of the cipher block chaining message
-  authentication code}
+    \field{title}{The security of the cipher block chaining message authentication code}
     \field{volume}{61}
     \field{journaltitle}{Journal of Computer and System Sciences}
     \field{year}{2000}
@@ -1314,7 +1254,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2006}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{pages}{25\bibrangedash 47}
@@ -1354,7 +1294,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
     }
     \strng{namehash}{BA+1}
@@ -1362,12 +1302,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{booktitle}{Proceedings of 27th USENIX Security Symposium}
-    \field{title}{The guard's dilemma: Efficient code-reuse attacks against
-  intel sgx}
+    \field{title}{The guard's dilemma: Efficient code-reuse attacks against intel sgx}
     \field{year}{2018}
   \endentry
 
@@ -1406,11 +1345,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2011}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{booktitle}{Proceedings of the 6th ACM Symposium on Information,
-  Computer and Communications Security}
+    \field{booktitle}{Proceedings of the 6th ACM Symposium on Information, Computer and Communications Security}
     \field{pages}{30\bibrangedash 40}
     \field{title}{Jump-oriented programming: a new class of code-reuse attack}
     \field{year}{2011}
@@ -1452,7 +1390,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
@@ -1463,11 +1401,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{booktitle}{11th {USENIX} Workshop on Offensive Technologies ({WOOT}
-  17)}
+    \field{booktitle}{11th {USENIX} Workshop on Offensive Technologies ({WOOT} 17)}
     \field{title}{Software Grand Exposure: {SGX} Cache Attacks Are Practical}
     \verb{url}
     \verb https://www.usenix.org/conference/woot17/workshop-program/presentatio
@@ -1499,13 +1436,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2004}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{booktitle}{USENIX Security Symposium}
     \field{pages}{57\bibrangedash 72}
-    \field{title}{Privtrans: Automatically partitioning programs for privilege
-  separation}
+    \field{title}{Privtrans: Automatically partitioning programs for privilege separation}
     \field{year}{2004}
   \endentry
 
@@ -1580,14 +1516,13 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{booktitle}{27th {USENIX} Security Symposium ({USENIX} Security 18)}
     \field{isbn}{978-1-939133-04-5}
     \field{pages}{991{\textendash}1008}
-    \field{title}{Foreshadow: Extracting the Keys to the Intel {SGX} Kingdom
-  with Transient Out-of-Order Execution}
+    \field{title}{Foreshadow: Extracting the Keys to the Intel {SGX} Kingdom with Transient Out-of-Order Execution}
     \verb{url}
     \verb https://www.usenix.org/conference/usenixsecurity18/presentation/bulck
     \endverb
@@ -1610,7 +1545,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2002}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{note}{Last access March 2019}
@@ -1653,11 +1588,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2009}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{booktitle}{Proceedings of the 36th annual ACM SIGPLAN-SIGACT
-  symposium on Principles of programming languages}
+    \field{booktitle}{Proceedings of the 36th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages}
     \field{pages}{289\bibrangedash 300}
     \field{title}{Compositional shape analysis by means of bi-abduction}
     \field{year}{2009}
@@ -1683,7 +1617,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2014}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{booktitle}{USENIX Security Symposium}
@@ -1706,7 +1640,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2021}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{note}{Last access June 2021}
@@ -1753,11 +1687,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{booktitle}{2018 IEEE International Conference on Cloud Engineering
-  (IC2E)}
+    \field{booktitle}{2018 IEEE International Conference on Cloud Engineering (IC2E)}
     \field{pages}{177\bibrangedash 183}
     \field{title}{A precise model for google cloud platform}
     \field{year}{2018}
@@ -1786,7 +1719,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2001}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{booktitle}{Digital Rights Management Workshop}
@@ -1808,7 +1741,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{note}{Last visit on 21 May 2021}
@@ -1855,11 +1788,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2010}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{booktitle}{International Conference on Information and
-  Communications Security}
+    \field{booktitle}{International Conference on Information and Communications Security}
     \field{pages}{340\bibrangedash 354}
     \field{title}{Return-oriented rootkit without returns (on the x86)}
     \field{year}{2010}
@@ -1900,14 +1832,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{booktitle}{IFIP International Information Security and Privacy
-  Conference}
+    \field{booktitle}{IFIP International Information Security and Privacy Conference}
     \field{pages}{323\bibrangedash 336}
-    \field{title}{Advanced or not? A comparative study of the use of
-  anti-debugging and anti-VM techniques in generic and targeted malware}
+    \field{title}{Advanced or not? A comparative study of the use of anti-debugging and anti-VM techniques in generic and targeted malware}
     \field{year}{2016}
   \endentry
 
@@ -1940,7 +1870,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2005}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{booktitle}{14th {USENIX} Security Symposium ({USENIX} Security 05)}
@@ -1985,12 +1915,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{booktitle}{29th {USENIX} Security Symposium ({USENIX} Security 20)}
-    \field{title}{TeeRex: Discovery and Exploitation of Memory Corruption
-  Vulnerabilities in {SGX} Enclaves}
+    \field{title}{TeeRex: Discovery and Exploitation of Memory Corruption Vulnerabilities in {SGX} Enclaves}
     \verb{url}
     \verb https://www.usenix.org/conference/usenixsecurity20/presentation/cloos
     \verb ters
@@ -2037,12 +1966,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1998}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{note}{US Patent 5,708,849}
-    \field{title}{Implementing scatter/gather operations in a direct memory
-  access device on a personal computer}
+    \field{title}{Implementing scatter/gather operations in a direct memory access device on a personal computer}
     \field{year}{1998}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -2070,13 +1998,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2002}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{number}{8}
     \field{pages}{735\bibrangedash 746}
-    \field{title}{Watermarking, tamper-proofing, and obfuscation-tools for
-  software protection}
+    \field{title}{Watermarking, tamper-proofing, and obfuscation-tools for software protection}
     \field{volume}{28}
     \field{journaltitle}{IEEE Transactions on software engineering}
     \field{year}{2002}
@@ -2085,7 +2012,7 @@
   \entry{conclave}{misc}{}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{howpublished}{\url{https://docs.conclave.net/index.html}}
@@ -2126,14 +2053,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2008}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{booktitle}{Proceedings of the first ACM conference on Wireless
-  network security}
+    \field{booktitle}{Proceedings of the first ACM conference on Wireless network security}
     \field{pages}{214\bibrangedash 219}
-    \field{title}{Emergent properties: detection of the node-capture attack in
-  mobile wireless sensor networks}
+    \field{title}{Emergent properties: detection of the node-capture attack in mobile wireless sensor networks}
     \field{year}{2008}
   \endentry
 
@@ -2175,14 +2100,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2010}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{booktitle}{Proceedings of the 8th ACM international workshop on
-  Mobility management and wireless access}
+    \field{booktitle}{Proceedings of the 8th ACM international workshop on Mobility management and wireless access}
     \field{pages}{99\bibrangedash 106}
-    \field{title}{The smallville effect: social ties make mobile networks more
-  secure against node capture attack}
+    \field{title}{The smallville effect: social ties make mobile networks more secure against node capture attack}
     \field{year}{2010}
   \endentry
 
@@ -2215,11 +2138,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{booktitle}{2017 32nd IEEE/ACM International Conference on Automated
-  Software Engineering (ASE)}
+    \field{booktitle}{2017 32nd IEEE/ACM International Conference on Automated Software Engineering (ASE)}
     \field{pages}{613\bibrangedash 618}
     \field{title}{Rethinking pointer reasoning in symbolic execution}
     \field{year}{2017}
@@ -2245,7 +2167,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{pages}{86}
@@ -2269,7 +2191,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2010}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
     \field{booktitle}{SOURCE Boston}
@@ -2297,7 +2219,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2014}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
     \field{pages}{14}
@@ -2318,7 +2240,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
       {{hash=WM}{%
          family={Winandy},
@@ -2335,14 +2257,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2009}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \field{booktitle}{Proceedings of the 2009 ACM workshop on Scalable trusted
-  computing}
+    \field{booktitle}{Proceedings of the 2009 ACM workshop on Scalable trusted computing}
     \field{pages}{49\bibrangedash 54}
-    \field{title}{Dynamic integrity measurement and attestation: towards
-  defense against return-oriented programming attacks}
+    \field{title}{Dynamic integrity measurement and attestation: towards defense against return-oriented programming attacks}
     \field{year}{2009}
   \endentry
 
@@ -2358,7 +2278,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
       {{hash=LD}{%
          family={Lehmann},
@@ -2381,14 +2301,13 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2014}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
     \field{booktitle}{23rd {USENIX} Security Symposium ({USENIX} Security 14)}
     \field{isbn}{978-1-931971-15-7}
     \field{pages}{401\bibrangedash 416}
-    \field{title}{Stitching the Gadgets: On the Ineffectiveness of
-  Coarse-Grained Control-Flow Integrity Protection}
+    \field{title}{Stitching the Gadgets: On the Ineffectiveness of Coarse-Grained Control-Flow Integrity Protection}
     \verb{url}
     \verb https://www.usenix.org/conference/usenixsecurity14/technical-sessions
     \verb /presentation/davi
@@ -2447,7 +2366,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
     }
     \list{organization}{1}{%
@@ -2458,11 +2377,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \field{booktitle}{Design Automation Conference (DAC), 2017 54th
-  ACM/EDAC/IEEE}
+    \field{booktitle}{Design Automation Conference (DAC), 2017 54th ACM/EDAC/IEEE}
     \field{pages}{1\bibrangedash 6}
     \field{title}{LO-FAT: Low-Overhead Control Flow ATtestation in Hardware}
     \field{year}{2017}
@@ -2492,7 +2410,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
@@ -2503,19 +2421,17 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \field{booktitle}{Proceedings of the International Conference on
-  Computer-Aided Design}
+    \field{booktitle}{Proceedings of the International Conference on Computer-Aided Design}
     \verb{doi}
     \verb 10.1145/3240765.3240821
     \endverb
     \field{isbn}{978-1-4503-5950-4}
     \field{pages}{106:1\bibrangedash 106:8}
     \field{series}{ICCAD '18}
-    \field{title}{LiteHAX: Lightweight Hardware-assisted Attestation of Program
-  Execution}
+    \field{title}{LiteHAX: Lightweight Hardware-assisted Attestation of Program Execution}
     \verb{url}
     \verb http://doi.acm.org/10.1145/3240765.3240821
     \endverb
@@ -2562,23 +2478,20 @@
     \list{publisher}{1}{%
       {Society for Computer Simulation International}%
     }
-    \keyw{computer security, hypervisor, performance evaluation, runtime
-  memory, virtual machine monitor}
+    \keyw{computer security, hypervisor, performance evaluation, runtime memory, virtual machine monitor}
     \strng{namehash}{DP+1}
     \strng{fullhash}{DPDDKHLMNG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2008}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \field{booktitle}{Proceedings of the 2008 Spring Simulation
-  Multiconference}
+    \field{booktitle}{Proceedings of the 2008 Spring Simulation Multiconference}
     \field{isbn}{1-56555-319-5}
     \field{pages}{828\bibrangedash 835}
     \field{series}{SpringSim '08}
-    \field{title}{A Hypervisor-based System for Protecting Software Runtime
-  Memory and Persistent Storage}
+    \field{title}{A Hypervisor-based System for Protecting Software Runtime Memory and Persistent Storage}
     \verb{url}
     \verb http://dl.acm.org/citation.cfm?id=1400549.1400685
     \endverb
@@ -2611,7 +2524,7 @@
       }}%
       {{hash=CMP}{%
          family={Cudre-Mauroux},
-         familyi={C\bibinitperiod-M\bibinitperiod},
+         familyi={C\bibinithyphendelim M\bibinitperiod},
          given={Philippe},
          giveni={P\bibinitperiod},
       }}%
@@ -2624,13 +2537,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
     \field{number}{4}
     \field{pages}{277\bibrangedash 288}
-    \field{title}{Oltp-bench: An extensible testbed for benchmarking relational
-  databases}
+    \field{title}{Oltp-bench: An extensible testbed for benchmarking relational databases}
     \field{volume}{7}
     \field{journaltitle}{Proceedings of the VLDB Endowment}
     \field{year}{2013}
@@ -2683,11 +2595,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \field{booktitle}{Proceedings of the 26th USENIX Conference on Security
-  Symposium}
+    \field{booktitle}{Proceedings of the 26th USENIX Conference on Security Symposium}
     \field{isbn}{978-1-931971-40-9}
     \field{pages}{131\bibrangedash 148}
     \field{series}{SEC'17}
@@ -2725,11 +2636,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1981}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \field{booktitle}{Proceedings of the 22Nd Annual Symposium on Foundations
-  of Computer Science}
+    \field{booktitle}{Proceedings of the 22Nd Annual Symposium on Foundations of Computer Science}
     \verb{doi}
     \verb 10.1109/SFCS.1981.32
     \endverb
@@ -2807,13 +2717,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
     \field{number}{2}
     \field{pages}{52\bibrangedash 62}
-    \field{title}{Inside 6th-Generation Intel Core: New Microarchitecture
-  Code-Named Skylake}
+    \field{title}{Inside 6th-Generation Intel Core: New Microarchitecture Code-Named Skylake}
     \field{volume}{37}
     \field{journaltitle}{IEEE Micro}
     \field{year}{2017}
@@ -2842,7 +2751,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2002}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{D}
     \field{sortinithash}{D}
     \field{title}{Practical PostgreSQL}
@@ -2889,7 +2798,7 @@
       }}%
       {{hash=SDS}{%
          family={Sidiroglou-Douskos},
-         familyi={S\bibinitperiod-D\bibinitperiod},
+         familyi={S\bibinithyphendelim D\bibinitperiod},
          given={Stelios},
          giveni={S\bibinitperiod},
       }}%
@@ -2897,26 +2806,23 @@
     \list{publisher}{1}{%
       {Association for Computing Machinery}%
     }
-    \keyw{memory corruption, return-oriented programming, code reuse, control
-  flow integrity}
+    \keyw{memory corruption, return-oriented programming, code reuse, control flow integrity}
     \strng{namehash}{EI+1}
     \strng{fullhash}{EILFOUSHRMOHSDS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{E}
     \field{sortinithash}{E}
-    \field{booktitle}{Proceedings of the 22nd ACM SIGSAC Conference on Computer
-  and Communications Security}
+    \field{booktitle}{Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security}
     \verb{doi}
     \verb 10.1145/2810103.2813646
     \endverb
     \field{isbn}{9781450338325}
     \field{pages}{901–913}
     \field{series}{CCS ’15}
-    \field{title}{Control Jujutsu: On the Weaknesses of Fine-Grained Control
-  Flow Integrity}
+    \field{title}{Control Jujutsu: On the Weaknesses of Fine-Grained Control Flow Integrity}
     \verb{url}
     \verb https://doi.org/10.1145/2810103.2813646
     \endverb
@@ -2939,7 +2845,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{E}
     \field{sortinithash}{E}
     \field{note}{Last visit on 13 Nov 2017}
@@ -2962,7 +2868,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{F}
     \field{sortinithash}{F}
     \field{note}{Last access March 2019}
@@ -2979,7 +2885,7 @@
          family={Feng},
          familyi={F\bibinitperiod},
          given={Wu-chang},
-         giveni={W\bibinitperiod-c\bibinitperiod},
+         giveni={W\bibinithyphendelim c\bibinitperiod},
       }}%
       {{hash=KE}{%
          family={Kaiser},
@@ -3002,11 +2908,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2008}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{F}
     \field{sortinithash}{F}
-    \field{booktitle}{Proceedings of the 7th ACM SIGCOMM Workshop on Network
-  and System Support for Games}
+    \field{booktitle}{Proceedings of the 7th ACM SIGCOMM Workshop on Network and System Support for Games}
     \verb{doi}
     \verb 10.1145/1517494.1517497
     \endverb
@@ -3036,7 +2941,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{F}
     \field{sortinithash}{F}
     \field{note}{Last visit on 21 May 2021}
@@ -3089,11 +2994,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \field{booktitle}{International Conference on Verification, Model Checking,
-  and Abstract Interpretation}
+    \field{booktitle}{International Conference on Verification, Model Checking, and Abstract Interpretation}
     \field{pages}{85\bibrangedash 103}
     \field{title}{An abstract domain of uninterpreted functions}
     \field{year}{2016}
@@ -3129,11 +3033,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \field{booktitle}{Proceedings of the Twenty-Second International Conference
-  on Architectural Support for Programming Languages and Operating Systems}
+    \field{booktitle}{Proceedings of the Twenty-Second International Conference on Architectural Support for Programming Languages and Operating Systems}
     \verb{doi}
     \verb 10.1145/3037697.3037716
     \endverb
@@ -3153,6 +3056,7 @@
 
   \entry{gentry2009fully}{book}{}
     \true{moreauthor}
+    \true{morelabelname}
     \name{author}{1}{}{%
       {{hash=GC}{%
          family={Gentry},
@@ -3169,7 +3073,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2009}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{G}
     \field{sortinithash}{G}
     \field{number}{9}
@@ -3207,7 +3111,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2010}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{G}
     \field{sortinithash}{G}
     \field{booktitle}{International Workshop on Information Hiding}
@@ -3228,13 +3132,13 @@
          family={Legat},
          familyi={L\bibinitperiod},
          given={J-D},
-         giveni={J\bibinitperiod-D\bibinitperiod},
+         giveni={J\bibinithyphendelim D\bibinitperiod},
       }}%
       {{hash=QJJ}{%
          family={Quisquater},
          familyi={Q\bibinitperiod},
          given={J-J},
-         giveni={J\bibinitperiod-J\bibinitperiod},
+         giveni={J\bibinithyphendelim J\bibinitperiod},
       }}%
     }
     \list{organization}{1}{%
@@ -3245,11 +3149,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1999}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \field{booktitle}{Proceedings 25th EUROMICRO Conference. Informatics:
-  Theory and Practice for the New Millennium}
+    \field{booktitle}{Proceedings 25th EUROMICRO Conference. Informatics: Theory and Practice for the New Millennium}
     \field{pages}{449\bibrangedash 456}
     \field{title}{Enhancing security in the memory management unit}
     \field{volume}{1}
@@ -3268,7 +3171,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{G}
     \field{sortinithash}{G}
     \field{note}{Last access February 2021}
@@ -3315,30 +3218,13 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{G}
     \field{sortinithash}{G}
     \field{abstract}{%
-    For the first time, we practically demonstrate that Intel SGX enclaves are
-  vulnerable against cache-timing attacks. As a case study, we present an
-  access-driven cache-timing attack on AES when running inside an Intel SGX
-  enclave. Using Neve and Seifert's elimination method, as well as a cache
-  probing mechanism relying on Intel PMC, we are able to extract the AES secret
-  key in less than 10 seconds by investigating 480 encrypted blocks on average.
-  The AES implementation we attack is based on a Gladman AES implementation
-  taken from an older version of OpenSSL, which is known to be vulnerable to
-  cache-timing attacks. In contrast to previous works on cache-timing attacks,
-  our attack is executed with root privileges running on the same host as the
-  vulnerable enclave. Intel SGX, however, was designed to precisely protect
-  applications against such root-level attacks. As a consequence, we show that
-  SGX cannot withstand its designated attacker model when it comes to
-  side-channel vulnerabilities. To the contrary, the attack surface for
-  side-channels increases dramatically in the scenario of SGX due to the power
-  of root-level attackers, for example, by exploiting the accuracy of PMC,
-  which is restricted to kernel code.%
+    For the first time, we practically demonstrate that Intel SGX enclaves are vulnerable against cache-timing attacks. As a case study, we present an access-driven cache-timing attack on AES when running inside an Intel SGX enclave. Using Neve and Seifert's elimination method, as well as a cache probing mechanism relying on Intel PMC, we are able to extract the AES secret key in less than 10 seconds by investigating 480 encrypted blocks on average. The AES implementation we attack is based on a Gladman AES implementation taken from an older version of OpenSSL, which is known to be vulnerable to cache-timing attacks. In contrast to previous works on cache-timing attacks, our attack is executed with root privileges running on the same host as the vulnerable enclave. Intel SGX, however, was designed to precisely protect applications against such root-level attacks. As a consequence, we show that SGX cannot withstand its designated attacker model when it comes to side-channel vulnerabilities. To the contrary, the attack surface for side-channels increases dramatically in the scenario of SGX due to the power of root-level attackers, for example, by exploiting the accuracy of PMC, which is restricted to kernel code.%
     }
-    \field{booktitle}{Proceedings of the 10th European Workshop on Systems
-  Security}
+    \field{booktitle}{Proceedings of the 10th European Workshop on Systems Security}
     \verb{doi}
     \verb 10.1145/3065913.3065915
     \endverb
@@ -3385,19 +3271,17 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \field{booktitle}{Proceedings of the 11th ACM on Asia Conference on
-  Computer and Communications Security}
+    \field{booktitle}{Proceedings of the 11th ACM on Asia Conference on Computer and Communications Security}
     \verb{doi}
     \verb 10.1145/2897845.2897894
     \endverb
     \field{isbn}{978-1-4503-4233-9}
     \field{pages}{47\bibrangedash 58}
     \field{series}{ASIA CCS '16}
-    \field{title}{ROPMEMU: A Framework for the Analysis of Complex Code-Reuse
-  Attacks}
+    \field{title}{ROPMEMU: A Framework for the Analysis of Complex Code-Reuse Attacks}
     \verb{url}
     \verb http://doi.acm.org/10.1145/2897845.2897894
     \endverb
@@ -3457,15 +3341,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{G}
     \field{sortinithash}{G}
     \field{abstract}{%
-    Memory forensics is the branch of computer forensics that aims at
-  extracting artifacts from memory snapshots taken from a running system. Even
-  though it is a relatively recent field, it is rapidly growing and it is
-  attracting considerable attention from both industrial and academic
-  researchers.%
+    Memory forensics is the branch of computer forensics that aims at extracting artifacts from memory snapshots taken from a running system. Even though it is a relatively recent field, it is rapidly growing and it is attracting considerable attention from both industrial and academic researchers.%
     }
     \field{booktitle}{Research in Attacks, Intrusions, and Defenses}
     \field{isbn}{978-3-642-41284-4}
@@ -3498,18 +3378,13 @@
          giveni={S\bibinitperiod},
       }}%
     }
-    \keyw{Linux;cache storage;cryptography;AES block cipher;AES-128;CFS;OpenS
-  SL 0.9.8n;access-based cache attacks;advanced encryption standard;cache
-  games;cryptographic systems;current Linux systems;denial of service
-  attack;memory location leakage;side channel attacks;task
-  scheduler;Cryptography;Linux;Matrices;Memory management;Monitoring;Random
-  access memory;AES;access-based cache attacks;side channel}
+    \keyw{Linux;cache storage;cryptography;AES block cipher;AES-128;CFS;OpenS SL 0.9.8n;access-based cache attacks;advanced encryption standard;cache games;cryptographic systems;current Linux systems;denial of service attack;memory location leakage;side channel attacks;task scheduler;Cryptography;Linux;Matrices;Memory management;Monitoring;Random access memory;AES;access-based cache attacks;side channel}
     \strng{namehash}{GDBEKS1}
     \strng{fullhash}{GDBEKS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2011}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{G}
     \field{sortinithash}{G}
     \field{booktitle}{2011 IEEE Symposium on Security and Privacy}
@@ -3518,8 +3393,7 @@
     \endverb
     \field{issn}{1081-6011}
     \field{pages}{490\bibrangedash 505}
-    \field{title}{Cache Games -- Bringing Access-Based Cache Attacks on AES to
-  Practice}
+    \field{title}{Cache Games -- Bringing Access-Based Cache Attacks on AES to Practice}
     \field{year}{2011}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -3568,11 +3442,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \field{title}{Intel sha extensions--new instructions supporting the secure
-  hash algorithm on intel architecture processor}
+    \field{title}{Intel sha extensions--new instructions supporting the secure hash algorithm on intel architecture processor}
     \field{journaltitle}{Intel White Paper}
     \field{year}{2013}
   \endentry
@@ -3606,15 +3479,13 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \field{booktitle}{2017 {USENIX} Annual Technical Conference ({USENIX} {ATC}
-  17)}
+    \field{booktitle}{2017 {USENIX} Annual Technical Conference ({USENIX} {ATC} 17)}
     \field{isbn}{978-1-931971-38-6}
     \field{pages}{299\bibrangedash 312}
-    \field{title}{High-Resolution Side Channels for Untrusted Operating
-  Systems}
+    \field{title}{High-Resolution Side Channels for Untrusted Operating Systems}
     \verb{url}
     \verb https://www.usenix.org/conference/atc17/technical-sessions/presentati
     \verb on/hahnel
@@ -3651,12 +3522,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2004}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{H}
     \field{sortinithash}{H}
     \field{booktitle}{USENIX Virtual Machine Research and Technology Symposium}
-    \field{title}{Semantic remote attestation: a virtual machine directed
-  approach to trusted computing}
+    \field{title}{Semantic remote attestation: a virtual machine directed approach to trusted computing}
     \field{volume}{2004}
     \field{year}{2004}
   \endentry
@@ -3697,15 +3567,13 @@
     \list{publisher}{1}{%
       {Association for Computing Machinery}%
     }
-    \keyw{masqueraders, unintentional insider threat, 5W1H questions, grounded
-  theory for rigorous literature review, Insider threat, traitors, malicious
-  insider threat}
+    \keyw{masqueraders, unintentional insider threat, 5W1H questions, grounded theory for rigorous literature review, Insider threat, traitors, malicious insider threat}
     \strng{namehash}{HI+1}
     \strng{fullhash}{HITFGJEYOM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{H}
     \field{sortinithash}{H}
     \verb{doi}
@@ -3713,8 +3581,7 @@
     \endverb
     \field{issn}{0360-0300}
     \field{number}{2}
-    \field{title}{Insight Into Insiders and IT: A Survey of Insider Threat
-  Taxonomies, Analysis, Modeling, and Countermeasures}
+    \field{title}{Insight Into Insiders and IT: A Survey of Insider Threat Taxonomies, Analysis, Modeling, and Countermeasures}
     \verb{url}
     \verb https://doi.org/10.1145/3303771
     \endverb
@@ -3768,7 +3635,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{H}
     \field{sortinithash}{H}
     \field{pages}{3543}
@@ -3816,11 +3683,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \field{booktitle}{24th $\{$USENIX$\}$ Security Symposium ($\{$USENIX$\}$
-  Security 15)}
+    \field{booktitle}{24th $\{$USENIX$\}$ Security Symposium ($\{$USENIX$\}$ Security 15)}
     \field{pages}{177\bibrangedash 192}
     \field{title}{Automatic generation of data-oriented exploits}
     \field{year}{2015}
@@ -3873,13 +3739,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{H}
     \field{sortinithash}{H}
     \field{booktitle}{Security and Privacy (SP), 2016 IEEE Symposium on}
     \field{pages}{969\bibrangedash 986}
-    \field{title}{Data-oriented programming: On the expressiveness of
-  non-control data attacks}
+    \field{title}{Data-oriented programming: On the expressiveness of non-control data attacks}
     \field{year}{2016}
   \endentry
 
@@ -3907,8 +3772,7 @@
          family={Chung},
          familyi={C\bibinitperiod},
          given={Simon Pak\bibnamedelima Ho},
-         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim
-  H\bibinitperiod},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod},
       }}%
       {{hash=HWR}{%
          family={Harris},
@@ -3938,19 +3802,17 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \field{booktitle}{Proceedings of the 2018 ACM SIGSAC Conference on Computer
-  and Communications Security}
+    \field{booktitle}{Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security}
     \verb{doi}
     \verb 10.1145/3243734.3243797
     \endverb
     \field{isbn}{978-1-4503-5693-0}
     \field{pages}{1470\bibrangedash 1486}
     \field{series}{CCS '18}
-    \field{title}{Enforcing Unique Code Target Property for Control-Flow
-  Integrity}
+    \field{title}{Enforcing Unique Code Target Property for Control-Flow Integrity}
     \verb{url}
     \verb http://doi.acm.org/10.1145/3243734.3243797
     \endverb
@@ -3987,13 +3849,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2009}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{H}
     \field{sortinithash}{H}
     \field{booktitle}{USENIX Security Symposium}
     \field{pages}{383\bibrangedash 398}
-    \field{title}{Return-oriented rootkits: Bypassing kernel code integrity
-  protection mechanisms}
+    \field{title}{Return-oriented rootkits: Bypassing kernel code integrity protection mechanisms}
     \field{year}{2009}
   \endentry
 
@@ -4009,7 +3870,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
     \field{note}{Last access November 2018}
@@ -4033,7 +3894,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
       {{hash=TG}{%
          family={Tsudik},
@@ -4047,11 +3908,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
-    \field{booktitle}{37th IEEE International Symposium on Reliable Distributed
-  Systems}
+    \field{booktitle}{37th IEEE International Symposium on Reliable Distributed Systems}
     \verb{doi}
     \verb 10.1109/SRDS.2018.00013
     \endverb
@@ -4075,7 +3935,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
       {{hash=ZS}{%
          family={Zeitouni},
@@ -4089,14 +3949,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
-    \field{booktitle}{Proceedings of the 10th ACM Conference on Security and
-  Privacy in Wireless and Mobile Networks}
+    \field{booktitle}{Proceedings of the 10th ACM Conference on Security and Privacy in Wireless and Mobile Networks}
     \field{pages}{64\bibrangedash 74}
-    \field{title}{SeED: secure non-interactive attestation for embedded
-  devices}
+    \field{title}{SeED: secure non-interactive attestation for embedded devices}
     \field{year}{2017}
   \endentry
 
@@ -4112,7 +3970,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
       {{hash=TG}{%
          family={Tsudik},
@@ -4130,18 +3988,16 @@
     \list{publisher}{1}{%
       {ACM}%
     }
-    \keyw{capture, collective attestation, embedded devices, networks, physical
-  attacks}
+    \keyw{capture, collective attestation, embedded devices, networks, physical attacks}
     \strng{namehash}{IA+1}
     \strng{fullhash}{IASARTGZS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
-    \field{booktitle}{Proceedings of the 9th ACM Conference on Security \&\#38;
-  Privacy in Wireless and Mobile Networks}
+    \field{booktitle}{Proceedings of the 9th ACM Conference on Security \&\#38; Privacy in Wireless and Mobile Networks}
     \verb{doi}
     \verb 10.1145/2939918.2939938
     \endverb
@@ -4177,7 +4033,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
     \field{howpublished}{\url{https://github.com/orchechik/ropfind}}
@@ -4198,12 +4054,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
     \field{note}{Last access June 2020}
-    \field{title}{Intel\textregistered~Software Guard Extensions
-  (Intel\textregistered SGX) - Developer Guide}
+    \field{title}{Intel\textregistered~Software Guard Extensions (Intel\textregistered SGX) - Developer Guide}
     \verb{url}
     \verb https://download.01.org/intel-sgx/linux-2.1.3/docs/Intel\_SGX\_Develo
     \verb per\_Guide.pdf
@@ -4223,12 +4078,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2014}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
     \field{note}{Last access September 2020}
-    \field{title}{Intel{\textregistered} Software Guard Extensions Programming
-  Reference}
+    \field{title}{Intel{\textregistered} Software Guard Extensions Programming Reference}
     \verb{url}
     \verb https://software.intel.com/sites/default/files/managed/48/88/329298-0
     \verb 02.pdf
@@ -4249,12 +4103,11 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
     \field{extradate}{1}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
     \field{note}{Last visit on 30 Nov 2017}
-    \field{title}{Intel SGX: Debug, Production, Pre-release what's the
-  difference?}
+    \field{title}{Intel SGX: Debug, Production, Pre-release what's the difference?}
     \verb{url}
     \verb https://software.intel.com/en-us/blogs/2016/01/07/intel-sgx-debug-pro
     \verb duction-prelease-whats-the-difference
@@ -4275,7 +4128,7 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
     \field{extradate}{2}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
     \field{howpublished}{\url{https://github.com/intel/linux-sgx-driver}}
@@ -4297,7 +4150,7 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
     \field{extradate}{3}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
     \field{note}{Last visit on 6 Dec 2017}
@@ -4321,12 +4174,11 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
     \field{extradate}{1}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
     \field{note}{Last access November 2018}
-    \field{title}{Intel Architecture Instruction Set Extensions Programming
-  Reference}
+    \field{title}{Intel Architecture Instruction Set Extensions Programming Reference}
     \verb{url}
     \verb https://software.intel.com/sites/default/files/managed/b4/3a/319433-0
     \verb 24.pdf?_ga=1.118002441.1853754838.1418826886
@@ -4347,13 +4199,12 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
     \field{extradate}{2}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
-  \field{howpublished}{\url{https://github.com/intel/linux-sgx-pcl/blob/master/Intel(R)\_SGX\_Protected\_Code\_Loader\_for\_Linux\_User\_Guide.pdf}}
+    \field{howpublished}{\url{https://github.com/intel/linux-sgx-pcl/blob/master/Intel(R)\_SGX\_Protected\_Code\_Loader\_for\_Linux\_User\_Guide.pdf}}
     \field{note}{Last access June 2020}
-    \field{title}{Intel Software Guard Extensions (Intel SGX) Protected Code
-  Loader (PCL) for Linux}
+    \field{title}{Intel Software Guard Extensions (Intel SGX) Protected Code Loader (PCL) for Linux}
     \field{year}{2018}
   \endentry
 
@@ -4370,7 +4221,7 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
     \field{extradate}{3}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
     \field{note}{Last visit on 10 Mar 2017}
@@ -4394,7 +4245,7 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
     \field{extradate}{1}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
     \field{note}{Last access September 2020}
@@ -4419,10 +4270,10 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
     \field{extradate}{2}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
-  \field{howpublished}{\url{https://github.com/intel/SGXDataCenterAttestationPrimitives/tree/master/driver}}
+    \field{howpublished}{\url{https://github.com/intel/SGXDataCenterAttestationPrimitives/tree/master/driver}}
     \field{note}{Last access March 2021}
     \field{title}{SGX Data Center Attestation Primitives (DCAP)}
     \field{year}{2020}
@@ -4440,7 +4291,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{I}
     \field{sortinithash}{I}
     \field{note}{Last visit 13 Nov 2017}
@@ -4466,13 +4317,12 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
     \field{extradate}{1}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{J}
     \field{sortinithash}{J}
-  \field{howpublished}{\url{http://theinvisiblethings.blogspot.com/2013/08/thoughts-on-intels-upcoming-software.html}}
+    \field{howpublished}{\url{http://theinvisiblethings.blogspot.com/2013/08/thoughts-on-intels-upcoming-software.html}}
     \field{note}{Last access November 2018}
-    \field{title}{Thoughts on Intel's upcoming Software Guard Extensions (Part
-  1)}
+    \field{title}{Thoughts on Intel's upcoming Software Guard Extensions (Part 1)}
     \field{year}{2013}
   \endentry
 
@@ -4491,13 +4341,12 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
     \field{extradate}{2}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{J}
     \field{sortinithash}{J}
-  \field{howpublished}{\url{http://theinvisiblethings.blogspot.com/2013/09/thoughts-on-intels-upcoming-software.html}}
+    \field{howpublished}{\url{http://theinvisiblethings.blogspot.com/2013/09/thoughts-on-intels-upcoming-software.html}}
     \field{note}{Last access November 2018}
-    \field{title}{Thoughts on Intel's upcoming Software Guard Extensions (Part
-  2)}
+    \field{title}{Thoughts on Intel's upcoming Software Guard Extensions (Part 2)}
     \field{year}{2013}
   \endentry
 
@@ -4513,7 +4362,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{K}
     \field{sortinithash}{K}
     \field{note}{Last visit on 20 Aug 2018}
@@ -4566,14 +4415,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2006}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{booktitle}{Computer Security Applications Conference, 2006.
-  ACSAC'06. 22nd Annual}
+    \field{booktitle}{Computer Security Applications Conference, 2006. ACSAC'06. 22nd Annual}
     \field{pages}{339\bibrangedash 348}
-    \field{title}{Address space layout permutation (ASLP): Towards fine-grained
-  randomization of commodity software}
+    \field{title}{Address space layout permutation (ASLP): Towards fine-grained randomization of commodity software}
     \field{year}{2006}
   \endentry
 
@@ -4618,14 +4465,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2009}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{booktitle}{Dependable Systems \& Networks, 2009. DSN'09. IEEE/IFIP
-  International Conference on}
+    \field{booktitle}{Dependable Systems \& Networks, 2009. DSN'09. IEEE/IFIP International Conference on}
     \field{pages}{115\bibrangedash 124}
-    \field{title}{Remote attestation to dynamic system properties: Towards
-  providing complete system integrity evidence}
+    \field{title}{Remote attestation to dynamic system properties: Towards providing complete system integrity evidence}
     \field{year}{2009}
   \endentry
 
@@ -4667,7 +4512,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{K}
     \field{sortinithash}{K}
     \field{note}{Last access November 2018}
@@ -4695,7 +4540,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1976}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{K}
     \field{sortinithash}{K}
     \field{number}{7}
@@ -4741,14 +4586,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{booktitle}{International Symposium on Recent Advances in Intrusion
-  Detection}
+    \field{booktitle}{International Symposium on Recent Advances in Intrusion Detection}
     \field{pages}{177\bibrangedash 197}
-    \field{title}{Counteracting data-only malware with code pointer
-  examination}
+    \field{title}{Counteracting data-only malware with code pointer examination}
     \field{year}{2015}
   \endentry
 
@@ -4772,7 +4615,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{K}
     \field{sortinithash}{K}
     \field{title}{Intel processor trace on linux}
@@ -4783,6 +4626,7 @@
 
   \entry{kocher2019spectre}{inproceedings}{}
     \true{moreauthor}
+    \true{morelabelname}
     \name{author}{10}{}{%
       {{hash=KP}{%
          family={Kocher},
@@ -4853,7 +4697,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{K}
     \field{sortinithash}{K}
     \field{booktitle}{2019 IEEE Symposium on Security and Privacy (SP)}
@@ -4888,16 +4732,14 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{booktitle}{4th IEEE European Symposium on Security and Privacy
-  (EuroS\&P'19)}
+    \field{booktitle}{4th IEEE European Symposium on Security and Privacy (EuroS\&P'19)}
     \verb{doi}
     \verb 10.1109/EuroSP.2019.00028
     \endverb
-    \field{title}{A Practical Attestation Protocol for Autonomous Embedded
-  Systems}
+    \field{title}{A Practical Attestation Protocol for Autonomous Embedded Systems}
     \verb{url}
     \verb http://tubiblio.ulb.tu-darmstadt.de/114633/
     \endverb
@@ -4948,11 +4790,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{booktitle}{2019 IEEE European Symposium on Security and Privacy
-  (EuroS\&P)}
+    \field{booktitle}{2019 IEEE European Symposium on Security and Privacy (EuroS\&P)}
     \field{pages}{310\bibrangedash 325}
     \field{title}{SoK: Benchmarking flaws in systems security}
     \field{year}{2019}
@@ -5011,11 +4852,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{booktitle}{Proceedings of the Twelfth European Conference on
-  Computer Systems}
+    \field{booktitle}{Proceedings of the Twelfth European Conference on Computer Systems}
     \verb{doi}
     \verb 10.1145/3064176.3064192
     \endverb
@@ -5056,14 +4896,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2004}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{L}
     \field{sortinithash}{L}
-    \field{booktitle}{Proceedings of the international symposium on Code
-  generation and optimization: feedback-directed and runtime optimization}
+    \field{booktitle}{Proceedings of the international symposium on Code generation and optimization: feedback-directed and runtime optimization}
     \field{pages}{75}
-    \field{title}{LLVM: A compilation framework for lifelong program analysis
-  \& transformation}
+    \field{title}{LLVM: A compilation framework for lifelong program analysis \& transformation}
     \field{year}{2004}
   \endentry
 
@@ -5087,15 +4925,14 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{L}
     \field{sortinithash}{L}
     \field{number}{4}
     \field{pages}{51\bibrangedash 56}
     \field{title}{Hardware implementation of LZMA data compression algorithm}
     \field{volume}{5}
-    \field{journaltitle}{International Journal of Applied Information Systems
-  (IJAIS)}
+    \field{journaltitle}{International Journal of Applied Information Systems (IJAIS)}
     \field{year}{2013}
   \endentry
 
@@ -5162,13 +4999,12 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
     \field{extradate}{1}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{L}
     \field{sortinithash}{L}
     \field{booktitle}{USENIX Security}
     \field{pages}{523\bibrangedash 539}
-    \field{title}{Hacking in darkness: Return-oriented programming against
-  secure enclaves}
+    \field{title}{Hacking in darkness: Return-oriented programming against secure enclaves}
     \field{year}{2017}
   \endentry
 
@@ -5184,7 +5020,7 @@
          family={Shih},
          familyi={S\bibinitperiod},
          given={Ming-Wei},
-         giveni={M\bibinitperiod-W\bibinitperiod},
+         giveni={M\bibinithyphendelim W\bibinitperiod},
       }}%
       {{hash=GP}{%
          family={Gera},
@@ -5220,14 +5056,13 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
     \field{extradate}{2}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{L}
     \field{sortinithash}{L}
     \field{booktitle}{26th {USENIX} Security Symposium ({USENIX} Security 17)}
     \field{isbn}{978-1-931971-40-9}
     \field{pages}{557\bibrangedash 574}
-    \field{title}{Inferring Fine-grained Control Flow Inside {SGX} Enclaves
-  with Branch Shadowing}
+    \field{title}{Inferring Fine-grained Control Flow Inside {SGX} Enclaves with Branch Shadowing}
     \verb{url}
     \verb https://www.usenix.org/conference/usenixsecurity17/technical-sessions
     \verb /presentation/lee-sangho
@@ -5266,21 +5101,13 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{flow graphs;Linux;operating system kernels;program compilers;program
-  diagnostics;public domain software;security of data;source code
-  (software);fine-grained control-flow integrity;control transfer;control-flow
-  graph;fine-grained CFI;field-sensitive pointer analysis;control data;kernel
-  code-reuse attacks;operating system kernels;Fine-CFI;compiler-based
-  prototype;Linux 3.14 kernel;open-source gadget-finding
-  tool;Kernel;Safety;Prototypes;Linux;Security;Aerospace
-  electronics;Control-flow integrity;kernel protection;fine-grained;intrusion
-  prevention}
+    \keyw{flow graphs;Linux;operating system kernels;program compilers;program diagnostics;public domain software;security of data;source code (software);fine-grained control-flow integrity;control transfer;control-flow graph;fine-grained CFI;field-sensitive pointer analysis;control data;kernel code-reuse attacks;operating system kernels;Fine-CFI;compiler-based prototype;Linux 3.14 kernel;open-source gadget-finding tool;Kernel;Safety;Prototypes;Linux;Security;Aerospace electronics;Control-flow integrity;kernel protection;fine-grained;intrusion prevention}
     \strng{namehash}{LJ+2}
     \strng{fullhash}{LJTXZFMJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{L}
     \field{sortinithash}{L}
     \verb{doi}
@@ -5289,17 +5116,16 @@
     \field{issn}{1556-6013}
     \field{number}{6}
     \field{pages}{1535\bibrangedash 1550}
-    \field{title}{Fine-CFI: Fine-Grained Control-Flow Integrity for Operating
-  System Kernels}
+    \field{title}{Fine-CFI: Fine-Grained Control-Flow Integrity for Operating System Kernels}
     \field{volume}{13}
-    \field{journaltitle}{IEEE Transactions on Information Forensics and
-  Security}
+    \field{journaltitle}{IEEE Transactions on Information Forensics and Security}
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{lind2017glamdring}{inproceedings}{}
     \true{moreauthor}
+    \true{morelabelname}
     \name{author}{10}{}{%
       {{hash=LJ}{%
          family={Lind},
@@ -5329,7 +5155,7 @@
          family={Aublin},
          familyi={A\bibinitperiod},
          given={Pierre-Louis},
-         giveni={P\bibinitperiod-L\bibinitperiod},
+         giveni={P\bibinithyphendelim L\bibinitperiod},
       }}%
       {{hash=KF}{%
          family={Kelbert},
@@ -5367,11 +5193,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{L}
     \field{sortinithash}{L}
-    \field{booktitle}{Proceedings of the USENIX Annual Technical Conference
-  (ATC)}
+    \field{booktitle}{Proceedings of the USENIX Annual Technical Conference (ATC)}
     \field{pages}{24}
     \field{title}{Glamdring: Automatic application partitioning for Intel SGX}
     \field{year}{2017}
@@ -5407,19 +5232,17 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{L}
     \field{sortinithash}{L}
-    \field{booktitle}{Proceedings of the 2018 ACM SIGSAC Conference on Computer
-  and Communications Security}
+    \field{booktitle}{Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security}
     \verb{doi}
     \verb 10.1145/3243734.3243826
     \endverb
     \field{isbn}{978-1-4503-5693-0}
     \field{pages}{1635\bibrangedash 1648}
     \field{series}{CCS '18}
-    \field{title}{A Robust and Efficient Defense Against Use-after-Free
-  Exploits via Concurrent Pointer Sweeping}
+    \field{title}{A Robust and Efficient Defense Against Use-after-Free Exploits via Concurrent Pointer Sweeping}
     \verb{url}
     \verb http://doi.acm.org/10.1145/3243734.3243826
     \endverb
@@ -5442,7 +5265,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{note}{Last access Feb 2021}
@@ -5465,7 +5288,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{note}{Last visit on 21 May 2021}
@@ -5489,7 +5312,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2010}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{note}{Last access March 2019}
@@ -5512,7 +5335,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{note}{Last visit on 28 Nov 2017}
@@ -5537,7 +5360,7 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
     \field{extradate}{1}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{note}{Last visit on 02 Mar 2018}
@@ -5562,7 +5385,7 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
     \field{extradate}{2}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{note}{Last access November 2018}
@@ -5586,7 +5409,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{howpublished}{\url{https://github.com/openenclave/openenclave}}
@@ -5624,11 +5447,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{booktitle}{International Conference on Cryptographic Hardware and
-  Embedded Systems}
+    \field{booktitle}{International Conference on Cryptographic Hardware and Embedded Systems}
     \field{pages}{69\bibrangedash 90}
     \field{title}{CacheZoom: How SGX amplifies the power of cache attacks}
     \field{year}{2017}
@@ -5657,7 +5479,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2012}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{title}{Static program analysis}
@@ -5681,7 +5503,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2001}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{title}{PostgreSQL: introduction and concepts}
@@ -5713,18 +5535,16 @@
     \list{publisher}{1}{%
       {Association for Computing Machinery}%
     }
-    \keyw{data confidentiality, virtual machine encryption, memory extraction,
-  virtual machine introspection, amd sev}
+    \keyw{data confidentiality, virtual machine encryption, memory extraction, virtual machine introspection, amd sev}
     \strng{namehash}{MMHMHJ1}
     \strng{fullhash}{MMHMHJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{booktitle}{Proceedings of the Ninth ACM Conference on Data and
-  Application Security and Privacy}
+    \field{booktitle}{Proceedings of the Ninth ACM Conference on Data and Application Security and Privacy}
     \verb{doi}
     \verb 10.1145/3292006.3300022
     \endverb
@@ -5775,27 +5595,21 @@
          giveni={G\bibinitperiod},
       }}%
     }
-    \keyw{security of data;software architecture;hardware assisted security
-  architecture;integrity checks;security hypervisor;software integrity
-  monitoring;trusted hardware component;Computer architecture;Hardware;Program
-  processors;Security;Virtual machine monitors;Virtual machining;Security
-  architecture;hardware components;integrity monitoring}
+    \keyw{security of data;software architecture;hardware assisted security architecture;integrity checks;security hypervisor;software integrity monitoring;trusted hardware component;Computer architecture;Hardware;Program processors;Security;Virtual machine monitors;Virtual machining;Security architecture;hardware components;integrity monitoring}
     \strng{namehash}{MB+1}
     \strng{fullhash}{MBA�NVKMAG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{booktitle}{2015 IEEE 21st Pacific Rim International Symposium on
-  Dependable Computing (PRDC)}
+    \field{booktitle}{2015 IEEE 21st Pacific Rim International Symposium on Dependable Computing (PRDC)}
     \verb{doi}
     \verb 10.1109/PRDC.2015.46
     \endverb
     \field{pages}{189\bibrangedash 198}
-    \field{title}{Design and Implementation of a Hardware Assisted Security
-  Architecture for Software Integrity Monitoring}
+    \field{title}{Design and Implementation of a Hardware Assisted Security Architecture for Software Integrity Monitoring}
     \field{year}{2015}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -5849,19 +5663,13 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{abstract}{%
-    We extended ESBMC to exploit the combination of context-bounded symbolic
-  model checking and k-induction to prove safety properties in single- and
-  multi-threaded ANSI-C programs with unbounded loops. We now first try to
-  verify by induction that the safety property holds in the system. If that
-  fails, we search for a bounded reachable state that constitutes a
-  counterexample.%
+    We extended ESBMC to exploit the combination of context-bounded symbolic model checking and k-induction to prove safety properties in single- and multi-threaded ANSI-C programs with unbounded loops. We now first try to verify by induction that the safety property holds in the system. If that fails, we search for a bounded reachable state that constitutes a counterexample.%
     }
-    \field{booktitle}{Tools and Algorithms for the Construction and Analysis of
-  Systems}
+    \field{booktitle}{Tools and Algorithms for the Construction and Analysis of Systems}
     \field{isbn}{978-3-642-36742-7}
     \field{pages}{619\bibrangedash 622}
     \field{title}{Handling Unbounded Loops with ESBMC 1.20}
@@ -5883,7 +5691,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{note}{Accessed September 2020}
@@ -5938,13 +5746,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{booktitle}{{Proceedings of the 41st IEEE Symposium on Security and
-  Privacy (S\&P'20)}}
-    \field{title}{{Plundervolt}: Software-based Fault Injection Attacks against
-  Intel SGX}
+    \field{booktitle}{{Proceedings of the 41st IEEE Symposium on Security and Privacy (S\&P'20)}}
+    \field{title}{{Plundervolt}: Software-based Fault Injection Attacks against Intel SGX}
     \field{year}{2020}
   \endentry
 
@@ -5972,18 +5778,16 @@
     \list{publisher}{1}{%
       {Association for Computing Machinery}%
     }
-    \keyw{fully homomorphic encryption, ring learning with errors, magma,
-  lattices}
+    \keyw{fully homomorphic encryption, ring learning with errors, magma, lattices}
     \strng{namehash}{NMLKVV1}
     \strng{fullhash}{NMLKVV1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2011}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{N}
     \field{sortinithash}{N}
-    \field{booktitle}{Proceedings of the 3rd ACM Workshop on Cloud Computing
-  Security Workshop}
+    \field{booktitle}{Proceedings of the 3rd ACM Workshop on Cloud Computing Security Workshop}
     \verb{doi}
     \verb 10.1145/2046660.2046682
     \endverb
@@ -6024,11 +5828,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2009}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{N}
     \field{sortinithash}{N}
-    \field{title}{Surreptitious software: obfuscation, watermarking, and
-  tamperproofing for software protection}
+    \field{title}{Surreptitious software: obfuscation, watermarking, and tamperproofing for software protection}
     \field{year}{2009}
   \endentry
 
@@ -6076,33 +5879,20 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{N}
     \field{sortinithash}{N}
     \field{abstract}{%
-    ARM TrustZone is a hardware security extension technology, which aims to
-  provide secure execution environment by splitting computer resources between
-  two execution worlds, namely normal world and secure world. TrustZone is
-  supported on different ﬂavors of ARM architectures, that include
-  architecture deployed on targets running regular applications, such as mobile
-  devices and architecture for micro-controllers. As ARM is widely deployed on
-  the majority of mobile and microcontroller devices, TrustZone’s goal is to
-  provide security for those platforms. In this paper, we will discuss details
-  of different ARM architectures that support TrustZone technology. Then, we
-  will review how TrustZone is implemented in the hardware and software of ARM
-  products. We will also compare TrustZone with other implementations of
-  trusted execution environments on the market.%
+    ARM TrustZone is a hardware security extension technology, which aims to provide secure execution environment by splitting computer resources between two execution worlds, namely normal world and secure world. TrustZone is supported on different ﬂavors of ARM architectures, that include architecture deployed on targets running regular applications, such as mobile devices and architecture for micro-controllers. As ARM is widely deployed on the majority of mobile and microcontroller devices, TrustZone’s goal is to provide security for those platforms. In this paper, we will discuss details of different ARM architectures that support TrustZone technology. Then, we will review how TrustZone is implemented in the hardware and software of ARM products. We will also compare TrustZone with other implementations of trusted execution environments on the market.%
     }
-    \field{booktitle}{2016 {IEEE} 2nd {International} {Conference} on
-  {Collaboration} and {Internet} {Computing} ({CIC})}
+    \field{booktitle}{2016 {IEEE} 2nd {International} {Conference} on {Collaboration} and {Internet} {Computing} ({CIC})}
     \verb{doi}
     \verb 10.1109/CIC.2016.065
     \endverb
     \field{isbn}{978-1-5090-4607-2}
     \field{pages}{445\bibrangedash 451}
     \field{shorttitle}{{TrustZone} {Explained}}
-    \field{title}{{TrustZone} {Explained}: {Architectural} {Features} and {Use}
-  {Cases}}
+    \field{title}{{TrustZone} {Explained}: {Architectural} {Features} and {Use} {Cases}}
     \verb{url}
     \verb http://ieeexplore.ieee.org/document/7809736/
     \endverb
@@ -6137,24 +5927,16 @@
          giveni={V\bibinitperiod},
       }}%
     }
-    \keyw{cloud computing;cryptography;data integrity;data
-  protection;EnGarde;mutually-trusted inspection;SGX Enclaves;Intel;SGX
-  architecture;cloud clients;cryptographic protection;content
-  confidentiality;content integrity;content protection;cloud provider;SLA
-  compliance;SGX security guarantees;Cloud
-  computing;Hardware;Cryptography;Inspection;Virtual machine
-  monitors;Runtime;Intel Software Guard Extensions (SGX);Enclave Programs;Code
-  Verification;Control Flow Integrity}
+    \keyw{cloud computing;cryptography;data integrity;data protection;EnGarde;mutually-trusted inspection;SGX Enclaves;Intel;SGX architecture;cloud clients;cryptographic protection;content confidentiality;content integrity;content protection;cloud provider;SLA compliance;SGX security guarantees;Cloud computing;Hardware;Cryptography;Inspection;Virtual machine monitors;Runtime;Intel Software Guard Extensions (SGX);Enclave Programs;Code Verification;Control Flow Integrity}
     \strng{namehash}{NHGV1}
     \strng{fullhash}{NHGV1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{N}
     \field{sortinithash}{N}
-    \field{booktitle}{2017 IEEE 37th International Conference on Distributed
-  Computing Systems (ICDCS)}
+    \field{booktitle}{2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS)}
     \verb{doi}
     \verb 10.1109/ICDCS.2017.35
     \endverb
@@ -6191,7 +5973,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{N}
     \field{sortinithash}{N}
     \verb{eprint}
@@ -6209,8 +5991,7 @@
          family={Nunes},
          familyi={N\bibinitperiod},
          given={Ivan De\bibnamedelima Oliveira},
-         giveni={I\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
-  O\bibinitperiod},
+         giveni={I\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim O\bibinitperiod},
       }}%
       {{hash=EK}{%
          family={Eldefrawy},
@@ -6239,14 +6020,13 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{N}
     \field{sortinithash}{N}
     \field{booktitle}{29th {USENIX} Security Symposium ({USENIX} Security 20)}
     \field{isbn}{978-1-939133-17-5}
     \field{pages}{771\bibrangedash 788}
-    \field{title}{{APEX}: A Verified Architecture for Proofs of Execution on
-  Remote Devices under Full Software Compromise}
+    \field{title}{{APEX}: A Verified Architecture for Proofs of Execution on Remote Devices under Full Software Compromise}
     \verb{url}
     \verb https://www.usenix.org/conference/usenixsecurity20/presentation/nunes
     \endverb
@@ -6295,15 +6075,13 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{O}
     \field{sortinithash}{O}
-    \field{booktitle}{2018 {USENIX} Annual Technical Conference ({USENIX} {ATC}
-  18)}
+    \field{booktitle}{2018 {USENIX} Annual Technical Conference ({USENIX} {ATC} 18)}
     \field{isbn}{978-1-931971-44-7}
     \field{pages}{227\bibrangedash 240}
-    \field{title}{Varys: Protecting {SGX} Enclaves from Practical Side-Channel
-  Attacks}
+    \field{title}{Varys: Protecting {SGX} Enclaves from Practical Side-Channel Attacks}
     \verb{url}
     \verb https://www.usenix.org/conference/atc18/presentation/oleksenko
     \endverb
@@ -6354,14 +6132,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2010}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{O}
     \field{sortinithash}{O}
-    \field{booktitle}{Proceedings of the 26th Annual Computer Security
-  Applications Conference}
+    \field{booktitle}{Proceedings of the 26th Annual Computer Security Applications Conference}
     \field{pages}{49\bibrangedash 58}
-    \field{title}{G-Free: defeating return-oriented programming through
-  gadget-less binaries}
+    \field{title}{G-Free: defeating return-oriented programming through gadget-less binaries}
     \field{year}{2010}
   \endentry
 
@@ -6377,7 +6153,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2009}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{O}
     \field{sortinithash}{O}
     \field{title}{Advanced Trusted Environment: OMTP TR 1}
@@ -6418,7 +6194,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{P}
     \field{sortinithash}{P}
     \field{number}{2}
@@ -6443,12 +6219,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{P}
     \field{sortinithash}{P}
     \field{note}{Last access June 2021}
-    \field{title}{A Technical Look at Intel’s Control-flow Enforcement
-  Technology}
+    \field{title}{A Technical Look at Intel’s Control-flow Enforcement Technology}
     \verb{url}
     \verb https://software.intel.com/content/www/us/en/develop/articles/technic
     \verb al-look-control-flow-enforcement-technology.html
@@ -6494,11 +6269,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{P}
     \field{sortinithash}{P}
-    \field{title}{TREX: Learning Execution Semantics from Micro-Traces for
-  Binary Similarity}
+    \field{title}{TREX: Learning Execution Semantics from Micro-Traces for Binary Similarity}
     \field{journaltitle}{arXiv preprint arXiv:2012.08680}
     \field{year}{2020}
   \endentry
@@ -6520,7 +6294,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2003}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{P}
     \field{sortinithash}{P}
     \field{title}{Introduction to NX technology}
@@ -6550,11 +6324,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2011}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{P}
     \field{sortinithash}{P}
-    \field{booktitle}{2011 6th International Conference on Malicious and
-  Unwanted Software}
+    \field{booktitle}{2011 6th International Conference on Malicious and Unwanted Software}
     \field{pages}{58\bibrangedash 65}
     \field{title}{ROP payload detection using speculative code execution}
     \field{year}{2011}
@@ -6570,7 +6343,7 @@
       }}%
       {{hash=BWS}{%
          family={Boyd-Wickizer},
-         familyi={B\bibinitperiod-W\bibinitperiod},
+         familyi={B\bibinithyphendelim W\bibinitperiod},
          given={Silas},
          giveni={S\bibinitperiod},
       }}%
@@ -6601,7 +6374,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2011}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{P}
     \field{sortinithash}{P}
     \field{booktitle}{ACM SIGPLAN Notices}
@@ -6628,7 +6401,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{P}
     \field{sortinithash}{P}
     \field{title}{The Design of Malware on Modern Hardware}
@@ -6653,28 +6426,20 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1959}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{P}
     \field{sortinithash}{P}
     \field{abstract}{%
-    Any serious attempt at automatic programming of large-scale digital
-  computing machines must provide for some sort of analysis of program
-  structure. Questions concerning order of operations, location and disposition
-  of transfers, identification of subroutines, internal consistency, redundancy
-  and equivalence, all involve a knowledge of the structure of the program
-  under study, and must be handled effectively by any automatic programming
-  system.%
+    Any serious attempt at automatic programming of large-scale digital computing machines must provide for some sort of analysis of program structure. Questions concerning order of operations, location and disposition of transfers, identification of subroutines, internal consistency, redundancy and equivalence, all involve a knowledge of the structure of the program under study, and must be handled effectively by any automatic programming system.%
     }
-    \field{booktitle}{Papers Presented at the December 1-3, 1959, Eastern Joint
-  IRE-AIEE-ACM Computer Conference}
+    \field{booktitle}{Papers Presented at the December 1-3, 1959, Eastern Joint IRE-AIEE-ACM Computer Conference}
     \verb{doi}
     \verb 10.1145/1460299.1460314
     \endverb
     \field{isbn}{9781450378680}
     \field{pages}{133–138}
     \field{series}{IRE-AIEE-ACM '59 (Eastern)}
-    \field{title}{Applications of Boolean Matrices to the Analysis of Flow
-  Diagrams}
+    \field{title}{Applications of Boolean Matrices to the Analysis of Flow Diagrams}
     \verb{url}
     \verb https://doi.org/10.1145/1460299.1460314
     \endverb
@@ -6697,7 +6462,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{Q}
     \field{sortinithash}{Q}
     \field{note}{Last access June 2021}
@@ -6712,7 +6477,7 @@
   \entry{r3}{misc}{}
     \field{labeltitlesource}{title}
     \field{labelyear}{2014}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \field{howpublished}{\url{https://www.r3.com/}}
@@ -6736,7 +6501,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \field{howpublished}{\url{https://github.com/radare/radare2}}
@@ -6783,14 +6548,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2012}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{R}
     \field{sortinithash}{R}
-    \field{booktitle}{Proceedings of the 28th annual computer security
-  applications conference}
+    \field{booktitle}{Proceedings of the 28th annual computer security applications conference}
     \field{pages}{79\bibrangedash 88}
-    \field{title}{When hardware meets software: A bulletproof solution to
-  forensic memory acquisition}
+    \field{title}{When hardware meets software: A bulletproof solution to forensic memory acquisition}
     \field{year}{2012}
   \endentry
 
@@ -6821,21 +6584,13 @@
          giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
     }
-    \keyw{invasive software;learning (artificial intelligence);antimalware
-  solutions;autonomous open world solutions;closed world assumption;formalized
-  adaptive open world framework;high-impact zero-day attack;machine
-  learning;malicious stealth technologies;stealth malware attacks;stealth
-  malware recognition problem;Command and control systems;Intrusion
-  detection;Machine learning algorithms;Malware;Operating
-  systems;Tutorials;Stealth;anomaly detection;extreme value theory;intrusion
-  detection;machine learning;malware;novelty detection;open set;outlier
-  detection;recognition;rootkits}
+    \keyw{invasive software;learning (artificial intelligence);antimalware solutions;autonomous open world solutions;closed world assumption;formalized adaptive open world framework;high-impact zero-day attack;machine learning;malicious stealth technologies;stealth malware attacks;stealth malware recognition problem;Command and control systems;Intrusion detection;Machine learning algorithms;Malware;Operating systems;Tutorials;Stealth;anomaly detection;extreme value theory;intrusion detection;machine learning;malware;novelty detection;open set;outlier detection;recognition;rootkits}
     \strng{namehash}{REM+1}
     \strng{fullhash}{REMRAGMBTE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \verb{doi}
@@ -6843,8 +6598,7 @@
     \endverb
     \field{number}{2}
     \field{pages}{1145\bibrangedash 1172}
-    \field{title}{A Survey of Stealth Malware Attacks, Mitigation Measures, and
-  Steps Toward Autonomous Open World Solutions}
+    \field{title}{A Survey of Stealth Malware Attacks, Mitigation Measures, and Steps Toward Autonomous Open World Solutions}
     \field{volume}{19}
     \field{journaltitle}{IEEE Communications Surveys Tutorials}
     \field{year}{2017}
@@ -6868,7 +6622,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2011}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \field{number}{1}
@@ -6905,12 +6659,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{pages}{57\bibrangedash 64}
-    \field{title}{Trusted Execution Environment: What It is, and What It is
-  Not}
+    \field{title}{Trusted Execution Environment: What It is, and What It is Not}
     \field{volume}{1}
     \field{journaltitle}{2015 IEEE Trustcom/BigDataSE/ISPA}
     \field{year}{2015}
@@ -6948,13 +6701,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2004}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{booktitle}{USENIX Security symposium}
     \field{pages}{223\bibrangedash 238}
-    \field{title}{Design and Implementation of a TCG-based Integrity
-  Measurement Architecture.}
+    \field{title}{Design and Implementation of a TCG-based Integrity Measurement Architecture.}
     \field{volume}{13}
     \field{year}{2004}
   \endentry
@@ -6973,7 +6725,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2011}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{note}{Last access Mar 2020}
@@ -7019,14 +6771,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2007}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \field{booktitle}{Proceedings of the 25th conference on IASTED
-  International Multi-Conference: Software Engineering}
+    \field{booktitle}{Proceedings of the 25th conference on IASTED International Multi-Conference: Software Engineering}
     \field{pages}{334\bibrangedash 340}
-    \field{title}{Flow-insensitive static analysis for detecting integer
-  anomalies in programs}
+    \field{title}{Flow-insensitive static analysis for detecting integer anomalies in programs}
     \field{year}{2007}
   \endentry
 
@@ -7044,7 +6794,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{note}{Last visit on 21 May 2021}
@@ -7089,7 +6839,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{howpublished}{\url{https://sgaxeattack.com/}}
@@ -7127,7 +6877,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
       {{hash=HT}{%
          family={Holz},
@@ -7145,13 +6895,12 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
     \field{extradate}{1}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{booktitle}{Security and Privacy (SP), 2015 IEEE Symposium on}
     \field{pages}{745\bibrangedash 762}
-    \field{title}{Counterfeit object-oriented programming: On the difficulty of
-  preventing code reuse attacks in C++ applications}
+    \field{title}{Counterfeit object-oriented programming: On the difficulty of preventing code reuse attacks in C++ applications}
     \field{year}{2015}
   \endentry
 
@@ -7189,7 +6938,7 @@
       }}%
       {{hash=MRG}{%
          family={Mainar-Ruiz},
-         familyi={M\bibinitperiod-R\bibinitperiod},
+         familyi={M\bibinithyphendelim R\bibinitperiod},
          given={Gloria},
          giveni={G\bibinitperiod},
       }}%
@@ -7209,7 +6958,7 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
     \field{extradate}{2}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{booktitle}{Security and Privacy (SP), 2015 IEEE Symposium on}
@@ -7238,11 +6987,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \field{title}{When Good Turns Evil: Using Intel SGX to Stealthily Steal
-  Bitcoins}
+    \field{title}{When Good Turns Evil: Using Intel SGX to Stealthily Steal Bitcoins}
     \field{journaltitle}{Black Hat Asia}
     \field{year}{2018}
   \endentry
@@ -7276,11 +7024,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \field{booktitle}{International Conference on Detection of Intrusions and
-  Malware, and Vulnerability Assessment}
+    \field{booktitle}{International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment}
     \field{pages}{177\bibrangedash 196}
     \field{title}{Practical enclave malware with Intel SGX}
     \field{year}{2019}
@@ -7342,21 +7089,13 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
     \field{extradate}{1}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{abstract}{%
-    In modern computer systems, user processes are isolated from each other by
-  the operating system and the hardware. Additionally, in a cloud scenario it
-  is crucial that the hypervisor isolates tenants from other tenants that are
-  co-located on the same physical machine. However, the hypervisor does not
-  protect tenants against the cloud provider and thus the supplied operating
-  system and hardware. Intel SGX provides a mechanism that addresses this
-  scenario. It aims at protecting user-level software from attacks from other
-  processes, the operating system, and even physical attackers.%
+    In modern computer systems, user processes are isolated from each other by the operating system and the hardware. Additionally, in a cloud scenario it is crucial that the hypervisor isolates tenants from other tenants that are co-located on the same physical machine. However, the hypervisor does not protect tenants against the cloud provider and thus the supplied operating system and hardware. Intel SGX provides a mechanism that addresses this scenario. It aims at protecting user-level software from attacks from other processes, the operating system, and even physical attackers.%
     }
-    \field{booktitle}{Detection of Intrusions and Malware, and Vulnerability
-  Assessment}
+    \field{booktitle}{Detection of Intrusions and Malware, and Vulnerability Assessment}
     \field{isbn}{978-3-319-60876-1}
     \field{pages}{3\bibrangedash 24}
     \field{title}{Malware Guard Extension: Using SGX to Conceal Cache Attacks}
@@ -7408,11 +7147,10 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
     \field{extradate}{2}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \field{booktitle}{International Conference on Detection of Intrusions and
-  Malware, and Vulnerability Assessment}
+    \field{booktitle}{International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment}
     \field{pages}{3\bibrangedash 24}
     \field{title}{Malware guard extension: Using SGX to conceal cache attacks}
     \field{year}{2017}
@@ -7442,7 +7180,7 @@
          family={Shih},
          familyi={S\bibinitperiod},
          given={Ming-Wei},
-         giveni={M\bibinitperiod-W\bibinitperiod},
+         giveni={M\bibinithyphendelim W\bibinitperiod},
       }}%
       {{hash=SI}{%
          family={Shin},
@@ -7468,13 +7206,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \field{booktitle}{Proceedings of the 2017 Annual Network and Distributed
-  System Security Symposium (NDSS), San Diego, CA}
-    \field{title}{SGX-Shield: Enabling address space layout randomization for
-  SGX programs}
+    \field{booktitle}{Proceedings of the 2017 Annual Network and Distributed System Security Symposium (NDSS), San Diego, CA}
+    \field{title}{SGX-Shield: Enabling address space layout randomization for SGX programs}
     \field{year}{2017}
   \endentry
 
@@ -7496,19 +7232,17 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2007}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \field{booktitle}{Proceedings of the 14th ACM Conference on Computer and
-  Communications Security}
+    \field{booktitle}{Proceedings of the 14th ACM Conference on Computer and Communications Security}
     \verb{doi}
     \verb 10.1145/1315245.1315313
     \endverb
     \field{isbn}{978-1-59593-703-2}
     \field{pages}{552\bibrangedash 561}
     \field{series}{CCS '07}
-    \field{title}{The Geometry of Innocent Flesh on the Bone: Return-into-libc
-  Without Function Calls (on the x86)}
+    \field{title}{The Geometry of Innocent Flesh on the Bone: Return-into-libc Without Function Calls (on the x86)}
     \verb{url}
     \verb http://doi.acm.org/10.1145/1315245.1315313
     \endverb
@@ -7525,7 +7259,7 @@
          family={Shih},
          familyi={S\bibinitperiod},
          given={Ming-Wei},
-         giveni={M\bibinitperiod-W\bibinitperiod},
+         giveni={M\bibinithyphendelim W\bibinitperiod},
       }}%
       {{hash=LS}{%
          family={Lee},
@@ -7551,13 +7285,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \field{booktitle}{Proceedings of the 2017 Annual Network and Distributed
-  System Security Symposium (NDSS), San Diego, CA}
-    \field{title}{T-SGX: Eradicating controlled-channel attacks against enclave
-  programs}
+    \field{booktitle}{Proceedings of the 2017 Annual Network and Distributed System Security Symposium (NDSS), San Diego, CA}
+    \field{title}{T-SGX: Eradicating controlled-channel attacks against enclave programs}
     \field{year}{2017}
   \endentry
 
@@ -7599,12 +7331,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{booktitle}{NDSS}
-    \field{title}{Firmalice - Automatic Detection of Authentication Bypass
-  Vulnerabilities in Binary Firmware}
+    \field{title}{Firmalice - Automatic Detection of Authentication Bypass Vulnerabilities in Binary Firmware}
     \field{year}{2015}
   \endentry
 
@@ -7621,7 +7352,7 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
     \field{extradate}{1}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{note}{Last access September 2020}
@@ -7645,7 +7376,7 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
     \field{extradate}{2}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{note}{Last access September 2020}
@@ -7691,14 +7422,13 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2006}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{booktitle}{ACM SIGOPS Operating Systems Review}
     \field{number}{4}
     \field{pages}{161\bibrangedash 174}
-    \field{title}{Reducing TCB complexity for security-sensitive applications:
-  Three case studies}
+    \field{title}{Reducing TCB complexity for security-sensitive applications: Three case studies}
     \field{volume}{40}
     \field{year}{2006}
   \endentry
@@ -7720,7 +7450,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1997}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{title}{Stack smashing vulnerabilities in the UNIX operating system}
@@ -7750,11 +7480,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2006}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \field{booktitle}{Proceedings of the 2006 workshop on Programming languages
-  and analysis for security}
+    \field{booktitle}{Proceedings of the 2006 workshop on Programming languages and analysis for security}
     \field{pages}{75\bibrangedash 84}
     \field{title}{Refactoring programs to secure information flows}
     \field{year}{2006}
@@ -7774,7 +7503,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{title}{User space memory analysis}
@@ -7821,7 +7550,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
     }
     \list{organization}{1}{%
@@ -7832,13 +7561,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{booktitle}{Security and Privacy (SP), 2013 IEEE Symposium on}
     \field{pages}{574\bibrangedash 588}
-    \field{title}{Just-in-time code reuse: On the effectiveness of fine-grained
-  address space layout randomization}
+    \field{title}{Just-in-time code reuse: On the effectiveness of fine-grained address space layout randomization}
     \field{year}{2013}
   \endentry
 
@@ -7860,7 +7588,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2002}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \verb{doi}
@@ -7918,7 +7646,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
     }
     \list{organization}{1}{%
@@ -7929,14 +7657,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \field{booktitle}{International Workshop on Recent Advances in Intrusion
-  Detection}
+    \field{booktitle}{International Workshop on Recent Advances in Intrusion Detection}
     \field{pages}{62\bibrangedash 81}
-    \field{title}{Check my profile: Leveraging static analysis for fast and
-  accurate detection of ROP gadgets}
+    \field{title}{Check my profile: Leveraging static analysis for fast and accurate detection of ROP gadgets}
     \field{year}{2013}
   \endentry
 
@@ -7963,7 +7689,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{booktitle}{25th {USENIX} Security Symposium ({USENIX} Security 16)}
@@ -7995,7 +7721,7 @@
          family={Waerdt},
          familyi={W\bibinitperiod},
          given={Jan-Willem},
-         giveni={J\bibinitperiod-W\bibinitperiod},
+         giveni={J\bibinithyphendelim W\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
@@ -8006,7 +7732,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{note}{US Patent 8,607,026}
@@ -8074,7 +7800,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2000}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{number}{1}
@@ -8120,7 +7846,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2014}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{number}{7}
@@ -8166,7 +7892,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{booktitle}{2020 IEEE Symposium on Security and Privacy (SP)}
@@ -8189,7 +7915,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2012}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{howpublished}{\url{https://github.com/504ensicsLabs/LiME}}
@@ -8248,11 +7974,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \field{booktitle}{Proceedings of the 3rd Workshop on System Software for
-  Trusted Execution}
+    \field{booktitle}{Proceedings of the 3rd Workshop on System Software for Trusted Execution}
     \field{pages}{22\bibrangedash 27}
     \field{title}{Switchless Calls Made Practical in Intel SGX}
     \field{year}{2018}
@@ -8308,13 +8033,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2014}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{T}
     \field{sortinithash}{T}
     \field{booktitle}{USENIX Security Symposium}
     \field{pages}{941\bibrangedash 955}
-    \field{title}{Enforcing Forward-Edge Control-Flow Integrity in GCC \&
-  LLVM.}
+    \field{title}{Enforcing Forward-Edge Control-Flow Integrity in GCC \& LLVM.}
     \field{year}{2014}
   \endentry
 
@@ -8359,15 +8083,13 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \field{booktitle}{22nd International Symposium on Research in Attacks,
-  Intrusions and Defenses ({RAID} 2019)}
+    \field{booktitle}{22nd International Symposium on Research in Attacks, Intrusions and Defenses ({RAID} 2019)}
     \field{isbn}{978-1-939133-07-6}
     \field{pages}{121\bibrangedash 134}
-    \field{title}{ScaRR: Scalable Runtime Remote Attestation for Complex
-  Systems}
+    \field{title}{ScaRR: Scalable Runtime Remote Attestation for Complex Systems}
     \verb{url}
     \verb https://www.usenix.org/conference/raid2019/presentation/toffalini
     \endverb
@@ -8410,11 +8132,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2021}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \field{booktitle}{International Conference on Applied Cryptography and
-  Network Security}
+    \field{booktitle}{International Conference on Applied Cryptography and Network Security}
     \field{title}{SnakeGX: a sneaky attack against SGX Enclaves}
     \field{year}{2021}
   \endentry
@@ -8436,7 +8157,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{T}
     \field{sortinithash}{T}
     \field{booktitle}{Smart Cards, Tokens, Security and Applications}
@@ -8460,7 +8181,7 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
     \field{extradate}{1}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{T}
     \field{sortinithash}{T}
     \field{note}{Last visit on 21 May 2021}
@@ -8486,7 +8207,7 @@
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
     \field{extradate}{2}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{T}
     \field{sortinithash}{T}
     \field{note}{Last visit on 21 May 2021}
@@ -8509,7 +8230,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2014}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{T}
     \field{sortinithash}{T}
     \field{note}{Last access Feb 2019}
@@ -8551,15 +8272,13 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \field{booktitle}{2017 {USENIX} Annual Technical Conference ({USENIX} {ATC}
-  17)}
+    \field{booktitle}{2017 {USENIX} Annual Technical Conference ({USENIX} {ATC} 17)}
     \field{isbn}{978-1-931971-38-6}
     \field{pages}{645\bibrangedash 658}
-    \field{title}{Graphene-SGX: A Practical Library {OS} for Unmodified
-  Applications on {SGX}}
+    \field{title}{Graphene-SGX: A Practical Library {OS} for Unmodified Applications on {SGX}}
     \verb{url}
     \verb https://www.usenix.org/conference/atc17/technical-sessions/presentati
     \verb on/tsai
@@ -8584,7 +8303,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2005}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{T}
     \field{sortinithash}{T}
     \field{note}{Last accessed April 2021}
@@ -8599,7 +8318,7 @@
     \name{author}{4}{}{%
       {{hash=UPX}{%
          family={Ugarte-Pedrero},
-         familyi={U\bibinitperiod-P\bibinitperiod},
+         familyi={U\bibinithyphendelim P\bibinitperiod},
          given={Xabier},
          giveni={X\bibinitperiod},
       }}%
@@ -8630,14 +8349,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{U}
     \field{sortinithash}{U}
-    \field{booktitle}{Detection of Intrusions and Malware, and Vulnerability
-  Assessment}
+    \field{booktitle}{Detection of Intrusions and Malware, and Vulnerability Assessment}
     \field{pages}{186\bibrangedash 206}
-    \field{title}{Rambo: Run-time packer analysis with multiple branch
-  observation}
+    \field{title}{Rambo: Run-time packer analysis with multiple branch observation}
     \field{year}{2016}
   \endentry
 
@@ -8712,7 +8429,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2005}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{U}
     \field{sortinithash}{U}
     \field{number}{5}
@@ -8735,7 +8452,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
     \field{note}{Last visit 13 Nov 2017}
@@ -8784,14 +8501,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
-    \field{booktitle}{26th $\{$USENIX$\}$ Security Symposium ($\{$USENIX$\}$
-  Security 17)}
+    \field{booktitle}{26th $\{$USENIX$\}$ Security Symposium ($\{$USENIX$\}$ Security 17)}
     \field{pages}{1041\bibrangedash 1056}
-    \field{title}{Telling your secrets without page faults: Stealthy page
-  table-based attacks on enclaved execution}
+    \field{title}{Telling your secrets without page faults: Stealthy page table-based attacks on enclaved execution}
     \field{year}{2017}
   \endentry
 
@@ -8866,14 +8581,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
     \field{booktitle}{Proceedings of the 27th {USENIX} Security Symposium}
-    \field{note}{See also technical report
-  Foreshadow-NG~\cite{weisse2018foreshadowNG}}
-    \field{title}{Foreshadow: Extracting the Keys to the {Intel SGX} Kingdom
-  with Transient Out-of-Order Execution}
+    \field{note}{See also technical report Foreshadow-NG~\cite{weisse2018foreshadowNG}}
+    \field{title}{Foreshadow: Extracting the Keys to the {Intel SGX} Kingdom with Transient Out-of-Order Execution}
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -8925,14 +8638,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
-    \field{booktitle}{Proceedings of the 2019 ACM SIGSAC Conference on Computer
-  and Communications Security}
+    \field{booktitle}{Proceedings of the 2019 ACM SIGSAC Conference on Computer and Communications Security}
     \field{pages}{1741\bibrangedash 1758}
-    \field{title}{A Tale of Two Worlds: Assessing the Vulnerability of Enclave
-  Shielding Runtimes}
+    \field{title}{A Tale of Two Worlds: Assessing the Vulnerability of Enclave Shielding Runtimes}
     \field{year}{2019}
   \endentry
 
@@ -9007,18 +8718,18 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2020}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
     \field{booktitle}{2020 IEEE Symposium on Security and Privacy (SP)}
     \field{pages}{54\bibrangedash 72}
-    \field{title}{LVI: Hijacking transient execution through microarchitectural
-  load value injection}
+    \field{title}{LVI: Hijacking transient execution through microarchitectural load value injection}
     \field{year}{2020}
   \endentry
 
   \entry{van2012memory}{inproceedings}{}
     \true{moreauthor}
+    \true{morelabelname}
     \name{author}{3}{}{%
       {{hash=VdVV}{%
          prefix={Van\bibnamedelima der},
@@ -9049,11 +8760,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2012}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
-    \field{booktitle}{International Workshop on Recent Advances in Intrusion
-  Detection}
+    \field{booktitle}{International Workshop on Recent Advances in Intrusion Detection}
     \field{pages}{86\bibrangedash 106}
     \field{title}{Memory errors: The past, the present, and the future}
     \field{year}{2012}
@@ -9071,7 +8781,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
     \field{note}{Last access September 2020}
@@ -9094,7 +8804,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2009}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
     \field{note}{Last access September 2020}
@@ -9119,7 +8829,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
     \field{title}{SGX attestation process}
@@ -9155,13 +8865,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
     \field{number}{3}
     \field{pages}{370 \bibrangedash  388}
-    \field{title}{StealthDB: a Scalable Encrypted Database with Full SQL Query
-  Support}
+    \field{title}{StealthDB: a Scalable Encrypted Database with Full SQL Query Support}
     \verb{url}
     \verb https://content.sciendo.com/view/journals/popets/2019/3/article-p370.
     \verb xml
@@ -9206,11 +8915,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
-    \field{title}{SAFE\^{} d: Self-Attestation For Networks of Heterogeneous
-  Embedded Devices}
+    \field{title}{SAFE\^{} d: Self-Attestation For Networks of Heterogeneous Embedded Devices}
     \field{journaltitle}{arXiv preprint arXiv:1909.08168}
     \field{year}{2019}
   \endentry
@@ -9262,14 +8970,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2016}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
-    \field{booktitle}{Proceedings of the 2016 ACM Workshop on Software
-  PROtection}
+    \field{booktitle}{Proceedings of the 2016 ACM Workshop on Software PROtection}
     \field{pages}{73\bibrangedash 84}
-    \field{title}{Reactive Attestation: Automatic Detection and Reaction to
-  Software Tampering Attacks}
+    \field{title}{Reactive Attestation: Automatic Detection and Reaction to Software Tampering Attacks}
     \field{year}{2016}
   \endentry
 
@@ -9305,7 +9011,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2014}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
     \field{booktitle}{NDSS}
@@ -9325,13 +9031,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{V}
     \field{sortinithash}{V}
-  \field{howpublished}{\url{https://github.com/volatilityfoundation/volatility}}
+    \field{howpublished}{\url{https://github.com/volatilityfoundation/volatility}}
     \field{note}{Last access February 2021}
-    \field{title}{Volatility Framework - Volatile memory extraction utility
-  framework}
+    \field{title}{Volatility Framework - Volatile memory extraction utility framework}
     \field{year}{2017}
   \endentry
 
@@ -9406,11 +9111,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{W}
     \field{sortinithash}{W}
-    \field{booktitle}{Proceedings of the 2019 ACM SIGSAC Conference on Computer
-  and Communications Security}
+    \field{booktitle}{Proceedings of the 2019 ACM SIGSAC Conference on Computer and Communications Security}
     \field{pages}{2333\bibrangedash 2350}
     \field{title}{Towards Memory Safe Enclave Programming with Rust-SGX}
     \field{year}{2019}
@@ -9439,13 +9143,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{W}
     \field{sortinithash}{W}
     \field{number}{1}
     \field{pages}{1}
-    \field{title}{A trusted measurement model based on dynamic policy and
-  privacy protection in IaaS security domain}
+    \field{title}{A trusted measurement model based on dynamic policy and privacy protection in IaaS security domain}
     \field{volume}{2018}
     \field{journaltitle}{EURASIP Journal on Information Security}
     \field{year}{2018}
@@ -9486,12 +9189,11 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2009}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{W}
     \field{sortinithash}{W}
     \field{booktitle}{NDSS}
-    \field{title}{IntScope: Automatically Detecting Integer Overflow
-  Vulnerability in X86 Binary Using Symbolic Execution.}
+    \field{title}{IntScope: Automatically Detecting Integer Overflow Vulnerability in X86 Binary Using Symbolic Execution.}
     \field{year}{2009}
   \endentry
 
@@ -9555,41 +9257,20 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{W}
     \field{sortinithash}{W}
     \field{abstract}{%
-    Side-channel risks of Intel SGX have recently attracted great attention.
-  Under the spotlight is the newly discovered page-fault attack, in which an
-  OS-level adversary induces page faults to observe the page-level access
-  patterns of a protected process running in an SGX enclave. With almost all
-  proposed defense focusing on this attack, little is known about whether such
-  efforts indeed raise the bar for the adversary, whether a simple variation of
-  the attack renders all protection ineffective, not to mention an in-depth
-  understanding of other attack surfaces in the SGX system. In the paper, we
-  report the first step toward systematic analyses of side-channel threats that
-  SGX faces, focusing on the risks associated with its memory management. Our
-  research identifies 8 potential attack vectors, ranging from TLB to DRAM
-  modules. More importantly, we highlight the common misunderstandings about
-  SGX memory side channels, demonstrating that high frequent AEXs can be
-  avoided when recovering EdDSA secret key through a new page channel and
-  fine-grained monitoring of enclave programs (at the level of 64B) can be done
-  through combining both cache and cross-enclave DRAM channels. Our findings
-  reveal the gap between the ongoing security research on SGX and its
-  side-channel weaknesses, redefine the side-channel threat model for secure
-  enclaves, and can provoke a discussion on when to use such a system and how
-  to use it securely.%
+    Side-channel risks of Intel SGX have recently attracted great attention. Under the spotlight is the newly discovered page-fault attack, in which an OS-level adversary induces page faults to observe the page-level access patterns of a protected process running in an SGX enclave. With almost all proposed defense focusing on this attack, little is known about whether such efforts indeed raise the bar for the adversary, whether a simple variation of the attack renders all protection ineffective, not to mention an in-depth understanding of other attack surfaces in the SGX system. In the paper, we report the first step toward systematic analyses of side-channel threats that SGX faces, focusing on the risks associated with its memory management. Our research identifies 8 potential attack vectors, ranging from TLB to DRAM modules. More importantly, we highlight the common misunderstandings about SGX memory side channels, demonstrating that high frequent AEXs can be avoided when recovering EdDSA secret key through a new page channel and fine-grained monitoring of enclave programs (at the level of 64B) can be done through combining both cache and cross-enclave DRAM channels. Our findings reveal the gap between the ongoing security research on SGX and its side-channel weaknesses, redefine the side-channel threat model for secure enclaves, and can provoke a discussion on when to use such a system and how to use it securely.%
     }
-    \field{booktitle}{Proceedings of the 2017 ACM SIGSAC Conference on Computer
-  and Communications Security}
+    \field{booktitle}{Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security}
     \verb{doi}
     \verb 10.1145/3133956.3134038
     \endverb
     \field{isbn}{9781450349468}
     \field{pages}{2421–2434}
     \field{series}{CCS '17}
-    \field{title}{Leaky Cauldron on the Dark Land: Understanding Memory
-  Side-Channel Hazards in SGX}
+    \field{title}{Leaky Cauldron on the Dark Land: Understanding Memory Side-Channel Hazards in SGX}
     \verb{url}
     \verb https://doi.org/10.1145/3133956.3134038
     \endverb
@@ -9623,13 +9304,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2010}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{W}
     \field{sortinithash}{W}
     \field{booktitle}{Security and Privacy (SP), 2010 IEEE Symposium on}
     \field{pages}{380\bibrangedash 395}
-    \field{title}{Hypersafe: A lightweight approach to provide lifetime
-  hypervisor control-flow integrity}
+    \field{title}{Hypersafe: A lightweight approach to provide lifetime hypervisor control-flow integrity}
     \field{year}{2010}
   \endentry
 
@@ -9671,11 +9351,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{W}
     \field{sortinithash}{W}
-    \field{title}{Capability Hardware Enhanced RISC Instructions (CHERI): Notes
-  on the Meltdown and Spectre Attacks}
+    \field{title}{Capability Hardware Enhanced RISC Instructions (CHERI): Notes on the Meltdown and Spectre Attacks}
     \list{institution}{1}{%
       {University of Cambridge, Computer Laboratory}%
     }
@@ -9700,13 +9379,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2010}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{W}
     \field{sortinithash}{W}
     \field{booktitle}{Annual Cryptology Conference}
     \field{pages}{314\bibrangedash 332}
-    \field{title}{Efficient chosen-ciphertext security via extractable hash
-  proofs}
+    \field{title}{Efficient chosen-ciphertext security via extractable hash proofs}
     \field{year}{2010}
   \endentry
 
@@ -9727,7 +9405,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1984}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{W}
     \field{sortinithash}{W}
     \field{number}{4}
@@ -9772,11 +9450,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{W}
     \field{sortinithash}{W}
-    \field{booktitle}{22nd International Symposium on Research in Attacks,
-  Intrusions and Defenses ({RAID} 2019)}
+    \field{booktitle}{22nd International Symposium on Research in Attacks, Intrusions and Defenses ({RAID} 2019)}
     \field{isbn}{978-1-939133-07-6}
     \field{pages}{353\bibrangedash 366}
     \field{title}{SGXJail: Defeating Enclave Malware via Confinement}
@@ -9858,11 +9535,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{W}
     \field{sortinithash}{W}
-    \field{title}{{Foreshadow-NG}: Breaking the Virtual Memory Abstraction with
-  Transient Out-of-Order Execution}
+    \field{title}{{Foreshadow-NG}: Breaking the Virtual Memory Abstraction with Transient Out-of-Order Execution}
     \field{journaltitle}{Technical report}
     \field{month}{08}
     \field{year}{2018}
@@ -9885,14 +9561,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2008}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{W}
     \field{sortinithash}{W}
-    \field{booktitle}{Proceedings of the 3rd ACM workshop on Scalable trusted
-  computing}
+    \field{booktitle}{Proceedings of the 3rd ACM workshop on Scalable trusted computing}
     \field{pages}{21\bibrangedash 30}
-    \field{title}{Trusted computing building blocks for embedded linux-based
-  ARM trustzone platforms}
+    \field{title}{Trusted computing building blocks for embedded linux-based ARM trustzone platforms}
     \field{year}{2008}
   \endentry
 
@@ -9922,13 +9596,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{X}
     \field{sortinithash}{X}
     \field{booktitle}{2015 IEEE Symposium on Security and Privacy}
     \field{pages}{640\bibrangedash 656}
-    \field{title}{Controlled-Channel Attacks: Deterministic Side Channels for
-  Untrusted Operating Systems}
+    \field{title}{Controlled-Channel Attacks: Deterministic Side Channels for Untrusted Operating Systems}
     \field{year}{2015}
   \endentry
 
@@ -9961,14 +9634,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{Y}
     \field{sortinithash}{Y}
-    \field{booktitle}{Computer Design (ICCD), 2013 IEEE 31st International
-  Conference on}
+    \field{booktitle}{Computer Design (ICCD), 2013 IEEE 31st International Conference on}
     \field{pages}{467\bibrangedash 470}
-    \field{title}{Jop-alarm: Detecting jump-oriented programming-based
-  anomalies in applications}
+    \field{title}{Jop-alarm: Detecting jump-oriented programming-based anomalies in applications}
     \field{year}{2013}
   \endentry
 
@@ -10001,7 +9672,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2009}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{Y}
     \field{sortinithash}{Y}
     \field{note}{US Patent App. 12/317,446}
@@ -10022,7 +9693,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{Y}
     \field{sortinithash}{Y}
     \field{note}{Last access Jan 2019}
@@ -10062,11 +9733,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2015}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{Y}
     \field{sortinithash}{Y}
-    \field{booktitle}{International Workshop on Recent Advances in Intrusion
-  Detection}
+    \field{booktitle}{International Workshop on Recent Advances in Intrusion Detection}
     \field{pages}{66\bibrangedash 85}
     \field{title}{Hardware-assisted fine-grained code-reuse attack detection}
     \field{year}{2015}
@@ -10114,7 +9784,7 @@
          family={Sadeghi},
          familyi={S\bibinitperiod},
          given={Ahmad-Reza},
-         giveni={A\bibinitperiod-R\bibinitperiod},
+         giveni={A\bibinithyphendelim R\bibinitperiod},
       }}%
     }
     \list{organization}{1}{%
@@ -10125,11 +9795,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
-    \field{booktitle}{Proceedings of the 36th International Conference on
-  Computer-Aided Design}
+    \field{booktitle}{Proceedings of the 36th International Conference on Computer-Aided Design}
     \field{pages}{384\bibrangedash 391}
     \field{title}{Atrium: Runtime attestation resilient under memory attacks}
     \field{year}{2017}
@@ -10155,7 +9824,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2013}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
     \field{booktitle}{USENIX Security Symposium}
@@ -10211,16 +9880,14 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2018}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
     \field{number}{9}
     \field{pages}{2345\bibrangedash 2358}
-    \field{title}{Memory forensic challenges under misused architectural
-  features}
+    \field{title}{Memory forensic challenges under misused architectural features}
     \field{volume}{13}
-    \field{journaltitle}{IEEE Transactions on Information Forensics and
-  Security}
+    \field{journaltitle}{IEEE Transactions on Information Forensics and Security}
     \field{year}{2018}
   \endentry
 
@@ -10280,11 +9947,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2021}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
-    \field{title}{See through Walls: Detecting Malware in SGX Enclaves with
-  SGX-Bouncer}
+    \field{title}{See through Walls: Detecting Malware in SGX Enclaves with SGX-Bouncer}
     \field{year}{2021}
   \endentry
 
@@ -10317,14 +9983,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2007}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
-    \field{booktitle}{Field-Programmable Technology, 2007. ICFPT 2007.
-  International Conference on}
+    \field{booktitle}{Field-Programmable Technology, 2007. ICFPT 2007. International Conference on}
     \field{pages}{185\bibrangedash 192}
-    \field{title}{Efficient and high-throughput implementations of AES-GCM on
-  FPGAs}
+    \field{title}{Efficient and high-throughput implementations of AES-GCM on FPGAs}
     \field{year}{2007}
   \endentry
 
@@ -10354,11 +10018,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2019}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
-    \field{booktitle}{2019 International Conference on Intelligent Computing,
-  Automation and Systems (ICICAS)}
+    \field{booktitle}{2019 International Conference on Intelligent Computing, Automation and Systems (ICICAS)}
     \field{pages}{888\bibrangedash 892}
     \field{title}{HardStack: Prevent Stack Buffer Overflow Attack with LBR}
     \field{year}{2019}
@@ -10376,7 +10039,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2017}
-    \field{labeldatesource}{year}
+    \field{labeldatesource}{}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
     \field{note}{Last access March 2019}
